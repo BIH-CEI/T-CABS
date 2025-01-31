@@ -1,0 +1,23 @@
+// Table Device_Settings - Item PSV(Tgv) - settingItems id 0
+Instance: InspPress-Setting
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mittlerer-beatmungsdruck
+Usage: #example
+Title: "InspiratoryPressure"
+Description: "Beispielhafte Einstellung des mittleren Beatmungsdruckes"
+* identifier.value = "0"
+* partOf = Reference(Procedure-PSV-123)
+* status = #final
+* category.coding = $SCT#40617009 "Artificial ventilation (regime/therapy)"
+
+* code.coding = $LOINC#20079-0 "Pressure support setting Ventilator"
+
+* subject = Reference(patient-98219fce-813a-41f2-94ff-861d59b89715)
+
+* effectivePeriod.start = "2022-07-15T00:00:00+01:00"
+* effectivePeriod.end = "2022-07-21T00:00:00+01:00"
+
+* valueQuantity.value = 30
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #cm[H2O]
+
+* device = Reference(DeviceMetric-Eingestellt-Beispiel-BREAS)
