@@ -10,5 +10,6 @@ Description: "Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs au
 * effective[x] 1..1
 * effective[x] only Period
 
+* valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #{score}
 

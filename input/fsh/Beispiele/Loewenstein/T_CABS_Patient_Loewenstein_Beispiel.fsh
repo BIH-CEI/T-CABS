@@ -5,7 +5,7 @@ Title: "123456"
 Description: "Patient mit der internen ID 123456"
 
 // externalId
-* identifier[pid].type.coding.code = #MR
+* identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
 * identifier[pid].system = "http://www.example.com/identifiers/patient"
 * identifier[pid].value = "4927221"
 

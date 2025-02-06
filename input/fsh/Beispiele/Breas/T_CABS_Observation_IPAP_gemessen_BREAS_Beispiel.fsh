@@ -1,11 +1,15 @@
 // Table Treatment_Data 
-Instance: IPAP-123456
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/positiv-endexspiratorischer-druck
+/* 
+
+Überarbeiten!
+
+Instance: ipap-gemessen-beispiel
+InstanceOf: 
 Usage: #example
 Title: "IPAP"
-Description: "Beispielhafte Messung des positiv-endexpiratorischer Druckes (IPAP)"
+Description: "Beispielhafte Messung des IPAP"
 
-* partOf = Reference(Procedure-PSV-123)
+* partOf = Reference(procedure-PSV-123)
 * status = #final
 * category.coding = $SCT#40617009 "Artificial ventilation (regime/therapy)"
 
@@ -21,5 +25,5 @@ Description: "Beispielhafte Messung des positiv-endexpiratorischer Druckes (IPAP
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #cm[H2O]
 
-* device = Reference(DeviceMetric-Gemessen-Beispiel-BREAS)
-
+* device = Reference(deviceMetric-gemessen-beispiel-breas)
+*/

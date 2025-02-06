@@ -1,4 +1,4 @@
-Instance: DeviceMetric-Eingestellt-Beispiel-Loewenstein
+Instance: deviceMetric-Eingestellt-Beispiel-Loewenstein
 InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
 Usage: #example
 Title: "DeviceMetric_Beispiel_Loewenstein"
@@ -8,7 +8,7 @@ Description: "Eingestellter Parameter"
 * source = Reference(device-1234)
 
 
-Instance: DeviceMetric-Gemessen-Beispiel-Loewenstein
+Instance: deviceMetric-Gemessen-Beispiel-Loewenstein
 InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
 Usage: #example
 Title: "DeviceMetric_Beispiel_Loewenstein"

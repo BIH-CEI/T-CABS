@@ -1,4 +1,4 @@
-Instance: DeviceMetric-Eingestellt-Beispiel-BREAS
+Instance: deviceMetric-eingestellt-beispiel-breas
 InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
 Usage: #example
 Title: "DeviceMetric_Beispiel_BREAS"
@@ -8,7 +8,7 @@ Description: "Eingestellter Parameter"
 * source = Reference(device-1573)
 
 
-Instance: DeviceMetric-Gemessen-Beispiel-BREAS
+Instance: deviceMetric-gemessen-beispiel-breas
 InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
 Usage: #example
 Title: "DeviceMetric_Beispiel_BREAS"

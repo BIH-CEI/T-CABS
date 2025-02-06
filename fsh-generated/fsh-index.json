@@ -1,0 +1,178 @@
+[
+  {
+    "outputFile": "Device-device-1234.json",
+    "fshName": "device-1234",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_Device_Loewenstein_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Device-device-1573.json",
+    "fshName": "device-1573",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Device_BREAS_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "DeviceMetric-deviceMetric-Eingestellt-Beispiel-Loewenstein.json",
+    "fshName": "deviceMetric-Eingestellt-Beispiel-Loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_DeviceMetric_Loewenstein_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "DeviceMetric-deviceMetric-Gemessen-Beispiel-Loewenstein.json",
+    "fshName": "deviceMetric-Gemessen-Beispiel-Loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_DeviceMetric_Loewenstein_Beispiel.fsh",
+    "startLine": 11,
+    "endLine": 18
+  },
+  {
+    "outputFile": "DeviceMetric-deviceMetric-eingestellt-beispiel-breas.json",
+    "fshName": "deviceMetric-eingestellt-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_DeviceMetric_BREAS_Beispiele.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "DeviceMetric-deviceMetric-gemessen-beispiel-breas.json",
+    "fshName": "deviceMetric-gemessen-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_DeviceMetric_BREAS_Beispiele.fsh",
+    "startLine": 11,
+    "endLine": 18
+  },
+  {
+    "outputFile": "Observation-amv-gemessen-beispiel-loewenstein.json",
+    "fshName": "amv-gemessen-beispiel-loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_Observation_AMV_Loewenstein_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Observation-atemfrequenz-gemessen-beispiel-breas.json",
+    "fshName": "atemfrequenz-gemessen-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Observation_Atemfrequenz_gemessen_BREAS_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Observation-atemfrequenz-gemessen-beispiel-loewenstein.json",
+    "fshName": "atemfrequenz-gemessen-beispiel-loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_Observation_Atemfrequenz_Loewenstein_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Observation-inspPress-eingestellt-beispiel-breas.json",
+    "fshName": "inspPress-eingestellt-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Observation_InspPress_eingestellt_BREAS_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-leckage-gemessen-beispiel-loewenstein.json",
+    "fshName": "leckage-gemessen-beispiel-loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_Observation_Leckage_Loewenstein_Beispiel copy.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-maximalInspiratoryPressure-eingestellt-beispiel-breas.json",
+    "fshName": "maximalInspiratoryPressure-eingestellt-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Observation_MaxInspPress_BREAS_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-peep-eingestellt-beispiel-breas.json",
+    "fshName": "peep-eingestellt-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Observation_PEEP_BREAS_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-tidalvolumen-eingestellt-beispiel-breas.json",
+    "fshName": "tidalvolumen-eingestellt-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Observation_Tidalvolumen_eingestellt_BREAS_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Observation-tidalvolumen-gemessen-beispiel-breas.json",
+    "fshName": "tidalvolumen-gemessen-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Observation_Tidalvolumen_gemessen_BREAS_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 27
+  },
+  {
+    "outputFile": "Patient-patient-123456.json",
+    "fshName": "patient-123456",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_Patient_Loewenstein_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "Patient-patient-98219fce-813a-41f2-94ff-861d59b89715.json",
+    "fshName": "patient-98219fce-813a-41f2-94ff-861d59b89715",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Patient_BREAS_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Procedure-procedure-Bilevel-123.json",
+    "fshName": "procedure-Bilevel-123",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_Procedure_Loewenstein_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Procedure-procedure-PSV-123.json",
+    "fshName": "procedure-PSV-123",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Procedure_BREAS_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-ahi.json",
+    "fshName": "T_CABS_Observation_AHI",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Observation_AHI.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-beatmungsstunden.json",
+    "fshName": "T_CABS_Observation_Beatmungsstunden",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Observation_Beatmungsstunden.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-leckage.json",
+    "fshName": "T_CABS_Observation_Leckage",
+    "fshType": "Profile",
+    "fshFile": "Profile/T-CABS_Observation_Leckage.fsh",
+    "startLine": 1,
+    "endLine": 14
+  }
+]

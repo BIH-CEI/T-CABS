@@ -1,0 +1,40 @@
+{
+  "resourceType": "Device",
+  "id": "device-1234",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.loewenstein_example.com/identifiers/devices",
+      "value": "1234"
+    }
+  ],
+  "deviceName": [
+    {
+      "name": "prisma SOFT",
+      "type": "model-name"
+    }
+  ],
+  "version": [
+    {
+      "value": "v1.2.3"
+    }
+  ],
+  "status": "active",
+  "serialNumber": "ABC5678DE",
+  "patient": {
+    "reference": "Patient/patient-123456"
+  },
+  "type": {
+    "coding": [
+      {
+        "code": "714692006",
+        "system": "http://snomed.info/sct",
+        "display": "Variable pressure jet ventilation device (physical object)"
+      }
+    ]
+  }
+}

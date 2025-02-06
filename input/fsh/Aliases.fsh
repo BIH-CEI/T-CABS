@@ -5,3 +5,4 @@ Alias: $mii-icu-beatmung-procedure = https://www.medizininformatik-initiative.de
 Alias: $SCT = http://snomed.info/sct
 Alias: $LOINC = http://loinc.org
 Alias: $OPS = http://fhir.de/CodeSystem/bfarm/ops
+Alias: $IEEE-11073 = urn:iso:std:iso:11073:10101

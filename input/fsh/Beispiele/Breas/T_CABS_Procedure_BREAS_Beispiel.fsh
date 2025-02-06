@@ -1,4 +1,4 @@
-Instance: Procedure-PSV-123
+Instance: procedure-PSV-123
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung
 Usage: #example
 Title: "Procedure_Beatmungsprozedur"

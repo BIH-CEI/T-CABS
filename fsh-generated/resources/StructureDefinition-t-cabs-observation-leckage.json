@@ -1,0 +1,59 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observation-leckage",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
+  "name": "T_CABS_Observation_Leckage",
+  "title": "Leckage",
+  "status": "draft",
+  "description": "Leckagerate unter Beatmung",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "76296-3",
+          "system": "http://loinc.org",
+          "display": "Ventilator airway circuit leakage volume"
+        }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "patternCoding": {
+          "code": "152432",
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_VENT_VOL_LEAK"
+        }
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "L/min"
+      }
+    ]
+  }
+}

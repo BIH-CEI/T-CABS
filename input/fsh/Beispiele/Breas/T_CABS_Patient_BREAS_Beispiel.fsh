@@ -21,3 +21,6 @@ Description: "Patient mit der UUID 98219fce-813a-41f2-94ff-861d59b89715"
 
 // dateOfBirth
 * birthDate = "1950-02-17"
+
+// status active = true ; inactive = false
+* active = true

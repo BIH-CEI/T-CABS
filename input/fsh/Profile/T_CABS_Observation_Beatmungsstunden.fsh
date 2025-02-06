@@ -4,9 +4,10 @@ Id: t-cabs-observation-beatmungsstunden
 Title: "Beatmungsstunden"
 Description: "Anzahl der Beatmungsstunden"
 
-* code.coding = $SCT#261774000 "Duration of treatment (qualifier value)"
+* code.coding[sct] = $SCT#261774000 "Duration of treatment (qualifier value)"
 
 * effective[x] 1..1
 * effective[x] only Period
 
+* valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #h
