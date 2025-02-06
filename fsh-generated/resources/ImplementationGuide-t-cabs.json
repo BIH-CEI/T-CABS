@@ -47,6 +47,14 @@
       },
       {
         "reference": {
+          "reference": "Patient/patient-44187887-a48d-4f4e-9393-e4207045a2c4"
+        },
+        "name": "44187887-a48d-4f4e-9393-e4207045a2c4",
+        "description": "Patient mit der internen ID 44187887-a48d-4f4e-9393-e4207045a2c4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/patient-98219fce-813a-41f2-94ff-861d59b89715"
         },
         "name": "98219fce-813a-41f2-94ff-861d59b89715",
@@ -60,6 +68,14 @@
         "name": "AHI",
         "description": "Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs aufgetretenen Apnoe- und Hypopnoe-Episoden, geteilt durch die Schlafdauer in Stunden",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/amv-gemessen-beispiel-breas"
+        },
+        "name": "amv-gemessen-beispiel-breas",
+        "description": "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute\nTreatmentDataDetailDto - minuteVolume",
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -82,7 +98,7 @@
           "reference": "Observation/atemfrequenz-gemessen-beispiel-breas"
         },
         "name": "Atemfrequenz-123",
-        "description": "Eine beispielhafte Atemfrequenz der Firma Breas",
+        "description": "Eine beispielhafte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
         "exampleBoolean": true
       },
       {
@@ -167,10 +183,18 @@
       },
       {
         "reference": {
+          "reference": "Observation/leckage-gemessen-beispiel-breas"
+        },
+        "name": "leckage-gemessen-beispiel-breas",
+        "description": "Leckagerate unter Beatmung -\nTreatmentDataDetailDto - leakage",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"
+      },
+      {
+        "reference": {
           "reference": "Observation/leckage-gemessen-beispiel-loewenstein"
         },
         "name": "leckage-gemessen-beispiel-loewenstein",
-        "description": "Volumen der beim Beatmungsprozess verlorenen Luft -\nleakageMedian_liter_min - Median of unintentional leakage flow in l/min. Supported devices: prismaSOFT, prismaSMART, prismaLINE, prismaVENT, Luisa",
+        "description": "Leckagerate unter Beatmung -\nleakageMedian_liter_min - Median of unintentional leakage flow in l/min. Supported devices: prismaSOFT, prismaSMART, prismaLINE, prismaVENT, Luisa",
         "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"
       },
       {
@@ -199,6 +223,14 @@
       },
       {
         "reference": {
+          "reference": "Procedure/procedure-CPAP-123"
+        },
+        "name": "Procedure_Beatmungsprozedur",
+        "description": "Ein Beispiel für eine Prozedur zur Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/tidalvolumen-eingestellt-beispiel-breas"
         },
         "name": "Tidalvolumen",
@@ -212,6 +244,22 @@
         "name": "Tidalvolumen",
         "description": "Beispiel eines gemessenen Tidalvolumens während der Beatmung",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-triggeredbreaths"
+        },
+        "name": "Triggered Breaths",
+        "description": "Prozentzahl der selbstständig getriggerten Atemzüge innerhlab eines Zeitraums",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/triggeredBreaths-gemessen-beispiel-breas"
+        },
+        "name": "triggeredBreaths_gemessen_beispiel_breas",
+        "description": "TreatmentDataDetailDto - triggeredBreaths",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
       }
     ],
     "page": {

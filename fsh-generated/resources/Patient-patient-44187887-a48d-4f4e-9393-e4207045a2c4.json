@@ -1,0 +1,44 @@
+{
+  "resourceType": "Patient",
+  "id": "patient-44187887-a48d-4f4e-9393-e4207045a2c4",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          },
+          {
+            "code": "PI"
+          }
+        ]
+      },
+      "system": "http://www.resmed.com/identifiers/patient",
+      "value": "44187887-a48d-4f4e-9393-e4207045a2c4"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "display": "c501e66d-bcd0-4d99-b745-0970e65d55dd"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "John"
+      ],
+      "use": "official",
+      "family": "Doe"
+    }
+  ],
+  "managingOrganization": {
+    "display": "DIGI Medical AZ"
+  },
+  "birthDate": "1944-04-11"
+}

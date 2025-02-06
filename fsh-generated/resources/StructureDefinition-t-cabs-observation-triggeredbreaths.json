@@ -1,0 +1,59 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observation-triggeredbreaths",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
+  "name": "T_CABS_Observation_TriggeredBreaths",
+  "title": "Triggered Breaths",
+  "status": "draft",
+  "description": "Prozentzahl der selbstständig getriggerten Atemzüge innerhlab eines Zeitraums",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "250878004",
+          "system": "http://snomed.info/sct",
+          "display": "Triggered breath rate (observable entity)"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "LA20140-2",
+          "system": "http://loinc.org",
+          "display": "Unassisted respiratory rate"
+        }
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "%"
+      }
+    ]
+  }
+}

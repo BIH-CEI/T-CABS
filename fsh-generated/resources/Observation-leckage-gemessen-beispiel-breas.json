@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "leckage-gemessen-beispiel-loewenstein",
+  "id": "leckage-gemessen-beispiel-breas",
   "meta": {
     "profile": [
       "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"
@@ -8,7 +8,7 @@
   },
   "partOf": [
     {
-      "reference": "Procedure/procedure-Bilevel-123"
+      "reference": "Procedure/procedure-PSV-123"
     }
   ],
   "category": [
@@ -47,9 +47,9 @@
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/patient-123456"
+    "reference": "Patient/patient-98219fce-813a-41f2-94ff-861d59b89715"
   },
   "device": {
-    "reference": "DeviceMetric/deviceMetric-Gemessen-Beispiel-Loewenstein"
+    "reference": "deviceMetric-gemessen-Beispiel-breas"
   }
 }

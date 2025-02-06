@@ -1,1 +1,1 @@
-//PatientDayUsageEvent - totalDurationHours
+//PatientDayUsageEvent - totalDurationHours?

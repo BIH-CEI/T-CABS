@@ -1,10 +1,10 @@
-Instance: leckage-gemessen-beispiel-loewenstein
+Instance: leckage-gemessen-beispiel-breas
 InstanceOf: t-cabs-observation-leckage
 Usage: #example
-Title: "leckage-gemessen-beispiel-loewenstein"
-Description: "Volumen der beim Beatmungsprozess verlorenen Luft -
-leakageMedian_liter_min - Median of unintentional leakage flow in l/min. Supported devices: prismaSOFT, prismaSMART, prismaLINE, prismaVENT, Luisa"
-* partOf = Reference(procedure-Bilevel-123)
+Title: "leckage-gemessen-beispiel-breas"
+Description: "Leckagerate unter Beatmung -
+TreatmentDataDetailDto - leakage"
+* partOf = Reference(procedure-PSV-123)
 * status = #final
 
 * category.coding = $SCT#40617009 "Artificial ventilation (regime/therapy)"
@@ -16,10 +16,10 @@ leakageMedian_liter_min - Median of unintentional leakage flow in l/min. Support
 * effectivePeriod.start = "2019-12-23T09:30:10+01:00"
 * effectivePeriod.end = "2019-12-24T09:30:10+01:00"
 
-* subject = Reference(patient-123456)
+* subject = Reference(patient-98219fce-813a-41f2-94ff-861d59b89715)
 
 * valueQuantity.value = 2
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #L/min
 
-* device = Reference(deviceMetric-Gemessen-Beispiel-Loewenstein)
+* device = Reference(deviceMetric-gemessen-Beispiel-breas)

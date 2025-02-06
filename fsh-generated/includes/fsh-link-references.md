@@ -1,6 +1,8 @@
 [patient-123456]: Patient-patient-123456.html
+[patient-44187887-a48d-4f4e-9393-e4207045a2c4]: Patient-patient-44187887-a48d-4f4e-9393-e4207045a2c4.html
 [patient-98219fce-813a-41f2-94ff-861d59b89715]: Patient-patient-98219fce-813a-41f2-94ff-861d59b89715.html
 [T_CABS_Observation_AHI]: StructureDefinition-t-cabs-observation-ahi.html
+[amv-gemessen-beispiel-breas]: Observation-amv-gemessen-beispiel-breas.html
 [amv-gemessen-beispiel-loewenstein]: Observation-amv-gemessen-beispiel-loewenstein.html
 [atemfrequenz-gemessen-beispiel-loewenstein]: Observation-atemfrequenz-gemessen-beispiel-loewenstein.html
 [atemfrequenz-gemessen-beispiel-breas]: Observation-atemfrequenz-gemessen-beispiel-breas.html
@@ -14,9 +16,13 @@
 [inspPress-eingestellt-beispiel-breas]: Observation-inspPress-eingestellt-beispiel-breas.html
 [maximalInspiratoryPressure-eingestellt-beispiel-breas]: Observation-maximalInspiratoryPressure-eingestellt-beispiel-breas.html
 [T_CABS_Observation_Leckage]: StructureDefinition-t-cabs-observation-leckage.html
+[leckage-gemessen-beispiel-breas]: Observation-leckage-gemessen-beispiel-breas.html
 [leckage-gemessen-beispiel-loewenstein]: Observation-leckage-gemessen-beispiel-loewenstein.html
 [peep-eingestellt-beispiel-breas]: Observation-peep-eingestellt-beispiel-breas.html
 [procedure-PSV-123]: Procedure-procedure-PSV-123.html
 [procedure-Bilevel-123]: Procedure-procedure-Bilevel-123.html
+[procedure-CPAP-123]: Procedure-procedure-CPAP-123.html
 [tidalvolumen-eingestellt-beispiel-breas]: Observation-tidalvolumen-eingestellt-beispiel-breas.html
 [tidalvolumen-gemessen-beispiel-breas]: Observation-tidalvolumen-gemessen-beispiel-breas.html
+[T_CABS_Observation_TriggeredBreaths]: StructureDefinition-t-cabs-observation-triggeredbreaths.html
+[triggeredBreaths-gemessen-beispiel-breas]: Observation-triggeredBreaths-gemessen-beispiel-breas.html

@@ -48,6 +48,14 @@
     "endLine": 18
   },
   {
+    "outputFile": "Observation-amv-gemessen-beispiel-breas.json",
+    "fshName": "amv-gemessen-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Observation_AVM_gemessen_BREAS_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
     "outputFile": "Observation-amv-gemessen-beispiel-loewenstein.json",
     "fshName": "amv-gemessen-beispiel-loewenstein",
     "fshType": "Instance",
@@ -60,7 +68,7 @@
     "fshName": "atemfrequenz-gemessen-beispiel-breas",
     "fshType": "Instance",
     "fshFile": "Beispiele/Breas/T_CABS_Observation_Atemfrequenz_gemessen_BREAS_Beispiel.fsh",
-    "startLine": 2,
+    "startLine": 1,
     "endLine": 26
   },
   {
@@ -80,10 +88,18 @@
     "endLine": 25
   },
   {
+    "outputFile": "Observation-leckage-gemessen-beispiel-breas.json",
+    "fshName": "leckage-gemessen-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T-CABS_Observation_Leckage_gemessen_BREAS_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
     "outputFile": "Observation-leckage-gemessen-beispiel-loewenstein.json",
     "fshName": "leckage-gemessen-beispiel-loewenstein",
     "fshType": "Instance",
-    "fshFile": "Beispiele/Loewenstein/T_CABS_Observation_Leckage_Loewenstein_Beispiel copy.fsh",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_Observation_Leckage_Loewenstein_Beispiel.fsh",
     "startLine": 1,
     "endLine": 25
   },
@@ -120,12 +136,28 @@
     "endLine": 27
   },
   {
+    "outputFile": "Observation-triggeredBreaths-gemessen-beispiel-breas.json",
+    "fshName": "triggeredBreaths-gemessen-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Observation_TriggeredBreath_BREAS_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
     "outputFile": "Patient-patient-123456.json",
     "fshName": "patient-123456",
     "fshType": "Instance",
     "fshFile": "Beispiele/Loewenstein/T_CABS_Patient_Loewenstein_Beispiel.fsh",
     "startLine": 1,
     "endLine": 23
+  },
+  {
+    "outputFile": "Patient-patient-44187887-a48d-4f4e-9393-e4207045a2c4.json",
+    "fshName": "patient-44187887-a48d-4f4e-9393-e4207045a2c4",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_Patient_Loewenstein_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 29
   },
   {
     "outputFile": "Patient-patient-98219fce-813a-41f2-94ff-861d59b89715.json",
@@ -140,6 +172,14 @@
     "fshName": "procedure-Bilevel-123",
     "fshType": "Instance",
     "fshFile": "Beispiele/Loewenstein/T_CABS_Procedure_Loewenstein_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Procedure-procedure-CPAP-123.json",
+    "fshName": "procedure-CPAP-123",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_Procedure_ResMed_Beispiel.fsh",
     "startLine": 1,
     "endLine": 16
   },
@@ -172,6 +212,14 @@
     "fshName": "T_CABS_Observation_Leckage",
     "fshType": "Profile",
     "fshFile": "Profile/T-CABS_Observation_Leckage.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-triggeredbreaths.json",
+    "fshName": "T_CABS_Observation_TriggeredBreaths",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Observation_TriggeredBreaths.fsh",
     "startLine": 1,
     "endLine": 14
   }

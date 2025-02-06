@@ -1,14 +1,14 @@
 {
   "resourceType": "Observation",
-  "id": "leckage-gemessen-beispiel-loewenstein",
+  "id": "triggeredBreaths-gemessen-beispiel-breas",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
     ]
   },
   "partOf": [
     {
-      "reference": "Procedure/procedure-Bilevel-123"
+      "reference": "Procedure/procedure-PSV-123"
     }
   ],
   "category": [
@@ -25,14 +25,14 @@
   "code": {
     "coding": [
       {
-        "code": "76296-3",
-        "system": "http://loinc.org",
-        "display": "Ventilator airway circuit leakage volume"
+        "code": "250878004",
+        "system": "http://snomed.info/sct",
+        "display": "Triggered breath rate (observable entity)"
       },
       {
-        "code": "152432",
-        "system": "urn:iso:std:iso:11073:10101",
-        "display": "MDC_VENT_VOL_LEAK"
+        "code": "LA20140-2",
+        "system": "http://loinc.org",
+        "display": "Unassisted respiratory rate"
       }
     ]
   },
@@ -42,14 +42,14 @@
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
-    "code": "L/min",
-    "value": 2
+    "code": "%",
+    "value": 20
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/patient-123456"
+    "reference": "Patient/patient-98219fce-813a-41f2-94ff-861d59b89715"
   },
   "device": {
-    "reference": "DeviceMetric/deviceMetric-Gemessen-Beispiel-Loewenstein"
+    "reference": "deviceMetric-gemessen-Beispiel-breas"
   }
 }
