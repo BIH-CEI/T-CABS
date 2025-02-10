@@ -7,6 +7,7 @@
 [atemfrequenz-gemessen-beispiel-loewenstein]: Observation-atemfrequenz-gemessen-beispiel-loewenstein.html
 [atemfrequenz-gemessen-beispiel-breas]: Observation-atemfrequenz-gemessen-beispiel-breas.html
 [T_CABS_Observation_Beatmungsstunden]: StructureDefinition-t-cabs-observation-beatmungsstunden.html
+[beatmungsstunden-gemessen-beispiel-resmed]: Observation-beatmungsstunden-gemessen-beispiel-resmed.html
 [deviceMetric-eingestellt-beispiel-breas]: DeviceMetric-deviceMetric-eingestellt-beispiel-breas.html
 [deviceMetric-gemessen-beispiel-breas]: DeviceMetric-deviceMetric-gemessen-beispiel-breas.html
 [deviceMetric-Eingestellt-Beispiel-Loewenstein]: DeviceMetric-deviceMetric-Eingestellt-Beispiel-Loewenstein.html

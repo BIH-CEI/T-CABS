@@ -111,6 +111,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/beatmungsstunden-gemessen-beispiel-resmed"
+        },
+        "name": "Beatmungsstunden gemessen Beispiel ResMed",
+        "description": "Beispiel von gemessenen Beatmungsstunden eines Gerätes des Unternehmens ResMed",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"
+      },
+      {
+        "reference": {
           "reference": "DeviceMetric/deviceMetric-eingestellt-beispiel-breas"
         },
         "name": "DeviceMetric_Beispiel_BREAS",

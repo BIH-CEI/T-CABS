@@ -80,6 +80,14 @@
     "endLine": 26
   },
   {
+    "outputFile": "Observation-beatmungsstunden-gemessen-beispiel-resmed.json",
+    "fshName": "beatmungsstunden-gemessen-beispiel-resmed",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_Observation_Beatmungsstunden_ResMed_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
     "outputFile": "Observation-inspPress-eingestellt-beispiel-breas.json",
     "fshName": "inspPress-eingestellt-beispiel-breas",
     "fshType": "Instance",
@@ -155,7 +163,7 @@
     "outputFile": "Patient-patient-44187887-a48d-4f4e-9393-e4207045a2c4.json",
     "fshName": "patient-44187887-a48d-4f4e-9393-e4207045a2c4",
     "fshType": "Instance",
-    "fshFile": "Beispiele/ResMed/T_CABS_Patient_Loewenstein_Beispiel.fsh",
+    "fshFile": "Beispiele/ResMed/T_CABS_Patient_ResMed_Beispiel.fsh",
     "startLine": 1,
     "endLine": 29
   },

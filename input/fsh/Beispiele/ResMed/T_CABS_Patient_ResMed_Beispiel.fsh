@@ -26,4 +26,4 @@ Description: "Patient mit der internen ID 44187887-a48d-4f4e-9393-e4207045a2c4"
 * birthDate = "1944-04-11"
 
 // location (only string, better a reference)
-* managingOrganization.display = "DIGI Medical AZ" 
+* managingOrganization.display = "DIGI Medical AZ"
