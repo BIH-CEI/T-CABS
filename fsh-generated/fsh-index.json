@@ -200,6 +200,14 @@
     "endLine": 14
   },
   {
+    "outputFile": "StructureDefinition-t-cabs-observation-arterieller-blutdruck.json",
+    "fshName": "T_CABS_Observation_Arterieller_Blutdruck",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vital-parameters/T_CABS_Observation_Systolisch_Diastolisch.fsh",
+    "startLine": 1,
+    "endLine": 91
+  },
+  {
     "outputFile": "StructureDefinition-t-cabs-observation-atemfrequenz.json",
     "fshName": "T_CABS_Observation_Atemfrequenz",
     "fshType": "Profile",

@@ -245,6 +245,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-arterieller-blutdruck"
+        },
+        "name": "T-CABS Observation Arterieller Blutdruck",
+        "description": "Profile for documenting arterial blood pressure observations within T-CABS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/tidalvolumen-eingestellt-beispiel-breas"
         },
         "name": "Tidalvolumen",

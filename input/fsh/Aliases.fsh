@@ -6,6 +6,7 @@ Alias: $SCT = http://snomed.info/sct
 Alias: $LOINC = http://loinc.org
 Alias: $OPS = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $IEEE-11073 = urn:iso:std:iso:11073:10101
+Alias: $unitsofmeasure = http://unitsofmeasure.org
 
 //KoerperGewicht
 Alias: $observation-de-vitalsign-koerpergewicht = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht
@@ -19,3 +20,6 @@ Alias: $ValueSet-Unit-equivalent-UCUM-breaths_per-minute = https://www.medizinin
 //Herzfrequenz
 Alias: $observation-de-vitalsign-herzfrequenz = http://fhir.de/StructureDefinition/observation-de-vitalsign-herzfrequenz
 Alias: $ISiKHerzfrequenzSCTVS = https://gematik.de/fhir/isik/ValueSet/ISiKHerzfrequenzSCTVS
+
+//Systolisch & Diastolisch
+Alias: $observation-de-vitalsign-blutdruck = http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck

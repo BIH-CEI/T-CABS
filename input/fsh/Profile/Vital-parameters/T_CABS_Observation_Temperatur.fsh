@@ -1,3 +1,4 @@
+
 /*Alias: $observation-de-vitalsign-koerpertemperatur = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpertemperatur
 Alias: $ISiKKoerpertemperaturSCTVS = https://gematik.de/fhir/isik/ValueSet/ISiKKoerpertemperaturSCTVS
 
@@ -22,5 +23,4 @@ Title: "Temperatur"
 * dataAbsentReason MS
 * method MS
 * device MS
-
 */
