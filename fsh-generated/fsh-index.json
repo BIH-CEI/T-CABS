@@ -200,12 +200,36 @@
     "endLine": 14
   },
   {
+    "outputFile": "StructureDefinition-t-cabs-observation-atemfrequenz.json",
+    "fshName": "T_CABS_Observation_Atemfrequenz",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vital-parameters/T_CABS_Observation_Atemfrequenz.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
     "outputFile": "StructureDefinition-t-cabs-observation-beatmungsstunden.json",
     "fshName": "T_CABS_Observation_Beatmungsstunden",
     "fshType": "Profile",
     "fshFile": "Profile/T_CABS_Observation_Beatmungsstunden.fsh",
     "startLine": 1,
     "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-gewicht.json",
+    "fshName": "T_CABS_Observation_Gewicht",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vital-parameters/T_CABS_Observation_Gewicht.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-herzfrequenz.json",
+    "fshName": "T_CABS_Observation_Herzfrequenz",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vital-parameters/T_CABS_Observation_Herzfrequenz.fsh",
+    "startLine": 1,
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-t-cabs-observation-leckage.json",

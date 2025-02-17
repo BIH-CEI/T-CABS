@@ -4,6 +4,7 @@
 [T_CABS_Observation_AHI]: StructureDefinition-t-cabs-observation-ahi.html
 [amv-gemessen-beispiel-breas]: Observation-amv-gemessen-beispiel-breas.html
 [amv-gemessen-beispiel-loewenstein]: Observation-amv-gemessen-beispiel-loewenstein.html
+[T_CABS_Observation_Atemfrequenz]: StructureDefinition-t-cabs-observation-atemfrequenz.html
 [atemfrequenz-gemessen-beispiel-loewenstein]: Observation-atemfrequenz-gemessen-beispiel-loewenstein.html
 [atemfrequenz-gemessen-beispiel-breas]: Observation-atemfrequenz-gemessen-beispiel-breas.html
 [T_CABS_Observation_Beatmungsstunden]: StructureDefinition-t-cabs-observation-beatmungsstunden.html
@@ -13,6 +14,7 @@
 [deviceMetric-Gemessen-Beispiel-Loewenstein]: DeviceMetric-deviceMetric-Gemessen-Beispiel-Loewenstein.html
 [device-1573]: Device-device-1573.html
 [device-1234]: Device-device-1234.html
+[T_CABS_Observation_Gewicht]: StructureDefinition-t-cabs-observation-gewicht.html
 [inspPress-eingestellt-beispiel-breas]: Observation-inspPress-eingestellt-beispiel-breas.html
 [maximalInspiratoryPressure-eingestellt-beispiel-breas]: Observation-maximalInspiratoryPressure-eingestellt-beispiel-breas.html
 [T_CABS_Observation_Leckage]: StructureDefinition-t-cabs-observation-leckage.html
@@ -26,3 +28,4 @@
 [tidalvolumen-gemessen-beispiel-breas]: Observation-tidalvolumen-gemessen-beispiel-breas.html
 [T_CABS_Observation_TriggeredBreaths]: StructureDefinition-t-cabs-observation-triggeredbreaths.html
 [triggeredBreaths-gemessen-beispiel-breas]: Observation-triggeredBreaths-gemessen-beispiel-breas.html
+[T_CABS_Observation_Herzfrequenz]: StructureDefinition-t-cabs-observation-herzfrequenz.html

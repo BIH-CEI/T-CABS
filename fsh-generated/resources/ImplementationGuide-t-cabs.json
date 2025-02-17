@@ -87,6 +87,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-atemfrequenz"
+        },
+        "name": "Atemfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/atemfrequenz-gemessen-beispiel-loewenstein"
         },
         "name": "Atemfrequenz",
@@ -156,6 +163,13 @@
         "name": "Device_Beispiel_Loewenstein",
         "description": "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller Loewenstein",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-gewicht"
+        },
+        "name": "Gewicht",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -260,6 +274,13 @@
         "name": "triggeredBreaths_gemessen_beispiel_breas",
         "description": "TreatmentDataDetailDto - triggeredBreaths",
         "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-herzfrequenz"
+        },
+        "name": "T_CABS_Observation_Herzfrequenz",
+        "exampleBoolean": false
       }
     ],
     "page": {
