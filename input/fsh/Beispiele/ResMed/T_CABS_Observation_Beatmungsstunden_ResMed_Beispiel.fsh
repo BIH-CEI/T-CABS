@@ -1,3 +1,4 @@
+// totalUsageHoursOnDevice
 Instance: beatmungsstunden-gemessen-beispiel-resmed
 InstanceOf: t-cabs-observation-beatmungsstunden
 Usage: #example
@@ -20,3 +21,5 @@ Description: "Beispiel von gemessenen Beatmungsstunden eines Gerätes des Untern
 * valueQuantity.value = 12
 
 * subject = Reference(patient-44187887-a48d-4f4e-9393-e4207045a2c4)
+
+* device = Reference(deviceMetric-gemessen-beispiel-resmed)

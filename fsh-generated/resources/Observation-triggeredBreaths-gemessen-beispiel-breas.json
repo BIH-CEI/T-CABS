@@ -43,7 +43,7 @@
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "%",
-    "value": 20
+    "value": 50
   },
   "status": "final",
   "subject": {

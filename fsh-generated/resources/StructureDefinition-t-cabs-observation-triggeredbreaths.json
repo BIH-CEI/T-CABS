@@ -5,7 +5,7 @@
   "name": "T_CABS_Observation_TriggeredBreaths",
   "title": "Triggered Breaths",
   "status": "draft",
-  "description": "Prozentzahl der selbstständig getriggerten Atemzüge innerhlab eines Zeitraums",
+  "description": "Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

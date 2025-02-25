@@ -87,6 +87,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/amv-gemessen-beispiel-resmed"
+        },
+        "name": "amv-gemessen-beispiel-resmed",
+        "description": "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute\nTreatmentDataDetailDto - minuteVolume",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/atemfrequenz-gemessen-beispiel-loewenstein"
         },
         "name": "Atemfrequenz",
@@ -103,11 +111,35 @@
       },
       {
         "reference": {
+          "reference": "Observation/atemfrequenz-gemessen-beispiel-resmed"
+        },
+        "name": "Atemfrequenz_gemessen_Beispiel_ResMed",
+        "description": "Atemfrequenz gemessen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/t-cabs-observation-beatmungsstunden"
         },
         "name": "Beatmungsstunden",
         "description": "Anzahl der Beatmungsstunden",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/beatmungsstunden-gemessen-beispiel-breas"
+        },
+        "name": "Beatmungsstunden gemessen Beispiel Breas",
+        "description": "Beatmungsdauer des Patienten in Stunden",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"
+      },
+      {
+        "reference": {
+          "reference": "Observation/beatmungsstunden-gemessen-beispiel-loewenstein"
+        },
+        "name": "Beatmungsstunden gemessen Beispiel Löwenstein",
+        "description": "Beatmungsdauer des Patienten in Stunden",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"
       },
       {
         "reference": {
@@ -151,6 +183,22 @@
       },
       {
         "reference": {
+          "reference": "DeviceMetric/deviceMetric-eingestellt-beispiel-resmed"
+        },
+        "name": "DeviceMetric_Beispiel_ResMed",
+        "description": "Eingestellter Parameter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/deviceMetric-gemessen-beispiel-resmed"
+        },
+        "name": "DeviceMetric_Beispiel_ResMed",
+        "description": "Gemessener Parameter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Device/device-1573"
         },
         "name": "Device_Beispiel_BREAS",
@@ -163,6 +211,14 @@
         },
         "name": "Device_Beispiel_Loewenstein",
         "description": "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller Loewenstein",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/device-12547854521"
+        },
+        "name": "Device_Beispiel_ResMed",
+        "description": "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller ResMed",
         "exampleBoolean": true
       },
       {
@@ -207,6 +263,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/leckage-gemessen-beispiel-resmed"
+        },
+        "name": "leckage-gemessen-beispiel-resmed",
+        "description": "Leckagerate unter Beatmung",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"
+      },
+      {
+        "reference": {
           "reference": "Observation/peep-eingestellt-beispiel-breas"
         },
         "name": "PEEP",
@@ -239,6 +303,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-communication-alarm"
+        },
+        "name": "T-CABS Communication Alarm",
+        "description": "Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-device-beatmungsgeraet"
+        },
+        "name": "T-CABS Device Beatmungsgeraet",
+        "description": "Ein Beatmungsgeraet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/tidalvolumen-eingestellt-beispiel-breas"
         },
         "name": "Tidalvolumen",
@@ -258,7 +338,7 @@
           "reference": "StructureDefinition/t-cabs-observation-triggeredbreaths"
         },
         "name": "Triggered Breaths",
-        "description": "Prozentzahl der selbstständig getriggerten Atemzüge innerhlab eines Zeitraums",
+        "description": "Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums",
         "exampleBoolean": false
       },
       {
@@ -267,6 +347,22 @@
         },
         "name": "triggeredBreaths_gemessen_beispiel_breas",
         "description": "TreatmentDataDetailDto - triggeredBreaths",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
+      },
+      {
+        "reference": {
+          "reference": "Observation/triggeredBreaths-gemessen-beispiel-loewenstein"
+        },
+        "name": "triggeredBreaths_gemessen_beispiel_loewenstein",
+        "description": "Atemzüge die vom Patienten eigenständig getriggert wurden",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
+      },
+      {
+        "reference": {
+          "reference": "Observation/triggeredBreaths-gemessen-beispiel-resmed"
+        },
+        "name": "triggeredBreaths_gemessen_beispiel_resmed",
+        "description": "Atemzüge die vom Patienten eigenständig getriggert wurden",
         "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
       }
     ],

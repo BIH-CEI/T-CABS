@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "beatmungsstunden-gemessen-beispiel-resmed",
+  "id": "beatmungsstunden-gemessen-beispiel-breas",
   "meta": {
     "profile": [
       "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"
@@ -28,7 +28,7 @@
   },
   "partOf": [
     {
-      "reference": "Procedure/procedure-CPAP-123"
+      "reference": "Procedure/procedure-PSV-123"
     }
   ],
   "effectivePeriod": {
@@ -38,13 +38,10 @@
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "h",
-    "value": 12
+    "value": 8
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/patient-44187887-a48d-4f4e-9393-e4207045a2c4"
-  },
-  "device": {
-    "reference": "DeviceMetric/deviceMetric-gemessen-beispiel-resmed"
+    "reference": "Patient/patient-98219fce-813a-41f2-94ff-861d59b89715"
   }
 }

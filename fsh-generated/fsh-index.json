@@ -8,6 +8,14 @@
     "endLine": 26
   },
   {
+    "outputFile": "Device-device-12547854521.json",
+    "fshName": "device-12547854521",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_Device_ResMed_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
     "outputFile": "Device-device-1573.json",
     "fshName": "device-1573",
     "fshType": "Instance",
@@ -40,10 +48,26 @@
     "endLine": 8
   },
   {
+    "outputFile": "DeviceMetric-deviceMetric-eingestellt-beispiel-resmed.json",
+    "fshName": "deviceMetric-eingestellt-beispiel-resmed",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_DeviceMetric_ResMed_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
     "outputFile": "DeviceMetric-deviceMetric-gemessen-beispiel-breas.json",
     "fshName": "deviceMetric-gemessen-beispiel-breas",
     "fshType": "Instance",
     "fshFile": "Beispiele/Breas/T_CABS_DeviceMetric_BREAS_Beispiele.fsh",
+    "startLine": 11,
+    "endLine": 18
+  },
+  {
+    "outputFile": "DeviceMetric-deviceMetric-gemessen-beispiel-resmed.json",
+    "fshName": "deviceMetric-gemessen-beispiel-resmed",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_DeviceMetric_ResMed_Beispiel.fsh",
     "startLine": 11,
     "endLine": 18
   },
@@ -64,6 +88,14 @@
     "endLine": 26
   },
   {
+    "outputFile": "Observation-amv-gemessen-beispiel-resmed.json",
+    "fshName": "amv-gemessen-beispiel-resmed",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_Observation_AVM_gemessen_ResMed_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 28
+  },
+  {
     "outputFile": "Observation-atemfrequenz-gemessen-beispiel-breas.json",
     "fshName": "atemfrequenz-gemessen-beispiel-breas",
     "fshType": "Instance",
@@ -80,12 +112,36 @@
     "endLine": 26
   },
   {
+    "outputFile": "Observation-atemfrequenz-gemessen-beispiel-resmed.json",
+    "fshName": "atemfrequenz-gemessen-beispiel-resmed",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_Observation_Atemfrequenz_ResMed_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Observation-beatmungsstunden-gemessen-beispiel-breas.json",
+    "fshName": "beatmungsstunden-gemessen-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Observation_Beatmungsstunden_BREAS_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Observation-beatmungsstunden-gemessen-beispiel-loewenstein.json",
+    "fshName": "beatmungsstunden-gemessen-beispiel-loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_Observation_Beatmungsstunden_Loewenstein_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
     "outputFile": "Observation-beatmungsstunden-gemessen-beispiel-resmed.json",
     "fshName": "beatmungsstunden-gemessen-beispiel-resmed",
     "fshType": "Instance",
     "fshFile": "Beispiele/ResMed/T_CABS_Observation_Beatmungsstunden_ResMed_Beispiel.fsh",
-    "startLine": 1,
-    "endLine": 22
+    "startLine": 2,
+    "endLine": 25
   },
   {
     "outputFile": "Observation-inspPress-eingestellt-beispiel-breas.json",
@@ -109,6 +165,14 @@
     "fshType": "Instance",
     "fshFile": "Beispiele/Loewenstein/T_CABS_Observation_Leckage_Loewenstein_Beispiel.fsh",
     "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-leckage-gemessen-beispiel-resmed.json",
+    "fshName": "leckage-gemessen-beispiel-resmed",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_Observation_Leckage_ResMed_Beispiel.fsh",
+    "startLine": 2,
     "endLine": 25
   },
   {
@@ -150,6 +214,22 @@
     "fshFile": "Beispiele/Breas/T_CABS_Observation_TriggeredBreath_BREAS_Beispiel.fsh",
     "startLine": 1,
     "endLine": 24
+  },
+  {
+    "outputFile": "Observation-triggeredBreaths-gemessen-beispiel-loewenstein.json",
+    "fshName": "triggeredBreaths-gemessen-beispiel-loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Loewenstein/T_CABS_Observation_TriggeredBreath_Loewenstein_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-triggeredBreaths-gemessen-beispiel-resmed.json",
+    "fshName": "triggeredBreaths-gemessen-beispiel-resmed",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_Observation_TriggeredBreaths_ResMed_Beispiel.fsh",
+    "startLine": 2,
+    "endLine": 25
   },
   {
     "outputFile": "Patient-patient-123456.json",
@@ -198,6 +278,22 @@
     "fshFile": "Beispiele/Breas/T_CABS_Procedure_BREAS_Beispiel.fsh",
     "startLine": 1,
     "endLine": 16
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-communication-alarm.json",
+    "fshName": "T_CABS_Communication_Alarm",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Communication_Alarm.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-device-beatmungsgeraet.json",
+    "fshName": "T_CABS_Device_Beatmungsgeraet",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Device.fsh",
+    "startLine": 1,
+    "endLine": 34
   },
   {
     "outputFile": "StructureDefinition-t-cabs-observation-ahi.json",

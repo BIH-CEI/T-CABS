@@ -1,10 +1,10 @@
-// portionOfMandatoryBreaths_percent
-Instance: triggeredBreaths-gemessen-beispiel-loewenstein
+// alveolarVentilation() spontTriggBreaths
+Instance: triggeredBreaths-gemessen-beispiel-resmed
 InstanceOf: t-cabs-observation-triggeredbreaths
 Usage: #example
-Title: "triggeredBreaths_gemessen_beispiel_loewenstein"
+Title: "triggeredBreaths_gemessen_beispiel_resmed"
 Description: "Atemzüge die vom Patienten eigenständig getriggert wurden"
-* partOf = Reference(procedure-Bilevel-123)
+* partOf = Reference(procedure-CPAP-123)
 * status = #final
 
 * category.coding = $SCT#40617009 "Artificial ventilation (regime/therapy)"
@@ -16,7 +16,7 @@ Description: "Atemzüge die vom Patienten eigenständig getriggert wurden"
 * effectivePeriod.start = "2019-12-23T09:30:10+01:00"
 * effectivePeriod.end = "2019-12-24T09:30:10+01:00"
 
-* subject = Reference(patient-123456)
+* subject = Reference(patient-44187887-a48d-4f4e-9393-e4207045a2c4)
 
 * valueQuantity.value = 35
 * valueQuantity.system = "http://unitsofmeasure.org"

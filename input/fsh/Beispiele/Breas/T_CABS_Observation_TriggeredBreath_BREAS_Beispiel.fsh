@@ -17,7 +17,7 @@ Description: "TreatmentDataDetailDto - triggeredBreaths"
 
 * subject = Reference(patient-98219fce-813a-41f2-94ff-861d59b89715)
 
-* valueQuantity.value = 20
+* valueQuantity.value = 50
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #%
 

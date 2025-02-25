@@ -1,0 +1,23 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-communication-alarm",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-alarm",
+  "name": "T_CABS_Communication_Alarm",
+  "title": "T-CABS Communication Alarm",
+  "status": "draft",
+  "description": "Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Communication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Communication",
+        "path": "Communication"
+      }
+    ]
+  }
+}
