@@ -15,6 +15,45 @@
   "differential": {
     "element": [
       {
+        "id": "Device.identifier",
+        "path": "Device.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "type.coding.code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Device.identifier:serialNumber",
+        "path": "Device.identifier",
+        "sliceName": "serialNumber",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.identifier:serialNumber.use",
+        "path": "Device.identifier.use",
+        "patternCode": "official"
+      },
+      {
+        "id": "Device.identifier:serialNumber.type",
+        "path": "Device.identifier.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SNO",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+            }
+          ]
+        }
+      },
+      {
         "id": "Device.manufacturer",
         "path": "Device.manufacturer",
         "min": 1,
@@ -23,7 +62,20 @@
       {
         "id": "Device.deviceName.type",
         "path": "Device.deviceName.type",
-        "fixedCode": "model-name"
+        "patternCode": "model-name"
+      },
+      {
+        "id": "Device.type",
+        "path": "Device.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "706172005",
+              "system": "http://snomed.info/sct",
+              "display": "Ventilator (physical object)"
+            }
+          ]
+        }
       },
       {
         "id": "Device.patient",

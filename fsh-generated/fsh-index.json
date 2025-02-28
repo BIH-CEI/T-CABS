@@ -293,7 +293,7 @@
     "fshType": "Profile",
     "fshFile": "Profile/T_CABS_Device.fsh",
     "startLine": 1,
-    "endLine": 34
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-t-cabs-observation-ahi.json",
