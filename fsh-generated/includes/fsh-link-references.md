@@ -14,6 +14,7 @@
 [deviceMetric-Gemessen-Beispiel-Loewenstein]: DeviceMetric-deviceMetric-Gemessen-Beispiel-Loewenstein.html
 [device-1573]: Device-device-1573.html
 [device-1234]: Device-device-1234.html
+[Example-TCABS-Observation-SPO2]: Observation-Example-TCABS-Observation-SPO2.html
 [T_CABS_Observation_Gewicht]: StructureDefinition-t-cabs-observation-gewicht.html
 [inspPress-eingestellt-beispiel-breas]: Observation-inspPress-eingestellt-beispiel-breas.html
 [maximalInspiratoryPressure-eingestellt-beispiel-breas]: Observation-maximalInspiratoryPressure-eingestellt-beispiel-breas.html
@@ -25,6 +26,7 @@
 [procedure-Bilevel-123]: Procedure-procedure-Bilevel-123.html
 [procedure-CPAP-123]: Procedure-procedure-CPAP-123.html
 [T_CABS_Observation_Arterieller_Blutdruck]: StructureDefinition-t-cabs-observation-arterieller-blutdruck.html
+[T_CABS_Observation_SPO2]: StructureDefinition-t-cabs-observation-spo2.html
 [tidalvolumen-eingestellt-beispiel-breas]: Observation-tidalvolumen-eingestellt-beispiel-breas.html
 [tidalvolumen-gemessen-beispiel-breas]: Observation-tidalvolumen-gemessen-beispiel-breas.html
 [T_CABS_Observation_TriggeredBreaths]: StructureDefinition-t-cabs-observation-triggeredbreaths.html
