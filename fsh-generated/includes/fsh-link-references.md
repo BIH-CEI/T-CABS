@@ -8,6 +8,7 @@
 [atemfrequenz-gemessen-beispiel-loewenstein]: Observation-atemfrequenz-gemessen-beispiel-loewenstein.html
 [atemfrequenz-gemessen-beispiel-breas]: Observation-atemfrequenz-gemessen-beispiel-breas.html
 [T_CABS_Observation_Beatmungsstunden]: StructureDefinition-t-cabs-observation-beatmungsstunden.html
+[T_CABS_Observation_BMI]: StructureDefinition-t-cabs-observation-bmi.html
 [deviceMetric-eingestellt-beispiel-breas]: DeviceMetric-deviceMetric-eingestellt-beispiel-breas.html
 [deviceMetric-gemessen-beispiel-breas]: DeviceMetric-deviceMetric-gemessen-beispiel-breas.html
 [deviceMetric-Eingestellt-Beispiel-Loewenstein]: DeviceMetric-deviceMetric-Eingestellt-Beispiel-Loewenstein.html
@@ -15,6 +16,7 @@
 [device-1573]: Device-device-1573.html
 [device-1234]: Device-device-1234.html
 [Example-TCABS-Observation-SPO2]: Observation-Example-TCABS-Observation-SPO2.html
+[T_CABS_Observation_FEV1]: StructureDefinition-t-cabs-observationfev1.html
 [T_CABS_Observation_Gewicht]: StructureDefinition-t-cabs-observation-gewicht.html
 [inspPress-eingestellt-beispiel-breas]: Observation-inspPress-eingestellt-beispiel-breas.html
 [maximalInspiratoryPressure-eingestellt-beispiel-breas]: Observation-maximalInspiratoryPressure-eingestellt-beispiel-breas.html

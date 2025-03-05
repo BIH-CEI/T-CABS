@@ -130,6 +130,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-bmi"
+        },
+        "name": "BMI Observation",
+        "description": "Profile for recording Body Mass Index (BMI) as an observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "DeviceMetric/deviceMetric-eingestellt-beispiel-breas"
         },
         "name": "DeviceMetric_Beispiel_BREAS",
@@ -182,6 +190,14 @@
         },
         "name": "Example-TCABS-Observation-SPO2",
         "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observationfev1"
+        },
+        "name": "FEV1 Observation",
+        "description": "Profile for recording Forced Expiratory Volume in 1 second (FEV1) as an observation.",
+        "exampleBoolean": false
       },
       {
         "reference": {
