@@ -9,7 +9,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -80,6 +80,26 @@
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
         "patternCode": "%"
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "min": 1
+      },
+      {
+        "id": "Observation.bodySite.coding",
+        "path": "Observation.bodySite.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.bodySite.coding.code",
+        "path": "Observation.bodySite.coding.code",
+        "fixedCode": "11527006"
+      },
+      {
+        "id": "Observation.bodySite.coding.display",
+        "path": "Observation.bodySite.coding.display",
+        "patternString": "Arterial system structure (body structure)"
       }
     ]
   }

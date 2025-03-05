@@ -45,6 +45,20 @@
       {
         "system": "http://loinc.org",
         "code": "2708-6"
+      },
+      {
+        "code": "442476006",
+        "system": "http://snomed.info/sct",
+        "display": "Arterial oxygen saturation (observable entity)"
+      },
+      {
+        "code": "59408-5",
+        "system": "http://loinc.org",
+        "display": "\tOxygen saturation in Arterial blood by Pulse oximetry"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "150324"
       }
     ]
   },
@@ -58,15 +72,15 @@
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "%",
-    "value": 98,
-    "unit": "percent"
+    "unit": "percent",
+    "value": 98
   },
   "bodySite": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
         "code": "11527006",
-        "display": "Arterial system structure (body structure)"
+        "display": "Arterial system structure (body structure)",
+        "system": "http://snomed.info/sct"
       }
     ]
   },

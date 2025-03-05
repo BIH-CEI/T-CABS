@@ -2,9 +2,10 @@ Alias: $vs-mii-icu-code-monitoring-und-vitaldaten-snomed = https://gematik.de/fh
 Alias: $vs-mii-icu-code-monitoring-und-vitaldaten-loinc = https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-loinc
 Alias: $vs-mii-icu-code-monitoring-und-vitaldaten-iso11073 = https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-iso11073
 Alias: $vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten = https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten
+Alias: $sd-mii-icu-monitoring-und-vitaldaten = https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten
 
 Profile: T_CABS_Observation_SPO2
-Parent: SD_MII_ICU_Monitoring_Und_Vitaldaten
+Parent: SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie
 Id: t-cabs-observation-spo2
 Title: "T-CABS Observation SPO2"
 
@@ -21,11 +22,13 @@ Title: "T-CABS Observation SPO2"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #%
 
+* bodySite 1..1 MS
+* bodySite.coding 1..* MS
+* bodySite.coding.system 1..1 MS
+* bodySite.coding.code = #11527006 (exactly)
+* bodySite.coding.display = "Arterial system structure (body structure)"
 
 
-Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
-Alias: $sct = http://snomed.info/sct
-Alias: $loinc = http://loinc.org
 
 Instance: Example-TCABS-Observation-SPO2
 InstanceOf: T_CABS_Observation_SPO2
