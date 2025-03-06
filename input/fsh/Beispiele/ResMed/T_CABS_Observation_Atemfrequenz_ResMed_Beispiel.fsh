@@ -23,4 +23,4 @@ Description: "Atemfrequenz gemessen"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #/min
 
-* device = Reference(deviceMetric-gemessen-Beispiel-resmed)
+* device = Reference(deviceMetric-gemessen-beispiel-resmed)

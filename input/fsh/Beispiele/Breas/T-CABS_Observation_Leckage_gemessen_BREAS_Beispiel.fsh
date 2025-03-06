@@ -22,4 +22,4 @@ TreatmentDataDetailDto - leakage"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #L/min
 
-* device = Reference(deviceMetric-gemessen-Beispiel-breas)
+* device = Reference(deviceMetric-gemessen-beispiel-breas)

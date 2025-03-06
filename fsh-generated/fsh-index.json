@@ -291,9 +291,9 @@
     "outputFile": "StructureDefinition-t-cabs-device-beatmungsgeraet.json",
     "fshName": "T_CABS_Device_Beatmungsgeraet",
     "fshType": "Profile",
-    "fshFile": "Profile/T_CABS_Device.fsh",
+    "fshFile": "Profile/T_CABS_Device_Beatmungsgeraet.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-t-cabs-observation-ahi.json",
@@ -326,5 +326,13 @@
     "fshFile": "Profile/T_CABS_Observation_TriggeredBreaths.fsh",
     "startLine": 1,
     "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-procedure-beatmung.json",
+    "fshName": "T_CABS_Procedure_Beatmung",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Procedure_Beatmung.fsh",
+    "startLine": 1,
+    "endLine": 5
   }
 ]

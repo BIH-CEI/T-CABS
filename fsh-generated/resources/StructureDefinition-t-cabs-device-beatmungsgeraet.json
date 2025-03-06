@@ -56,8 +56,16 @@
       {
         "id": "Device.manufacturer",
         "path": "Device.manufacturer",
+        "short": "Name des Gerätehersteller",
+        "definition": "Löwenstein Medical\nBREAS Medical \nResMed\n",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Device.deviceName.name",
+        "path": "Device.deviceName.name",
+        "short": "Modellname",
+        "definition": "Luisa\nPrisma VENT30\nPrisma VENT40\nPrisma VENT50/50-C\nVivo3\nVivo45\nVivo45LS\nVivo50\nVivo55\nVivo65\nLumis150\nStellar100\nStellar130\nStellar150\nAstral100\nAstral150"
       },
       {
         "id": "Device.deviceName.type",
@@ -80,6 +88,15 @@
       {
         "id": "Device.patient",
         "path": "Device.patient",
+        "short": "Referenz auf den Patienten",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Device.owner",
+        "path": "Device.owner",
+        "short": "Reference auf den Provider des Gerätes",
+        "comment": "Zum Beispiel: \nJochum\nzuther + hautmann\nproVita arndt\nLöwenstein\nVivisol\nSapio Life\n",
         "min": 1,
         "mustSupport": true
       }

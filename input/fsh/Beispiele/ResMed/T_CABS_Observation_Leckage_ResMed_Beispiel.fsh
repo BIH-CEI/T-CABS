@@ -22,4 +22,4 @@ Description: "Leckagerate unter Beatmung"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #L/min
 
-* device = Reference(deviceMetric-gemessen-Beispiel-resmed)
+* device = Reference(deviceMetric-gemessen-beispiel-resmed)

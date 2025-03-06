@@ -15,14 +15,28 @@ Description: "Ein Beatmungsgeraet"
 * type = $SCT#706172005 "Ventilator (physical object)" 
 
 // Hersteller
-* manufacturer 1..1 MS 
+* manufacturer 1..1 MS
+* manufacturer ^short = "Name des Gerätehersteller"
+* manufacturer ^definition = "Löwenstein Medical
+BREAS Medical 
+ResMed
+"
 
 // Provider - Organization definieren?
-// * owner 1..1 MS 
+* owner 1..1 MS
+* owner ^short = "Reference auf den Provider des Gerätes"
+* owner ^comment = "Zum Beispiel: 
+Jochum
+zuther + hautmann
+proVita arndt
+Löwenstein
+Vivisol
+Sapio Life
+"
 
-// Modellname in deviceName.name
-/*
-Luisa
+* deviceName.type = #model-name
+* deviceName.name ^short = "Modellname"
+* deviceName.name ^definition = "Luisa
 Prisma VENT30
 Prisma VENT40
 Prisma VENT50/50-C
@@ -37,12 +51,9 @@ Stellar100
 Stellar130
 Stellar150
 Astral100
-Astral150
-*/
-* deviceName.type = #model-name
-// * deviceName.name from T_CABS_VS_Modellnamen (preferred) pattern?
+Astral150"
 
 * patient 1..1 MS
-
+* patient ^short = "Referenz auf den Patienten"
 // * contact
 // * location

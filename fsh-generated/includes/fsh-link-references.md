@@ -33,6 +33,7 @@
 [procedure-CPAP-123]: Procedure-procedure-CPAP-123.html
 [T_CABS_Communication_Alarm]: StructureDefinition-t-cabs-communication-alarm.html
 [T_CABS_Device_Beatmungsgeraet]: StructureDefinition-t-cabs-device-beatmungsgeraet.html
+[T_CABS_Procedure_Beatmung]: StructureDefinition-t-cabs-procedure-beatmung.html
 [tidalvolumen-eingestellt-beispiel-breas]: Observation-tidalvolumen-eingestellt-beispiel-breas.html
 [tidalvolumen-gemessen-beispiel-breas]: Observation-tidalvolumen-gemessen-beispiel-breas.html
 [T_CABS_Observation_TriggeredBreaths]: StructureDefinition-t-cabs-observation-triggeredbreaths.html

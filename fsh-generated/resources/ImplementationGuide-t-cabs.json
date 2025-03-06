@@ -319,6 +319,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-procedure-beatmung"
+        },
+        "name": "T-CABS Procedure Beatmung",
+        "description": "Die Beatmungsprozedur",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/tidalvolumen-eingestellt-beispiel-breas"
         },
         "name": "Tidalvolumen",

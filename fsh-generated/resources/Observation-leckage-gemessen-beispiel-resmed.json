@@ -50,6 +50,6 @@
     "reference": "Patient/patient-44187887-a48d-4f4e-9393-e4207045a2c4"
   },
   "device": {
-    "reference": "deviceMetric-gemessen-Beispiel-resmed"
+    "reference": "DeviceMetric/deviceMetric-gemessen-beispiel-resmed"
   }
 }
