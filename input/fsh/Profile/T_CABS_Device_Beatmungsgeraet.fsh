@@ -1,15 +1,8 @@
 Profile: T_CABS_Device_Beatmungsgeraet
 Parent: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device
 Id: t-cabs-device-beatmungsgeraet
-Title: "T-CABS Device Beatmungsgeraet"
-Description: "Ein Beatmungsgeraet"
-
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "type.coding.code"
-* identifier ^slicing.rules = #open
-* identifier contains serialNumber 1..1 MS
-* identifier[serialNumber].type = http://terminology.hl7.org/CodeSystem/v2-0203#SNO
-* identifier[serialNumber].use = #official
+Title: "T-CABS Device Beatmungsgerät"
+Description: "Ein Beatmungsgerät"
 
 // 426160001(Oxygen ventilator (physical object)) oder 23562009(Household ventilator, device (physical object))?
 * type = $SCT#706172005 "Ventilator (physical object)" 
@@ -21,10 +14,12 @@ Description: "Ein Beatmungsgeraet"
 BREAS Medical 
 ResMed
 "
+* serialNumber 1..1 MS
+* serialNumber ^short = "Seriennummer des Gerätes"
 
 // Provider - Organization definieren?
 * owner 1..1 MS
-* owner ^short = "Reference auf den Provider des Gerätes"
+* owner ^short = "Referenz auf den Provider des Gerätes"
 * owner ^comment = "Zum Beispiel: 
 Jochum
 zuther + hautmann
@@ -35,7 +30,7 @@ Sapio Life
 "
 
 * deviceName.type = #model-name
-* deviceName.name ^short = "Modellname"
+* deviceName.name ^short = "Modellname des Gerätes"
 * deviceName.name ^definition = "Luisa
 Prisma VENT30
 Prisma VENT40

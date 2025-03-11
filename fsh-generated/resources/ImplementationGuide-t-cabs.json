@@ -24,7 +24,7 @@
   "dependsOn": [
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
-      "version": "2025.0.1",
+      "version": "2025.0.2",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
       "id": "de_medizininformatikinitiative_kerndatensatz_icu"
     },
@@ -33,6 +33,12 @@
       "version": "2025.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person",
       "id": "de_medizininformatikinitiative_kerndatensatz_person"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.fall",
+      "version": "2025.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ImplementationGuide/mii-ig-fall",
+      "id": "de_medizininformatikinitiative_kerndatensatz_fall"
     }
   ],
   "definition": {
@@ -313,8 +319,8 @@
         "reference": {
           "reference": "StructureDefinition/t-cabs-device-beatmungsgeraet"
         },
-        "name": "T-CABS Device Beatmungsgeraet",
-        "description": "Ein Beatmungsgeraet",
+        "name": "T-CABS Device Beatmungsgerät",
+        "description": "Ein Beatmungsgerät",
         "exampleBoolean": false
       },
       {

@@ -293,7 +293,7 @@
     "fshType": "Profile",
     "fshFile": "Profile/T_CABS_Device_Beatmungsgeraet.fsh",
     "startLine": 1,
-    "endLine": 57
+    "endLine": 52
   },
   {
     "outputFile": "StructureDefinition-t-cabs-observation-ahi.json",
@@ -333,6 +333,6 @@
     "fshType": "Profile",
     "fshFile": "Profile/T_CABS_Procedure_Beatmung.fsh",
     "startLine": 1,
-    "endLine": 5
+    "endLine": 14
   }
 ]
