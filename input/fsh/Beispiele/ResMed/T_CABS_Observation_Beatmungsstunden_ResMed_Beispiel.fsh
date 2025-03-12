@@ -2,7 +2,7 @@
 Instance: beatmungsstunden-gemessen-beispiel-resmed
 InstanceOf: t-cabs-observation-beatmungsstunden
 Usage: #example
-Title: "Beatmungsstunden gemessen Beispiel ResMed"
+Title: "Beispiel Beatmungsstunden ResMed (Observation)"
 Description: "Beispiel von gemessenen Beatmungsstunden eines Gerätes des Unternehmens ResMed"
 
 * category.coding = $SCT#40617009 "Artificial ventilation (regime/therapy)"

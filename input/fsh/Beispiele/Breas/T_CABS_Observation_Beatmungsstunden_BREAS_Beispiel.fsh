@@ -2,7 +2,7 @@
 Instance: beatmungsstunden-gemessen-beispiel-breas
 InstanceOf: t-cabs-observation-beatmungsstunden
 Usage: #example
-Title: "Beatmungsstunden gemessen Beispiel Breas"
+Title: "Beispiel gemessen Beatmungsstunden Breas (Observation)"
 Description: "Beatmungsdauer des Patienten in Stunden"
 * category.coding = $SCT#40617009 "Artificial ventilation (regime/therapy)"
 

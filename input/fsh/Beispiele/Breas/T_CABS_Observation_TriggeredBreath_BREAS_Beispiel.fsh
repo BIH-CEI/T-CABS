@@ -1,7 +1,7 @@
 Instance: triggeredBreaths-gemessen-beispiel-breas
 InstanceOf: t-cabs-observation-triggeredbreaths
 Usage: #example
-Title: "triggeredBreaths_gemessen_beispiel_breas"
+Title: "Beispiel TriggeredBreaths Breas (Observation)"
 Description: "TreatmentDataDetailDto - triggeredBreaths"
 * partOf = Reference(procedure-PSV-123)
 * status = #final

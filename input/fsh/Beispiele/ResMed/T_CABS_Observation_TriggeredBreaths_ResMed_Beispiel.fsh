@@ -2,8 +2,8 @@
 Instance: triggeredBreaths-gemessen-beispiel-resmed
 InstanceOf: t-cabs-observation-triggeredbreaths
 Usage: #example
-Title: "triggeredBreaths_gemessen_beispiel_resmed"
-Description: "Atemzüge die vom Patienten eigenständig getriggert wurden"
+Title: "Beispiel TriggeredBreaths ResMed (Observation)"
+Description: "Gemessene Atemzüge die vom Patienten eigenständig getriggert wurden"
 * partOf = Reference(procedure-CPAP-123)
 * status = #final
 

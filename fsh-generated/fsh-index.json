@@ -285,7 +285,7 @@
     "fshType": "Profile",
     "fshFile": "Profile/T_CABS_Communication_Alarm.fsh",
     "startLine": 1,
-    "endLine": 5
+    "endLine": 8
   },
   {
     "outputFile": "StructureDefinition-t-cabs-device-beatmungsgeraet.json",

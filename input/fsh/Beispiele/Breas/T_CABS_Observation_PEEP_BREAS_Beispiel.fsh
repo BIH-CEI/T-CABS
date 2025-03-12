@@ -2,7 +2,7 @@
 Instance: peep-eingestellt-beispiel-breas
 InstanceOf: SD_MII_ICU_Positiv_Endexspiratorischer_Druck
 Usage: #example
-Title: "PEEP"
+Title: "Beispiel eingestellter PEEP Breas (Observation)"
 Description: "Beispielhafte Einstellung des positiv-endexpiratorischer Druckes (PEEP)"
 * identifier.value = "1"
 * partOf = Reference(procedure-PSV-123)

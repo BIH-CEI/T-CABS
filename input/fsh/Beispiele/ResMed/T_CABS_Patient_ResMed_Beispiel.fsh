@@ -1,7 +1,7 @@
 Instance: patient-44187887-a48d-4f4e-9393-e4207045a2c4
 InstanceOf: $mii-person-patient
 Usage: #example
-Title: "44187887-a48d-4f4e-9393-e4207045a2c4"
+Title: "Beispiel Patient ResMed (Patient)"
 Description: "Patient mit der internen ID 44187887-a48d-4f4e-9393-e4207045a2c4"
 
 // externalId

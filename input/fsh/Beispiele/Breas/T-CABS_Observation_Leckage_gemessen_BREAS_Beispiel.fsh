@@ -1,7 +1,7 @@
 Instance: leckage-gemessen-beispiel-breas
 InstanceOf: t-cabs-observation-leckage
 Usage: #example
-Title: "leckage-gemessen-beispiel-breas"
+Title: "Beispiel Leckage Breas (Observation)"
 Description: "Leckagerate unter Beatmung -
 TreatmentDataDetailDto - leakage"
 * partOf = Reference(procedure-PSV-123)

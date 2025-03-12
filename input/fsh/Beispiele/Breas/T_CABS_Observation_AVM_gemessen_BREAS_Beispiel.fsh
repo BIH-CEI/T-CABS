@@ -1,7 +1,7 @@
 Instance: amv-gemessen-beispiel-breas
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-maschineller
 Usage: #example
-Title: "amv-gemessen-beispiel-breas"
+Title: "Beispiel gemessen AMV Breas (Observation)"
 Description: "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute
 TreatmentDataDetailDto - minuteVolume"
 

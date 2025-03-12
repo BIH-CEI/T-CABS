@@ -2,7 +2,7 @@
 Instance: atemfrequenz-gemessen-beispiel-resmed
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-mechanische-atemfrequenz-beatmet
 Usage: #example
-Title: "Atemfrequenz_gemessen_Beispiel_ResMed"
+Title: "Beispiel Atemfrequenz ResMed (Observation)"
 Description: "Atemfrequenz gemessen"
 * partOf = Reference(procedure-CPAP-123)
 * status = #final

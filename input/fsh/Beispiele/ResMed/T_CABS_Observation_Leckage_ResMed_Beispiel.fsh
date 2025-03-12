@@ -2,8 +2,8 @@
 Instance: leckage-gemessen-beispiel-resmed
 InstanceOf: t-cabs-observation-leckage
 Usage: #example
-Title: "leckage-gemessen-beispiel-resmed"
-Description: "Leckagerate unter Beatmung"
+Title: "Beispiel Leckage ResMed (Observation)"
+Description: "Gemessene Leckagerate unter Beatmung des Herstellers ResMed"
 * partOf = Reference(procedure-CPAP-123)
 * status = #final
 

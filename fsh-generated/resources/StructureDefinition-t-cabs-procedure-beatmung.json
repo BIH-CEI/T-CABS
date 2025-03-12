@@ -5,7 +5,7 @@
   "name": "T_CABS_Procedure_Beatmung",
   "title": "T-CABS Procedure Beatmung",
   "status": "draft",
-  "description": "Die Beatmungsprozedur",
+  "description": "Profil für die Beatmungsprozedur",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

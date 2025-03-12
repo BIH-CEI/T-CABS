@@ -1,7 +1,7 @@
 Instance: deviceMetric-eingestellt-beispiel-resmed
 InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
 Usage: #example
-Title: "DeviceMetric_Beispiel_ResMed"
+Title: "Beispiel Einstellung ResMed (DeviceMetric)"
 Description: "Eingestellter Parameter"
 * category = #setting
 * type.coding = $SCT#40617009 "Artificial ventilation (regime/therapy)"
@@ -11,7 +11,7 @@ Description: "Eingestellter Parameter"
 Instance: deviceMetric-gemessen-beispiel-resmed
 InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
 Usage: #example
-Title: "DeviceMetric_Beispiel_ResMed"
+Title: "Beispiel Messung ResMed (DeviceMetric)"
 Description: "Gemessener Parameter"
 * category = #measurement
 * type.coding = $SCT#40617009 "Artificial ventilation (regime/therapy)"

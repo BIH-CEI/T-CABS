@@ -1,7 +1,7 @@
 Instance: patient-98219fce-813a-41f2-94ff-861d59b89715
 InstanceOf: $mii-person-patient
 Usage: #example
-Title: "98219fce-813a-41f2-94ff-861d59b89715"
+Title: "Beispiel Patient Breas (Patient)"
 Description: "Patient mit der UUID 98219fce-813a-41f2-94ff-861d59b89715"
 
 // medicalRecordNumber

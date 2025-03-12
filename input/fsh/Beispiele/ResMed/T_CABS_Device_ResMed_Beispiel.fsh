@@ -1,7 +1,7 @@
 Instance: device-12547854521
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device
 Usage: #example
-Title: "Device_Beispiel_ResMed"
+Title: "Beispiel Beatmungsgerät ResMed (Device)"
 Description: "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller ResMed"
 // deviceId
 * identifier.system = "http://www.resmed_example.com/identifiers/devices"

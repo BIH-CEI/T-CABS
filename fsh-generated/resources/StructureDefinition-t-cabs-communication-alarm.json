@@ -5,7 +5,7 @@
   "name": "T_CABS_Communication_Alarm",
   "title": "T-CABS Communication Alarm",
   "status": "draft",
-  "description": "Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes",
+  "description": "Abstraktes Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -15,8 +15,28 @@
   "differential": {
     "element": [
       {
-        "id": "Communication",
-        "path": "Communication"
+        "id": "Communication.about",
+        "path": "Communication.about",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Communication.sender",
+        "path": "Communication.sender",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"
+            ]
+          }
+        ]
       }
     ]
   }

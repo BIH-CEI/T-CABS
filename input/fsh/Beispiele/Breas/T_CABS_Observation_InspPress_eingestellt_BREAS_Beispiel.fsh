@@ -2,7 +2,7 @@
 Instance: inspPress-eingestellt-beispiel-breas
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mittlerer-beatmungsdruck
 Usage: #example
-Title: "InspiratoryPressure"
+Title: "Beispiel mittlerer Beatmungsdruck Breas (Observation)"
 Description: "Beispielhafte Einstellung des mittleren Beatmungsdruckes"
 * identifier.value = "0"
 * partOf = Reference(procedure-PSV-123)

@@ -1,7 +1,7 @@
 Instance: beatmungsstunden-gemessen-beispiel-loewenstein
 InstanceOf: t-cabs-observation-beatmungsstunden
 Usage: #example
-Title: "Beatmungsstunden gemessen Beispiel Löwenstein"
+Title: "Beispiel Beatmungsstunden Löwenstein (Observation)"
 Description: "Beatmungsdauer des Patienten in Stunden"
 * category.coding = $SCT#40617009 "Artificial ventilation (regime/therapy)"
 
@@ -17,3 +17,5 @@ Description: "Beatmungsdauer des Patienten in Stunden"
 * valueQuantity.value = 6
 
 * subject = Reference(patient-123456)
+
+// Devicemetric!

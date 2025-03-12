@@ -2,8 +2,8 @@
 Instance: triggeredBreaths-gemessen-beispiel-loewenstein
 InstanceOf: t-cabs-observation-triggeredbreaths
 Usage: #example
-Title: "triggeredBreaths_gemessen_beispiel_loewenstein"
-Description: "Atemzüge die vom Patienten eigenständig getriggert wurden"
+Title: "Beispiel TriggeredBreath Löwenstein (Observation)"
+Description: "Beispielhafte Beobachtung von Atemzüge die vom Patienten eigenständig getriggert wurden"
 * partOf = Reference(procedure-Bilevel-123)
 * status = #final
 

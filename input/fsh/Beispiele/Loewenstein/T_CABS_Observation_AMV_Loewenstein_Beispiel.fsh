@@ -1,7 +1,7 @@
 Instance: amv-gemessen-beispiel-loewenstein
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-maschineller
 Usage: #example
-Title: "amv-gemessen-beispiel-loewenstein"
+Title: "Beispiel AMV Löwenstein (Observation)"
 Description: "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute /
 minuteVolumeMedian_l_min - Median of the minute volume in l/min. Supported devices: prismaLINE, prismaVENT, Luisa"
 * partOf = Reference(procedure-Bilevel-123)
