@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Device",
+  "id" : "device-1234",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-1234</b></p><a name=\"device-1234\"> </a><a name=\"hcdevice-1234\"> </a><a name=\"device-1234-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device\">SD MII ICU ICU Device</a></p></div><p><b>identifier</b>: <code>http://www.loewenstein_example.com/identifiers/devices</code>/1234</p><p><b>status</b>: Active</p><p><b>serialNumber</b>: ABC5678DE</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>prisma SOFT</td><td>Model name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 714692006}\">Variable pressure jet ventilation device (physical object)</span></p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>v1.2.3</td></tr></table><p><b>patient</b>: <a href=\"Patient-patient-123456.html\">John Doe (official) (no stated gender), DoB: 1944-04-11 ( Medical record number)</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://www.loewenstein_example.com/identifiers/devices",
+    "value" : "1234"
+  }],
+  "status" : "active",
+  "serialNumber" : "ABC5678DE",
+  "deviceName" : [{
+    "name" : "prisma SOFT",
+    "type" : "model-name"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "714692006",
+      "display" : "Variable pressure jet ventilation device (physical object)"
+    }]
+  },
+  "version" : [{
+    "value" : "v1.2.3"
+  }],
+  "patient" : {
+    "reference" : "Patient/patient-123456"
+  }
+}

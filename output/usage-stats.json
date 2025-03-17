@@ -1,0 +1,101 @@
+{
+  "package": "t-cabs",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [],
+  "profiles": {
+    "Communication": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-alarm",
+        "title": "T-CABS Communication Alarm"
+      }
+    ],
+    "Device": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet",
+        "title": "T-CABS Device Beatmungsgerät"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
+        "title": "T-CABS Observation AHI"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden",
+        "title": "T-CABS Observation Beatmungsstunden"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
+        "title": "T-CABS Observation Leckage"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
+        "title": "T-CABS Observation TriggeredBreaths"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
+        "title": "T-CABS Procedure Beatmung"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum": [
+      "Procedure"
+    ],
+    "http://fhir.de/StructureDefinition/seitenlokalisation": [
+      "Procedure.code.coding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht": [
+      "Procedure"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/Observation/peep-eingestellt-beispiel-breas> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "peep-eingestellt-beispiel-breas"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/positiv-endexspiratorischer-druck"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/positiv-endexspiratorischer-druck>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation peep-eingestellt-beispiel-breas</b></p><a name=\"peep-eingestellt-beispiel-breas\"> </a><a name=\"hcpeep-eingestellt-beispiel-breas\"> </a><a name=\"peep-eingestellt-beispiel-breas-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/positiv-endexspiratorischer-druck\">SD MII ICU Positiv Endexspiratorischer Druck</a></p></div><p><b>identifier</b>: 1</p><p><b>partOf</b>: <a href=\"Procedure-procedure-PSV-123.html\">Procedure Pressure support ventilation (regime/therapy)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 40617009}\">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 250854009}, {http://loinc.org 76248-4}, {urn:iso:std:iso:11073:10101 151976}\">Positive end expiratory pressure (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-patient-98219fce-813a-41f2-94ff-861d59b89715.html\">PatFN-1496 PatLN-1496 (official) (no stated gender), DoB: 1950-02-17 ( Medical record number)</a></p><p><b>effective</b>: 2022-07-15 00:00:00+0100 --&gt; 2022-07-21 00:00:00+0100</p><p><b>value</b>: 3 cm[H2O]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm[H2O] = 'cm[H2O]')</span></p><p><b>device</b>: <a href=\"DeviceMetric-deviceMetric-eingestellt-beispiel-breas.html\">DeviceMetric: type = Artificial ventilation (regime/therapy); category = setting</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:partOf ( [
+     fhir:link <http://t-cabs.org/Procedure/procedure-PSV-123> ;
+     fhir:reference [ fhir:v "Procedure/procedure-PSV-123" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:40617009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "40617009" ] ;
+       fhir:display [ fhir:v "Artificial ventilation (regime/therapy)" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:250854009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "250854009" ] ;
+       fhir:display [ fhir:v "Positive end expiratory pressure (observable entity)" ]
+     ] [
+       a loinc:76248-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76248-4" ] ;
+       fhir:display [ fhir:v "PEEP Respiratory system --on ventilator" ]
+     ] [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "151976" ] ;
+       fhir:display [ fhir:v "Applied PEEP" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://t-cabs.org/Patient/patient-98219fce-813a-41f2-94ff-861d59b89715> ;
+     fhir:reference [ fhir:v "Patient/patient-98219fce-813a-41f2-94ff-861d59b89715" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2022-07-15T00:00:00+01:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2022-07-21T00:00:00+01:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "cm[H2O]" ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://t-cabs.org/DeviceMetric/deviceMetric-eingestellt-beispiel-breas> ;
+     fhir:reference [ fhir:v "DeviceMetric/deviceMetric-eingestellt-beispiel-breas" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

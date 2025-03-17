@@ -1,0 +1,58 @@
+[
+  {
+    "id" : "t-cabs",
+    "type" : "ImplementationGuide",
+    "url" : "http://t-cabs.org/ImplementationGuide/t-cabs",
+    "version" : "0.1.0",
+    "name" : "TCABS"
+  },
+  {
+    "id" : "t-cabs-communication-alarm",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-communication-alarm",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Communication_Alarm"
+  },
+  {
+    "id" : "t-cabs-device-beatmungsgeraet",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Device_Beatmungsgeraet"
+  },
+  {
+    "id" : "t-cabs-observation-ahi",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_AHI"
+  },
+  {
+    "id" : "t-cabs-observation-beatmungsstunden",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Beatmungsstunden"
+  },
+  {
+    "id" : "t-cabs-observation-leckage",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Leckage"
+  },
+  {
+    "id" : "t-cabs-observation-triggeredbreaths",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_TriggeredBreaths"
+  },
+  {
+    "id" : "t-cabs-procedure-beatmung",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Procedure_Beatmung"
+  }
+]
