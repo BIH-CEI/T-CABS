@@ -1,7 +1,7 @@
 Instance: triggeredBreaths-gemessen-beispiel-breas
 InstanceOf: t-cabs-observation-triggeredbreaths
 Usage: #example
-Title: "triggeredBreaths_gemessen_beispiel_breas"
+Title: "Beispiel TriggeredBreaths Breas (Observation)"
 Description: "TreatmentDataDetailDto - triggeredBreaths"
 * partOf = Reference(procedure-PSV-123)
 * status = #final
@@ -17,8 +17,8 @@ Description: "TreatmentDataDetailDto - triggeredBreaths"
 
 * subject = Reference(patient-98219fce-813a-41f2-94ff-861d59b89715)
 
-* valueQuantity.value = 20
+* valueQuantity.value = 50
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #%
 
-* device = Reference(deviceMetric-gemessen-Beispiel-breas)
+* device = Reference(deviceMetric-gemessen-beispiel-breas)

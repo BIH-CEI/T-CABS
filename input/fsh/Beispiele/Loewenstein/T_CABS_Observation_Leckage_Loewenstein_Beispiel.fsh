@@ -1,8 +1,8 @@
 Instance: leckage-gemessen-beispiel-loewenstein
 InstanceOf: t-cabs-observation-leckage
 Usage: #example
-Title: "leckage-gemessen-beispiel-loewenstein"
-Description: "Leckagerate unter Beatmung -
+Title: "Beispiel Leckage Löwenstein (Observation)"
+Description: "Beispiel für eine beobachtete Leckagerate unter Beatmung -
 leakageMedian_liter_min - Median of unintentional leakage flow in l/min. Supported devices: prismaSOFT, prismaSMART, prismaLINE, prismaVENT, Luisa"
 * partOf = Reference(procedure-Bilevel-123)
 * status = #final

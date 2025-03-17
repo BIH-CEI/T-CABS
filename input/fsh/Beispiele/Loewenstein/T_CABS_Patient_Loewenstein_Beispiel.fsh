@@ -1,8 +1,8 @@
 Instance: patient-123456
 InstanceOf: $mii-person-patient
 Usage: #example
-Title: "123456"
-Description: "Patient mit der internen ID 123456"
+Title: "Beispiel Patient Löwenstein (Patient)"
+Description: "Ein Beispiel-Patient mit der internen ID 123456"
 
 // externalId
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR

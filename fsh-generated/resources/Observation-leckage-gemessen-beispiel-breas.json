@@ -50,6 +50,6 @@
     "reference": "Patient/patient-98219fce-813a-41f2-94ff-861d59b89715"
   },
   "device": {
-    "reference": "deviceMetric-gemessen-Beispiel-breas"
+    "reference": "DeviceMetric/deviceMetric-gemessen-beispiel-breas"
   }
 }

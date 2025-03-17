@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="triggeredBreaths-gemessen-beispiel-loewenstein"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation triggeredBreaths-gemessen-beispiel-loewenstein</b></p><a name="triggeredBreaths-gemessen-beispiel-loewenstein"> </a><a name="hctriggeredBreaths-gemessen-beispiel-loewenstein"> </a><a name="triggeredBreaths-gemessen-beispiel-loewenstein-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-observation-triggeredbreaths.html">T-CABS Observation TriggeredBreaths</a></p></div><p><b>partOf</b>: <a href="Procedure-procedure-Bilevel-123.html">Procedure Bilevel artificial ventilation (regime/therapy)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 40617009}">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 250878004}, {http://loinc.org LA20140-2}">Triggered breath rate (observable entity)</span></p><p><b>subject</b>: <a href="Patient-patient-123456.html">John Doe (official) (no stated gender), DoB: 1944-04-11 ( Medical record number)</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-24 09:30:10+0100</p><p><b>value</b>: 35 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p><p><b>device</b>: <a href="DeviceMetric-deviceMetric-gemessen-beispiel-resmed.html">DeviceMetric: type = Artificial ventilation (regime/therapy); category = measurement</a></p></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/procedure-Bilevel-123"/>
+  </partOf>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="40617009"/>
+      <display value="Artificial ventilation (regime/therapy)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="250878004"/>
+      <display value="Triggered breath rate (observable entity)"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA20140-2"/>
+      <display value="Unassisted respiratory rate"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-123456"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2019-12-23T09:30:10+01:00"/>
+    <end value="2019-12-24T09:30:10+01:00"/>
+  </effectivePeriod>
+  <valueQuantity>
+    <value value="35"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <device>
+    <reference value="DeviceMetric/deviceMetric-gemessen-beispiel-resmed"/>
+  </device>
+</Observation>
