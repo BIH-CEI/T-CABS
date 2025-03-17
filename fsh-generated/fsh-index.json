@@ -48,12 +48,21 @@
     "endLine": 18
   },
   {
+<<<<<<< Updated upstream
     "outputFile": "Observation-Example-TCABS-Observation-SPO2.json",
     "fshName": "Example-TCABS-Observation-SPO2",
     "fshType": "Instance",
     "fshFile": "Profile/Vital-parameters/T_CABS_Observation_SPO2.fsh",
     "startLine": 33,
     "endLine": 67
+=======
+    "outputFile": "DeviceMetric-deviceMetric-gemessen-beispiel-resmed.json",
+    "fshName": "deviceMetric-gemessen-beispiel-resmed",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/ResMed/T_CABS_DeviceMetric_ResMed_Beispiel.fsh",
+    "startLine": 11,
+    "endLine": 18
+>>>>>>> Stashed changes
   },
   {
     "outputFile": "Observation-amv-gemessen-beispiel-breas.json",
@@ -200,6 +209,25 @@
     "endLine": 16
   },
   {
+<<<<<<< Updated upstream
+=======
+    "outputFile": "StructureDefinition-t-cabs-communication-alarm.json",
+    "fshName": "T_CABS_Communication_Alarm",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Communication_Alarm.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-device-beatmungsgeraet.json",
+    "fshName": "T_CABS_Device_Beatmungsgeraet",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Device_Beatmungsgeraet.fsh",
+    "startLine": 1,
+    "endLine": 52
+  },
+  {
+>>>>>>> Stashed changes
     "outputFile": "StructureDefinition-t-cabs-observation-ahi.json",
     "fshName": "T_CABS_Observation_AHI",
     "fshType": "Profile",
@@ -264,14 +292,6 @@
     "endLine": 14
   },
   {
-    "outputFile": "StructureDefinition-t-cabs-observation-spo2.json",
-    "fshName": "T_CABS_Observation_SPO2",
-    "fshType": "Profile",
-    "fshFile": "Profile/Vital-parameters/T_CABS_Observation_SPO2.fsh",
-    "startLine": 7,
-    "endLine": 29
-  },
-  {
     "outputFile": "StructureDefinition-t-cabs-observation-triggeredbreaths.json",
     "fshName": "T_CABS_Observation_TriggeredBreaths",
     "fshType": "Profile",
@@ -280,11 +300,20 @@
     "endLine": 14
   },
   {
+<<<<<<< Updated upstream
     "outputFile": "StructureDefinition-t-cabs-observationfev1.json",
     "fshName": "T_CABS_Observation_FEV1",
     "fshType": "Profile",
     "fshFile": "Profile/Vital-parameters/T_CABS_Observation_FEV1.fsh",
     "startLine": 1,
     "endLine": 25
+=======
+    "outputFile": "StructureDefinition-t-cabs-procedure-beatmung.json",
+    "fshName": "T_CABS_Procedure_Beatmung",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Procedure_Beatmung.fsh",
+    "startLine": 1,
+    "endLine": 14
+>>>>>>> Stashed changes
   }
 ]

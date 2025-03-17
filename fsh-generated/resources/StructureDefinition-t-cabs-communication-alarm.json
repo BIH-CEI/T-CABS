@@ -1,0 +1,85 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-communication-alarm",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-alarm",
+  "name": "T_CABS_Communication_Alarm",
+  "title": "T-CABS Communication Alarm",
+  "status": "draft",
+  "description": "Abstraktes Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Communication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Communication.category",
+        "path": "Communication.category",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "alert"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.subject",
+        "path": "Communication.subject",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.about",
+        "path": "Communication.about",
+        "definition": "Der gemessene Wert des Parameters, der die Grenze überschritten hat ((Observation.device auf Messung(DeviceMetric))).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.sender",
+        "path": "Communication.sender",
+        "definition": "Referenz auf das, den Alarm auslösende, Beatmungsgerät.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.reasonReference",
+        "path": "Communication.reasonReference",
+        "definition": "Optionale Referenz auf den eingestellten Wert des Parameters.",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

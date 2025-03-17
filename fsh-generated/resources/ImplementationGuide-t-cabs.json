@@ -91,6 +91,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-atemfrequenz"
+        },
+        "name": "Atemfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/amv-gemessen-beispiel-loewenstein"
         },
         "name": "amv-gemessen-beispiel-loewenstein",
@@ -99,14 +106,65 @@
       },
       {
         "reference": {
+<<<<<<< Updated upstream
           "reference": "StructureDefinition/t-cabs-observation-atemfrequenz"
         },
         "name": "Atemfrequenz",
         "exampleBoolean": false
+=======
+          "reference": "Observation/amv-gemessen-beispiel-resmed"
+        },
+        "name": "Beispiel AMV ResMed (Observation)",
+        "description": "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute\nTreatmentDataDetailDto - minuteVolume",
+        "exampleBoolean": true
+>>>>>>> Stashed changes
       },
       {
         "reference": {
           "reference": "Observation/atemfrequenz-gemessen-beispiel-loewenstein"
+<<<<<<< Updated upstream
+=======
+        },
+        "name": "Beispiel Atemfrequenz Löwenstein (Observation)",
+        "description": "Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/atemfrequenz-gemessen-beispiel-resmed"
+        },
+        "name": "Beispiel Atemfrequenz ResMed (Observation)",
+        "description": "Atemfrequenz gemessen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/device-1573"
+        },
+        "name": "Beispiel Beatmungsgerät Breas (Device)",
+        "description": "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller BREAS",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/device-1234"
+        },
+        "name": "Beispiel Beatmungsgerät Löwenstein (Device)",
+        "description": "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller Loewenstein",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/device-12547854521"
+        },
+        "name": "Beispiel Beatmungsgerät ResMed (Device)",
+        "description": "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller ResMed",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-Bilevel-123"
+>>>>>>> Stashed changes
         },
         "name": "Atemfrequenz",
         "description": "Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa",
@@ -130,11 +188,27 @@
       },
       {
         "reference": {
+<<<<<<< Updated upstream
           "reference": "StructureDefinition/t-cabs-observation-bmi"
         },
         "name": "BMI Observation",
         "description": "Profile for recording Body Mass Index (BMI) as an observation.",
         "exampleBoolean": false
+=======
+          "reference": "Observation/peep-eingestellt-beispiel-breas"
+        },
+        "name": "Beispiel eingestellter PEEP Breas (Observation)",
+        "description": "Beispielhafte Einstellung des positiv-endexpiratorischer Druckes (PEEP)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/tidalvolumen-eingestellt-beispiel-breas"
+        },
+        "name": "Beispiel eingestelltes Tidalvolumen Breas (Observation)",
+        "description": "Beispiel eines eingestellten Tidalvolumens",
+        "exampleBoolean": true
+>>>>>>> Stashed changes
       },
       {
         "reference": {
@@ -186,6 +260,7 @@
       },
       {
         "reference": {
+<<<<<<< Updated upstream
           "reference": "Observation/Example-TCABS-Observation-SPO2"
         },
         "name": "Example-TCABS-Observation-SPO2",
@@ -209,6 +284,9 @@
       {
         "reference": {
           "reference": "Observation/inspPress-eingestellt-beispiel-breas"
+=======
+          "reference": "Observation/atemfrequenz-gemessen-beispiel-breas"
+>>>>>>> Stashed changes
         },
         "name": "InspiratoryPressure",
         "description": "Beispielhafte Einstellung des mittleren Beatmungsdruckes",
@@ -280,6 +358,7 @@
       },
       {
         "reference": {
+<<<<<<< Updated upstream
           "reference": "StructureDefinition/t-cabs-observation-arterieller-blutdruck"
         },
         "name": "T-CABS Observation Arterieller Blutdruck",
@@ -296,6 +375,9 @@
       {
         "reference": {
           "reference": "Observation/tidalvolumen-eingestellt-beispiel-breas"
+=======
+          "reference": "Patient/patient-123456"
+>>>>>>> Stashed changes
         },
         "name": "Tidalvolumen",
         "description": "Beispiel eines eingestellten Tidalvolumens",
@@ -327,6 +409,96 @@
       },
       {
         "reference": {
+<<<<<<< Updated upstream
+=======
+          "reference": "Observation/triggeredBreaths-gemessen-beispiel-resmed"
+        },
+        "name": "Beispiel TriggeredBreaths ResMed (Observation)",
+        "description": "Gemessene Atemzüge die vom Patienten eigenständig getriggert wurden",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-bmi"
+        },
+        "name": "BMI Observation",
+        "description": "Profile for recording Body Mass Index (BMI) as an observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-gewicht"
+        },
+        "name": "Gewicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-communication-alarm"
+        },
+        "name": "T-CABS Communication Alarm",
+        "description": "Abstraktes Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-device-beatmungsgeraet"
+        },
+        "name": "T-CABS Device Beatmungsgerät",
+        "description": "Profil für ein Beatmungsgerät",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-ahi"
+        },
+        "name": "T-CABS Observation AHI",
+        "description": "Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs aufgetretenen Apnoe- und Hypopnoe-Episoden, geteilt durch die Schlafdauer in Stunden",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-arterieller-blutdruck"
+        },
+        "name": "T-CABS Observation Arterieller Blutdruck",
+        "description": "Profile for documenting arterial blood pressure observations within T-CABS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-beatmungsstunden"
+        },
+        "name": "T-CABS Observation Beatmungsstunden",
+        "description": "Profil für die Anzahl der Beatmungsstunden",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-leckage"
+        },
+        "name": "T-CABS Observation Leckage",
+        "description": "Profil für die Leckagerate unter Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-triggeredbreaths"
+        },
+        "name": "T-CABS Observation TriggeredBreaths",
+        "description": "Profil für die Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-procedure-beatmung"
+        },
+        "name": "T-CABS Procedure Beatmung",
+        "description": "Profil für die Beatmungsprozedur",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+>>>>>>> Stashed changes
           "reference": "StructureDefinition/t-cabs-observation-herzfrequenz"
         },
         "name": "T_CABS_Observation_Herzfrequenz",
