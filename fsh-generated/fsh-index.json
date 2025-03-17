@@ -52,8 +52,8 @@
     "fshName": "Example-TCABS-Observation-SPO2",
     "fshType": "Instance",
     "fshFile": "Profile/Vital-parameters/T_CABS_Observation_SPO2.fsh",
-    "startLine": 37,
-    "endLine": 71
+    "startLine": 33,
+    "endLine": 67
   },
   {
     "outputFile": "Observation-amv-gemessen-beispiel-breas.json",

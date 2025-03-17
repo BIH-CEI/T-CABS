@@ -1,5 +1,5 @@
 Profile: T_CABS_Observation_FEV1
-Parent: Observation
+Parent: SD_MII_ICU_Monitoring_Und_Vitaldaten
 Id: t-cabs-observationfev1
 Title: "FEV1 Observation"
 Description: "Profile for recording Forced Expiratory Volume in 1 second (FEV1) as an observation."

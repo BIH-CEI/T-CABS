@@ -10,20 +10,13 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.category",
-        "path": "Observation.category",
-        "min": 1,
-        "mustSupport": true
+        "path": "Observation.category"
       },
       {
         "id": "Observation.category.coding",
@@ -47,14 +40,28 @@
         "patternString": "Vital Signs"
       },
       {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "mustSupport": true
+        "id": "Observation.category:vs-cat",
+        "path": "Observation.category",
+        "sliceName": "vs-cat"
+      },
+      {
+        "id": "Observation.category:vs-cat.coding",
+        "path": "Observation.category.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.category:loinc-fhir-core",
+        "path": "Observation.category",
+        "sliceName": "loinc-fhir-core"
+      },
+      {
+        "id": "Observation.category:loinc-fhir-core.coding",
+        "path": "Observation.category.coding",
+        "min": 1
       },
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 1,
         "max": "1",
         "mustSupport": true
       },
@@ -74,10 +81,22 @@
         "fixedString": "Forced expiratory volume in 1 second (FEV1) [Volume] Respiratory system"
       },
       {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "min": 1,
-        "mustSupport": true
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "max": "1"
       },
       {
         "id": "Observation.subject.reference",
@@ -85,58 +104,22 @@
         "min": 1
       },
       {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1
       },
       {
-        "id": "Observation.value[x]:valueQuantity",
-        "path": "Observation.value[x]",
-        "sliceName": "valueQuantity",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.value",
-        "path": "Observation.value[x].value",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.unit",
+        "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
-        "id": "Observation.value[x]:valueQuantity.system",
+        "id": "Observation.value[x].system",
         "path": "Observation.value[x].system",
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation.value[x]:valueQuantity.code",
+        "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
         "fixedCode": "L"
       }
