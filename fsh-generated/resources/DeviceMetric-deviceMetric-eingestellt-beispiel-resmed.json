@@ -1,0 +1,22 @@
+{
+  "resourceType": "DeviceMetric",
+  "id": "deviceMetric-eingestellt-beispiel-resmed",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "40617009",
+        "display": "Artificial ventilation (regime/therapy)"
+      }
+    ]
+  },
+  "category": "setting",
+  "source": {
+    "reference": "Device/device-12547854521"
+  }
+}

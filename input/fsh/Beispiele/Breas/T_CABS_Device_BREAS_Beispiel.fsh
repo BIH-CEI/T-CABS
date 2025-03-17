@@ -1,7 +1,7 @@
 Instance: device-1573
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device
 Usage: #example
-Title: "Device_Beispiel_BREAS"
+Title: "Beispiel Beatmungsgerät Breas (Device)"
 Description: "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller BREAS"
 // deviceId
 * identifier.system = "http://www.breas_example.com/identifiers/devices"

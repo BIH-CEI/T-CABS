@@ -1,7 +1,7 @@
 Instance: procedure-Bilevel-123
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung
 Usage: #example
-Title: "Procedure_Beatmungsprozedur"
+Title: "Beispiel Beatmungsprozedur Löwenstein (Procedure)"
 Description: "Ein Beispiel für eine Prozedur zur Beatmung"
 
 * status = #in-progress

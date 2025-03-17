@@ -1,7 +1,7 @@
 Instance: atemfrequenz-gemessen-beispiel-breas
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-mechanische-atemfrequenz-beatmet
 Usage: #example
-Title: "Atemfrequenz-123"
+Title: "Beispiel gemessen Atemfrequenz Breas (Observation)"
 Description: "Eine beispielhafte Atemfrequenz der Firma Breas
 Treatment_Data - Breaths per minute (BPM)"
 * partOf = Reference(procedure-PSV-123)

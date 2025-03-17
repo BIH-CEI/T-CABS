@@ -2,7 +2,7 @@
 Instance: tidalvolumen-gemessen-beispiel-breas
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-waehrend-beatmung
 Usage: #example
-Title: "Tidalvolumen"
+Title: "Beispiel gemessenes Tidalvolumen Breas (Observation)"
 Description: "Beispiel eines gemessenen Tidalvolumens während der Beatmung"
 
 * partOf = Reference(procedure-PSV-123)

@@ -1,0 +1,24 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-procedure-beatmung",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
+  "name": "T_CABS_Procedure_Beatmung",
+  "title": "T-CABS Procedure Beatmung",
+  "status": "draft",
+  "description": "Profil für die Beatmungsprozedur",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "patternCode": "in-progress"
+      }
+    ]
+  }
+}

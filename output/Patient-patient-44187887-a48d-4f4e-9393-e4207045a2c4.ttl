@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/Patient/patient-44187887-a48d-4f4e-9393-e4207045a2c4> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-44187887-a48d-4f4e-9393-e4207045a2c4"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-44187887-a48d-4f4e-9393-e4207045a2c4</b></p><a name=\"patient-44187887-a48d-4f4e-9393-e4207045a2c4\"> </a><a name=\"hcpatient-44187887-a48d-4f4e-9393-e4207045a2c4\"> </a><a name=\"patient-44187887-a48d-4f4e-9393-e4207045a2c4-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient\">MII PR Person Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">John Doe (official) (no stated gender), DoB: 1944-04-11 ( Medical record number)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: c501e66d-bcd0-4d99-b745-0970e65d55dd</li><li>Managing Organization: DIGI Medical AZ</li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] [
+         fhir:code [ fhir:v "PI" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://www.resmed.com/identifiers/patient"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "44187887-a48d-4f4e-9393-e4207045a2c4" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Doe" ] ;
+     fhir:given ( [ fhir:v "John" ] )
+  ] ) ; # 
+  fhir:birthDate [ fhir:v "1944-04-11"^^xsd:date] ; # 
+  fhir:generalPractitioner ( [
+     fhir:display [ fhir:v "c501e66d-bcd0-4d99-b745-0970e65d55dd" ]
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:display [ fhir:v "DIGI Medical AZ" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

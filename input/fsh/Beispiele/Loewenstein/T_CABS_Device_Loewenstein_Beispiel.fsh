@@ -1,7 +1,7 @@
 Instance: device-1234
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device
 Usage: #example
-Title: "Device_Beispiel_Loewenstein"
+Title: "Beispiel Beatmungsgerät Löwenstein (Device)"
 Description: "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller Loewenstein"
 // deviceId
 * identifier.system = "http://www.loewenstein_example.com/identifiers/devices"

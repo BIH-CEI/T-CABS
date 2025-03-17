@@ -2,7 +2,7 @@
 Instance: tidalvolumen-eingestellt-beispiel-breas
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-einstellung
 Usage: #example
-Title: "Tidalvolumen"
+Title: "Beispiel eingestelltes Tidalvolumen Breas (Observation)"
 Description: "Beispiel eines eingestellten Tidalvolumens"
 
 * partOf = Reference(procedure-PSV-123)

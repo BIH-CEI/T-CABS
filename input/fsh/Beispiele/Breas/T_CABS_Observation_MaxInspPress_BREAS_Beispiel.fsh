@@ -2,7 +2,7 @@
 Instance: maximalInspiratoryPressure-eingestellt-beispiel-breas
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/maximaler-beatmungsdruck
 Usage: #example
-Title: "InspiratoryPressure"
+Title: "Beispiel eingestellter max. Beatmungsdruck Breas (Observation)"
 Description: "Beipspielhafte Einstellung des maximalen Beatmungsdruckes"
 * identifier.value = "8"
 * partOf = Reference(procedure-PSV-123)
