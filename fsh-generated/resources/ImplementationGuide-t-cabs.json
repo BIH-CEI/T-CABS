@@ -33,6 +33,18 @@
       "version": "2025.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person",
       "id": "de_medizininformatikinitiative_kerndatensatz_person"
+    },
+    {
+      "packageId": "de.gematik.isik-basismodul",
+      "version": "4.0.1",
+      "uri": "http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul",
+      "id": "de_gematik_isik_basismodul"
+    },
+    {
+      "packageId": "de.gematik.isik-vitalparameter",
+      "version": "4.0.0",
+      "uri": "http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter",
+      "id": "de_gematik_isik_vitalparameter"
     }
   ],
   "definition": {
@@ -44,6 +56,13 @@
         "name": " Beispiel Beatmungsprozedur Breas (Procedure)",
         "description": "Ein Beispiel für eine Prozedur zur Beatmung",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-atemfrequenz"
+        },
+        "name": "Atemfrequenz",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -103,13 +122,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-atemfrequenz"
-        },
-        "name": "Atemfrequenz",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Procedure/procedure-Bilevel-123"
         },
         "name": "Beispiel Beatmungsprozedur Löwenstein (Procedure)",
@@ -147,14 +159,6 @@
         "name": "Beispiel eingestellter max. Beatmungsdruck Breas (Observation)",
         "description": "Beipspielhafte Einstellung des maximalen Beatmungsdruckes",
         "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-bmi"
-        },
-        "name": "BMI Observation",
-        "description": "Profile for recording Body Mass Index (BMI) as an observation.",
-        "exampleBoolean": false
       },
       {
         "reference": {
@@ -203,28 +207,6 @@
         "name": "Beispiel gemessen AMV Breas (Observation)",
         "description": "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute\nTreatmentDataDetailDto - minuteVolume",
         "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/Example-TCABS-Observation-SPO2"
-        },
-        "name": "Example-TCABS-Observation-SPO2",
-        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/t-cabs-observationfev1"
-        },
-        "name": "FEV1 Observation",
-        "description": "Profile for recording Forced Expiratory Volume in 1 second (FEV1) as an observation.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-gewicht"
-        },
-        "name": "Gewicht",
-        "exampleBoolean": false
       },
       {
         "reference": {
@@ -316,21 +298,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-arterieller-blutdruck"
-        },
-        "name": "T-CABS Observation Arterieller Blutdruck",
-        "description": "Profile for documenting arterial blood pressure observations within T-CABS.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-spo2"
-        },
-        "name": "T-CABS Observation SPO2",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Patient/patient-123456"
         },
         "name": "Beispiel Patient Löwenstein (Patient)",
@@ -360,6 +327,122 @@
         "name": "Beispiel TriggeredBreaths Breas (Observation)",
         "description": "TreatmentDataDetailDto - triggeredBreaths",
         "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
+      },
+      {
+        "reference": {
+          "reference": "Observation/triggeredBreaths-gemessen-beispiel-resmed"
+        },
+        "name": "Beispiel TriggeredBreaths ResMed (Observation)",
+        "description": "Gemessene Atemzüge die vom Patienten eigenständig getriggert wurden",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-bmi"
+        },
+        "name": "BMI Observation",
+        "description": "Profile for recording Body Mass Index (BMI) as an observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/Example-TCABS-Observation-SPO2"
+        },
+        "name": "Example-TCABS-Observation-SPO2",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observationfev1"
+        },
+        "name": "FEV1 Observation",
+        "description": "Profile for recording Forced Expiratory Volume in 1 second (FEV1) as an observation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-gewicht"
+        },
+        "name": "Gewicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-communication-alarm"
+        },
+        "name": "T-CABS Communication Alarm",
+        "description": "Abstraktes Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-device-beatmungsgeraet"
+        },
+        "name": "T-CABS Device Beatmungsgerät",
+        "description": "Profil für ein Beatmungsgerät",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-ahi"
+        },
+        "name": "T-CABS Observation AHI",
+        "description": "Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs aufgetretenen Apnoe- und Hypopnoe-Episoden, geteilt durch die Schlafdauer in Stunden",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-arterieller-blutdruck"
+        },
+        "name": "T-CABS Observation Arterieller Blutdruck",
+        "description": "Profile for documenting arterial blood pressure observations within T-CABS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-beatmungsstunden"
+        },
+        "name": "T-CABS Observation Beatmungsstunden",
+        "description": "Profil für die Anzahl der Beatmungsstunden",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-leckage"
+        },
+        "name": "T-CABS Observation Leckage",
+        "description": "Profil für die Leckagerate unter Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-spo2"
+        },
+        "name": "T-CABS Observation SPO2",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-triggeredbreaths"
+        },
+        "name": "T-CABS Observation TriggeredBreaths",
+        "description": "Profil für die Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-procedure-beatmung"
+        },
+        "name": "T-CABS Procedure Beatmung",
+        "description": "Profil für die Beatmungsprozedur",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-herzfrequenz"
+        },
+        "name": "T_CABS_Observation_Herzfrequenz",
+        "exampleBoolean": false
       }
     ],
     "page": {
