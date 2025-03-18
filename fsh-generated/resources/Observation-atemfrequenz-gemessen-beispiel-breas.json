@@ -3,7 +3,7 @@
   "id": "atemfrequenz-gemessen-beispiel-breas",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-mechanische-atemfrequenz-beatmet"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
     ]
   },
   "partOf": [

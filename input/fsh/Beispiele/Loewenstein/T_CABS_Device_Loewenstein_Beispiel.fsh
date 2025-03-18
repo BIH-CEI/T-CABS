@@ -1,5 +1,5 @@
 Instance: device-1234
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device
+InstanceOf: t-cabs-device-beatmungsgeraet
 Usage: #example
 Title: "Beispiel Beatmungsgerät Löwenstein (Device)"
 Description: "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller Loewenstein"
@@ -23,5 +23,6 @@ Description: "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Herstel
 // patientUuid
 * patient = Reference(patient-123456)
 
-* type = $SCT#714692006 "Variable pressure jet ventilation device (physical object)"
+* manufacturer = "Löwenstein Medical"
 
+* owner.display = "Löwenstein"

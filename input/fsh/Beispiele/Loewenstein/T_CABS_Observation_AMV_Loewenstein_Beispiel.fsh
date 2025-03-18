@@ -1,5 +1,5 @@
 Instance: amv-gemessen-beispiel-loewenstein
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-maschineller
+InstanceOf: t-cabs-observation-amv
 Usage: #example
 Title: "Beispiel AMV Löwenstein (Observation)"
 Description: "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute /

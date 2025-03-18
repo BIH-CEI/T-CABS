@@ -1,59 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "t-cabs-observation-ahi",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
-  "name": "T_CABS_Observation_AHI",
-  "title": "T-CABS Observation AHI",
+  "id": "t-cabs-observation-amv",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv",
+  "name": "T_CABS_Observation_AMV",
+  "title": "T-CABS Observation AMV",
   "status": "draft",
-  "description": "Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs aufgetretenen Apnoe- und Hypopnoe-Episoden, geteilt durch die Schlafdauer in Stunden",
+  "description": "Profil für ein gemessenes oder eingestelltes Atemminutenvolumen",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-maschineller",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Observation.code.coding:sct",
-        "path": "Observation.code.coding",
-        "sliceName": "sct",
-        "patternCoding": {
-          "code": "774099003",
-          "system": "http://snomed.info/sct",
-          "display": "Apnea Hypopnea Index (observable entity)"
-        }
-      },
-      {
-        "id": "Observation.code.coding:loinc",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "patternCoding": {
-          "code": "90564-6",
-          "system": "http://loinc.org",
-          "display": "Central apnea hypopnea index"
-        }
-      },
-      {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Period"
-          }
-        ]
-      },
-      {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Observation.value[x].code",
-        "path": "Observation.value[x].code",
-        "patternCode": "{score}"
-      },
       {
         "id": "Observation.referenceRange",
         "path": "Observation.referenceRange",

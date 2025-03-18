@@ -1,5 +1,5 @@
 Instance: deviceMetric-eingestellt-beispiel-breas
-InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
+InstanceOf: t-cabs-devicemetric-eingestellter-gemessener-parameter
 Usage: #example
 Title: "Beispiel Einstellung Breas (DeviceMetric)"
 Description: "Eingestellter Parameter"
@@ -9,7 +9,7 @@ Description: "Eingestellter Parameter"
 
 
 Instance: deviceMetric-gemessen-beispiel-breas
-InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
+InstanceOf: t-cabs-devicemetric-eingestellter-gemessener-parameter
 Usage: #example
 Title: "Beispiel Messung Breas (DeviceMetric)"
 Description: "Gemessener Parameter"

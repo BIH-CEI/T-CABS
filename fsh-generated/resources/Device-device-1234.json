@@ -3,7 +3,7 @@
   "id": "device-1234",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"
     ]
   },
   "identifier": [
@@ -14,8 +14,8 @@
   ],
   "deviceName": [
     {
-      "name": "prisma SOFT",
-      "type": "model-name"
+      "type": "model-name",
+      "name": "prisma SOFT"
     }
   ],
   "version": [
@@ -23,18 +23,13 @@
       "value": "v1.2.3"
     }
   ],
+  "owner": {
+    "display": "Löwenstein"
+  },
   "status": "active",
   "serialNumber": "ABC5678DE",
   "patient": {
     "reference": "Patient/patient-123456"
   },
-  "type": {
-    "coding": [
-      {
-        "code": "714692006",
-        "system": "http://snomed.info/sct",
-        "display": "Variable pressure jet ventilation device (physical object)"
-      }
-    ]
-  }
+  "manufacturer": "Löwenstein Medical"
 }

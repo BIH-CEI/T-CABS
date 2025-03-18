@@ -1,5 +1,5 @@
 Instance: atemfrequenz-gemessen-beispiel-breas
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-mechanische-atemfrequenz-beatmet
+InstanceOf: t-cabs-observation-af
 Usage: #example
 Title: "Beispiel gemessen Atemfrequenz Breas (Observation)"
 Description: "Eine beispielhafte Atemfrequenz der Firma Breas

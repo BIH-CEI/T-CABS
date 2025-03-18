@@ -43,5 +43,8 @@
   "status": "final",
   "subject": {
     "reference": "Patient/patient-123456"
+  },
+  "device": {
+    "reference": "DeviceMetric/deviceMetric-Gemessen-Beispiel-Loewenstein"
   }
 }

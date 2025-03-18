@@ -57,7 +57,7 @@
         },
         "name": "Beispiel AMV Löwenstein (Observation)",
         "description": "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute /\nminuteVolumeMedian_l_min - Median of the minute volume in l/min. Supported devices: prismaLINE, prismaVENT, Luisa",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"
       },
       {
         "reference": {
@@ -65,7 +65,7 @@
         },
         "name": "Beispiel AMV ResMed (Observation)",
         "description": "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute\nTreatmentDataDetailDto - minuteVolume",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"
       },
       {
         "reference": {
@@ -73,7 +73,7 @@
         },
         "name": "Beispiel Atemfrequenz Löwenstein (Observation)",
         "description": "Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
       },
       {
         "reference": {
@@ -81,7 +81,7 @@
         },
         "name": "Beispiel Atemfrequenz ResMed (Observation)",
         "description": "Atemfrequenz gemessen",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
       },
       {
         "reference": {
@@ -89,7 +89,7 @@
         },
         "name": "Beispiel Beatmungsgerät Breas (Device)",
         "description": "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller BREAS",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"
       },
       {
         "reference": {
@@ -97,7 +97,7 @@
         },
         "name": "Beispiel Beatmungsgerät Löwenstein (Device)",
         "description": "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller Loewenstein",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"
       },
       {
         "reference": {
@@ -105,7 +105,7 @@
         },
         "name": "Beispiel Beatmungsgerät ResMed (Device)",
         "description": "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller ResMed",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"
       },
       {
         "reference": {
@@ -169,7 +169,7 @@
         },
         "name": "Beispiel Einstellung Breas (DeviceMetric)",
         "description": "Eingestellter Parameter",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"
       },
       {
         "reference": {
@@ -177,7 +177,7 @@
         },
         "name": "Beispiel Einstellung Löwenstein (DeviceMetric)",
         "description": "Eingestellter Parameter",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"
       },
       {
         "reference": {
@@ -185,7 +185,7 @@
         },
         "name": "Beispiel Einstellung ResMed (DeviceMetric)",
         "description": "Eingestellter Parameter",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"
       },
       {
         "reference": {
@@ -193,7 +193,7 @@
         },
         "name": "Beispiel gemessen AMV Breas (Observation)",
         "description": "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute\nTreatmentDataDetailDto - minuteVolume",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"
       },
       {
         "reference": {
@@ -201,7 +201,7 @@
         },
         "name": "Beispiel gemessen Atemfrequenz Breas (Observation)",
         "description": "Eine beispielhafte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
       },
       {
         "reference": {
@@ -249,7 +249,7 @@
         },
         "name": "Beispiel Messung Breas (DeviceMetric)",
         "description": "Gemessener Parameter",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"
       },
       {
         "reference": {
@@ -257,7 +257,7 @@
         },
         "name": "Beispiel Messung Löwenstein (DeviceMetric)",
         "description": "Gemessener Parameter",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"
       },
       {
         "reference": {
@@ -265,7 +265,7 @@
         },
         "name": "Beispiel Messung ResMed (DeviceMetric)",
         "description": "Gemessener Parameter",
-        "exampleBoolean": true
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"
       },
       {
         "reference": {
@@ -341,6 +341,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"
+        },
+        "name": "T-CABS DeviceMetric eingestellter oder gemessener Parameter",
+        "description": "Profil für eingestellte oder gemessene Parameter eines Beatmungsgerätes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-af"
+        },
+        "name": "T-CABS Observation AF",
+        "description": "Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/t-cabs-observation-ahi"
         },
         "name": "T-CABS Observation AHI",
@@ -349,10 +365,18 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-amv"
+        },
+        "name": "T-CABS Observation AMV",
+        "description": "Profil für ein gemessenes oder eingestelltes Atemminutenvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/t-cabs-observation-beatmungsstunden"
         },
         "name": "T-CABS Observation Beatmungsstunden",
-        "description": "Profil für die Anzahl der Beatmungsstunden",
+        "description": "Profil für die empfohlene oder tatsächlich gemessene Anzahl der Beatmungsstunden je 24 Stunden",
         "exampleBoolean": false
       },
       {
@@ -388,6 +412,26 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Beispiele.html",
+          "title": "Beispiele",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Logisches Modell.html",
+          "title": "Logisches Modell",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Profile.html",
+          "title": "Profile",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Spezifikation.html",
+          "title": "Spezifikation",
           "generation": "markdown"
         }
       ]

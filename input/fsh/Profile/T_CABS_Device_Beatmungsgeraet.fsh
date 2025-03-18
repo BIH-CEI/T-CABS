@@ -50,5 +50,5 @@ Astral150"
 
 * patient 1..1 MS
 * patient ^short = "Referenz auf den Patienten"
-// * contact
+// * contact    
 // * location

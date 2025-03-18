@@ -5,10 +5,11 @@ InstanceOf: Communication
 Usage: #example
 Title: "Pressure High Alarm"
 Description: "Beispielhafter Alarm eines erhöhten Druckes"
+
 * sender = Reference(device-1573)
-* category = #alert
+
 * topic = $SCT#468881006 "Airway pressure alarm (physical object)"
+
 * basedOn = Reference(MaximalInspiratoryPressure) // Einstellung
 * reasonReference = 
-
 */

@@ -3,7 +3,7 @@
   "id": "deviceMetric-gemessen-beispiel-breas",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung"
+      "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"
     ]
   },
   "type": {

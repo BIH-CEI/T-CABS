@@ -12,3 +12,5 @@ Description: "Profil für die Prozentzahl der selbstständig getriggerten Atemz�
 
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #%
+
+* insert Grenzwertdefinition

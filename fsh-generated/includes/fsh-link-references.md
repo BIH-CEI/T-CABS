@@ -35,7 +35,10 @@
 [triggeredBreaths-gemessen-beispiel-resmed]: Observation-triggeredBreaths-gemessen-beispiel-resmed.html
 [T_CABS_Communication_Alarm]: StructureDefinition-t-cabs-communication-alarm.html
 [T_CABS_Device_Beatmungsgeraet]: StructureDefinition-t-cabs-device-beatmungsgeraet.html
+[T_CABS_DeviceMetric_Eingestellter_Gemessener_Parameter]: StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html
+[T_CABS_Observation_AF]: StructureDefinition-t-cabs-observation-af.html
 [T_CABS_Observation_AHI]: StructureDefinition-t-cabs-observation-ahi.html
+[T_CABS_Observation_AMV]: StructureDefinition-t-cabs-observation-amv.html
 [T_CABS_Observation_Beatmungsstunden]: StructureDefinition-t-cabs-observation-beatmungsstunden.html
 [T_CABS_Observation_Leckage]: StructureDefinition-t-cabs-observation-leckage.html
 [T_CABS_Observation_TriggeredBreaths]: StructureDefinition-t-cabs-observation-triggeredbreaths.html

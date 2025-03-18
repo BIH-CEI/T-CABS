@@ -18,4 +18,4 @@ Description: "Beatmungsdauer des Patienten in Stunden"
 
 * subject = Reference(patient-123456)
 
-// Devicemetric!
+* device = Reference(deviceMetric-Gemessen-Beispiel-Loewenstein)

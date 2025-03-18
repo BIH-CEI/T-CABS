@@ -1,5 +1,5 @@
 Instance: deviceMetric-eingestellt-beispiel-resmed
-InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
+InstanceOf: t-cabs-devicemetric-eingestellter-gemessener-parameter
 Usage: #example
 Title: "Beispiel Einstellung ResMed (DeviceMetric)"
 Description: "Eingestellter Parameter"
@@ -9,7 +9,7 @@ Description: "Eingestellter Parameter"
 
 
 Instance: deviceMetric-gemessen-beispiel-resmed
-InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
+InstanceOf: t-cabs-devicemetric-eingestellter-gemessener-parameter
 Usage: #example
 Title: "Beispiel Messung ResMed (DeviceMetric)"
 Description: "Gemessener Parameter"

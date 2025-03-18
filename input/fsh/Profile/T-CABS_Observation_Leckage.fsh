@@ -10,5 +10,7 @@ Description: "Profil für die Leckagerate unter Beatmung"
 * effective[x] 1..1
 * effective[x] only Period
 
-* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.system = $UCUM
 * valueQuantity.code = #L/min
+
+* insert Grenzwertdefinition
