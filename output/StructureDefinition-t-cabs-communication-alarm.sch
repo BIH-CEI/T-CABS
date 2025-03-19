@@ -9,4 +9,15 @@
     you may need to use this schematron fragment to build a, 
     single schematron that validates contained resources (if you have any) 
   -->
+  <sch:pattern>
+    <sch:title>f:Communication</sch:title>
+    <sch:rule context="f:Communication">
+      <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
+      <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
+      <sch:assert test="count(f:about) &gt;= 1">about: minimum cardinality of 'about' is 1</sch:assert>
+      <sch:assert test="count(f:about) &lt;= 1">about: maximum cardinality of 'about' is 1</sch:assert>
+      <sch:assert test="count(f:sender) &gt;= 1">sender: minimum cardinality of 'sender' is 1</sch:assert>
+      <sch:assert test="count(f:reasonReference) &lt;= 1">reasonReference: maximum cardinality of 'reasonReference' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

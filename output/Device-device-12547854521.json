@@ -2,30 +2,27 @@
   "resourceType" : "Device",
   "id" : "device-12547854521",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"]
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-12547854521</b></p><a name=\"device-12547854521\"> </a><a name=\"hcdevice-12547854521\"> </a><a name=\"device-12547854521-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device\">SD MII ICU ICU Device</a></p></div><p><b>identifier</b>: <code>http://www.resmed_example.com/identifiers/devices</code>/12345</p><p><b>status</b>: Active</p><p><b>serialNumber</b>: 12547854521</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Stellar</td><td>Model name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 714692006}\">Variable pressure jet ventilation device (physical object)</span></p><p><b>patient</b>: <a href=\"Patient-patient-44187887-a48d-4f4e-9393-e4207045a2c4.html\">John Doe (official) (no stated gender), DoB: 1944-04-11 ( Medical record number)</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-12547854521</b></p><a name=\"device-12547854521\"> </a><a name=\"hcdevice-12547854521\"> </a><a name=\"device-12547854521-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-beatmungsgeraet.html\">T-CABS Device Beatmungsgerät</a></p></div><p><b>identifier</b>: <code>http://www.resmed_example.com/identifiers/devices</code>/12345</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: ResMed</p><p><b>serialNumber</b>: 12547854521</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Stellar</td><td>Model name</td></tr></table><p><b>patient</b>: <a href=\"Patient-patient-44187887-a48d-4f4e-9393-e4207045a2c4.html\">John Doe (official) (no stated gender), DoB: 1944-04-11 ( Medical record number)</a></p><p><b>owner</b>: Vivisol</p></div>"
   },
   "identifier" : [{
     "system" : "http://www.resmed_example.com/identifiers/devices",
     "value" : "12345"
   }],
   "status" : "active",
+  "manufacturer" : "ResMed",
   "serialNumber" : "12547854521",
   "deviceName" : [{
     "name" : "Stellar",
     "type" : "model-name"
   }],
-  "type" : {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "714692006",
-      "display" : "Variable pressure jet ventilation device (physical object)"
-    }]
-  },
   "patient" : {
     "reference" : "Patient/patient-44187887-a48d-4f4e-9393-e4207045a2c4"
+  },
+  "owner" : {
+    "display" : "Vivisol"
   }
 }

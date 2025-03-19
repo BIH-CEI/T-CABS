@@ -13,6 +13,22 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spezifikation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="logisches_modell.html">Logisches Modell</a>
+      </li>
+      <li>
+        <a href="profile.html">Profile</a>
+      </li>
+      <li>
+        <a href="beispiele.html">Beispiele</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
   </li>

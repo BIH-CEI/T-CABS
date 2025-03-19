@@ -415,23 +415,18 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "Beispiele.html",
+          "nameUrl": "beispiele.html",
           "title": "Beispiele",
           "generation": "markdown"
         },
         {
-          "nameUrl": "Logisches Modell.html",
+          "nameUrl": "logisches_modell.html",
           "title": "Logisches Modell",
           "generation": "markdown"
         },
         {
-          "nameUrl": "Profile.html",
+          "nameUrl": "profile.html",
           "title": "Profile",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "Spezifikation.html",
-          "title": "Spezifikation",
           "generation": "markdown"
         }
       ]

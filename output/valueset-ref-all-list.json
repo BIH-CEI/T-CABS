@@ -126,10 +126,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -216,6 +218,20 @@
       "StructureDefinition-t-cabs-device-beatmungsgeraet.html" : "T-CABS Device Beatmungsgerät"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/devicemetric-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricAndComponentTypes",
+      "title" : "Device Metric and Component Types",
+      "description" : "Codes used to identify health care device metric types and units and component types as part of the ISO/IEEE 11073-10101 Medical Device Communication Nomenclature.",
+      "systems" : ["urn:iso:std:iso:11073:10101"],
+      "oids" : ["2.16.840.1.113883.6.24", "2.16.840.1.113883.4.642.3.645"],
+      "sources" : ["2.16.840.1.113883.6.24", "2.16.840.1.113883.4.642.3.645"],
+      "uses" : {
+      },
+      "StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html" : "T-CABS DeviceMetric eingestellter oder gemessener Parameter"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/event-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -227,8 +243,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-communication-alarm.html" : "T-CABS Communication Alarm",
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung",
+      "StructureDefinition-t-cabs-communication-alarm.html" : "T-CABS Communication Alarm"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -270,13 +286,86 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-communication-alarm.html" : "T-CABS Communication Alarm",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-device-beatmungsgeraet.html" : "T-CABS Device Beatmungsgerät",
       "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-communication-alarm.html" : "T-CABS Communication Alarm",
+      "StructureDefinition-t-cabs-device-beatmungsgeraet.html" : "T-CABS Device Beatmungsgerät",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html" : "T-CABS DeviceMetric eingestellter oder gemessener Parameter",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
+      "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/metric-calibration-state",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricCalibrationState",
+      "title" : "DeviceMetricCalibrationState",
+      "description" : "Describes the state of a metric calibration.",
+      "systems" : ["http://hl7.org/fhir/metric-calibration-state"],
+      "oids" : ["2.16.840.1.113883.4.642.3.652"],
+      "sources" : ["2.16.840.1.113883.4.642.3.652"],
+      "uses" : {
+      },
+      "StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html" : "T-CABS DeviceMetric eingestellter oder gemessener Parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/metric-calibration-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricCalibrationType",
+      "title" : "DeviceMetricCalibrationType",
+      "description" : "Describes the type of a metric calibration.",
+      "systems" : ["http://hl7.org/fhir/metric-calibration-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.650"],
+      "sources" : ["2.16.840.1.113883.4.642.3.650"],
+      "uses" : {
+      },
+      "StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html" : "T-CABS DeviceMetric eingestellter oder gemessener Parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/metric-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricCategory",
+      "title" : "DeviceMetricCategory",
+      "description" : "Describes the category of the metric.",
+      "systems" : ["http://hl7.org/fhir/metric-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.648"],
+      "sources" : ["2.16.840.1.113883.4.642.3.648"],
+      "uses" : {
+      },
+      "StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html" : "T-CABS DeviceMetric eingestellter oder gemessener Parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/metric-color",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricColor",
+      "title" : "DeviceMetricColor",
+      "description" : "Describes the typical color of representation.",
+      "systems" : ["http://hl7.org/fhir/metric-color"],
+      "oids" : ["2.16.840.1.113883.4.642.3.654"],
+      "sources" : ["2.16.840.1.113883.4.642.3.654"],
+      "uses" : {
+      },
+      "StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html" : "T-CABS DeviceMetric eingestellter oder gemessener Parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/metric-operational-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricOperationalStatus",
+      "title" : "DeviceMetricOperationalStatus",
+      "description" : "Describes the operational status of the DeviceMetric.",
+      "systems" : ["http://hl7.org/fhir/metric-operational-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.646"],
+      "sources" : ["2.16.840.1.113883.4.642.3.646"],
+      "uses" : {
+      },
+      "StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html" : "T-CABS DeviceMetric eingestellter oder gemessener Parameter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -290,10 +379,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -309,10 +400,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -326,10 +419,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -343,10 +438,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/performer-role",
@@ -458,10 +555,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -478,10 +577,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -497,10 +598,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -574,10 +677,12 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-category-procedure-beatmung-snomed",
@@ -589,11 +694,14 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
       "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html" : "T-CABS DeviceMetric eingestellter oder gemessener Parameter",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
+      "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073",
@@ -605,10 +713,12 @@
       "systems" : ["urn:iso:std:iso:11073:10101"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc",
@@ -620,10 +730,12 @@
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     },
     {
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed",
@@ -635,10 +747,12 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
       "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
       "StructureDefinition-t-cabs-observation-beatmungsstunden.html" : "T-CABS Observation Beatmungsstunden",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths"
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
+      "StructureDefinition-t-cabs-observation-af.html" : "T-CABS Observation AF"
     }
   ]
 }

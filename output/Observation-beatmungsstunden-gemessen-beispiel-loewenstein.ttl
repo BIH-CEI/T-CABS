@@ -18,7 +18,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation beatmungsstunden-gemessen-beispiel-loewenstein</b></p><a name=\"beatmungsstunden-gemessen-beispiel-loewenstein\"> </a><a name=\"hcbeatmungsstunden-gemessen-beispiel-loewenstein\"> </a><a name=\"beatmungsstunden-gemessen-beispiel-loewenstein-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-beatmungsstunden.html\">T-CABS Observation Beatmungsstunden</a></p></div><p><b>partOf</b>: <a href=\"Procedure-procedure-Bilevel-123.html\">Procedure Bilevel artificial ventilation (regime/therapy)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 40617009}\">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 261774000}\">Duration of treatment (qualifier value)</span></p><p><b>subject</b>: <a href=\"Patient-patient-123456.html\">John Doe (official) (no stated gender), DoB: 1944-04-11 ( Medical record number)</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-24 09:30:10+0100</p><p><b>value</b>: 6 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation beatmungsstunden-gemessen-beispiel-loewenstein</b></p><a name=\"beatmungsstunden-gemessen-beispiel-loewenstein\"> </a><a name=\"hcbeatmungsstunden-gemessen-beispiel-loewenstein\"> </a><a name=\"beatmungsstunden-gemessen-beispiel-loewenstein-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-beatmungsstunden.html\">T-CABS Observation Beatmungsstunden</a></p></div><p><b>partOf</b>: <a href=\"Procedure-procedure-Bilevel-123.html\">Procedure Bilevel artificial ventilation (regime/therapy)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 40617009}\">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 261774000}\">Duration of treatment (qualifier value)</span></p><p><b>subject</b>: <a href=\"Patient-patient-123456.html\">John Doe (official) (no stated gender), DoB: 1944-04-11 ( Medical record number)</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-24 09:30:10+0100</p><p><b>value</b>: 6 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p><p><b>device</b>: <a href=\"DeviceMetric-deviceMetric-Gemessen-Beispiel-Loewenstein.html\">DeviceMetric: type = Artificial ventilation (regime/therapy); category = measurement</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:partOf ( [
      fhir:link <http://t-cabs.org/Procedure/procedure-Bilevel-123> ;
@@ -55,6 +55,10 @@
      fhir:value [ fhir:v "6"^^xsd:decimal ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "h" ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://t-cabs.org/DeviceMetric/deviceMetric-Gemessen-Beispiel-Loewenstein> ;
+     fhir:reference [ fhir:v "DeviceMetric/deviceMetric-Gemessen-Beispiel-Loewenstein" ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

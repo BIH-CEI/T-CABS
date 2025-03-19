@@ -21,11 +21,32 @@
     "name" : "T_CABS_Device_Beatmungsgeraet"
   },
   {
+    "id" : "t-cabs-devicemetric-eingestellter-gemessener-parameter",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter",
+    "version" : "0.1.0",
+    "name" : "T_CABS_DeviceMetric_Eingestellter_Gemessener_Parameter"
+  },
+  {
+    "id" : "t-cabs-observation-af",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-af",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_AF"
+  },
+  {
     "id" : "t-cabs-observation-ahi",
     "type" : "StructureDefinition",
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
     "version" : "0.1.0",
     "name" : "T_CABS_Observation_AHI"
+  },
+  {
+    "id" : "t-cabs-observation-amv",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_AMV"
   },
   {
     "id" : "t-cabs-observation-beatmungsstunden",

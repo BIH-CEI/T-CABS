@@ -4,7 +4,7 @@ Id: t-cabs-communication-alarm
 Title: "T-CABS Communication Alarm"
 Description: "Abstraktes Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes"
 
-* category 1..1 MS
+* category 1.. MS
 * category = #alert
 
 * subject 1..1 MS

@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> -  v0.1.0</title>
+    <title>T-CABS Device Beatmungsgerät - Examples -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -24,6 +24,8 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7.css" rel="stylesheet"/>
+<link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -45,13 +47,18 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"5.2"}
+    h3,h4,h5,h6{--heading-prefix:"5.2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
+<div id="hl7-nav">
+    <a id="logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+        <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
+    </a>            
+</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
@@ -86,6 +93,22 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spezifikation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="logisches_modell.html">Logisches Modell</a>
+      </li>
+      <li>
+        <a href="profile.html">Profile</a>
+      </li>
+      <li>
+        <a href="beispiele.html">Beispiele</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
@@ -101,7 +124,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>T-CABS Device Beatmungsgerät</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -152,6 +175,16 @@
 
 
 
+  
+    
+      <li class="active">
+        <a href="#">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -187,7 +220,7 @@
         
           Draft
           
-            as of 2025-03-12
+            as of 2025-03-19
           
         
       </td>
@@ -203,7 +236,30 @@
 
 
 
-  <p><b>No examples are currently available for the  Profile.</b></p>
+  <p>Examples for the t-cabs-device-beatmungsgeraet Profile.</p>
+  <table style="grid">
+    <tbody>
+      
+        <tr>
+          <td>
+            <a href="Device-device-1234.html">Beispiel Beatmungsgerät Löwenstein (Device)</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Device-device-12547854521.html">Beispiel Beatmungsgerät ResMed (Device)</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Device-device-1573.html">Beispiel Beatmungsgerät Breas (Device)</a>
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
 
 
 <!-- insert notes if present -->
@@ -230,13 +286,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 12, 2025 14:55+0100">2025-03-12</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 19, 2025 16:19+0100">2025-03-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

@@ -293,7 +293,7 @@
     "fshType": "Profile",
     "fshFile": "Profile/T_CABS_Device_Beatmungsgeraet.fsh",
     "startLine": 1,
-    "endLine": 52
+    "endLine": 56
   },
   {
     "outputFile": "StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.json",
