@@ -48,12 +48,12 @@ dependencies:
 pages:
   index.md:
     title: Home
-  beispiele.md:
-    title: Beispiele
   logisches_modell.md:
     title: Logisches Modell
   profile.md:
     title: Profile
+  beispiele.md:
+    title: Beispiele
 
 
 #   implementation.xml:

@@ -107,7 +107,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 "Procedure.status","Procedure.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown","A code specifying the state of the procedure. Generally, this will be the in-progress or completed state.","The ""unknown"" code is not to be used to convey other statuses.  The ""unknown"" code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the procedure.
 
-This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""in-progress""/>","","","",,"required","A code specifying the state of the procedure.","http://hl7.org/fhir/ValueSet/event-status|4.0.1","",,,,"Procedure.status",1,1,"ele-1
+This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","","","","","","","","",,"required","A code specifying the state of the procedure.","http://hl7.org/fhir/ValueSet/event-status|4.0.1","",,,,"Procedure.status",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status","n/a","statusCode","FiveWs.status"
 "Procedure.statusReason","Procedure.statusReason","","Suspended Reason

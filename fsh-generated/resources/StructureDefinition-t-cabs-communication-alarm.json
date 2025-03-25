@@ -15,16 +15,27 @@
   "differential": {
     "element": [
       {
+        "id": "Communication.status",
+        "path": "Communication.status",
+        "mustSupport": true
+      },
+      {
         "id": "Communication.category",
         "path": "Communication.category",
         "min": 1,
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "alert"
+              "code": "198132",
+              "system": "urn:iso:std:iso:11073:10101"
             }
           ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.priority",
+        "path": "Communication.priority",
         "mustSupport": true
       },
       {
@@ -36,8 +47,7 @@
       {
         "id": "Communication.about",
         "path": "Communication.about",
-        "definition": "Der gemessene Wert des Parameters, der die Grenze überschritten hat ((Observation.device auf Messung(DeviceMetric))).",
-        "min": 1,
+        "definition": "Der gemessene Wert des Parameters, der die Alarmgrenze überschritten hat ((Observation.device auf Messung(DeviceMetric))).",
         "max": "1",
         "type": [
           {

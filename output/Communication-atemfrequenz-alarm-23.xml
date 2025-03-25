@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Communication xmlns="http://hl7.org/fhir">
+  <id value="atemfrequenz-alarm-23"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Communication atemfrequenz-alarm-23</b></p><a name="atemfrequenz-alarm-23"> </a><a name="hcatemfrequenz-alarm-23"> </a><a name="atemfrequenz-alarm-23-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-communication-atemfrequenz-high-alarm.html">T-CABS Communication Atemfrequenz high Alarm</a></p></div><p><b>status</b>: In Progress</p><p><b>category</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 198132}">MDC_EVT_VENT_ALARM</span></p><p><b>subject</b>: <a href="Patient-patient-98219fce-813a-41f2-94ff-861d59b89715.html">PatFN-1496 PatLN-1496 (official) (no stated gender), DoB: 1950-02-17 ( Medical record number)</a></p><p><b>about</b>: <a href="Observation-atemfrequenz-gemessen-beispiel-breas.html">Observation Total breath rate</a></p><p><b>sender</b>: <a href="Device-device-1573.html">Device: identifier = http://www.breas_example.com/identifiers/devices#1573; status = active; manufacturer = BREAS Medical; serialNumber = U120006</a></p><p><b>reasonReference</b>: <a href="Observation-atemfrequenz-eingestellt-beispiel-breas.html">Observation Total breath rate</a></p></div>
+  </text>
+  <status value="in-progress"/>
+  <category>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="198132"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/patient-98219fce-813a-41f2-94ff-861d59b89715"/>
+  </subject>
+  <about>
+    <reference value="Observation/atemfrequenz-gemessen-beispiel-breas"/>
+  </about>
+  <sender>
+    <reference value="Device/device-1573"/>
+  </sender>
+  <reasonReference>
+    <reference value="Observation/atemfrequenz-eingestellt-beispiel-breas"/>
+  </reasonReference>
+</Communication>

@@ -50,7 +50,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Communication.inResponseTo","Communication.inResponseTo","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Communication]]}
 ","Reply to","Prior communication that this communication is in response to.","","","","","","","","","",,,,,"",,,,"Communication.inResponseTo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Communication.status","Communication.status","","","",1,1,"","Y","Y","code {[]} {[]}
+"Communication.status","Communication.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown","The status of the transmission.","This element is labeled as a modifier because the status contains the codes aborted and entered-in-error that mark the communication as not currently valid.","","","","","","","","",,"required","The status of the communication.","http://hl7.org/fhir/ValueSet/event-status|4.0.1","",,,,"Communication.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status","FiveWs.status"
 "Communication.statusReason","Communication.statusReason","","Suspended Reason
@@ -60,11 +60,12 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 "Communication.category","Communication.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
 ","Message category","The type of message conveyed such as alert, notification, reminder, instruction, etc.","There may be multiple axes of categorization and one communication may serve multiple purposes.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <code value=""alert""/>
+    <system value=""urn:iso:std:iso:11073:10101""/>
+    <code value=""198132""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes for general categories of communications such as alerts, instructions, etc.","http://hl7.org/fhir/ValueSet/communication-category","",,,,"Communication.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.class"
-"Communication.priority","Communication.priority","","","",0,1,"","","Y","code {[]} {[]}
+"Communication.priority","Communication.priority","","","",0,1,"Y","","Y","code {[]} {[]}
 ","routine | urgent | asap | stat","Characterizes how quickly the planned or in progress communication must be addressed. Includes concepts such as stat, urgent, routine.","Used to prioritize workflow (such as which communication to read first) when the communication is planned or in progress.","","","If missing, this communication should be treated with normal priority","","","","","",,"required","Codes indicating the relative importance of a communication.","http://hl7.org/fhir/ValueSet/request-priority|4.0.1","",,,,"Communication.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.grade"
 "Communication.medium","Communication.medium","","","",0,*,"","","","CodeableConcept {[]} {[]}
@@ -77,8 +78,8 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 "Communication.topic","Communication.topic","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Description of the purpose/content","Description of the purpose/content, similar to a subject line in an email.","Communication.topic.text can be used without any codings.","","","","","","","","",,"example","Codes describing the purpose or content of the communication.","http://hl7.org/fhir/ValueSet/communication-topic","",,,,"Communication.topic",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.context"
-"Communication.about","Communication.about","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung]]}
-","Resources that pertain to this communication","Der gemessene Wert des Parameters, der die Grenze überschritten hat ((Observation.device auf Messung(DeviceMetric))).","Don't use Communication.about element when a more specific element exists, such as basedOn or reasonReference.","","","","","","","","",,,,,"",,,,"Communication.about",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Communication.about","Communication.about","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung]]}
+","Resources that pertain to this communication","Der gemessene Wert des Parameters, der die Alarmgrenze überschritten hat ((Observation.device auf Messung(DeviceMetric))).","Don't use Communication.about element when a more specific element exists, such as basedOn or reasonReference.","","","","","","","","",,,,,"",,,,"Communication.about",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.context"
 "Communication.encounter","Communication.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
 ","Encounter created as part of","The Encounter during which this Communication was created or to which the creation of this record is tightly associated.","This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter.","","","","","","","","",,,,,"",,,,"Communication.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

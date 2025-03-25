@@ -5,8 +5,8 @@ Title: "T-CABS Device Beatmungsgerät"
 Description: "Profil für ein Beatmungsgerät"
 
 // identifier zur Gerätidentifizierung (alternativ Seriennummer)
-// identifier.type = #UDI
-
+* identifier.type = #UDI
+* identifier ^definition = "Alternativer Identifier zur Seriennummer"
 
 // 426160001(Oxygen ventilator (physical object)) oder 23562009(Household ventilator, device (physical object))?
 * type = $SCT#706172005 "Ventilator (physical object)" 

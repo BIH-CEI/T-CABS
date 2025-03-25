@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TCABS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-03-19T16:19:18+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-25T16:42:03+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH-CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH-CEI" ] ;
@@ -865,6 +865,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Communication"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Communication/atemfrequenz-alarm-23> ;
+         fhir:reference [ fhir:v "Communication/atemfrequenz-alarm-23" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Alarm (Communication)" ] ;
+       fhir:description [ fhir:v "Beispielhafter Alarm einer erhöhten Atemfrequenz" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
@@ -1076,6 +1095,25 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/atemfrequenz-eingestellt-beispiel-breas> ;
+         fhir:reference [ fhir:v "Observation/atemfrequenz-eingestellt-beispiel-breas" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel eingestellte Atemfrequenz Breas (Observation)" ] ;
+       fhir:description [ fhir:v "Eine eingestellte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-af>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://t-cabs.org/Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas> ;
          fhir:reference [ fhir:v "Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas" ]
        ] ;
@@ -1206,15 +1244,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/atemfrequenz-gemessen-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/atemfrequenz-gemessen-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/Observation/beatmungsstunden-gemessen-beispiel-breas> ;
+         fhir:reference [ fhir:v "Observation/beatmungsstunden-gemessen-beispiel-breas" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel gemessen Atemfrequenz Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Eine beispielhafte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)" ] ;
+       fhir:name [ fhir:v "Beispiel gemessen Beatmungsstunden Breas (Observation)" ] ;
+       fhir:description [ fhir:v "Beatmungsdauer des Patienten in Stunden" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-af>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden>
        ]
      ] [
        fhir:extension ( [
@@ -1225,15 +1263,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/beatmungsstunden-gemessen-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/beatmungsstunden-gemessen-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/Observation/atemfrequenz-gemessen-beispiel-breas> ;
+         fhir:reference [ fhir:v "Observation/atemfrequenz-gemessen-beispiel-breas" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel gemessen Beatmungsstunden Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Beatmungsdauer des Patienten in Stunden" ] ;
+       fhir:name [ fhir:v "Beispiel gemessene Atemfrequenz Breas (Observation)" ] ;
+       fhir:description [ fhir:v "Eine gemessene Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-af>
        ]
      ] [
        fhir:extension ( [
@@ -1523,6 +1561,60 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Communication Atemfrequenz high Alarm" ] ;
+       fhir:description [ fhir:v "Profil eines Alarms für eine überschrittenen Atemfrequenz" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Communication Atemfrequenz low Alarm" ] ;
+       fhir:description [ fhir:v "Profil eines Alarms für eine unterschrittenen Atemfrequenz" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-diskonnektion-alarm> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-diskonnektion-alarm" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Communication Diskonnektion Alarm" ] ;
+       fhir:description [ fhir:v "Profil eines Alarms für eine Diskonnektion des Beatmungsgerätes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-beatmungsgeraet" ]
        ] ;
@@ -1676,6 +1768,24 @@
          a fhir:boolean ;
          fhir:v false
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus> ;
+         fhir:reference [ fhir:v "ValueSet/t-cabs-valueset-Beatmungsmodus" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS ValueSet Beatmungsmodus" ] ;
+       fhir:description [ fhir:v "Dieses ValueSet erhält Codes um die verschiedenen Beatmungsmodis abzubilden" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -1710,20 +1820,6 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:url ;
-             fhir:v "beispiele.html"^^xsd:anyURI
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:url ;
-           fhir:v "beispiele.html"^^xsd:anyURI
-         ] ;
-         fhir:title [ fhir:v "Beispiele" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
              fhir:v "logisches_modell.html"^^xsd:anyURI
            ]
          ] ) ;
@@ -1746,6 +1842,20 @@
            fhir:v "profile.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Profile" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "beispiele.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "beispiele.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Beispiele" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

@@ -1,0 +1,36 @@
+{
+  "resourceType": "Communication",
+  "id": "atemfrequenz-alarm-23",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"
+    ]
+  },
+  "reasonReference": [
+    {
+      "reference": "Observation/atemfrequenz-eingestellt-beispiel-breas"
+    }
+  ],
+  "about": [
+    {
+      "reference": "Observation/atemfrequenz-gemessen-beispiel-breas"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "198132",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      ]
+    }
+  ],
+  "status": "in-progress",
+  "sender": {
+    "reference": "Device/device-1573"
+  },
+  "subject": {
+    "reference": "Patient/patient-98219fce-813a-41f2-94ff-861d59b89715"
+  }
+}

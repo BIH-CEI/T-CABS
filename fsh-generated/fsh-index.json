@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "Communication-atemfrequenz-alarm-23.json",
+    "fshName": "atemfrequenz-alarm-23",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Communication_Atemfrequenz_Alarm_BREAS_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
     "outputFile": "Device-device-1234.json",
     "fshName": "device-1234",
     "fshType": "Instance",
@@ -96,12 +104,20 @@
     "endLine": 28
   },
   {
+    "outputFile": "Observation-atemfrequenz-eingestellt-beispiel-breas.json",
+    "fshName": "atemfrequenz-eingestellt-beispiel-breas",
+    "fshType": "Instance",
+    "fshFile": "Beispiele/Breas/T_CABS_Observation_Atemfrequenz_eingestellt_BREAS_Beispiel.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
     "outputFile": "Observation-atemfrequenz-gemessen-beispiel-breas.json",
     "fshName": "atemfrequenz-gemessen-beispiel-breas",
     "fshType": "Instance",
     "fshFile": "Beispiele/Breas/T_CABS_Observation_Atemfrequenz_gemessen_BREAS_Beispiel.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 20
   },
   {
     "outputFile": "Observation-atemfrequenz-gemessen-beispiel-loewenstein.json",
@@ -285,7 +301,31 @@
     "fshType": "Profile",
     "fshFile": "Profile/T_CABS_Communication_Alarm.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-communication-atemfrequenz-high-alarm.json",
+    "fshName": "T_CABS_Communication_AtemfrequenzHighAlarm",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Communication_AtemfrequenzHigh_Alarm.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-communication-atemfrequenz-low-alarm.json",
+    "fshName": "T_CABS_Communication_AtemfrequenzLowAlarm",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Communication_AtemfrequenzLow_Alarm.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-communication-diskonnektion-alarm.json",
+    "fshName": "T_CABS_Communication_DiskonnektionAlarm",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Communication_Diskonnektion_Alarm.fsh",
+    "startLine": 1,
+    "endLine": 7
   },
   {
     "outputFile": "StructureDefinition-t-cabs-device-beatmungsgeraet.json",
@@ -357,6 +397,14 @@
     "fshType": "Profile",
     "fshFile": "Profile/T_CABS_Procedure_Beatmung.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-t-cabs-valueset-Beatmungsmodus.json",
+    "fshName": "T_CABS_ValueSet_Beatmungsmodus",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets/T_CABS_ValueSet_Beatmungsmodus.fsh",
+    "startLine": 1,
+    "endLine": 11
   }
 ]

@@ -14,6 +14,27 @@
     "name" : "T_CABS_Communication_Alarm"
   },
   {
+    "id" : "t-cabs-communication-atemfrequenz-high-alarm",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Communication_AtemfrequenzHighAlarm"
+  },
+  {
+    "id" : "t-cabs-communication-atemfrequenz-low-alarm",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Communication_AtemfrequenzLowAlarm"
+  },
+  {
+    "id" : "t-cabs-communication-diskonnektion-alarm",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-communication-diskonnektion-alarm",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Communication_DiskonnektionAlarm"
+  },
+  {
     "id" : "t-cabs-device-beatmungsgeraet",
     "type" : "StructureDefinition",
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet",
@@ -75,5 +96,12 @@
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
     "version" : "0.1.0",
     "name" : "T_CABS_Procedure_Beatmung"
+  },
+  {
+    "id" : "t-cabs-valueset-Beatmungsmodus",
+    "type" : "ValueSet",
+    "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+    "version" : "0.1.0",
+    "name" : "T_CABS_ValueSet_Beatmungsmodus"
   }
 ]

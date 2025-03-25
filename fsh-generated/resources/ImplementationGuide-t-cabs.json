@@ -53,6 +53,14 @@
       },
       {
         "reference": {
+          "reference": "Communication/atemfrequenz-alarm-23"
+        },
+        "name": "Beispiel Alarm (Communication)",
+        "description": "Beispielhafter Alarm einer erhöhten Atemfrequenz",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"
+      },
+      {
+        "reference": {
           "reference": "Observation/amv-gemessen-beispiel-loewenstein"
         },
         "name": "Beispiel AMV Löwenstein (Observation)",
@@ -141,6 +149,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/atemfrequenz-eingestellt-beispiel-breas"
+        },
+        "name": "Beispiel eingestellte Atemfrequenz Breas (Observation)",
+        "description": "Eine eingestellte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+      },
+      {
+        "reference": {
           "reference": "Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas"
         },
         "name": "Beispiel eingestellter max. Beatmungsdruck Breas (Observation)",
@@ -197,19 +213,19 @@
       },
       {
         "reference": {
-          "reference": "Observation/atemfrequenz-gemessen-beispiel-breas"
-        },
-        "name": "Beispiel gemessen Atemfrequenz Breas (Observation)",
-        "description": "Eine beispielhafte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
-        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
-      },
-      {
-        "reference": {
           "reference": "Observation/beatmungsstunden-gemessen-beispiel-breas"
         },
         "name": "Beispiel gemessen Beatmungsstunden Breas (Observation)",
         "description": "Beatmungsdauer des Patienten in Stunden",
         "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"
+      },
+      {
+        "reference": {
+          "reference": "Observation/atemfrequenz-gemessen-beispiel-breas"
+        },
+        "name": "Beispiel gemessene Atemfrequenz Breas (Observation)",
+        "description": "Eine gemessene Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
       },
       {
         "reference": {
@@ -333,6 +349,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"
+        },
+        "name": "T-CABS Communication Atemfrequenz high Alarm",
+        "description": "Profil eines Alarms für eine überschrittenen Atemfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm"
+        },
+        "name": "T-CABS Communication Atemfrequenz low Alarm",
+        "description": "Profil eines Alarms für eine unterschrittenen Atemfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-communication-diskonnektion-alarm"
+        },
+        "name": "T-CABS Communication Diskonnektion Alarm",
+        "description": "Profil eines Alarms für eine Diskonnektion des Beatmungsgerätes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/t-cabs-device-beatmungsgeraet"
         },
         "name": "T-CABS Device Beatmungsgerät",
@@ -402,6 +442,14 @@
         "name": "T-CABS Procedure Beatmung",
         "description": "Profil für die Beatmungsprozedur",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/t-cabs-valueset-Beatmungsmodus"
+        },
+        "name": "T-CABS ValueSet Beatmungsmodus",
+        "description": "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
+        "exampleBoolean": false
       }
     ],
     "page": {
@@ -415,11 +463,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "beispiele.html",
-          "title": "Beispiele",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "logisches_modell.html",
           "title": "Logisches Modell",
           "generation": "markdown"
@@ -427,6 +470,11 @@
         {
           "nameUrl": "profile.html",
           "title": "Profile",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "beispiele.html",
+          "title": "Beispiele",
           "generation": "markdown"
         }
       ]

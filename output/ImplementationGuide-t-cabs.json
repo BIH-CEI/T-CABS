@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "TCABS",
   "status" : "draft",
-  "date" : "2025-03-19T16:19:18+01:00",
+  "date" : "2025-03-25T16:42:03+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
@@ -629,6 +629,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Communication"
+      }],
+      "reference" : {
+        "reference" : "Communication/atemfrequenz-alarm-23"
+      },
+      "name" : "Beispiel Alarm (Communication)",
+      "description" : "Beispielhafter Alarm einer erhöhten Atemfrequenz",
+      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -764,6 +776,18 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/atemfrequenz-eingestellt-beispiel-breas"
+      },
+      "name" : "Beispiel eingestellte Atemfrequenz Breas (Observation)",
+      "description" : "Eine eingestellte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
+      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas"
       },
       "name" : "Beispiel eingestellter max. Beatmungsdruck Breas (Observation)",
@@ -848,11 +872,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/atemfrequenz-gemessen-beispiel-breas"
+        "reference" : "Observation/beatmungsstunden-gemessen-beispiel-breas"
       },
-      "name" : "Beispiel gemessen Atemfrequenz Breas (Observation)",
-      "description" : "Eine beispielhafte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
-      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+      "name" : "Beispiel gemessen Beatmungsstunden Breas (Observation)",
+      "description" : "Beatmungsdauer des Patienten in Stunden",
+      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"
     },
     {
       "extension" : [{
@@ -860,11 +884,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/beatmungsstunden-gemessen-beispiel-breas"
+        "reference" : "Observation/atemfrequenz-gemessen-beispiel-breas"
       },
-      "name" : "Beispiel gemessen Beatmungsstunden Breas (Observation)",
-      "description" : "Beatmungsdauer des Patienten in Stunden",
-      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"
+      "name" : "Beispiel gemessene Atemfrequenz Breas (Observation)",
+      "description" : "Eine gemessene Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
+      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
     },
     {
       "extension" : [{
@@ -1052,6 +1076,42 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"
+      },
+      "name" : "T-CABS Communication Atemfrequenz high Alarm",
+      "description" : "Profil eines Alarms für eine überschrittenen Atemfrequenz",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm"
+      },
+      "name" : "T-CABS Communication Atemfrequenz low Alarm",
+      "description" : "Profil eines Alarms für eine unterschrittenen Atemfrequenz",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/t-cabs-communication-diskonnektion-alarm"
+      },
+      "name" : "T-CABS Communication Diskonnektion Alarm",
+      "description" : "Profil eines Alarms für eine Diskonnektion des Beatmungsgerätes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/t-cabs-device-beatmungsgeraet"
       },
       "name" : "T-CABS Device Beatmungsgerät",
@@ -1153,6 +1213,18 @@
       "name" : "T-CABS Procedure Beatmung",
       "description" : "Profil für die Beatmungsprozedur",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/t-cabs-valueset-Beatmungsmodus"
+      },
+      "name" : "T-CABS ValueSet Beatmungsmodus",
+      "description" : "Dieses ValueSet erhält Codes um die verschiedenen Beatmungsmodis abzubilden",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
@@ -1174,15 +1246,6 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "beispiele.html"
-        }],
-        "nameUrl" : "beispiele.html",
-        "title" : "Beispiele",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "logisches_modell.html"
         }],
         "nameUrl" : "logisches_modell.html",
@@ -1196,6 +1259,15 @@
         }],
         "nameUrl" : "profile.html",
         "title" : "Profile",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "beispiele.html"
+        }],
+        "nameUrl" : "beispiele.html",
+        "title" : "Beispiele",
         "generation" : "markdown"
       }]
     },

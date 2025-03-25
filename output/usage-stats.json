@@ -8,6 +8,18 @@
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-alarm",
         "title": "T-CABS Communication Alarm"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm",
+        "title": "T-CABS Communication Atemfrequenz high Alarm"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm",
+        "title": "T-CABS Communication Atemfrequenz low Alarm"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-diskonnektion-alarm",
+        "title": "T-CABS Communication Diskonnektion Alarm"
       }
     ],
     "Device": [
