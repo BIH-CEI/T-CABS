@@ -23,3 +23,10 @@ Alias: $ISiKHerzfrequenzSCTVS = https://gematik.de/fhir/isik/ValueSet/ISiKHerzfr
 
 //Systolisch & Diastolisch
 Alias: $observation-de-vitalsign-blutdruck = http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck
+
+
+//Gehstrecke
+Alias: $vs-mii-icu-code-monitoring-und-vitaldaten-snomed = https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-snomed
+Alias: $vs-mii-icu-code-monitoring-und-vitaldaten-loinc = https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-loinc
+Alias: $vs-mii-icu-code-monitoring-und-vitaldaten-iso11073 = https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-iso11073
+Alias: $vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten = https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten

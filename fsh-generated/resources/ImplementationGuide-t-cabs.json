@@ -361,6 +361,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-gehstrecke"
+        },
+        "name": "Gehstrecke",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/t-cabs-observation-gewicht"
         },
         "name": "Gewicht",

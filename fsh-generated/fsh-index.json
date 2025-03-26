@@ -344,6 +344,14 @@
     "endLine": 25
   },
   {
+    "outputFile": "StructureDefinition-t-cabs-observation-gehstrecke.json",
+    "fshName": "T_CABS_Observation_Gehstrecke",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vital-parameters/T_CABS_Observation_Gehstrecke.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
     "outputFile": "StructureDefinition-t-cabs-observation-gewicht.json",
     "fshName": "T_CABS_Observation_Gewicht",
     "fshType": "Profile",
