@@ -1,0 +1,88 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-TCABS-Observation-SPO2",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2",
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "442476006",
+        "display": "Arterial oxygen saturation (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "59408-5",
+        "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "150324"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "2708-6"
+      },
+      {
+        "code": "442476006",
+        "system": "http://snomed.info/sct",
+        "display": "Arterial oxygen saturation (observable entity)"
+      },
+      {
+        "code": "59408-5",
+        "system": "http://loinc.org",
+        "display": "\tOxygen saturation in Arterial blood by Pulse oximetry"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "150324"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T08:30:10Z",
+    "end": "2019-12-23T09:30:10Z"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "%",
+    "unit": "percent",
+    "value": 98
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "11527006",
+        "display": "Arterial system structure (body structure)",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "status": "final"
+}
