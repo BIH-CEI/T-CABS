@@ -6,7 +6,10 @@ Alias: $SCT = http://snomed.info/sct
 Alias: $LOINC = http://loinc.org
 Alias: $OPS = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $IEEE-11073 = urn:iso:std:iso:11073:10101
-Alias: $unitsofmeasure = http://unitsofmeasure.org
+
+Alias: $cs-referenceRangeMeaning  = http://terminology.hl7.org/CodeSystem/referencerange-meaning
+Alias: $UCUM = http://unitsofmeasure.org
+Alias: $mii-kontaktGesundheitseinrichtung-encounter = https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
 
 //KoerperGewicht
 Alias: $observation-de-vitalsign-koerpergewicht = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht

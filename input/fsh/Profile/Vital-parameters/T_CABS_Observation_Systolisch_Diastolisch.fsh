@@ -48,7 +48,7 @@ Description: "Profile for documenting arterial blood pressure observations withi
 
 * component[SystolicBP].value[x] 1..1 MS
 * component[SystolicBP].value[x].unit = "millimeter Mercury column"
-* component[SystolicBP].value[x].system = $unitsofmeasure
+* component[SystolicBP].value[x].system = $UCUM
 * component[SystolicBP].value[x].code = #"mm[Hg]"
 * component[SystolicBP].dataAbsentReason MS
 
@@ -67,7 +67,7 @@ Description: "Profile for documenting arterial blood pressure observations withi
 
 * component[DiastolicBP].value[x] 1..1 MS
 * component[DiastolicBP].value[x].unit = "millimeter Mercury column"
-* component[DiastolicBP].value[x].system = $unitsofmeasure
+* component[DiastolicBP].value[x].system = $UCUM
 * component[DiastolicBP].value[x].code = #"mm[Hg]"
 * component[DiastolicBP].dataAbsentReason MS
 
@@ -86,6 +86,6 @@ Description: "Profile for documenting arterial blood pressure observations withi
 
 * component[meanBP].value[x] 1..1 MS
 * component[meanBP].value[x].unit = "millimeter Mercury column"
-* component[meanBP].value[x].system = $unitsofmeasure
+* component[meanBP].value[x].system = $UCUM
 * component[meanBP].value[x].code = #"mm[Hg]"
 * component[meanBP].dataAbsentReason MS
