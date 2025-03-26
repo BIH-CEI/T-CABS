@@ -36,8 +36,8 @@
     "end": "2019-12-24T09:30:10+01:00"
   },
   "valueQuantity": {
-    "system": "http://unitsofmeasure.org",
     "code": "h",
+    "system": "http://unitsofmeasure.org",
     "value": 6
   },
   "status": "final",

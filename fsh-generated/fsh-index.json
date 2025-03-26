@@ -309,7 +309,31 @@
     "fshType": "Profile",
     "fshFile": "Profile/T_CABS_Communication_Alarm.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-communication-atemfrequenz-high-alarm.json",
+    "fshName": "T_CABS_Communication_AtemfrequenzHighAlarm",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Communication_AtemfrequenzHigh_Alarm.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-communication-atemfrequenz-low-alarm.json",
+    "fshName": "T_CABS_Communication_AtemfrequenzLowAlarm",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Communication_AtemfrequenzLow_Alarm.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-communication-diskonnektion-alarm.json",
+    "fshName": "T_CABS_Communication_DiskonnektionAlarm",
+    "fshType": "Profile",
+    "fshFile": "Profile/T_CABS_Communication_Diskonnektion_Alarm.fsh",
+    "startLine": 1,
+    "endLine": 7
   },
   {
     "outputFile": "StructureDefinition-t-cabs-device-beatmungsgeraet.json",

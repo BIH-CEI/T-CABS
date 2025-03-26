@@ -41,8 +41,8 @@
     "end": "2019-12-24T09:30:10+01:00"
   },
   "valueQuantity": {
-    "system": "http://unitsofmeasure.org",
     "code": "L/min",
+    "system": "http://unitsofmeasure.org",
     "value": 1.8
   },
   "status": "final",

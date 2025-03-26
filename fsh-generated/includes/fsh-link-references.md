@@ -1,4 +1,6 @@
 [procedure-PSV-123]: Procedure-procedure-PSV-123.html
+[T_CABS_Observation_Atemfrequenz]: StructureDefinition-t-cabs-observation-atemfrequenz.html
+[atemfrequenz-alarm-23]: Communication-atemfrequenz-alarm-23.html
 [amv-gemessen-beispiel-loewenstein]: Observation-amv-gemessen-beispiel-loewenstein.html
 [amv-gemessen-beispiel-resmed]: Observation-amv-gemessen-beispiel-resmed.html
 [atemfrequenz-gemessen-beispiel-loewenstein]: Observation-atemfrequenz-gemessen-beispiel-loewenstein.html
@@ -47,8 +49,12 @@
 [T_CABS_DeviceMetric_Eingestellter_Gemessener_Parameter]: StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html
 [T_CABS_Observation_AF]: StructureDefinition-t-cabs-observation-af.html
 [T_CABS_Observation_AHI]: StructureDefinition-t-cabs-observation-ahi.html
+[T_CABS_Observation_AMV]: StructureDefinition-t-cabs-observation-amv.html
+[T_CABS_Observation_Arterieller_Blutdruck]: StructureDefinition-t-cabs-observation-arterieller-blutdruck.html
 [T_CABS_Observation_Beatmungsstunden]: StructureDefinition-t-cabs-observation-beatmungsstunden.html
 [T_CABS_Observation_Leckage]: StructureDefinition-t-cabs-observation-leckage.html
 [T_CABS_Observation_SPO2]: StructureDefinition-t-cabs-observation-spo2.html
 [T_CABS_Observation_TriggeredBreaths]: StructureDefinition-t-cabs-observation-triggeredbreaths.html
 [T_CABS_Procedure_Beatmung]: StructureDefinition-t-cabs-procedure-beatmung.html
+[T_CABS_ValueSet_Beatmungsmodus]: ValueSet-t-cabs-valueset-Beatmungsmodus.html
+[T_CABS_Observation_Herzfrequenz]: StructureDefinition-t-cabs-observation-herzfrequenz.html

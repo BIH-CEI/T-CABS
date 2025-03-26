@@ -45,11 +45,6 @@
         ]
       },
       {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
         "patternCode": "L/min"
@@ -78,11 +73,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.referenceRange.low.system",
-        "path": "Observation.referenceRange.low.system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
         "id": "Observation.referenceRange.low.code",
         "path": "Observation.referenceRange.low.code",
         "min": 1,
@@ -106,27 +96,10 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.referenceRange.high.system",
-        "path": "Observation.referenceRange.high.system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
         "id": "Observation.referenceRange.high.code",
         "path": "Observation.referenceRange.high.code",
         "min": 1,
         "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.type",
-        "path": "Observation.referenceRange.type",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "therapeutic",
-              "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
-            }
-          ]
-        }
       }
     ]
   }

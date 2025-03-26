@@ -59,6 +59,21 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-atemfrequenz"
+        },
+        "name": "Atemfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Communication/atemfrequenz-alarm-23"
+        },
+        "name": "Beispiel Alarm (Communication)",
+        "description": "Beispielhafter Alarm einer erhöhten Atemfrequenz",
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"
+      },
+      {
+        "reference": {
           "reference": "Observation/amv-gemessen-beispiel-loewenstein"
         },
         "name": "Beispiel AMV Löwenstein (Observation)",
@@ -440,6 +455,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-amv"
+        },
+        "name": "T-CABS Observation AMV",
+        "description": "Profil für ein gemessenes oder eingestelltes Atemminutenvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-arterieller-blutdruck"
+        },
+        "name": "T-CABS Observation Arterieller Blutdruck",
+        "description": "Profile for documenting arterial blood pressure observations within T-CABS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/t-cabs-observation-beatmungsstunden"
         },
         "name": "T-CABS Observation Beatmungsstunden",
@@ -475,6 +506,21 @@
         },
         "name": "T-CABS Procedure Beatmung",
         "description": "Profil für die Beatmungsprozedur",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/t-cabs-valueset-Beatmungsmodus"
+        },
+        "name": "T-CABS ValueSet Beatmungsmodus",
+        "description": "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-herzfrequenz"
+        },
+        "name": "T_CABS_Observation_Herzfrequenz",
         "exampleBoolean": false
       }
     ],
