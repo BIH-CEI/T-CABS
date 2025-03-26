@@ -1,0 +1,34 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-devicemetric-eingestellter-gemessener-parameter",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter",
+  "name": "T_CABS_DeviceMetric_Eingestellter_Gemessener_Parameter",
+  "title": "T-CABS DeviceMetric eingestellter oder gemessener Parameter",
+  "status": "draft",
+  "description": "Profil für eingestellte oder gemessene Parameter eines Beatmungsgerätes",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceMetric",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceMetric.source",
+        "path": "DeviceMetric.source",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
+            ],
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

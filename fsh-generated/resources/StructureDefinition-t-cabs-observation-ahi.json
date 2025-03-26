@@ -53,6 +53,80 @@
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
         "patternCode": "{score}"
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "definition": "Grenzwerte, die bei Unter- oder Überschreitung einen Alarm auslösen.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low",
+        "path": "Observation.referenceRange.low",
+        "short": "Untere Grenze des Parameters.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.value",
+        "path": "Observation.referenceRange.low.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.unit",
+        "path": "Observation.referenceRange.low.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.system",
+        "path": "Observation.referenceRange.low.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.referenceRange.low.code",
+        "path": "Observation.referenceRange.low.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high",
+        "path": "Observation.referenceRange.high",
+        "short": "Obere Grenze des Parameters.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.value",
+        "path": "Observation.referenceRange.high.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.unit",
+        "path": "Observation.referenceRange.high.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.system",
+        "path": "Observation.referenceRange.high.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.referenceRange.high.code",
+        "path": "Observation.referenceRange.high.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type",
+        "path": "Observation.referenceRange.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "therapeutic",
+              "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+            }
+          ]
+        }
       }
     ]
   }

@@ -1,9 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ba56f714-3da4-4823-8ed6-817346bf68b9"/>
+  <id value="b4988a25-b414-4bad-913d-90d439500a79"/>
   <meta>
-    <lastUpdated value="2025-03-12T14:55:40.502+01:00"/>
+    <lastUpdated value="2025-03-25T16:42:29.393+01:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem ISO 11073-10101 Health informatics - Point-of-care version2023-04-26</p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-urn:iso:std:iso:11073:10101-475172"> </a>  475172
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-urn:iso:std:iso:11073:10101-475147"> </a>  475147
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_VENT_MODE_ISO_AC_PC_6ACAP</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-urn:iso:std:iso:11073:10101-475148"> </a>  475148
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_VENT_MODE_ISO_AC_vtPC_6ACAP</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-urn:iso:std:iso:11073:10101-475154"> </a>  475154
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-urn:iso:std:iso:11073:10101-475197"> </a>  475197
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-urn:iso:std:iso:11073:10101-475201"> </a>  475201
+                </td>
+                <td>urn:iso:std:iso:11073:10101</td>
+                <td>MDC_VENT_MODE_ISO_CMV_VC</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus"/>
+        <version value="0.1.0"/>
+        <name value="T_CABS_ValueSet_Beatmungsmodus"/>
+        <title value="T-CABS ValueSet Beatmungsmodus"/>
+        <status value="draft"/>
+        <date value="2025-03-25T16:42:03+01:00"/>
+        <expansion>
+          <identifier value="urn:uuid:3e69f1e8-743d-4aaa-9959-d651b563ee65"/>
+          <timestamp value="2025-03-25T16:42:53+01:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="urn:iso:std:iso:11073:10101|2023-04-26"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:iso:std:iso:11073:10101|2023-04-26"/>
+          </parameter>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="475172"/>
+            <display value="MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="475147"/>
+            <display value="MDC_VENT_MODE_ISO_AC_PC_6ACAP"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="475148"/>
+            <display value="MDC_VENT_MODE_ISO_AC_vtPC_6ACAP"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="475154"/>
+            <display value="MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="475197"/>
+            <display value="MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP"/>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="475201"/>
+            <display value="MDC_VENT_MODE_ISO_CMV_VC"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

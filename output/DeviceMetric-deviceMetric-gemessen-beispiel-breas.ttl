@@ -12,13 +12,13 @@
   fhir:id [ fhir:v "deviceMetric-gemessen-beispiel-breas"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung"^^xsd:anyURI ;
-       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung>
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
+       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric deviceMetric-gemessen-beispiel-breas</b></p><a name=\"deviceMetric-gemessen-beispiel-breas\"> </a><a name=\"hcdeviceMetric-gemessen-beispiel-breas\"> </a><a name=\"deviceMetric-gemessen-beispiel-breas-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung\">SD MII ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung</a></p></div><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 40617009}\">Artificial ventilation (regime/therapy)</span></p><p><b>source</b>: <a href=\"Device-device-1573.html\">Device: identifier = http://www.breas_example.com/identifiers/devices#1573; status = active; serialNumber = U120006; type = Variable pressure jet ventilation device (physical object)</a></p><p><b>category</b>: Measurement</p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric deviceMetric-gemessen-beispiel-breas</b></p><a name=\"deviceMetric-gemessen-beispiel-breas\"> </a><a name=\"hcdeviceMetric-gemessen-beispiel-breas\"> </a><a name=\"deviceMetric-gemessen-beispiel-breas-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html\">T-CABS DeviceMetric eingestellter oder gemessener Parameter</a></p></div><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 40617009}\">Artificial ventilation (regime/therapy)</span></p><p><b>source</b>: <a href=\"Device-device-1573.html\">Device: identifier = http://www.breas_example.com/identifiers/devices#1573; status = active; manufacturer = BREAS Medical; serialNumber = U120006</a></p><p><b>category</b>: Measurement</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:type [
      fhir:coding ( [

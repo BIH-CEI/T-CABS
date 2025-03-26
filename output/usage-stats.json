@@ -8,6 +8,18 @@
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-alarm",
         "title": "T-CABS Communication Alarm"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm",
+        "title": "T-CABS Communication Atemfrequenz high Alarm"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm",
+        "title": "T-CABS Communication Atemfrequenz low Alarm"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-diskonnektion-alarm",
+        "title": "T-CABS Communication Diskonnektion Alarm"
       }
     ],
     "Device": [
@@ -16,10 +28,24 @@
         "title": "T-CABS Device Beatmungsgerät"
       }
     ],
+    "DeviceMetric": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter",
+        "title": "T-CABS DeviceMetric eingestellter oder gemessener Parameter"
+      }
+    ],
     "Observation": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af",
+        "title": "T-CABS Observation AF"
+      },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
         "title": "T-CABS Observation AHI"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv",
+        "title": "T-CABS Observation AMV"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden",

@@ -1,5 +1,5 @@
 Instance: deviceMetric-Eingestellt-Beispiel-Loewenstein
-InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
+InstanceOf: t-cabs-devicemetric-eingestellter-gemessener-parameter
 Usage: #example
 Title: "Beispiel Einstellung Löwenstein (DeviceMetric)"
 Description: "Eingestellter Parameter"
@@ -9,7 +9,7 @@ Description: "Eingestellter Parameter"
 
 
 Instance: deviceMetric-Gemessen-Beispiel-Loewenstein
-InstanceOf: $mii-icu-eingestellte-gemessene-parameter-beatmung-devicemetric
+InstanceOf: t-cabs-devicemetric-eingestellter-gemessener-parameter
 Usage: #example
 Title: "Beispiel Messung Löwenstein (DeviceMetric)"
 Description: "Gemessener Parameter"

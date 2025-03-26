@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "T_CABS_ValueSet_Beatmungsmodus",
+  "id": "t-cabs-valueset-Beatmungsmodus",
+  "title": "T-CABS ValueSet Beatmungsmodus",
+  "description": "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
+  "url": "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "concept": [
+          {
+            "code": "475172",
+            "display": "Pressure Control"
+          },
+          {
+            "code": "475147",
+            "display": "PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts."
+          },
+          {
+            "code": "475148",
+            "display": "PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, with tidal volume target and pressure regulation, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts."
+          },
+          {
+            "code": "475154",
+            "display": "PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts."
+          },
+          {
+            "code": "475197",
+            "display": "BiLevel Airway Pressure Ventilation"
+          },
+          {
+            "code": "475201",
+            "display": "Volume Control Ventilation"
+          }
+        ]
+      }
+    ]
+  }
+}

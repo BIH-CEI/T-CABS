@@ -2,7 +2,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -12,38 +11,34 @@
   fhir:id [ fhir:v "device-1234"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"^^xsd:anyURI ;
-       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device>
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"^^xsd:anyURI ;
+       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-1234</b></p><a name=\"device-1234\"> </a><a name=\"hcdevice-1234\"> </a><a name=\"device-1234-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device\">SD MII ICU ICU Device</a></p></div><p><b>identifier</b>: <code>http://www.loewenstein_example.com/identifiers/devices</code>/1234</p><p><b>status</b>: Active</p><p><b>serialNumber</b>: ABC5678DE</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>prisma SOFT</td><td>Model name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 714692006}\">Variable pressure jet ventilation device (physical object)</span></p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>v1.2.3</td></tr></table><p><b>patient</b>: <a href=\"Patient-patient-123456.html\">John Doe (official) (no stated gender), DoB: 1944-04-11 ( Medical record number)</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-1234</b></p><a name=\"device-1234\"> </a><a name=\"hcdevice-1234\"> </a><a name=\"device-1234-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-beatmungsgeraet.html\">T-CABS Device Beatmungsgerät</a></p></div><p><b>identifier</b>: <code>http://www.loewenstein_example.com/identifiers/devices</code>/1234</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Löwenstein Medical</p><p><b>serialNumber</b>: ABC5678DE</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>prisma SOFT</td><td>Model name</td></tr></table><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>v1.2.3</td></tr></table><p><b>patient</b>: <a href=\"Patient-patient-123456.html\">John Doe (official) (no stated gender), DoB: 1944-04-11 ( Medical record number)</a></p><p><b>owner</b>: Löwenstein</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://www.loewenstein_example.com/identifiers/devices"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "1234" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "Löwenstein Medical"] ; # 
   fhir:serialNumber [ fhir:v "ABC5678DE"] ; # 
   fhir:deviceName ( [
      fhir:name [ fhir:v "prisma SOFT" ] ;
      fhir:type [ fhir:v "model-name" ]
   ] ) ; # 
-  fhir:type [
-     fhir:coding ( [
-       a sct:714692006 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "714692006" ] ;
-       fhir:display [ fhir:v "Variable pressure jet ventilation device (physical object)" ]
-     ] )
-  ] ; # 
   fhir:version ( [
      fhir:value [ fhir:v "v1.2.3" ]
   ] ) ; # 
   fhir:patient [
      fhir:link <http://t-cabs.org/Patient/patient-123456> ;
      fhir:reference [ fhir:v "Patient/patient-123456" ]
+  ] ; # 
+  fhir:owner [
+     fhir:display [ fhir:v "Löwenstein" ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

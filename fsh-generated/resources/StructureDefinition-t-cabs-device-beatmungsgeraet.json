@@ -15,6 +15,22 @@
   "differential": {
     "element": [
       {
+        "id": "Device.identifier",
+        "path": "Device.identifier",
+        "definition": "Alternativer Identifier zur Seriennummer"
+      },
+      {
+        "id": "Device.identifier.type",
+        "path": "Device.identifier.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "UDI"
+            }
+          ]
+        }
+      },
+      {
         "id": "Device.manufacturer",
         "path": "Device.manufacturer",
         "short": "Name des Gerätehersteller",

@@ -1,6 +1,6 @@
 // respRate() - 50
 Instance: atemfrequenz-gemessen-beispiel-resmed
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-mechanische-atemfrequenz-beatmet
+InstanceOf: t-cabs-observation-af
 Usage: #example
 Title: "Beispiel Atemfrequenz ResMed (Observation)"
 Description: "Atemfrequenz gemessen"

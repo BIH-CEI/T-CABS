@@ -1,8 +1,88 @@
 {
   "resourceType" : "Bundle",
-  "id" : "ba56f714-3da4-4823-8ed6-817346bf68b9",
+  "id" : "b4988a25-b414-4bad-913d-90d439500a79",
   "meta" : {
-    "lastUpdated" : "2025-03-12T14:55:40.502+01:00"
+    "lastUpdated" : "2025-03-25T16:42:29.393+01:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on codesystem ISO 11073-10101 Health informatics - Point-of-care version2023-04-26</p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475172\"> </a>\u00a0\u00a0475172</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475147\"> </a>\u00a0\u00a0475147</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_AC_PC_6ACAP</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475148\"> </a>\u00a0\u00a0475148</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_AC_vtPC_6ACAP</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475154\"> </a>\u00a0\u00a0475154</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475197\"> </a>\u00a0\u00a0475197</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475201\"> </a>\u00a0\u00a0475201</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_CMV_VC</td></tr></table></div>"
+      },
+      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+      "version" : "0.1.0",
+      "name" : "T_CABS_ValueSet_Beatmungsmodus",
+      "title" : "T-CABS ValueSet Beatmungsmodus",
+      "status" : "draft",
+      "date" : "2025-03-25T16:42:03+01:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:3e69f1e8-743d-4aaa-9959-d651b563ee65",
+        "timestamp" : "2025-03-25T16:42:53+01:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "urn:iso:std:iso:11073:10101|2023-04-26"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "urn:iso:std:iso:11073:10101|2023-04-26"
+        }],
+        "contains" : [{
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475172",
+          "display" : "MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475147",
+          "display" : "MDC_VENT_MODE_ISO_AC_PC_6ACAP"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475148",
+          "display" : "MDC_VENT_MODE_ISO_AC_vtPC_6ACAP"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475154",
+          "display" : "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475197",
+          "display" : "MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475201",
+          "display" : "MDC_VENT_MODE_ISO_CMV_VC"
+        }]
+      }
+    }
+  }]
 }

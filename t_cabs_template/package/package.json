@@ -1,0 +1,12 @@
+{
+    "name": "t-cabs.fhir.ig.template",
+    "version": "0.1.0",
+    "type": "fhir.template",
+    "license": "CC0-1.0",
+    "author": "BIH",
+    "description": "T-CABS FHIR IG Template",
+    "base": "fhir.base.template",
+    "dependencies": {
+      "fhir.base.template": "current"
+    }
+  }

@@ -1,6 +1,6 @@
 // frequencyMedian_bpm
 Instance: atemfrequenz-gemessen-beispiel-loewenstein
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-mechanische-atemfrequenz-beatmet
+InstanceOf: t-cabs-observation-af
 Usage: #example
 Title: "Beispiel Atemfrequenz Löwenstein (Observation)"
 Description: "Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa"

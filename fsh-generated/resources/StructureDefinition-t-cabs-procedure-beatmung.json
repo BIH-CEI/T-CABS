@@ -15,9 +15,8 @@
   "differential": {
     "element": [
       {
-        "id": "Procedure.status",
-        "path": "Procedure.status",
-        "patternCode": "in-progress"
+        "id": "Procedure",
+        "path": "Procedure"
       }
     ]
   }

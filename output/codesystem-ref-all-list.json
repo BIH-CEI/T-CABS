@@ -61,6 +61,66 @@
       "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
+      "url" : "http://hl7.org/fhir/metric-calibration-state",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricCalibrationState",
+      "title" : "DeviceMetricCalibrationState",
+      "description" : "Describes the state of a metric calibration.",
+      "oids" : ["2.16.840.1.113883.4.642.4.653"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-metric-calibration-state.html" : "DeviceMetricCalibrationState"
+    },
+    {
+      "url" : "http://hl7.org/fhir/metric-calibration-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricCalibrationType",
+      "title" : "DeviceMetricCalibrationType",
+      "description" : "Describes the type of a metric calibration.",
+      "oids" : ["2.16.840.1.113883.4.642.4.651"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-metric-calibration-type.html" : "DeviceMetricCalibrationType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/metric-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricCategory",
+      "title" : "DeviceMetricCategory",
+      "description" : "Describes the category of the metric.",
+      "oids" : ["2.16.840.1.113883.4.642.4.649"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-metric-category.html" : "DeviceMetricCategory"
+    },
+    {
+      "url" : "http://hl7.org/fhir/metric-color",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricColor",
+      "title" : "DeviceMetricColor",
+      "description" : "Describes the typical color of representation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.655"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-metric-color.html" : "DeviceMetricColor"
+    },
+    {
+      "url" : "http://hl7.org/fhir/metric-operational-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceMetricOperationalStatus",
+      "title" : "DeviceMetricOperationalStatus",
+      "description" : "Describes the operational status of the DeviceMetric.",
+      "oids" : ["2.16.840.1.113883.4.642.4.647"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-metric-operational-status.html" : "DeviceMetricOperationalStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/observation-status",
       "version" : "4.0.1",
       "status" : "active",
@@ -118,8 +178,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc" : "VS MII ICU Code Observation Beatmung [LOINC]"
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc" : "VS MII ICU Code Observation Beatmung [LOINC]",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -131,24 +191,24 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-bodysite-observation-beatmung" : "VS MII ICU BodySite Observation Beatmung",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-category-procedure-beatmung-snomed" : "VS MII ICU Category Procedure Beatmung [SNOMED]",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
       "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
       "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
       "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed" : "VS MII ICU Code Observation Beatmung [SNOMED]",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-bodysite-observation-beatmung" : "VS MII ICU BodySite Observation Beatmung",
       "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-category-procedure-beatmung-snomed" : "VS MII ICU Category Procedure Beatmung [SNOMED]",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
       "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type"
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -292,7 +352,9 @@
       "oids" : ["2.16.840.1.113883.6.24"],
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073" : "VS MII ICU Code Observation Beatmung [ISO11073]"
+      "ValueSet-t-cabs-valueset-Beatmungsmodus.html" : "T-CABS ValueSet Beatmungsmodus",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073" : "VS MII ICU Code Observation Beatmung [ISO11073]",
+      "http://hl7.org/fhir/R4/valueset-devicemetric-type.html" : "Device Metric and Component Types"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "id": "amv-gemessen-beispiel-loewenstein",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-maschineller"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"
     ]
   },
   "partOf": [

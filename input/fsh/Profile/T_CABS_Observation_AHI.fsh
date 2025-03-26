@@ -10,6 +10,7 @@ Description: "Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der währen
 * effective[x] 1..1
 * effective[x] only Period
 
-* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.system = $UCUM
 * valueQuantity.code = #{score}
 
+* insert Grenzwertdefinition

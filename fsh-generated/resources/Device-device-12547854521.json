@@ -3,7 +3,7 @@
   "id": "device-12547854521",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"
     ]
   },
   "identifier": [
@@ -14,22 +14,17 @@
   ],
   "deviceName": [
     {
-      "name": "Stellar",
-      "type": "model-name"
+      "type": "model-name",
+      "name": "Stellar"
     }
   ],
+  "owner": {
+    "display": "Vivisol"
+  },
   "status": "active",
   "serialNumber": "12547854521",
   "patient": {
     "reference": "Patient/patient-44187887-a48d-4f4e-9393-e4207045a2c4"
   },
-  "type": {
-    "coding": [
-      {
-        "code": "714692006",
-        "system": "http://snomed.info/sct",
-        "display": "Variable pressure jet ventilation device (physical object)"
-      }
-    ]
-  }
+  "manufacturer": "ResMed"
 }

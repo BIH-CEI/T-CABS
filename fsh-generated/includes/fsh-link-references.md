@@ -1,5 +1,4 @@
 [procedure-PSV-123]: Procedure-procedure-PSV-123.html
-[T_CABS_Observation_Atemfrequenz]: StructureDefinition-t-cabs-observation-atemfrequenz.html
 [amv-gemessen-beispiel-loewenstein]: Observation-amv-gemessen-beispiel-loewenstein.html
 [amv-gemessen-beispiel-resmed]: Observation-amv-gemessen-beispiel-resmed.html
 [atemfrequenz-gemessen-beispiel-loewenstein]: Observation-atemfrequenz-gemessen-beispiel-loewenstein.html
@@ -11,6 +10,7 @@
 [procedure-CPAP-123]: Procedure-procedure-CPAP-123.html
 [beatmungsstunden-gemessen-beispiel-loewenstein]: Observation-beatmungsstunden-gemessen-beispiel-loewenstein.html
 [beatmungsstunden-gemessen-beispiel-resmed]: Observation-beatmungsstunden-gemessen-beispiel-resmed.html
+[atemfrequenz-eingestellt-beispiel-breas]: Observation-atemfrequenz-eingestellt-beispiel-breas.html
 [maximalInspiratoryPressure-eingestellt-beispiel-breas]: Observation-maximalInspiratoryPressure-eingestellt-beispiel-breas.html
 [peep-eingestellt-beispiel-breas]: Observation-peep-eingestellt-beispiel-breas.html
 [tidalvolumen-eingestellt-beispiel-breas]: Observation-tidalvolumen-eingestellt-beispiel-breas.html
@@ -18,8 +18,8 @@
 [deviceMetric-Eingestellt-Beispiel-Loewenstein]: DeviceMetric-deviceMetric-Eingestellt-Beispiel-Loewenstein.html
 [deviceMetric-eingestellt-beispiel-resmed]: DeviceMetric-deviceMetric-eingestellt-beispiel-resmed.html
 [amv-gemessen-beispiel-breas]: Observation-amv-gemessen-beispiel-breas.html
-[atemfrequenz-gemessen-beispiel-breas]: Observation-atemfrequenz-gemessen-beispiel-breas.html
 [beatmungsstunden-gemessen-beispiel-breas]: Observation-beatmungsstunden-gemessen-beispiel-breas.html
+[atemfrequenz-gemessen-beispiel-breas]: Observation-atemfrequenz-gemessen-beispiel-breas.html
 [tidalvolumen-gemessen-beispiel-breas]: Observation-tidalvolumen-gemessen-beispiel-breas.html
 [leckage-gemessen-beispiel-breas]: Observation-leckage-gemessen-beispiel-breas.html
 [leckage-gemessen-beispiel-loewenstein]: Observation-leckage-gemessen-beispiel-loewenstein.html
@@ -40,12 +40,15 @@
 [T_CABS_Observation_Gehstrecke]: StructureDefinition-t-cabs-observation-gehstrecke.html
 [T_CABS_Observation_Gewicht]: StructureDefinition-t-cabs-observation-gewicht.html
 [T_CABS_Communication_Alarm]: StructureDefinition-t-cabs-communication-alarm.html
+[T_CABS_Communication_AtemfrequenzHighAlarm]: StructureDefinition-t-cabs-communication-atemfrequenz-high-alarm.html
+[T_CABS_Communication_AtemfrequenzLowAlarm]: StructureDefinition-t-cabs-communication-atemfrequenz-low-alarm.html
+[T_CABS_Communication_DiskonnektionAlarm]: StructureDefinition-t-cabs-communication-diskonnektion-alarm.html
 [T_CABS_Device_Beatmungsgeraet]: StructureDefinition-t-cabs-device-beatmungsgeraet.html
+[T_CABS_DeviceMetric_Eingestellter_Gemessener_Parameter]: StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.html
+[T_CABS_Observation_AF]: StructureDefinition-t-cabs-observation-af.html
 [T_CABS_Observation_AHI]: StructureDefinition-t-cabs-observation-ahi.html
-[T_CABS_Observation_Arterieller_Blutdruck]: StructureDefinition-t-cabs-observation-arterieller-blutdruck.html
 [T_CABS_Observation_Beatmungsstunden]: StructureDefinition-t-cabs-observation-beatmungsstunden.html
 [T_CABS_Observation_Leckage]: StructureDefinition-t-cabs-observation-leckage.html
 [T_CABS_Observation_SPO2]: StructureDefinition-t-cabs-observation-spo2.html
 [T_CABS_Observation_TriggeredBreaths]: StructureDefinition-t-cabs-observation-triggeredbreaths.html
 [T_CABS_Procedure_Beatmung]: StructureDefinition-t-cabs-procedure-beatmung.html
-[T_CABS_Observation_Herzfrequenz]: StructureDefinition-t-cabs-observation-herzfrequenz.html

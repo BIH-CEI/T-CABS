@@ -1,1 +1,2 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
+urn:iso:std:iso:11073:10101,2.0.1,active,"2.16.840.1.113883.6.24",Mdc,ISO 11073-10101 Health informatics - Point-of-care,"The nomenclature relates primarily to vital signs monitoring, but also includes semantics of other medical devices that are commonly used in acute care settings. There are multiple coding partitions each of which has a systematic name consisting of a set of base concepts and differentiating criteria.","ValueSet/t-cabs-valueset-Beatmungsmodus"

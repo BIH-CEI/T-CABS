@@ -1,6 +1,6 @@
 // spontTriggBreaths() - 50
 Instance: amv-gemessen-beispiel-resmed
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-maschineller
+InstanceOf: t-cabs-observation-amv
 Usage: #example
 Title: "Beispiel AMV ResMed (Observation)"
 Description: "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute

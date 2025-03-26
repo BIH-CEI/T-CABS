@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TCABS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-03-12T14:55:10+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-25T16:42:03+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH-CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH-CEI" ] ;
@@ -865,6 +865,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Communication"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Communication/atemfrequenz-alarm-23> ;
+         fhir:reference [ fhir:v "Communication/atemfrequenz-alarm-23" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Alarm (Communication)" ] ;
+       fhir:description [ fhir:v "Beispielhafter Alarm einer erhöhten Atemfrequenz" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
@@ -875,8 +894,9 @@
        fhir:name [ fhir:v "Beispiel AMV Löwenstein (Observation)" ] ;
        fhir:description [ fhir:v "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute /\nminuteVolumeMedian_l_min - Median of the minute volume in l/min. Supported devices: prismaLINE, prismaVENT, Luisa" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-amv>
        ]
      ] [
        fhir:extension ( [
@@ -893,8 +913,9 @@
        fhir:name [ fhir:v "Beispiel AMV ResMed (Observation)" ] ;
        fhir:description [ fhir:v "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute\nTreatmentDataDetailDto - minuteVolume" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-amv>
        ]
      ] [
        fhir:extension ( [
@@ -911,8 +932,9 @@
        fhir:name [ fhir:v "Beispiel Atemfrequenz Löwenstein (Observation)" ] ;
        fhir:description [ fhir:v "Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-af>
        ]
      ] [
        fhir:extension ( [
@@ -929,8 +951,9 @@
        fhir:name [ fhir:v "Beispiel Atemfrequenz ResMed (Observation)" ] ;
        fhir:description [ fhir:v "Atemfrequenz gemessen" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-af>
        ]
      ] [
        fhir:extension ( [
@@ -947,8 +970,9 @@
        fhir:name [ fhir:v "Beispiel Beatmungsgerät Breas (Device)" ] ;
        fhir:description [ fhir:v "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller BREAS" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -965,8 +989,9 @@
        fhir:name [ fhir:v "Beispiel Beatmungsgerät Löwenstein (Device)" ] ;
        fhir:description [ fhir:v "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller Loewenstein" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -983,8 +1008,9 @@
        fhir:name [ fhir:v "Beispiel Beatmungsgerät ResMed (Device)" ] ;
        fhir:description [ fhir:v "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller ResMed" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1069,6 +1095,25 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/atemfrequenz-eingestellt-beispiel-breas> ;
+         fhir:reference [ fhir:v "Observation/atemfrequenz-eingestellt-beispiel-breas" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel eingestellte Atemfrequenz Breas (Observation)" ] ;
+       fhir:description [ fhir:v "Eine eingestellte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-af>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://t-cabs.org/Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas> ;
          fhir:reference [ fhir:v "Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas" ]
        ] ;
@@ -1129,8 +1174,9 @@
        fhir:name [ fhir:v "Beispiel Einstellung Breas (DeviceMetric)" ] ;
        fhir:description [ fhir:v "Eingestellter Parameter" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
        ]
      ] [
        fhir:extension ( [
@@ -1147,8 +1193,9 @@
        fhir:name [ fhir:v "Beispiel Einstellung Löwenstein (DeviceMetric)" ] ;
        fhir:description [ fhir:v "Eingestellter Parameter" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
        ]
      ] [
        fhir:extension ( [
@@ -1165,8 +1212,9 @@
        fhir:name [ fhir:v "Beispiel Einstellung ResMed (DeviceMetric)" ] ;
        fhir:description [ fhir:v "Eingestellter Parameter" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
        ]
      ] [
        fhir:extension ( [
@@ -1183,26 +1231,9 @@
        fhir:name [ fhir:v "Beispiel gemessen AMV Breas (Observation)" ] ;
        fhir:description [ fhir:v "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute\nTreatmentDataDetailDto - minuteVolume" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/atemfrequenz-gemessen-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/atemfrequenz-gemessen-beispiel-breas" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel gemessen Atemfrequenz Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Eine beispielhafte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-amv>
        ]
      ] [
        fhir:extension ( [
@@ -1222,6 +1253,25 @@
          a fhir:canonical ;
          fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"^^xsd:anyURI ;
          fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/atemfrequenz-gemessen-beispiel-breas> ;
+         fhir:reference [ fhir:v "Observation/atemfrequenz-gemessen-beispiel-breas" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel gemessene Atemfrequenz Breas (Observation)" ] ;
+       fhir:description [ fhir:v "Eine gemessene Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-af>
        ]
      ] [
        fhir:extension ( [
@@ -1313,8 +1363,9 @@
        fhir:name [ fhir:v "Beispiel Messung Breas (DeviceMetric)" ] ;
        fhir:description [ fhir:v "Gemessener Parameter" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
        ]
      ] [
        fhir:extension ( [
@@ -1331,8 +1382,9 @@
        fhir:name [ fhir:v "Beispiel Messung Löwenstein (DeviceMetric)" ] ;
        fhir:description [ fhir:v "Gemessener Parameter" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
        ]
      ] [
        fhir:extension ( [
@@ -1349,8 +1401,9 @@
        fhir:name [ fhir:v "Beispiel Messung ResMed (DeviceMetric)" ] ;
        fhir:description [ fhir:v "Gemessener Parameter" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
        ]
      ] [
        fhir:extension ( [
@@ -1494,7 +1547,61 @@
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-alarm" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Communication Alarm" ] ;
-       fhir:description [ fhir:v "Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes" ] ;
+       fhir:description [ fhir:v "Abstraktes Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Communication Atemfrequenz high Alarm" ] ;
+       fhir:description [ fhir:v "Profil eines Alarms für eine überschrittenen Atemfrequenz" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Communication Atemfrequenz low Alarm" ] ;
+       fhir:description [ fhir:v "Profil eines Alarms für eine unterschrittenen Atemfrequenz" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-diskonnektion-alarm> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-diskonnektion-alarm" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Communication Diskonnektion Alarm" ] ;
+       fhir:description [ fhir:v "Profil eines Alarms für eine Diskonnektion des Beatmungsgerätes" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1526,6 +1633,42 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS DeviceMetric eingestellter oder gemessener Parameter" ] ;
+       fhir:description [ fhir:v "Profil für eingestellte oder gemessene Parameter eines Beatmungsgerätes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-af> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-af" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation AF" ] ;
+       fhir:description [ fhir:v "Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-ahi" ]
        ] ;
@@ -1544,11 +1687,29 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-amv> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-amv" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation AMV" ] ;
+       fhir:description [ fhir:v "Profil für ein gemessenes oder eingestelltes Atemminutenvolumen" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-beatmungsstunden" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Beatmungsstunden" ] ;
-       fhir:description [ fhir:v "Profil für die Anzahl der Beatmungsstunden" ] ;
+       fhir:description [ fhir:v "Profil für die empfohlene oder tatsächlich gemessene Anzahl der Beatmungsstunden je 24 Stunden" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1607,6 +1768,24 @@
          a fhir:boolean ;
          fhir:v false
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus> ;
+         fhir:reference [ fhir:v "ValueSet/t-cabs-valueset-Beatmungsmodus" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS ValueSet Beatmungsmodus" ] ;
+       fhir:description [ fhir:v "Dieses ValueSet erhält Codes um die verschiedenen Beatmungsmodis abzubilden" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -1635,6 +1814,48 @@
            fhir:v "index.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "logisches_modell.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "logisches_modell.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Logisches Modell" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "profile.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "profile.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Profile" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "beispiele.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "beispiele.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Beispiele" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

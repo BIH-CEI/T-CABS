@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="TCABS"/>
   <status value="draft"/>
-  <date value="2025-03-12T14:55:10+01:00"/>
+  <date value="2025-03-25T16:42:03+01:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
@@ -469,6 +469,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Communication"/>
+      </extension>
+      <reference>
+        <reference value="Communication/atemfrequenz-alarm-23"/>
+      </reference>
+      <name value="Beispiel Alarm (Communication)"/>
+      <description value="Beispielhafter Alarm einer erhöhten Atemfrequenz"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -476,7 +487,7 @@
       </reference>
       <name value="Beispiel AMV Löwenstein (Observation)"/>
       <description value="Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute /&#xA;minuteVolumeMedian_l_min - Median of the minute volume in l/min. Supported devices: prismaLINE, prismaVENT, Luisa"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -487,7 +498,7 @@
       </reference>
       <name value="Beispiel AMV ResMed (Observation)"/>
       <description value="Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute&#xA;TreatmentDataDetailDto - minuteVolume"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -498,7 +509,7 @@
       </reference>
       <name value="Beispiel Atemfrequenz Löwenstein (Observation)"/>
       <description value="Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-af"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -509,7 +520,7 @@
       </reference>
       <name value="Beispiel Atemfrequenz ResMed (Observation)"/>
       <description value="Atemfrequenz gemessen"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-af"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -520,7 +531,7 @@
       </reference>
       <name value="Beispiel Beatmungsgerät Breas (Device)"/>
       <description value="Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller BREAS"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -531,7 +542,7 @@
       </reference>
       <name value="Beispiel Beatmungsgerät Löwenstein (Device)"/>
       <description value="Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller Loewenstein"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -542,7 +553,7 @@
       </reference>
       <name value="Beispiel Beatmungsgerät ResMed (Device)"/>
       <description value="Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller ResMed"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -593,6 +604,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/atemfrequenz-eingestellt-beispiel-breas"/>
+      </reference>
+      <name value="Beispiel eingestellte Atemfrequenz Breas (Observation)"/>
+      <description value="Eine eingestellte Atemfrequenz der Firma Breas&#xA;Treatment_Data - Breaths per minute (BPM)"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-af"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas"/>
       </reference>
       <name value="Beispiel eingestellter max. Beatmungsdruck Breas (Observation)"/>
@@ -630,7 +652,7 @@
       </reference>
       <name value="Beispiel Einstellung Breas (DeviceMetric)"/>
       <description value="Eingestellter Parameter"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -641,7 +663,7 @@
       </reference>
       <name value="Beispiel Einstellung Löwenstein (DeviceMetric)"/>
       <description value="Eingestellter Parameter"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -652,7 +674,7 @@
       </reference>
       <name value="Beispiel Einstellung ResMed (DeviceMetric)"/>
       <description value="Eingestellter Parameter"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -663,18 +685,7 @@
       </reference>
       <name value="Beispiel gemessen AMV Breas (Observation)"/>
       <description value="Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute&#xA;TreatmentDataDetailDto - minuteVolume"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/atemfrequenz-gemessen-beispiel-breas"/>
-      </reference>
-      <name value="Beispiel gemessen Atemfrequenz Breas (Observation)"/>
-      <description value="Eine beispielhafte Atemfrequenz der Firma Breas&#xA;Treatment_Data - Breaths per minute (BPM)"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -686,6 +697,17 @@
       <name value="Beispiel gemessen Beatmungsstunden Breas (Observation)"/>
       <description value="Beatmungsdauer des Patienten in Stunden"/>
       <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/atemfrequenz-gemessen-beispiel-breas"/>
+      </reference>
+      <name value="Beispiel gemessene Atemfrequenz Breas (Observation)"/>
+      <description value="Eine gemessene Atemfrequenz der Firma Breas&#xA;Treatment_Data - Breaths per minute (BPM)"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-af"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -740,7 +762,7 @@
       </reference>
       <name value="Beispiel Messung Breas (DeviceMetric)"/>
       <description value="Gemessener Parameter"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -751,7 +773,7 @@
       </reference>
       <name value="Beispiel Messung Löwenstein (DeviceMetric)"/>
       <description value="Gemessener Parameter"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -762,7 +784,7 @@
       </reference>
       <name value="Beispiel Messung ResMed (DeviceMetric)"/>
       <description value="Gemessener Parameter"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -849,7 +871,40 @@
         <reference value="StructureDefinition/t-cabs-communication-alarm"/>
       </reference>
       <name value="T-CABS Communication Alarm"/>
-      <description value="Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes"/>
+      <description value="Abstraktes Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"/>
+      </reference>
+      <name value="T-CABS Communication Atemfrequenz high Alarm"/>
+      <description value="Profil eines Alarms für eine überschrittenen Atemfrequenz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm"/>
+      </reference>
+      <name value="T-CABS Communication Atemfrequenz low Alarm"/>
+      <description value="Profil eines Alarms für eine unterschrittenen Atemfrequenz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-communication-diskonnektion-alarm"/>
+      </reference>
+      <name value="T-CABS Communication Diskonnektion Alarm"/>
+      <description value="Profil eines Alarms für eine Diskonnektion des Beatmungsgerätes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -868,6 +923,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
+      </reference>
+      <name value="T-CABS DeviceMetric eingestellter oder gemessener Parameter"/>
+      <description value="Profil für eingestellte oder gemessene Parameter eines Beatmungsgerätes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-af"/>
+      </reference>
+      <name value="T-CABS Observation AF"/>
+      <description value="Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/t-cabs-observation-ahi"/>
       </reference>
       <name value="T-CABS Observation AHI"/>
@@ -879,10 +956,21 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/t-cabs-observation-amv"/>
+      </reference>
+      <name value="T-CABS Observation AMV"/>
+      <description value="Profil für ein gemessenes oder eingestelltes Atemminutenvolumen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/t-cabs-observation-beatmungsstunden"/>
       </reference>
       <name value="T-CABS Observation Beatmungsstunden"/>
-      <description value="Profil für die Anzahl der Beatmungsstunden"/>
+      <description value="Profil für die empfohlene oder tatsächlich gemessene Anzahl der Beatmungsstunden je 24 Stunden"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -918,6 +1006,17 @@
       <description value="Profil für die Beatmungsprozedur"/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/t-cabs-valueset-Beatmungsmodus"/>
+      </reference>
+      <name value="T-CABS ValueSet Beatmungsmodus"/>
+      <description value="Dieses ValueSet erhält Codes um die verschiedenen Beatmungsmodis abzubilden"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
@@ -931,6 +1030,30 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="logisches_modell.html"/>
+        </extension>
+        <nameUrl value="logisches_modell.html"/>
+        <title value="Logisches Modell"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="profile.html"/>
+        </extension>
+        <nameUrl value="profile.html"/>
+        <title value="Profile"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="beispiele.html"/>
+        </extension>
+        <nameUrl value="beispiele.html"/>
+        <title value="Beispiele"/>
         <generation value="markdown"/>
       </page>
     </page>
