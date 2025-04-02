@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="t-cabs-observation-ahi"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition t-cabs-observation-ahi</b></p><a name="t-cabs-observation-ahi"> </a><a name="hct-cabs-observation-ahi"> </a><a name="t-cabs-observation-ahi-en-US"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-t-cabs-observation-ahi-definitions.html#Observation">Observation</a><a name="Observation"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung">SD_MII_ICU_Parameter_Von_Beatmung</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Measurements and simple assertions</span></td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition t-cabs-observation-ahi</b></p><a name="t-cabs-observation-ahi"> </a><a name="hct-cabs-observation-ahi"> </a><a name="t-cabs-observation-ahi-en-US"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-t-cabs-observation-ahi-definitions.html#Observation">Observation</a><a name="Observation"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung">SD_MII_ICU_Parameter_Von_Beatmung</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Measurements and simple assertions</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-t-cabs-observation-ahi-definitions.html#Observation.code">code</a><a name="Observation.code"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck103.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> Slices for coding<a name="Observation.code.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Content/Rules for all slices</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1035.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-t-cabs-observation-ahi-definitions.html#Observation.code.coding:sct" title="Slice sct">coding:sct</a><a name="Observation.code.coding.2"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">At least the following</span></td></tr>
@@ -40,7 +40,7 @@
   <name value="T_CABS_Observation_AHI"/>
   <title value="T-CABS Observation AHI"/>
   <status value="draft"/>
-  <date value="2025-03-25T16:42:03+01:00"/>
+  <date value="2025-04-02T15:35:32+02:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
@@ -88,7 +88,7 @@
   <derivation value="constraint"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="2025.0.2"/>
+      <valueString value="2025.0.4"/>
     </extension>
     <element id="Observation">
       <path value="Observation"/>
@@ -115,6 +115,14 @@
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <constraint>
+        <key value="dom-3"/>
+        <severity value="error"/>
+        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource"/>
+        <expression value="contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()"/>
+        <xpath value="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
         <key value="dom-4"/>
         <severity value="error"/>
         <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"/>
@@ -123,11 +131,11 @@
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <constraint>
-        <key value="dom-3"/>
+        <key value="dom-5"/>
         <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource"/>
-        <expression value="contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()"/>
-        <xpath value="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))"/>
+        <human value="If a resource is contained in another resource, it SHALL NOT have a security label"/>
+        <expression value="contained.meta.security.empty()"/>
+        <xpath value="not(exists(f:contained/*/f:meta/f:security))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <constraint>
@@ -145,12 +153,12 @@
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <constraint>
-        <key value="dom-5"/>
+        <key value="obs-6"/>
         <severity value="error"/>
-        <human value="If a resource is contained in another resource, it SHALL NOT have a security label"/>
-        <expression value="contained.meta.security.empty()"/>
-        <xpath value="not(exists(f:contained/*/f:meta/f:security))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+        <human value="dataAbsentReason SHALL only be present if Observation.value[x] is not present"/>
+        <expression value="dataAbsentReason.empty() or value.empty()"/>
+        <xpath value="not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))"/>
+        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung"/>
       </constraint>
       <constraint>
         <key value="obs-7"/>
@@ -158,15 +166,7 @@
         <human value="If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present"/>
         <expression value="value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()"/>
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-      </constraint>
-      <constraint>
-        <key value="obs-6"/>
-        <severity value="error"/>
-        <human value="dataAbsentReason SHALL only be present if Observation.value[x] is not present"/>
-        <expression value="dataAbsentReason.empty() or value.empty()"/>
-        <xpath value="not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung"/>
       </constraint>
       <constraint>
         <key value="obs-10"/>
@@ -182,6 +182,8 @@
         <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
         <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
@@ -221,6 +223,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
       <isSummary value="true"/>
     </element>
     <element id="Observation.meta">
@@ -237,7 +240,6 @@
       <type>
         <code value="Meta"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -246,15 +248,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Observation.implicitRules">
       <path value="Observation.implicitRules"/>
@@ -271,7 +266,6 @@
       <type>
         <code value="uri"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -283,10 +277,6 @@
       <isModifier value="true"/>
       <isModifierReason value="This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Observation.language">
       <path value="Observation.language"/>
@@ -303,7 +293,6 @@
       <type>
         <code value="code"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -312,6 +301,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"/>
@@ -323,10 +314,6 @@
         <description value="A human language."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Observation.text">
       <path value="Observation.text"/>
@@ -347,7 +334,6 @@
       <type>
         <code value="Narrative"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -356,14 +342,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="Act.text?"/>
@@ -387,31 +367,15 @@
       <type>
         <code value="Resource"/>
       </type>
-      <mapping>
-        <identity value="rim"/>
-        <map value="Entity. Role, or Act"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
       </mapping>
     </element>
     <element id="Observation.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Additional content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -427,7 +391,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -441,34 +404,18 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
       </mapping>
     </element>
     <element id="Observation.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.modifierExtension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -485,7 +432,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -499,15 +445,12 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -528,7 +471,6 @@
       <type>
         <code value="Identifier"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -538,23 +480,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CX / EI (occasionally, more often EI maps to a resource id or a URL)"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="Identifier"/>
-      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.identifier"/>
@@ -576,7 +503,6 @@
       <path value="Observation.basedOn"/>
       <short value="Fulfills plan, proposal or order"/>
       <definition value="A plan, proposal or order that is fulfilled in whole or in part by this event.  For example, a MedicationRequest may require a patient to have laboratory test performed before  it is dispensed."/>
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
       <requirements value="Allows tracing of authorization for the event and tracking whether proposals/recommendations were acted upon."/>
       <alias value="Fulfills"/>
       <min value="0"/>
@@ -595,7 +521,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -604,23 +529,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.basedOn"/>
@@ -638,7 +548,7 @@
       <path value="Observation.partOf"/>
       <short value="Observation belongs to a specific extracorporeal procedure."/>
       <definition value="Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden."/>
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
+      <comment value="To link an Observation to an Encounter use `encounter`.  See the  [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below for guidance on referencing another Observation."/>
       <alias value="Container"/>
       <min value="1"/>
       <max value="1"/>
@@ -649,10 +559,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -661,31 +569,9 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
-      <constraint>
-        <key value="mii-reference-1"/>
-        <severity value="error"/>
-        <human value="Either reference.reference OR reference.identifier exists"/>
-        <expression value="($this.reference.exists() or ($this.identifier.value.exists() and $this.identifier.system.exists())) xor $this.extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"/>
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"/>
-      </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.partOf"/>
@@ -718,7 +604,6 @@
       <type>
         <code value="code"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -739,10 +624,6 @@
         <description value="Codes providing the status of an observation."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-status|4.0.1"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.status"/>
@@ -765,12 +646,6 @@
       </mapping>
     </element>
     <element id="Observation.category">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.category"/>
       <slicing>
         <discriminator>
@@ -793,7 +668,6 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -803,6 +677,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCategory"/>
@@ -811,22 +687,6 @@
         <description value="Codes for high level observation categories."/>
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-category-procedure-beatmung-snomed"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.class"/>
@@ -854,18 +714,14 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Observation.category.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.category.extension"/>
       <slicing>
         <discriminator>
@@ -890,7 +746,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -904,25 +759,17 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Observation.category.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.category.coding"/>
       <short value="Code defined by a terminology system"/>
       <definition value="A reference to a code defined by a terminology system."/>
@@ -938,7 +785,6 @@
       <type>
         <code value="Coding"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -948,23 +794,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CV"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.1-8, C*E.10-22"/>
@@ -996,18 +827,14 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Observation.category.coding.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.category.coding.extension"/>
       <slicing>
         <discriminator>
@@ -1032,7 +859,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1046,16 +872,14 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Observation.category.coding.system">
@@ -1074,7 +898,6 @@
       <type>
         <code value="uri"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1084,11 +907,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.3"/>
@@ -1117,7 +937,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1126,11 +945,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.7"/>
@@ -1148,7 +964,6 @@
       <path value="Observation.category.coding.code"/>
       <short value="Symbol in syntax defined by the system"/>
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Need to refer to a particular code in the system."/>
       <min value="1"/>
       <max value="1"/>
@@ -1160,7 +975,6 @@
       <type>
         <code value="code"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1170,11 +984,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.1"/>
@@ -1195,7 +1006,6 @@
       <path value="Observation.category.coding.display"/>
       <short value="Representation defined by the system"/>
       <definition value="A representation of the meaning of the code in the system, following the rules of the system."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system."/>
       <min value="0"/>
       <max value="1"/>
@@ -1207,7 +1017,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1216,11 +1025,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.2 - but note this is not well followed"/>
@@ -1250,7 +1056,6 @@
       <type>
         <code value="boolean"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1259,11 +1064,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="Sometimes implied by being first"/>
@@ -1296,7 +1098,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1305,11 +1106,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.9. But note many systems use C*E.2 for this"/>
@@ -1340,7 +1138,6 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1350,6 +1147,7 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -1359,22 +1157,6 @@
         <description value="Codes identifying names of simple observations."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
@@ -1418,18 +1200,14 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Observation.code.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.code.extension"/>
       <slicing>
         <discriminator>
@@ -1454,7 +1232,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1468,25 +1245,17 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Observation.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.code.coding"/>
       <slicing>
         <discriminator>
@@ -1510,7 +1279,6 @@
       <type>
         <code value="Coding"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1520,23 +1288,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CV"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.1-8, C*E.10-22"/>
@@ -1572,7 +1325,6 @@
         <code value="774099003"/>
         <display value="Apnea Hypopnea Index (observable entity)"/>
       </patternCoding>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1582,27 +1334,12 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CV"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.1-8, C*E.10-22"/>
@@ -1634,18 +1371,14 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Observation.code.coding:sct.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.code.coding.extension"/>
       <slicing>
         <discriminator>
@@ -1670,7 +1403,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1684,16 +1416,14 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Observation.code.coding:sct.system">
@@ -1712,7 +1442,6 @@
       <type>
         <code value="uri"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1722,11 +1451,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.3"/>
@@ -1755,7 +1481,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1764,11 +1489,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.7"/>
@@ -1786,7 +1508,6 @@
       <path value="Observation.code.coding.code"/>
       <short value="Symbol in syntax defined by the system"/>
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Need to refer to a particular code in the system."/>
       <min value="1"/>
       <max value="1"/>
@@ -1798,7 +1519,6 @@
       <type>
         <code value="code"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1808,11 +1528,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.1"/>
@@ -1833,7 +1550,6 @@
       <path value="Observation.code.coding.display"/>
       <short value="Representation defined by the system"/>
       <definition value="A representation of the meaning of the code in the system, following the rules of the system."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system."/>
       <min value="0"/>
       <max value="1"/>
@@ -1845,7 +1561,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1855,11 +1570,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.2 - but note this is not well followed"/>
@@ -1889,7 +1601,6 @@
       <type>
         <code value="boolean"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1898,11 +1609,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="Sometimes implied by being first"/>
@@ -1938,7 +1646,6 @@
         <code value="90564-6"/>
         <display value="Central apnea hypopnea index"/>
       </patternCoding>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1948,27 +1655,12 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CV"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.1-8, C*E.10-22"/>
@@ -2000,18 +1692,14 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Observation.code.coding:loinc.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.code.coding.extension"/>
       <slicing>
         <discriminator>
@@ -2036,7 +1724,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2050,16 +1737,14 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Observation.code.coding:loinc.system">
@@ -2078,7 +1763,6 @@
       <type>
         <code value="uri"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2088,11 +1772,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.3"/>
@@ -2121,7 +1802,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2130,11 +1810,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.7"/>
@@ -2152,7 +1829,6 @@
       <path value="Observation.code.coding.code"/>
       <short value="Symbol in syntax defined by the system"/>
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Need to refer to a particular code in the system."/>
       <min value="1"/>
       <max value="1"/>
@@ -2164,7 +1840,6 @@
       <type>
         <code value="code"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2174,11 +1849,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.1"/>
@@ -2199,7 +1871,6 @@
       <path value="Observation.code.coding.display"/>
       <short value="Representation defined by the system"/>
       <definition value="A representation of the meaning of the code in the system, following the rules of the system."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system."/>
       <min value="0"/>
       <max value="1"/>
@@ -2211,7 +1882,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2221,11 +1891,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.2 - but note this is not well followed"/>
@@ -2255,7 +1922,6 @@
       <type>
         <code value="boolean"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2264,11 +1930,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="Sometimes implied by being first"/>
@@ -2283,12 +1946,6 @@
       </mapping>
     </element>
     <element id="Observation.code.coding:IEEE-11073">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.code.coding"/>
       <sliceName value="IEEE-11073"/>
       <short value="Code defined by a terminology system"/>
@@ -2308,7 +1965,6 @@
       <patternCoding>
         <system value="urn:iso:std:iso:11073:10101"/>
       </patternCoding>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2318,27 +1974,12 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CV"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.1-8, C*E.10-22"/>
@@ -2370,18 +2011,14 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Observation.code.coding:IEEE-11073.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.code.coding.extension"/>
       <slicing>
         <discriminator>
@@ -2406,7 +2043,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2420,16 +2056,14 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Observation.code.coding:IEEE-11073.system">
@@ -2448,7 +2082,6 @@
       <type>
         <code value="uri"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2458,11 +2091,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.3"/>
@@ -2491,7 +2121,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2500,11 +2129,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.7"/>
@@ -2522,7 +2148,6 @@
       <path value="Observation.code.coding.code"/>
       <short value="Symbol in syntax defined by the system"/>
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Need to refer to a particular code in the system."/>
       <min value="1"/>
       <max value="1"/>
@@ -2534,7 +2159,6 @@
       <type>
         <code value="code"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2544,11 +2168,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.1"/>
@@ -2569,7 +2190,6 @@
       <path value="Observation.code.coding.display"/>
       <short value="Representation defined by the system"/>
       <definition value="A representation of the meaning of the code in the system, following the rules of the system."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system."/>
       <min value="0"/>
       <max value="1"/>
@@ -2581,7 +2201,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2590,11 +2209,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.2 - but note this is not well followed"/>
@@ -2624,7 +2240,6 @@
       <type>
         <code value="boolean"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2633,11 +2248,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="Sometimes implied by being first"/>
@@ -2670,7 +2282,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2679,11 +2290,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="C*E.9. But note many systems use C*E.2 for this"/>
@@ -2699,9 +2307,9 @@
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject"/>
-      <short value="A reference from one resource to another"/>
-      <definition value="A reference from one resource to another."/>
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
+      <short value="Who and/or what the observation is about"/>
+      <definition value="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation."/>
+      <comment value="One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated."/>
       <requirements value="Observations have no value if you don't know who or what they're about."/>
       <min value="1"/>
       <max value="1"/>
@@ -2712,11 +2320,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2725,31 +2331,9 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
-      <constraint>
-        <key value="mii-reference-1"/>
-        <severity value="error"/>
-        <human value="Either reference.reference OR reference.identifier exists"/>
-        <expression value="($this.reference.exists() or ($this.identifier.value.exists() and $this.identifier.system.exists())) xor $this.extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"/>
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"/>
-      </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.subject"/>
@@ -2787,7 +2371,6 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2796,23 +2379,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.subject[x]"/>
@@ -2832,9 +2400,9 @@
     </element>
     <element id="Observation.encounter">
       <path value="Observation.encounter"/>
-      <short value="A reference from one resource to another"/>
-      <definition value="A reference from one resource to another."/>
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
+      <short value="Healthcare event during which this observation is made"/>
+      <definition value="The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made."/>
+      <comment value="This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter (e.g. pre-admission laboratory tests)."/>
       <requirements value="For some observations it may be important to know the link between an observation and a particular encounter."/>
       <alias value="Context"/>
       <min value="0"/>
@@ -2846,10 +2414,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2858,31 +2424,9 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
-      <constraint>
-        <key value="mii-reference-1"/>
-        <severity value="error"/>
-        <human value="Either reference.reference OR reference.identifier exists"/>
-        <expression value="($this.reference.exists() or ($this.identifier.value.exists() and $this.identifier.system.exists())) xor $this.extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"/>
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"/>
-      </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.context"/>
@@ -2917,7 +2461,6 @@
       <type>
         <code value="Period"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2927,11 +2470,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.occurrence[x]"/>
@@ -2964,7 +2504,6 @@
       <type>
         <code value="instant"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2974,11 +2513,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.recorded"/>
@@ -2996,7 +2532,6 @@
       <path value="Observation.performer"/>
       <short value="Who is responsible for the observation"/>
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;."/>
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
       <requirements value="May give a degree of confidence in the observation and also indicates where follow-up questions should be directed."/>
       <min value="0"/>
       <max value="*"/>
@@ -3012,7 +2547,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3021,23 +2555,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
       <mapping>
         <identity value="workflow"/>
         <map value="Event.performer.actor"/>
@@ -3074,7 +2593,6 @@
       <patternQuantity>
         <system value="http://unitsofmeasure.org"/>
       </patternQuantity>
-      <condition value="ele-1"/>
       <condition value="obs-7"/>
       <constraint>
         <key value="ele-1"/>
@@ -3085,11 +2603,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="sct-concept"/>
         <map value="&lt; 441742003 |Evaluation finding|"/>
@@ -3125,18 +2640,14 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Observation.value[x].extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.value[x].extension"/>
       <slicing>
         <discriminator>
@@ -3161,7 +2672,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3175,16 +2685,14 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Observation.value[x].value">
@@ -3203,7 +2711,6 @@
       <type>
         <code value="decimal"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3213,11 +2720,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="SN.2  / CQ - N/A"/>
@@ -3231,7 +2735,6 @@
       <path value="Observation.value[x].comparator"/>
       <short value="&lt; | &lt;= | &gt;= | &gt; - how to understand the value"/>
       <definition value="How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is &quot;&lt;&quot; , then the real value is &lt; stated value."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Need a framework for handling measures where the value is &lt;5ug/L or &gt;400mg/L due to the limitations of measuring methodology."/>
       <min value="0"/>
       <max value="1"/>
@@ -3244,7 +2747,6 @@
         <code value="code"/>
       </type>
       <meaningWhenMissing value="If there is no comparator, then there is no modification of the value"/>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3265,10 +2767,6 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1"/>
       </binding>
       <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
         <identity value="v2"/>
         <map value="SN.1  / CQ.1"/>
       </mapping>
@@ -3284,7 +2782,6 @@
       <path value="Observation.value[x].unit"/>
       <short value="Unit representation"/>
       <definition value="A human-readable form of the unit."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms."/>
       <min value="0"/>
       <max value="1"/>
@@ -3296,7 +2793,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3306,11 +2802,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="(see OBX.6 etc.) / CQ.2"/>
@@ -3324,7 +2817,6 @@
       <path value="Observation.value[x].system"/>
       <short value="System that defines coded unit form"/>
       <definition value="The identification of the system that provides the coded form of the unit."/>
-      <comment value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier"/>
       <requirements value="Need to know the system that defines the coded form of the unit."/>
       <min value="1"/>
       <max value="1"/>
@@ -3337,7 +2829,6 @@
         <code value="uri"/>
       </type>
       <patternUri value="http://unitsofmeasure.org"/>
-      <condition value="ele-1"/>
       <condition value="qty-3"/>
       <constraint>
         <key value="ele-1"/>
@@ -3348,11 +2839,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="(see OBX.6 etc.) / CQ.2"/>
@@ -3379,7 +2867,6 @@
         <code value="code"/>
       </type>
       <patternCode value="{score}"/>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3389,11 +2876,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="(see OBX.6 etc.) / CQ.2"/>
@@ -3419,7 +2903,6 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <condition value="obs-6"/>
       <constraint>
         <key value="ele-1"/>
@@ -3430,6 +2913,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationValueAbsentReason"/>
@@ -3438,22 +2923,6 @@
         <description value="Codes specifying why the result (`Observation.value[x]`) is missing."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="N/A"/>
@@ -3480,7 +2949,6 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3489,6 +2957,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationInterpretation"/>
@@ -3497,22 +2967,6 @@
         <description value="Codes identifying interpretations of observations."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="sct-concept"/>
         <map value="&lt; 260245000 |Findings values|"/>
@@ -3546,7 +3000,6 @@
       <type>
         <code value="Annotation"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3555,18 +3008,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="N/A"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="Act"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="v2"/>
         <map value="NTE.3 (partner NTE to OBX, or sometimes another (child?) OBX)"/>
@@ -3591,7 +3034,6 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3600,6 +3042,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="BodySite"/>
@@ -3608,22 +3052,6 @@
         <description value="Codes describing anatomical locations. May include laterality."/>
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-bodysite-observation-beatmung"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="sct-concept"/>
         <map value="&lt; 123037004 |Body structure|"/>
@@ -3657,7 +3085,6 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3666,6 +3093,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationMethod"/>
@@ -3674,22 +3103,6 @@
         <description value="Methods for simple observations."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-methods"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="OBX-17"/>
@@ -3715,7 +3128,6 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3724,22 +3136,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="sct-concept"/>
         <map value="&lt; 123038009 |Specimen|"/>
@@ -3759,9 +3157,9 @@
     </element>
     <element id="Observation.device">
       <path value="Observation.device"/>
-      <short value="A reference from one resource to another"/>
-      <definition value="A reference from one resource to another."/>
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
+      <short value="(Measurement) Device"/>
+      <definition value="The device used to generate the observation data."/>
+      <comment value="Note that this is not meant to represent a device involved in the transmission of the result, e.g., a gateway.  Such devices may be documented using the Provenance resource where relevant."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -3771,10 +3169,8 @@
       </base>
       <type>
         <code value="Reference"/>
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"/>
         <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3783,30 +3179,9 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
-      <constraint>
-        <key value="mii-reference-1"/>
-        <severity value="error"/>
-        <human value="Either reference.reference OR reference.identifier exists"/>
-        <expression value="($this.reference.exists() or ($this.identifier.value.exists() and $this.identifier.system.exists())) xor $this.extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"/>
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"/>
-      </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="sct-concept"/>
         <map value="&lt; 49062001 |Device|"/>
@@ -3840,7 +3215,6 @@
       <type>
         <code value="BackboneElement"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3855,13 +3229,11 @@
         <human value="Must have at least a low or a high or text"/>
         <expression value="low.exists() or high.exists() or text.exists()"/>
         <xpath value="(exists(f:low) or exists(f:high)or exists(f:text))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="v2"/>
         <map value="OBX.7"/>
@@ -3889,27 +3261,15 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Observation.referenceRange.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.referenceRange.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Additional content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -3925,7 +3285,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3939,16 +3298,14 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Observation.referenceRange.modifierExtension">
@@ -3970,7 +3327,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3984,16 +3340,12 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -4003,7 +3355,6 @@
       <path value="Observation.referenceRange.low"/>
       <short value="Untere Grenze des Parameters."/>
       <definition value="The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is &gt;=5 - &lt;=9). If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is &lt;=2.3)."/>
-      <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -4015,7 +3366,6 @@
         <code value="Quantity"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
       </type>
-      <condition value="ele-1"/>
       <condition value="obs-3"/>
       <constraint>
         <key value="ele-1"/>
@@ -4025,36 +3375,9 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="qty-3"/>
-        <severity value="error"/>
-        <human value="If a code for the unit is present, the system SHALL also be present"/>
-        <expression value="code.empty() or system.exists()"/>
-        <xpath value="not(exists(f:code)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
-      </constraint>
-      <constraint>
-        <key value="sqty-1"/>
-        <severity value="error"/>
-        <human value="The comparator is not used on a SimpleQuantity"/>
-        <expression value="comparator.empty()"/>
-        <xpath value="not(exists(f:comparator))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
-      </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="SN (see also Range) or CQ"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
-      </mapping>
+      <isSummary value="false"/>
       <mapping>
         <identity value="v2"/>
         <map value="OBX-7"/>
@@ -4331,7 +3654,6 @@
       <path value="Observation.referenceRange.high"/>
       <short value="Obere Grenze des Parameters."/>
       <definition value="The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is &gt;=5 - &lt;=9). If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is &gt;= 2.3)."/>
-      <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -4343,7 +3665,6 @@
         <code value="Quantity"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
       </type>
-      <condition value="ele-1"/>
       <condition value="obs-3"/>
       <constraint>
         <key value="ele-1"/>
@@ -4353,36 +3674,9 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="qty-3"/>
-        <severity value="error"/>
-        <human value="If a code for the unit is present, the system SHALL also be present"/>
-        <expression value="code.empty() or system.exists()"/>
-        <xpath value="not(exists(f:code)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
-      </constraint>
-      <constraint>
-        <key value="sqty-1"/>
-        <severity value="error"/>
-        <human value="The comparator is not used on a SimpleQuantity"/>
-        <expression value="comparator.empty()"/>
-        <xpath value="not(exists(f:comparator))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
-      </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="SN (see also Range) or CQ"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
-      </mapping>
+      <isSummary value="false"/>
       <mapping>
         <identity value="v2"/>
         <map value="OBX-7"/>
@@ -4677,7 +3971,6 @@
           <code value="therapeutic"/>
         </coding>
       </patternCodeableConcept>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -4686,6 +3979,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRangeMeaning"/>
@@ -4694,22 +3989,6 @@
         <description value="Code for the meaning of a reference range."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/referencerange-meaning"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="sct-concept"/>
         <map value="&lt; 260245000 |Findings values| OR  &#xD;&lt; 365860008 |General clinical state finding| &#xD;OR &#xD;&lt; 250171008 |Clinical history or observation findings| OR  &#xD;&lt; 415229000 |Racial group| OR &#xD;&lt; 365400002 |Finding of puberty stage| OR&#xD;&lt; 443938003 |Procedure carried out on subject|"/>
@@ -4739,7 +4018,6 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -4748,6 +4026,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationRangeType"/>
@@ -4756,22 +4036,6 @@
         <description value="Codes identifying the population the reference range applies to."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/referencerange-appliesto"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="sct-concept"/>
         <map value="&lt; 260245000 |Findings values| OR  &#xD;&lt; 365860008 |General clinical state finding| &#xD;OR &#xD;&lt; 250171008 |Clinical history or observation findings| OR  &#xD;&lt; 415229000 |Racial group| OR &#xD;&lt; 365400002 |Finding of puberty stage| OR&#xD;&lt; 443938003 |Procedure carried out on subject|"/>
@@ -4789,7 +4053,6 @@
       <path value="Observation.referenceRange.age"/>
       <short value="Applicable age range, if relevant"/>
       <definition value="The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so."/>
-      <comment value="The stated low and high value are assumed to have arbitrarily high precision when it comes to determining which values are in the range. I.e. 1.99 is not in the range 2 -&gt; 3."/>
       <requirements value="Some analytes vary greatly over age."/>
       <min value="0"/>
       <max value="1"/>
@@ -4801,7 +4064,6 @@
       <type>
         <code value="Range"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -4810,26 +4072,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="rng-2"/>
-        <severity value="error"/>
-        <human value="If present, low SHALL have a lower value than high"/>
-        <expression value="low.empty() or high.empty() or (low &lt;= high)"/>
-        <xpath value="not(exists(f:low/f:value/@value)) or not(exists(f:high/f:value/@value)) or (number(f:low/f:value/@value) &lt;= number(f:high/f:value/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Range"/>
-      </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="NR and also possibly SN (but see also quantity)"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="IVL&lt;QTY[not(type=&quot;TS&quot;)]&gt; [lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;]or URG&lt;QTY[not(type=&quot;TS&quot;)]&gt;"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="outboundRelationship[typeCode=PRCN].targetObservationCriterion[code=&quot;age&quot;].value"/>
@@ -4839,7 +4083,6 @@
       <path value="Observation.referenceRange.text"/>
       <short value="Text based reference range in an observation"/>
       <definition value="Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of &quot;Negative&quot; or a list or table of &quot;normals&quot;."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -4850,7 +4093,6 @@
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -4859,10 +4101,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="v2"/>
         <map value="OBX-7"/>
@@ -4890,7 +4130,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -4899,23 +4138,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="Relationships established by OBX-4 usage"/>
@@ -4946,7 +4170,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -4955,23 +4178,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="Relationships established by OBX-4 usage"/>
@@ -4997,7 +4205,6 @@
       <type>
         <code value="BackboneElement"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -5006,11 +4213,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="containment by OBX-4?"/>
@@ -5038,27 +4242,15 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Observation.component.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Observation.component.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Additional content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -5074,7 +4266,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -5088,16 +4279,14 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Observation.component.modifierExtension">
@@ -5119,7 +4308,6 @@
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -5133,16 +4321,12 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -5164,7 +4348,6 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -5173,6 +4356,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -5182,22 +4366,6 @@
         <description value="Codes identifying names of simple observations."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -5261,7 +4429,6 @@
       <type>
         <code value="Period"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -5270,11 +4437,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="sct-concept"/>
         <map value="363714003 |Interprets| &lt; 441742003 |Evaluation finding|"/>
@@ -5308,7 +4472,6 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <condition value="obs-6"/>
       <constraint>
         <key value="ele-1"/>
@@ -5318,6 +4481,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationValueAbsentReason"/>
@@ -5326,22 +4491,6 @@
         <description value="Codes specifying why the result (`Observation.value[x]`) is missing."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="N/A"/>
@@ -5368,7 +4517,6 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -5377,6 +4525,8 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationInterpretation"/>
@@ -5385,22 +4535,6 @@
         <description value="Codes identifying interpretations of observations."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="sct-concept"/>
         <map value="&lt; 260245000 |Findings values|"/>
@@ -5432,6 +4566,16 @@
         <max value="*"/>
       </base>
       <contentReference value="http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="v2"/>
         <map value="OBX.7"/>

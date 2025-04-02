@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="t-cabs-device-beatmungsgeraet"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition t-cabs-device-beatmungsgeraet</b></p><a name="t-cabs-device-beatmungsgeraet"> </a><a name="hct-cabs-device-beatmungsgeraet"> </a><a name="t-cabs-device-beatmungsgeraet-en-US"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-t-cabs-device-beatmungsgeraet-definitions.html#Device">Device</a><a name="Device"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device">SD_MII_ICU_Icu_Device</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition t-cabs-device-beatmungsgeraet</b></p><a name="t-cabs-device-beatmungsgeraet"> </a><a name="hct-cabs-device-beatmungsgeraet"> </a><a name="t-cabs-device-beatmungsgeraet-en-US"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-t-cabs-device-beatmungsgeraet-definitions.html#Device">Device</a><a name="Device"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device">SD_MII_ICU_Icu_Device</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-t-cabs-device-beatmungsgeraet-definitions.html#Device.identifier" title="Alternativer Identifier zur Seriennummer">identifier</a><a name="Device.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Instance identifier</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-t-cabs-device-beatmungsgeraet-definitions.html#Device.identifier.type">type</a><a name="Device.identifier.type"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Description of identifier</span><br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">At least the following</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_fixed.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Fixed Value" class="hierarchy"/> <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#CodeableConcept.coding">coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Code defined by a terminology system<br/><span style="font-weight: bold">Fixed Value: </span><span style="color: darkgreen">(complex)</span></td></tr>
@@ -45,7 +45,7 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
   <name value="T_CABS_Device_Beatmungsgeraet"/>
   <title value="T-CABS Device Beatmungsgerät"/>
   <status value="draft"/>
-  <date value="2025-03-25T16:42:03+01:00"/>
+  <date value="2025-04-02T15:35:32+02:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
@@ -63,7 +63,7 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
   <derivation value="constraint"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="2025.0.2"/>
+      <valueString value="2025.0.4"/>
     </extension>
     <element id="Device">
       <path value="Device"/>
@@ -85,6 +85,14 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <constraint>
+        <key value="dom-3"/>
+        <severity value="error"/>
+        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource"/>
+        <expression value="contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()"/>
+        <xpath value="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
         <key value="dom-4"/>
         <severity value="error"/>
         <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"/>
@@ -93,11 +101,11 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <constraint>
-        <key value="dom-3"/>
+        <key value="dom-5"/>
         <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource"/>
-        <expression value="contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()"/>
-        <xpath value="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))"/>
+        <human value="If a resource is contained in another resource, it SHALL NOT have a security label"/>
+        <expression value="contained.meta.security.empty()"/>
+        <xpath value="not(exists(f:contained/*/f:meta/f:security))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <constraint>
@@ -114,14 +122,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="exists(f:text/h:div)"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
-      <constraint>
-        <key value="dom-5"/>
-        <severity value="error"/>
-        <human value="If a resource is contained in another resource, it SHALL NOT have a security label"/>
-        <expression value="contained.meta.security.empty()"/>
-        <xpath value="not(exists(f:contained/*/f:meta/f:security))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
@@ -149,6 +151,7 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
       <isSummary value="true"/>
     </element>
     <element id="Device.meta">
@@ -165,7 +168,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Meta"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -174,15 +176,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Device.implicitRules">
       <path value="Device.implicitRules"/>
@@ -199,7 +194,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="uri"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -211,10 +205,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <isModifier value="true"/>
       <isModifierReason value="This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Device.language">
       <path value="Device.language"/>
@@ -231,7 +221,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="code"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -240,6 +229,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"/>
@@ -251,10 +242,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <description value="A human language."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Device.text">
       <path value="Device.text"/>
@@ -275,7 +262,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Narrative"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -284,14 +270,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="Act.text?"/>
@@ -315,31 +295,15 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Resource"/>
       </type>
-      <mapping>
-        <identity value="rim"/>
-        <map value="Entity. Role, or Act"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
       </mapping>
     </element>
     <element id="Device.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Device.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Additional content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -355,7 +319,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -369,34 +332,18 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
       </mapping>
     </element>
     <element id="Device.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Device.modifierExtension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Extensions that cannot be ignored"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -413,7 +360,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -427,15 +373,12 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -456,7 +399,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Identifier"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -466,22 +408,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CX / EI (occasionally, more often EI maps to a resource id or a URL)"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="Identifier"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.identifier"/>
@@ -513,18 +441,14 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Device.identifier.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Device.identifier.extension"/>
       <slicing>
         <discriminator>
@@ -549,7 +473,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -563,16 +486,14 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Device.identifier.use">
@@ -591,7 +512,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="code"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -611,10 +531,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <description value="Identifies the purpose for this identifier, if known ."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="N/A"/>
@@ -645,7 +561,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
           <code value="UDI"/>
         </coding>
       </patternCodeableConcept>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -654,6 +569,7 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -663,22 +579,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="CX.5"/>
@@ -708,7 +608,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <label value="General"/>
         <valueUri value="http://www.acme.com/identifiers/patient"/>
       </example>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -718,11 +617,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="CX.4 / EI-2-4"/>
@@ -755,7 +651,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <label value="General"/>
         <valueString value="123456"/>
       </example>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -765,11 +660,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="CX.1 / EI.1"/>
@@ -787,7 +679,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.identifier.period"/>
       <short value="Time period when id is/was valid for use"/>
       <definition value="Time period during which identifier is/was valid for use."/>
-      <comment value="A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;).&#xA;&#xA;Period is not used for a duration (a measure of elapsed time). See [Duration](http://hl7.org/fhir/R4/datatypes.html#Duration)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -798,7 +689,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Period"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -807,27 +697,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="per-1"/>
-        <severity value="error"/>
-        <human value="If present, start SHALL have a lower value than end"/>
-        <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)"/>
-        <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Period"/>
-      </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="DR"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="IVL&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;] or URG&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;]"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="CX.7 + CX.8"/>
@@ -857,7 +728,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -866,23 +736,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
       <mapping>
         <identity value="v2"/>
         <map value="CX.4 / (CX.4,CX.9,CX.10)"/>
@@ -900,7 +755,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.definition"/>
       <short value="The reference to the definition for the device"/>
       <definition value="The reference to the definition for the device."/>
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -912,7 +766,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceDefinition"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -921,22 +774,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.udiCarrier">
       <path value="Device.udiCarrier"/>
@@ -953,7 +792,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="BackboneElement"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -962,11 +800,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.identifier"/>
@@ -994,27 +829,15 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Device.udiCarrier.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Device.udiCarrier.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Additional content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -1030,7 +853,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1044,16 +866,14 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Device.udiCarrier.modifierExtension">
@@ -1075,7 +895,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1089,16 +908,12 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -1108,7 +923,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.udiCarrier.deviceIdentifier"/>
       <short value="Mandatory fixed portion of UDI"/>
       <definition value="The device identifier (DI) is a mandatory, fixed portion of a UDI that identifies the labeler and the specific version or model of a device."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <alias value="DI"/>
       <min value="0"/>
       <max value="1"/>
@@ -1120,7 +934,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1129,11 +942,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -1151,7 +961,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.udiCarrier.issuer"/>
       <short value="UDI Issuing Organization"/>
       <definition value="Organization that is charged with issuing UDIs for devices.  For example, the US FDA issuers include :&#xA;1) GS1: &#xA;http://hl7.org/fhir/NamingSystem/gs1-di, &#xA;2) HIBCC:&#xA;http://hl7.org/fhir/NamingSystem/hibcc-dI, &#xA;3) ICCBBA for blood containers:&#xA;http://hl7.org/fhir/NamingSystem/iccbba-blood-di, &#xA;4) ICCBA for other devices:&#xA;http://hl7.org/fhir/NamingSystem/iccbba-other-di."/>
-      <comment value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier"/>
       <alias value="Barcode System"/>
       <min value="0"/>
       <max value="1"/>
@@ -1163,7 +972,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="uri"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1172,10 +980,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="Role.id.root"/>
@@ -1189,7 +995,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.udiCarrier.jurisdiction"/>
       <short value="Regional UDI authority"/>
       <definition value="The identity of the authoritative source for UDI generation within a  jurisdiction.  All UDIs are globally unique within a single namespace with the appropriate repository uri as the system.  For example,  UDIs of devices managed in the U.S. by the FDA, the value is  http://hl7.org/fhir/NamingSystem/fda-udi."/>
-      <comment value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier"/>
       <requirements value="Allows a recipient of a UDI to know which database will contain the UDI-associated metadata."/>
       <min value="0"/>
       <max value="1"/>
@@ -1201,7 +1006,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="uri"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1210,10 +1014,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="Role.scoper"/>
@@ -1235,7 +1037,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="base64Binary"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1244,11 +1045,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="Role.id.extension"/>
@@ -1274,7 +1072,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1283,11 +1080,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="Role.id.extension"/>
@@ -1301,7 +1095,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.udiCarrier.entryType"/>
       <short value="barcode | rfid | manual +"/>
       <definition value="A coded entry to indicate how the data was entered."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <requirements value="Supports a way to distinguish hand entered from machine read data."/>
       <min value="0"/>
       <max value="1"/>
@@ -1313,7 +1106,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="code"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1322,6 +1114,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="UDIEntryType"/>
@@ -1330,10 +1124,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <description value="Codes to identify how UDI data was entered."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/udi-entry-type|4.0.1"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="NA"/>
@@ -1354,7 +1144,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="code"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1376,10 +1165,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <valueSet value="http://hl7.org/fhir/ValueSet/device-status|4.0.1"/>
       </binding>
       <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
         <identity value="w5"/>
         <map value="FiveWs.status"/>
       </mapping>
@@ -1392,7 +1177,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.statusReason"/>
       <short value="online | paused | standby | offline | not-ready | transduc-discon | hw-discon | off"/>
       <definition value="Reason for the dtatus of the Device availability."/>
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1403,7 +1187,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1412,6 +1195,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="FHIRDeviceStatusReason"/>
@@ -1420,22 +1205,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <description value="The availability status reason of the device."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/device-status-reason"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.status"/>
@@ -1457,7 +1226,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1466,10 +1234,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -1487,7 +1253,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.manufacturer"/>
       <short value="Name des Gerätehersteller"/>
       <definition value="Löwenstein Medical;&#xA;BREAS Medical; &#xA;ResMed;&#xA;"/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -1498,7 +1263,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1508,10 +1272,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -1539,7 +1301,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="dateTime"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1548,10 +1309,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -1579,7 +1338,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="dateTime"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1588,10 +1346,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -1609,7 +1365,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.lotNumber"/>
       <short value="Lot number of manufacture"/>
       <definition value="Lot number assigned by the manufacturer."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1620,7 +1375,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1629,10 +1383,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -1661,7 +1413,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1671,10 +1422,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -1698,7 +1447,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="BackboneElement"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1708,10 +1456,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.deviceName.id">
       <path value="Device.deviceName.id"/>
@@ -1731,27 +1477,15 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Device.deviceName.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Device.deviceName.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Additional content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -1767,7 +1501,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1781,16 +1514,14 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Device.deviceName.modifierExtension">
@@ -1812,7 +1543,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1826,16 +1556,12 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -1845,7 +1571,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.deviceName.name"/>
       <short value="Modellname des Gerätes"/>
       <definition value="Luisa;&#xA;Prisma VENT30;&#xA;Prisma VENT40;&#xA;Prisma VENT50/50-C;&#xA;Vivo3;&#xA;Vivo45;&#xA;Vivo45LS;&#xA;Vivo50;&#xA;Vivo55;&#xA;Vivo65;&#xA;Lumis150;&#xA;Stellar100;&#xA;Stellar130;&#xA;Stellar150;&#xA;Astral100;&#xA;Astral150"/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <alias value="Σ"/>
       <min value="1"/>
       <max value="1"/>
@@ -1857,7 +1582,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1867,16 +1591,13 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.deviceName.type">
       <path value="Device.deviceName.type"/>
       <short value="udi-label-name | user-friendly-name | patient-reported-name | manufacturer-name | model-name | other"/>
       <definition value="The type of deviceName.&#xA;UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | ModelName."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -1888,7 +1609,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <code value="code"/>
       </type>
       <patternCode value="model-name"/>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1898,6 +1618,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="DeviceNameType"/>
@@ -1906,10 +1628,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <description value="The type of name the device is referred by."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/device-nametype|4.0.1"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -1923,7 +1641,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.modelNumber"/>
       <short value="The model number for the device"/>
       <definition value="The model number for the device."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1934,7 +1651,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1943,10 +1659,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -1971,7 +1685,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -1980,10 +1693,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -1997,7 +1708,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.type"/>
       <short value="The kind or type of device"/>
       <definition value="The kind or type of device."/>
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -2015,7 +1725,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
           <display value="Ventilator (physical object)"/>
         </coding>
       </patternCodeableConcept>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2025,6 +1734,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="DeviceType"/>
@@ -2033,22 +1744,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <description value="Codes to identify medical devices."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/device-type"/>
       </binding>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
     </element>
     <element id="Device.specialization">
       <path value="Device.specialization"/>
@@ -2064,7 +1759,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="BackboneElement"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2073,10 +1767,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.specialization.id">
       <path value="Device.specialization.id"/>
@@ -2096,27 +1788,15 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Device.specialization.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Device.specialization.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Additional content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -2132,7 +1812,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2146,16 +1825,14 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Device.specialization.modifierExtension">
@@ -2177,7 +1854,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2191,16 +1867,12 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -2210,7 +1882,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.specialization.systemType"/>
       <short value="The standard that is used to operate and communicate"/>
       <definition value="The standard that is used to operate and communicate."/>
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
       <alias value="Σ"/>
       <min value="1"/>
       <max value="1"/>
@@ -2222,7 +1893,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2231,28 +1901,13 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.specialization.version">
       <path value="Device.specialization.version"/>
       <short value="The version of the standard that is used to operate and communicate"/>
       <definition value="The version of the standard that is used to operate and communicate."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -2263,7 +1918,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2272,10 +1926,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -2295,7 +1947,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="BackboneElement"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2305,10 +1956,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.version.id">
       <path value="Device.version.id"/>
@@ -2328,27 +1977,15 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Device.version.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Device.version.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Additional content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -2364,7 +2001,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2378,16 +2014,14 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Device.version.modifierExtension">
@@ -2409,7 +2043,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2423,16 +2056,12 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -2442,7 +2071,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.version.type"/>
       <short value="The type of the device version"/>
       <definition value="The type of the device version."/>
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
       <alias value="Σ"/>
       <min value="0"/>
       <max value="1"/>
@@ -2454,7 +2082,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2463,22 +2090,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.version.component">
       <path value="Device.version.component"/>
@@ -2494,7 +2107,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Identifier"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2503,22 +2115,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CX / EI (occasionally, more often EI maps to a resource id or a URL)"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="Identifier"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.what[x]"/>
@@ -2528,7 +2126,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.version.value"/>
       <short value="The version text"/>
       <definition value="The version text."/>
-      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -2539,7 +2136,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="string"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2549,10 +2145,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.property">
       <path value="Device.property"/>
@@ -2568,7 +2162,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="BackboneElement"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2578,10 +2171,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.property.id">
       <path value="Device.property.id"/>
@@ -2601,27 +2192,15 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="Device.property.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0"/>
-      </extension>
       <path value="Device.property.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
       <short value="Additional content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -2637,7 +2216,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2651,16 +2229,14 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Device.property.modifierExtension">
@@ -2682,7 +2258,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Extension"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2696,16 +2271,12 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -2715,7 +2286,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.property.type"/>
       <short value="Code that specifies the property DeviceDefinitionPropetyCode (Extensible)"/>
       <definition value="Code that specifies the property DeviceDefinitionPropetyCode (Extensible)."/>
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -2726,7 +2296,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2736,28 +2305,13 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.property.valueQuantity">
       <path value="Device.property.valueQuantity"/>
       <short value="Property value as a quantity"/>
       <definition value="Property value as a quantity."/>
-      <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -2768,7 +2322,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Quantity"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2777,32 +2330,13 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="qty-3"/>
-        <severity value="error"/>
-        <human value="If a code for the unit is present, the system SHALL also be present"/>
-        <expression value="code.empty() or system.exists()"/>
-        <xpath value="not(exists(f:code)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
-      </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="SN (see also Range) or CQ"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.property.valueCode">
       <path value="Device.property.valueCode"/>
       <short value="Property value as a code, e.g., NTP4 (synced to NTP)"/>
       <definition value="Property value as a code, e.g., NTP4 (synced to NTP)."/>
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -2813,7 +2347,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2822,28 +2355,13 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Device.patient">
       <path value="Device.patient"/>
       <short value="Referenz auf den Patienten"/>
       <definition value="Patient information, If the device is affixed to a person."/>
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
       <requirements value="If the device is implanted in a patient, then need to associate the device to the patient."/>
       <min value="1"/>
       <max value="1"/>
@@ -2856,7 +2374,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2865,23 +2382,9 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.subject[x]"/>
@@ -2911,7 +2414,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2920,23 +2422,9 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.source"/>
@@ -2961,7 +2449,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="ContactPoint"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -2970,30 +2457,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="cpt-2"/>
-        <severity value="error"/>
-        <human value="A system is required if a value is provided."/>
-        <expression value="value.empty() or system.exists()"/>
-        <xpath value="not(exists(f:value)) or exists(f:system)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint"/>
-      </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XTN"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="TEL"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="ContactPoint"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.source"/>
@@ -3007,7 +2472,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.location"/>
       <short value="Where the device is found"/>
       <definition value="The place where the device can be found."/>
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
       <requirements value="Device.location can be used to track device location."/>
       <min value="0"/>
       <max value="1"/>
@@ -3020,7 +2484,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3029,22 +2492,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.where[x]"/>
@@ -3069,7 +2518,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="uri"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3078,10 +2526,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.where[x]"/>
@@ -3095,7 +2541,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.note"/>
       <short value="Device notes and comments"/>
       <definition value="Descriptive information, usage information or implantation information that is not captured in an existing element."/>
-      <comment value="For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate &quot;modifying&quot; information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible)."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -3106,7 +2551,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="Annotation"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3115,18 +2559,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="N/A"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="Act"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value=".text"/>
@@ -3136,7 +2570,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.safety"/>
       <short value="Safety Characteristics of Device"/>
       <definition value="Provides additional safety characteristics about a medical device.  For example devices containing latex."/>
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -3147,7 +2580,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3156,23 +2588,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <isModifier value="false"/>
       <isSummary value="true"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="CD"/>
-      </mapping>
-      <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
-      </mapping>
       <mapping>
         <identity value="rim"/>
         <map value="NA"/>
@@ -3182,7 +2599,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
       <path value="Device.parent"/>
       <short value="The parent device"/>
       <definition value="The parent device."/>
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -3194,7 +2610,6 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
@@ -3203,22 +2618,8 @@ Astral150">name</a><a name="Device.deviceName.name"> </a></td><td style="vertica
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="ref-1"/>
-        <severity value="error"/>
-        <human value="SHALL have a contained resource if a local reference is provided"/>
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))"/>
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Reference"/>
-      </constraint>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)"/>
-      </mapping>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
   </snapshot>
   <differential>

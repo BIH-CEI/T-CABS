@@ -47,33 +47,6 @@
         "patternString": "Vital Signs"
       },
       {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Observation.code.coding.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "39156-5"
-      },
-      {
-        "id": "Observation.code.coding.display",
-        "path": "Observation.code.coding.display",
-        "fixedString": "Body mass index (BMI) [Ratio]"
-      },
-      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "min": 1,
@@ -93,24 +66,7 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity",
-        "path": "Observation.value[x]",
-        "sliceName": "valueQuantity",
         "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Quantity"
@@ -119,24 +75,24 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]:valueQuantity.value",
+        "id": "Observation.value[x].value",
         "path": "Observation.value[x].value",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]:valueQuantity.unit",
+        "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]:valueQuantity.system",
+        "id": "Observation.value[x].system",
         "path": "Observation.value[x].system",
         "fixedUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation.value[x]:valueQuantity.code",
+        "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
         "fixedCode": "kg/m2"
       }

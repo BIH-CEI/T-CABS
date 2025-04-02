@@ -70,11 +70,46 @@
     "name" : "T_CABS_Observation_AMV"
   },
   {
+    "id" : "t-cabs-observation-arterieller-blutdruck",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-arterieller-blutdruck",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Arterieller_Blutdruck"
+  },
+  {
+    "id" : "t-cabs-observation-atemfrequenz",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Atemfrequenz"
+  },
+  {
     "id" : "t-cabs-observation-beatmungsstunden",
     "type" : "StructureDefinition",
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden",
     "version" : "0.1.0",
     "name" : "T_CABS_Observation_Beatmungsstunden"
+  },
+  {
+    "id" : "t-cabs-observation-bmi",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_BMI"
+  },
+  {
+    "id" : "t-cabs-observation-gehstrecke",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Gehstrecke"
+  },
+  {
+    "id" : "t-cabs-observation-herzfrequenz",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Herzfrequenz"
   },
   {
     "id" : "t-cabs-observation-leckage",
@@ -84,11 +119,25 @@
     "name" : "T_CABS_Observation_Leckage"
   },
   {
+    "id" : "t-cabs-observation-spo2",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_SPO2"
+  },
+  {
     "id" : "t-cabs-observation-triggeredbreaths",
     "type" : "StructureDefinition",
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
     "version" : "0.1.0",
     "name" : "T_CABS_Observation_TriggeredBreaths"
+  },
+  {
+    "id" : "t-cabs-observationfev1",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_FEV1"
   },
   {
     "id" : "t-cabs-procedure-beatmung",

@@ -60,45 +60,6 @@
         "min": 1
       },
       {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding.system",
-        "path": "Observation.code.coding.system",
-        "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Observation.code.coding.code",
-        "path": "Observation.code.coding.code",
-        "fixedCode": "20150-9"
-      },
-      {
-        "id": "Observation.code.coding.display",
-        "path": "Observation.code.coding.display",
-        "fixedString": "Forced expiratory volume in 1 second (FEV1) [Volume] Respiratory system"
-      },
-      {
-        "id": "Observation.code.coding:sct",
-        "path": "Observation.code.coding",
-        "sliceName": "sct",
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:loinc",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:IEEE-11073",
-        "path": "Observation.code.coding",
-        "sliceName": "IEEE-11073",
-        "max": "1"
-      },
-      {
         "id": "Observation.subject.reference",
         "path": "Observation.subject.reference",
         "min": 1

@@ -48,16 +48,44 @@
         "title": "T-CABS Observation AMV"
       },
       {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-arterieller-blutdruck",
+        "title": "T-CABS Observation Arterieller Blutdruck"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
+        "title": "Atemfrequenz"
+      },
+      {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden",
         "title": "T-CABS Observation Beatmungsstunden"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi",
+        "title": "BMI Observation"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke",
+        "title": "Gehstrecke"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
+        "title": "T_CABS_Observation_Herzfrequenz"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
         "title": "T-CABS Observation Leckage"
       },
       {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2",
+        "title": "T-CABS Observation SPO2"
+      },
+      {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
         "title": "T-CABS Observation TriggeredBreaths"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1",
+        "title": "FEV1 Observation"
       }
     ],
     "Procedure": [
@@ -100,6 +128,10 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "StructureDefinition.snapshot.element.definition",
+      "StructureDefinition.snapshot.element.short"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"

@@ -10,7 +10,7 @@
   "name" : "T_CABS_ValueSet_Beatmungsmodus",
   "title" : "T-CABS ValueSet Beatmungsmodus",
   "status" : "draft",
-  "date" : "2025-03-25T16:42:03+01:00",
+  "date" : "2025-04-02T15:35:32+02:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
@@ -19,7 +19,7 @@
       "value" : "http://example.org/example-publisher"
     }]
   }],
-  "description" : "Dieses ValueSet erhält Codes um die verschiedenen Beatmungsmodis abzubilden",
+  "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
   "compose" : {
     "include" : [{
       "system" : "urn:iso:std:iso:11073:10101",

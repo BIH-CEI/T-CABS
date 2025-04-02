@@ -2,12 +2,11 @@
   "codeSystems" : [
     {
       "url" : "http://fhir.de/CodeSystem/bfarm/ops",
-      "version" : "2024",
+      "version" : null,
       "status" : "active",
-      "name" : "OPS_2024",
-      "title" : "OPS 2024",
-      "description" : "Operationen- und Prozedurenschlüssel (OPS) 2024",
-      "oids" : ["1.2.276.0.76.5.536"],
+      "name" : "OPS",
+      "title" : "OPS",
+      "description" : "OPS Platzhalter-CodeSystem",
       "uses" : {
       },
       "https://simplifier.net/resolve?scope=de.gematik.isik-vitalparameter@4.0.0&canonical=http://fhir.de/ValueSet/bfarm/ops" : "OPS ValueSet"
@@ -157,6 +156,17 @@
       "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
     },
     {
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    },
+    {
       "url" : "http://hl7.org/fhir/udi-entry-type",
       "version" : "4.0.1",
       "status" : "draft",
@@ -178,7 +188,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc" : "VS MII ICU Code Observation Beatmung [LOINC]",
+      "https://simplifier.net/resolve?scope=de.gematik.isik-vitalparameter@4.0.1&canonical=https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-loinc" : "VS MII ICU Code Monitoring und Vitaldaten [LOINC]",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc" : "VS MII ICU Code Observation Beatmung [LOINC]",
       "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
     },
     {
@@ -191,24 +202,29 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-category-procedure-beatmung-snomed" : "VS MII ICU Category Procedure Beatmung [SNOMED]",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&canonical=http://fhir.de/ValueSet/VitalSignDE-Sauerstoffsaettigung-SNOMED-CT" : "VitalSignDE_Sauerstoffsaettigung_SNOMED_CT",
       "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed" : "VS MII ICU Code Observation Beatmung [SNOMED]",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-bodysite-observation-beatmung" : "VS MII ICU BodySite Observation Beatmung",
+      "https://simplifier.net/resolve?scope=de.gematik.isik-vitalparameter@4.0.1&canonical=https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten" : "VS MII ICU BodySite Observation Monitoring und Vitaldaten",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-procedure-beatmung-snomed" : "VS MII ICU Code Procedure Beatmung [SNOMED]",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed" : "VS MII ICU Code Observation Beatmung [SNOMED]",
       "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-category-procedure-beatmung-snomed" : "VS MII ICU Category Procedure Beatmung [SNOMED]",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "https://simplifier.net/resolve?scope=de.gematik.isik-vitalparameter@4.0.1&canonical=https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-snomed" : "VS MII ICU Code Monitoring und Vitaldaten [sct]",
+      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
       "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-bodysite-observation-beatmung" : "VS MII ICU BodySite Observation Beatmung",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "https://simplifier.net/resolve?scope=de.gematik.isik-vitalparameter@4.0.0&canonical=http://fhir.de/ValueSet/VitalSignDE-Atemfrequenz-SNOMED-CT" : "VitalSignDE_Atemfrequenz_SNOMED_CT",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -283,6 +299,18 @@
       "http://hl7.org/fhir/R4/valueset-device-status-reason.html" : "FHIRDeviceStatusReason"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
       "version" : "1.0.1",
       "status" : "active",
@@ -331,6 +359,20 @@
       "http://terminology.hl7.org/6.2.0/ValueSet-v3-ParticipationMode.html" : "ParticipationMode"
     },
     {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-unit-equivalent-ucum-breaths-per-minute" : "VS MII ICU Unit equivalent UCUM breaths per minute",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-unit-equivalent-ucum-beats-per-minute" : "VS MII ICU Unit equivalent UCUM beats per minute",
+      "https://simplifier.net/resolve?scope=de.gematik.isik-vitalparameter@4.0.0&canonical=http://fhir.de/ValueSet/UcumVitalsCommonDE" : "UCUM Vitals Common DE"
+    },
+    {
       "url" : "urn:ietf:bcp:47",
       "version" : "2.0.1",
       "status" : "active",
@@ -352,9 +394,10 @@
       "oids" : ["2.16.840.1.113883.6.24"],
       "uses" : {
       },
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073" : "VS MII ICU Code Observation Beatmung [ISO11073]",
+      "http://hl7.org/fhir/R4/valueset-devicemetric-type.html" : "Device Metric and Component Types",
       "ValueSet-t-cabs-valueset-Beatmungsmodus.html" : "T-CABS ValueSet Beatmungsmodus",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2025.0.2&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073" : "VS MII ICU Code Observation Beatmung [ISO11073]",
-      "http://hl7.org/fhir/R4/valueset-devicemetric-type.html" : "Device Metric and Component Types"
+      "https://simplifier.net/resolve?scope=de.gematik.isik-vitalparameter@4.0.1&canonical=https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-iso11073" : "VS MII ICU Code Monitoring und Vitaldaten [ISO11073]"
     }
   ]
 }

@@ -6,7 +6,7 @@
       "status" : "draft",
       "name" : "T_CABS_ValueSet_Beatmungsmodus",
       "title" : "T-CABS ValueSet Beatmungsmodus",
-      "description" : "Dieses ValueSet erhält Codes um die verschiedenen Beatmungsmodis abzubilden",
+      "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
       "systems" : ["urn:iso:std:iso:11073:10101"]
     }
   ]

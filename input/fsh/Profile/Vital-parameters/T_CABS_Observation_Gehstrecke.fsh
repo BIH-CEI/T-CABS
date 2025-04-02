@@ -1,5 +1,5 @@
 Profile: T_CABS_Observation_Gehstrecke
-Parent: SD_MII_ICU_Monitoring_Und_Vitaldaten
+Parent: sd-mii-icu-monitoring-und-vitaldaten
 Id: t-cabs-observation-gehstrecke
 Title: "Gehstrecke"
 
@@ -11,13 +11,8 @@ Title: "Gehstrecke"
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category.coding.code = #activity
 
-// Code
-* code 1..1 MS
-* code.coding 1..1 MS
-* code.coding contains LOINC 0..1
-
-* code.coding[LOINC].code = $LOINC#455430-3
-* code.coding[LOINC].display = "Walking distance unspecified time Pedometer"
+* code.coding[loinc].code = $LOINC#455430-3
+* code.coding[loinc].display = "Walking distance unspecified time Pedometer"
 
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #[mi_us]/(24.h)

@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "T_CABS_ValueSet_Beatmungsmodus"] ; # 
   fhir:title [ fhir:v "T-CABS ValueSet Beatmungsmodus"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-03-25T16:42:03+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-04-02T15:35:32+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH-CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH-CEI" ] ;
@@ -27,7 +27,7 @@
        fhir:value [ fhir:v "http://example.org/example-publisher" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Dieses ValueSet erhält Codes um die verschiedenen Beatmungsmodis abzubilden"] ; # 
+  fhir:description [ fhir:v "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden"] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;

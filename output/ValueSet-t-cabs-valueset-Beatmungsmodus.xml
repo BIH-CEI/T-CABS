@@ -10,7 +10,7 @@
   <name value="T_CABS_ValueSet_Beatmungsmodus"/>
   <title value="T-CABS ValueSet Beatmungsmodus"/>
   <status value="draft"/>
-  <date value="2025-03-25T16:42:03+01:00"/>
+  <date value="2025-04-02T15:35:32+02:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
@@ -19,7 +19,7 @@
       <value value="http://example.org/example-publisher"/>
     </telecom>
   </contact>
-  <description value="Dieses ValueSet erhält Codes um die verschiedenen Beatmungsmodis abzubilden"/>
+  <description value="Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden"/>
   <compose>
     <include>
       <system value="urn:iso:std:iso:11073:10101"/>

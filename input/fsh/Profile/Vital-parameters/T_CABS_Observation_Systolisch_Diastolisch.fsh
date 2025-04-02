@@ -10,20 +10,18 @@ Description: "Profile for documenting arterial blood pressure observations withi
 // Code (LOINC & SNOMED)
 * code MS
 * code.coding MS
-* code.coding contains LOINC 1..1 MS and SCT 1..1 MS
-* code.coding[LOINC].system MS
-* code.coding[LOINC].code MS
-* code.coding[LOINC].display MS
-* code.coding[SCT].version = "http://snomed.info/sct/900000000000207008/version/20241101"
-* code.coding[SCT].code = $SCT#364090009
-* code.coding[SCT].display MS
-
+/* 
+* code.coding contains loinc 1..1 MS and snomed 1..1 MS
+* code.coding[loinc].system MS
+* code.coding[loinc].code MS
+* code.coding[loinc].display MS
+* code.coding[snomed].code = $SCT#364090009
+* code.coding[snomed].display MS
+*/
 // Subject and Metadata
 * subject MS
 * encounter MS
 * effective[x] MS
-* value[x] MS
-* dataAbsentReason MS
 * interpretation MS
 * bodySite MS
 * method MS
@@ -34,8 +32,9 @@ Description: "Profile for documenting arterial blood pressure observations withi
 //* component contains SystolicBP 1..1 MS and DiastolicBP 1..1 MS and meanBP 1..1 MS
 
 // Systolic Blood Pressure
+/* 
 * component[SystolicBP].code.coding 3..
-* component[SystolicBP].code.coding contains LOINC 0..1 MS and SCT 0..1 MS and IEEE11073 0..1 MS
+* component[SystolicBP].code.coding contains loinc 0..1 MS and sct 0..1 MS and IEEE11073 0..1 MS
 * component[SystolicBP].code.coding[loinc].system 1.. MS
 * component[SystolicBP].code.coding[loinc].code = $LOINC#8480-6
 * component[SystolicBP].code.coding[loinc].display MS
@@ -89,3 +88,4 @@ Description: "Profile for documenting arterial blood pressure observations withi
 * component[meanBP].value[x].system = $UCUM
 * component[meanBP].value[x].code = #"mm[Hg]"
 * component[meanBP].dataAbsentReason MS
+*/

@@ -24,7 +24,7 @@
   "dependsOn": [
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
-      "version": "2025.0.2",
+      "version": "2025.0.4",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
       "id": "de_medizininformatikinitiative_kerndatensatz_icu"
     },
@@ -42,9 +42,15 @@
     },
     {
       "packageId": "de.gematik.isik-vitalparameter",
-      "version": "4.0.0",
+      "version": "4.0.1",
       "uri": "http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter",
       "id": "de_gematik_isik_vitalparameter"
+    },
+    {
+      "packageId": "de.basisprofil.r4",
+      "version": "1.5.2",
+      "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+      "id": "de_basisprofil_r4"
     }
   ],
   "definition": {
@@ -380,13 +386,6 @@
           "reference": "StructureDefinition/t-cabs-observation-gehstrecke"
         },
         "name": "Gehstrecke",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-gewicht"
-        },
-        "name": "Gewicht",
         "exampleBoolean": false
       },
       {

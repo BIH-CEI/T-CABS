@@ -40,7 +40,6 @@
 [Example-TCABS-Observation-SPO2]: Observation-Example-TCABS-Observation-SPO2.html
 [T_CABS_Observation_FEV1]: StructureDefinition-t-cabs-observationfev1.html
 [T_CABS_Observation_Gehstrecke]: StructureDefinition-t-cabs-observation-gehstrecke.html
-[T_CABS_Observation_Gewicht]: StructureDefinition-t-cabs-observation-gewicht.html
 [T_CABS_Communication_Alarm]: StructureDefinition-t-cabs-communication-alarm.html
 [T_CABS_Communication_AtemfrequenzHighAlarm]: StructureDefinition-t-cabs-communication-atemfrequenz-high-alarm.html
 [T_CABS_Communication_AtemfrequenzLowAlarm]: StructureDefinition-t-cabs-communication-atemfrequenz-low-alarm.html

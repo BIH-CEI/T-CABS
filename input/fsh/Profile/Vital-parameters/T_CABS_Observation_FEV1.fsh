@@ -1,5 +1,5 @@
 Profile: T_CABS_Observation_FEV1
-Parent: SD_MII_ICU_Monitoring_Und_Vitaldaten
+Parent: sd-mii-icu-monitoring-und-vitaldaten
 Id: t-cabs-observationfev1
 Title: "FEV1 Observation"
 Description: "Profile for recording Forced Expiratory Volume in 1 second (FEV1) as an observation."
@@ -10,11 +10,13 @@ Description: "Profile for recording Forced Expiratory Volume in 1 second (FEV1) 
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
 * category.coding.code = #vital-signs (exactly)
 * category.coding.display = "Vital Signs"
+/*
 * code 1..1 MS
 * code.coding 1..1 MS
 * code.coding.system = "http://loinc.org" (exactly)
 * code.coding.code = #20150-9 (exactly)
 * code.coding.display = "Forced expiratory volume in 1 second (FEV1) [Volume] Respiratory system" (exactly)
+*/
 * subject 1..1 MS
 * subject.reference 1..1
 * effective[x] 1..1 MS

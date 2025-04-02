@@ -10,15 +10,18 @@ Description: "Profile for recording Body Mass Index (BMI) as an observation."
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
 * category.coding.code = #vital-signs (exactly)
 * category.coding.display = "Vital Signs"
+/*
 * code 1..1 MS
-* code.coding 1..1 MS
+* code.coding 1..* MS
 * code.coding.system = "http://loinc.org" (exactly)
 * code.coding.code = #39156-5 (exactly)
 * code.coding.display = "Body mass index (BMI) [Ratio]" (exactly)
+*/
 * subject 1..1 MS
 * subject.reference 1..1
 * effective[x] 1..1 MS
-* valueQuantity 1..1 MS
+* value[x] 1..1 MS
+* value[x] only Quantity 
 * valueQuantity.value 1..1 MS
 * valueQuantity.unit 1..1 MS
 * valueQuantity.system = "http://unitsofmeasure.org" (exactly)

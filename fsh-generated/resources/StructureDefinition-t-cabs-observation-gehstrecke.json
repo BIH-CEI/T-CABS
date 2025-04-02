@@ -54,50 +54,19 @@
         "min": 1
       },
       {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:sct",
-        "path": "Observation.code.coding",
-        "sliceName": "sct",
-        "max": "1"
-      },
-      {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "max": "1"
+        "sliceName": "loinc"
       },
       {
-        "id": "Observation.code.coding:IEEE-11073",
-        "path": "Observation.code.coding",
-        "sliceName": "IEEE-11073",
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:LOINC",
-        "path": "Observation.code.coding",
-        "sliceName": "LOINC",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:LOINC.code",
+        "id": "Observation.code.coding:loinc.code",
         "path": "Observation.code.coding.code",
         "patternCode": "455430-3"
       },
       {
-        "id": "Observation.code.coding:LOINC.display",
+        "id": "Observation.code.coding:loinc.display",
         "path": "Observation.code.coding.display",
         "patternString": "Walking distance unspecified time Pedometer"
-      },
-      {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
       },
       {
         "id": "Observation.value[x].code",

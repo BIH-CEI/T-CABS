@@ -47,8 +47,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.13"}
-    h3,h4,h5,h6{--heading-prefix:"5.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.19"}
+    h3,h4,h5,h6{--heading-prefix:"5.19"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -210,7 +210,7 @@
         
           Draft
           
-            as of 2025-03-25
+            as of 2025-04-02
           
         
       </td>
@@ -240,6 +240,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Event.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>Event.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performed[x]</td><td>Event.occurrence[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performed[x] (performedPeriod)</td><td>Event.occurrence[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>Event.performer</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function</td><td>Event.performer.function</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actor</td><td>Event.performer.actor</td> </tr>
@@ -312,6 +313,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), .participation[typeCode=SBJ].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), .inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performed[x]</td><td>n/a, .effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performed[x] (performedPeriod)</td><td>n/a, .effectiveTime</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;recorder</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), .participation[typeCode=AUT].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;asserter</td><td>n/a, The target of a resource reference is a RIM entry point (Act, Role, or Entity), .participation[typeCode=INF].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>n/a, .participation[typeCode=PRF]</td> </tr>
@@ -351,6 +353,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>FiveWs.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performed[x]</td><td>FiveWs.done[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performed[x] (performedPeriod)</td><td>FiveWs.done[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;recorder</td><td>FiveWs.author</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;asserter</td><td>FiveWs.source</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td></td> </tr>
@@ -394,6 +397,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>PV1-19</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performed[x]</td><td>OBR-7</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performed[x] (performedPeriod)</td><td>OBR-7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function</td><td>CE/CNE/CWE, Some combination of STF-18 / PRA-3 / PRT-4 / ROL-3 / ORC-12 / OBR-16 / PV1-7 / PV1-8 / PV1-9 / PV1-17 / OBX-25</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actor</td><td>ORC-19/PRT-5</td> </tr>
@@ -433,7 +437,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 25, 2025 16:42+0100">2025-03-25</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 2, 2025 15:35+0200">2025-04-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

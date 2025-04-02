@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "TCABS",
   "status" : "draft",
-  "date" : "2025-03-25T16:42:03+01:00",
+  "date" : "2025-04-02T15:35:32+02:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
@@ -45,7 +45,7 @@
     "id" : "de_medizininformatikinitiative_kerndatensatz_icu",
     "uri" : "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
     "packageId" : "de.medizininformatikinitiative.kerndatensatz.icu",
-    "version" : "2025.0.2"
+    "version" : "2025.0.4"
   },
   {
     "id" : "de_medizininformatikinitiative_kerndatensatz_person",
@@ -54,10 +54,22 @@
     "version" : "2025.0.0"
   },
   {
-    "id" : "de_medizininformatikinitiative_kerndatensatz_fall",
-    "uri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ImplementationGuide/mii-ig-fall",
-    "packageId" : "de.medizininformatikinitiative.kerndatensatz.fall",
-    "version" : "2025.0.0"
+    "id" : "de_gematik_isik_basismodul",
+    "uri" : "http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul",
+    "packageId" : "de.gematik.isik-basismodul",
+    "version" : "4.0.1"
+  },
+  {
+    "id" : "de_gematik_isik_vitalparameter",
+    "uri" : "http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter",
+    "packageId" : "de.gematik.isik-vitalparameter",
+    "version" : "4.0.1"
+  },
+  {
+    "id" : "de_basisprofil_r4",
+    "uri" : "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+    "packageId" : "de.basisprofil.r4",
+    "version" : "1.5.2"
   }],
   "definition" : {
     "extension" : [{
@@ -337,7 +349,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.4.1"
     },
     {
       "extension" : [{
@@ -625,6 +637,17 @@
       "name" : " Beispiel Beatmungsprozedur Breas (Procedure)",
       "description" : "Ein Beispiel für eine Prozedur zur Beatmung",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/t-cabs-observation-atemfrequenz"
+      },
+      "name" : "Atemfrequenz",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1064,6 +1087,52 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/t-cabs-observation-bmi"
+      },
+      "name" : "BMI Observation",
+      "description" : "Profile for recording Body Mass Index (BMI) as an observation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/Example-TCABS-Observation-SPO2"
+      },
+      "name" : "Example-TCABS-Observation-SPO2",
+      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/t-cabs-observationfev1"
+      },
+      "name" : "FEV1 Observation",
+      "description" : "Profile for recording Forced Expiratory Volume in 1 second (FEV1) as an observation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/t-cabs-observation-gehstrecke"
+      },
+      "name" : "Gehstrecke",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/t-cabs-communication-alarm"
       },
       "name" : "T-CABS Communication Alarm",
@@ -1172,6 +1241,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/t-cabs-observation-arterieller-blutdruck"
+      },
+      "name" : "T-CABS Observation Arterieller Blutdruck",
+      "description" : "Profile for documenting arterial blood pressure observations within T-CABS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/t-cabs-observation-beatmungsstunden"
       },
       "name" : "T-CABS Observation Beatmungsstunden",
@@ -1188,6 +1269,17 @@
       },
       "name" : "T-CABS Observation Leckage",
       "description" : "Profil für die Leckagerate unter Beatmung",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/t-cabs-observation-spo2"
+      },
+      "name" : "T-CABS Observation SPO2",
       "exampleBoolean" : false
     },
     {
@@ -1223,7 +1315,18 @@
         "reference" : "ValueSet/t-cabs-valueset-Beatmungsmodus"
       },
       "name" : "T-CABS ValueSet Beatmungsmodus",
-      "description" : "Dieses ValueSet erhält Codes um die verschiedenen Beatmungsmodis abzubilden",
+      "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/t-cabs-observation-herzfrequenz"
+      },
+      "name" : "T_CABS_Observation_Herzfrequenz",
       "exampleBoolean" : false
     }],
     "page" : {

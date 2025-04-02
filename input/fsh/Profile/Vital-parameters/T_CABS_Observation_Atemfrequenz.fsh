@@ -8,8 +8,10 @@ Title: "Atemfrequenz"
 * encounter MS
 * performer MS
 
-* code.coding[loinc].code = $LOINC#9279-1
+/*
+* code.coding[loinc] = $LOINC#9279-1
 * code.coding[snomed] = $SCT#86290005
+*/
 
 * effective[x] MS
 * value[x] MS
@@ -18,7 +20,11 @@ Title: "Atemfrequenz"
 * valueQuantity.code = #/min
 
 * dataAbsentReason MS
+
+// Messmethode der Atemfrequenz per Doccla?
 * method MS
+
+// Messgeräte
 * device MS
 
 

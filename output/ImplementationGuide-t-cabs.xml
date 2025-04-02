@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="TCABS"/>
   <status value="draft"/>
-  <date value="2025-03-25T16:42:03+01:00"/>
+  <date value="2025-04-02T15:35:32+02:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
@@ -40,17 +40,27 @@
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_icu">
     <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.icu"/>
-    <version value="2025.0.2"/>
+    <version value="2025.0.4"/>
   </dependsOn>
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_person">
     <uri value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.person"/>
     <version value="2025.0.0"/>
   </dependsOn>
-  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_fall">
-    <uri value="https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ImplementationGuide/mii-ig-fall"/>
-    <packageId value="de.medizininformatikinitiative.kerndatensatz.fall"/>
-    <version value="2025.0.0"/>
+  <dependsOn id="de_gematik_isik_basismodul">
+    <uri value="http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul"/>
+    <packageId value="de.gematik.isik-basismodul"/>
+    <version value="4.0.1"/>
+  </dependsOn>
+  <dependsOn id="de_gematik_isik_vitalparameter">
+    <uri value="http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter"/>
+    <packageId value="de.gematik.isik-vitalparameter"/>
+    <version value="4.0.1"/>
+  </dependsOn>
+  <dependsOn id="de_basisprofil_r4">
+    <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
+    <packageId value="de.basisprofil.r4"/>
+    <version value="1.5.2"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -254,7 +264,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.4.1"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -466,6 +476,16 @@
       <name value=" Beispiel Beatmungsprozedur Breas (Procedure)"/>
       <description value="Ein Beispiel für eine Prozedur zur Beatmung"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-atemfrequenz"/>
+      </reference>
+      <name value="Atemfrequenz"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -868,6 +888,48 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/t-cabs-observation-bmi"/>
+      </reference>
+      <name value="BMI Observation"/>
+      <description value="Profile for recording Body Mass Index (BMI) as an observation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-TCABS-Observation-SPO2"/>
+      </reference>
+      <name value="Example-TCABS-Observation-SPO2"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observationfev1"/>
+      </reference>
+      <name value="FEV1 Observation"/>
+      <description value="Profile for recording Forced Expiratory Volume in 1 second (FEV1) as an observation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-gehstrecke"/>
+      </reference>
+      <name value="Gehstrecke"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/t-cabs-communication-alarm"/>
       </reference>
       <name value="T-CABS Communication Alarm"/>
@@ -967,6 +1029,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/t-cabs-observation-arterieller-blutdruck"/>
+      </reference>
+      <name value="T-CABS Observation Arterieller Blutdruck"/>
+      <description value="Profile for documenting arterial blood pressure observations within T-CABS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/t-cabs-observation-beatmungsstunden"/>
       </reference>
       <name value="T-CABS Observation Beatmungsstunden"/>
@@ -982,6 +1055,16 @@
       </reference>
       <name value="T-CABS Observation Leckage"/>
       <description value="Profil für die Leckagerate unter Beatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-spo2"/>
+      </reference>
+      <name value="T-CABS Observation SPO2"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1014,7 +1097,17 @@
         <reference value="ValueSet/t-cabs-valueset-Beatmungsmodus"/>
       </reference>
       <name value="T-CABS ValueSet Beatmungsmodus"/>
-      <description value="Dieses ValueSet erhält Codes um die verschiedenen Beatmungsmodis abzubilden"/>
+      <description value="Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-herzfrequenz"/>
+      </reference>
+      <name value="T_CABS_Observation_Herzfrequenz"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
