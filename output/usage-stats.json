@@ -36,10 +36,6 @@
     ],
     "Observation": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af",
-        "title": "T-CABS Observation AF"
-      },
-      {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
         "title": "T-CABS Observation AHI"
       },
@@ -54,6 +50,10 @@
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
         "title": "Atemfrequenz"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet",
+        "title": "T-CABS Observation AF"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden",
@@ -88,6 +88,12 @@
         "title": "FEV1 Observation"
       }
     ],
+    "Practitioner": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-arzt",
+        "title": "T-CABS Practitioner Arzt"
+      }
+    ],
     "Procedure": [
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
@@ -99,8 +105,17 @@
     "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum": [
       "Procedure"
     ],
+    "http://fhir.de/StructureDefinition/gender-amtlich-de": [
+      "Practitioner.gender"
+    ],
+    "http://fhir.de/StructureDefinition/humanname-namenszusatz": [
+      "Practitioner.name.family"
+    ],
     "http://fhir.de/StructureDefinition/seitenlokalisation": [
       "Procedure.code.coding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Practitioner.birthDate"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -111,11 +126,43 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-name": [
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Practitioner.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Practitioner.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Practitioner.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct": [
+      "Practitioner.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Practitioner.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier": [
+      "Practitioner.name.prefix"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"

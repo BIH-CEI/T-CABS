@@ -49,13 +49,6 @@
     "name" : "T_CABS_DeviceMetric_Eingestellter_Gemessener_Parameter"
   },
   {
-    "id" : "t-cabs-observation-af",
-    "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-af",
-    "version" : "0.1.0",
-    "name" : "T_CABS_Observation_AF"
-  },
-  {
     "id" : "t-cabs-observation-ahi",
     "type" : "StructureDefinition",
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
@@ -82,6 +75,13 @@
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
     "version" : "0.1.0",
     "name" : "T_CABS_Observation_Atemfrequenz"
+  },
+  {
+    "id" : "t-cabs-observation-atemfrequenz-beatmet",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Atemfrequenz_beatmet"
   },
   {
     "id" : "t-cabs-observation-beatmungsstunden",
@@ -140,11 +140,25 @@
     "name" : "T_CABS_Observation_FEV1"
   },
   {
+    "id" : "t-cabs-practitioner-arzt",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-arzt",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Practitioner_Arzt"
+  },
+  {
     "id" : "t-cabs-procedure-beatmung",
     "type" : "StructureDefinition",
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
     "version" : "0.1.0",
     "name" : "T_CABS_Procedure_Beatmung"
+  },
+  {
+    "id" : "t-cabs-valueset-Beatmungsform",
+    "type" : "ValueSet",
+    "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
+    "version" : "0.1.0",
+    "name" : "T_CABS_ValueSet_Beatmungsform"
   },
   {
     "id" : "t-cabs-valueset-Beatmungsmodus",

@@ -14,6 +14,8 @@
     <sch:rule context="f:Procedure">
       <sch:assert test="count(f:extension[@url = 'http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum']) &lt;= 1">extension with URL = 'http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht']) &lt;= 1">extension with URL = 'https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:usedReference) &gt;= 1">usedReference: minimum cardinality of 'usedReference' is 1</sch:assert>
+      <sch:assert test="count(f:usedReference) &lt;= 1">usedReference: maximum cardinality of 'usedReference' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

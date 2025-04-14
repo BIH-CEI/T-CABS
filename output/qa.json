@@ -6,10 +6,10 @@
   "status" : "draft",
   "package-id" : "t-cabs",
   "ig-ver" : "0.1.0",
-  "date" : "Wed, 02 Apr, 2025 15:35:58 +0200",
-  "dateISO8601" : "2025-04-02T15:35:58+02:00",
+  "date" : "Fri, 11 Apr, 2025 09:41:22 +0200",
+  "dateISO8601" : "2025-04-11T09:41:22+02:00",
   "exception" : "unable to parse character reference 'canonical=http://fhir.de/CodeSystem/bfarm/ops'' (last text = '\r\n' at line 5 column 135",
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1226541632
+  "maxMemory" : 1563426816
 }

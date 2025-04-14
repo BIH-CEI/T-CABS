@@ -1,6 +1,15 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "T_CABS_ValueSet_Beatmungsform",
+      "title" : "T-CABS ValueSet Beatmungsform",
+      "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
       "version" : "0.1.0",
       "status" : "draft",

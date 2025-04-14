@@ -51,7 +51,7 @@
      ] [
        fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "151975" ] ;
-       fhir:display [ fhir:v "Mean pressure Respiratory system airway --on ventilator" ]
+       fhir:display [ fhir:v "Pressure, mean | | Gas | Ventilator, Airway" ]
      ] )
   ] ; # 
   fhir:subject [

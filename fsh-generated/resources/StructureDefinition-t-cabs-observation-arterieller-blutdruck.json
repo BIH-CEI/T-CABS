@@ -5,7 +5,7 @@
   "name": "T_CABS_Observation_Arterieller_Blutdruck",
   "title": "T-CABS Observation Arterieller Blutdruck",
   "status": "draft",
-  "description": "Profile for documenting arterial blood pressure observations within T-CABS.",
+  "description": "Profil für den arteriellen Blutdruck.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

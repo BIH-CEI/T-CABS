@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "TCABS",
   "status" : "draft",
-  "date" : "2025-04-02T15:35:32+02:00",
+  "date" : "2025-04-11T09:40:45+02:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
@@ -695,7 +695,7 @@
       },
       "name" : "Beispiel Atemfrequenz Löwenstein (Observation)",
       "description" : "Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa",
-      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
     },
     {
       "extension" : [{
@@ -707,7 +707,7 @@
       },
       "name" : "Beispiel Atemfrequenz ResMed (Observation)",
       "description" : "Atemfrequenz gemessen",
-      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
     },
     {
       "extension" : [{
@@ -803,7 +803,7 @@
       },
       "name" : "Beispiel eingestellte Atemfrequenz Breas (Observation)",
       "description" : "Eine eingestellte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
-      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
     },
     {
       "extension" : [{
@@ -911,7 +911,7 @@
       },
       "name" : "Beispiel gemessene Atemfrequenz Breas (Observation)",
       "description" : "Eine gemessene Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
-      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+      "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
     },
     {
       "extension" : [{
@@ -1205,7 +1205,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/t-cabs-observation-af"
+        "reference" : "StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
       },
       "name" : "T-CABS Observation AF",
       "description" : "Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes",
@@ -1300,10 +1300,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/t-cabs-practitioner-arzt"
+      },
+      "name" : "T-CABS Practitioner Arzt",
+      "description" : "Profil für einen Studienarzt oder eine Studienärztin aus T-CABS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/t-cabs-procedure-beatmung"
       },
       "name" : "T-CABS Procedure Beatmung",
       "description" : "Profil für die Beatmungsprozedur",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/t-cabs-valueset-Beatmungsform"
+      },
+      "name" : "T-CABS ValueSet Beatmungsform",
+      "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",
       "exampleBoolean" : false
     },
     {

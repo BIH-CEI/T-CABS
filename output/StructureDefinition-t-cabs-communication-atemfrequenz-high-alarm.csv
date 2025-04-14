@@ -78,7 +78,7 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 "Communication.topic","Communication.topic","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Description of the purpose/content","Description of the purpose/content, similar to a subject line in an email.","Communication.topic.text can be used without any codings.","","","","","","","","",,"example","Codes describing the purpose or content of the communication.","http://hl7.org/fhir/ValueSet/communication-topic","",,,,"Communication.topic",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.context"
-"Communication.about","Communication.about","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-observation-af]]}
+"Communication.about","Communication.about","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet]]}
 ","Resources that pertain to this communication","Die Atemfrequenz, der die Alarmgrenze überschritten hat ((Observation.device auf Messung(DeviceMetric))).","Don't use Communication.about element when a more specific element exists, such as basedOn or reasonReference.","","","","","","","","",,,,,"",,,,"Communication.about",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.context"
 "Communication.encounter","Communication.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
@@ -99,7 +99,7 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 "Communication.reasonCode","Communication.reasonCode","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Indication for message","The reason or justification for the communication.","Textual reasons can be captured using reasonCode.text.","","","","","","","","",,"example","Codes for describing reasons for the occurrence of a communication.","http://hl7.org/fhir/ValueSet/clinical-findings","",,,,"Communication.reasonCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.reasonCode","FiveWs.why[x]",".reasonCode"
-"Communication.reasonReference","Communication.reasonReference","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-observation-af]]}
+"Communication.reasonReference","Communication.reasonReference","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet]]}
 ","Why was communication done?","Optionale Referenz auf den eingestellten Wert des Parameters.","","","","","","","","","",,,,,"",,,,"Communication.reasonReference",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.reasonReference","FiveWs.why[x]",".outboundRelationship[typeCode=RSON].target"
 "Communication.payload","Communication.payload","","","",0,*,"","","","BackboneElement {[]} {[]}

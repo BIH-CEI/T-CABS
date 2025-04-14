@@ -65,13 +65,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-atemfrequenz"
-        },
-        "name": "Atemfrequenz",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Communication/atemfrequenz-alarm-23"
         },
         "name": "Beispiel Alarm (Communication)",
@@ -100,7 +93,7 @@
         },
         "name": "Beispiel Atemfrequenz Löwenstein (Observation)",
         "description": "Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa",
-        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
       },
       {
         "reference": {
@@ -108,7 +101,7 @@
         },
         "name": "Beispiel Atemfrequenz ResMed (Observation)",
         "description": "Atemfrequenz gemessen",
-        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
       },
       {
         "reference": {
@@ -172,7 +165,7 @@
         },
         "name": "Beispiel eingestellte Atemfrequenz Breas (Observation)",
         "description": "Eine eingestellte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
-        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
       },
       {
         "reference": {
@@ -244,7 +237,7 @@
         },
         "name": "Beispiel gemessene Atemfrequenz Breas (Observation)",
         "description": "Eine gemessene Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)",
-        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+        "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
       },
       {
         "reference": {
@@ -360,33 +353,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-bmi"
-        },
-        "name": "BMI Observation",
-        "description": "Profile for recording Body Mass Index (BMI) as an observation.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Observation/Example-TCABS-Observation-SPO2"
         },
         "name": "Example-TCABS-Observation-SPO2",
         "exampleCanonical": "http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/t-cabs-observationfev1"
-        },
-        "name": "FEV1 Observation",
-        "description": "Profile for recording Forced Expiratory Volume in 1 second (FEV1) as an observation.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-gehstrecke"
-        },
-        "name": "Gehstrecke",
-        "exampleBoolean": false
       },
       {
         "reference": {
@@ -430,6 +400,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-device-messgeraet"
+        },
+        "name": "T-CABS Device Messgerät",
+        "description": "Profil für ein Messgerät am Patienten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"
         },
         "name": "T-CABS DeviceMetric eingestellter oder gemessener Parameter",
@@ -438,7 +416,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-af"
+          "reference": "StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
         },
         "name": "T-CABS Observation AF",
         "description": "Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes",
@@ -465,7 +443,15 @@
           "reference": "StructureDefinition/t-cabs-observation-arterieller-blutdruck"
         },
         "name": "T-CABS Observation Arterieller Blutdruck",
-        "description": "Profile for documenting arterial blood pressure observations within T-CABS.",
+        "description": "Profil für den arteriellen Blutdruck.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-atemfrequenz"
+        },
+        "name": "T-CABS Observation Atemfrequenz",
+        "description": "Profil für die Atemfrequenz per Doccla",
         "exampleBoolean": false
       },
       {
@@ -474,6 +460,38 @@
         },
         "name": "T-CABS Observation Beatmungsstunden",
         "description": "Profil für die empfohlene oder tatsächlich gemessene Anzahl der Beatmungsstunden je 24 Stunden",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-bmi"
+        },
+        "name": "T-CABS Observation BMI",
+        "description": "Profil für den Body Mass Index (BMI)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observationfev1"
+        },
+        "name": "T-CABS Observation FEV1",
+        "description": "Profil für das Forced Expiratory Volume in 1 second (FEV1)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-gehstrecke"
+        },
+        "name": "T-CABS Observation Gehstrecke",
+        "description": "Profil für die Gehstrecke",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/t-cabs-observation-herzfrequenz"
+        },
+        "name": "T-CABS Observation Herzfrequenz",
+        "description": "Profil für die Herzfrequenz",
         "exampleBoolean": false
       },
       {
@@ -489,6 +507,7 @@
           "reference": "StructureDefinition/t-cabs-observation-spo2"
         },
         "name": "T-CABS Observation SPO2",
+        "description": "Profil für die Sauerstoffsaettigung im Blut (SPO2)",
         "exampleBoolean": false
       },
       {
@@ -501,6 +520,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/t-cabs-practitioner-arzt"
+        },
+        "name": "T-CABS Practitioner Arzt",
+        "description": "Profil für einen Studienarzt oder eine Studienärztin aus T-CABS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/t-cabs-procedure-beatmung"
         },
         "name": "T-CABS Procedure Beatmung",
@@ -509,17 +536,18 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/t-cabs-valueset-Beatmungsmodus"
+          "reference": "ValueSet/t-cabs-valueset-Beatmungsform"
         },
-        "name": "T-CABS ValueSet Beatmungsmodus",
-        "description": "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
+        "name": "T-CABS ValueSet Beatmungsform",
+        "description": "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/t-cabs-observation-herzfrequenz"
+          "reference": "ValueSet/t-cabs-valueset-Beatmungsmodus"
         },
-        "name": "T_CABS_Observation_Herzfrequenz",
+        "name": "T-CABS ValueSet Beatmungsmodus",
+        "description": "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
         "exampleBoolean": false
       }
     ],

@@ -1,2 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus,0.1.0,draft,,T_CABS_ValueSet_Beatmungsmodus,T-CABS ValueSet Beatmungsmodus,"Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",,"hl7.terminology.r4"
+http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform,0.1.0,draft,,T_CABS_ValueSet_Beatmungsform,T-CABS ValueSet Beatmungsform,"Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden","StructureDefinition/t-cabs-procedure-beatmung","SCT"
+http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus,0.1.0,draft,,T_CABS_ValueSet_Beatmungsmodus,T-CABS ValueSet Beatmungsmodus,"Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden","StructureDefinition/t-cabs-procedure-beatmung","hl7.terminology.r4"

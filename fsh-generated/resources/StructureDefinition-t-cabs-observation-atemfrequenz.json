@@ -3,8 +3,9 @@
   "id": "t-cabs-observation-atemfrequenz",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
   "name": "T_CABS_Observation_Atemfrequenz",
-  "title": "Atemfrequenz",
+  "title": "T-CABS Observation Atemfrequenz",
   "status": "draft",
+  "description": "Profil für die Atemfrequenz per Doccla",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -14,24 +15,19 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "9279-1",
+          "system": "http://loinc.org",
+          "display": "Respiratory Rate"
+        }
+      },
+      {
         "id": "Observation.performer",
         "path": "Observation.performer",
         "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity",
-        "path": "Observation.value[x]",
-        "sliceName": "valueQuantity",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.code",
-        "path": "Observation.value[x].code",
-        "patternCode": "/min"
       },
       {
         "id": "Observation.method",
@@ -41,6 +37,15 @@
       {
         "id": "Observation.device",
         "path": "Observation.device",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-messgeraet"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

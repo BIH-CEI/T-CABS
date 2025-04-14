@@ -17,13 +17,13 @@
       {
         "id": "Communication.about",
         "path": "Communication.about",
-        "definition": "Die Atemfrequenz, der die Alarmgrenze überschritten hat ((Observation.device auf Messung(DeviceMetric))).",
+        "definition": "Referenz auf die gemessene Atemfrequenz, welche die Alarmgrenze überschritten hat ((Observation.device auf Messung(DeviceMetric))).",
         "min": 1,
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+              "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
             ]
           }
         ]
@@ -31,11 +31,12 @@
       {
         "id": "Communication.reasonReference",
         "path": "Communication.reasonReference",
+        "definition": "Referenz auf die eingestellte Atemfrequenz mit Grenzwerten.",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-observation-af"
+              "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
             ]
           }
         ]

@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "T_CABS_ValueSet_Beatmungsform",
+  "id": "t-cabs-valueset-Beatmungsform",
+  "title": "T-CABS ValueSet Beatmungsform",
+  "description": "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",
+  "url": "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "428311008",
+            "display": "Non-invasive ventilation (regime/therapy)"
+          },
+          {
+            "code": "1258985005",
+            "display": "Invasive mechanical ventilation (regime/therapy)"
+          }
+        ]
+      }
+    ]
+  }
+}

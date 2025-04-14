@@ -9,3 +9,4 @@ Description: "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis
 * $IEEE-11073#475154 "PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts."
 * $IEEE-11073#475197 "BiLevel Airway Pressure Ventilation"
 * $IEEE-11073#475201 "Volume Control Ventilation"
+* $IEEE-11073#151796 "CPAP pressure"

@@ -5,6 +5,7 @@
   "name": "T_CABS_Observation_SPO2",
   "title": "T-CABS Observation SPO2",
   "status": "draft",
+  "description": "Profil für die Sauerstoffsaettigung im Blut (SPO2)",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

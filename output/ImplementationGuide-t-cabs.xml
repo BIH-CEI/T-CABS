@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="TCABS"/>
   <status value="draft"/>
-  <date value="2025-04-02T15:35:32+02:00"/>
+  <date value="2025-04-11T09:40:45+02:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
@@ -529,7 +529,7 @@
       </reference>
       <name value="Beispiel Atemfrequenz Löwenstein (Observation)"/>
       <description value="Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-af"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -540,7 +540,7 @@
       </reference>
       <name value="Beispiel Atemfrequenz ResMed (Observation)"/>
       <description value="Atemfrequenz gemessen"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-af"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -628,7 +628,7 @@
       </reference>
       <name value="Beispiel eingestellte Atemfrequenz Breas (Observation)"/>
       <description value="Eine eingestellte Atemfrequenz der Firma Breas&#xA;Treatment_Data - Breaths per minute (BPM)"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-af"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -727,7 +727,7 @@
       </reference>
       <name value="Beispiel gemessene Atemfrequenz Breas (Observation)"/>
       <description value="Eine gemessene Atemfrequenz der Firma Breas&#xA;Treatment_Data - Breaths per minute (BPM)"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-af"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -996,7 +996,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-observation-af"/>
+        <reference value="StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"/>
       </reference>
       <name value="T-CABS Observation AF"/>
       <description value="Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes"/>
@@ -1083,10 +1083,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/t-cabs-practitioner-arzt"/>
+      </reference>
+      <name value="T-CABS Practitioner Arzt"/>
+      <description value="Profil für einen Studienarzt oder eine Studienärztin aus T-CABS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/t-cabs-procedure-beatmung"/>
       </reference>
       <name value="T-CABS Procedure Beatmung"/>
       <description value="Profil für die Beatmungsprozedur"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/t-cabs-valueset-Beatmungsform"/>
+      </reference>
+      <name value="T-CABS ValueSet Beatmungsform"/>
+      <description value="Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
