@@ -3,14 +3,14 @@
   "id" : "t-cabs-valueset-Beatmungsmodus",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet t-cabs-valueset-Beatmungsmodus</b></p><a name=\"t-cabs-valueset-Beatmungsmodus\"> </a><a name=\"hct-cabs-valueset-Beatmungsmodus\"> </a><a name=\"t-cabs-valueset-Beatmungsmodus-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-mdc.html\"><code>urn:iso:std:iso:11073:10101</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>475172</td><td>Pressure Control</td></tr><tr><td>475147</td><td>PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts.</td></tr><tr><td>475148</td><td>PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, with tidal volume target and pressure regulation, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts.</td></tr><tr><td>475154</td><td>PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts.</td></tr><tr><td>475197</td><td>BiLevel Airway Pressure Ventilation</td></tr><tr><td>475201</td><td>Volume Control Ventilation</td></tr><tr><td>151796</td><td>CPAP pressure</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet t-cabs-valueset-Beatmungsmodus</b></p><a name=\"t-cabs-valueset-Beatmungsmodus\"> </a><a name=\"hct-cabs-valueset-Beatmungsmodus\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html\"><code>urn:iso:std:iso:11073:10101</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>475172</td><td>MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC</td></tr><tr><td>475147</td><td>MDC_VENT_MODE_ISO_AC_PC_6ACAP</td></tr><tr><td>475148</td><td>MDC_VENT_MODE_ISO_AC_vtPC_6ACAP</td></tr><tr><td>475154</td><td>MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</td></tr><tr><td>475197</td><td>MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP</td></tr><tr><td>475201</td><td>MDC_VENT_MODE_ISO_CMV_VC</td></tr><tr><td>151796</td><td>MDC_PRESS_AWAY_CTS_POS</td></tr></table></li></ul></div>"
   },
   "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
   "version" : "0.1.0",
   "name" : "T_CABS_ValueSet_Beatmungsmodus",
   "title" : "T-CABS ValueSet Beatmungsmodus",
   "status" : "draft",
-  "date" : "2025-04-11T09:40:45+02:00",
+  "date" : "2025-10-16T18:59:10+02:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
@@ -19,37 +19,37 @@
       "value" : "http://example.org/example-publisher"
     }]
   }],
-  "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
+  "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",
   "compose" : {
     "include" : [{
       "system" : "urn:iso:std:iso:11073:10101",
       "concept" : [{
         "code" : "475172",
-        "display" : "Pressure Control"
+        "display" : "MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC"
       },
       {
         "code" : "475147",
-        "display" : "PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts."
+        "display" : "MDC_VENT_MODE_ISO_AC_PC_6ACAP"
       },
       {
         "code" : "475148",
-        "display" : "PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, with tidal volume target and pressure regulation, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts."
+        "display" : "MDC_VENT_MODE_ISO_AC_vtPC_6ACAP"
       },
       {
         "code" : "475154",
-        "display" : "PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts."
+        "display" : "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"
       },
       {
         "code" : "475197",
-        "display" : "BiLevel Airway Pressure Ventilation"
+        "display" : "MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP"
       },
       {
         "code" : "475201",
-        "display" : "Volume Control Ventilation"
+        "display" : "MDC_VENT_MODE_ISO_CMV_VC"
       },
       {
         "code" : "151796",
-        "display" : "CPAP pressure"
+        "display" : "MDC_PRESS_AWAY_CTS_POS"
       }]
     }]
   }

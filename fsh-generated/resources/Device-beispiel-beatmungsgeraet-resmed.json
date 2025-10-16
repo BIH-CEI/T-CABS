@@ -1,0 +1,50 @@
+{
+  "resourceType": "Device",
+  "id": "beispiel-beatmungsgeraet-resmed",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours",
+      "valueUnsignedInt": 6500
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "UDI"
+          }
+        ]
+      },
+      "value": "RESMED-STELLAR150-54321"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "70001",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_DEV_SYS_PT_VENT_MDS"
+      }
+    ]
+  },
+  "deviceName": [
+    {
+      "type": "model-name",
+      "name": "Stellar150"
+    }
+  ],
+  "manufacturer": "ResMed",
+  "serialNumber": "STELLAR150-SN-901234",
+  "owner": {
+    "reference": "Organization/beispiel-provider-vivisol"
+  },
+  "patient": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}

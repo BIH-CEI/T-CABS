@@ -1,18 +1,12 @@
 Profile: T_CABS_Procedure_Beatmung
-Parent: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung
+Parent: Procedure
 Id: t-cabs-procedure-beatmung
 Title: "T-CABS Procedure Beatmung"
 Description: "Profil für die Beatmungsprozedur"
 
+* status MS 
 
-/* Beatmungsform - .category
-Nicht-invasive Beatmung             - 428311008 "Non-invasive ventilation (regime/therapy)" 475199 "Non-invasive Ventilation"
-Invasive Beatmung                   - 1258985005 "Invasive mechanical ventilation (regime/therapy)"
-Invasive Beatmung orotracheal       - bodysite?
-Invasive Beatmung Trachealkanüle    - bodysite?
-CPAP                                - 47545007 "Continuous positive airway pressure ventilation treatment (regime/therapy)"
-*/
-
+* category 1..1 MS
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
@@ -22,27 +16,65 @@ CPAP                                - 47545007 "Continuous positive airway press
 * category.coding[beatmungsform].code 1..1 MS
 * category.coding[beatmungsform].system 1..1 MS
 
-// Beatmungsmodus - .code
-/*
- PCV            - 475172 "Pressure Control"
- PCV(A)         - 475147 "PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts."            
- PCV(A+TgV)     - 475148 "PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, with tidal volume target and pressure regulation, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts."
- PSV            - 475154 "PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts."
- S/T            - 475197 "BiLevel Airway Pressure Ventilation" iso_mode: Bi-level AV:SIMV-PC\PS\P
- VCV            - 475201 "Volume Control Ventilation"
- CPAP           - 151796 ""
-*/
+* code 1..1 MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding ^slicing.ordered = false
-* code.coding contains beatmungsmodus 1..1 MS
+* code.coding contains beatmungsmodus 0..1 MS
 * code.coding[beatmungsmodus] from t-cabs-valueset-Beatmungsmodus (required)
 * code.coding[beatmungsmodus].code 1..1 MS
 * code.coding[beatmungsmodus].system 1..1 MS
 
 * usedReference 1..1 MS
-* usedReference only Reference(t-cabs-device-beatmungsgeraet) 
+* usedReference only Reference(t-cabs-device-mds-beatmungsgeraet) 
+
+* subject MS
+* subject only Reference(T_CABS_Patient)
+
+* performed[x] 1..1 MS
+* performed[x] only Period
+
+* bodySite MS
+
+Instance: beispiel-beatmung-breas
+InstanceOf: T_CABS_Procedure_Beatmung
+Usage: #example
+Title: "Beispiel Beatmung BREAS"
+Description: "Beispiel für eine Beatmungsprozedur mit BREAS Gerät (PCV Modus)"
+* status = #completed
+* category.coding[beatmungsform] = $SCT#1258985005 "Invasive mechanical ventilation (regime/therapy)"
+* code.coding[beatmungsmodus] = $IEEE-11073#475147 "MDC_VENT_MODE_ISO_AC_PC_6ACAP"
+* subject = Reference(Patient/tcabs-patient-example)
+* performedPeriod.start = "2024-01-15T22:00:00Z"
+* performedPeriod.end = "2024-01-16T06:00:00Z"
+* usedReference = Reference(Device/beispiel-beatmungsgeraet-breas)
+
+Instance: beispiel-beatmung-loewenstein
+InstanceOf: T_CABS_Procedure_Beatmung
+Usage: #example
+Title: "Beispiel Beatmung Löwenstein"
+Description: "Beispiel für eine Beatmungsprozedur mit Löwenstein Gerät (PSV Modus)"
+* status = #completed
+* category.coding[beatmungsform] = $SCT#1258985005 "Invasive mechanical ventilation (regime/therapy)"
+* code.coding[beatmungsmodus] = $IEEE-11073#475154 "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"
+* subject = Reference(Patient/tcabs-patient-example)
+* performedPeriod.start = "2024-01-15T22:00:00Z"
+* performedPeriod.end = "2024-01-16T06:00:00Z"
+* usedReference = Reference(Device/beispiel-beatmungsgeraet-loewenstein)
+
+Instance: beispiel-beatmung-resmed
+InstanceOf: T_CABS_Procedure_Beatmung
+Usage: #example
+Title: "Beispiel Beatmung ResMed"
+Description: "Beispiel für eine Beatmungsprozedur mit ResMed Gerät (CPAP Modus)"
+* status = #completed
+* category.coding[beatmungsform] = $SCT#428311008 "Non-invasive ventilation (regime/therapy)"
+* code.coding[beatmungsmodus] = $IEEE-11073#151796 "MDC_PRESS_AWAY_CTS_POS"
+* subject = Reference(Patient/tcabs-patient-example)
+* performedPeriod.start = "2024-01-15T22:00:00Z"
+* performedPeriod.end = "2024-01-16T06:00:00Z"
+* usedReference = Reference(Device/beispiel-beatmungsgeraet-resmed)
 
 /*
 .bodysite  ??

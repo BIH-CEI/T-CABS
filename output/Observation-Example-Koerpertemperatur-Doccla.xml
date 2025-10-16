@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Example-Koerpertemperatur-Doccla"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Example-Koerpertemperatur-Doccla</b></p><a name="Example-Koerpertemperatur-Doccla"> </a><a name="hcExample-Koerpertemperatur-Doccla"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-observation-koerpertemperatur.html">T-CABS Observation Koerpertemperatur</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span>, <span title="Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}">PHD generated Observation</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8310-5}, {urn:iso:std:iso:11073:10101 150364}">Body temperature</span></p><p><b>subject</b>: <a href="Patient-tcabs-patient-example.html">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 07:00:00+0000 --&gt; 2024-01-15 07:00:00+0000</p><p><b>value</b>: 36.7 °C<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>device</b>: <a href="Device-beispiel-phd-doccla.html">Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP</a></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"/>
+      <code value="phd-observation"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8310-5"/>
+      <display value="Body temperature"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="150364"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/tcabs-patient-example"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2024-01-15T07:00:00Z"/>
+    <end value="2024-01-15T07:00:00Z"/>
+  </effectivePeriod>
+  <valueQuantity>
+    <value value="36.7"/>
+    <unit value="°C"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="Cel"/>
+  </valueQuantity>
+  <device>
+    <reference value="Device/beispiel-phd-doccla"/>
+  </device>
+</Observation>

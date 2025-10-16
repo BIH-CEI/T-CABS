@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/Device/beispiel-vmd-resmed-atemfrequenz> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "beispiel-vmd-resmed-atemfrequenz"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-vmd-resmed-atemfrequenz</b></p><a name=\"beispiel-vmd-resmed-atemfrequenz\"> </a><a name=\"hcbeispiel-vmd-resmed-atemfrequenz\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html\">T-CABS Device VMD Beatmungsgeraet</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-vmd</code>/VMD-RESMED-ATEMFREQ-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Stellar150 Atemfrequenz Module</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 70002}\">MDC_DEV_SYS_PT_VENT_VMD</span></p><p><b>parent</b>: <a href=\"Device-beispiel-beatmungsgeraet-resmed.html\">Device: extension = 6500; identifier = UDI; manufacturer = ResMed; serialNumber = STELLAR150-SN-901234; type = MDC_DEV_SYS_PT_VENT_MDS</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://tcabs.example.org/device-vmd"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "VMD-RESMED-ATEMFREQ-001" ]
+  ] ) ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Stellar150 Atemfrequenz Module" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "70002" ] ;
+       fhir:display [ fhir:v "MDC_DEV_SYS_PT_VENT_VMD" ]
+     ] )
+  ] ; # 
+  fhir:parent [
+     fhir:link <http://t-cabs.org/Device/beispiel-beatmungsgeraet-resmed> ;
+     fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-resmed" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

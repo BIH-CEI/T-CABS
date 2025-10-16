@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/Observation/Example-Koerpertemperatur-Doccla> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Example-Koerpertemperatur-Doccla"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur"^^xsd:anyURI ;
+       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-Koerpertemperatur-Doccla</b></p><a name=\"Example-Koerpertemperatur-Doccla\"> </a><a name=\"hcExample-Koerpertemperatur-Doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-koerpertemperatur.html\">T-CABS Observation Koerpertemperatur</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}\">PHD generated Observation</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {urn:iso:std:iso:11073:10101 150364}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 07:00:00+0000 --&gt; 2024-01-15 07:00:00+0000</p><p><b>value</b>: 36.7 °C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>device</b>: <a href=\"Device-beispiel-phd-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "phd-observation" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8310-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8310-5" ] ;
+       fhir:display [ fhir:v "Body temperature" ]
+     ] [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "150364" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2024-01-15T07:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-01-15T07:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 36.7 ] ;
+     fhir:unit [ fhir:v "°C" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "Cel" ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://t-cabs.org/Device/beispiel-phd-doccla> ;
+     fhir:reference [ fhir:v "Device/beispiel-phd-doccla" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

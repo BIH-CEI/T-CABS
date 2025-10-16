@@ -1,0 +1,55 @@
+{
+  "resourceType": "DeviceMetric",
+  "id": "beispiel-devicemetric-loewenstein-ti",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/device-metric",
+      "value": "DM-LOEW-TI-001"
+    }
+  ],
+  "measurementPeriod": {
+    "repeat": {
+      "frequency": 1,
+      "period": 1,
+      "periodUnit": "s"
+    }
+  },
+  "calibration": [
+    {
+      "type": "gain",
+      "state": "calibrated"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "152416",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_VENT_TIME_PD_INSP"
+      }
+    ]
+  },
+  "unit": {
+    "coding": [
+      {
+        "code": "s",
+        "system": "http://unitsofmeasure.org",
+        "display": "s"
+      }
+    ]
+  },
+  "operationalStatus": "on",
+  "color": "orange",
+  "category": "measurement",
+  "source": {
+    "reference": "Device/beispiel-beatmungsgeraet-loewenstein"
+  },
+  "parent": {
+    "reference": "Device/beispiel-channel-loewenstein-ti"
+  }
+}

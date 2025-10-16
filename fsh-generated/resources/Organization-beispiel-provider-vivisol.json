@@ -1,0 +1,16 @@
+{
+  "resourceType": "Organization",
+  "id": "beispiel-provider-vivisol",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/providers",
+      "value": "PROV-VIVISOL-001"
+    }
+  ],
+  "name": "Vivisol Deutschland GmbH"
+}

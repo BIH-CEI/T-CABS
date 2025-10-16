@@ -32,10 +32,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -89,21 +89,59 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li>
+    <a href="Informationsmodell.html">Informationsmodell</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spezifikation
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profile
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="logisches_modell.html">Logisches Modell</a>
+        <a href="Profile-Allgemein.html">Profile-Allgemein</a>
       </li>
       <li>
-        <a href="profile.html">Profile</a>
+        <a href="Profile-Vitalparameter.html">Profile-Vitalparameter</a>
       </li>
       <li>
-        <a href="beispiele.html">Beispiele</a>
+        <a href="Profile-Beatmungsparameter.html">Profile-Beatmungsparameter</a>
       </li>
     </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Beispiele
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Beispiele-Allgemein.html">Beispiele-Allgemein</a>
+      </li>
+      <li>
+        <a href="Beispiele-Vitalparameter.html">Beispiele-Vitalparameter</a>
+      </li>
+      <li>
+        <a href="Beispiele-Beatmungsparameter.html">Beispiele-Beatmungsparameter</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Implementation-Allgemein.html">Implementation-Allgemein</a>
+      </li>
+      <li>
+        <a href="Implementation-Vitalparameter.html">Implementation-Vitalparameter</a>
+      </li>
+      <li>
+        <a href="Implementation-Beatmungsparameter.html">Implementation-Beatmungsparameter</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Terminologien.html">Terminologien</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -140,7 +178,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TCABS - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://t-cabs.org/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TCABS - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -171,7 +209,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2025-04-11
+            as of 2025-10-16
           
         
       </td>
@@ -195,39 +233,73 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#ziel-des-implementation-guide" id="markdown-toc-ziel-des-implementation-guide">Ziel des Implementation Guide</a></li>
+  <li><a href="#zielgruppen" id="markdown-toc-zielgruppen">Zielgruppen</a></li>
+  <li><a href="#struktur-des-implementation-guide" id="markdown-toc-struktur-des-implementation-guide">Struktur des Implementation Guide</a></li>
+  <li><a href="#projektkontext-t-cabs" id="markdown-toc-projektkontext-t-cabs">Projektkontext T-CABS</a></li>
+</ul>
+
 </div>
-<h1 id="t-cabs">T-CABS</h1>
-<h2 id="telemedizinisches-centrum-für-außerklinische-beatmung-und-sauerstofftherapie">Telemedizinisches Centrum für Außerklinische Beatmung und Sauerstofftherapie</h2>
+<p>Der T-CABS (Telemedizinisches Centrum für Außerklinische Beatmung und Sauerstofftherapie) Implementation Guide definiert FHIR R4 Profile und Standards für die Übertragung und den Austausch von Beatmungs- und Vitalparametern in der häuslichen Beatmungstherapie.</p>
 
-<p>"Die Anzahl heimbeatmeter Patientinnen und Patienten steigt seit Jahren und führt zu einem Engpass in der Versorgung, die stationär oder in Spezialambulanzen erfolgt. Die Versorgungsqualität ist aufgrund aufwendiger Anfahrten und Wartezeiten unzureichend.</p>
+<h3 id="ziel-des-implementation-guide">Ziel des Implementation Guide</h3>
 
-<p>Telemedizin soll helfen, die Versorgung außerklinisch Beatmeter deutlich zu verbessern.</p>
+<p>Dieser IG ermöglicht die standardisierte, interoperable Übertragung von Gesundheitsdaten aus der häuslichen Beatmungstherapie zwischen verschiedenen Systemen und Herstellern. Es werden einheitliche FHIR-Profile definiert für:</p>
 
-<p>Methodisches Vorgehen: T-CABS verfolgt im Raum Berlin/Brandenburg als übergeordnetes Projektziel die Reduktion von ungeplanten Kontakten zum Gesundheitssystem, Krankenhaustagen, Ambulanzterminen, Krankentransporten und somit der Gesundheitskosten.</p>
+<ul>
+  <li>Beatmungsparameter von Beatmungsgeräten</li>
+  <li>Vitalparameter von Personal Health Devices (PHD)</li>
+  <li>Klinische Workflows für telemedizinische Visiten</li>
+</ul>
 
-<p>Dies soll mittels telemedizinischer Betreuung erreicht werden durch</p>
+<h3 id="zielgruppen">Zielgruppen</h3>
+
+<p><strong>Primäre Zielgruppen:</strong></p>
+<ul>
+  <li>Hersteller von Beatmungsgeräten (BREAS, Löwenstein Medical, ResMed)</li>
+  <li>Hersteller von Vitalparameter-Messgeräten (Doccla)</li>
+</ul>
+
+<p><strong>Sekundäre Zielgruppen:</strong></p>
+<ul>
+  <li>Softwareentwickler für Gesundheitsplattformen</li>
+  <li>Systemintegratoren für telemedizinische Lösungen</li>
+</ul>
+
+<h3 id="struktur-des-implementation-guide">Struktur des Implementation Guide</h3>
 
 <ol>
-  <li>
-    <p>Steigerung der Therapieadhärenz gegenüber der Beatmungstherapie,</p>
-  </li>
-  <li>
-    <p>Stabilisierung der pulmonalen Funktion und Verbesserung der körperlichen Kondition,</p>
-  </li>
-  <li>
-    <p>Erhöhung der Lebensqualität, Selbstbestimmung und Anwendungssicherheit bei Patientinnen und Patienten,</p>
-  </li>
-  <li>
-    <p>Verbesserung der sektorenübergreifenden Zusammenarbeit und Kommunikation sowie</p>
-  </li>
-  <li>
-    <p>Entwicklung und Erprobung diagnostischer Signaturen mittels maschinellen Lernens zur Unterstützung zukünftiger Telemedizin.</p>
-  </li>
+  <li>Informationsmodell: Beinhaltet ein UML über alle erstellten T-CABS-Profile und ihre Beziehungen (Referenzen) zueinander</li>
+  <li>Profile: Grafische Darstellung der Profile*</li>
+  <li>Beispiele: Grafische Darstellung der Beispiele*</li>
+  <li>Implemantation: Detaillierte Beschreibung der einzelnen Vorgaben innerhalb der Profile und der Beziehungen zueinander*</li>
 </ol>
 
-<p>Die Interventions- und die Kontrollgruppe der prospektiven, longitudinalen Interventionsstudie werden mit qualitativer und quantitativer Prozessanalyse bezüglich primärem Endpunkt und sekundären Endpunkten verglichen. Umsetzungspotenzial: Alle relevanten Hürden zur Implementierung der Telemedizin in die Regelversorgung wurden bereits überwunden (z. B. bei Diabetes mellitus, Herzinsuffizienz)."</p>
+<p>*(unterteilt in Allgemein, Vitalparameter und Beatmungsparameter)</p>
+
+<h3 id="projektkontext-t-cabs">Projektkontext T-CABS</h3>
+
+<p><a href="https://t-cabs.charite.de/">Projektwebseite</a></p>
+
+<p>Das Telemedizinische Centrum für Außerklinische Beatmung und Sauerstofftherapie verfolgt das übergeordnete Projektziel der Reduktion von ungeplanten Kontakten zum Gesundheitssystem, Krankenhaustagen, Ambulanzterminen, Krankentransporten und somit der Gesundheitskosten.</p>
+
+<p>Dies soll mittels telemedizinischer Betreuung erreicht werden durch:</p>
+
+<ol>
+  <li>Steigerung der Therapieadhärenz gegenüber der Beatmungstherapie</li>
+  <li>Stabilisierung der pulmonalen Funktion und Verbesserung der körperlichen Kondition</li>
+  <li>Erhöhung der Lebensqualität, Selbstbestimmung und Anwendungssicherheit bei Patienten</li>
+  <li>Verbesserung der sektorenübergreifenden Zusammenarbeit und Kommunikation</li>
+  <li>Entwicklung und Erprobung diagnostischer Signaturen mittels maschinellen Lernens</li>
+</ol>
+
+<p><strong>Kontakt:</strong></p>
+<ul>
+  <li>Technische Fragen oder Anmerkungen: thimo-andre.hoelter@charite.de oder <a href="https://github.com/BIH-CEI/T-CABS/issues">Github Issues</a></li>
+  <li>Organisatorische Fragen: t-cabs@charite.de</li>
+</ul>
 
 <!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
 
@@ -239,7 +311,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     
     <p></p>
     </div>
-
 
 
 
@@ -259,7 +330,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 11, 2025 09:41+0200">2025-04-11</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 16, 2025 18:59+0200">2025-10-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="t-cabs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide t-cabs</b></p><a name="t-cabs"> </a><a name="hct-cabs"> </a><a name="t-cabs-en-US"> </a><h2>TCABS</h2><p>The official URL for this implementation guide is: </p><pre>http://t-cabs.org/ImplementationGuide/t-cabs</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide t-cabs</b></p><a name="t-cabs"> </a><a name="hct-cabs"> </a><h2>TCABS</h2><p>The official URL for this implementation guide is: </p><pre>http://t-cabs.org/ImplementationGuide/t-cabs</pre></div>
   </text>
   <url value="http://t-cabs.org/ImplementationGuide/t-cabs"/>
   <version value="0.1.0"/>
   <name value="TCABS"/>
   <status value="draft"/>
-  <date value="2025-04-11T09:40:45+02:00"/>
+  <date value="2025-10-16T18:59:10+02:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
@@ -27,7 +27,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.2.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -37,30 +37,25 @@
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.2.0"/>
   </dependsOn>
-  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_icu">
-    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu"/>
-    <packageId value="de.medizininformatikinitiative.kerndatensatz.icu"/>
-    <version value="2025.0.4"/>
-  </dependsOn>
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_person">
     <uri value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.person"/>
     <version value="2025.0.0"/>
   </dependsOn>
-  <dependsOn id="de_gematik_isik_basismodul">
-    <uri value="http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul"/>
-    <packageId value="de.gematik.isik-basismodul"/>
-    <version value="4.0.1"/>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_fall">
+    <uri value="https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ImplementationGuide/mii-ig-fall"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.fall"/>
+    <version value="2025.0.0"/>
   </dependsOn>
-  <dependsOn id="de_gematik_isik_vitalparameter">
-    <uri value="http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter"/>
-    <packageId value="de.gematik.isik-vitalparameter"/>
-    <version value="4.0.1"/>
+  <dependsOn id="hl7_fhir_uv_phd">
+    <uri value="http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd"/>
+    <packageId value="hl7.fhir.uv.phd"/>
+    <version value="1.1.0"/>
   </dependsOn>
-  <dependsOn id="de_basisprofil_r4">
-    <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
-    <packageId value="de.basisprofil.r4"/>
-    <version value="1.5.2"/>
+  <dependsOn id="hl7_fhir_uv_pocd">
+    <uri value="http://hl7.org/fhir/uv/pocd/ImplementationGuide/hl7.fhir.uv.pocd"/>
+    <packageId value="hl7.fhir.uv.pocd"/>
+    <version value="0.3.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -264,7 +259,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.4.1"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.8.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -468,45 +463,24 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Procedure/procedure-PSV-123"/>
+        <reference value="Observation/Example-AHI-BREAS"/>
       </reference>
-      <name value=" Beispiel Beatmungsprozedur Breas (Procedure)"/>
-      <description value="Ein Beispiel für eine Prozedur zur Beatmung"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/t-cabs-observation-atemfrequenz"/>
-      </reference>
-      <name value="Atemfrequenz"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Communication"/>
-      </extension>
-      <reference>
-        <reference value="Communication/atemfrequenz-alarm-23"/>
-      </reference>
-      <name value="Beispiel Alarm (Communication)"/>
-      <description value="Beispielhafter Alarm einer erhöhten Atemfrequenz"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"/>
+      <name value="Beispiel AHI Messung BREAS"/>
+      <description value="Beispiel für eine AHI-Messung von einem BREAS Beatmungsgerät"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/amv-gemessen-beispiel-loewenstein"/>
+        <reference value="Observation/Example-AMV-BREAS-gemessen"/>
       </reference>
-      <name value="Beispiel AMV Löwenstein (Observation)"/>
-      <description value="Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute /&#xA;minuteVolumeMedian_l_min - Median of the minute volume in l/min. Supported devices: prismaLINE, prismaVENT, Luisa"/>
+      <name value="Beispiel AMV Messung BREAS"/>
+      <description value="Beispiel für eine gemessene AMV-Messung von einem BREAS Beatmungsgerät"/>
       <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"/>
     </resource>
     <resource>
@@ -514,21 +488,43 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/amv-gemessen-beispiel-resmed"/>
+        <reference value="Observation/Example-ArterielleSPO2-Doccla"/>
       </reference>
-      <name value="Beispiel AMV ResMed (Observation)"/>
-      <description value="Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute&#xA;TreatmentDataDetailDto - minuteVolume"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"/>
+      <name value="Beispiel arterielle SPO2 Messung"/>
+      <description value="Beispiel für eine arterielle SPO2-Messung über Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/atemfrequenz-gemessen-beispiel-loewenstein"/>
+        <reference value="Observation/Example-ArteriellerBlutdruck-Doccla"/>
       </reference>
-      <name value="Beispiel Atemfrequenz Löwenstein (Observation)"/>
-      <description value="Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa"/>
+      <name value="Beispiel arterieller Blutdruck Messung"/>
+      <description value="Beispiel für eine arterielle Blutdruck-Messung über Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Atemfrequenz-Doccla"/>
+      </reference>
+      <name value="Beispiel Atemfrequenz Messung"/>
+      <description value="Beispiel für eine Atemfrequenz-Messung über Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Atemfrequenz-ResMed-gemessen"/>
+      </reference>
+      <name value="Beispiel Atemfrequenz Messung ResMed"/>
+      <description value="Beispiel für eine gemessene Atemfrequenz von einem ResMed Beatmungsgerät"/>
       <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"/>
     </resource>
     <resource>
@@ -536,219 +532,428 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/atemfrequenz-gemessen-beispiel-resmed"/>
+        <reference value="Observation/Example-Atemzeitverhaeltnis-ResMed"/>
       </reference>
-      <name value="Beispiel Atemfrequenz ResMed (Observation)"/>
-      <description value="Atemfrequenz gemessen"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
-      </extension>
-      <reference>
-        <reference value="Device/device-1573"/>
-      </reference>
-      <name value="Beispiel Beatmungsgerät Breas (Device)"/>
-      <description value="Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller BREAS"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
-      </extension>
-      <reference>
-        <reference value="Device/device-1234"/>
-      </reference>
-      <name value="Beispiel Beatmungsgerät Löwenstein (Device)"/>
-      <description value="Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller Loewenstein"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
-      </extension>
-      <reference>
-        <reference value="Device/device-12547854521"/>
-      </reference>
-      <name value="Beispiel Beatmungsgerät ResMed (Device)"/>
-      <description value="Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller ResMed"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"/>
+      <name value="Beispiel Atemzeitverhältnis ResMed"/>
+      <description value="Beispiel für Atemzeitverhältnis von einem ResMed Beatmungsgerät"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Procedure"/>
       </extension>
       <reference>
-        <reference value="Procedure/procedure-Bilevel-123"/>
+        <reference value="Procedure/beispiel-beatmung-breas"/>
       </reference>
-      <name value="Beispiel Beatmungsprozedur Löwenstein (Procedure)"/>
-      <description value="Ein Beispiel für eine Prozedur zur Beatmung"/>
-      <exampleBoolean value="true"/>
+      <name value="Beispiel Beatmung BREAS"/>
+      <description value="Beispiel für eine Beatmungsprozedur mit BREAS Gerät (PCV Modus)"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Procedure"/>
       </extension>
       <reference>
-        <reference value="Procedure/procedure-CPAP-123"/>
+        <reference value="Procedure/beispiel-beatmung-loewenstein"/>
       </reference>
-      <name value="Beispiel Beatmungsprozedur ResMed (Procedure)"/>
-      <description value="Ein Beispiel für eine Prozedur zur Beatmung"/>
-      <exampleBoolean value="true"/>
+      <name value="Beispiel Beatmung Löwenstein"/>
+      <description value="Beispiel für eine Beatmungsprozedur mit Löwenstein Gerät (PSV Modus)"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/beispiel-beatmung-resmed"/>
+      </reference>
+      <name value="Beispiel Beatmung ResMed"/>
+      <description value="Beispiel für eine Beatmungsprozedur mit ResMed Gerät (CPAP Modus)"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-beatmungsgeraet-breas"/>
+      </reference>
+      <name value="Beispiel Beatmungsgerät BREAS"/>
+      <description value="Beispiel für ein BREAS Heimbeatmungsgerät"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-beatmungsgeraet-loewenstein"/>
+      </reference>
+      <name value="Beispiel Beatmungsgerät Löwenstein"/>
+      <description value="Beispiel für ein Löwenstein Heimbeatmungsgerät"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-beatmungsgeraet-resmed"/>
+      </reference>
+      <name value="Beispiel Beatmungsgerät ResMed"/>
+      <description value="Beispiel für ein ResMed Heimbeatmungsgerät"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/beatmungsstunden-gemessen-beispiel-loewenstein"/>
+        <reference value="Observation/Example-BMI-Doccla"/>
       </reference>
-      <name value="Beispiel Beatmungsstunden Löwenstein (Observation)"/>
-      <description value="Beatmungsdauer des Patienten in Stunden"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"/>
+      <name value="Beispiel BMI Messung"/>
+      <description value="Beispiel für eine BMI-Messung über Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Device"/>
       </extension>
       <reference>
-        <reference value="Observation/beatmungsstunden-gemessen-beispiel-resmed"/>
+        <reference value="Device/beispiel-channel-breas-ahi"/>
       </reference>
-      <name value="Beispiel Beatmungsstunden ResMed (Observation)"/>
-      <description value="Beispiel von gemessenen Beatmungsstunden eines Gerätes des Unternehmens ResMed"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"/>
+      <name value="Beispiel Channel BREAS AHI"/>
+      <description value="Beispiel für einen AHI-Channel zur Gruppierung von AHI-Messungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Device"/>
       </extension>
       <reference>
-        <reference value="Observation/atemfrequenz-eingestellt-beispiel-breas"/>
+        <reference value="Device/beispiel-channel-breas-amv"/>
       </reference>
-      <name value="Beispiel eingestellte Atemfrequenz Breas (Observation)"/>
-      <description value="Eine eingestellte Atemfrequenz der Firma Breas&#xA;Treatment_Data - Breaths per minute (BPM)"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"/>
+      <name value="Beispiel Channel BREAS AMV"/>
+      <description value="Beispiel für einen AMV-Channel zur Gruppierung von AMV-Messungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Device"/>
       </extension>
       <reference>
-        <reference value="Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas"/>
+        <reference value="Device/beispiel-channel-breas-ipap"/>
       </reference>
-      <name value="Beispiel eingestellter max. Beatmungsdruck Breas (Observation)"/>
-      <description value="Beipspielhafte Einstellung des maximalen Beatmungsdruckes"/>
-      <exampleBoolean value="true"/>
+      <name value="Beispiel Channel BREAS IPAP"/>
+      <description value="Beispiel für einen IPAP-Channel zur Gruppierung von IPAP-Einstellungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Device"/>
       </extension>
       <reference>
-        <reference value="Observation/peep-eingestellt-beispiel-breas"/>
+        <reference value="Device/beispiel-channel-breas-targetvolume"/>
       </reference>
-      <name value="Beispiel eingestellter PEEP Breas (Observation)"/>
-      <description value="Beispielhafte Einstellung des positiv-endexpiratorischer Druckes (PEEP)"/>
-      <exampleBoolean value="true"/>
+      <name value="Beispiel Channel BREAS Target Volume"/>
+      <description value="Beispiel für einen Target Volume-Channel zur Gruppierung von Target Volume-Einstellungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Device"/>
       </extension>
       <reference>
-        <reference value="Observation/tidalvolumen-eingestellt-beispiel-breas"/>
+        <reference value="Device/beispiel-channel-loewenstein-peep"/>
       </reference>
-      <name value="Beispiel eingestelltes Tidalvolumen Breas (Observation)"/>
-      <description value="Beispiel eines eingestellten Tidalvolumens"/>
-      <exampleBoolean value="true"/>
+      <name value="Beispiel Channel Löwenstein PEEP"/>
+      <description value="Beispiel für einen PEEP-Channel zur Gruppierung von PEEP-Messungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-channel-loewenstein-ti"/>
+      </reference>
+      <name value="Beispiel Channel Löwenstein TI"/>
+      <description value="Beispiel für einen TI-Channel zur Gruppierung von TI-Messungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-channel-loewenstein-triggeredbreaths"/>
+      </reference>
+      <name value="Beispiel Channel Löwenstein TriggeredBreaths"/>
+      <description value="Beispiel für einen TriggeredBreaths-Channel zur Gruppierung von TriggeredBreaths-Messungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-channel-resmed-atemfrequenz"/>
+      </reference>
+      <name value="Beispiel Channel ResMed Atemfrequenz"/>
+      <description value="Beispiel für einen Atemfrequenz-Channel zur Gruppierung von Atemfrequenz-Messungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-channel-resmed-atemzeit"/>
+      </reference>
+      <name value="Beispiel Channel ResMed Atemzeitverhältnis"/>
+      <description value="Beispiel für einen Atemzeitverhältnis-Channel zur Gruppierung von Atemzeitverhältnis-Berechnungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-channel-resmed-druck"/>
+      </reference>
+      <name value="Beispiel Channel ResMed Druck Min/Max"/>
+      <description value="Beispiel für einen Druck Min/Max-Channel zur Gruppierung von Druck-Messungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-channel-resmed-leckage"/>
+      </reference>
+      <name value="Beispiel Channel ResMed Leckage"/>
+      <description value="Beispiel für einen Leckage-Channel zur Gruppierung von Leckage-Messungen"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="DeviceMetric"/>
       </extension>
       <reference>
-        <reference value="DeviceMetric/deviceMetric-eingestellt-beispiel-breas"/>
+        <reference value="DeviceMetric/beispiel-devicemetric-breas-ahi"/>
       </reference>
-      <name value="Beispiel Einstellung Breas (DeviceMetric)"/>
-      <description value="Eingestellter Parameter"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
+      <name value="Beispiel DeviceMetric BREAS AHI"/>
+      <description value="Beispiel für eine DeviceMetric zur AHI-Berechnung eines BREAS Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="DeviceMetric"/>
       </extension>
       <reference>
-        <reference value="DeviceMetric/deviceMetric-Eingestellt-Beispiel-Loewenstein"/>
+        <reference value="DeviceMetric/beispiel-devicemetric-breas-amv"/>
       </reference>
-      <name value="Beispiel Einstellung Löwenstein (DeviceMetric)"/>
-      <description value="Eingestellter Parameter"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
+      <name value="Beispiel DeviceMetric BREAS AMV"/>
+      <description value="Beispiel für eine DeviceMetric zur AMV-Messung eines BREAS Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="DeviceMetric"/>
       </extension>
       <reference>
-        <reference value="DeviceMetric/deviceMetric-eingestellt-beispiel-resmed"/>
+        <reference value="DeviceMetric/beispiel-devicemetric-breas-ipap"/>
       </reference>
-      <name value="Beispiel Einstellung ResMed (DeviceMetric)"/>
-      <description value="Eingestellter Parameter"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
+      <name value="Beispiel DeviceMetric BREAS IPAP"/>
+      <description value="Beispiel für eine DeviceMetric zur IPAP-Einstellung eines BREAS Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/beispiel-devicemetric-breas-targetvolume"/>
+      </reference>
+      <name value="Beispiel DeviceMetric BREAS Target Volume"/>
+      <description value="Beispiel für eine DeviceMetric zur Target Volume-Einstellung eines BREAS Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/beispiel-devicemetric-loewenstein-peep"/>
+      </reference>
+      <name value="Beispiel DeviceMetric Löwenstein PEEP"/>
+      <description value="Beispiel für eine DeviceMetric zur PEEP-Messung eines Löwenstein Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/beispiel-devicemetric-loewenstein-ti"/>
+      </reference>
+      <name value="Beispiel DeviceMetric Löwenstein TI"/>
+      <description value="Beispiel für eine DeviceMetric zur TI-Messung (Inspirationszeit) eines Löwenstein Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths"/>
+      </reference>
+      <name value="Beispiel DeviceMetric Löwenstein TriggeredBreaths"/>
+      <description value="Beispiel für eine DeviceMetric zur TriggeredBreaths-Messung eines Löwenstein Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz"/>
+      </reference>
+      <name value="Beispiel DeviceMetric ResMed Atemfrequenz"/>
+      <description value="Beispiel für eine DeviceMetric zur Atemfrequenz-Messung eines ResMed Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/beispiel-devicemetric-resmed-atemzeit"/>
+      </reference>
+      <name value="Beispiel DeviceMetric ResMed Atemzeitverhältnis"/>
+      <description value="Beispiel für eine DeviceMetric zur Atemzeitverhältnis-Berechnung eines ResMed Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/beispiel-devicemetric-resmed-druck"/>
+      </reference>
+      <name value="Beispiel DeviceMetric ResMed Druck Min/Max"/>
+      <description value="Beispiel für eine DeviceMetric zur Druck Min/Max-Messung eines ResMed Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/beispiel-devicemetric-resmed-leckage"/>
+      </reference>
+      <name value="Beispiel DeviceMetric ResMed Leckage"/>
+      <description value="Beispiel für eine DeviceMetric zur Leckage-Messung eines ResMed Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/Example-DiagnosticReport-Woechentliche-Visite"/>
+      </reference>
+      <name value="Beispiel DiagnosticReport Wöchentliche Visite"/>
+      <description value="Beispiel für einen Visitenbefund einer wöchentlichen telemedizinischen Visite"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/amv-gemessen-beispiel-breas"/>
+        <reference value="Observation/Example-DruckMinMax-ResMed"/>
       </reference>
-      <name value="Beispiel gemessen AMV Breas (Observation)"/>
-      <description value="Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute&#xA;TreatmentDataDetailDto - minuteVolume"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"/>
+      <name value="Beispiel Druck Min/Max ResMed"/>
+      <description value="Beispiel für minimalen und maximalen Beatmungsdruck von einem ResMed Gerät"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/beatmungsstunden-gemessen-beispiel-breas"/>
+        <reference value="Observation/Example-FEV1-Doccla"/>
       </reference>
-      <name value="Beispiel gemessen Beatmungsstunden Breas (Observation)"/>
-      <description value="Beatmungsdauer des Patienten in Stunden"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"/>
+      <name value="Beispiel FEV1 Messung"/>
+      <description value="Beispiel für eine FEV1-Messung über Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observationfev1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/atemfrequenz-gemessen-beispiel-breas"/>
+        <reference value="Observation/Example-Gehstrecke-Doccla"/>
       </reference>
-      <name value="Beispiel gemessene Atemfrequenz Breas (Observation)"/>
-      <description value="Eine gemessene Atemfrequenz der Firma Breas&#xA;Treatment_Data - Breaths per minute (BPM)"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"/>
+      <name value="Beispiel Gehstrecke Messung"/>
+      <description value="Beispiel für eine Gehstrecken-Messung über Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/tidalvolumen-gemessen-beispiel-breas"/>
+        <reference value="Observation/Example-Herzfrequenz-Doccla"/>
       </reference>
-      <name value="Beispiel gemessenes Tidalvolumen Breas (Observation)"/>
-      <description value="Beispiel eines gemessenen Tidalvolumens während der Beatmung"/>
-      <exampleBoolean value="true"/>
+      <name value="Beispiel Herzfrequenz Messung"/>
+      <description value="Beispiel für eine Herzfrequenz-Messung über Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/leckage-gemessen-beispiel-breas"/>
+        <reference value="Observation/Example-IPAP-BREAS"/>
       </reference>
-      <name value="Beispiel Leckage Breas (Observation)"/>
-      <description value="Leckagerate unter Beatmung -&#xA;TreatmentDataDetailDto - leakage"/>
+      <name value="Beispiel IPAP BREAS"/>
+      <description value="Beispiel für IPAP von einem BREAS Beatmungsgerät"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Koerpergewicht-Doccla"/>
+      </reference>
+      <name value="Beispiel Körpergewicht Messung"/>
+      <description value="Beispiel für eine Körpergewicht-Messung über Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Koerpertemperatur-Doccla"/>
+      </reference>
+      <name value="Beispiel Körpertemperatur Messung"/>
+      <description value="Beispiel für eine Körpertemperatur-Messung über Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Example-Leckage-ResMed"/>
+      </reference>
+      <name value="Beispiel Leckage ResMed"/>
+      <description value="Beispiel für Leckage-Messung von einem ResMed Beatmungsgerät"/>
       <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"/>
     </resource>
     <resource>
@@ -756,163 +961,263 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/leckage-gemessen-beispiel-loewenstein"/>
+        <reference value="Observation/Example-PEEP-Loewenstein"/>
       </reference>
-      <name value="Beispiel Leckage Löwenstein (Observation)"/>
-      <description value="Beispiel für eine beobachtete Leckagerate unter Beatmung -&#xA;leakageMedian_liter_min - Median of unintentional leakage flow in l/min. Supported devices: prismaSOFT, prismaSMART, prismaLINE, prismaVENT, Luisa"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"/>
+      <name value="Beispiel PEEP Löwenstein"/>
+      <description value="Beispiel für PEEP von einem Löwenstein Beatmungsgerät"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-peep"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-phd-doccla"/>
+      </reference>
+      <name value="Beispiel PHD Messgerät"/>
+      <description value="Beispiel für ein Personal Health Device Messgerät von Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-phd"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-phg-doccla"/>
+      </reference>
+      <name value="Beispiel PHG Tablet"/>
+      <description value="Beispiel für ein Personal Health Gateway Tablet von Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-phg"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/beispiel-provider-jochum"/>
+      </reference>
+      <name value="Beispiel Provider Jochum"/>
+      <description value="Beispiel für den Beatmungsgeräte-Provider Jochum"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-organisation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/beispiel-provider-loewenstein"/>
+      </reference>
+      <name value="Beispiel Provider Löwenstein"/>
+      <description value="Beispiel für den Beatmungsgeräte-Provider Löwenstein"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-organisation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/beispiel-provider-vivisol"/>
+      </reference>
+      <name value="Beispiel Provider Vivisol"/>
+      <description value="Beispiel für den Beatmungsgeräte-Provider Vivisol"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-organisation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/leckage-gemessen-beispiel-resmed"/>
+        <reference value="Observation/Example-TargetVolume-BREAS"/>
       </reference>
-      <name value="Beispiel Leckage ResMed (Observation)"/>
-      <description value="Gemessene Leckagerate unter Beatmung des Herstellers ResMed"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"/>
+      <name value="Beispiel Target Volume BREAS"/>
+      <description value="Beispiel für Zielvolumen von einem BREAS Beatmungsgerät"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DeviceMetric"/>
+        <valueString value="Encounter"/>
       </extension>
       <reference>
-        <reference value="DeviceMetric/deviceMetric-gemessen-beispiel-breas"/>
+        <reference value="Encounter/Example-Encounter-Telemedizinische-Visite"/>
       </reference>
-      <name value="Beispiel Messung Breas (DeviceMetric)"/>
-      <description value="Gemessener Parameter"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DeviceMetric"/>
-      </extension>
-      <reference>
-        <reference value="DeviceMetric/deviceMetric-Gemessen-Beispiel-Loewenstein"/>
-      </reference>
-      <name value="Beispiel Messung Löwenstein (DeviceMetric)"/>
-      <description value="Gemessener Parameter"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DeviceMetric"/>
-      </extension>
-      <reference>
-        <reference value="DeviceMetric/deviceMetric-gemessen-beispiel-resmed"/>
-      </reference>
-      <name value="Beispiel Messung ResMed (DeviceMetric)"/>
-      <description value="Gemessener Parameter"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
+      <name value="Beispiel Telemedizinische Visite"/>
+      <description value="Beispiel für eine wöchentliche telemedizinische Visite eines T-CABS Patienten"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/inspPress-eingestellt-beispiel-breas"/>
+        <reference value="Observation/Example-TI-Loewenstein"/>
       </reference>
-      <name value="Beispiel mittlerer Beatmungsdruck Breas (Observation)"/>
-      <description value="Beispielhafte Einstellung des mittleren Beatmungsdruckes"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/patient-98219fce-813a-41f2-94ff-861d59b89715"/>
-      </reference>
-      <name value="Beispiel Patient Breas (Patient)"/>
-      <description value="Patient mit der UUID 98219fce-813a-41f2-94ff-861d59b89715"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/patient-123456"/>
-      </reference>
-      <name value="Beispiel Patient Löwenstein (Patient)"/>
-      <description value="Ein Beispiel-Patient mit der internen ID 123456"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/patient-44187887-a48d-4f4e-9393-e4207045a2c4"/>
-      </reference>
-      <name value="Beispiel Patient ResMed (Patient)"/>
-      <description value="Patient mit der internen ID 44187887-a48d-4f4e-9393-e4207045a2c4"/>
-      <exampleBoolean value="true"/>
+      <name value="Beispiel TI Löwenstein"/>
+      <description value="Beispiel für Inspirationszeit von einem Löwenstein Beatmungsgerät"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-ti"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/triggeredBreaths-gemessen-beispiel-loewenstein"/>
+        <reference value="Observation/Example-TriggeredBreaths-Loewenstein"/>
       </reference>
-      <name value="Beispiel TriggeredBreath Löwenstein (Observation)"/>
-      <description value="Beispielhafte Beobachtung von Atemzüge die vom Patienten eigenständig getriggert wurden"/>
+      <name value="Beispiel TriggeredBreaths Löwenstein"/>
+      <description value="Beispiel für getriggerte Atemzüge von einem Löwenstein Beatmungsgerät"/>
       <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Device"/>
       </extension>
       <reference>
-        <reference value="Observation/triggeredBreaths-gemessen-beispiel-breas"/>
+        <reference value="Device/beispiel-vmd-breas-ahi"/>
       </reference>
-      <name value="Beispiel TriggeredBreaths Breas (Observation)"/>
-      <description value="TreatmentDataDetailDto - triggeredBreaths"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"/>
+      <name value="Beispiel VMD BREAS AHI Module"/>
+      <description value="Beispiel für ein virtuelles AHI-Modul eines BREAS Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Device"/>
       </extension>
       <reference>
-        <reference value="Observation/triggeredBreaths-gemessen-beispiel-resmed"/>
+        <reference value="Device/beispiel-vmd-breas-amv"/>
       </reference>
-      <name value="Beispiel TriggeredBreaths ResMed (Observation)"/>
-      <description value="Gemessene Atemzüge die vom Patienten eigenständig getriggert wurden"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"/>
+      <name value="Beispiel VMD BREAS AMV Module"/>
+      <description value="Beispiel für ein virtuelles AMV-Modul eines BREAS Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-vmd-breas-ipap"/>
+      </reference>
+      <name value="Beispiel VMD BREAS IPAP Module"/>
+      <description value="Beispiel für ein virtuelles IPAP-Modul eines BREAS Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-vmd-breas-targetvolume"/>
+      </reference>
+      <name value="Beispiel VMD BREAS Target Volume Module"/>
+      <description value="Beispiel für ein virtuelles Target Volume-Modul eines BREAS Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-vmd-loewenstein-peep"/>
+      </reference>
+      <name value="Beispiel VMD Löwenstein PEEP Module"/>
+      <description value="Beispiel für ein virtuelles PEEP-Modul eines Löwenstein Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-vmd-loewenstein-ti"/>
+      </reference>
+      <name value="Beispiel VMD Löwenstein TI Module"/>
+      <description value="Beispiel für ein virtuelles TI-Modul eines Löwenstein Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-vmd-loewenstein-triggeredbreaths"/>
+      </reference>
+      <name value="Beispiel VMD Löwenstein TriggeredBreaths Module"/>
+      <description value="Beispiel für ein virtuelles TriggeredBreaths-Modul eines Löwenstein Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-vmd-resmed-atemfrequenz"/>
+      </reference>
+      <name value="Beispiel VMD ResMed Atemfrequenz Module"/>
+      <description value="Beispiel für ein virtuelles Atemfrequenz-Modul eines ResMed Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-vmd-resmed-atemzeit"/>
+      </reference>
+      <name value="Beispiel VMD ResMed Atemzeitverhältnis Module"/>
+      <description value="Beispiel für ein virtuelles Atemzeitverhältnis-Modul eines ResMed Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-vmd-resmed-druck"/>
+      </reference>
+      <name value="Beispiel VMD ResMed Druck Min/Max Module"/>
+      <description value="Beispiel für ein virtuelles Druck Min/Max-Modul eines ResMed Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-vmd-resmed-leckage"/>
+      </reference>
+      <name value="Beispiel VMD ResMed Leckage Module"/>
+      <description value="Beispiel für ein virtuelles Leckage-Modul eines ResMed Beatmungsgeräts"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/CABS"/>
+      </reference>
+      <name value="Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS)"/>
+      <description value="Das Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS) der Klinik betreut Patient:innen mit Erkrankungen der Lunge, der Muskulatur oder des Nervensystems, die vorübergehend oder dauerhaft auf Unterstützung der Atmung angewiesen sind und ist Teil des zertifizierten Weaningzentrums der Klinik."/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-organisation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-observation-bmi"/>
+        <reference value="StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
       </reference>
-      <name value="BMI Observation"/>
-      <description value="Profile for recording Body Mass Index (BMI) as an observation."/>
+      <name value="T-CABS Device Channel Beatmungsgeraet"/>
+      <description value="Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Example-TCABS-Observation-SPO2"/>
-      </reference>
-      <name value="Example-TCABS-Observation-SPO2"/>
-      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-observationfev1"/>
+        <reference value="StructureDefinition/t-cabs-device-mds-beatmungsgeraet"/>
       </reference>
-      <name value="FEV1 Observation"/>
-      <description value="Profile for recording Forced Expiratory Volume in 1 second (FEV1) as an observation."/>
+      <name value="T-CABS Device MDS Heimbeatmungsgerät"/>
+      <description value="Profil für ein Heimbeatmungsgerät"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -920,9 +1225,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-observation-gehstrecke"/>
+        <reference value="StructureDefinition/t-cabs-device-phd"/>
       </reference>
-      <name value="Gehstrecke"/>
+      <name value="T-CABS Device PHD"/>
+      <description value="Profil für ein Messgerät am Patienten"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -930,10 +1236,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-communication-alarm"/>
+        <reference value="StructureDefinition/t-cabs-device-phg"/>
       </reference>
-      <name value="T-CABS Communication Alarm"/>
-      <description value="Abstraktes Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes"/>
+      <name value="T-CABS Device PHG"/>
+      <description value="Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wird"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -941,10 +1247,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"/>
+        <reference value="StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
       </reference>
-      <name value="T-CABS Communication Atemfrequenz high Alarm"/>
-      <description value="Profil eines Alarms für eine überschrittenen Atemfrequenz"/>
+      <name value="T-CABS Device VMD Beatmungsgeraet"/>
+      <description value="Profil welches ein virtuelles Subsystem oder Modul darstellt"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -952,10 +1258,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm"/>
+        <reference value="StructureDefinition/t-cabs-devicemetric-numericmetric"/>
       </reference>
-      <name value="T-CABS Communication Atemfrequenz low Alarm"/>
-      <description value="Profil eines Alarms für eine unterschrittenen Atemfrequenz"/>
+      <name value="T-CABS DeviceMetric NumericMetric"/>
+      <description value="Profil welches eine numerische Messung, Berechnung oder Einstellung darstellt"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -963,10 +1269,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-communication-diskonnektion-alarm"/>
+        <reference value="StructureDefinition/t-cabs-diagnosticreport-visitenbefund"/>
       </reference>
-      <name value="T-CABS Communication Diskonnektion Alarm"/>
-      <description value="Profil eines Alarms für eine Diskonnektion des Beatmungsgerätes"/>
+      <name value="T-CABS DiagnosticReport Visitenbefund"/>
+      <description value="Profil für einen Beurteilung der wöchentlichen, telemedizinischen Visite innerhalb der T-CABS Studie"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -974,10 +1280,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-device-beatmungsgeraet"/>
+        <reference value="StructureDefinition/t-cabs-encounter-kontakt"/>
       </reference>
-      <name value="T-CABS Device Beatmungsgerät"/>
-      <description value="Profil für ein Beatmungsgerät"/>
+      <name value="T-CABS Encounter Kontakt"/>
+      <description value="Profil für einen Kontakt/ eine Visite innerhalb der T-CABS Studie"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -985,10 +1291,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"/>
+        <reference value="StructureDefinition/t-cabs-practitioner-funktion"/>
       </reference>
-      <name value="T-CABS DeviceMetric eingestellter oder gemessener Parameter"/>
-      <description value="Profil für eingestellte oder gemessene Parameter eines Beatmungsgerätes"/>
+      <name value="T-CABS Funktion"/>
+      <description value="Profil für eine Funktion einer Person innerhalb der T-CABS Studie"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1029,10 +1335,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-observation-arterieller-blutdruck"/>
+        <reference value="StructureDefinition/t-cabs-observation-arteriellerblutdruck"/>
       </reference>
       <name value="T-CABS Observation Arterieller Blutdruck"/>
-      <description value="Profile for documenting arterial blood pressure observations within T-CABS."/>
+      <description value="Profil für den arteriellen Blutdruck."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1040,10 +1346,120 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-observation-beatmungsstunden"/>
+        <reference value="StructureDefinition/t-cabs-observation-atemfrequenz"/>
       </reference>
-      <name value="T-CABS Observation Beatmungsstunden"/>
-      <description value="Profil für die empfohlene oder tatsächlich gemessene Anzahl der Beatmungsstunden je 24 Stunden"/>
+      <name value="T-CABS Observation Atemfrequenz"/>
+      <description value="Profil für die Atemfrequenz per Doccla"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"/>
+      </reference>
+      <name value="T-CABS Observation Atemzeitverhaeltnis"/>
+      <description value="Profil für Atemzeitverhältnis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-beatmungsparameter"/>
+      </reference>
+      <name value="T-CABS Observation Beatmungsparameter (abstract)"/>
+      <description value="Abstraktes Profil für Beatmungsparameter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-bmi"/>
+      </reference>
+      <name value="T-CABS Observation BMI"/>
+      <description value="Profil für den Body Mass Index (BMI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-druck-minmax"/>
+      </reference>
+      <name value="T-CABS Observation Druck MIN/MAX"/>
+      <description value="Profil für den minimalen und maximalen Beatmungsdruck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observationfev1"/>
+      </reference>
+      <name value="T-CABS Observation FEV1"/>
+      <description value="Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-gehstrecke"/>
+      </reference>
+      <name value="T-CABS Observation Gehstrecke"/>
+      <description value="Profil für die Gehstrecke pro Tag (24 Stunden)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-herzfrequenz"/>
+      </reference>
+      <name value="T-CABS Observation Herzfrequenz"/>
+      <description value="Profil für die Herzfrequenz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-ipap"/>
+      </reference>
+      <name value="T-CABS Observation IPAP"/>
+      <description value="Profil für einen Inspiratory Positive Airway Pressure (IPAP)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-koerpergewicht"/>
+      </reference>
+      <name value="T-CABS Observation Koerpergewicht"/>
+      <description value="Profil für das Körpergewicht"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-koerpertemperatur"/>
+      </reference>
+      <name value="T-CABS Observation Koerpertemperatur"/>
+      <description value="Profil für die Körpertemperatur"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1062,9 +1478,43 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-observation-spo2"/>
+        <reference value="StructureDefinition/t-cabs-observation-peep"/>
+      </reference>
+      <name value="T-CABS Observation PEEP"/>
+      <description value="Profil für einen Positiven endexspiratorischen Druck (PEEP)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-arteriellespo2"/>
       </reference>
       <name value="T-CABS Observation SPO2"/>
+      <description value="Profil für die arterielle Sauerstoffsättigung (SPO2)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-targetvolume"/>
+      </reference>
+      <name value="T-CABS Observation Target Volume"/>
+      <description value="Profil für das Zielvolumen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-observation-ti"/>
+      </reference>
+      <name value="T-CABS Observation TI"/>
+      <description value="Profil für ein Dauer der Einatmungsphase (Inspiration)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1083,11 +1533,88 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/t-cabs-practitioner-arzt"/>
+        <reference value="StructureDefinition/t-cabs-observation-vitalparameter"/>
       </reference>
-      <name value="T-CABS Practitioner Arzt"/>
-      <description value="Profil für einen Studienarzt oder eine Studienärztin aus T-CABS"/>
+      <name value="T-CABS Observation Vitalparamter"/>
+      <description value="Abstraktes Profil für die gemessenen Vitalparameter von Doccla"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-organisation"/>
+      </reference>
+      <name value="T-CABS Organisation"/>
+      <description value="Profil für eine Organisation die mit T-CABS Studie in Verbindung steht"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-patient"/>
+      </reference>
+      <name value="T-CABS Patient"/>
+      <description value="Profil für eine/n Patient/in der T-CABS Studie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/tcabs-patient-example"/>
+      </reference>
+      <name value="T-CABS Patient Example"/>
+      <description value="Beispielpatient für das T-CABS Projekt"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-group-patientengruppe"/>
+      </reference>
+      <name value="T-CABS Patientengruppe"/>
+      <description value="Profil um Patienten innerhalb der T-CABS Studie gruppieren zu können"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-practitioner-personmitfunktion"/>
+      </reference>
+      <name value="T-CABS Person mit Funktion"/>
+      <description value="Profil für eine beteildigte Person innerhalb der T-CABS Studie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/tcabs-practitioner-example"/>
+      </reference>
+      <name value="T-CABS Practitioner Example"/>
+      <description value="Beispielärztin für das T-CABS Projekt"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/tcabs-practitioner-role-example"/>
+      </reference>
+      <name value="T-CABS PractitionerRole Funktion Beispiel"/>
+      <description value="Beispiel einer PractitionerRole für einen Pneumologen in der T-CABS Studie"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1098,6 +1625,28 @@
       </reference>
       <name value="T-CABS Procedure Beatmung"/>
       <description value="Profil für die Beatmungsprozedur"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-researchstudy-studie"/>
+      </reference>
+      <name value="T-CABS ResearchStudy Studie"/>
+      <description value="Profil um die Metadaten der T-CABS Studie abzubilden"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t-cabs-researchsubject-studienteilnehmer"/>
+      </reference>
+      <name value="T-CABS ResearchSubject Studie"/>
+      <description value="Profil um Patienten innerhalb der Studie referenzieren können"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1119,17 +1668,7 @@
         <reference value="ValueSet/t-cabs-valueset-Beatmungsmodus"/>
       </reference>
       <name value="T-CABS ValueSet Beatmungsmodus"/>
-      <description value="Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/t-cabs-observation-herzfrequenz"/>
-      </reference>
-      <name value="T_CABS_Observation_Herzfrequenz"/>
+      <description value="Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -1149,26 +1688,90 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="logisches_modell.html"/>
+          <valueUrl value="Informationsmodell.html"/>
         </extension>
-        <nameUrl value="logisches_modell.html"/>
-        <title value="Logisches Modell"/>
+        <nameUrl value="Informationsmodell.html"/>
+        <title value="Informationsmodell"/>
         <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="profile.html"/>
+          <valueUrl value="Profile-Allgemein.html"/>
         </extension>
-        <nameUrl value="profile.html"/>
-        <title value="Profile"/>
+        <nameUrl value="Profile-Allgemein.html"/>
+        <title value="Profile Allgemein"/>
         <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="beispiele.html"/>
+          <valueUrl value="Profile-Vitalparameter.html"/>
         </extension>
-        <nameUrl value="beispiele.html"/>
-        <title value="Beispiele"/>
+        <nameUrl value="Profile-Vitalparameter.html"/>
+        <title value="Profile Vitalparameter"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Profile-Beatmungsparameter.html"/>
+        </extension>
+        <nameUrl value="Profile-Beatmungsparameter.html"/>
+        <title value="Profile Beatmungsparameter"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Beispiele-Allgemein.html"/>
+        </extension>
+        <nameUrl value="Beispiele-Allgemein.html"/>
+        <title value="Beispiele Allgemein"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Beispiele-Vitalparameter.html"/>
+        </extension>
+        <nameUrl value="Beispiele-Vitalparameter.html"/>
+        <title value="Beispiele Vitalparameter"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Beispiele-Beatmungsparameter.html"/>
+        </extension>
+        <nameUrl value="Beispiele-Beatmungsparameter.html"/>
+        <title value="Beispiele Beatmungsparameter"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Implementation-Allgemein.html"/>
+        </extension>
+        <nameUrl value="Implementation-Allgemein.html"/>
+        <title value="Implementation Allgemein"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Implementation-Vitalparameter.html"/>
+        </extension>
+        <nameUrl value="Implementation-Vitalparameter.html"/>
+        <title value="Implementation Vitalparameter"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Implementation-Beatmungsparameter.html"/>
+        </extension>
+        <nameUrl value="Implementation-Beatmungsparameter.html"/>
+        <title value="Implementation Beatmungsparameter"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Terminologien.html"/>
+        </extension>
+        <nameUrl value="Terminologien.html"/>
+        <title value="Terminologien"/>
         <generation value="markdown"/>
       </page>
     </page>

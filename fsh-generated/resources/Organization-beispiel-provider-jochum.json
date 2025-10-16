@@ -1,0 +1,16 @@
+{
+  "resourceType": "Organization",
+  "id": "beispiel-provider-jochum",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/providers",
+      "value": "PROV-JOCHUM-001"
+    }
+  ],
+  "name": "Jochum GmbH"
+}

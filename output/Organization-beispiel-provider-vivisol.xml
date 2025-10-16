@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="beispiel-provider-vivisol"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-organisation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization beispiel-provider-vivisol</b></p><a name="beispiel-provider-vivisol"> </a><a name="hcbeispiel-provider-vivisol"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organisation</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/providers</code>/PROV-VIVISOL-001</p><p><b>name</b>: Vivisol Deutschland GmbH</p></div>
+  </text>
+  <identifier>
+    <system value="http://tcabs.example.org/providers"/>
+    <value value="PROV-VIVISOL-001"/>
+  </identifier>
+  <name value="Vivisol Deutschland GmbH"/>
+</Organization>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="beispiel-beatmungsgeraet-breas"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device beispiel-beatmungsgeraet-breas</b></p><a name="beispiel-beatmungsgeraet-breas"> </a><a name="hcbeispiel-beatmungsgeraet-breas"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Heimbeatmungsgerät</a></p></div><p><b>Operating hours extension</b>: 8760</p><p><b>identifier</b>: UDI/BREAS-VIVO45-12345</p><p><b>manufacturer</b>: BREAS Medical</p><p><b>serialNumber</b>: VIVO45-SN-789012</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Vivo45</td><td>Model name</td></tr></table><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 70001}">MDC_DEV_SYS_PT_VENT_MDS</span></p><p><b>patient</b>: <a href="Patient-tcabs-patient-example.html">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>owner</b>: <a href="Organization-beispiel-provider-jochum.html">Organization Jochum GmbH</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours">
+    <valueUnsignedInt value="8760"/>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <code value="UDI"/>
+      </coding>
+    </type>
+    <value value="BREAS-VIVO45-12345"/>
+  </identifier>
+  <manufacturer value="BREAS Medical"/>
+  <serialNumber value="VIVO45-SN-789012"/>
+  <deviceName>
+    <name value="Vivo45"/>
+    <type value="model-name"/>
+  </deviceName>
+  <type>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="70001"/>
+      <display value="MDC_DEV_SYS_PT_VENT_MDS"/>
+    </coding>
+  </type>
+  <patient>
+    <reference value="Patient/tcabs-patient-example"/>
+  </patient>
+  <owner>
+    <reference value="Organization/beispiel-provider-jochum"/>
+  </owner>
+</Device>

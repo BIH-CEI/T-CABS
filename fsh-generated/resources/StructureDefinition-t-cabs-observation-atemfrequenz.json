@@ -10,14 +10,23 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.code.coding:loinc",
+        "id": "Observation.code.coding:MDCType",
         "path": "Observation.code.coding",
-        "sliceName": "loinc",
+        "sliceName": "MDCType",
+        "patternCoding": {
+          "code": "152490",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.code.coding:LoincCoding",
+        "path": "Observation.code.coding",
+        "sliceName": "LoincCoding",
         "patternCoding": {
           "code": "9279-1",
           "system": "http://loinc.org",
@@ -25,28 +34,14 @@
         }
       },
       {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "mustSupport": true
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "/min"
       },
       {
-        "id": "Observation.method",
-        "path": "Observation.method",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.device",
-        "path": "Observation.device",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-messgeraet"
-            ]
-          }
-        ],
-        "mustSupport": true
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "/min"
       }
     ]
   }

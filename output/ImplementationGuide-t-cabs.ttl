@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "t-cabs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide t-cabs</b></p><a name=\"t-cabs\"> </a><a name=\"hct-cabs\"> </a><a name=\"t-cabs-en-US\"> </a><h2>TCABS</h2><p>The official URL for this implementation guide is: </p><pre>http://t-cabs.org/ImplementationGuide/t-cabs</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide t-cabs</b></p><a name=\"t-cabs\"> </a><a name=\"hct-cabs\"> </a><h2>TCABS</h2><p>The official URL for this implementation guide is: </p><pre>http://t-cabs.org/ImplementationGuide/t-cabs</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://t-cabs.org/ImplementationGuide/t-cabs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TCABS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-04-11T09:40:45+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-16T18:59:10+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH-CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH-CEI" ] ;
@@ -43,7 +43,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.2.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -60,14 +60,6 @@
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
      fhir:version [ fhir:v "5.2.0" ]
   ] [
-     fhir:id [ fhir:v "de_medizininformatikinitiative_kerndatensatz_icu" ] ;
-     fhir:uri [
-       fhir:v "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu>
-     ] ;
-     fhir:packageId [ fhir:v "de.medizininformatikinitiative.kerndatensatz.icu" ] ;
-     fhir:version [ fhir:v "2025.0.4" ]
-  ] [
      fhir:id [ fhir:v "de_medizininformatikinitiative_kerndatensatz_person" ] ;
      fhir:uri [
        fhir:v "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person"^^xsd:anyURI ;
@@ -76,29 +68,29 @@
      fhir:packageId [ fhir:v "de.medizininformatikinitiative.kerndatensatz.person" ] ;
      fhir:version [ fhir:v "2025.0.0" ]
   ] [
-     fhir:id [ fhir:v "de_gematik_isik_basismodul" ] ;
+     fhir:id [ fhir:v "de_medizininformatikinitiative_kerndatensatz_fall" ] ;
      fhir:uri [
-       fhir:v "http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul>
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ImplementationGuide/mii-ig-fall"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ImplementationGuide/mii-ig-fall>
      ] ;
-     fhir:packageId [ fhir:v "de.gematik.isik-basismodul" ] ;
-     fhir:version [ fhir:v "4.0.1" ]
+     fhir:packageId [ fhir:v "de.medizininformatikinitiative.kerndatensatz.fall" ] ;
+     fhir:version [ fhir:v "2025.0.0" ]
   ] [
-     fhir:id [ fhir:v "de_gematik_isik_vitalparameter" ] ;
+     fhir:id [ fhir:v "hl7_fhir_uv_phd" ] ;
      fhir:uri [
-       fhir:v "http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter>
+       fhir:v "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd>
      ] ;
-     fhir:packageId [ fhir:v "de.gematik.isik-vitalparameter" ] ;
-     fhir:version [ fhir:v "4.0.1" ]
+     fhir:packageId [ fhir:v "hl7.fhir.uv.phd" ] ;
+     fhir:version [ fhir:v "1.1.0" ]
   ] [
-     fhir:id [ fhir:v "de_basisprofil_r4" ] ;
+     fhir:id [ fhir:v "hl7_fhir_uv_pocd" ] ;
      fhir:uri [
-       fhir:v "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"^^xsd:anyURI ;
-       fhir:link <http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4>
+       fhir:v "http://hl7.org/fhir/uv/pocd/ImplementationGuide/hl7.fhir.uv.pocd"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/pocd/ImplementationGuide/hl7.fhir.uv.pocd>
      ] ;
-     fhir:packageId [ fhir:v "de.basisprofil.r4" ] ;
-     fhir:version [ fhir:v "1.5.2" ]
+     fhir:packageId [ fhir:v "hl7.fhir.uv.pocd" ] ;
+     fhir:version [ fhir:v "0.3.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -480,7 +472,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.4.1"
+         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
        ]
      ] [
        fhir:extension ( [
@@ -863,54 +855,19 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Procedure"
+           fhir:v "Observation"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Procedure/procedure-PSV-123> ;
-         fhir:reference [ fhir:v "Procedure/procedure-PSV-123" ]
+         fhir:link <http://t-cabs.org/Observation/Example-AHI-BREAS> ;
+         fhir:reference [ fhir:v "Observation/Example-AHI-BREAS" ]
        ] ;
-       fhir:name [ fhir:v " Beispiel Beatmungsprozedur Breas (Procedure)" ] ;
-       fhir:description [ fhir:v "Ein Beispiel für eine Prozedur zur Beatmung" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-atemfrequenz" ]
-       ] ;
-       fhir:name [ fhir:v "Atemfrequenz" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Communication"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/Communication/atemfrequenz-alarm-23> ;
-         fhir:reference [ fhir:v "Communication/atemfrequenz-alarm-23" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel Alarm (Communication)" ] ;
-       fhir:description [ fhir:v "Beispielhafter Alarm einer erhöhten Atemfrequenz" ] ;
+       fhir:name [ fhir:v "Beispiel AHI Messung BREAS" ] ;
+       fhir:description [ fhir:v "Beispiel für eine AHI-Messung von einem BREAS Beatmungsgerät" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi>
        ]
      ] [
        fhir:extension ( [
@@ -921,11 +878,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/amv-gemessen-beispiel-loewenstein> ;
-         fhir:reference [ fhir:v "Observation/amv-gemessen-beispiel-loewenstein" ]
+         fhir:link <http://t-cabs.org/Observation/Example-AMV-BREAS-gemessen> ;
+         fhir:reference [ fhir:v "Observation/Example-AMV-BREAS-gemessen" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel AMV Löwenstein (Observation)" ] ;
-       fhir:description [ fhir:v "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute /\nminuteVolumeMedian_l_min - Median of the minute volume in l/min. Supported devices: prismaLINE, prismaVENT, Luisa" ] ;
+       fhir:name [ fhir:v "Beispiel AMV Messung BREAS" ] ;
+       fhir:description [ fhir:v "Beispiel für eine gemessene AMV-Messung von einem BREAS Beatmungsgerät" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"^^xsd:anyURI ;
@@ -940,15 +897,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/amv-gemessen-beispiel-resmed> ;
-         fhir:reference [ fhir:v "Observation/amv-gemessen-beispiel-resmed" ]
+         fhir:link <http://t-cabs.org/Observation/Example-ArterielleSPO2-Doccla> ;
+         fhir:reference [ fhir:v "Observation/Example-ArterielleSPO2-Doccla" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel AMV ResMed (Observation)" ] ;
-       fhir:description [ fhir:v "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute\nTreatmentDataDetailDto - minuteVolume" ] ;
+       fhir:name [ fhir:v "Beispiel arterielle SPO2 Messung" ] ;
+       fhir:description [ fhir:v "Beispiel für eine arterielle SPO2-Messung über Doccla" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-amv>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2>
        ]
      ] [
        fhir:extension ( [
@@ -959,11 +916,49 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/atemfrequenz-gemessen-beispiel-loewenstein> ;
-         fhir:reference [ fhir:v "Observation/atemfrequenz-gemessen-beispiel-loewenstein" ]
+         fhir:link <http://t-cabs.org/Observation/Example-ArteriellerBlutdruck-Doccla> ;
+         fhir:reference [ fhir:v "Observation/Example-ArteriellerBlutdruck-Doccla" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Atemfrequenz Löwenstein (Observation)" ] ;
-       fhir:description [ fhir:v "Median of the respiratory rate in bpm. The median corresponds to the 50th percentile. Supported devices: prismaLINE, prismaVENT, Luisa" ] ;
+       fhir:name [ fhir:v "Beispiel arterieller Blutdruck Messung" ] ;
+       fhir:description [ fhir:v "Beispiel für eine arterielle Blutdruck-Messung über Doccla" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/Example-Atemfrequenz-Doccla> ;
+         fhir:reference [ fhir:v "Observation/Example-Atemfrequenz-Doccla" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Atemfrequenz Messung" ] ;
+       fhir:description [ fhir:v "Beispiel für eine Atemfrequenz-Messung über Doccla" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/Example-Atemfrequenz-ResMed-gemessen> ;
+         fhir:reference [ fhir:v "Observation/Example-Atemfrequenz-ResMed-gemessen" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Atemfrequenz Messung ResMed" ] ;
+       fhir:description [ fhir:v "Beispiel für eine gemessene Atemfrequenz von einem ResMed Beatmungsgerät" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"^^xsd:anyURI ;
@@ -978,72 +973,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/atemfrequenz-gemessen-beispiel-resmed> ;
-         fhir:reference [ fhir:v "Observation/atemfrequenz-gemessen-beispiel-resmed" ]
+         fhir:link <http://t-cabs.org/Observation/Example-Atemzeitverhaeltnis-ResMed> ;
+         fhir:reference [ fhir:v "Observation/Example-Atemzeitverhaeltnis-ResMed" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Atemfrequenz ResMed (Observation)" ] ;
-       fhir:description [ fhir:v "Atemfrequenz gemessen" ] ;
+       fhir:name [ fhir:v "Beispiel Atemzeitverhältnis ResMed" ] ;
+       fhir:description [ fhir:v "Beispiel für Atemzeitverhältnis von einem ResMed Beatmungsgerät" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Device"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/Device/device-1573> ;
-         fhir:reference [ fhir:v "Device/device-1573" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel Beatmungsgerät Breas (Device)" ] ;
-       fhir:description [ fhir:v "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller BREAS" ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Device"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/Device/device-1234> ;
-         fhir:reference [ fhir:v "Device/device-1234" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel Beatmungsgerät Löwenstein (Device)" ] ;
-       fhir:description [ fhir:v "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller Loewenstein" ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Device"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/Device/device-12547854521> ;
-         fhir:reference [ fhir:v "Device/device-12547854521" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel Beatmungsgerät ResMed (Device)" ] ;
-       fhir:description [ fhir:v "Ein Beispiel für ein zugeordnetes Beatmungsgerät von dem Hersteller ResMed" ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis>
        ]
      ] [
        fhir:extension ( [
@@ -1054,14 +992,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Procedure/procedure-Bilevel-123> ;
-         fhir:reference [ fhir:v "Procedure/procedure-Bilevel-123" ]
+         fhir:link <http://t-cabs.org/Procedure/beispiel-beatmung-breas> ;
+         fhir:reference [ fhir:v "Procedure/beispiel-beatmung-breas" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Beatmungsprozedur Löwenstein (Procedure)" ] ;
-       fhir:description [ fhir:v "Ein Beispiel für eine Prozedur zur Beatmung" ] ;
+       fhir:name [ fhir:v "Beispiel Beatmung BREAS" ] ;
+       fhir:description [ fhir:v "Beispiel für eine Beatmungsprozedur mit BREAS Gerät (PCV Modus)" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung>
        ]
      ] [
        fhir:extension ( [
@@ -1072,71 +1011,91 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Procedure/procedure-CPAP-123> ;
-         fhir:reference [ fhir:v "Procedure/procedure-CPAP-123" ]
+         fhir:link <http://t-cabs.org/Procedure/beispiel-beatmung-loewenstein> ;
+         fhir:reference [ fhir:v "Procedure/beispiel-beatmung-loewenstein" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Beatmungsprozedur ResMed (Procedure)" ] ;
-       fhir:description [ fhir:v "Ein Beispiel für eine Prozedur zur Beatmung" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/beatmungsstunden-gemessen-beispiel-loewenstein> ;
-         fhir:reference [ fhir:v "Observation/beatmungsstunden-gemessen-beispiel-loewenstein" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel Beatmungsstunden Löwenstein (Observation)" ] ;
-       fhir:description [ fhir:v "Beatmungsdauer des Patienten in Stunden" ] ;
+       fhir:name [ fhir:v "Beispiel Beatmung Löwenstein" ] ;
+       fhir:description [ fhir:v "Beispiel für eine Beatmungsprozedur mit Löwenstein Gerät (PSV Modus)" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
+           fhir:v "Procedure"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/beatmungsstunden-gemessen-beispiel-resmed> ;
-         fhir:reference [ fhir:v "Observation/beatmungsstunden-gemessen-beispiel-resmed" ]
+         fhir:link <http://t-cabs.org/Procedure/beispiel-beatmung-resmed> ;
+         fhir:reference [ fhir:v "Procedure/beispiel-beatmung-resmed" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Beatmungsstunden ResMed (Observation)" ] ;
-       fhir:description [ fhir:v "Beispiel von gemessenen Beatmungsstunden eines Gerätes des Unternehmens ResMed" ] ;
+       fhir:name [ fhir:v "Beispiel Beatmung ResMed" ] ;
+       fhir:description [ fhir:v "Beispiel für eine Beatmungsprozedur mit ResMed Gerät (CPAP Modus)" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
+           fhir:v "Device"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/atemfrequenz-eingestellt-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/atemfrequenz-eingestellt-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/Device/beispiel-beatmungsgeraet-breas> ;
+         fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-breas" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel eingestellte Atemfrequenz Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Eine eingestellte Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)" ] ;
+       fhir:name [ fhir:v "Beispiel Beatmungsgerät BREAS" ] ;
+       fhir:description [ fhir:v "Beispiel für ein BREAS Heimbeatmungsgerät" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-beatmungsgeraet-loewenstein> ;
+         fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-loewenstein" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Beatmungsgerät Löwenstein" ] ;
+       fhir:description [ fhir:v "Beispiel für ein Löwenstein Heimbeatmungsgerät" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-beatmungsgeraet-resmed> ;
+         fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-resmed" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Beatmungsgerät ResMed" ] ;
+       fhir:description [ fhir:v "Beispiel für ein ResMed Heimbeatmungsgerät" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1147,50 +1106,224 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/Observation/Example-BMI-Doccla> ;
+         fhir:reference [ fhir:v "Observation/Example-BMI-Doccla" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel eingestellter max. Beatmungsdruck Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Beipspielhafte Einstellung des maximalen Beatmungsdruckes" ] ;
+       fhir:name [ fhir:v "Beispiel BMI Messung" ] ;
+       fhir:description [ fhir:v "Beispiel für eine BMI-Messung über Doccla" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
+           fhir:v "Device"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/peep-eingestellt-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/peep-eingestellt-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-breas-ahi> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-breas-ahi" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel eingestellter PEEP Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Beispielhafte Einstellung des positiv-endexpiratorischer Druckes (PEEP)" ] ;
+       fhir:name [ fhir:v "Beispiel Channel BREAS AHI" ] ;
+       fhir:description [ fhir:v "Beispiel für einen AHI-Channel zur Gruppierung von AHI-Messungen" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
+           fhir:v "Device"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/tidalvolumen-eingestellt-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/tidalvolumen-eingestellt-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-breas-amv> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-breas-amv" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel eingestelltes Tidalvolumen Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Beispiel eines eingestellten Tidalvolumens" ] ;
+       fhir:name [ fhir:v "Beispiel Channel BREAS AMV" ] ;
+       fhir:description [ fhir:v "Beispiel für einen AMV-Channel zur Gruppierung von AMV-Messungen" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-breas-ipap> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-breas-ipap" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Channel BREAS IPAP" ] ;
+       fhir:description [ fhir:v "Beispiel für einen IPAP-Channel zur Gruppierung von IPAP-Einstellungen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-breas-targetvolume> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-breas-targetvolume" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Channel BREAS Target Volume" ] ;
+       fhir:description [ fhir:v "Beispiel für einen Target Volume-Channel zur Gruppierung von Target Volume-Einstellungen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-loewenstein-peep> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-loewenstein-peep" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Channel Löwenstein PEEP" ] ;
+       fhir:description [ fhir:v "Beispiel für einen PEEP-Channel zur Gruppierung von PEEP-Messungen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-loewenstein-ti> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-loewenstein-ti" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Channel Löwenstein TI" ] ;
+       fhir:description [ fhir:v "Beispiel für einen TI-Channel zur Gruppierung von TI-Messungen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-loewenstein-triggeredbreaths> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-loewenstein-triggeredbreaths" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Channel Löwenstein TriggeredBreaths" ] ;
+       fhir:description [ fhir:v "Beispiel für einen TriggeredBreaths-Channel zur Gruppierung von TriggeredBreaths-Messungen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-resmed-atemfrequenz> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-resmed-atemfrequenz" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Channel ResMed Atemfrequenz" ] ;
+       fhir:description [ fhir:v "Beispiel für einen Atemfrequenz-Channel zur Gruppierung von Atemfrequenz-Messungen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-resmed-atemzeit> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-resmed-atemzeit" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Channel ResMed Atemzeitverhältnis" ] ;
+       fhir:description [ fhir:v "Beispiel für einen Atemzeitverhältnis-Channel zur Gruppierung von Atemzeitverhältnis-Berechnungen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-resmed-druck> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-resmed-druck" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Channel ResMed Druck Min/Max" ] ;
+       fhir:description [ fhir:v "Beispiel für einen Druck Min/Max-Channel zur Gruppierung von Druck-Messungen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-channel-resmed-leckage> ;
+         fhir:reference [ fhir:v "Device/beispiel-channel-resmed-leckage" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Channel ResMed Leckage" ] ;
+       fhir:description [ fhir:v "Beispiel für einen Leckage-Channel zur Gruppierung von Leckage-Messungen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1201,15 +1334,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/DeviceMetric/deviceMetric-eingestellt-beispiel-breas> ;
-         fhir:reference [ fhir:v "DeviceMetric/deviceMetric-eingestellt-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-ahi> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-breas-ahi" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Einstellung Breas (DeviceMetric)" ] ;
-       fhir:description [ fhir:v "Eingestellter Parameter" ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric BREAS AHI" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur AHI-Berechnung eines BREAS Beatmungsgeräts" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -1220,15 +1353,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/DeviceMetric/deviceMetric-Eingestellt-Beispiel-Loewenstein> ;
-         fhir:reference [ fhir:v "DeviceMetric/deviceMetric-Eingestellt-Beispiel-Loewenstein" ]
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-amv> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-breas-amv" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Einstellung Löwenstein (DeviceMetric)" ] ;
-       fhir:description [ fhir:v "Eingestellter Parameter" ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric BREAS AMV" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur AMV-Messung eines BREAS Beatmungsgeräts" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -1239,90 +1372,186 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/DeviceMetric/deviceMetric-eingestellt-beispiel-resmed> ;
-         fhir:reference [ fhir:v "DeviceMetric/deviceMetric-eingestellt-beispiel-resmed" ]
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-ipap> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-breas-ipap" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Einstellung ResMed (DeviceMetric)" ] ;
-       fhir:description [ fhir:v "Eingestellter Parameter" ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric BREAS IPAP" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur IPAP-Einstellung eines BREAS Beatmungsgeräts" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
+           fhir:v "DeviceMetric"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/amv-gemessen-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/amv-gemessen-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-targetvolume> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-breas-targetvolume" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel gemessen AMV Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Atemminutvolumen(AMV) - Gemessenes Atemvolumen pro Minute\nTreatmentDataDetailDto - minuteVolume" ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric BREAS Target Volume" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur Target Volume-Einstellung eines BREAS Beatmungsgeräts" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-amv>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
+           fhir:v "DeviceMetric"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/beatmungsstunden-gemessen-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/beatmungsstunden-gemessen-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-loewenstein-peep> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-loewenstein-peep" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel gemessen Beatmungsstunden Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Beatmungsdauer des Patienten in Stunden" ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric Löwenstein PEEP" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur PEEP-Messung eines Löwenstein Beatmungsgeräts" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
+           fhir:v "DeviceMetric"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/atemfrequenz-gemessen-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/atemfrequenz-gemessen-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-loewenstein-ti> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-loewenstein-ti" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel gemessene Atemfrequenz Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Eine gemessene Atemfrequenz der Firma Breas\nTreatment_Data - Breaths per minute (BPM)" ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric Löwenstein TI" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur TI-Messung (Inspirationszeit) eines Löwenstein Beatmungsgeräts" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
+           fhir:v "DeviceMetric"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/tidalvolumen-gemessen-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/tidalvolumen-gemessen-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel gemessenes Tidalvolumen Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Beispiel eines gemessenen Tidalvolumens während der Beatmung" ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric Löwenstein TriggeredBreaths" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur TriggeredBreaths-Messung eines Löwenstein Beatmungsgeräts" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "DeviceMetric"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric ResMed Atemfrequenz" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur Atemfrequenz-Messung eines ResMed Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "DeviceMetric"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-atemzeit> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-atemzeit" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric ResMed Atemzeitverhältnis" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur Atemzeitverhältnis-Berechnung eines ResMed Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "DeviceMetric"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-druck> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-druck" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric ResMed Druck Min/Max" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur Druck Min/Max-Messung eines ResMed Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "DeviceMetric"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-leckage> ;
+         fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-leckage" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel DeviceMetric ResMed Leckage" ] ;
+       fhir:description [ fhir:v "Beispiel für eine DeviceMetric zur Leckage-Messung eines ResMed Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "DiagnosticReport"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/DiagnosticReport/Example-DiagnosticReport-Woechentliche-Visite> ;
+         fhir:reference [ fhir:v "DiagnosticReport/Example-DiagnosticReport-Woechentliche-Visite" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel DiagnosticReport Wöchentliche Visite" ] ;
+       fhir:description [ fhir:v "Beispiel für einen Visitenbefund einer wöchentlichen telemedizinischen Visite" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund>
        ]
      ] [
        fhir:extension ( [
@@ -1333,11 +1562,144 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/leckage-gemessen-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/leckage-gemessen-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/Observation/Example-DruckMinMax-ResMed> ;
+         fhir:reference [ fhir:v "Observation/Example-DruckMinMax-ResMed" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Leckage Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Leckagerate unter Beatmung -\nTreatmentDataDetailDto - leakage" ] ;
+       fhir:name [ fhir:v "Beispiel Druck Min/Max ResMed" ] ;
+       fhir:description [ fhir:v "Beispiel für minimalen und maximalen Beatmungsdruck von einem ResMed Gerät" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/Example-FEV1-Doccla> ;
+         fhir:reference [ fhir:v "Observation/Example-FEV1-Doccla" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel FEV1 Messung" ] ;
+       fhir:description [ fhir:v "Beispiel für eine FEV1-Messung über Doccla" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observationfev1>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/Example-Gehstrecke-Doccla> ;
+         fhir:reference [ fhir:v "Observation/Example-Gehstrecke-Doccla" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Gehstrecke Messung" ] ;
+       fhir:description [ fhir:v "Beispiel für eine Gehstrecken-Messung über Doccla" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/Example-Herzfrequenz-Doccla> ;
+         fhir:reference [ fhir:v "Observation/Example-Herzfrequenz-Doccla" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Herzfrequenz Messung" ] ;
+       fhir:description [ fhir:v "Beispiel für eine Herzfrequenz-Messung über Doccla" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/Example-IPAP-BREAS> ;
+         fhir:reference [ fhir:v "Observation/Example-IPAP-BREAS" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel IPAP BREAS" ] ;
+       fhir:description [ fhir:v "Beispiel für IPAP von einem BREAS Beatmungsgerät" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/Example-Koerpergewicht-Doccla> ;
+         fhir:reference [ fhir:v "Observation/Example-Koerpergewicht-Doccla" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Körpergewicht Messung" ] ;
+       fhir:description [ fhir:v "Beispiel für eine Körpergewicht-Messung über Doccla" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/Example-Koerpertemperatur-Doccla> ;
+         fhir:reference [ fhir:v "Observation/Example-Koerpertemperatur-Doccla" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Körpertemperatur Messung" ] ;
+       fhir:description [ fhir:v "Beispiel für eine Körpertemperatur-Messung über Doccla" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Observation/Example-Leckage-ResMed> ;
+         fhir:reference [ fhir:v "Observation/Example-Leckage-ResMed" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Leckage ResMed" ] ;
+       fhir:description [ fhir:v "Beispiel für Leckage-Messung von einem ResMed Beatmungsgerät" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"^^xsd:anyURI ;
@@ -1352,15 +1714,110 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/leckage-gemessen-beispiel-loewenstein> ;
-         fhir:reference [ fhir:v "Observation/leckage-gemessen-beispiel-loewenstein" ]
+         fhir:link <http://t-cabs.org/Observation/Example-PEEP-Loewenstein> ;
+         fhir:reference [ fhir:v "Observation/Example-PEEP-Loewenstein" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Leckage Löwenstein (Observation)" ] ;
-       fhir:description [ fhir:v "Beispiel für eine beobachtete Leckagerate unter Beatmung -\nleakageMedian_liter_min - Median of unintentional leakage flow in l/min. Supported devices: prismaSOFT, prismaSMART, prismaLINE, prismaVENT, Luisa" ] ;
+       fhir:name [ fhir:v "Beispiel PEEP Löwenstein" ] ;
+       fhir:description [ fhir:v "Beispiel für PEEP von einem Löwenstein Beatmungsgerät" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-peep>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-phd-doccla> ;
+         fhir:reference [ fhir:v "Device/beispiel-phd-doccla" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel PHD Messgerät" ] ;
+       fhir:description [ fhir:v "Beispiel für ein Personal Health Device Messgerät von Doccla" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-phg-doccla> ;
+         fhir:reference [ fhir:v "Device/beispiel-phg-doccla" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel PHG Tablet" ] ;
+       fhir:description [ fhir:v "Beispiel für ein Personal Health Gateway Tablet von Doccla" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phg"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-phg>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Organization/beispiel-provider-jochum> ;
+         fhir:reference [ fhir:v "Organization/beispiel-provider-jochum" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Provider Jochum" ] ;
+       fhir:description [ fhir:v "Beispiel für den Beatmungsgeräte-Provider Jochum" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-organisation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Organization/beispiel-provider-loewenstein> ;
+         fhir:reference [ fhir:v "Organization/beispiel-provider-loewenstein" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Provider Löwenstein" ] ;
+       fhir:description [ fhir:v "Beispiel für den Beatmungsgeräte-Provider Löwenstein" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-organisation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Organization/beispiel-provider-vivisol> ;
+         fhir:reference [ fhir:v "Organization/beispiel-provider-vivisol" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel Provider Vivisol" ] ;
+       fhir:description [ fhir:v "Beispiel für den Beatmungsgeräte-Provider Vivisol" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-organisation>
        ]
      ] [
        fhir:extension ( [
@@ -1371,72 +1828,34 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/leckage-gemessen-beispiel-resmed> ;
-         fhir:reference [ fhir:v "Observation/leckage-gemessen-beispiel-resmed" ]
+         fhir:link <http://t-cabs.org/Observation/Example-TargetVolume-BREAS> ;
+         fhir:reference [ fhir:v "Observation/Example-TargetVolume-BREAS" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Leckage ResMed (Observation)" ] ;
-       fhir:description [ fhir:v "Gemessene Leckagerate unter Beatmung des Herstellers ResMed" ] ;
+       fhir:name [ fhir:v "Beispiel Target Volume BREAS" ] ;
+       fhir:description [ fhir:v "Beispiel für Zielvolumen von einem BREAS Beatmungsgerät" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "DeviceMetric"
+           fhir:v "Encounter"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/DeviceMetric/deviceMetric-gemessen-beispiel-breas> ;
-         fhir:reference [ fhir:v "DeviceMetric/deviceMetric-gemessen-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/Encounter/Example-Encounter-Telemedizinische-Visite> ;
+         fhir:reference [ fhir:v "Encounter/Example-Encounter-Telemedizinische-Visite" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel Messung Breas (DeviceMetric)" ] ;
-       fhir:description [ fhir:v "Gemessener Parameter" ] ;
+       fhir:name [ fhir:v "Beispiel Telemedizinische Visite" ] ;
+       fhir:description [ fhir:v "Beispiel für eine wöchentliche telemedizinische Visite eines T-CABS Patienten" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "DeviceMetric"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/DeviceMetric/deviceMetric-Gemessen-Beispiel-Loewenstein> ;
-         fhir:reference [ fhir:v "DeviceMetric/deviceMetric-Gemessen-Beispiel-Loewenstein" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel Messung Löwenstein (DeviceMetric)" ] ;
-       fhir:description [ fhir:v "Gemessener Parameter" ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "DeviceMetric"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/DeviceMetric/deviceMetric-gemessen-beispiel-resmed> ;
-         fhir:reference [ fhir:v "DeviceMetric/deviceMetric-gemessen-beispiel-resmed" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel Messung ResMed (DeviceMetric)" ] ;
-       fhir:description [ fhir:v "Gemessener Parameter" ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt>
        ]
      ] [
        fhir:extension ( [
@@ -1447,68 +1866,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/inspPress-eingestellt-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/inspPress-eingestellt-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/Observation/Example-TI-Loewenstein> ;
+         fhir:reference [ fhir:v "Observation/Example-TI-Loewenstein" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel mittlerer Beatmungsdruck Breas (Observation)" ] ;
-       fhir:description [ fhir:v "Beispielhafte Einstellung des mittleren Beatmungsdruckes" ] ;
+       fhir:name [ fhir:v "Beispiel TI Löwenstein" ] ;
+       fhir:description [ fhir:v "Beispiel für Inspirationszeit von einem Löwenstein Beatmungsgerät" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Patient"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/Patient/patient-98219fce-813a-41f2-94ff-861d59b89715> ;
-         fhir:reference [ fhir:v "Patient/patient-98219fce-813a-41f2-94ff-861d59b89715" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel Patient Breas (Patient)" ] ;
-       fhir:description [ fhir:v "Patient mit der UUID 98219fce-813a-41f2-94ff-861d59b89715" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Patient"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/Patient/patient-123456> ;
-         fhir:reference [ fhir:v "Patient/patient-123456" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel Patient Löwenstein (Patient)" ] ;
-       fhir:description [ fhir:v "Ein Beispiel-Patient mit der internen ID 123456" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Patient"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/Patient/patient-44187887-a48d-4f4e-9393-e4207045a2c4> ;
-         fhir:reference [ fhir:v "Patient/patient-44187887-a48d-4f4e-9393-e4207045a2c4" ]
-       ] ;
-       fhir:name [ fhir:v "Beispiel Patient ResMed (Patient)" ] ;
-       fhir:description [ fhir:v "Patient mit der internen ID 44187887-a48d-4f4e-9393-e4207045a2c4" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-ti>
        ]
      ] [
        fhir:extension ( [
@@ -1519,11 +1885,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/triggeredBreaths-gemessen-beispiel-loewenstein> ;
-         fhir:reference [ fhir:v "Observation/triggeredBreaths-gemessen-beispiel-loewenstein" ]
+         fhir:link <http://t-cabs.org/Observation/Example-TriggeredBreaths-Loewenstein> ;
+         fhir:reference [ fhir:v "Observation/Example-TriggeredBreaths-Loewenstein" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel TriggeredBreath Löwenstein (Observation)" ] ;
-       fhir:description [ fhir:v "Beispielhafte Beobachtung von Atemzüge die vom Patienten eigenständig getriggert wurden" ] ;
+       fhir:name [ fhir:v "Beispiel TriggeredBreaths Löwenstein" ] ;
+       fhir:description [ fhir:v "Beispiel für getriggerte Atemzüge von einem Löwenstein Beatmungsgerät" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"^^xsd:anyURI ;
@@ -1534,74 +1900,228 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
+           fhir:v "Device"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/triggeredBreaths-gemessen-beispiel-breas> ;
-         fhir:reference [ fhir:v "Observation/triggeredBreaths-gemessen-beispiel-breas" ]
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-breas-ahi> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-breas-ahi" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel TriggeredBreaths Breas (Observation)" ] ;
-       fhir:description [ fhir:v "TreatmentDataDetailDto - triggeredBreaths" ] ;
+       fhir:name [ fhir:v "Beispiel VMD BREAS AHI Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles AHI-Modul eines BREAS Beatmungsgeräts" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Observation"
+           fhir:v "Device"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/triggeredBreaths-gemessen-beispiel-resmed> ;
-         fhir:reference [ fhir:v "Observation/triggeredBreaths-gemessen-beispiel-resmed" ]
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-breas-amv> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-breas-amv" ]
        ] ;
-       fhir:name [ fhir:v "Beispiel TriggeredBreaths ResMed (Observation)" ] ;
-       fhir:description [ fhir:v "Gemessene Atemzüge die vom Patienten eigenständig getriggert wurden" ] ;
+       fhir:name [ fhir:v "Beispiel VMD BREAS AMV Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles AMV-Modul eines BREAS Beatmungsgeräts" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition:resource"
+           fhir:v "Device"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-bmi" ]
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-breas-ipap> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-breas-ipap" ]
        ] ;
-       fhir:name [ fhir:v "BMI Observation" ] ;
-       fhir:description [ fhir:v "Profile for recording Body Mass Index (BMI) as an observation." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/Observation/Example-TCABS-Observation-SPO2> ;
-         fhir:reference [ fhir:v "Observation/Example-TCABS-Observation-SPO2" ]
-       ] ;
-       fhir:name [ fhir:v "Example-TCABS-Observation-SPO2" ] ;
+       fhir:name [ fhir:v "Beispiel VMD BREAS IPAP Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles IPAP-Modul eines BREAS Beatmungsgeräts" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2"^^xsd:anyURI ;
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2>
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-breas-targetvolume> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-breas-targetvolume" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel VMD BREAS Target Volume Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles Target Volume-Modul eines BREAS Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-loewenstein-peep> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-loewenstein-peep" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel VMD Löwenstein PEEP Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles PEEP-Modul eines Löwenstein Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-loewenstein-ti> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-loewenstein-ti" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel VMD Löwenstein TI Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles TI-Modul eines Löwenstein Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-loewenstein-triggeredbreaths> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-loewenstein-triggeredbreaths" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel VMD Löwenstein TriggeredBreaths Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles TriggeredBreaths-Modul eines Löwenstein Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-resmed-atemfrequenz> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-resmed-atemfrequenz" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel VMD ResMed Atemfrequenz Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles Atemfrequenz-Modul eines ResMed Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-resmed-atemzeit> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-resmed-atemzeit" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel VMD ResMed Atemzeitverhältnis Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles Atemzeitverhältnis-Modul eines ResMed Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-resmed-druck> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-resmed-druck" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel VMD ResMed Druck Min/Max Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles Druck Min/Max-Modul eines ResMed Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Device/beispiel-vmd-resmed-leckage> ;
+         fhir:reference [ fhir:v "Device/beispiel-vmd-resmed-leckage" ]
+       ] ;
+       fhir:name [ fhir:v "Beispiel VMD ResMed Leckage Module" ] ;
+       fhir:description [ fhir:v "Beispiel für ein virtuelles Leckage-Modul eines ResMed Beatmungsgeräts" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Organization/CABS> ;
+         fhir:reference [ fhir:v "Organization/CABS" ]
+       ] ;
+       fhir:name [ fhir:v "Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS)" ] ;
+       fhir:description [ fhir:v "Das Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS) der Klinik betreut Patient:innen mit Erkrankungen der Lunge, der Muskulatur oder des Nervensystems, die vorübergehend oder dauerhaft auf Unterstützung der Atmung angewiesen sind und ist Teil des zertifizierten Weaningzentrums der Klinik." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-organisation>
        ]
      ] [
        fhir:extension ( [
@@ -1612,11 +2132,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observationfev1> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observationfev1" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-channel-beatmungsgeraet" ]
        ] ;
-       fhir:name [ fhir:v "FEV1 Observation" ] ;
-       fhir:description [ fhir:v "Profile for recording Forced Expiratory Volume in 1 second (FEV1) as an observation." ] ;
+       fhir:name [ fhir:v "T-CABS Device Channel Beatmungsgeraet" ] ;
+       fhir:description [ fhir:v "Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1630,10 +2150,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-gehstrecke" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-mds-beatmungsgeraet" ]
        ] ;
-       fhir:name [ fhir:v "Gehstrecke" ] ;
+       fhir:name [ fhir:v "T-CABS Device MDS Heimbeatmungsgerät" ] ;
+       fhir:description [ fhir:v "Profil für ein Heimbeatmungsgerät" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1647,11 +2168,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-alarm> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-alarm" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-phd> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-phd" ]
        ] ;
-       fhir:name [ fhir:v "T-CABS Communication Alarm" ] ;
-       fhir:description [ fhir:v "Abstraktes Profil eines eingestellten und/oder gemessenen Alarms eines Beatmungsgerätes" ] ;
+       fhir:name [ fhir:v "T-CABS Device PHD" ] ;
+       fhir:description [ fhir:v "Profil für ein Messgerät am Patienten" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1665,11 +2186,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-phg> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-phg" ]
        ] ;
-       fhir:name [ fhir:v "T-CABS Communication Atemfrequenz high Alarm" ] ;
-       fhir:description [ fhir:v "Profil eines Alarms für eine überschrittenen Atemfrequenz" ] ;
+       fhir:name [ fhir:v "T-CABS Device PHG" ] ;
+       fhir:description [ fhir:v "Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wird" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1683,11 +2204,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-vmd-beatmungsgeraet" ]
        ] ;
-       fhir:name [ fhir:v "T-CABS Communication Atemfrequenz low Alarm" ] ;
-       fhir:description [ fhir:v "Profil eines Alarms für eine unterschrittenen Atemfrequenz" ] ;
+       fhir:name [ fhir:v "T-CABS Device VMD Beatmungsgeraet" ] ;
+       fhir:description [ fhir:v "Profil welches ein virtuelles Subsystem oder Modul darstellt" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1701,11 +2222,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-communication-diskonnektion-alarm> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-communication-diskonnektion-alarm" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-devicemetric-numericmetric" ]
        ] ;
-       fhir:name [ fhir:v "T-CABS Communication Diskonnektion Alarm" ] ;
-       fhir:description [ fhir:v "Profil eines Alarms für eine Diskonnektion des Beatmungsgerätes" ] ;
+       fhir:name [ fhir:v "T-CABS DeviceMetric NumericMetric" ] ;
+       fhir:description [ fhir:v "Profil welches eine numerische Messung, Berechnung oder Einstellung darstellt" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1719,11 +2240,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-beatmungsgeraet" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-diagnosticreport-visitenbefund" ]
        ] ;
-       fhir:name [ fhir:v "T-CABS Device Beatmungsgerät" ] ;
-       fhir:description [ fhir:v "Profil für ein Beatmungsgerät" ] ;
+       fhir:name [ fhir:v "T-CABS DiagnosticReport Visitenbefund" ] ;
+       fhir:description [ fhir:v "Profil für einen Beurteilung der wöchentlichen, telemedizinischen Visite innerhalb der T-CABS Studie" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1737,11 +2258,29 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-encounter-kontakt" ]
        ] ;
-       fhir:name [ fhir:v "T-CABS DeviceMetric eingestellter oder gemessener Parameter" ] ;
-       fhir:description [ fhir:v "Profil für eingestellte oder gemessene Parameter eines Beatmungsgerätes" ] ;
+       fhir:name [ fhir:v "T-CABS Encounter Kontakt" ] ;
+       fhir:description [ fhir:v "Profil für einen Kontakt/ eine Visite innerhalb der T-CABS Studie" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-practitioner-funktion" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Funktion" ] ;
+       fhir:description [ fhir:v "Profil für eine Funktion einer Person innerhalb der T-CABS Studie" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1809,11 +2348,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-arterieller-blutdruck> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-arterieller-blutdruck" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-arteriellerblutdruck" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Arterieller Blutdruck" ] ;
-       fhir:description [ fhir:v "Profile for documenting arterial blood pressure observations within T-CABS." ] ;
+       fhir:description [ fhir:v "Profil für den arteriellen Blutdruck." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1827,11 +2366,191 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-beatmungsstunden" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-atemfrequenz" ]
        ] ;
-       fhir:name [ fhir:v "T-CABS Observation Beatmungsstunden" ] ;
-       fhir:description [ fhir:v "Profil für die empfohlene oder tatsächlich gemessene Anzahl der Beatmungsstunden je 24 Stunden" ] ;
+       fhir:name [ fhir:v "T-CABS Observation Atemfrequenz" ] ;
+       fhir:description [ fhir:v "Profil für die Atemfrequenz per Doccla" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-atemzeitverhaeltnis" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation Atemzeitverhaeltnis" ] ;
+       fhir:description [ fhir:v "Profil für Atemzeitverhältnis" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-beatmungsparameter" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation Beatmungsparameter (abstract)" ] ;
+       fhir:description [ fhir:v "Abstraktes Profil für Beatmungsparameter" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-bmi" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation BMI" ] ;
+       fhir:description [ fhir:v "Profil für den Body Mass Index (BMI)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-druck-minmax" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation Druck MIN/MAX" ] ;
+       fhir:description [ fhir:v "Profil für den minimalen und maximalen Beatmungsdruck" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observationfev1> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observationfev1" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation FEV1" ] ;
+       fhir:description [ fhir:v "Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-gehstrecke" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation Gehstrecke" ] ;
+       fhir:description [ fhir:v "Profil für die Gehstrecke pro Tag (24 Stunden)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-herzfrequenz" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation Herzfrequenz" ] ;
+       fhir:description [ fhir:v "Profil für die Herzfrequenz" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-ipap" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation IPAP" ] ;
+       fhir:description [ fhir:v "Profil für einen Inspiratory Positive Airway Pressure (IPAP)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-koerpergewicht" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation Koerpergewicht" ] ;
+       fhir:description [ fhir:v "Profil für das Körpergewicht" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-koerpertemperatur" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation Koerpertemperatur" ] ;
+       fhir:description [ fhir:v "Profil für die Körpertemperatur" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1863,10 +2582,65 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-spo2" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-peep> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-peep" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation PEEP" ] ;
+       fhir:description [ fhir:v "Profil für einen Positiven endexspiratorischen Druck (PEEP)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-arteriellespo2" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation SPO2" ] ;
+       fhir:description [ fhir:v "Profil für die arterielle Sauerstoffsättigung (SPO2)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-targetvolume" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation Target Volume" ] ;
+       fhir:description [ fhir:v "Profil für das Zielvolumen" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-ti> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-ti" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation TI" ] ;
+       fhir:description [ fhir:v "Profil für ein Dauer der Einatmungsphase (Inspiration)" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1898,14 +2672,143 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-arzt> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-practitioner-arzt" ]
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-vitalparameter" ]
        ] ;
-       fhir:name [ fhir:v "T-CABS Practitioner Arzt" ] ;
-       fhir:description [ fhir:v "Profil für einen Studienarzt oder eine Studienärztin aus T-CABS" ] ;
+       fhir:name [ fhir:v "T-CABS Observation Vitalparamter" ] ;
+       fhir:description [ fhir:v "Abstraktes Profil für die gemessenen Vitalparameter von Doccla" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-organisation> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-organisation" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Organisation" ] ;
+       fhir:description [ fhir:v "Profil für eine Organisation die mit T-CABS Studie in Verbindung steht" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-patient" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Patient" ] ;
+       fhir:description [ fhir:v "Profil für eine/n Patient/in der T-CABS Studie" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Patient/tcabs-patient-example> ;
+         fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Patient Example" ] ;
+       fhir:description [ fhir:v "Beispielpatient für das T-CABS Projekt" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-patient"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-group-patientengruppe" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Patientengruppe" ] ;
+       fhir:description [ fhir:v "Profil um Patienten innerhalb der T-CABS Studie gruppieren zu können" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-practitioner-personmitfunktion" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Person mit Funktion" ] ;
+       fhir:description [ fhir:v "Profil für eine beteildigte Person innerhalb der T-CABS Studie" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/Practitioner/tcabs-practitioner-example> ;
+         fhir:reference [ fhir:v "Practitioner/tcabs-practitioner-example" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Practitioner Example" ] ;
+       fhir:description [ fhir:v "Beispielärztin für das T-CABS Projekt" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PractitionerRole"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/PractitionerRole/tcabs-practitioner-role-example> ;
+         fhir:reference [ fhir:v "PractitionerRole/tcabs-practitioner-role-example" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS PractitionerRole Funktion Beispiel" ] ;
+       fhir:description [ fhir:v "Beispiel einer PractitionerRole für einen Pneumologen in der T-CABS Studie" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion"^^xsd:anyURI ;
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion>
        ]
      ] [
        fhir:extension ( [
@@ -1921,6 +2824,42 @@
        ] ;
        fhir:name [ fhir:v "T-CABS Procedure Beatmung" ] ;
        fhir:description [ fhir:v "Profil für die Beatmungsprozedur" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-researchstudy-studie> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-researchstudy-studie" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS ResearchStudy Studie" ] ;
+       fhir:description [ fhir:v "Profil um die Metadaten der T-CABS Studie abzubilden" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-researchsubject-studienteilnehmer> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-researchsubject-studienteilnehmer" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS ResearchSubject Studie" ] ;
+       fhir:description [ fhir:v "Profil um Patienten innerhalb der Studie referenzieren können" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1956,24 +2895,7 @@
          fhir:reference [ fhir:v "ValueSet/t-cabs-valueset-Beatmungsmodus" ]
        ] ;
        fhir:name [ fhir:v "T-CABS ValueSet Beatmungsmodus" ] ;
-       fhir:description [ fhir:v "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-herzfrequenz" ]
-       ] ;
-       fhir:name [ fhir:v "T_CABS_Observation_Herzfrequenz" ] ;
+       fhir:description [ fhir:v "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2012,42 +2934,154 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:url ;
-             fhir:v "logisches_modell.html"^^xsd:anyURI
+             fhir:v "Informationsmodell.html"^^xsd:anyURI
            ]
          ] ) ;
          fhir:name [
            a fhir:url ;
-           fhir:v "logisches_modell.html"^^xsd:anyURI
+           fhir:v "Informationsmodell.html"^^xsd:anyURI
          ] ;
-         fhir:title [ fhir:v "Logisches Modell" ] ;
+         fhir:title [ fhir:v "Informationsmodell" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:url ;
-             fhir:v "profile.html"^^xsd:anyURI
+             fhir:v "Profile-Allgemein.html"^^xsd:anyURI
            ]
          ] ) ;
          fhir:name [
            a fhir:url ;
-           fhir:v "profile.html"^^xsd:anyURI
+           fhir:v "Profile-Allgemein.html"^^xsd:anyURI
          ] ;
-         fhir:title [ fhir:v "Profile" ] ;
+         fhir:title [ fhir:v "Profile Allgemein" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:url ;
-             fhir:v "beispiele.html"^^xsd:anyURI
+             fhir:v "Profile-Vitalparameter.html"^^xsd:anyURI
            ]
          ] ) ;
          fhir:name [
            a fhir:url ;
-           fhir:v "beispiele.html"^^xsd:anyURI
+           fhir:v "Profile-Vitalparameter.html"^^xsd:anyURI
          ] ;
-         fhir:title [ fhir:v "Beispiele" ] ;
+         fhir:title [ fhir:v "Profile Vitalparameter" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "Profile-Beatmungsparameter.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "Profile-Beatmungsparameter.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Profile Beatmungsparameter" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "Beispiele-Allgemein.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "Beispiele-Allgemein.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Beispiele Allgemein" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "Beispiele-Vitalparameter.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "Beispiele-Vitalparameter.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Beispiele Vitalparameter" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "Beispiele-Beatmungsparameter.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "Beispiele-Beatmungsparameter.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Beispiele Beatmungsparameter" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "Implementation-Allgemein.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "Implementation-Allgemein.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Implementation Allgemein" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "Implementation-Vitalparameter.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "Implementation-Vitalparameter.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Implementation Vitalparameter" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "Implementation-Beatmungsparameter.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "Implementation-Beatmungsparameter.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Implementation Beatmungsparameter" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "Terminologien.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "Terminologien.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Terminologien" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

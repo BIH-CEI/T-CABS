@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-encounter-kontakt",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/spdx-license",
+            "code": "CC-BY-4.0",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
+  "name": "T_CABS_Encounter_Kontakt",
+  "title": "T-CABS Encounter Kontakt",
+  "status": "draft",
+  "description": "Profil für einen Kontakt/ eine Visite innerhalb der T-CABS Studie",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.period",
+        "path": "Encounter.period",
+        "min": 1
+      },
+      {
+        "id": "Encounter.serviceProvider",
+        "path": "Encounter.serviceProvider",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -34,10 +34,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.23"}
-    h3,h4,h5,h6{--heading-prefix:"5.23"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.40"}
+    h3,h4,h5,h6{--heading-prefix:"13.40"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -91,21 +91,59 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li>
+    <a href="Informationsmodell.html">Informationsmodell</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spezifikation
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profile
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="logisches_modell.html">Logisches Modell</a>
+        <a href="Profile-Allgemein.html">Profile-Allgemein</a>
       </li>
       <li>
-        <a href="profile.html">Profile</a>
+        <a href="Profile-Vitalparameter.html">Profile-Vitalparameter</a>
       </li>
       <li>
-        <a href="beispiele.html">Beispiele</a>
+        <a href="Profile-Beatmungsparameter.html">Profile-Beatmungsparameter</a>
       </li>
     </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Beispiele
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Beispiele-Allgemein.html">Beispiele-Allgemein</a>
+      </li>
+      <li>
+        <a href="Beispiele-Vitalparameter.html">Beispiele-Vitalparameter</a>
+      </li>
+      <li>
+        <a href="Beispiele-Beatmungsparameter.html">Beispiele-Beatmungsparameter</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Implementation-Allgemein.html">Implementation-Allgemein</a>
+      </li>
+      <li>
+        <a href="Implementation-Vitalparameter.html">Implementation-Vitalparameter</a>
+      </li>
+      <li>
+        <a href="Implementation-Beatmungsparameter.html">Implementation-Beatmungsparameter</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Terminologien.html">Terminologien</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -135,7 +173,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">TCABS - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://t-cabs.org/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">TCABS - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -190,7 +228,7 @@
         
           Draft
           
-            as of 2025-04-11
+            as of 2025-10-16
           
         
       </td>
@@ -206,19 +244,19 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "t-cabs-valueset-Beatmungsmodus",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet t-cabs-valueset-Beatmungsmodus&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;t-cabs-valueset-Beatmungsmodus\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hct-cabs-valueset-Beatmungsmodus\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;t-cabs-valueset-Beatmungsmodus-en-US\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v3-mdc.html\&quot;&gt;&lt;code&gt;urn:iso:std:iso:11073:10101&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475172&lt;/td&gt;&lt;td&gt;Pressure Control&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475147&lt;/td&gt;&lt;td&gt;PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475148&lt;/td&gt;&lt;td&gt;PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, with tidal volume target and pressure regulation, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475154&lt;/td&gt;&lt;td&gt;PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475197&lt;/td&gt;&lt;td&gt;BiLevel Airway Pressure Ventilation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475201&lt;/td&gt;&lt;td&gt;Volume Control Ventilation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;151796&lt;/td&gt;&lt;td&gt;CPAP pressure&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet t-cabs-valueset-Beatmungsmodus&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;t-cabs-valueset-Beatmungsmodus\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hct-cabs-valueset-Beatmungsmodus\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html\&quot;&gt;&lt;code&gt;urn:iso:std:iso:11073:10101&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicity stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475172&lt;/td&gt;&lt;td&gt;MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475147&lt;/td&gt;&lt;td&gt;MDC_VENT_MODE_ISO_AC_PC_6ACAP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475148&lt;/td&gt;&lt;td&gt;MDC_VENT_MODE_ISO_AC_vtPC_6ACAP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475154&lt;/td&gt;&lt;td&gt;MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475197&lt;/td&gt;&lt;td&gt;MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;475201&lt;/td&gt;&lt;td&gt;MDC_VENT_MODE_ISO_CMV_VC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;151796&lt;/td&gt;&lt;td&gt;MDC_PRESS_AWAY_CTS_POS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.0",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "T_CABS_ValueSet_Beatmungsmodus",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "T-CABS ValueSet Beatmungsmodus",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2025-04-11T09:40:45+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2025-10-16T18:59:10+02:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "BIH-CEI",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -231,7 +269,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
     "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
       {
@@ -239,31 +277,31 @@
         "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "475172",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pressure Control"
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC"
           },
           {
             "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "475147",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts."
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "MDC_VENT_MODE_ISO_AC_PC_6ACAP"
           },
           {
             "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "475148",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, with tidal volume target and pressure regulation, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts."
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "MDC_VENT_MODE_ISO_AC_vtPC_6ACAP"
           },
           {
             "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "475154",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts."
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"
           },
           {
             "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "475197",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "BiLevel Airway Pressure Ventilation"
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP"
           },
           {
             "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "475201",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Volume Control Ventilation"
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "MDC_VENT_MODE_ISO_CMV_VC"
           },
           {
             "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "151796",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "CPAP pressure"
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "MDC_PRESS_AWAY_CTS_POS"
           }
         ]
       }
@@ -293,7 +331,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 11, 2025 09:41+0200">2025-04-11</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 16, 2025 18:59+0200">2025-10-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

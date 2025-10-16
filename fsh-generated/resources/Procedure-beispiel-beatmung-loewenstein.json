@@ -1,0 +1,40 @@
+{
+  "resourceType": "Procedure",
+  "id": "beispiel-beatmung-loewenstein",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "1258985005",
+        "system": "http://snomed.info/sct",
+        "display": "Invasive mechanical ventilation (regime/therapy)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "475154",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"
+      }
+    ]
+  },
+  "performedPeriod": {
+    "start": "2024-01-15T22:00:00Z",
+    "end": "2024-01-16T06:00:00Z"
+  },
+  "usedReference": [
+    {
+      "reference": "Device/beispiel-beatmungsgeraet-loewenstein"
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}

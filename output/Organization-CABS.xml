@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="CABS"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-organisation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization CABS</b></p><a name="CABS"> </a><a name="hcCABS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organisation</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></p><p><b>name</b>: Charité Campus Mitte</p><p><b>telecom</b>: <a href="tel:+4930450550137">+49 30 450 550 137</a>, <a href="mailto:cabs@charite.de">cabs@charite.de</a></p><p><b>address</b>: Charitéplatz 1 Sauerbruchweg 3, Ebene 3 Berlin 10117 DE (work)</p></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+    </coding>
+  </type>
+  <name value="Charité Campus Mitte"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+49 30 450 550 137"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="cabs@charite.de"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="both"/>
+    <line value="Charitéplatz 1"/>
+    <line value="Sauerbruchweg 3, Ebene 3"/>
+    <city value="Berlin"/>
+    <postalCode value="10117"/>
+    <country value="DE"/>
+  </address>
+</Organization>

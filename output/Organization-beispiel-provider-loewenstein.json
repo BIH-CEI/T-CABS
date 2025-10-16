@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Organization",
+  "id" : "beispiel-provider-loewenstein",
+  "meta" : {
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-organisation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization beispiel-provider-loewenstein</b></p><a name=\"beispiel-provider-loewenstein\"> </a><a name=\"hcbeispiel-provider-loewenstein\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-organisation.html\">T-CABS Organisation</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/providers</code>/PROV-LOEW-001</p><p><b>name</b>: Löwenstein Medical</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://tcabs.example.org/providers",
+    "value" : "PROV-LOEW-001"
+  }],
+  "name" : "Löwenstein Medical"
+}

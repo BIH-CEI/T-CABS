@@ -1,0 +1,92 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observation-vitalparameter",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "name": "T_CABS_Observation_Vitalparameter",
+  "title": "T-CABS Observation Vitalparamter",
+  "status": "draft",
+  "description": "Abstraktes Profil für die gemessenen Vitalparameter von Doccla",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:PHD-Observation",
+        "path": "Observation.category",
+        "sliceName": "PHD-Observation"
+      },
+      {
+        "id": "Observation.category:PHD-Observation.coding",
+        "path": "Observation.category.coding",
+        "patternCoding": {
+          "code": "phd-observation",
+          "system": "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"
+        }
+      },
+      {
+        "id": "Observation.category:VSCat",
+        "path": "Observation.category",
+        "sliceName": "VSCat"
+      },
+      {
+        "id": "Observation.category:VSCat.coding",
+        "path": "Observation.category.coding",
+        "patternCoding": {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Referenz auf den Patienten",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.device",
+        "path": "Observation.device",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

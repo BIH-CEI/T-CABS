@@ -1,0 +1,50 @@
+{
+  "resourceType": "Device",
+  "id": "beispiel-beatmungsgeraet-loewenstein",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours",
+      "valueUnsignedInt": 12450
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "UDI"
+          }
+        ]
+      },
+      "value": "LOEW-PRISMA30-67890"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "70001",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_DEV_SYS_PT_VENT_MDS"
+      }
+    ]
+  },
+  "deviceName": [
+    {
+      "type": "model-name",
+      "name": "Prisma VENT30"
+    }
+  ],
+  "manufacturer": "Löwenstein Medical",
+  "serialNumber": "PRISMA30-SN-345678",
+  "owner": {
+    "reference": "Organization/beispiel-provider-loewenstein"
+  },
+  "patient": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}

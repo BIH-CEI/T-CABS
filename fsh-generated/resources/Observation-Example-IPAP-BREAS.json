@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-IPAP-BREAS",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "8410976",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_SABTE_PRESS_IPAP_SET"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2024-10-07T22:00:00+02:00",
+    "end": "2024-10-07T22:15:00+02:00"
+  },
+  "valueQuantity": {
+    "unit": "mbar",
+    "system": "http://unitsofmeasure.org",
+    "code": "mbar",
+    "value": 15
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/beispiel-beatmung-breas"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  },
+  "device": {
+    "reference": "DeviceMetric/beispiel-devicemetric-breas-ipap"
+  }
+}

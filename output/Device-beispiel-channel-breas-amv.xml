@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="beispiel-channel-breas-amv"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device beispiel-channel-breas-amv</b></p><a name="beispiel-channel-breas-amv"> </a><a name="hcbeispiel-channel-breas-amv"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html">T-CABS Device Channel Beatmungsgeraet</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-channel</code>/CHAN-BREAS-AMV-001</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>AMV Measurement Channel</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 70003}">MDC_DEV_SYS_PT_VENT_CHAN</span></p><p><b>parent</b>: <a href="Device-beispiel-vmd-breas-amv.html">Device: identifier = http://tcabs.example.org/device-vmd#VMD-BREAS-AMV-001; type = MDC_DEV_SYS_PT_VENT_VMD</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://tcabs.example.org/device-channel"/>
+    <value value="CHAN-BREAS-AMV-001"/>
+  </identifier>
+  <deviceName>
+    <name value="AMV Measurement Channel"/>
+    <type value="user-friendly-name"/>
+  </deviceName>
+  <type>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="70003"/>
+      <display value="MDC_DEV_SYS_PT_VENT_CHAN"/>
+    </coding>
+  </type>
+  <parent>
+    <reference value="Device/beispiel-vmd-breas-amv"/>
+  </parent>
+</Device>

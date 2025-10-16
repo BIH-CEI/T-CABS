@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="beispiel-phg-doccla"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-device-phg"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device beispiel-phg-doccla</b></p><a name="beispiel-phg-doccla"> </a><a name="hcbeispiel-phg-doccla"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-device-phg.html">T-CABS Device PHG</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier/PHG-DOCCLA-12345</p><p><b>manufacturer</b>: Doccla GmbH</p><p><b>serialNumber</b>: PHG-SN-789012</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Doccla Health Tablet</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: DHT-2024</p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 531981}">MDC_MOC_VMS_MDS_AHD</span></p><h3>Specializations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>SystemType</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:iso:std:iso:11073:10101 8528192}">MDC_AI_APPLIANCE_TABLETPC</span></td></tr></table><h3>Versions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:iso:std:iso:11073:10101 532352}">MDC_REG_CERT_DATA_CONTINUA_VERSION</span></td><td>2.1.0</td></tr></table><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 532353}">MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST</span></p><p><b>valueCode</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 528388}">MDC_DEV_SPEC_PROFILE_PULS_OXIM</span>, <span title="Codes:{urn:iso:std:iso:11073:10101 528399}">MDC_DEV_SPEC_PROFILE_SCALE</span>, <span title="Codes:{urn:iso:std:iso:11073:10101 528426}">MDC_DEV_SPEC_PROFILE_HF_STRENGTH</span>, <span title="Codes:{urn:iso:std:iso:11073:10101 528391}">MDC_DEV_SPEC_PROFILE_BP</span>, <span title="Codes:{urn:iso:std:iso:11073:10101 69680}">MDC_DEV_ANALY_AWAY_MULTI_PARAM</span>, <span title="Codes:{urn:iso:std:iso:11073:10101 528484}">MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER</span>, <span title="Codes:{urn:iso:std:iso:11073:10101 528405}">MDC_DEV_SPEC_PROFILE_PEFM</span></p></blockquote><p><b>patient</b>: <a href="Patient-tcabs-patient-example.html">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"/>
+        <code value="SYSID"/>
+      </coding>
+    </type>
+    <system value="urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"/>
+    <value value="PHG-DOCCLA-12345"/>
+  </identifier>
+  <manufacturer value="Doccla GmbH"/>
+  <serialNumber value="PHG-SN-789012"/>
+  <deviceName>
+    <name value="Doccla Health Tablet"/>
+    <type value="user-friendly-name"/>
+  </deviceName>
+  <modelNumber value="DHT-2024"/>
+  <type>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="531981"/>
+    </coding>
+  </type>
+  <specialization>
+    <systemType>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="8528192"/>
+        <display value="MDC_AI_APPLIANCE_TABLETPC"/>
+      </coding>
+    </systemType>
+  </specialization>
+  <version>
+    <type>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="532352"/>
+        <display value="MDC_REG_CERT_DATA_CONTINUA_VERSION"/>
+      </coding>
+    </type>
+    <value value="2.1.0"/>
+  </version>
+  <property>
+    <type>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="532353"/>
+      </coding>
+    </type>
+    <valueCode>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="528388"/>
+      </coding>
+    </valueCode>
+    <valueCode>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="528399"/>
+      </coding>
+    </valueCode>
+    <valueCode>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="528426"/>
+      </coding>
+    </valueCode>
+    <valueCode>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="528391"/>
+      </coding>
+    </valueCode>
+    <valueCode>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="69680"/>
+      </coding>
+    </valueCode>
+    <valueCode>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="528484"/>
+      </coding>
+    </valueCode>
+    <valueCode>
+      <coding>
+        <system value="urn:iso:std:iso:11073:10101"/>
+        <code value="528405"/>
+      </coding>
+    </valueCode>
+  </property>
+  <patient>
+    <reference value="Patient/tcabs-patient-example"/>
+  </patient>
+</Device>

@@ -1,0 +1,40 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-device-channel-beatmungsgeraet",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
+  "name": "T_CABS_Device_Channel_Beatmungsgeraet",
+  "title": "T-CABS Device Channel Beatmungsgeraet",
+  "status": "draft",
+  "description": "Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/uv/pocd/StructureDefinition/ChannelDevice",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device.type.coding",
+        "path": "Device.type.coding",
+        "patternCoding": {
+          "code": "70003",
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_DEV_SYS_PT_VENT_CHAN"
+        }
+      },
+      {
+        "id": "Device.parent",
+        "path": "Device.parent",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

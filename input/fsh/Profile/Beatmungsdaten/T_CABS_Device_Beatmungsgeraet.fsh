@@ -1,15 +1,17 @@
-Profile: T_CABS_Device_Beatmungsgeraet
-Parent: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device
-Id: t-cabs-device-beatmungsgeraet
-Title: "T-CABS Device Beatmungsgerät"
-Description: "Profil für ein Beatmungsgerät"
+Profile: T_CABS_Device_MDS_Beatmungsgeraet
+Parent: http://hl7.org/fhir/uv/pocd/StructureDefinition/MdsDevice
+Id: t-cabs-device-mds-beatmungsgeraet
+Title: "T-CABS Device MDS Heimbeatmungsgerät"
+Description: "Profil für ein Heimbeatmungsgerät"
+
+// Beatmungsstunden
+* extension[operatingHours] 1..1
 
 // identifier zur Gerätidentifizierung (alternativ Seriennummer)
 * identifier.type = #UDI
 * identifier ^definition = "Alternativer Identifier zur Seriennummer"
 
-// 426160001(Oxygen ventilator (physical object)) oder 23562009(Household ventilator, device (physical object))?
-* type = $SCT#706172005 "Ventilator (physical object)" 
+* type.coding = $IEEE-11073#70001 "MDC_DEV_SYS_PT_VENT_MDS" 
 
 // Hersteller
 * manufacturer 1..1 MS
@@ -54,5 +56,55 @@ Astral150"
 
 * patient 1..1 MS
 * patient ^short = "Referenz auf den Patienten"
-// * contact    
+* patient only Reference(T_CABS_Patient)
+// * contact
 // * location
+
+
+Instance: beispiel-beatmungsgeraet-breas
+InstanceOf: T_CABS_Device_MDS_Beatmungsgeraet
+Usage: #example
+Title: "Beispiel Beatmungsgerät BREAS"
+Description: "Beispiel für ein BREAS Heimbeatmungsgerät"
+* extension[operatingHours].valueUnsignedInt = 8760
+* identifier.type = #UDI
+* identifier.value = "BREAS-VIVO45-12345"
+* type.coding = $IEEE-11073#70001 "MDC_DEV_SYS_PT_VENT_MDS"
+* manufacturer = "BREAS Medical"
+* serialNumber = "VIVO45-SN-789012"
+* owner = Reference(Organization/beispiel-provider-jochum)
+* deviceName.type = #model-name
+* deviceName.name = "Vivo45"
+* patient = Reference(Patient/tcabs-patient-example)
+
+Instance: beispiel-beatmungsgeraet-loewenstein
+InstanceOf: T_CABS_Device_MDS_Beatmungsgeraet
+Usage: #example
+Title: "Beispiel Beatmungsgerät Löwenstein"
+Description: "Beispiel für ein Löwenstein Heimbeatmungsgerät"
+* extension[operatingHours].valueUnsignedInt = 12450
+* identifier.type = #UDI
+* identifier.value = "LOEW-PRISMA30-67890"
+* type.coding = $IEEE-11073#70001 "MDC_DEV_SYS_PT_VENT_MDS"
+* manufacturer = "Löwenstein Medical"
+* serialNumber = "PRISMA30-SN-345678"
+* owner = Reference(Organization/beispiel-provider-loewenstein)
+* deviceName.type = #model-name
+* deviceName.name = "Prisma VENT30"
+* patient = Reference(Patient/tcabs-patient-example)
+
+Instance: beispiel-beatmungsgeraet-resmed
+InstanceOf: T_CABS_Device_MDS_Beatmungsgeraet
+Usage: #example
+Title: "Beispiel Beatmungsgerät ResMed"
+Description: "Beispiel für ein ResMed Heimbeatmungsgerät"
+* extension[operatingHours].valueUnsignedInt = 6500
+* identifier.type = #UDI
+* identifier.value = "RESMED-STELLAR150-54321"
+* type.coding = $IEEE-11073#70001 "MDC_DEV_SYS_PT_VENT_MDS"
+* manufacturer = "ResMed"
+* serialNumber = "STELLAR150-SN-901234"
+* owner = Reference(Organization/beispiel-provider-vivisol)
+* deviceName.type = #model-name
+* deviceName.name = "Stellar150"
+* patient = Reference(Patient/tcabs-patient-example)

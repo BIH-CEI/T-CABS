@@ -1,0 +1,67 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-device-phd",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-phd",
+  "name": "T_CABS_Device_PHD",
+  "title": "T-CABS Device PHD",
+  "status": "draft",
+  "description": "Profil für ein Messgerät am Patienten",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device.identifier:systemIdIdentifier",
+        "path": "Device.identifier",
+        "sliceName": "systemIdIdentifier"
+      },
+      {
+        "id": "Device.identifier:systemIdIdentifier.type.coding.system",
+        "path": "Device.identifier.type.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.identifier:systemIdIdentifier.type.coding.code",
+        "path": "Device.identifier.type.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.identifier:systemIdIdentifier.value",
+        "path": "Device.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.serialNumber",
+        "path": "Device.serialNumber",
+        "short": "Seriennummer des Geraetes",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.specialization.systemType.coding:MDCType",
+        "path": "Device.specialization.systemType.coding",
+        "sliceName": "MDCType",
+        "short": "Art des Messgerätes",
+        "definition": "528388 MDC_DEV_SPEC_PROFILE_PULS_OXIM - Pulsoximeter\n528399 MDC_DEV_SPEC_PROFILE_SCALE - Waage\n528426 MDC_DEV_SPEC_PROFILE_HF_STRENGTH - Handstärkemesser\n528391 MDC_DEV_SPEC_PROFILE_BP - Sphygmomanometer\n69680 MDC_DEV_ANALY_AWAY_MULTI_PARAM - Spirometer\n528484 MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER - Schrittzähler\n528405\tMDC_DEV_SPEC_PROFILE_BCA - Peak Flow Meter\n"
+      },
+      {
+        "id": "Device.patient",
+        "path": "Device.patient",
+        "short": "Referenz auf den Patienten",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

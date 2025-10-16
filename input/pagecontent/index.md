@@ -1,24 +1,49 @@
-# T-CABS
-## Telemedizinisches Centrum für Außerklinische Beatmung und Sauerstofftherapie
+Der T-CABS (Telemedizinisches Centrum für Außerklinische Beatmung und Sauerstofftherapie) Implementation Guide definiert FHIR R4 Profile und Standards für die Übertragung und den Austausch von Beatmungs- und Vitalparametern in der häuslichen Beatmungstherapie.
 
-"Die Anzahl heimbeatmeter Patientinnen und Patienten steigt seit Jahren und führt zu einem Engpass in der Versorgung, die stationär oder in Spezialambulanzen erfolgt. Die Versorgungsqualität ist aufgrund aufwendiger Anfahrten und Wartezeiten unzureichend.
+### Ziel des Implementation Guide
 
-Telemedizin soll helfen, die Versorgung außerklinisch Beatmeter deutlich zu verbessern. 
+Dieser IG ermöglicht die standardisierte, interoperable Übertragung von Gesundheitsdaten aus der häuslichen Beatmungstherapie zwischen verschiedenen Systemen und Herstellern. Es werden einheitliche FHIR-Profile definiert für:
 
-Methodisches Vorgehen: T-CABS verfolgt im Raum Berlin/Brandenburg als übergeordnetes Projektziel die Reduktion von ungeplanten Kontakten zum Gesundheitssystem, Krankenhaustagen, Ambulanzterminen, Krankentransporten und somit der Gesundheitskosten. 
+- Beatmungsparameter von Beatmungsgeräten
+- Vitalparameter von Personal Health Devices (PHD)
+- Klinische Workflows für telemedizinische Visiten
 
-Dies soll mittels telemedizinischer Betreuung erreicht werden durch 
+### Zielgruppen
 
-1. Steigerung der Therapieadhärenz gegenüber der Beatmungstherapie, 
+**Primäre Zielgruppen:**
+- Hersteller von Beatmungsgeräten (BREAS, Löwenstein Medical, ResMed)
+- Hersteller von Vitalparameter-Messgeräten (Doccla)
 
-2. Stabilisierung der pulmonalen Funktion und Verbesserung der körperlichen Kondition, 
+**Sekundäre Zielgruppen:**
+- Softwareentwickler für Gesundheitsplattformen
+- Systemintegratoren für telemedizinische Lösungen
 
-3. Erhöhung der Lebensqualität, Selbstbestimmung und Anwendungssicherheit bei Patientinnen und Patienten, 
 
-4. Verbesserung der sektorenübergreifenden Zusammenarbeit und Kommunikation sowie 
+### Struktur des Implementation Guide
 
-5. Entwicklung und Erprobung diagnostischer Signaturen mittels maschinellen Lernens zur Unterstützung zukünftiger Telemedizin. 
+1. Informationsmodell: Beinhaltet ein UML über alle erstellten T-CABS-Profile und ihre Beziehungen (Referenzen) zueinander  
+2. Profile: Grafische Darstellung der Profile* 
+3. Beispiele: Grafische Darstellung der Beispiele* 
+4. Implemantation: Detaillierte Beschreibung der einzelnen Vorgaben innerhalb der Profile und der Beziehungen zueinander*
 
-Die Interventions- und die Kontrollgruppe der prospektiven, longitudinalen Interventionsstudie werden mit qualitativer und quantitativer Prozessanalyse bezüglich primärem Endpunkt und sekundären Endpunkten verglichen. Umsetzungspotenzial: Alle relevanten Hürden zur Implementierung der Telemedizin in die Regelversorgung wurden bereits überwunden (z. B. bei Diabetes mellitus, Herzinsuffizienz)."
+*(unterteilt in Allgemein, Vitalparameter und Beatmungsparameter)
+
+### Projektkontext T-CABS
+
+[Projektwebseite](https://t-cabs.charite.de/)
+
+Das Telemedizinische Centrum für Außerklinische Beatmung und Sauerstofftherapie verfolgt das übergeordnete Projektziel der Reduktion von ungeplanten Kontakten zum Gesundheitssystem, Krankenhaustagen, Ambulanzterminen, Krankentransporten und somit der Gesundheitskosten.
+
+Dies soll mittels telemedizinischer Betreuung erreicht werden durch:
+
+1. Steigerung der Therapieadhärenz gegenüber der Beatmungstherapie
+2. Stabilisierung der pulmonalen Funktion und Verbesserung der körperlichen Kondition
+3. Erhöhung der Lebensqualität, Selbstbestimmung und Anwendungssicherheit bei Patienten
+4. Verbesserung der sektorenübergreifenden Zusammenarbeit und Kommunikation
+5. Entwicklung und Erprobung diagnostischer Signaturen mittels maschinellen Lernens
+
+**Kontakt:**
+- Technische Fragen oder Anmerkungen: thimo-andre.hoelter@charite.de oder [Github Issues](https://github.com/BIH-CEI/T-CABS/issues)
+- Organisatorische Fragen: t-cabs@charite.de
 
 {% include img.html img="T-CABS_Logo.png" %}

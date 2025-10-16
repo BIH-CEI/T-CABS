@@ -5,84 +5,43 @@
   "name": "T_CABS_Observation_FEV1",
   "title": "T-CABS Observation FEV1",
   "status": "draft",
-  "description": "Profil für das Forced Expiratory Volume in 1 second (FEV1)",
+  "description": "Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1)",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.category",
-        "path": "Observation.category"
+        "id": "Observation.code.coding:MDCType",
+        "path": "Observation.code.coding",
+        "sliceName": "MDCType",
+        "patternCoding": {
+          "code": "152586",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
       },
       {
-        "id": "Observation.category.coding",
-        "path": "Observation.category.coding",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category.coding.system",
-        "path": "Observation.category.coding.system",
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/observation-category"
-      },
-      {
-        "id": "Observation.category.coding.code",
-        "path": "Observation.category.coding.code",
-        "fixedCode": "vital-signs"
-      },
-      {
-        "id": "Observation.category.coding.display",
-        "path": "Observation.category.coding.display",
-        "patternString": "Vital Signs"
-      },
-      {
-        "id": "Observation.category:vs-cat",
-        "path": "Observation.category",
-        "sliceName": "vs-cat"
-      },
-      {
-        "id": "Observation.category:vs-cat.coding",
-        "path": "Observation.category.coding",
-        "min": 1
-      },
-      {
-        "id": "Observation.category:loinc-fhir-core",
-        "path": "Observation.category",
-        "sliceName": "loinc-fhir-core"
-      },
-      {
-        "id": "Observation.category:loinc-fhir-core.coding",
-        "path": "Observation.category.coding",
-        "min": 1
-      },
-      {
-        "id": "Observation.subject.reference",
-        "path": "Observation.subject.reference",
-        "min": 1
-      },
-      {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "min": 1
+        "id": "Observation.code.coding:LoincCoding",
+        "path": "Observation.code.coding",
+        "sliceName": "LoincCoding",
+        "patternCoding": {
+          "code": "20150-9",
+          "system": "http://loinc.org",
+          "display": "FEV1"
+        }
       },
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
-        "min": 1
-      },
-      {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "fixedUri": "http://unitsofmeasure.org"
+        "patternString": "L"
       },
       {
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
-        "fixedCode": "L"
+        "patternCode": "L"
       }
     ]
   }

@@ -1,0 +1,23 @@
+{
+  "resourceType": "Practitioner",
+  "id": "tcabs-practitioner-example",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/practitioners",
+      "value": "TCABS-DOC-001"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Anna"
+      ],
+      "family": "Schmidt"
+    }
+  ]
+}

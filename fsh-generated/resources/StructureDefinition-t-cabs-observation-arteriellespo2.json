@@ -1,0 +1,64 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observation-arteriellespo2",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
+  "name": "T_CABS_Observation_ArterielleSPO2",
+  "title": "T-CABS Observation SPO2",
+  "status": "draft",
+  "description": "Profil für die arterielle Sauerstoffsättigung (SPO2)",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:MDCType",
+        "path": "Observation.code.coding",
+        "sliceName": "MDCType",
+        "patternCoding": {
+          "code": "160300",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.code.coding:LoincCoding",
+        "path": "Observation.code.coding",
+        "sliceName": "LoincCoding",
+        "patternCoding": {
+          "code": "2708-6",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "%"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "%"
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite.coding",
+        "path": "Observation.bodySite.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "11527006",
+          "system": "http://snomed.info/sct",
+          "display": "Arterial system structure (body structure)"
+        },
+        "mustSupport": true
+      }
+    ]
+  }
+}

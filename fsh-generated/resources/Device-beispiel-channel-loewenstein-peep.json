@@ -1,0 +1,33 @@
+{
+  "resourceType": "Device",
+  "id": "beispiel-channel-loewenstein-peep",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/device-channel",
+      "value": "CHAN-LOEW-PEEP-001"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "70003",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_DEV_SYS_PT_VENT_CHAN"
+      }
+    ]
+  },
+  "deviceName": [
+    {
+      "name": "PEEP Measurement Channel",
+      "type": "user-friendly-name"
+    }
+  ],
+  "parent": {
+    "reference": "Device/beispiel-vmd-loewenstein-peep"
+  }
+}

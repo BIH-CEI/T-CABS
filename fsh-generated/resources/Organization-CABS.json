@@ -1,0 +1,47 @@
+{
+  "resourceType": "Organization",
+  "id": "CABS",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+    ]
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov",
+          "display": "Healthcare Provider"
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+49 30 450 550 137",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "cabs@charite.de",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "Charitéplatz 1",
+        "Sauerbruchweg 3, Ebene 3"
+      ],
+      "use": "work",
+      "type": "both",
+      "city": "Berlin",
+      "postalCode": "10117",
+      "country": "DE"
+    }
+  ],
+  "active": true,
+  "name": "Charité Campus Mitte"
+}

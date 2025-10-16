@@ -1,0 +1,2550 @@
+# Home - v0.1.0
+
+* [**Table of Contents**](toc.md)
+* **Home**
+
+## Home
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://t-cabs.org/ImplementationGuide/t-cabs | *Version*:0.1.0 |
+| Draft as of 2025-10-16 | *Computable Name*:TCABS |
+
+Der T-CABS (Telemedizinisches Centrum für Außerklinische Beatmung und Sauerstofftherapie) Implementation Guide definiert FHIR R4 Profile und Standards für die Übertragung und den Austausch von Beatmungs- und Vitalparametern in der häuslichen Beatmungstherapie.
+
+### Ziel des Implementation Guide
+
+Dieser IG ermöglicht die standardisierte, interoperable Übertragung von Gesundheitsdaten aus der häuslichen Beatmungstherapie zwischen verschiedenen Systemen und Herstellern. Es werden einheitliche FHIR-Profile definiert für:
+
+* Beatmungsparameter von Beatmungsgeräten
+* Vitalparameter von Personal Health Devices (PHD)
+* Klinische Workflows für telemedizinische Visiten
+
+### Zielgruppen
+
+**Primäre Zielgruppen:**
+
+* Hersteller von Beatmungsgeräten (BREAS, Löwenstein Medical, ResMed)
+* Hersteller von Vitalparameter-Messgeräten (Doccla)
+
+**Sekundäre Zielgruppen:**
+
+* Softwareentwickler für Gesundheitsplattformen
+* Systemintegratoren für telemedizinische Lösungen
+
+### Struktur des Implementation Guide
+
+1. Informationsmodell: Beinhaltet ein UML über alle erstellten T-CABS-Profile und ihre Beziehungen (Referenzen) zueinander
+1. Profile: Grafische Darstellung der Profile*
+1. Beispiele: Grafische Darstellung der Beispiele*
+1. Implemantation: Detaillierte Beschreibung der einzelnen Vorgaben innerhalb der Profile und der Beziehungen zueinander*
+
+*(unterteilt in Allgemein, Vitalparameter und Beatmungsparameter)
+
+### Projektkontext T-CABS
+
+[Projektwebseite](https://t-cabs.charite.de/)
+
+Das Telemedizinische Centrum für Außerklinische Beatmung und Sauerstofftherapie verfolgt das übergeordnete Projektziel der Reduktion von ungeplanten Kontakten zum Gesundheitssystem, Krankenhaustagen, Ambulanzterminen, Krankentransporten und somit der Gesundheitskosten.
+
+Dies soll mittels telemedizinischer Betreuung erreicht werden durch:
+
+1. Steigerung der Therapieadhärenz gegenüber der Beatmungstherapie
+1. Stabilisierung der pulmonalen Funktion und Verbesserung der körperlichen Kondition
+1. Erhöhung der Lebensqualität, Selbstbestimmung und Anwendungssicherheit bei Patienten
+1. Verbesserung der sektorenübergreifenden Zusammenarbeit und Kommunikation
+1. Entwicklung und Erprobung diagnostischer Signaturen mittels maschinellen Lernens
+
+**Kontakt:**
+
+* Technische Fragen oder Anmerkungen: thimo-andre.hoelter@charite.de oder [Github Issues](https://github.com/BIH-CEI/T-CABS/issues)
+* Organisatorische Fragen: t-cabs@charite.de
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "t-cabs",
+  "url" : "http://t-cabs.org/ImplementationGuide/t-cabs",
+  "version" : "0.1.0",
+  "name" : "TCABS",
+  "status" : "draft",
+  "date" : "2025-10-16T18:59:10+02:00",
+  "publisher" : "BIH-CEI",
+  "contact" : [
+    {
+      "name" : "BIH-CEI",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId" : "t-cabs",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [
+    {
+      "id" : "hl7tx",
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+        }
+      ],
+      "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "packageId" : "hl7.terminology.r4",
+      "version" : "6.5.0"
+    },
+    {
+      "id" : "hl7ext",
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+        }
+      ],
+      "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "packageId" : "hl7.fhir.uv.extensions.r4",
+      "version" : "5.2.0"
+    },
+    {
+      "id" : "de_medizininformatikinitiative_kerndatensatz_person",
+      "uri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person",
+      "packageId" : "de.medizininformatikinitiative.kerndatensatz.person",
+      "version" : "2025.0.0"
+    },
+    {
+      "id" : "de_medizininformatikinitiative_kerndatensatz_fall",
+      "uri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ImplementationGuide/mii-ig-fall",
+      "packageId" : "de.medizininformatikinitiative.kerndatensatz.fall",
+      "version" : "2025.0.0"
+    },
+    {
+      "id" : "hl7_fhir_uv_phd",
+      "uri" : "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd",
+      "packageId" : "hl7.fhir.uv.phd",
+      "version" : "1.1.0"
+    },
+    {
+      "id" : "hl7_fhir_uv_pocd",
+      "uri" : "http://hl7.org/fhir/uv/pocd/ImplementationGuide/hl7.fhir.uv.pocd",
+      "packageId" : "hl7.fhir.uv.pocd",
+      "version" : "0.3.0"
+    }
+  ],
+  "definition" : {
+    "extension" : [
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "copyrightyear"
+          },
+          {
+            "url" : "value",
+            "valueString" : "2024+"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "releaselabel"
+          },
+          {
+            "url" : "value",
+            "valueString" : "ci-build"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "autoload-resources"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-qa"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/qa"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-temp"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/pages"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-output"
+          },
+          {
+            "url" : "value",
+            "valueString" : "output"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-suppressed-warnings"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/ignoreWarnings.txt"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "path-history"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://t-cabs.org/history.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "template-html"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "template-md"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page-md.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-contact"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-context"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-copyright"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-jurisdiction"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-license"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-publisher"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-version"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "apply-wg"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "active-tables"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "fmm-definition"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "propagate-status"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "excludelogbinaryformat"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "tabbed-snapshots"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+        "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "copyrightyear"
+          },
+          {
+            "url" : "value",
+            "valueString" : "2024+"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "releaselabel"
+          },
+          {
+            "url" : "value",
+            "valueString" : "ci-build"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "autoload-resources"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-liquid"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/liquid"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-qa"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/qa"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-temp"
+          },
+          {
+            "url" : "value",
+            "valueString" : "temp/pages"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-output"
+          },
+          {
+            "url" : "value",
+            "valueString" : "output"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-suppressed-warnings"
+          },
+          {
+            "url" : "value",
+            "valueString" : "input/ignoreWarnings.txt"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "path-history"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://t-cabs.org/history.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "template-html"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "template-md"
+          },
+          {
+            "url" : "value",
+            "valueString" : "template-page-md.html"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-contact"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-context"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-copyright"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-jurisdiction"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-license"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-publisher"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-version"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "apply-wg"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "active-tables"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "fmm-definition"
+          },
+          {
+            "url" : "value",
+            "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "propagate-status"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "excludelogbinaryformat"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "tabbed-snapshots"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource" : [
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-AHI-BREAS"
+        },
+        "name" : "Beispiel AHI Messung BREAS",
+        "description" : "Beispiel für eine AHI-Messung von einem BREAS Beatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-AMV-BREAS-gemessen"
+        },
+        "name" : "Beispiel AMV Messung BREAS",
+        "description" : "Beispiel für eine gemessene AMV-Messung von einem BREAS Beatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-ArterielleSPO2-Doccla"
+        },
+        "name" : "Beispiel arterielle SPO2 Messung",
+        "description" : "Beispiel für eine arterielle SPO2-Messung über Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-ArteriellerBlutdruck-Doccla"
+        },
+        "name" : "Beispiel arterieller Blutdruck Messung",
+        "description" : "Beispiel für eine arterielle Blutdruck-Messung über Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-Atemfrequenz-Doccla"
+        },
+        "name" : "Beispiel Atemfrequenz Messung",
+        "description" : "Beispiel für eine Atemfrequenz-Messung über Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-Atemfrequenz-ResMed-gemessen"
+        },
+        "name" : "Beispiel Atemfrequenz Messung ResMed",
+        "description" : "Beispiel für eine gemessene Atemfrequenz von einem ResMed Beatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-Atemzeitverhaeltnis-ResMed"
+        },
+        "name" : "Beispiel Atemzeitverhältnis ResMed",
+        "description" : "Beispiel für Atemzeitverhältnis von einem ResMed Beatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/beispiel-beatmung-breas"
+        },
+        "name" : "Beispiel Beatmung BREAS",
+        "description" : "Beispiel für eine Beatmungsprozedur mit BREAS Gerät (PCV Modus)",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/beispiel-beatmung-loewenstein"
+        },
+        "name" : "Beispiel Beatmung Löwenstein",
+        "description" : "Beispiel für eine Beatmungsprozedur mit Löwenstein Gerät (PSV Modus)",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/beispiel-beatmung-resmed"
+        },
+        "name" : "Beispiel Beatmung ResMed",
+        "description" : "Beispiel für eine Beatmungsprozedur mit ResMed Gerät (CPAP Modus)",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-beatmungsgeraet-breas"
+        },
+        "name" : "Beispiel Beatmungsgerät BREAS",
+        "description" : "Beispiel für ein BREAS Heimbeatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-beatmungsgeraet-loewenstein"
+        },
+        "name" : "Beispiel Beatmungsgerät Löwenstein",
+        "description" : "Beispiel für ein Löwenstein Heimbeatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-beatmungsgeraet-resmed"
+        },
+        "name" : "Beispiel Beatmungsgerät ResMed",
+        "description" : "Beispiel für ein ResMed Heimbeatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-BMI-Doccla"
+        },
+        "name" : "Beispiel BMI Messung",
+        "description" : "Beispiel für eine BMI-Messung über Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-breas-ahi"
+        },
+        "name" : "Beispiel Channel BREAS AHI",
+        "description" : "Beispiel für einen AHI-Channel zur Gruppierung von AHI-Messungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-breas-amv"
+        },
+        "name" : "Beispiel Channel BREAS AMV",
+        "description" : "Beispiel für einen AMV-Channel zur Gruppierung von AMV-Messungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-breas-ipap"
+        },
+        "name" : "Beispiel Channel BREAS IPAP",
+        "description" : "Beispiel für einen IPAP-Channel zur Gruppierung von IPAP-Einstellungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-breas-targetvolume"
+        },
+        "name" : "Beispiel Channel BREAS Target Volume",
+        "description" : "Beispiel für einen Target Volume-Channel zur Gruppierung von Target Volume-Einstellungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-loewenstein-peep"
+        },
+        "name" : "Beispiel Channel Löwenstein PEEP",
+        "description" : "Beispiel für einen PEEP-Channel zur Gruppierung von PEEP-Messungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-loewenstein-ti"
+        },
+        "name" : "Beispiel Channel Löwenstein TI",
+        "description" : "Beispiel für einen TI-Channel zur Gruppierung von TI-Messungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-loewenstein-triggeredbreaths"
+        },
+        "name" : "Beispiel Channel Löwenstein TriggeredBreaths",
+        "description" : "Beispiel für einen TriggeredBreaths-Channel zur Gruppierung von TriggeredBreaths-Messungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-resmed-atemfrequenz"
+        },
+        "name" : "Beispiel Channel ResMed Atemfrequenz",
+        "description" : "Beispiel für einen Atemfrequenz-Channel zur Gruppierung von Atemfrequenz-Messungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-resmed-atemzeit"
+        },
+        "name" : "Beispiel Channel ResMed Atemzeitverhältnis",
+        "description" : "Beispiel für einen Atemzeitverhältnis-Channel zur Gruppierung von Atemzeitverhältnis-Berechnungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-resmed-druck"
+        },
+        "name" : "Beispiel Channel ResMed Druck Min/Max",
+        "description" : "Beispiel für einen Druck Min/Max-Channel zur Gruppierung von Druck-Messungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-channel-resmed-leckage"
+        },
+        "name" : "Beispiel Channel ResMed Leckage",
+        "description" : "Beispiel für einen Leckage-Channel zur Gruppierung von Leckage-Messungen",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-breas-ahi"
+        },
+        "name" : "Beispiel DeviceMetric BREAS AHI",
+        "description" : "Beispiel für eine DeviceMetric zur AHI-Berechnung eines BREAS Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-breas-amv"
+        },
+        "name" : "Beispiel DeviceMetric BREAS AMV",
+        "description" : "Beispiel für eine DeviceMetric zur AMV-Messung eines BREAS Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-breas-ipap"
+        },
+        "name" : "Beispiel DeviceMetric BREAS IPAP",
+        "description" : "Beispiel für eine DeviceMetric zur IPAP-Einstellung eines BREAS Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-breas-targetvolume"
+        },
+        "name" : "Beispiel DeviceMetric BREAS Target Volume",
+        "description" : "Beispiel für eine DeviceMetric zur Target Volume-Einstellung eines BREAS Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-loewenstein-peep"
+        },
+        "name" : "Beispiel DeviceMetric Löwenstein PEEP",
+        "description" : "Beispiel für eine DeviceMetric zur PEEP-Messung eines Löwenstein Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-loewenstein-ti"
+        },
+        "name" : "Beispiel DeviceMetric Löwenstein TI",
+        "description" : "Beispiel für eine DeviceMetric zur TI-Messung (Inspirationszeit) eines Löwenstein Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths"
+        },
+        "name" : "Beispiel DeviceMetric Löwenstein TriggeredBreaths",
+        "description" : "Beispiel für eine DeviceMetric zur TriggeredBreaths-Messung eines Löwenstein Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz"
+        },
+        "name" : "Beispiel DeviceMetric ResMed Atemfrequenz",
+        "description" : "Beispiel für eine DeviceMetric zur Atemfrequenz-Messung eines ResMed Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-resmed-atemzeit"
+        },
+        "name" : "Beispiel DeviceMetric ResMed Atemzeitverhältnis",
+        "description" : "Beispiel für eine DeviceMetric zur Atemzeitverhältnis-Berechnung eines ResMed Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-resmed-druck"
+        },
+        "name" : "Beispiel DeviceMetric ResMed Druck Min/Max",
+        "description" : "Beispiel für eine DeviceMetric zur Druck Min/Max-Messung eines ResMed Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceMetric"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceMetric/beispiel-devicemetric-resmed-leckage"
+        },
+        "name" : "Beispiel DeviceMetric ResMed Leckage",
+        "description" : "Beispiel für eine DeviceMetric zur Leckage-Messung eines ResMed Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DiagnosticReport"
+          }
+        ],
+        "reference" : {
+          "reference" : "DiagnosticReport/Example-DiagnosticReport-Woechentliche-Visite"
+        },
+        "name" : "Beispiel DiagnosticReport Wöchentliche Visite",
+        "description" : "Beispiel für einen Visitenbefund einer wöchentlichen telemedizinischen Visite",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-DruckMinMax-ResMed"
+        },
+        "name" : "Beispiel Druck Min/Max ResMed",
+        "description" : "Beispiel für minimalen und maximalen Beatmungsdruck von einem ResMed Gerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-FEV1-Doccla"
+        },
+        "name" : "Beispiel FEV1 Messung",
+        "description" : "Beispiel für eine FEV1-Messung über Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-Gehstrecke-Doccla"
+        },
+        "name" : "Beispiel Gehstrecke Messung",
+        "description" : "Beispiel für eine Gehstrecken-Messung über Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-Herzfrequenz-Doccla"
+        },
+        "name" : "Beispiel Herzfrequenz Messung",
+        "description" : "Beispiel für eine Herzfrequenz-Messung über Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-IPAP-BREAS"
+        },
+        "name" : "Beispiel IPAP BREAS",
+        "description" : "Beispiel für IPAP von einem BREAS Beatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-Koerpergewicht-Doccla"
+        },
+        "name" : "Beispiel Körpergewicht Messung",
+        "description" : "Beispiel für eine Körpergewicht-Messung über Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-Koerpertemperatur-Doccla"
+        },
+        "name" : "Beispiel Körpertemperatur Messung",
+        "description" : "Beispiel für eine Körpertemperatur-Messung über Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-Leckage-ResMed"
+        },
+        "name" : "Beispiel Leckage ResMed",
+        "description" : "Beispiel für Leckage-Messung von einem ResMed Beatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-PEEP-Loewenstein"
+        },
+        "name" : "Beispiel PEEP Löwenstein",
+        "description" : "Beispiel für PEEP von einem Löwenstein Beatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-phd-doccla"
+        },
+        "name" : "Beispiel PHD Messgerät",
+        "description" : "Beispiel für ein Personal Health Device Messgerät von Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-phg-doccla"
+        },
+        "name" : "Beispiel PHG Tablet",
+        "description" : "Beispiel für ein Personal Health Gateway Tablet von Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phg"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/beispiel-provider-jochum"
+        },
+        "name" : "Beispiel Provider Jochum",
+        "description" : "Beispiel für den Beatmungsgeräte-Provider Jochum",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/beispiel-provider-loewenstein"
+        },
+        "name" : "Beispiel Provider Löwenstein",
+        "description" : "Beispiel für den Beatmungsgeräte-Provider Löwenstein",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/beispiel-provider-vivisol"
+        },
+        "name" : "Beispiel Provider Vivisol",
+        "description" : "Beispiel für den Beatmungsgeräte-Provider Vivisol",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-TargetVolume-BREAS"
+        },
+        "name" : "Beispiel Target Volume BREAS",
+        "description" : "Beispiel für Zielvolumen von einem BREAS Beatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Encounter"
+          }
+        ],
+        "reference" : {
+          "reference" : "Encounter/Example-Encounter-Telemedizinische-Visite"
+        },
+        "name" : "Beispiel Telemedizinische Visite",
+        "description" : "Beispiel für eine wöchentliche telemedizinische Visite eines T-CABS Patienten",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-TI-Loewenstein"
+        },
+        "name" : "Beispiel TI Löwenstein",
+        "description" : "Beispiel für Inspirationszeit von einem Löwenstein Beatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Example-TriggeredBreaths-Loewenstein"
+        },
+        "name" : "Beispiel TriggeredBreaths Löwenstein",
+        "description" : "Beispiel für getriggerte Atemzüge von einem Löwenstein Beatmungsgerät",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-breas-ahi"
+        },
+        "name" : "Beispiel VMD BREAS AHI Module",
+        "description" : "Beispiel für ein virtuelles AHI-Modul eines BREAS Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-breas-amv"
+        },
+        "name" : "Beispiel VMD BREAS AMV Module",
+        "description" : "Beispiel für ein virtuelles AMV-Modul eines BREAS Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-breas-ipap"
+        },
+        "name" : "Beispiel VMD BREAS IPAP Module",
+        "description" : "Beispiel für ein virtuelles IPAP-Modul eines BREAS Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-breas-targetvolume"
+        },
+        "name" : "Beispiel VMD BREAS Target Volume Module",
+        "description" : "Beispiel für ein virtuelles Target Volume-Modul eines BREAS Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-loewenstein-peep"
+        },
+        "name" : "Beispiel VMD Löwenstein PEEP Module",
+        "description" : "Beispiel für ein virtuelles PEEP-Modul eines Löwenstein Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-loewenstein-ti"
+        },
+        "name" : "Beispiel VMD Löwenstein TI Module",
+        "description" : "Beispiel für ein virtuelles TI-Modul eines Löwenstein Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-loewenstein-triggeredbreaths"
+        },
+        "name" : "Beispiel VMD Löwenstein TriggeredBreaths Module",
+        "description" : "Beispiel für ein virtuelles TriggeredBreaths-Modul eines Löwenstein Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-resmed-atemfrequenz"
+        },
+        "name" : "Beispiel VMD ResMed Atemfrequenz Module",
+        "description" : "Beispiel für ein virtuelles Atemfrequenz-Modul eines ResMed Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-resmed-atemzeit"
+        },
+        "name" : "Beispiel VMD ResMed Atemzeitverhältnis Module",
+        "description" : "Beispiel für ein virtuelles Atemzeitverhältnis-Modul eines ResMed Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-resmed-druck"
+        },
+        "name" : "Beispiel VMD ResMed Druck Min/Max Module",
+        "description" : "Beispiel für ein virtuelles Druck Min/Max-Modul eines ResMed Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-vmd-resmed-leckage"
+        },
+        "name" : "Beispiel VMD ResMed Leckage Module",
+        "description" : "Beispiel für ein virtuelles Leckage-Modul eines ResMed Beatmungsgeräts",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/CABS"
+        },
+        "name" : "Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS)",
+        "description" : "Das Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS) der Klinik betreut Patient:innen mit Erkrankungen der Lunge, der Muskulatur oder des Nervensystems, die vorübergehend oder dauerhaft auf Unterstützung der Atmung angewiesen sind und ist Teil des zertifizierten Weaningzentrums der Klinik.",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        },
+        "name" : "T-CABS Device Channel Beatmungsgeraet",
+        "description" : "Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+        },
+        "name" : "T-CABS Device MDS Heimbeatmungsgerät",
+        "description" : "Profil für ein Heimbeatmungsgerät",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-device-phd"
+        },
+        "name" : "T-CABS Device PHD",
+        "description" : "Profil für ein Messgerät am Patienten",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-device-phg"
+        },
+        "name" : "T-CABS Device PHG",
+        "description" : "Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wird",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        },
+        "name" : "T-CABS Device VMD Beatmungsgeraet",
+        "description" : "Profil welches ein virtuelles Subsystem oder Modul darstellt",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-devicemetric-numericmetric"
+        },
+        "name" : "T-CABS DeviceMetric NumericMetric",
+        "description" : "Profil welches eine numerische Messung, Berechnung oder Einstellung darstellt",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-diagnosticreport-visitenbefund"
+        },
+        "name" : "T-CABS DiagnosticReport Visitenbefund",
+        "description" : "Profil für einen Beurteilung der wöchentlichen, telemedizinischen Visite innerhalb der T-CABS Studie",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-encounter-kontakt"
+        },
+        "name" : "T-CABS Encounter Kontakt",
+        "description" : "Profil für einen Kontakt/ eine Visite innerhalb der T-CABS Studie",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-practitioner-funktion"
+        },
+        "name" : "T-CABS Funktion",
+        "description" : "Profil für eine Funktion einer Person innerhalb der T-CABS Studie",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+        },
+        "name" : "T-CABS Observation AF",
+        "description" : "Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-ahi"
+        },
+        "name" : "T-CABS Observation AHI",
+        "description" : "Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs aufgetretenen Apnoe- und Hypopnoe-Episoden, geteilt durch die Schlafdauer in Stunden",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-amv"
+        },
+        "name" : "T-CABS Observation AMV",
+        "description" : "Profil für ein gemessenes oder eingestelltes Atemminutenvolumen",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+        },
+        "name" : "T-CABS Observation Arterieller Blutdruck",
+        "description" : "Profil für den arteriellen Blutdruck.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-atemfrequenz"
+        },
+        "name" : "T-CABS Observation Atemfrequenz",
+        "description" : "Profil für die Atemfrequenz per Doccla",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"
+        },
+        "name" : "T-CABS Observation Atemzeitverhaeltnis",
+        "description" : "Profil für Atemzeitverhältnis",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-beatmungsparameter"
+        },
+        "name" : "T-CABS Observation Beatmungsparameter (abstract)",
+        "description" : "Abstraktes Profil für Beatmungsparameter",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-bmi"
+        },
+        "name" : "T-CABS Observation BMI",
+        "description" : "Profil für den Body Mass Index (BMI)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-druck-minmax"
+        },
+        "name" : "T-CABS Observation Druck MIN/MAX",
+        "description" : "Profil für den minimalen und maximalen Beatmungsdruck",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observationfev1"
+        },
+        "name" : "T-CABS Observation FEV1",
+        "description" : "Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-gehstrecke"
+        },
+        "name" : "T-CABS Observation Gehstrecke",
+        "description" : "Profil für die Gehstrecke pro Tag (24 Stunden)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-herzfrequenz"
+        },
+        "name" : "T-CABS Observation Herzfrequenz",
+        "description" : "Profil für die Herzfrequenz",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-ipap"
+        },
+        "name" : "T-CABS Observation IPAP",
+        "description" : "Profil für einen Inspiratory Positive Airway Pressure (IPAP)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-koerpergewicht"
+        },
+        "name" : "T-CABS Observation Koerpergewicht",
+        "description" : "Profil für das Körpergewicht",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-koerpertemperatur"
+        },
+        "name" : "T-CABS Observation Koerpertemperatur",
+        "description" : "Profil für die Körpertemperatur",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-leckage"
+        },
+        "name" : "T-CABS Observation Leckage",
+        "description" : "Profil für die Leckagerate unter Beatmung",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-peep"
+        },
+        "name" : "T-CABS Observation PEEP",
+        "description" : "Profil für einen Positiven endexspiratorischen Druck (PEEP)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-arteriellespo2"
+        },
+        "name" : "T-CABS Observation SPO2",
+        "description" : "Profil für die arterielle Sauerstoffsättigung (SPO2)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-targetvolume"
+        },
+        "name" : "T-CABS Observation Target Volume",
+        "description" : "Profil für das Zielvolumen",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-ti"
+        },
+        "name" : "T-CABS Observation TI",
+        "description" : "Profil für ein Dauer der Einatmungsphase (Inspiration)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-triggeredbreaths"
+        },
+        "name" : "T-CABS Observation TriggeredBreaths",
+        "description" : "Profil für die Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-vitalparameter"
+        },
+        "name" : "T-CABS Observation Vitalparamter",
+        "description" : "Abstraktes Profil für die gemessenen Vitalparameter von Doccla",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-organisation"
+        },
+        "name" : "T-CABS Organisation",
+        "description" : "Profil für eine Organisation die mit T-CABS Studie in Verbindung steht",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-patient"
+        },
+        "name" : "T-CABS Patient",
+        "description" : "Profil für eine/n Patient/in der T-CABS Studie",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
+          "reference" : "Patient/tcabs-patient-example"
+        },
+        "name" : "T-CABS Patient Example",
+        "description" : "Beispielpatient für das T-CABS Projekt",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-group-patientengruppe"
+        },
+        "name" : "T-CABS Patientengruppe",
+        "description" : "Profil um Patienten innerhalb der T-CABS Studie gruppieren zu können",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-practitioner-personmitfunktion"
+        },
+        "name" : "T-CABS Person mit Funktion",
+        "description" : "Profil für eine beteildigte Person innerhalb der T-CABS Studie",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Practitioner"
+          }
+        ],
+        "reference" : {
+          "reference" : "Practitioner/tcabs-practitioner-example"
+        },
+        "name" : "T-CABS Practitioner Example",
+        "description" : "Beispielärztin für das T-CABS Projekt",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "PractitionerRole"
+          }
+        ],
+        "reference" : {
+          "reference" : "PractitionerRole/tcabs-practitioner-role-example"
+        },
+        "name" : "T-CABS PractitionerRole Funktion Beispiel",
+        "description" : "Beispiel einer PractitionerRole für einen Pneumologen in der T-CABS Studie",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-procedure-beatmung"
+        },
+        "name" : "T-CABS Procedure Beatmung",
+        "description" : "Profil für die Beatmungsprozedur",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-researchstudy-studie"
+        },
+        "name" : "T-CABS ResearchStudy Studie",
+        "description" : "Profil um die Metadaten der T-CABS Studie abzubilden",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-researchsubject-studienteilnehmer"
+        },
+        "name" : "T-CABS ResearchSubject Studie",
+        "description" : "Profil um Patienten innerhalb der Studie referenzieren können",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/t-cabs-valueset-Beatmungsform"
+        },
+        "name" : "T-CABS ValueSet Beatmungsform",
+        "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/t-cabs-valueset-Beatmungsmodus"
+        },
+        "name" : "T-CABS ValueSet Beatmungsmodus",
+        "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",
+        "exampleBoolean" : false
+      }
+    ],
+    "page" : {
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "toc.html"
+        }
+      ],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "index.html"
+            }
+          ],
+          "nameUrl" : "index.html",
+          "title" : "Home",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Informationsmodell.html"
+            }
+          ],
+          "nameUrl" : "Informationsmodell.html",
+          "title" : "Informationsmodell",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Profile-Allgemein.html"
+            }
+          ],
+          "nameUrl" : "Profile-Allgemein.html",
+          "title" : "Profile Allgemein",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Profile-Vitalparameter.html"
+            }
+          ],
+          "nameUrl" : "Profile-Vitalparameter.html",
+          "title" : "Profile Vitalparameter",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Profile-Beatmungsparameter.html"
+            }
+          ],
+          "nameUrl" : "Profile-Beatmungsparameter.html",
+          "title" : "Profile Beatmungsparameter",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Beispiele-Allgemein.html"
+            }
+          ],
+          "nameUrl" : "Beispiele-Allgemein.html",
+          "title" : "Beispiele Allgemein",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Beispiele-Vitalparameter.html"
+            }
+          ],
+          "nameUrl" : "Beispiele-Vitalparameter.html",
+          "title" : "Beispiele Vitalparameter",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Beispiele-Beatmungsparameter.html"
+            }
+          ],
+          "nameUrl" : "Beispiele-Beatmungsparameter.html",
+          "title" : "Beispiele Beatmungsparameter",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Implementation-Allgemein.html"
+            }
+          ],
+          "nameUrl" : "Implementation-Allgemein.html",
+          "title" : "Implementation Allgemein",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Implementation-Vitalparameter.html"
+            }
+          ],
+          "nameUrl" : "Implementation-Vitalparameter.html",
+          "title" : "Implementation Vitalparameter",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Implementation-Beatmungsparameter.html"
+            }
+          ],
+          "nameUrl" : "Implementation-Beatmungsparameter.html",
+          "title" : "Implementation Beatmungsparameter",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Terminologien.html"
+            }
+          ],
+          "nameUrl" : "Terminologien.html",
+          "title" : "Terminologien",
+          "generation" : "markdown"
+        }
+      ]
+    },
+    "parameter" : [
+      {
+        "code" : "path-resource",
+        "value" : "input/capabilities"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/examples"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/extensions"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/models"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/operations"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/profiles"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/resources"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/vocabulary"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/maps"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/testing"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "input/history"
+      },
+      {
+        "code" : "path-resource",
+        "value" : "fsh-generated/resources"
+      },
+      {
+        "code" : "path-pages",
+        "value" : "template/config"
+      },
+      {
+        "code" : "path-pages",
+        "value" : "input/images"
+      },
+      {
+        "code" : "path-tx-cache",
+        "value" : "input-cache/txcache"
+      }
+    ]
+  }
+}
+
+```

@@ -1,0 +1,140 @@
+{
+  "resourceType": "Device",
+  "id": "beispiel-phg-doccla",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-phg"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers",
+            "code": "SYSID"
+          }
+        ]
+      },
+      "system": "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680",
+      "value": "PHG-DOCCLA-12345"
+    }
+  ],
+  "deviceName": [
+    {
+      "name": "Doccla Health Tablet",
+      "type": "user-friendly-name"
+    }
+  ],
+  "version": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "532352",
+            "display": "MDC_REG_CERT_DATA_CONTINUA_VERSION"
+          }
+        ]
+      },
+      "value": "2.1.0"
+    }
+  ],
+  "specialization": [
+    {
+      "systemType": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "8528192",
+            "display": "MDC_AI_APPLIANCE_TABLETPC"
+          }
+        ]
+      }
+    }
+  ],
+  "property": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "532353"
+          }
+        ]
+      },
+      "valueCode": [
+        {
+          "coding": [
+            {
+              "code": "528388",
+              "system": "urn:iso:std:iso:11073:10101"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "code": "528399",
+              "system": "urn:iso:std:iso:11073:10101"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "code": "528426",
+              "system": "urn:iso:std:iso:11073:10101"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "code": "528391",
+              "system": "urn:iso:std:iso:11073:10101"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "code": "69680",
+              "system": "urn:iso:std:iso:11073:10101"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "code": "528484",
+              "system": "urn:iso:std:iso:11073:10101"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "code": "528405",
+              "system": "urn:iso:std:iso:11073:10101"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "531981"
+      }
+    ]
+  },
+  "serialNumber": "PHG-SN-789012",
+  "manufacturer": "Doccla GmbH",
+  "modelNumber": "DHT-2024",
+  "patient": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}

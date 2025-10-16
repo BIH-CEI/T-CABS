@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceMetric xmlns="http://hl7.org/fhir">
+  <id value="beispiel-devicemetric-breas-amv"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DeviceMetric beispiel-devicemetric-breas-amv</b></p><a name="beispiel-devicemetric-breas-amv"> </a><a name="hcbeispiel-devicemetric-breas-amv"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-devicemetric-numericmetric.html">T-CABS DeviceMetric NumericMetric</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-metric</code>/DM-BREAS-AMV-001</p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 151996}">MDC_VENT_VOL_MINUTE</span></p><p><b>unit</b>: <span title="Codes:{http://unitsofmeasure.org L/min}">L/min</span></p><p><b>source</b>: <a href="Device-beispiel-beatmungsgeraet-breas.html">Device: extension = 8760; identifier = UDI; manufacturer = BREAS Medical; serialNumber = VIVO45-SN-789012; type = MDC_DEV_SYS_PT_VENT_MDS</a></p><p><b>parent</b>: <a href="Device-beispiel-channel-breas-amv.html">Device: identifier = http://tcabs.example.org/device-channel#CHAN-BREAS-AMV-001; type = MDC_DEV_SYS_PT_VENT_CHAN</a></p><p><b>operationalStatus</b>: On</p><p><b>color</b>: Color Blue</p><p><b>category</b>: Measurement</p><p><b>measurementPeriod</b>: Once per 10 seconds</p><h3>Calibrations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>State</b></td></tr><tr><td style="display: none">*</td><td>Two Point</td><td>Calibrated</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://tcabs.example.org/device-metric"/>
+    <value value="DM-BREAS-AMV-001"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="151996"/>
+      <display value="MDC_VENT_VOL_MINUTE"/>
+    </coding>
+  </type>
+  <unit>
+    <coding>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="L/min"/>
+      <display value="L/min"/>
+    </coding>
+  </unit>
+  <source>
+    <reference value="Device/beispiel-beatmungsgeraet-breas"/>
+  </source>
+  <parent>
+    <reference value="Device/beispiel-channel-breas-amv"/>
+  </parent>
+  <operationalStatus value="on"/>
+  <color value="blue"/>
+  <category value="measurement"/>
+  <measurementPeriod>
+    <repeat>
+      <frequency value="1"/>
+      <period value="10"/>
+      <periodUnit value="s"/>
+    </repeat>
+  </measurementPeriod>
+  <calibration>
+    <type value="two-point"/>
+    <state value="calibrated"/>
+  </calibration>
+</DeviceMetric>

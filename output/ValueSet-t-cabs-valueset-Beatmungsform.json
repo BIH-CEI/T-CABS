@@ -3,14 +3,14 @@
   "id" : "t-cabs-valueset-Beatmungsform",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet t-cabs-valueset-Beatmungsform</b></p><a name=\"t-cabs-valueset-Beatmungsform\"> </a><a name=\"hct-cabs-valueset-Beatmungsform\"> </a><a name=\"t-cabs-valueset-Beatmungsform-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/428311008\">428311008</a></td><td>Non-invasive ventilation (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/1258985005\">1258985005</a></td><td>Invasive mechanical ventilation (regime/therapy)</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet t-cabs-valueset-Beatmungsform</b></p><a name=\"t-cabs-valueset-Beatmungsform\"> </a><a name=\"hct-cabs-valueset-Beatmungsform\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/428311008\">428311008</a></td><td>Non-invasive ventilation (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/1258985005\">1258985005</a></td><td>Invasive mechanical ventilation (regime/therapy)</td></tr></table></li></ul></div>"
   },
   "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
   "version" : "0.1.0",
   "name" : "T_CABS_ValueSet_Beatmungsform",
   "title" : "T-CABS ValueSet Beatmungsform",
   "status" : "draft",
-  "date" : "2025-04-11T09:40:45+02:00",
+  "date" : "2025-10-16T18:59:10+02:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",

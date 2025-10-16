@@ -1,0 +1,49 @@
+{
+  "resourceType" : "DeviceMetric",
+  "id" : "beispiel-devicemetric-breas-ahi",
+  "meta" : {
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric beispiel-devicemetric-breas-ahi</b></p><a name=\"beispiel-devicemetric-breas-ahi\"> </a><a name=\"hcbeispiel-devicemetric-breas-ahi\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric.html\">T-CABS DeviceMetric NumericMetric</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-metric</code>/DM-BREAS-AHI-001</p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 8410792}\">MDC_SABTE_AHI_TOTAL</span></p><p><b>unit</b>: <span title=\"Codes:{http://unitsofmeasure.org {score}}\">{score}</span></p><p><b>source</b>: <a href=\"Device-beispiel-beatmungsgeraet-breas.html\">Device: extension = 8760; identifier = UDI; manufacturer = BREAS Medical; serialNumber = VIVO45-SN-789012; type = MDC_DEV_SYS_PT_VENT_MDS</a></p><p><b>parent</b>: <a href=\"Device-beispiel-channel-breas-ahi.html\">Device: identifier = http://tcabs.example.org/device-channel#CHAN-BREAS-AHI-001; type = MDC_DEV_SYS_PT_VENT_CHAN</a></p><p><b>operationalStatus</b>: On</p><p><b>color</b>: Color Green</p><p><b>category</b>: Calculation</p><p><b>measurementPeriod</b>: Once per 1 hour</p><h3>Calibrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>State</b></td></tr><tr><td style=\"display: none\">*</td><td>Offset</td><td>Calibrated</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://tcabs.example.org/device-metric",
+    "value" : "DM-BREAS-AHI-001"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "8410792",
+      "display" : "MDC_SABTE_AHI_TOTAL"
+    }]
+  },
+  "unit" : {
+    "coding" : [{
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{score}",
+      "display" : "{score}"
+    }]
+  },
+  "source" : {
+    "reference" : "Device/beispiel-beatmungsgeraet-breas"
+  },
+  "parent" : {
+    "reference" : "Device/beispiel-channel-breas-ahi"
+  },
+  "operationalStatus" : "on",
+  "color" : "green",
+  "category" : "calculation",
+  "measurementPeriod" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "h"
+    }
+  },
+  "calibration" : [{
+    "type" : "offset",
+    "state" : "calibrated"
+  }]
+}

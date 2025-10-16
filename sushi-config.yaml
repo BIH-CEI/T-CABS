@@ -24,11 +24,10 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.icu: 2025.0.4
   de.medizininformatikinitiative.kerndatensatz.person: 2025.0.0
-  de.gematik.isik-basismodul: 4.0.1
-  de.gematik.isik-vitalparameter: 4.0.1
-  de.basisprofil.r4: 1.5.2
+  de.medizininformatikinitiative.kerndatensatz.fall: 2025.0.0
+  hl7.fhir.uv.phd: 1.1.0
+  hl7.fhir.uv.pocd: 0.3.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -49,12 +48,28 @@ dependencies:
 pages:
   index.md:
     title: Home
-  logisches_modell.md:
-    title: Logisches Modell
-  profile.md:
-    title: Profile
-  beispiele.md:
-    title: Beispiele
+  Informationsmodell.md:
+    title: Informationsmodell
+  Profile-Allgemein.md:
+    title: Profile Allgemein
+  Profile-Vitalparameter.md:
+    title: Profile Vitalparameter
+  Profile-Beatmungsparameter.md:
+    title: Profile Beatmungsparameter
+  Beispiele-Allgemein.md:
+    title: Beispiele Allgemein
+  Beispiele-Vitalparameter.md:
+    title: Beispiele Vitalparameter
+  Beispiele-Beatmungsparameter.md:
+    title: Beispiele Beatmungsparameter
+  Implementation-Allgemein.md:
+    title: Implementation Allgemein
+  Implementation-Vitalparameter.md:
+    title: Implementation Vitalparameter
+  Implementation-Beatmungsparameter.md:
+    title: Implementation Beatmungsparameter
+  Terminologien.md:
+    title: Terminologien
 
 
 #   implementation.xml:
@@ -85,12 +100,23 @@ pages:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
 menu:
   Home: index.html
-  Spezifikation:
-    Logisches Modell: logisches_modell.html
-    Profile: profile.html
-    Beispiele: beispiele.html
+  Informationsmodell: Informationsmodell.html
+  Profile:
+    Profile-Allgemein: Profile-Allgemein.html
+    Profile-Vitalparameter: Profile-Vitalparameter.html
+    Profile-Beatmungsparameter: Profile-Beatmungsparameter.html
+  Beispiele:
+    Beispiele-Allgemein: Beispiele-Allgemein.html
+    Beispiele-Vitalparameter: Beispiele-Vitalparameter.html
+    Beispiele-Beatmungsparameter: Beispiele-Beatmungsparameter.html
+  Implementation:
+    Implementation-Allgemein: Implementation-Allgemein.html
+    Implementation-Vitalparameter: Implementation-Vitalparameter.html
+    Implementation-Beatmungsparameter: Implementation-Beatmungsparameter.html
+  Terminologien: Terminologien.html
   Artifacts: artifacts.html
 
 

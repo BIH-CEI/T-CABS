@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="beispiel-beatmung-resmed"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure beispiel-beatmung-resmed</b></p><a name="beispiel-beatmung-resmed"> </a><a name="hcbeispiel-beatmung-resmed"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-procedure-beatmung.html">T-CABS Procedure Beatmung</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 428311008}">Non-invasive ventilation (regime/therapy)</span></p><p><b>code</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 151796}">MDC_PRESS_AWAY_CTS_POS</span></p><p><b>subject</b>: <a href="Patient-tcabs-patient-example.html">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>performed</b>: 2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</p><p><b>usedReference</b>: <a href="Device-beispiel-beatmungsgeraet-resmed.html">Device: extension = 6500; identifier = UDI; manufacturer = ResMed; serialNumber = STELLAR150-SN-901234; type = MDC_DEV_SYS_PT_VENT_MDS</a></p></div>
+  </text>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="428311008"/>
+      <display value="Non-invasive ventilation (regime/therapy)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="151796"/>
+      <display value="MDC_PRESS_AWAY_CTS_POS"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/tcabs-patient-example"/>
+  </subject>
+  <performedPeriod>
+    <start value="2024-01-15T22:00:00Z"/>
+    <end value="2024-01-16T06:00:00Z"/>
+  </performedPeriod>
+  <usedReference>
+    <reference value="Device/beispiel-beatmungsgeraet-resmed"/>
+  </usedReference>
+</Procedure>

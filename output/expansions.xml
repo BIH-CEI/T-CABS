@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5000404b-6d7f-426a-b3b4-c5ad2fff4140"/>
+  <id value="086d71c6-6b1e-46d5-baac-9131d262eb61"/>
   <meta>
-    <lastUpdated value="2025-04-11T09:41:22.094+02:00"/>
+    <lastUpdated value="2025-10-16T18:59:37.148+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,38 +13,70 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>ValueSet </b>
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb. 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb. 2025</p>
             <p>This value set contains 2 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display (en-US)</b>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-428311008"> </a>  
+                <td>
+                  <a name="x-http://snomed.info/sct-428311008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/428311008">428311008</a>
                 </td>
-                <td>http://snomed.info/sct</td>
-                <td>Non-invasive ventilation</td>
+                <td>Non-invasive ventilation (regime/therapy)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;428311008&quot;, &quot;display&quot;: &quot;Non-invasive ventilation (regime/therapy)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;428311008&quot;&gt;&lt;display value=&quot;Non-invasive ventilation (regime/therapy)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://snomed.info/sct-1258985005"> </a>  
+                <td>
+                  <a name="x-http://snomed.info/sct-1258985005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/1258985005">1258985005</a>
                 </td>
-                <td>http://snomed.info/sct</td>
                 <td>Invasive mechanical ventilation (regime/therapy)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1258985005&quot;, &quot;display&quot;: &quot;Invasive mechanical ventilation (regime/therapy)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;1258985005&quot;&gt;&lt;display value=&quot;Invasive mechanical ventilation (regime/therapy)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -54,15 +86,15 @@
         <name value="T_CABS_ValueSet_Beatmungsform"/>
         <title value="T-CABS ValueSet Beatmungsform"/>
         <status value="draft"/>
-        <date value="2025-04-11T09:40:45+02:00"/>
+        <date value="2025-10-16T18:59:10+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:03506279-b8e4-4993-9c5f-4bfd6fb6c4a7"/>
-          <timestamp value="2025-04-11T09:42:14+02:00"/>
+          <identifier value="urn:uuid:b41da3de-99e8-4a11-9973-651341320996"/>
+          <timestamp value="2025-10-16T19:00:50+02:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
-            <valueCode value="en-US"/>
+            <valueCode value="en"/>
           </parameter>
           <parameter>
             <name value="count"/>
@@ -91,7 +123,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="428311008"/>
-            <display value="Non-invasive ventilation"/>
+            <display value="Non-invasive ventilation (regime/therapy)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -109,71 +141,156 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>ValueSet </b>
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem ISO/IEEE 11073 Medical Device Communication Nomenclature version 2024-12-05
+              <span class="copy-text-inline">
+                <button data-clipboard-text="urn:iso:std:iso:11073:10101|2024-12-05" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem ISO 11073-10101 Health informatics - Point-of-care version2023-04-26</p>
             <p>This value set contains 7 concepts</p>
-            <table class="codes">
+            <table class="codes" data-fhir="generated">
               <tr>
+                <td>
+                  <b>System</b>
+                </td>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
+                  <b>Display (en)</b>
                 </td>
                 <td>
-                  <b>Display (en-US)</b>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
                 </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-urn:iso:std:iso:11073:10101-475172"> </a>  475172
+                <td>
+                  <a name="x-urn:iso:std:iso:11073:10101-475172"> </a>
+                  <code>urn:iso:std:iso:11073:10101</code>
                 </td>
-                <td>urn:iso:std:iso:11073:10101</td>
+                <td style="white-space:nowrap">  475172</td>
                 <td>MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475172&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475172&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-urn:iso:std:iso:11073:10101-475147"> </a>  475147
+                <td>
+                  <a name="x-urn:iso:std:iso:11073:10101-475147"> </a>
+                  <code>urn:iso:std:iso:11073:10101</code>
                 </td>
-                <td>urn:iso:std:iso:11073:10101</td>
+                <td style="white-space:nowrap">  475147</td>
                 <td>MDC_VENT_MODE_ISO_AC_PC_6ACAP</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475147&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_AC_PC_6ACAP&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475147&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_AC_PC_6ACAP&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-urn:iso:std:iso:11073:10101-475148"> </a>  475148
+                <td>
+                  <a name="x-urn:iso:std:iso:11073:10101-475148"> </a>
+                  <code>urn:iso:std:iso:11073:10101</code>
                 </td>
-                <td>urn:iso:std:iso:11073:10101</td>
+                <td style="white-space:nowrap">  475148</td>
                 <td>MDC_VENT_MODE_ISO_AC_vtPC_6ACAP</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475148&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_AC_vtPC_6ACAP&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475148&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_AC_vtPC_6ACAP&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-urn:iso:std:iso:11073:10101-475154"> </a>  475154
+                <td>
+                  <a name="x-urn:iso:std:iso:11073:10101-475154"> </a>
+                  <code>urn:iso:std:iso:11073:10101</code>
                 </td>
-                <td>urn:iso:std:iso:11073:10101</td>
+                <td style="white-space:nowrap">  475154</td>
                 <td>MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475154&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475154&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-urn:iso:std:iso:11073:10101-475197"> </a>  475197
+                <td>
+                  <a name="x-urn:iso:std:iso:11073:10101-475197"> </a>
+                  <code>urn:iso:std:iso:11073:10101</code>
                 </td>
-                <td>urn:iso:std:iso:11073:10101</td>
+                <td style="white-space:nowrap">  475197</td>
                 <td>MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475197&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475197&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-urn:iso:std:iso:11073:10101-475201"> </a>  475201
+                <td>
+                  <a name="x-urn:iso:std:iso:11073:10101-475201"> </a>
+                  <code>urn:iso:std:iso:11073:10101</code>
                 </td>
-                <td>urn:iso:std:iso:11073:10101</td>
+                <td style="white-space:nowrap">  475201</td>
                 <td>MDC_VENT_MODE_ISO_CMV_VC</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475201&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_CMV_VC&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475201&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_CMV_VC&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
               <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-urn:iso:std:iso:11073:10101-151796"> </a>  151796
+                <td>
+                  <a name="x-urn:iso:std:iso:11073:10101-151796"> </a>
+                  <code>urn:iso:std:iso:11073:10101</code>
                 </td>
-                <td>urn:iso:std:iso:11073:10101</td>
+                <td style="white-space:nowrap">  151796</td>
                 <td>MDC_PRESS_AWAY_CTS_POS</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;151796&quot;, &quot;display&quot;: &quot;MDC_PRESS_AWAY_CTS_POS&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;151796&quot;&gt;&lt;display value=&quot;MDC_PRESS_AWAY_CTS_POS&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -183,15 +300,15 @@
         <name value="T_CABS_ValueSet_Beatmungsmodus"/>
         <title value="T-CABS ValueSet Beatmungsmodus"/>
         <status value="draft"/>
-        <date value="2025-04-11T09:40:45+02:00"/>
+        <date value="2025-10-16T18:59:10+02:00"/>
         <expansion>
-          <identifier value="urn:uuid:8fc32c0a-a210-440c-8e6a-238784c3fa65"/>
-          <timestamp value="2025-04-11T09:42:14+02:00"/>
+          <identifier value="urn:uuid:f43c61ee-d56c-464e-af21-d4d6fbc88432"/>
+          <timestamp value="2025-10-16T19:00:50+02:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
-            <valueCode value="en-US"/>
+            <valueCode value="en"/>
           </parameter>
           <parameter>
             <name value="count"/>
@@ -210,12 +327,16 @@
             <valueUri value="null"/>
           </parameter>
           <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="urn:iso:std:iso:11073:10101|2024-12-05"/>
+          </parameter>
+          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="urn:iso:std:iso:11073:10101|2023-04-26"/>
+            <valueUri value="urn:iso:std:iso:11073:10101|2024-12-05"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="urn:iso:std:iso:11073:10101|2023-04-26"/>
+            <valueUri value="urn:iso:std:iso:11073:10101|2024-12-05"/>
           </parameter>
           <contains>
             <system value="urn:iso:std:iso:11073:10101"/>

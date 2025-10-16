@@ -1,0 +1,65 @@
+{
+  "resourceType": "Encounter",
+  "id": "Example-Encounter-Telemedizinische-Visite",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/encounters",
+      "value": "ENC-TCABS-WEEKLY-001"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "konsil",
+          "system": "http://fhir.de/CodeSystem/kontaktart-de",
+          "display": "Konsil"
+        }
+      ]
+    }
+  ],
+  "period": {
+    "start": "2024-01-22T09:00:00Z",
+    "end": "2024-01-22T09:30:00Z"
+  },
+  "serviceProvider": {
+    "identifier": {
+      "system": "http://tcabs.example.org/providers",
+      "value": "PROV-LOEW-001"
+    },
+    "reference": "Organization/beispiel-provider-loewenstein",
+    "display": "Löwenstein Medical"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "code": "ATND",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "display": "attender"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner/tcabs-practitioner-example"
+      }
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "code": "VR",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "display": "virtual"
+  },
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}

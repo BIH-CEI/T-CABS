@@ -1,0 +1,48 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observation-ti",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti",
+  "name": "T_CABS_Observation_TI",
+  "title": "T-CABS Observation TI",
+  "status": "draft",
+  "description": "Profil für ein Dauer der Einatmungsphase (Inspiration)",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "patternCoding": {
+          "code": "152416",
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_VENT_TIME_PD_INSP"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "s"
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "patternCode": "s"
+      }
+    ]
+  }
+}

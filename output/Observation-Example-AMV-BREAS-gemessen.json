@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Example-AMV-BREAS-gemessen",
+  "meta" : {
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-AMV-BREAS-gemessen</b></p><a name=\"Example-AMV-BREAS-gemessen\"> </a><a name=\"hcExample-AMV-BREAS-gemessen\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-amv.html\">T-CABS Observation AMV</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-breas.html\">Procedure MDC_VENT_MODE_ISO_AC_PC_6ACAP</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 151996}\">MDC_VENT_VOL_MINUTE</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 23:30:00+0000</p><p><b>value</b>: 8.5 L/min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min = 'L/min')</span></p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-breas-amv.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-BREAS-AMV-001; type = MDC_VENT_VOL_MINUTE; unit = L/min; operationalStatus = on; color = blue; category = measurement; measurementPeriod = Once per 10 seconds</a></p></div>"
+  },
+  "partOf" : [{
+    "reference" : "Procedure/beispiel-beatmung-breas"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "151996",
+      "display" : "MDC_VENT_VOL_MINUTE"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/tcabs-patient-example"
+  },
+  "effectiveDateTime" : "2024-01-15T23:30:00Z",
+  "valueQuantity" : {
+    "value" : 8.5,
+    "unit" : "L/min",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "L/min"
+  },
+  "device" : {
+    "reference" : "DeviceMetric/beispiel-devicemetric-breas-amv"
+  }
+}

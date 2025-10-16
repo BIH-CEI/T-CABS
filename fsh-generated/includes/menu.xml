@@ -13,21 +13,59 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li>
+    <a href="Informationsmodell.html">Informationsmodell</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spezifikation
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profile
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="logisches_modell.html">Logisches Modell</a>
+        <a href="Profile-Allgemein.html">Profile-Allgemein</a>
       </li>
       <li>
-        <a href="profile.html">Profile</a>
+        <a href="Profile-Vitalparameter.html">Profile-Vitalparameter</a>
       </li>
       <li>
-        <a href="beispiele.html">Beispiele</a>
+        <a href="Profile-Beatmungsparameter.html">Profile-Beatmungsparameter</a>
       </li>
     </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Beispiele
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Beispiele-Allgemein.html">Beispiele-Allgemein</a>
+      </li>
+      <li>
+        <a href="Beispiele-Vitalparameter.html">Beispiele-Vitalparameter</a>
+      </li>
+      <li>
+        <a href="Beispiele-Beatmungsparameter.html">Beispiele-Beatmungsparameter</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Implementation-Allgemein.html">Implementation-Allgemein</a>
+      </li>
+      <li>
+        <a href="Implementation-Vitalparameter.html">Implementation-Vitalparameter</a>
+      </li>
+      <li>
+        <a href="Implementation-Beatmungsparameter.html">Implementation-Beatmungsparameter</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Terminologien.html">Terminologien</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>

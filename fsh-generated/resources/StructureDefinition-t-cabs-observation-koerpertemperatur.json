@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observation-koerpertemperatur",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur",
+  "name": "T_CABS_Observation_Koerpertemperatur",
+  "title": "T-CABS Observation Koerpertemperatur",
+  "status": "draft",
+  "description": "Profil für die Körpertemperatur",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:MDCType",
+        "path": "Observation.code.coding",
+        "sliceName": "MDCType",
+        "patternCoding": {
+          "code": "150364",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.code.coding:LoincCoding",
+        "path": "Observation.code.coding",
+        "sliceName": "LoincCoding",
+        "patternCoding": {
+          "code": "8310-5",
+          "system": "http://loinc.org",
+          "display": "Body temperature"
+        }
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "°C"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "Cel"
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "resourceType": "Device",
+  "id": "beispiel-beatmungsgeraet-breas",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours",
+      "valueUnsignedInt": 8760
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "UDI"
+          }
+        ]
+      },
+      "value": "BREAS-VIVO45-12345"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "70001",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_DEV_SYS_PT_VENT_MDS"
+      }
+    ]
+  },
+  "deviceName": [
+    {
+      "type": "model-name",
+      "name": "Vivo45"
+    }
+  ],
+  "manufacturer": "BREAS Medical",
+  "serialNumber": "VIVO45-SN-789012",
+  "owner": {
+    "reference": "Organization/beispiel-provider-jochum"
+  },
+  "patient": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}

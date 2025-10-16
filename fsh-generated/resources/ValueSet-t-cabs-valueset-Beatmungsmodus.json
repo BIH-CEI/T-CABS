@@ -4,7 +4,7 @@
   "name": "T_CABS_ValueSet_Beatmungsmodus",
   "id": "t-cabs-valueset-Beatmungsmodus",
   "title": "T-CABS ValueSet Beatmungsmodus",
-  "description": "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodis abzubilden",
+  "description": "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",
   "url": "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
   "compose": {
     "include": [
@@ -13,31 +13,31 @@
         "concept": [
           {
             "code": "475172",
-            "display": "Pressure Control"
+            "display": "MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC"
           },
           {
             "code": "475147",
-            "display": "PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts."
+            "display": "MDC_VENT_MODE_ISO_AC_PC_6ACAP"
           },
           {
             "code": "475148",
-            "display": "PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, with tidal volume target and pressure regulation, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts."
+            "display": "MDC_VENT_MODE_ISO_AC_vtPC_6ACAP"
           },
           {
             "code": "475154",
-            "display": "PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts."
+            "display": "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"
           },
           {
             "code": "475197",
-            "display": "BiLevel Airway Pressure Ventilation"
+            "display": "MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP"
           },
           {
             "code": "475201",
-            "display": "Volume Control Ventilation"
+            "display": "MDC_VENT_MODE_ISO_CMV_VC"
           },
           {
             "code": "151796",
-            "display": "CPAP pressure"
+            "display": "MDC_PRESS_AWAY_CTS_POS"
           }
         ]
       }

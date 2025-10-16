@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Device",
+  "id" : "beispiel-channel-resmed-leckage",
+  "meta" : {
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-channel-resmed-leckage</b></p><a name=\"beispiel-channel-resmed-leckage\"> </a><a name=\"hcbeispiel-channel-resmed-leckage\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html\">T-CABS Device Channel Beatmungsgeraet</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-channel</code>/CHAN-RESMED-LECKAGE-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Leckage Measurement Channel</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 70003}\">MDC_DEV_SYS_PT_VENT_CHAN</span></p><p><b>parent</b>: <a href=\"Device-beispiel-vmd-resmed-leckage.html\">Device: identifier = http://tcabs.example.org/device-vmd#VMD-RESMED-LECKAGE-001; type = MDC_DEV_SYS_PT_VENT_VMD</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://tcabs.example.org/device-channel",
+    "value" : "CHAN-RESMED-LECKAGE-001"
+  }],
+  "deviceName" : [{
+    "name" : "Leckage Measurement Channel",
+    "type" : "user-friendly-name"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "70003",
+      "display" : "MDC_DEV_SYS_PT_VENT_CHAN"
+    }]
+  },
+  "parent" : {
+    "reference" : "Device/beispiel-vmd-resmed-leckage"
+  }
+}

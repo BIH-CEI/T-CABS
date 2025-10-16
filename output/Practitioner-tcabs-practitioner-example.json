@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "tcabs-practitioner-example",
+  "meta" : {
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner tcabs-practitioner-example</b></p><a name=\"tcabs-practitioner-example\"> </a><a name=\"hctcabs-practitioner-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-practitioner-personmitfunktion.html\">T-CABS Person mit Funktion</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/practitioners</code>/TCABS-DOC-001</p><p><b>name</b>: Anna Schmidt </p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://tcabs.example.org/practitioners",
+    "value" : "TCABS-DOC-001"
+  }],
+  "name" : [{
+    "family" : "Schmidt",
+    "given" : ["Anna"]
+  }]
+}

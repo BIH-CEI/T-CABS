@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-druck> a fhir:DeviceMetric ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "beispiel-devicemetric-resmed-druck"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric beispiel-devicemetric-resmed-druck</b></p><a name=\"beispiel-devicemetric-resmed-druck\"> </a><a name=\"hcbeispiel-devicemetric-resmed-druck\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric.html\">T-CABS DeviceMetric NumericMetric</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-metric</code>/DM-RESMED-DRUCK-001</p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 151792}\">MDC_PRESS_AWAY</span></p><p><b>unit</b>: <span title=\"Codes:{http://unitsofmeasure.org mbar}\">mbar</span></p><p><b>source</b>: <a href=\"Device-beispiel-beatmungsgeraet-resmed.html\">Device: extension = 6500; identifier = UDI; manufacturer = ResMed; serialNumber = STELLAR150-SN-901234; type = MDC_DEV_SYS_PT_VENT_MDS</a></p><p><b>parent</b>: <a href=\"Device-beispiel-channel-resmed-druck.html\">Device: identifier = http://tcabs.example.org/device-channel#CHAN-RESMED-DRUCK-001; type = MDC_DEV_SYS_PT_VENT_CHAN</a></p><p><b>operationalStatus</b>: On</p><p><b>color</b>: brown</p><p><b>category</b>: Measurement</p><p><b>measurementPeriod</b>: Once per 30 seconds</p><h3>Calibrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>State</b></td></tr><tr><td style=\"display: none\">*</td><td>Two Point</td><td>Calibrated</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://tcabs.example.org/device-metric"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DM-RESMED-DRUCK-001" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "151792" ] ;
+       fhir:display [ fhir:v "MDC_PRESS_AWAY" ]
+     ] )
+  ] ; # 
+  fhir:unit [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mbar" ] ;
+       fhir:display [ fhir:v "mbar" ]
+     ] )
+  ] ; # 
+  fhir:source [
+     fhir:link <http://t-cabs.org/Device/beispiel-beatmungsgeraet-resmed> ;
+     fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-resmed" ]
+  ] ; # 
+  fhir:parent [
+     fhir:link <http://t-cabs.org/Device/beispiel-channel-resmed-druck> ;
+     fhir:reference [ fhir:v "Device/beispiel-channel-resmed-druck" ]
+  ] ; # 
+  fhir:operationalStatus [ fhir:v "on"] ; # 
+  fhir:color [ fhir:v "brown"] ; # 
+  fhir:category [ fhir:v "measurement"] ; # 
+  fhir:measurementPeriod [
+     fhir:repeat [
+       fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+       fhir:period [ fhir:v "30"^^xsd:decimal ] ;
+       fhir:periodUnit [ fhir:v "s" ]
+     ]
+  ] ; # 
+  fhir:calibration ( [
+     fhir:type [ fhir:v "two-point" ] ;
+     fhir:state [ fhir:v "calibrated" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

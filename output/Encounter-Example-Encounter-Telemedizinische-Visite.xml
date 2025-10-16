@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="Example-Encounter-Telemedizinische-Visite"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter Example-Encounter-Telemedizinische-Visite</b></p><a name="Example-Encounter-Telemedizinische-Visite"> </a><a name="hcExample-Encounter-Telemedizinische-Visite"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-encounter-kontakt.html">T-CABS Encounter Kontakt</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/encounters</code>/ENC-TCABS-WEEKLY-001</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR">ActCode VR</a>: virtual</p><p><b>type</b>: <span title="Codes:{http://fhir.de/CodeSystem/kontaktart-de konsil}">Konsil</span></p><p><b>subject</b>: <a href="Patient-tcabs-patient-example.html">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType ATND}">attender</span></td><td><a href="Practitioner-tcabs-practitioner-example.html">Practitioner Anna Schmidt </a></td></tr></table><p><b>period</b>: 2024-01-22 09:00:00+0000 --&gt; 2024-01-22 09:30:00+0000</p><p><b>serviceProvider</b>: <a href="Organization-beispiel-provider-loewenstein.html">Löwenstein Medical</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://tcabs.example.org/encounters"/>
+    <value value="ENC-TCABS-WEEKLY-001"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="VR"/>
+    <display value="virtual"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/kontaktart-de"/>
+      <code value="konsil"/>
+      <display value="Konsil"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/tcabs-patient-example"/>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="ATND"/>
+        <display value="attender"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/tcabs-practitioner-example"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2024-01-22T09:00:00Z"/>
+    <end value="2024-01-22T09:30:00Z"/>
+  </period>
+  <serviceProvider>
+    <reference value="Organization/beispiel-provider-loewenstein"/>
+    <identifier>
+      <system value="http://tcabs.example.org/providers"/>
+      <value value="PROV-LOEW-001"/>
+    </identifier>
+    <display value="Löwenstein Medical"/>
+  </serviceProvider>
+</Encounter>
