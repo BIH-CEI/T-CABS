@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "t-cabs-valueset-phdtyp",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet t-cabs-valueset-phdtyp</b></p><a name=\"t-cabs-valueset-phdtyp\"> </a><a name=\"hct-cabs-valueset-phdtyp\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-mdc.html\"><code>urn:iso:std:iso:11073:10101</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>528388</td><td>MDC_DEV_SPEC_PROFILE_PULS_OXIM</td></tr><tr><td>528399</td><td>MDC_DEV_SPEC_PROFILE_SCALE</td></tr><tr><td>69876</td><td>MDC_DEV_METER_STRENGTH_MUSCL</td></tr><tr><td>528391</td><td>MDC_DEV_SPEC_PROFILE_BP</td></tr><tr><td>69680</td><td>MDC_DEV_ANALY_AWAY_MULTI_PARAM</td></tr><tr><td>528484</td><td>MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER</td></tr><tr><td>528405</td><td>MDC_DEV_SPEC_PROFILE_BCA</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+  "version" : "0.1.0",
+  "name" : "T_CABS_ValueSet_PHDTyp",
+  "title" : "T-CABS ValueSet PHD Type",
+  "status" : "draft",
+  "date" : "2025-11-19T11:55:29+01:00",
+  "publisher" : "BIH-CEI",
+  "contact" : [{
+    "name" : "BIH-CEI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "This ValueSet contains codes to represent the different PHD measurement devices",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:iso:std:iso:11073:10101",
+      "concept" : [{
+        "code" : "528388",
+        "display" : "MDC_DEV_SPEC_PROFILE_PULS_OXIM"
+      },
+      {
+        "code" : "528399",
+        "display" : "MDC_DEV_SPEC_PROFILE_SCALE"
+      },
+      {
+        "code" : "69876",
+        "display" : "MDC_DEV_METER_STRENGTH_MUSCL"
+      },
+      {
+        "code" : "528391",
+        "display" : "MDC_DEV_SPEC_PROFILE_BP"
+      },
+      {
+        "code" : "69680",
+        "display" : "MDC_DEV_ANALY_AWAY_MULTI_PARAM"
+      },
+      {
+        "code" : "528484",
+        "display" : "MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER"
+      },
+      {
+        "code" : "528405",
+        "display" : "MDC_DEV_SPEC_PROFILE_BCA"
+      }]
+    }]
+  }
+}

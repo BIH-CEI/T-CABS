@@ -1,18 +1,18 @@
-# T-CABS Observation Arterieller Blutdruck - v0.1.0
+# T-CABS Observation Arterial Blood Pressure - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation Arterieller Blutdruck**
+* **T-CABS Observation Arterial Blood Pressure**
 
-## Resource Profile: T-CABS Observation Arterieller Blutdruck 
+## Resource Profile: T-CABS Observation Arterial Blood Pressure 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_ArteriellerBlutdruck |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_ArteriellerBlutdruck |
 
  
-Profil für den arteriellen Blutdruck. 
+Profile for arterial blood pressure. Compatibility: For the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the[ISiKBlutdruckArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell) 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_ArteriellerBlutdruck",
-  "title" : "T-CABS Observation Arterieller Blutdruck",
+  "title" : "T-CABS Observation Arterial Blood Pressure",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für den arteriellen Blutdruck.",
+  "description" : "Profile for arterial blood pressure.\nCompatibility:\nFor the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the [ISiKBlutdruckArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -91,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -114,14 +125,8 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
         "sliceName" : "LoincCoding",
         "patternCoding" : {
           "system" : "http://loinc.org",
-          "code" : "85354-9",
-          "display" : "Blood pressure panel with all children optional"
+          "code" : "85354-9"
         }
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "max" : "0"
       },
       {
         "id" : "Observation.component",
@@ -313,6 +318,26 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
         "mustSupport" : true
       },
       {
+        "id" : "Observation.component:compound",
+        "path" : "Observation.component",
+        "sliceName" : "compound"
+      },
+      {
+        "id" : "Observation.component:compound.code",
+        "path" : "Observation.component.code",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:compound.value[x]",
+        "path" : "Observation.component.value[x]",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:compound.dataAbsentReason",
+        "path" : "Observation.component.dataAbsentReason",
+        "mustSupport" : true
+      },
+      {
         "id" : "Observation.component:accuracyComponent",
         "path" : "Observation.component",
         "sliceName" : "accuracyComponent"
@@ -360,106 +385,6 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
       },
       {
         "id" : "Observation.component:accuracyComponent.dataAbsentReason",
-        "path" : "Observation.component.dataAbsentReason",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:alertOpStateComponent",
-        "path" : "Observation.component",
-        "sliceName" : "alertOpStateComponent"
-      },
-      {
-        "id" : "Observation.component:alertOpStateComponent.code",
-        "path" : "Observation.component.code",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:alertOpStateComponent.value[x]",
-        "path" : "Observation.component.value[x]",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:alertOpStateComponent.dataAbsentReason",
-        "path" : "Observation.component.dataAbsentReason",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:currentLimitsComponent",
-        "path" : "Observation.component",
-        "sliceName" : "currentLimitsComponent"
-      },
-      {
-        "id" : "Observation.component:currentLimitsComponent.code",
-        "path" : "Observation.component.code",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:currentLimitsComponent.value[x]",
-        "path" : "Observation.component.value[x]",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:currentLimitsComponent.dataAbsentReason",
-        "path" : "Observation.component.dataAbsentReason",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:alertOpTextStringComponent",
-        "path" : "Observation.component",
-        "sliceName" : "alertOpTextStringComponent"
-      },
-      {
-        "id" : "Observation.component:alertOpTextStringComponent.code",
-        "path" : "Observation.component.code",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:alertOpTextStringComponent.value[x]",
-        "path" : "Observation.component.value[x]",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:alertOpTextStringComponent.dataAbsentReason",
-        "path" : "Observation.component.dataAbsentReason",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:measurementConfidence95Component",
-        "path" : "Observation.component",
-        "sliceName" : "measurementConfidence95Component"
-      },
-      {
-        "id" : "Observation.component:measurementConfidence95Component.code",
-        "path" : "Observation.component.code",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:measurementConfidence95Component.value[x]",
-        "path" : "Observation.component.value[x]",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:measurementConfidence95Component.dataAbsentReason",
-        "path" : "Observation.component.dataAbsentReason",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:thresholdNotificationTextStringComponent",
-        "path" : "Observation.component",
-        "sliceName" : "thresholdNotificationTextStringComponent"
-      },
-      {
-        "id" : "Observation.component:thresholdNotificationTextStringComponent.code",
-        "path" : "Observation.component.code",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:thresholdNotificationTextStringComponent.value[x]",
-        "path" : "Observation.component.value[x]",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Observation.component:thresholdNotificationTextStringComponent.dataAbsentReason",
         "path" : "Observation.component.dataAbsentReason",
         "mustSupport" : true
       },

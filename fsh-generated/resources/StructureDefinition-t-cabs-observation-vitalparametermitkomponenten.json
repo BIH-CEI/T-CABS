@@ -1,0 +1,125 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observation-vitalparametermitkomponenten",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
+  "name": "T_CABS_Observation_VitalparameterMitKomponenten",
+  "title": "T-CABS Observation Vital Parameter with Components",
+  "status": "draft",
+  "description": "Abstract profile for measured vital parameters with multiple values",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCompoundNumericObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.extension.value[x]",
+        "path": "Observation.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-phg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "min": 2
+      },
+      {
+        "id": "Observation.category:PHD-Observation",
+        "path": "Observation.category",
+        "sliceName": "PHD-Observation"
+      },
+      {
+        "id": "Observation.category:PHD-Observation.coding",
+        "path": "Observation.category.coding",
+        "patternCoding": {
+          "code": "phd-observation",
+          "system": "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"
+        }
+      },
+      {
+        "id": "Observation.category:VSCat",
+        "path": "Observation.category",
+        "sliceName": "VSCat",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:VSCat.coding",
+        "path": "Observation.category.coding",
+        "max": "1",
+        "patternCoding": {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 2
+      },
+      {
+        "id": "Observation.code.coding:LoincCoding",
+        "path": "Observation.code.coding",
+        "sliceName": "LoincCoding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Reference to the patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.device",
+        "path": "Observation.device",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

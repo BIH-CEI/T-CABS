@@ -1,23 +1,23 @@
-# T-CABS Organisation - v0.1.0
+# T-CABS Organization - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Organisation**
+* **T-CABS Organization**
 
-## Resource Profile: T-CABS Organisation 
+## Resource Profile: T-CABS Organization 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-organisation | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Organisation |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Organisation |
 
  
-Profil für eine Organisation die mit T-CABS Studie in Verbindung steht 
+Profile for an organization associated with the T-CABS study. Compatibility: The T_CABS_Organisation profile aims for compatibility with the ISiKOrganisation version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Organisation are also valid against the[ISiKOrganisation](https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation) 
 
 **Usages:**
 
-* Refer to this Profile: [T-CABS Patientengruppe](StructureDefinition-t-cabs-group-patientengruppe.md)
-* Examples for this Profile: [Charité Campus Mitte](Organization-CABS.md), [Jochum GmbH](Organization-beispiel-provider-jochum.md), [Löwenstein Medical](Organization-beispiel-provider-loewenstein.md) and [Vivisol Deutschland GmbH](Organization-beispiel-provider-vivisol.md)
+* Refer to this Profile: [T-CABS Patient Group](StructureDefinition-t-cabs-group-patientengruppe.md)
+* Examples for this Profile: [Charité Campus Mitte](Organization-CABS.md), [Doccla Deutschland GmbH](Organization-beispiel-provider-doccla.md), [Jochum GmbH](Organization-beispiel-provider-jochum.md), [Löwenstein Medical](Organization-beispiel-provider-loewenstein.md) and [Vivisol Deutschland GmbH](Organization-beispiel-provider-vivisol.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-organisation)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-organisation.
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
   "version" : "0.1.0",
   "name" : "T_CABS_Organisation",
-  "title" : "T-CABS Organisation",
+  "title" : "T-CABS Organization",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -50,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-organisation.
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für eine Organisation die mit T-CABS Studie in Verbindung steht",
+  "description" : "Profile for an organization associated with the T-CABS study.\nCompatibility:\nThe T_CABS_Organisation profile aims for compatibility with the ISiKOrganisation version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Organisation are also valid against the [ISiKOrganisation](https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

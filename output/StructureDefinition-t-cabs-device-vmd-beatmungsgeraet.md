@@ -1,22 +1,22 @@
-# T-CABS Device VMD Beatmungsgeraet - v0.1.0
+# T-CABS Device VMD Ventilator - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Device VMD Beatmungsgeraet**
+* **T-CABS Device VMD Ventilator**
 
-## Resource Profile: T-CABS Device VMD Beatmungsgeraet 
+## Resource Profile: T-CABS Device VMD Ventilator 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Device_VMD_Beatmungsgeraet |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Device_VMD_Beatmungsgeraet |
 
  
-Profil welches ein virtuelles Subsystem oder Modul darstellt 
+Profile representing a virtual subsystem or module 
 
 **Usages:**
 
-* Refer to this Profile: [T-CABS Device Channel Beatmungsgeraet](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md)
+* Refer to this Profile: [T-CABS Device Channel Ventilator](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md)
 * Examples for this Profile: [Device/beispiel-vmd-breas-ahi](Device-beispiel-vmd-breas-ahi.md), [Device/beispiel-vmd-breas-amv](Device-beispiel-vmd-breas-amv.md), [Device/beispiel-vmd-breas-ipap](Device-beispiel-vmd-breas-ipap.md), [Device/beispiel-vmd-breas-targetvolume](Device-beispiel-vmd-breas-targetvolume.md)...Show 7 more,[Device/beispiel-vmd-loewenstein-peep](Device-beispiel-vmd-loewenstein-peep.md),[Device/beispiel-vmd-loewenstein-ti](Device-beispiel-vmd-loewenstein-ti.md),[Device/beispiel-vmd-loewenstein-triggeredbreaths](Device-beispiel-vmd-loewenstein-triggeredbreaths.md),[Device/beispiel-vmd-resmed-atemfrequenz](Device-beispiel-vmd-resmed-atemfrequenz.md),[Device/beispiel-vmd-resmed-atemzeit](Device-beispiel-vmd-resmed-atemzeit.md),[Device/beispiel-vmd-resmed-druck](Device-beispiel-vmd-resmed-druck.md)and[Device/beispiel-vmd-resmed-leckage](Device-beispiel-vmd-resmed-leckage.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet)
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-vmd-be
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
   "version" : "0.1.0",
   "name" : "T_CABS_Device_VMD_Beatmungsgeraet",
-  "title" : "T-CABS Device VMD Beatmungsgeraet",
+  "title" : "T-CABS Device VMD Ventilator",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -50,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-vmd-be
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil welches ein virtuelles Subsystem oder Modul darstellt",
+  "description" : "Profile representing a virtual subsystem or module",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -94,15 +105,6 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-vmd-be
       {
         "id" : "Device",
         "path" : "Device"
-      },
-      {
-        "id" : "Device.type.coding",
-        "path" : "Device.type.coding",
-        "patternCoding" : {
-          "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "70002",
-          "display" : "MDC_DEV_SYS_PT_VENT_VMD"
-        }
       },
       {
         "id" : "Device.parent",

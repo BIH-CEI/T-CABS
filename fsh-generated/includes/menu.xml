@@ -14,37 +14,37 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="Informationsmodell.html">Informationsmodell</a>
+    <a href="Information-Model.html">Information Model</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profile
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profiles
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Profile-Allgemein.html">Profile-Allgemein</a>
+        <a href="Cross-Domain-Profiles.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Profile-Vitalparameter.html">Profile-Vitalparameter</a>
+        <a href="Vital-Data-Profiles.html">Vital Data</a>
       </li>
       <li>
-        <a href="Profile-Beatmungsparameter.html">Profile-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Profiles.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Beispiele
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Beispiele-Allgemein.html">Beispiele-Allgemein</a>
+        <a href="Cross-Domain-Examples.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Beispiele-Vitalparameter.html">Beispiele-Vitalparameter</a>
+        <a href="Vital-Data-Examples.html">Vital Data</a>
       </li>
       <li>
-        <a href="Beispiele-Beatmungsparameter.html">Beispiele-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Examples.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
@@ -54,18 +54,18 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Implementation-Allgemein.html">Implementation-Allgemein</a>
+        <a href="Cross-Domain-Implementation.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Implementation-Vitalparameter.html">Implementation-Vitalparameter</a>
+        <a href="Vital-Data-Implementation.html">Vital Data</a>
       </li>
       <li>
-        <a href="Implementation-Beatmungsparameter.html">Implementation-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Implementation.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="Terminologien.html">Terminologien</a>
+    <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>

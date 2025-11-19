@@ -1,18 +1,18 @@
-# T-CABS Device Channel Beatmungsgeraet - v0.1.0
+# T-CABS Device Channel Ventilator - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Device Channel Beatmungsgeraet**
+* **T-CABS Device Channel Ventilator**
 
-## Resource Profile: T-CABS Device Channel Beatmungsgeraet 
+## Resource Profile: T-CABS Device Channel Ventilator 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Device_Channel_Beatmungsgeraet |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Device_Channel_Beatmungsgeraet |
 
  
-Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics 
+Profile representing a channel for grouping DeviceMetrics 
 
 **Usages:**
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-channe
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
   "version" : "0.1.0",
   "name" : "T_CABS_Device_Channel_Beatmungsgeraet",
-  "title" : "T-CABS Device Channel Beatmungsgeraet",
+  "title" : "T-CABS Device Channel Ventilator",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -50,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-channe
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics",
+  "description" : "Profile representing a channel for grouping DeviceMetrics",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -94,15 +105,6 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-channe
       {
         "id" : "Device",
         "path" : "Device"
-      },
-      {
-        "id" : "Device.type.coding",
-        "path" : "Device.type.coding",
-        "patternCoding" : {
-          "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "70003",
-          "display" : "MDC_DEV_SYS_PT_VENT_CHAN"
-        }
       },
       {
         "id" : "Device.parent",

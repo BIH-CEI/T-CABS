@@ -1,4 +1,4 @@
-# T-CABS Observation FEV1 - v0.1.0
+# T-CABS Observation FEV1 - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observationfev1 | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_FEV1 |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_FEV1 |
 
  
-Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1) 
+Profile for Forced Expiratory Volume in 1 Second (FEV1) 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observationfe
   "name" : "T_CABS_Observation_FEV1",
   "title" : "T-CABS Observation FEV1",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observationfe
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1)",
+  "description" : "Profile for Forced Expiratory Volume in 1 Second (FEV1)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observationfe
         "sliceName" : "LoincCoding",
         "patternCoding" : {
           "system" : "http://loinc.org",
-          "code" : "20150-9",
-          "display" : "FEV1"
+          "code" : "20150-9"
         }
       },
       {

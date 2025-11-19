@@ -1,10 +1,10 @@
 Profile: T_CABS_Procedure_Beatmung
 Parent: Procedure
 Id: t-cabs-procedure-beatmung
-Title: "T-CABS Procedure Beatmung"
-Description: "Profil für die Beatmungsprozedur"
+Title: "T-CABS Procedure Ventilation"
+Description: "Profile for the ventilation procedure"
 
-* status MS 
+* status 1..1 MS 
 
 * category 1..1 MS
 * category.coding ^slicing.discriminator.type = #pattern
@@ -29,19 +29,20 @@ Description: "Profil für die Beatmungsprozedur"
 * usedReference 1..1 MS
 * usedReference only Reference(t-cabs-device-mds-beatmungsgeraet) 
 
-* subject MS
+* subject 1..1 MS
 * subject only Reference(T_CABS_Patient)
 
 * performed[x] 1..1 MS
 * performed[x] only Period
 
 * bodySite MS
+* bodySite from t-cabs-valueset-beatmungsstelle (required)
 
 Instance: beispiel-beatmung-breas
 InstanceOf: T_CABS_Procedure_Beatmung
 Usage: #example
-Title: "Beispiel Beatmung BREAS"
-Description: "Beispiel für eine Beatmungsprozedur mit BREAS Gerät (PCV Modus)"
+Title: "Example Ventilation BREAS"
+Description: "Example of a ventilation procedure with BREAS device (PCV mode)"
 * status = #completed
 * category.coding[beatmungsform] = $SCT#1258985005 "Invasive mechanical ventilation (regime/therapy)"
 * code.coding[beatmungsmodus] = $IEEE-11073#475147 "MDC_VENT_MODE_ISO_AC_PC_6ACAP"
@@ -53,32 +54,26 @@ Description: "Beispiel für eine Beatmungsprozedur mit BREAS Gerät (PCV Modus)"
 Instance: beispiel-beatmung-loewenstein
 InstanceOf: T_CABS_Procedure_Beatmung
 Usage: #example
-Title: "Beispiel Beatmung Löwenstein"
-Description: "Beispiel für eine Beatmungsprozedur mit Löwenstein Gerät (PSV Modus)"
+Title: "Example Ventilation Löwenstein"
+Description: "Example of a ventilation procedure with Löwenstein device (PSV mode)"
 * status = #completed
 * category.coding[beatmungsform] = $SCT#1258985005 "Invasive mechanical ventilation (regime/therapy)"
 * code.coding[beatmungsmodus] = $IEEE-11073#475154 "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"
 * subject = Reference(Patient/tcabs-patient-example)
 * performedPeriod.start = "2024-01-15T22:00:00Z"
-* performedPeriod.end = "2024-01-16T06:00:00Z"
+* performedPeriod.end = "2024-02-18T06:00:00Z"
 * usedReference = Reference(Device/beispiel-beatmungsgeraet-loewenstein)
 
 Instance: beispiel-beatmung-resmed
 InstanceOf: T_CABS_Procedure_Beatmung
 Usage: #example
-Title: "Beispiel Beatmung ResMed"
-Description: "Beispiel für eine Beatmungsprozedur mit ResMed Gerät (CPAP Modus)"
+Title: "Example Ventilation ResMed"
+Description: "Example of a ventilation procedure with ResMed device (CPAP mode)"
 * status = #completed
 * category.coding[beatmungsform] = $SCT#428311008 "Non-invasive ventilation (regime/therapy)"
 * code.coding[beatmungsmodus] = $IEEE-11073#151796 "MDC_PRESS_AWAY_CTS_POS"
 * subject = Reference(Patient/tcabs-patient-example)
 * performedPeriod.start = "2024-01-15T22:00:00Z"
-* performedPeriod.end = "2024-01-16T06:00:00Z"
+* performedPeriod.end = "2024-03-13T06:00:00Z"
 * usedReference = Reference(Device/beispiel-beatmungsgeraet-resmed)
 
-/*
-.bodysite  ??
-orotracheal
-Trachealkanüle
-Maske?
-*/

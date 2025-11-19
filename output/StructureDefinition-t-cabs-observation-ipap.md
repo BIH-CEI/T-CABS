@@ -1,4 +1,4 @@
-# T-CABS Observation IPAP - v0.1.0
+# T-CABS Observation IPAP - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_IPAP |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_IPAP |
 
  
-Profil für einen Inspiratory Positive Airway Pressure (IPAP) 
+Profile for Inspiratory Positive Airway Pressure (IPAP) 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-i
   "name" : "T_CABS_Observation_IPAP",
   "title" : "T-CABS Observation IPAP",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-i
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für einen Inspiratory Positive Airway Pressure (IPAP)",
+  "description" : "Profile for Inspiratory Positive Airway Pressure (IPAP)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-i
         "path" : "Observation.code.coding",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "8410976",
-          "display" : "MDC_SABTE_PRESS_IPAP_SET"
+          "code" : "8410976"
         }
       },
       {

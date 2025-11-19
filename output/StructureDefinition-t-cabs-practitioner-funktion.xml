@@ -12,18 +12,25 @@
   <url value="http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion"/>
   <version value="0.1.0"/>
   <name value="T_CABS_PractitionerRole_Funktion"/>
-  <title value="T-CABS Funktion"/>
+  <title value="T-CABS Function"/>
   <status value="draft"/>
-  <date value="2025-10-16T18:59:10+02:00"/>
+  <date value="2025-11-19T11:55:29+01:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="https://www.bihealth.org/"/>
     </telecom>
   </contact>
-  <description value="Profil für eine Funktion einer Person innerhalb der T-CABS Studie"/>
+  <description value="Profile for a function of a person within the T-CABS study"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>

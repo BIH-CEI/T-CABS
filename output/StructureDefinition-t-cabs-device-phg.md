@@ -1,4 +1,4 @@
-# T-CABS Device PHG - v0.1.0
+# T-CABS Device PHG - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-phg | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Device_PHG |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Device_PHG |
 
  
-Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wird 
+Profile for a tablet used as a gateway device 
 
 **Usages:**
 
+* Refer to this Profile: [T-CABS Observation Vital Parameter](StructureDefinition-t-cabs-observation-vitalparameter.md) and [T-CABS Observation Vital Parameter with Components](StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.md)
 * Examples for this Profile: [Device/beispiel-phg-doccla](Device-beispiel-phg-doccla.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-device-phg)
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phg.cs
   "name" : "T_CABS_Device_PHG",
   "title" : "T-CABS Device PHG",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phg.cs
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wird",
+  "description" : "Profile for a tablet used as a gateway device",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -107,7 +119,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phg.cs
       {
         "id" : "Device.serialNumber",
         "path" : "Device.serialNumber",
-        "short" : "Seriennummer des Gerätes",
+        "short" : "Serial number of the device",
         "mustSupport" : true
       },
       {
@@ -123,14 +135,13 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phg.cs
         "sliceName" : "MDCType",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "8528192",
-          "display" : "MDC_AI_APPLIANCE_TABLETPC"
+          "code" : "8528192"
         }
       },
       {
         "id" : "Device.patient",
         "path" : "Device.patient",
-        "short" : "Referenz auf den Patienten",
+        "short" : "Reference to the patient",
         "min" : 1,
         "type" : [
           {

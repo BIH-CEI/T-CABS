@@ -3,9 +3,9 @@
   "id": "t-cabs-observation-herzfrequenz",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
   "name": "T_CABS_Observation_Herzfrequenz",
-  "title": "T-CABS Observation Herzfrequenz",
+  "title": "T-CABS Observation Heart Rate",
   "status": "draft",
-  "description": "Profil für die Herzfrequenz",
+  "description": "Profile for heart rate.\nCompatibility:\nFor the profile T_CABS_Observation_Herzfrequenz, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Herzfrequenz are also valid against the [ISiKHerzfrequenz](https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,7 @@
         "sliceName": "LoincCoding",
         "patternCoding": {
           "code": "8867-4",
-          "system": "http://loinc.org",
-          "display": "Heart rate"
+          "system": "http://loinc.org"
         }
       },
       {

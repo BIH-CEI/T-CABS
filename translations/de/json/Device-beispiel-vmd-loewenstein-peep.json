@@ -1,0 +1,23 @@
+{
+  "id" : "Device-beispiel-vmd-loewenstein-peep",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "Device.deviceName.name",
+          "context" : "The name of the device.",
+          "source" : "Prisma VENT30 PEEP Module",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "MDC_DEV_ANALY_PRESS_AWAY_VMD",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

@@ -12,37 +12,46 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric beispiel-devicemetric-loewenstein-peep</b></p><a name=\"beispiel-devicemetric-loewenstein-peep\"> </a><a name=\"hcbeispiel-devicemetric-loewenstein-peep\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric.html\">T-CABS DeviceMetric NumericMetric</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-metric</code>/DM-LOEW-PEEP-001</p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 152720}\">MDC_VENT_PRESS_AWAY_DELTA</span></p><p><b>unit</b>: <span title=\"Codes:{http://unitsofmeasure.org mbar}\">mbar</span></p><p><b>source</b>: <a href=\"Device-beispiel-beatmungsgeraet-loewenstein.html\">Device: extension = 12450; identifier = UDI; manufacturer = Löwenstein Medical; serialNumber = PRISMA30-SN-345678; type = MDC_DEV_SYS_PT_VENT_MDS</a></p><p><b>parent</b>: <a href=\"Device-beispiel-channel-loewenstein-peep.html\">Device: identifier = http://tcabs.example.org/device-channel#CHAN-LOEW-PEEP-001; type = MDC_DEV_SYS_PT_VENT_CHAN</a></p><p><b>operationalStatus</b>: On</p><p><b>color</b>: Color Magenta</p><p><b>category</b>: Calculation</p><p><b>measurementPeriod</b>: Once per 1 minute</p><h3>Calibrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>State</b></td></tr><tr><td style=\"display: none\">*</td><td>Gain</td><td>Calibrated</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric beispiel-devicemetric-loewenstein-peep</b></p><a name=\"beispiel-devicemetric-loewenstein-peep\"> </a><a name=\"hcbeispiel-devicemetric-loewenstein-peep\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric.html\">T-CABS DeviceMetric NumericMetric</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-metric</code>/DM-LOEW-PEEP-001</p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 152720}\">MDC_VENT_PRESS_AWAY_DELTA</span></p><p><b>unit</b>: <span title=\"Codes:{http://unitsofmeasure.org mbar}\">mbar</span></p><p><b>source</b>: <a href=\"Device-beispiel-beatmungsgeraet-loewenstein.html\">Device: extension = 12450; identifier = UDI; manufacturer = Löwenstein Medical; serialNumber = PRISMA30-SN-345678; type = MDC_DEV_SYS_PT_VENT_MDS</a></p><p><b>parent</b>: <a href=\"Device-beispiel-channel-loewenstein-peep.html\">Device: identifier = http://tcabs.example.org/device-channel#CHAN-LOEW-PEEP-001; type = MDC_DEV_CHAN</a></p><p><b>operationalStatus</b>: On</p><p><b>color</b>: Color Magenta</p><p><b>category</b>: Calculation</p><p><b>measurementPeriod</b>: Once per 1 minute</p><h3>Calibrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>State</b></td></tr><tr><td style=\"display: none\">*</td><td>Gain</td><td>Calibrated</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://tcabs.example.org/device-metric"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://tcabs.example.org/device-metric"^^xsd:anyURI ;
+       fhir:l <http://tcabs.example.org/device-metric>
+     ] ;
      fhir:value [ fhir:v "DM-LOEW-PEEP-001" ]
   ] ) ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "152720" ] ;
        fhir:display [ fhir:v "MDC_VENT_PRESS_AWAY_DELTA" ]
      ] )
   ] ; # 
   fhir:unit [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mbar" ] ;
        fhir:display [ fhir:v "mbar" ]
      ] )
   ] ; # 
   fhir:source [
-     fhir:link <http://t-cabs.org/Device/beispiel-beatmungsgeraet-loewenstein> ;
+     fhir:l <http://t-cabs.org/Device/beispiel-beatmungsgeraet-loewenstein> ;
      fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-loewenstein" ]
   ] ; # 
   fhir:parent [
-     fhir:link <http://t-cabs.org/Device/beispiel-channel-loewenstein-peep> ;
+     fhir:l <http://t-cabs.org/Device/beispiel-channel-loewenstein-peep> ;
      fhir:reference [ fhir:v "Device/beispiel-channel-loewenstein-peep" ]
   ] ; # 
   fhir:operationalStatus [ fhir:v "on"] ; # 

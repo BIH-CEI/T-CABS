@@ -1,12 +1,14 @@
-# Beispiel Gehstrecke Messung - v0.1.0
+# Example Walking Distance Measurement - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Gehstrecke Messung**
+* **Example Walking Distance Measurement**
 
-## Example Observation: Beispiel Gehstrecke Messung
+## Example Observation: Example Walking Distance Measurement
 
-Profile: [T-CABS Observation Gehstrecke](StructureDefinition-t-cabs-observation-gehstrecke.md)
+Profile: [T-CABS Observation Walking Distance](StructureDefinition-t-cabs-observation-gehstrecke.md)
+
+**Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
 **status**: Final
 
@@ -20,7 +22,7 @@ Profile: [T-CABS Observation Gehstrecke](StructureDefinition-t-cabs-observation-
 
 **value**: 8520 {#}/(24.h)(Details: UCUM code{#}/(24.h) = '{#}/(24.h)')
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
 
 
 
@@ -35,6 +37,14 @@ Profile: [T-CABS Observation Gehstrecke](StructureDefinition-t-cabs-observation-
       "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke"
     ]
   },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference" : {
+        "reference" : "Device/beispiel-phg-doccla"
+      }
+    }
+  ],
   "status" : "final",
   "category" : [
     {

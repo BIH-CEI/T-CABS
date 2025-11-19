@@ -1,12 +1,12 @@
-# Beispiel Channel Löwenstein TriggeredBreaths - v0.1.0
+# Example Channel Löwenstein TriggeredBreaths - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Channel Löwenstein TriggeredBreaths**
+* **Example Channel Löwenstein TriggeredBreaths**
 
-## Example Device: Beispiel Channel Löwenstein TriggeredBreaths
+## Example Device: Example Channel Löwenstein TriggeredBreaths
 
-Profile: [T-CABS Device Channel Beatmungsgeraet](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md)
+Profile: [T-CABS Device Channel Ventilator](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md)
 
 **identifier**: `http://tcabs.example.org/device-channel`/CHAN-LOEW-TRIG-001
 
@@ -17,9 +17,9 @@ Profile: [T-CABS Device Channel Beatmungsgeraet](StructureDefinition-t-cabs-devi
 | - | **Name** | **Type** |
 | * | TriggeredBreaths Measurement Channel | User Friendly name |
 
-**type**: MDC_DEV_SYS_PT_VENT_CHAN
+**type**: MDC_DEV_CHAN
 
-**parent**: [Device: identifier = http://tcabs.example.org/device-vmd#VMD-LOEW-TRIG-001; type = MDC_DEV_SYS_PT_VENT_VMD](Device-beispiel-vmd-loewenstein-triggeredbreaths.md)
+**parent**: [Device: identifier = http://tcabs.example.org/device-vmd#VMD-LOEW-TRIG-001; type = MDC_DEV_ANALY_BREATH_PATTERN_VMD](Device-beispiel-vmd-loewenstein-triggeredbreaths.md)
 
 
 
@@ -50,8 +50,8 @@ Profile: [T-CABS Device Channel Beatmungsgeraet](StructureDefinition-t-cabs-devi
     "coding" : [
       {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "70003",
-        "display" : "MDC_DEV_SYS_PT_VENT_CHAN"
+        "code" : "69635",
+        "display" : "MDC_DEV_CHAN"
       }
     ]
   },

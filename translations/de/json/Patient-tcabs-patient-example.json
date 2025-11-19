@@ -1,0 +1,23 @@
+{
+  "id" : "Patient-tcabs-patient-example",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "HumanName.family",
+          "context" : "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
+          "source" : "Mustermann",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.given",
+          "context" : "Given name.",
+          "source" : "Max",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

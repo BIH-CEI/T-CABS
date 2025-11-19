@@ -1,0 +1,107 @@
+{
+  "id" : "ValueSet-t-cabs-valueset-Beatmungsmodus",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "ValueSet.name",
+          "context" : "A natural language name identifying the value set. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "source" : "T_CABS_ValueSet_Beatmungsmodus",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.title",
+          "context" : "A short, descriptive, user-friendly title for the value set.",
+          "source" : "T-CABS ValueSet Beatmungsmodus",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.publisher",
+          "context" : "The name of the organization or individual that published the value set.",
+          "source" : "BIH-CEI",
+          "target" : null
+        },
+        {
+          "id" : "ContactDetail.name",
+          "context" : "The name of an individual to contact.",
+          "source" : "BIH-CEI",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.description",
+          "context" : "A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.",
+          "source" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Germany",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.display",
+          "context" : "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.",
+          "source" : "MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.display",
+          "context" : "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.",
+          "source" : "MDC_VENT_MODE_ISO_AC_PC_6ACAP",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.display",
+          "context" : "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.",
+          "source" : "MDC_VENT_MODE_ISO_AC_vtPC_6ACAP",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.display",
+          "context" : "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.",
+          "source" : "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.display",
+          "context" : "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.",
+          "source" : "MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.display",
+          "context" : "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.",
+          "source" : "MDC_VENT_MODE_ISO_CMV_VC",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.display",
+          "context" : "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.",
+          "source" : "MDC_VENT_MODE_ISO_CSV_6ACAP",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.display",
+          "context" : "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.",
+          "source" : "MDC_VENT_MODE_ISO_AC_VC_6ACAPL",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.display",
+          "context" : "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.",
+          "source" : "MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL",
+          "target" : null
+        },
+        {
+          "id" : "ValueSet.compose.include.concept.display",
+          "context" : "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.",
+          "source" : "MDC_VENT_MODE_ISO_HIFLOW_3NIV",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

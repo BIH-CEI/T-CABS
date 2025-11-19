@@ -2,9 +2,9 @@ Profile: T_CABS_Observation_FEV1
 Parent: t-cabs-observation-vitalparameter
 Id: t-cabs-observationfev1
 Title: "T-CABS Observation FEV1"
-Description: "Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1)"
+Description: "Profile for Forced Expiratory Volume in 1 Second (FEV1)"
 
-* code.coding[LoincCoding] = $LOINC#20150-9 "FEV1"
+* code.coding[LoincCoding] = $LOINC#20150-9 //"FEV1"
 * code.coding[MDCType] = $IEEE-11073#152586
 
 * valueQuantity.code = #L
@@ -13,8 +13,8 @@ Description: "Profil für das forcierte exspiratorische Volumen in einer Sekunde
 Instance: Example-FEV1-Doccla
 InstanceOf: T_CABS_Observation_FEV1
 Usage: #example
-Title: "Beispiel FEV1 Messung"
-Description: "Beispiel für eine FEV1-Messung über Doccla"
+Title: "Example FEV1 Measurement"
+Description: "Example of a FEV1 measurement via Doccla"
 * status = #final
 * category[VSCat].coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd-observation
@@ -28,3 +28,4 @@ Description: "Beispiel für eine FEV1-Messung über Doccla"
 * valueQuantity.unit = "L"
 * valueQuantity.system = $UCUM
 * device = Reference(Device/beispiel-phd-doccla)
+* extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

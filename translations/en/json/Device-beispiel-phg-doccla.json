@@ -1,0 +1,53 @@
+{
+  "id" : "Device-beispiel-phg-doccla",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "en",
+      "entries" : [
+        {
+          "id" : "Device.manufacturer",
+          "context" : "A name of the manufacturer.",
+          "source" : "Doccla GmbH",
+          "target" : null
+        },
+        {
+          "id" : "Device.serialNumber",
+          "context" : "The serial number assigned by the organization when the device was manufactured.",
+          "source" : "PHG-SN-789012",
+          "target" : null
+        },
+        {
+          "id" : "Device.deviceName.name",
+          "context" : "The name of the device.",
+          "source" : "Doccla Health Tablet",
+          "target" : null
+        },
+        {
+          "id" : "Device.modelNumber",
+          "context" : "The model number for the device.",
+          "source" : "DHT-2024",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "MDC_AI_APPLIANCE_TABLETPC",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "MDC_REG_CERT_DATA_CONTINUA_VERSION",
+          "target" : null
+        },
+        {
+          "id" : "Device.version.value",
+          "context" : "The version text.",
+          "source" : "2.1.0",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

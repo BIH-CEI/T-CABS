@@ -5,7 +5,7 @@
   "name": "T_CABS_Observation_TI",
   "title": "T-CABS Observation TI",
   "status": "draft",
-  "description": "Profil für ein Dauer der Einatmungsphase (Inspiration)",
+  "description": "Profile for duration of inspiratory phase",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -19,8 +19,7 @@
         "path": "Observation.code.coding",
         "patternCoding": {
           "code": "152416",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_TIME_PD_INSP"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

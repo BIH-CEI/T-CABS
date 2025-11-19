@@ -1,0 +1,21 @@
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "virtual"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Konsil"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "attender"
+msgstr ""
+
+# Plain text narrative that identifies the resource in addition to the resource reference.
+#: Reference.display
+msgid "Löwenstein Medical"
+msgstr ""
+

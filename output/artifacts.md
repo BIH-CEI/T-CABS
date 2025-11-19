@@ -1,4 +1,4 @@
-# Artifacts Summary - v0.1.0
+# Artifacts Summary - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -13,44 +13,48 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
-| [T-CABS Device Channel Beatmungsgeraet](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md) | Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics |
-| [T-CABS Device MDS Heimbeatmungsgerät](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md) | Profil für ein Heimbeatmungsgerät |
-| [T-CABS Device PHD](StructureDefinition-t-cabs-device-phd.md) | Profil für ein Messgerät am Patienten |
-| [T-CABS Device PHG](StructureDefinition-t-cabs-device-phg.md) | Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wird |
-| [T-CABS Device VMD Beatmungsgeraet](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md) | Profil welches ein virtuelles Subsystem oder Modul darstellt |
-| [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md) | Profil welches eine numerische Messung, Berechnung oder Einstellung darstellt |
-| [T-CABS DiagnosticReport Visitenbefund](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md) | Profil für einen Beurteilung der wöchentlichen, telemedizinischen Visite innerhalb der T-CABS Studie |
-| [T-CABS Encounter Kontakt](StructureDefinition-t-cabs-encounter-kontakt.md) | Profil für einen Kontakt/ eine Visite innerhalb der T-CABS Studie |
-| [T-CABS Funktion](StructureDefinition-t-cabs-practitioner-funktion.md) | Profil für eine Funktion einer Person innerhalb der T-CABS Studie |
-| [T-CABS Observation AF](StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.md) | Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes |
-| [T-CABS Observation AHI](StructureDefinition-t-cabs-observation-ahi.md) | Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs aufgetretenen Apnoe- und Hypopnoe-Episoden, geteilt durch die Schlafdauer in Stunden |
-| [T-CABS Observation AMV](StructureDefinition-t-cabs-observation-amv.md) | Profil für ein gemessenes oder eingestelltes Atemminutenvolumen |
-| [T-CABS Observation Arterieller Blutdruck](StructureDefinition-t-cabs-observation-arteriellerblutdruck.md) | Profil für den arteriellen Blutdruck. |
-| [T-CABS Observation Atemfrequenz](StructureDefinition-t-cabs-observation-atemfrequenz.md) | Profil für die Atemfrequenz per Doccla |
-| [T-CABS Observation Atemzeitverhaeltnis](StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.md) | Profil für Atemzeitverhältnis |
-| [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md) | Profil für den Body Mass Index (BMI) |
-| [T-CABS Observation Beatmungsparameter (abstract)](StructureDefinition-t-cabs-observation-beatmungsparameter.md) | Abstraktes Profil für Beatmungsparameter |
-| [T-CABS Observation Druck MIN/MAX](StructureDefinition-t-cabs-observation-druck-minmax.md) | Profil für den minimalen und maximalen Beatmungsdruck |
-| [T-CABS Observation FEV1](StructureDefinition-t-cabs-observationfev1.md) | Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1) |
-| [T-CABS Observation Gehstrecke](StructureDefinition-t-cabs-observation-gehstrecke.md) | Profil für die Gehstrecke pro Tag (24 Stunden) |
-| [T-CABS Observation Herzfrequenz](StructureDefinition-t-cabs-observation-herzfrequenz.md) | Profil für die Herzfrequenz |
-| [T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.md) | Profil für einen Inspiratory Positive Airway Pressure (IPAP) |
-| [T-CABS Observation Koerpergewicht](StructureDefinition-t-cabs-observation-koerpergewicht.md) | Profil für das Körpergewicht |
-| [T-CABS Observation Koerpertemperatur](StructureDefinition-t-cabs-observation-koerpertemperatur.md) | Profil für die Körpertemperatur |
-| [T-CABS Observation Leckage](StructureDefinition-t-cabs-observation-leckage.md) | Profil für die Leckagerate unter Beatmung |
-| [T-CABS Observation PEEP](StructureDefinition-t-cabs-observation-peep.md) | Profil für einen Positiven endexspiratorischen Druck (PEEP) |
-| [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md) | Profil für die arterielle Sauerstoffsättigung (SPO2) |
-| [T-CABS Observation TI](StructureDefinition-t-cabs-observation-ti.md) | Profil für ein Dauer der Einatmungsphase (Inspiration) |
-| [T-CABS Observation Target Volume](StructureDefinition-t-cabs-observation-targetvolume.md) | Profil für das Zielvolumen |
-| [T-CABS Observation TriggeredBreaths](StructureDefinition-t-cabs-observation-triggeredbreaths.md) | Profil für die Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums |
-| [T-CABS Observation Vitalparamter](StructureDefinition-t-cabs-observation-vitalparameter.md) | Abstraktes Profil für die gemessenen Vitalparameter von Doccla |
-| [T-CABS Organisation](StructureDefinition-t-cabs-organisation.md) | Profil für eine Organisation die mit T-CABS Studie in Verbindung steht |
-| [T-CABS Patient](StructureDefinition-t-cabs-patient.md) | Profil für eine/n Patient/in der T-CABS Studie |
-| [T-CABS Patientengruppe](StructureDefinition-t-cabs-group-patientengruppe.md) | Profil um Patienten innerhalb der T-CABS Studie gruppieren zu können |
-| [T-CABS Person mit Funktion](StructureDefinition-t-cabs-practitioner-personmitfunktion.md) | Profil für eine beteildigte Person innerhalb der T-CABS Studie |
-| [T-CABS Procedure Beatmung](StructureDefinition-t-cabs-procedure-beatmung.md) | Profil für die Beatmungsprozedur |
-| [T-CABS ResearchStudy Studie](StructureDefinition-t-cabs-researchstudy-studie.md) | Profil um die Metadaten der T-CABS Studie abzubilden |
-| [T-CABS ResearchSubject Studie](StructureDefinition-t-cabs-researchsubject-studienteilnehmer.md) | Profil um Patienten innerhalb der Studie referenzieren können |
+| [T-CABS Device Channel Ventilator](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md) | Profile representing a channel for grouping DeviceMetrics |
+| [T-CABS Device MDS Home Ventilator](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md) | Profile for a home ventilator device |
+| [T-CABS Device PHD](StructureDefinition-t-cabs-device-phd.md) | Profile for a personal health device measuring at the patient |
+| [T-CABS Device PHG](StructureDefinition-t-cabs-device-phg.md) | Profile for a tablet used as a gateway device |
+| [T-CABS Device VMD Ventilator](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md) | Profile representing a virtual subsystem or module |
+| [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md) | Profile representing a numeric measurement, calculation, or setting |
+| [T-CABS DiagnosticReport Visit Finding](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md) | Profile for an assessment of the weekly telemedicine visit within the T-CABS study |
+| [T-CABS Encounter Contact](StructureDefinition-t-cabs-encounter-kontakt.md) | Profile for a contact with the patient. Compatibility: The T_CABS_Encounter_Kontakt profile aims for compatibility with the ISiKKontaktGesundheitseinrichtung, however it cannot be guaranteed that instances valid against T_CABS_Encounter_Kontakt are also valid against the[ISiKKontaktGesundheitseinrichtung](https://simplifier.net/isik-stufe-5/isikkontaktgesundheitseinrichtung) |
+| [T-CABS Function](StructureDefinition-t-cabs-practitioner-funktion.md) | Profile for a function of a person within the T-CABS study |
+| [T-CABS Observation AHI](StructureDefinition-t-cabs-observation-ahi.md) | Profile for the Apnea-Hypopnea Index (AHI) - Total number of apnea and hypopnea episodes that occurred during sleep, divided by sleep duration in hours |
+| [T-CABS Observation AMV](StructureDefinition-t-cabs-observation-amv.md) | Profile for a alveolar minute volume |
+| [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cabs-observation-arteriellerblutdruck.md) | Profile for arterial blood pressure. Compatibility: For the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the[ISiKBlutdruckArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell) |
+| [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md) | Profile for Body Mass Index (BMI) |
+| [T-CABS Observation Body Temperature](StructureDefinition-t-cabs-observation-koerpertemperatur.md) | Profile for body temperature. Compatibility: For the profile T_CABS_Observation_Koerpertemperatur, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpertemperatur are also valid against the[ISiKKoerpertemperatur](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur). |
+| [T-CABS Observation Body Weight](StructureDefinition-t-cabs-observation-koerpergewicht.md) | Profile for body weight. Compatibility: For the profile T_CABS_Observation_Koerpergewicht, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpergewicht are also valid against the[ISiKKoerpergewicht](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht). |
+| [T-CABS Observation FEF25-75](StructureDefinition-t-cabs-observationfev1fef25-75.md) | Profile for mean forced expiratory flow during exhalation of 25% to 75% of forced vital capacity (FVC) |
+| [T-CABS Observation FEV1](StructureDefinition-t-cabs-observationfev1.md) | Profile for Forced Expiratory Volume in 1 Second (FEV1) |
+| [T-CABS Observation FEV1/FEV6](StructureDefinition-t-cabs-observationfev1fev6.md) | Profile for FEV1/FEV6 ratio |
+| [T-CABS Observation FEV6](StructureDefinition-t-cabs-observationfev6.md) | Profile for Forced Expiratory Volume in 6 Seconds (FEV6) |
+| [T-CABS Observation Hand Grip Strength](StructureDefinition-t-cabs-observationhandgriffstaerke.md) | Profile for hand grip strength |
+| [T-CABS Observation Heart Rate](StructureDefinition-t-cabs-observation-herzfrequenz.md) | Profile for heart rate. Compatibility: For the profile T_CABS_Observation_Herzfrequenz, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Herzfrequenz are also valid against the[ISiKHerzfrequenz](https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz). |
+| [T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.md) | Profile for Inspiratory Positive Airway Pressure (IPAP) |
+| [T-CABS Observation Leakage](StructureDefinition-t-cabs-observation-leckage.md) | Profile for leakage rate during ventilation |
+| [T-CABS Observation PEEP](StructureDefinition-t-cabs-observation-peep.md) | Profile for Positive End-Expiratory Pressure (PEEP) |
+| [T-CABS Observation Pressure MIN/MAX](StructureDefinition-t-cabs-observation-druck-minmax.md) | Profile for minimal and maximal ventilation pressure |
+| [T-CABS Observation Respiratory Rate](StructureDefinition-t-cabs-observation-atemfrequenz.md) | Profile for respiratory rate. Compatibility: For the profile T_CABS_Observation_Atemfrequenz, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Atemfrequenz are also valid against the[ISiKAtemfrequenz](https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/StructureDefinition/ISiKAtemfrequenz). |
+| [T-CABS Observation Respiratory Rate Ventilated](StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.md) | Profile for a respiratory rate of the ventilator |
+| [T-CABS Observation Respiratory Time Ratio](StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.md) | Profile for respiratory time ratio |
+| [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md) | Profile for arterial oxygen saturation (SPO2) Compatibility: For the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the[ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell) |
+| [T-CABS Observation TI](StructureDefinition-t-cabs-observation-ti.md) | Profile for duration of inspiratory phase |
+| [T-CABS Observation Target Volume](StructureDefinition-t-cabs-observation-targetvolume.md) | Profile for the target volume |
+| [T-CABS Observation Triggered Breaths](StructureDefinition-t-cabs-observation-triggeredbreaths.md) | Profile for the percentage of spontaneously triggered breaths within a time period |
+| [T-CABS Observation Ventilation Parameter (abstract)](StructureDefinition-t-cabs-observation-beatmungsparameter.md) | Abstract profile for ventilation parameters |
+| [T-CABS Observation Ventilation Parameter with Components (abstract)](StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.md) | Abstract profile for ventilation parameters with multiple values |
+| [T-CABS Observation Vital Parameter](StructureDefinition-t-cabs-observation-vitalparameter.md) | Abstract profile for measured vital parameters |
+| [T-CABS Observation Vital Parameter with Components](StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.md) | Abstract profile for measured vital parameters with multiple values |
+| [T-CABS Observation Walking Distance](StructureDefinition-t-cabs-observation-gehstrecke.md) | Profile for walking distance per day (24 hours) |
+| [T-CABS Organization](StructureDefinition-t-cabs-organisation.md) | Profile for an organization associated with the T-CABS study. Compatibility: The T_CABS_Organisation profile aims for compatibility with the ISiKOrganisation version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Organisation are also valid against the[ISiKOrganisation](https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation) |
+| [T-CABS Patient](StructureDefinition-t-cabs-patient.md) | Profile for a patient in the T-CABS study Compatibility: The T_CABS_Patient profile aims for compatibility with the ISiKPatient version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Patient are also valid against the[ISiKPatient](https://simplifier.net/isik-stufe-5/isikpatient) |
+| [T-CABS Patient Group](StructureDefinition-t-cabs-group-patientengruppe.md) | Profile to group patients within the T-CABS study. |
+| [T-CABS Person with Function](StructureDefinition-t-cabs-practitioner-personmitfunktion.md) | Profile for an involved person within the T-CABS study. Compatibility: The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with ISiK version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Practitioner_PersonMitFunktion are also valid against the[ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf) |
+| [T-CABS Procedure Ventilation](StructureDefinition-t-cabs-procedure-beatmung.md) | Profile for the ventilation procedure |
 
 ### Terminology: Value Sets 
 
@@ -58,8 +62,10 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
-| [T-CABS ValueSet Beatmungsform](ValueSet-t-cabs-valueset-Beatmungsform.md) | Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden |
-| [T-CABS ValueSet Beatmungsmodus](ValueSet-t-cabs-valueset-Beatmungsmodus.md) | Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden |
+| [T-CABS ValueSet PHD Type](ValueSet-t-cabs-valueset-phdtyp.md) | This ValueSet contains codes to represent the different PHD measurement devices |
+| [T-CABS ValueSet Ventilation Mode](ValueSet-t-cabs-valueset-Beatmungsmodus.md) | This ValueSet contains codes to represent the different ventilation modes |
+| [T-CABS ValueSet Ventilation Site](ValueSet-t-cabs-valueset-beatmungsstelle.md) | This ValueSet contains codes to represent the body sites where ventilation is applied |
+| [T-CABS ValueSet Ventilation Type](ValueSet-t-cabs-valueset-Beatmungsform.md) | This ValueSet contains codes to represent the different types of ventilation |
 
 ### Example: Example Instances 
 
@@ -67,74 +73,79 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [Beispiel AHI Messung BREAS](Observation-Example-AHI-BREAS.md) | Beispiel für eine AHI-Messung von einem BREAS Beatmungsgerät |
-| [Beispiel AMV Messung BREAS](Observation-Example-AMV-BREAS-gemessen.md) | Beispiel für eine gemessene AMV-Messung von einem BREAS Beatmungsgerät |
-| [Beispiel Atemfrequenz Messung](Observation-Example-Atemfrequenz-Doccla.md) | Beispiel für eine Atemfrequenz-Messung über Doccla |
-| [Beispiel Atemfrequenz Messung ResMed](Observation-Example-Atemfrequenz-ResMed-gemessen.md) | Beispiel für eine gemessene Atemfrequenz von einem ResMed Beatmungsgerät |
-| [Beispiel Atemzeitverhältnis ResMed](Observation-Example-Atemzeitverhaeltnis-ResMed.md) | Beispiel für Atemzeitverhältnis von einem ResMed Beatmungsgerät |
-| [Beispiel BMI Messung](Observation-Example-BMI-Doccla.md) | Beispiel für eine BMI-Messung über Doccla |
-| [Beispiel Beatmung BREAS](Procedure-beispiel-beatmung-breas.md) | Beispiel für eine Beatmungsprozedur mit BREAS Gerät (PCV Modus) |
-| [Beispiel Beatmung Löwenstein](Procedure-beispiel-beatmung-loewenstein.md) | Beispiel für eine Beatmungsprozedur mit Löwenstein Gerät (PSV Modus) |
-| [Beispiel Beatmung ResMed](Procedure-beispiel-beatmung-resmed.md) | Beispiel für eine Beatmungsprozedur mit ResMed Gerät (CPAP Modus) |
-| [Beispiel Beatmungsgerät BREAS](Device-beispiel-beatmungsgeraet-breas.md) | Beispiel für ein BREAS Heimbeatmungsgerät |
-| [Beispiel Beatmungsgerät Löwenstein](Device-beispiel-beatmungsgeraet-loewenstein.md) | Beispiel für ein Löwenstein Heimbeatmungsgerät |
-| [Beispiel Beatmungsgerät ResMed](Device-beispiel-beatmungsgeraet-resmed.md) | Beispiel für ein ResMed Heimbeatmungsgerät |
-| [Beispiel Channel BREAS AHI](Device-beispiel-channel-breas-ahi.md) | Beispiel für einen AHI-Channel zur Gruppierung von AHI-Messungen |
-| [Beispiel Channel BREAS AMV](Device-beispiel-channel-breas-amv.md) | Beispiel für einen AMV-Channel zur Gruppierung von AMV-Messungen |
-| [Beispiel Channel BREAS IPAP](Device-beispiel-channel-breas-ipap.md) | Beispiel für einen IPAP-Channel zur Gruppierung von IPAP-Einstellungen |
-| [Beispiel Channel BREAS Target Volume](Device-beispiel-channel-breas-targetvolume.md) | Beispiel für einen Target Volume-Channel zur Gruppierung von Target Volume-Einstellungen |
-| [Beispiel Channel Löwenstein PEEP](Device-beispiel-channel-loewenstein-peep.md) | Beispiel für einen PEEP-Channel zur Gruppierung von PEEP-Messungen |
-| [Beispiel Channel Löwenstein TI](Device-beispiel-channel-loewenstein-ti.md) | Beispiel für einen TI-Channel zur Gruppierung von TI-Messungen |
-| [Beispiel Channel Löwenstein TriggeredBreaths](Device-beispiel-channel-loewenstein-triggeredbreaths.md) | Beispiel für einen TriggeredBreaths-Channel zur Gruppierung von TriggeredBreaths-Messungen |
-| [Beispiel Channel ResMed Atemfrequenz](Device-beispiel-channel-resmed-atemfrequenz.md) | Beispiel für einen Atemfrequenz-Channel zur Gruppierung von Atemfrequenz-Messungen |
-| [Beispiel Channel ResMed Atemzeitverhältnis](Device-beispiel-channel-resmed-atemzeit.md) | Beispiel für einen Atemzeitverhältnis-Channel zur Gruppierung von Atemzeitverhältnis-Berechnungen |
-| [Beispiel Channel ResMed Druck Min/Max](Device-beispiel-channel-resmed-druck.md) | Beispiel für einen Druck Min/Max-Channel zur Gruppierung von Druck-Messungen |
-| [Beispiel Channel ResMed Leckage](Device-beispiel-channel-resmed-leckage.md) | Beispiel für einen Leckage-Channel zur Gruppierung von Leckage-Messungen |
-| [Beispiel DeviceMetric BREAS AHI](DeviceMetric-beispiel-devicemetric-breas-ahi.md) | Beispiel für eine DeviceMetric zur AHI-Berechnung eines BREAS Beatmungsgeräts |
-| [Beispiel DeviceMetric BREAS AMV](DeviceMetric-beispiel-devicemetric-breas-amv.md) | Beispiel für eine DeviceMetric zur AMV-Messung eines BREAS Beatmungsgeräts |
-| [Beispiel DeviceMetric BREAS IPAP](DeviceMetric-beispiel-devicemetric-breas-ipap.md) | Beispiel für eine DeviceMetric zur IPAP-Einstellung eines BREAS Beatmungsgeräts |
-| [Beispiel DeviceMetric BREAS Target Volume](DeviceMetric-beispiel-devicemetric-breas-targetvolume.md) | Beispiel für eine DeviceMetric zur Target Volume-Einstellung eines BREAS Beatmungsgeräts |
-| [Beispiel DeviceMetric Löwenstein PEEP](DeviceMetric-beispiel-devicemetric-loewenstein-peep.md) | Beispiel für eine DeviceMetric zur PEEP-Messung eines Löwenstein Beatmungsgeräts |
-| [Beispiel DeviceMetric Löwenstein TI](DeviceMetric-beispiel-devicemetric-loewenstein-ti.md) | Beispiel für eine DeviceMetric zur TI-Messung (Inspirationszeit) eines Löwenstein Beatmungsgeräts |
-| [Beispiel DeviceMetric Löwenstein TriggeredBreaths](DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.md) | Beispiel für eine DeviceMetric zur TriggeredBreaths-Messung eines Löwenstein Beatmungsgeräts |
-| [Beispiel DeviceMetric ResMed Atemfrequenz](DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.md) | Beispiel für eine DeviceMetric zur Atemfrequenz-Messung eines ResMed Beatmungsgeräts |
-| [Beispiel DeviceMetric ResMed Atemzeitverhältnis](DeviceMetric-beispiel-devicemetric-resmed-atemzeit.md) | Beispiel für eine DeviceMetric zur Atemzeitverhältnis-Berechnung eines ResMed Beatmungsgeräts |
-| [Beispiel DeviceMetric ResMed Druck Min/Max](DeviceMetric-beispiel-devicemetric-resmed-druck.md) | Beispiel für eine DeviceMetric zur Druck Min/Max-Messung eines ResMed Beatmungsgeräts |
-| [Beispiel DeviceMetric ResMed Leckage](DeviceMetric-beispiel-devicemetric-resmed-leckage.md) | Beispiel für eine DeviceMetric zur Leckage-Messung eines ResMed Beatmungsgeräts |
-| [Beispiel DiagnosticReport Wöchentliche Visite](DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite.md) | Beispiel für einen Visitenbefund einer wöchentlichen telemedizinischen Visite |
-| [Beispiel Druck Min/Max ResMed](Observation-Example-DruckMinMax-ResMed.md) | Beispiel für minimalen und maximalen Beatmungsdruck von einem ResMed Gerät |
-| [Beispiel FEV1 Messung](Observation-Example-FEV1-Doccla.md) | Beispiel für eine FEV1-Messung über Doccla |
-| [Beispiel Gehstrecke Messung](Observation-Example-Gehstrecke-Doccla.md) | Beispiel für eine Gehstrecken-Messung über Doccla |
-| [Beispiel Herzfrequenz Messung](Observation-Example-Herzfrequenz-Doccla.md) | Beispiel für eine Herzfrequenz-Messung über Doccla |
-| [Beispiel IPAP BREAS](Observation-Example-IPAP-BREAS.md) | Beispiel für IPAP von einem BREAS Beatmungsgerät |
-| [Beispiel Körpergewicht Messung](Observation-Example-Koerpergewicht-Doccla.md) | Beispiel für eine Körpergewicht-Messung über Doccla |
-| [Beispiel Körpertemperatur Messung](Observation-Example-Koerpertemperatur-Doccla.md) | Beispiel für eine Körpertemperatur-Messung über Doccla |
-| [Beispiel Leckage ResMed](Observation-Example-Leckage-ResMed.md) | Beispiel für Leckage-Messung von einem ResMed Beatmungsgerät |
-| [Beispiel PEEP Löwenstein](Observation-Example-PEEP-Loewenstein.md) | Beispiel für PEEP von einem Löwenstein Beatmungsgerät |
-| [Beispiel PHD Messgerät](Device-beispiel-phd-doccla.md) | Beispiel für ein Personal Health Device Messgerät von Doccla |
-| [Beispiel PHG Tablet](Device-beispiel-phg-doccla.md) | Beispiel für ein Personal Health Gateway Tablet von Doccla |
-| [Beispiel Provider Jochum](Organization-beispiel-provider-jochum.md) | Beispiel für den Beatmungsgeräte-Provider Jochum |
-| [Beispiel Provider Löwenstein](Organization-beispiel-provider-loewenstein.md) | Beispiel für den Beatmungsgeräte-Provider Löwenstein |
-| [Beispiel Provider Vivisol](Organization-beispiel-provider-vivisol.md) | Beispiel für den Beatmungsgeräte-Provider Vivisol |
-| [Beispiel TI Löwenstein](Observation-Example-TI-Loewenstein.md) | Beispiel für Inspirationszeit von einem Löwenstein Beatmungsgerät |
-| [Beispiel Target Volume BREAS](Observation-Example-TargetVolume-BREAS.md) | Beispiel für Zielvolumen von einem BREAS Beatmungsgerät |
-| [Beispiel Telemedizinische Visite](Encounter-Example-Encounter-Telemedizinische-Visite.md) | Beispiel für eine wöchentliche telemedizinische Visite eines T-CABS Patienten |
-| [Beispiel TriggeredBreaths Löwenstein](Observation-Example-TriggeredBreaths-Loewenstein.md) | Beispiel für getriggerte Atemzüge von einem Löwenstein Beatmungsgerät |
-| [Beispiel VMD BREAS AHI Module](Device-beispiel-vmd-breas-ahi.md) | Beispiel für ein virtuelles AHI-Modul eines BREAS Beatmungsgeräts |
-| [Beispiel VMD BREAS AMV Module](Device-beispiel-vmd-breas-amv.md) | Beispiel für ein virtuelles AMV-Modul eines BREAS Beatmungsgeräts |
-| [Beispiel VMD BREAS IPAP Module](Device-beispiel-vmd-breas-ipap.md) | Beispiel für ein virtuelles IPAP-Modul eines BREAS Beatmungsgeräts |
-| [Beispiel VMD BREAS Target Volume Module](Device-beispiel-vmd-breas-targetvolume.md) | Beispiel für ein virtuelles Target Volume-Modul eines BREAS Beatmungsgeräts |
-| [Beispiel VMD Löwenstein PEEP Module](Device-beispiel-vmd-loewenstein-peep.md) | Beispiel für ein virtuelles PEEP-Modul eines Löwenstein Beatmungsgeräts |
-| [Beispiel VMD Löwenstein TI Module](Device-beispiel-vmd-loewenstein-ti.md) | Beispiel für ein virtuelles TI-Modul eines Löwenstein Beatmungsgeräts |
-| [Beispiel VMD Löwenstein TriggeredBreaths Module](Device-beispiel-vmd-loewenstein-triggeredbreaths.md) | Beispiel für ein virtuelles TriggeredBreaths-Modul eines Löwenstein Beatmungsgeräts |
-| [Beispiel VMD ResMed Atemfrequenz Module](Device-beispiel-vmd-resmed-atemfrequenz.md) | Beispiel für ein virtuelles Atemfrequenz-Modul eines ResMed Beatmungsgeräts |
-| [Beispiel VMD ResMed Atemzeitverhältnis Module](Device-beispiel-vmd-resmed-atemzeit.md) | Beispiel für ein virtuelles Atemzeitverhältnis-Modul eines ResMed Beatmungsgeräts |
-| [Beispiel VMD ResMed Druck Min/Max Module](Device-beispiel-vmd-resmed-druck.md) | Beispiel für ein virtuelles Druck Min/Max-Modul eines ResMed Beatmungsgeräts |
-| [Beispiel VMD ResMed Leckage Module](Device-beispiel-vmd-resmed-leckage.md) | Beispiel für ein virtuelles Leckage-Modul eines ResMed Beatmungsgeräts |
-| [Beispiel arterielle SPO2 Messung](Observation-Example-ArterielleSPO2-Doccla.md) | Beispiel für eine arterielle SPO2-Messung über Doccla |
-| [Beispiel arterieller Blutdruck Messung](Observation-Example-ArteriellerBlutdruck-Doccla.md) | Beispiel für eine arterielle Blutdruck-Messung über Doccla |
-| [Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS)](Organization-CABS.md) | Das Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS) der Klinik betreut Patient:innen mit Erkrankungen der Lunge, der Muskulatur oder des Nervensystems, die vorübergehend oder dauerhaft auf Unterstützung der Atmung angewiesen sind und ist Teil des zertifizierten Weaningzentrums der Klinik. |
-| [T-CABS Patient Example](Patient-tcabs-patient-example.md) | Beispielpatient für das T-CABS Projekt |
-| [T-CABS Practitioner Example](Practitioner-tcabs-practitioner-example.md) | Beispielärztin für das T-CABS Projekt |
-| [T-CABS PractitionerRole Funktion Beispiel](PractitionerRole-tcabs-practitioner-role-example.md) | Beispiel einer PractitionerRole für einen Pneumologen in der T-CABS Studie |
+| [Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS)](Organization-CABS.md) | The Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS) of the clinic cares for patients with diseases of the lungs, muscles or nervous system who are temporarily or permanently dependent on respiratory support and is part of the clinic's certified weaning center. |
+| [Example AHI Measurement BREAS](Observation-Example-AHI-BREAS.md) | Example of an AHI measurement from a BREAS ventilator |
+| [Example AMV Measurement BREAS](Observation-Example-AMV-BREAS-gemessen.md) | Example of a measured AMV measurement from a BREAS ventilator |
+| [Example Arterial Blood Pressure Measurement](Observation-Example-ArteriellerBlutdruck-Doccla.md) | Example of an arterial blood pressure measurement via Doccla |
+| [Example Arterial SPO2 Measurement](Observation-Example-ArterielleSPO2-Doccla.md) | Example of an arterial SPO2 measurement via Doccla |
+| [Example BMI Measurement](Observation-Example-BMI-Doccla.md) | Example of a BMI measurement via Doccla |
+| [Example Body Temperature Measurement](Observation-Example-Koerpertemperatur-Doccla.md) | Example of a body temperature measurement via Doccla |
+| [Example Body Weight Measurement](Observation-Example-Koerpergewicht-Doccla.md) | Example of a body weight measurement via Doccla |
+| [Example Channel BREAS AHI](Device-beispiel-channel-breas-ahi.md) | Example of an AHI channel for grouping AHI measurements |
+| [Example Channel BREAS AMV](Device-beispiel-channel-breas-amv.md) | Example of an AMV channel for grouping AMV measurements |
+| [Example Channel BREAS IPAP](Device-beispiel-channel-breas-ipap.md) | Example of an IPAP channel for grouping IPAP settings |
+| [Example Channel BREAS Target Volume](Device-beispiel-channel-breas-targetvolume.md) | Example of a target volume channel for grouping target volume settings |
+| [Example Channel Löwenstein PEEP](Device-beispiel-channel-loewenstein-peep.md) | Example of a PEEP channel for grouping PEEP measurements |
+| [Example Channel Löwenstein TI](Device-beispiel-channel-loewenstein-ti.md) | Example of a TI channel for grouping TI measurements |
+| [Example Channel Löwenstein TriggeredBreaths](Device-beispiel-channel-loewenstein-triggeredbreaths.md) | Example of a TriggeredBreaths channel for grouping TriggeredBreaths measurements |
+| [Example Channel ResMed Leakage](Device-beispiel-channel-resmed-leckage.md) | Example of a leakage channel for grouping leakage measurements |
+| [Example Channel ResMed Pressure Min/Max](Device-beispiel-channel-resmed-druck.md) | Example of a pressure min/max channel for grouping pressure measurements |
+| [Example Channel ResMed Respiratory Rate](Device-beispiel-channel-resmed-atemfrequenz.md) | Example of a respiratory rate channel for grouping respiratory rate measurements |
+| [Example Channel ResMed Respiratory Time Ratio](Device-beispiel-channel-resmed-atemzeit.md) | Example of a respiratory time ratio channel for grouping respiratory time ratio calculations |
+| [Example DeviceMetric BREAS AHI](DeviceMetric-beispiel-devicemetric-breas-ahi.md) | Example of a DeviceMetric for AHI calculation of a BREAS ventilator |
+| [Example DeviceMetric BREAS AMV](DeviceMetric-beispiel-devicemetric-breas-amv.md) | Example of a DeviceMetric for AMV measurement of a BREAS ventilator |
+| [Example DeviceMetric BREAS IPAP](DeviceMetric-beispiel-devicemetric-breas-ipap.md) | Example of a DeviceMetric for IPAP setting of a BREAS ventilator |
+| [Example DeviceMetric BREAS Target Volume](DeviceMetric-beispiel-devicemetric-breas-targetvolume.md) | Example of a DeviceMetric for target volume setting of a BREAS ventilator |
+| [Example DeviceMetric Löwenstein PEEP](DeviceMetric-beispiel-devicemetric-loewenstein-peep.md) | Example of a DeviceMetric for PEEP measurement of a Löwenstein ventilator |
+| [Example DeviceMetric Löwenstein TI](DeviceMetric-beispiel-devicemetric-loewenstein-ti.md) | Example of a DeviceMetric for TI measurement (inspiration time) of a Löwenstein ventilator |
+| [Example DeviceMetric Löwenstein TriggeredBreaths](DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.md) | Example of a DeviceMetric for TriggeredBreaths measurement of a Löwenstein ventilator |
+| [Example DeviceMetric ResMed Leakage](DeviceMetric-beispiel-devicemetric-resmed-leckage.md) | Example of a DeviceMetric for leakage measurement of a ResMed ventilator |
+| [Example DeviceMetric ResMed Pressure Min/Max](DeviceMetric-beispiel-devicemetric-resmed-druck.md) | Example of a DeviceMetric for pressure min/max measurement of a ResMed ventilator |
+| [Example DeviceMetric ResMed Respiratory Rate](DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.md) | Example of a DeviceMetric for respiratory rate measurement of a ResMed ventilator |
+| [Example DeviceMetric ResMed Respiratory Time Ratio](DeviceMetric-beispiel-devicemetric-resmed-atemzeit.md) | Example of a DeviceMetric for respiratory time ratio calculation of a ResMed ventilator |
+| [Example DiagnosticReport Weekly Visit](DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite.md) | Example of a visit finding of a weekly telemedicine visit |
+| [Example FEF25-75% Measurement](Observation-Example-FEF25-75-Doccla.md) | Example of a FEF25-75% measurement (Mean forced expiratory flow) via Doccla |
+| [Example FEV1 Measurement](Observation-Example-FEV1-Doccla.md) | Example of a FEV1 measurement via Doccla |
+| [Example FEV1/FEV6 Ratio Measurement](Observation-Example-FEV1-FEV6-Doccla.md) | Example of a FEV1/FEV6 ratio measurement via Doccla |
+| [Example FEV6 Measurement](Observation-Example-FEV6-Doccla.md) | Example of a FEV6 measurement (Forced Expiratory Volume in 6 Seconds) via Doccla |
+| [Example Hand Grip Strength Measurement](Observation-Example-Handgriffstaerke-Doccla.md) | Example of a hand grip strength measurement via Doccla |
+| [Example Heart Rate Measurement](Observation-Example-Herzfrequenz-Doccla.md) | Example of a heart rate measurement via Doccla |
+| [Example IPAP BREAS](Observation-Example-IPAP-BREAS.md) | Example of IPAP from a BREAS ventilator |
+| [Example Leakage ResMed](Observation-Example-Leckage-ResMed.md) | Example of leakage measurement from a ResMed ventilator |
+| [Example PEEP Löwenstein](Observation-Example-PEEP-Loewenstein.md) | Example of PEEP from a Löwenstein ventilator |
+| [Example PHD Measurement Device](Device-beispiel-phd-doccla.md) | Example of a Personal Health Device measurement device from Doccla |
+| [Example PHG Tablet](Device-beispiel-phg-doccla.md) | Example of a Personal Health Gateway tablet from Doccla |
+| [Example Pressure Min/Max ResMed](Observation-Example-DruckMinMax-ResMed.md) | Example of minimal and maximal ventilation pressure from a ResMed device |
+| [Example Provider Doccla](Organization-beispiel-provider-doccla.md) | Example for the vital parameter provider Doccla |
+| [Example Provider Jochum](Organization-beispiel-provider-jochum.md) | Example for the ventilation equipment provider Jochum |
+| [Example Provider Löwenstein](Organization-beispiel-provider-loewenstein.md) | Example for the ventilation equipment provider Löwenstein |
+| [Example Provider Vivisol](Organization-beispiel-provider-vivisol.md) | Example for the ventilation equipment provider Vivisol |
+| [Example Respiratory Rate Measurement](Observation-Example-Atemfrequenz-Doccla.md) | Example of a respiratory rate measurement via Doccla |
+| [Example Respiratory Rate Measurement ResMed](Observation-Example-Atemfrequenz-ResMed-gemessen.md) | Example of a measured respiratory rate from a ResMed ventilator |
+| [Example Respiratory Time Ratio ResMed](Observation-Example-Atemzeitverhaeltnis-ResMed.md) | Example of respiratory time ratio from a ResMed ventilator |
+| [Example TI Löwenstein](Observation-Example-TI-Loewenstein.md) | Example of inspiration time from a Löwenstein ventilator |
+| [Example Target Volume BREAS](Observation-Example-TargetVolume-BREAS.md) | Example of target volume from a BREAS ventilator |
+| [Example Telemedicine Visit](Encounter-Example-Encounter-Telemedizinische-Visite.md) | Example of a weekly telemedicine visit of a T-CABS patient |
+| [Example Triggered Breaths Löwenstein](Observation-Example-TriggeredBreaths-Loewenstein.md) | Example of triggered breaths from a Löwenstein ventilator |
+| [Example VMD BREAS AHI Module](Device-beispiel-vmd-breas-ahi.md) | Example of a virtual AHI module of a BREAS ventilator |
+| [Example VMD BREAS AMV Module](Device-beispiel-vmd-breas-amv.md) | Example of a virtual AMV module of a BREAS ventilator |
+| [Example VMD BREAS IPAP Module](Device-beispiel-vmd-breas-ipap.md) | Example of a virtual IPAP module of a BREAS ventilator |
+| [Example VMD BREAS Target Volume Module](Device-beispiel-vmd-breas-targetvolume.md) | Example of a virtual target volume module of a BREAS ventilator |
+| [Example VMD Löwenstein PEEP Module](Device-beispiel-vmd-loewenstein-peep.md) | Example of a virtual PEEP module of a Löwenstein ventilator |
+| [Example VMD Löwenstein TI Module](Device-beispiel-vmd-loewenstein-ti.md) | Example of a virtual TI module of a Löwenstein ventilator |
+| [Example VMD Löwenstein TriggeredBreaths Module](Device-beispiel-vmd-loewenstein-triggeredbreaths.md) | Example of a virtual TriggeredBreaths module of a Löwenstein ventilator |
+| [Example VMD ResMed Leakage Module](Device-beispiel-vmd-resmed-leckage.md) | Example of a virtual leakage module of a ResMed ventilator |
+| [Example VMD ResMed Pressure Min/Max Module](Device-beispiel-vmd-resmed-druck.md) | Example of a virtual pressure min/max module of a ResMed ventilator |
+| [Example VMD ResMed Respiratory Rate Module](Device-beispiel-vmd-resmed-atemfrequenz.md) | Example of a virtual respiratory rate module of a ResMed ventilator |
+| [Example VMD ResMed Respiratory Time Ratio Module](Device-beispiel-vmd-resmed-atemzeit.md) | Example of a virtual respiratory time ratio module of a ResMed ventilator |
+| [Example Ventilation BREAS](Procedure-beispiel-beatmung-breas.md) | Example of a ventilation procedure with BREAS device (PCV mode) |
+| [Example Ventilation Löwenstein](Procedure-beispiel-beatmung-loewenstein.md) | Example of a ventilation procedure with Löwenstein device (PSV mode) |
+| [Example Ventilation ResMed](Procedure-beispiel-beatmung-resmed.md) | Example of a ventilation procedure with ResMed device (CPAP mode) |
+| [Example Ventilator BREAS](Device-beispiel-beatmungsgeraet-breas.md) | Example of a BREAS home ventilator |
+| [Example Ventilator Löwenstein](Device-beispiel-beatmungsgeraet-loewenstein.md) | Example of a Löwenstein home ventilator |
+| [Example Ventilator ResMed](Device-beispiel-beatmungsgeraet-resmed.md) | Example of a ResMed home ventilator |
+| [Example Walking Distance Measurement](Observation-Example-Gehstrecke-Doccla.md) | Example of a walking distance measurement via Doccla |
+| [T-CABS Patient Example](Patient-tcabs-patient-example.md) | Example patient for the T-CABS project |
+| [T-CABS Practitioner Example](Practitioner-tcabs-practitioner-example.md) | Example physician for the T-CABS project |
+| [T-CABS PractitionerRole Function Example](PractitionerRole-tcabs-practitioner-role-example.md) | Example of a PractitionerRole for a pulmonologist in the T-CABS study |
 

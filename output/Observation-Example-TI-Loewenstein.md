@@ -1,10 +1,10 @@
-# Beispiel TI Löwenstein - v0.1.0
+# Example TI Löwenstein - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel TI Löwenstein**
+* **Example TI Löwenstein**
 
-## Example Observation: Beispiel TI Löwenstein
+## Example Observation: Example TI Löwenstein
 
 Profile: [T-CABS Observation TI](StructureDefinition-t-cabs-observation-ti.md)
 
@@ -20,7 +20,7 @@ Profile: [T-CABS Observation TI](StructureDefinition-t-cabs-observation-ti.md)
 
 **value**: 1.2 s(Details: UCUM codes = 's')
 
-**device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-LOEW-TI-001; type = MDC_VENT_TIME_PD_INSP; unit = s; operationalStatus = on; color = orange; category = measurement; measurementPeriod = Once per 1 second](DeviceMetric-beispiel-devicemetric-loewenstein-ti.md)
+**device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-LOEW-TI-001; type = MDC_VENT_TIME_PD_INSP; unit = s; operationalStatus = on; color = yellow; category = measurement; measurementPeriod = Once per 1 second](DeviceMetric-beispiel-devicemetric-loewenstein-ti.md)
 
 
 

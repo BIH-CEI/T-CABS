@@ -1,21 +1,19 @@
 Profile: T_CABS_Device_Channel_Beatmungsgeraet
 Parent: http://hl7.org/fhir/uv/pocd/StructureDefinition/ChannelDevice
 Id: t-cabs-device-channel-beatmungsgeraet
-Title: "T-CABS Device Channel Beatmungsgeraet"
-Description: "Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics"
-
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+Title: "T-CABS Device Channel Ventilator"
+Description: "Profile representing a channel for grouping DeviceMetrics"
 
 * parent only Reference(T_CABS_Device_VMD_Beatmungsgeraet)
 
 Instance: beispiel-channel-breas-ahi
 InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel BREAS AHI"
-Description: "Beispiel für einen AHI-Channel zur Gruppierung von AHI-Messungen"
+Title: "Example Channel BREAS AHI"
+Description: "Example of an AHI channel for grouping AHI measurements"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-BREAS-AHI-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69635 "MDC_DEV_CHAN"
 * deviceName.name = "AHI Measurement Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-breas-ahi)
@@ -23,11 +21,11 @@ Description: "Beispiel für einen AHI-Channel zur Gruppierung von AHI-Messungen"
 Instance: beispiel-channel-breas-amv
 InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel BREAS AMV"
-Description: "Beispiel für einen AMV-Channel zur Gruppierung von AMV-Messungen"
+Title: "Example Channel BREAS AMV"
+Description: "Example of an AMV channel for grouping AMV measurements"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-BREAS-AMV-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69635 "MDC_DEV_CHAN"
 * deviceName.name = "AMV Measurement Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-breas-amv)
@@ -35,11 +33,11 @@ Description: "Beispiel für einen AMV-Channel zur Gruppierung von AMV-Messungen"
 Instance: beispiel-channel-resmed-atemfrequenz
 InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel ResMed Atemfrequenz"
-Description: "Beispiel für einen Atemfrequenz-Channel zur Gruppierung von Atemfrequenz-Messungen"
+Title: "Example Channel ResMed Respiratory Rate"
+Description: "Example of a respiratory rate channel for grouping respiratory rate measurements"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-RESMED-ATEMFREQ-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69723 "MDC_DEV_ANALY_RESP_RATE_CHAN"
 * deviceName.name = "Atemfrequenz Measurement Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-resmed-atemfrequenz)
@@ -47,11 +45,11 @@ Description: "Beispiel für einen Atemfrequenz-Channel zur Gruppierung von Atemf
 Instance: beispiel-channel-resmed-leckage
 InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel ResMed Leckage"
-Description: "Beispiel für einen Leckage-Channel zur Gruppierung von Leckage-Messungen"
+Title: "Example Channel ResMed Leakage"
+Description: "Example of a leakage channel for grouping leakage measurements"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-RESMED-LECKAGE-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69635 "MDC_DEV_CHAN"
 * deviceName.name = "Leckage Measurement Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-resmed-leckage)
@@ -59,11 +57,11 @@ Description: "Beispiel für einen Leckage-Channel zur Gruppierung von Leckage-Me
 Instance: beispiel-channel-loewenstein-peep
 InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel Löwenstein PEEP"
-Description: "Beispiel für einen PEEP-Channel zur Gruppierung von PEEP-Messungen"
+Title: "Example Channel Löwenstein PEEP"
+Description: "Example of a PEEP channel for grouping PEEP measurements"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-LOEW-PEEP-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69635 "MDC_DEV_CHAN"
 * deviceName.name = "PEEP Measurement Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-loewenstein-peep)
@@ -71,11 +69,11 @@ Description: "Beispiel für einen PEEP-Channel zur Gruppierung von PEEP-Messunge
 Instance: beispiel-channel-loewenstein-triggeredbreaths
 InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel Löwenstein TriggeredBreaths"
-Description: "Beispiel für einen TriggeredBreaths-Channel zur Gruppierung von TriggeredBreaths-Messungen"
+Title: "Example Channel Löwenstein TriggeredBreaths"
+Description: "Example of a TriggeredBreaths channel for grouping TriggeredBreaths measurements"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-LOEW-TRIG-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69635 "MDC_DEV_CHAN"
 * deviceName.name = "TriggeredBreaths Measurement Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-loewenstein-triggeredbreaths)
@@ -83,11 +81,11 @@ Description: "Beispiel für einen TriggeredBreaths-Channel zur Gruppierung von T
 Instance: beispiel-channel-loewenstein-ti
  InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel Löwenstein TI"
-Description: "Beispiel für einen TI-Channel zur Gruppierung von TI-Messungen"
+Title: "Example Channel Löwenstein TI"
+Description: "Example of a TI channel for grouping TI measurements"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-LOEW-TI-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69635 "MDC_DEV_CHAN"
 * deviceName.name = "TI Measurement Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-loewenstein-ti)
@@ -95,11 +93,11 @@ Description: "Beispiel für einen TI-Channel zur Gruppierung von TI-Messungen"
 Instance: beispiel-channel-resmed-atemzeit
  InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel ResMed Atemzeitverhältnis"
-Description: "Beispiel für einen Atemzeitverhältnis-Channel zur Gruppierung von Atemzeitverhältnis-Berechnungen"
+Title: "Example Channel ResMed Respiratory Time Ratio"
+Description: "Example of a respiratory time ratio channel for grouping respiratory time ratio calculations"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-RESMED-ATEMZEIT-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69635 "MDC_DEV_CHAN"
 * deviceName.name = "Atemzeitverhältnis Calculation Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-resmed-atemzeit)
@@ -107,11 +105,11 @@ Description: "Beispiel für einen Atemzeitverhältnis-Channel zur Gruppierung vo
 Instance: beispiel-channel-resmed-druck
  InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel ResMed Druck Min/Max"
-Description: "Beispiel für einen Druck Min/Max-Channel zur Gruppierung von Druck-Messungen"
+Title: "Example Channel ResMed Pressure Min/Max"
+Description: "Example of a pressure min/max channel for grouping pressure measurements"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-RESMED-DRUCK-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69719 "MDC_DEV_ANALY_PRESS_LUNG_CHAN"
 * deviceName.name = "Druck Min/Max Measurement Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-resmed-druck)
@@ -119,11 +117,11 @@ Description: "Beispiel für einen Druck Min/Max-Channel zur Gruppierung von Druc
 Instance: beispiel-channel-breas-ipap
  InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel BREAS IPAP"
-Description: "Beispiel für einen IPAP-Channel zur Gruppierung von IPAP-Einstellungen"
+Title: "Example Channel BREAS IPAP"
+Description: "Example of an IPAP channel for grouping IPAP settings"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-BREAS-IPAP-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69635 "MDC_DEV_CHAN"
 * deviceName.name = "IPAP Setting Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-breas-ipap)
@@ -131,11 +129,11 @@ Description: "Beispiel für einen IPAP-Channel zur Gruppierung von IPAP-Einstell
 Instance: beispiel-channel-breas-targetvolume
  InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Channel BREAS Target Volume"
-Description: "Beispiel für einen Target Volume-Channel zur Gruppierung von Target Volume-Einstellungen"
+Title: "Example Channel BREAS Target Volume"
+Description: "Example of a target volume channel for grouping target volume settings"
 * identifier.system = "http://tcabs.example.org/device-channel"
 * identifier.value = "CHAN-BREAS-TGTVOL-001"
-* type.coding = $IEEE-11073#70003 "MDC_DEV_SYS_PT_VENT_CHAN"
+* type.coding = $IEEE-11073#69635 "MDC_DEV_CHAN"
 * deviceName.name = "Target Volume Setting Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-breas-targetvolume)

@@ -1,10 +1,10 @@
-# Beispiel AHI Messung BREAS - v0.1.0
+# Example AHI Measurement BREAS - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel AHI Messung BREAS**
+* **Example AHI Measurement BREAS**
 
-## Example Observation: Beispiel AHI Messung BREAS
+## Example Observation: Example AHI Measurement BREAS
 
 Profile: [T-CABS Observation AHI](StructureDefinition-t-cabs-observation-ahi.md)
 

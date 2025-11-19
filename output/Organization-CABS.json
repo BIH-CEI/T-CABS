@@ -2,12 +2,17 @@
   "resourceType" : "Organization",
   "id" : "CABS",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-organisation"]
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+    "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization CABS</b></p><a name=\"CABS\"> </a><a name=\"hcCABS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-organisation.html\">T-CABS Organisation</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Charité Campus Mitte</p><p><b>telecom</b>: <a href=\"tel:+4930450550137\">+49 30 450 550 137</a>, <a href=\"mailto:cabs@charite.de\">cabs@charite.de</a></p><p><b>address</b>: Charitéplatz 1 Sauerbruchweg 3, Ebene 3 Berlin 10117 DE (work)</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization CABS</b></p><a name=\"CABS\"> </a><a name=\"hcCABS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-t-cabs-organisation.html\">T-CABS Organization</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation\">https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/cabs</code>/CABS-001</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Charité Campus Mitte</p><p><b>telecom</b>: <a href=\"tel:+4930450550137\">+49 30 450 550 137</a>, <a href=\"mailto:cabs@charite.de\">cabs@charite.de</a></p><p><b>address</b>: Charitéplatz 1 Sauerbruchweg 3, Ebene 3 Berlin 10117 DE (work)</p></div>"
   },
+  "identifier" : [{
+    "system" : "http://tcabs.example.org/cabs",
+    "value" : "CABS-001"
+  }],
   "active" : true,
   "type" : [{
     "coding" : [{

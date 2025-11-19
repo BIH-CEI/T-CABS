@@ -8,18 +8,25 @@
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion",
   "version" : "0.1.0",
   "name" : "T_CABS_PractitionerRole_Funktion",
-  "title" : "T-CABS Funktion",
+  "title" : "T-CABS Function",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://www.bihealth.org/"
     }]
   }],
-  "description" : "Profil für eine Funktion einer Person innerhalb der T-CABS Studie",
+  "description" : "Profile for a function of a person within the T-CABS study",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "v2",

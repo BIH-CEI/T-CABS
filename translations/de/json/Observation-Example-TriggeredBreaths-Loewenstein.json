@@ -1,0 +1,23 @@
+{
+  "id" : "Observation-Example-TriggeredBreaths-Loewenstein",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "MDC_VENT_RESP_BTSD_P_RATE",
+          "target" : null
+        },
+        {
+          "id" : "Quantity.unit",
+          "context" : "A human-readable form of the unit.",
+          "source" : "%",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

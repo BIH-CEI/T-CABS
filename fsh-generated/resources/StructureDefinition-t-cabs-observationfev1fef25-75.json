@@ -1,0 +1,47 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observationfev1fef25-75",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fef25-75",
+  "name": "T_CABS_Observation_FEF25_75",
+  "title": "T-CABS Observation FEF25-75",
+  "status": "draft",
+  "description": "Profile for mean forced expiratory flow during exhalation of 25% to 75% of forced vital capacity (FVC)",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:MDCType",
+        "path": "Observation.code.coding",
+        "sliceName": "MDCType",
+        "patternCoding": {
+          "code": "188960",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.code.coding:LoincCoding",
+        "path": "Observation.code.coding",
+        "sliceName": "LoincCoding",
+        "patternCoding": {
+          "code": "69971-0",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "L/s"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "L/s"
+      }
+    ]
+  }
+}

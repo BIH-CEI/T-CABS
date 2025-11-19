@@ -1,12 +1,12 @@
-# Beispiel VMD ResMed Leckage Module - v0.1.0
+# Example VMD ResMed Leakage Module - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel VMD ResMed Leckage Module**
+* **Example VMD ResMed Leakage Module**
 
-## Example Device: Beispiel VMD ResMed Leckage Module
+## Example Device: Example VMD ResMed Leakage Module
 
-Profile: [T-CABS Device VMD Beatmungsgeraet](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md)
+Profile: [T-CABS Device VMD Ventilator](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md)
 
 **identifier**: `http://tcabs.example.org/device-vmd`/VMD-RESMED-LECKAGE-001
 
@@ -17,7 +17,7 @@ Profile: [T-CABS Device VMD Beatmungsgeraet](StructureDefinition-t-cabs-device-v
 | - | **Name** | **Type** |
 | * | Stellar150 Leckage Module | User Friendly name |
 
-**type**: MDC_DEV_SYS_PT_VENT_VMD
+**type**: MDC_DEV_VMD
 
 **parent**: [Device: extension = 6500; identifier = UDI; manufacturer = ResMed; serialNumber = STELLAR150-SN-901234; type = MDC_DEV_SYS_PT_VENT_MDS](Device-beispiel-beatmungsgeraet-resmed.md)
 
@@ -50,8 +50,8 @@ Profile: [T-CABS Device VMD Beatmungsgeraet](StructureDefinition-t-cabs-device-v
     "coding" : [
       {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "70002",
-        "display" : "MDC_DEV_SYS_PT_VENT_VMD"
+        "code" : "69634",
+        "display" : "MDC_DEV_VMD"
       }
     ]
   },

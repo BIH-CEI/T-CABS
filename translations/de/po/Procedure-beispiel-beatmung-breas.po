@@ -1,0 +1,11 @@
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "Invasive mechanical ventilation (regime/therapy)"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "MDC_VENT_MODE_ISO_AC_PC_6ACAP"
+msgstr ""
+

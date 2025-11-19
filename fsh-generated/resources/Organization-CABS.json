@@ -3,9 +3,16 @@
   "id": "CABS",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+      "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/cabs",
+      "value": "CABS-001"
+    }
+  ],
   "type": [
     {
       "coding": [

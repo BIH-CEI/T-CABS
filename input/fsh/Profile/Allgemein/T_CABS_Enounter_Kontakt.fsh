@@ -1,8 +1,10 @@
 Profile: T_CABS_Encounter_Kontakt
 Parent: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
 Id: t-cabs-encounter-kontakt
-Title: "T-CABS Encounter Kontakt"
-Description: "Profil für einen Kontakt/ eine Visite innerhalb der T-CABS Studie"
+Title: "T-CABS Encounter Contact"
+Description: "Profile for a contact with the patient.
+Compatibility:
+The T_CABS_Encounter_Kontakt profile aims for compatibility with the ISiKKontaktGesundheitseinrichtung, however it cannot be guaranteed that instances valid against T_CABS_Encounter_Kontakt are also valid against the [ISiKKontaktGesundheitseinrichtung](https://simplifier.net/isik-stufe-5/isikkontaktgesundheitseinrichtung)"
 
 // type  #konsil
 // class = #VR "virtual" oder #HH "home health" oder ambulat/stationär?
@@ -10,15 +12,16 @@ Description: "Profil für einen Kontakt/ eine Visite innerhalb der T-CABS Studie
 * subject 1..1 MS
 * subject only Reference(t-cabs-patient)
 // Gesehen
-* period 1..1
+* period 1..1 MS
 
 * serviceProvider MS
 
 Instance: Example-Encounter-Telemedizinische-Visite
 InstanceOf: T_CABS_Encounter_Kontakt
 Usage: #example
-Title: "Beispiel Telemedizinische Visite"
-Description: "Beispiel für eine wöchentliche telemedizinische Visite eines T-CABS Patienten"
+Title: "Example Telemedicine Visit"
+Description: "Example of a weekly telemedicine visit of a T-CABS patient"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
 * identifier.system = "http://tcabs.example.org/encounters"
 * identifier.value = "ENC-TCABS-WEEKLY-001"
 * status = #finished

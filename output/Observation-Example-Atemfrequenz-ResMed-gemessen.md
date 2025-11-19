@@ -1,12 +1,12 @@
-# Beispiel Atemfrequenz Messung ResMed - v0.1.0
+# Example Respiratory Rate Measurement ResMed - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Atemfrequenz Messung ResMed**
+* **Example Respiratory Rate Measurement ResMed**
 
-## Example Observation: Beispiel Atemfrequenz Messung ResMed
+## Example Observation: Example Respiratory Rate Measurement ResMed
 
-Profile: [T-CABS Observation AF](StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.md)
+Profile: [T-CABS Observation Respiratory Rate Ventilated](StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.md)
 
 **partOf**: [Procedure MDC_PRESS_AWAY_CTS_POS](Procedure-beispiel-beatmung-resmed.md)
 

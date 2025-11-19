@@ -5,7 +5,7 @@
   "name": "T_CABS_DeviceMetric_NumericMetric",
   "title": "T-CABS DeviceMetric NumericMetric",
   "status": "draft",
-  "description": "Profil welches eine numerische Messung, Berechnung oder Einstellung darstellt",
+  "description": "Profile representing a numeric measurement, calculation, or setting",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -14,6 +14,23 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "DeviceMetric.type",
+        "path": "DeviceMetric.type",
+        "definition": "Coding to identify the parameter"
+      },
+      {
+        "id": "DeviceMetric.source",
+        "path": "DeviceMetric.source",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+            ]
+          }
+        ]
+      },
       {
         "id": "DeviceMetric.parent",
         "path": "DeviceMetric.parent",
@@ -29,7 +46,7 @@
       {
         "id": "DeviceMetric.category",
         "path": "DeviceMetric.category",
-        "short": "Messung oder Einstellung"
+        "short": "Measurement or setting"
       }
     ]
   }

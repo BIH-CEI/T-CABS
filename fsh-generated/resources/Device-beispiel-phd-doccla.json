@@ -22,7 +22,7 @@
   ],
   "deviceName": [
     {
-      "name": "Doccla Pulsoximeter",
+      "name": "Pulsoximeter",
       "type": "user-friendly-name"
     }
   ],
@@ -50,9 +50,12 @@
     ]
   },
   "serialNumber": "PHD-SN-345678",
-  "manufacturer": "Doccla GmbH",
+  "manufacturer": "Masimo",
   "modelNumber": "DPO-2024",
   "patient": {
     "reference": "Patient/tcabs-patient-example"
+  },
+  "owner": {
+    "reference": "Organization/beispiel-provider-doccla"
   }
 }

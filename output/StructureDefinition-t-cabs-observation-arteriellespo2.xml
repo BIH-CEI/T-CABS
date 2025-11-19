@@ -27,16 +27,23 @@
   <name value="T_CABS_Observation_ArterielleSPO2"/>
   <title value="T-CABS Observation SPO2"/>
   <status value="draft"/>
-  <date value="2025-10-16T18:59:10+02:00"/>
+  <date value="2025-11-19T11:55:29+01:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="https://www.bihealth.org/"/>
     </telecom>
   </contact>
-  <description value="Profil für die arterielle Sauerstoffsättigung (SPO2)"/>
+  <description value="Profile for arterial oxygen saturation (SPO2)&#xA;Compatibility:&#xA;For the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>
@@ -1037,7 +1044,7 @@
     </element>
     <element id="Observation.extension.value[x]">
       <path value="Observation.extension.value[x]"/>
-      <short value="Reference to the Personal Health Gateway (PHG) Device"/>
+      <short value="Reference to the PHG device"/>
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)."/>
       <min value="1"/>
       <max value="1"/>
@@ -1048,6 +1055,7 @@
       </base>
       <type>
         <code value="Reference"/>
+        <targetProfile value="http://t-cabs.org/StructureDefinition/t-cabs-device-phg"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1696,7 +1704,7 @@
       <definition value="A code that classifies the general type of observation being made."/>
       <comment value="In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set."/>
       <requirements value="Used for filtering what observations are retrieved and displayed."/>
-      <min value="1"/>
+      <min value="2"/>
       <max value="*"/>
       <base>
         <path value="Observation.category"/>
@@ -2212,7 +2220,7 @@
       <definition value="A code that classifies the general type of observation being made."/>
       <comment value="In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set."/>
       <requirements value="Used for filtering what observations are retrieved and displayed."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Observation.category"/>
@@ -2230,6 +2238,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
@@ -2329,7 +2338,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems."/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <base>
         <path value="CodeableConcept.coding"/>
         <min value="0"/>
@@ -2350,6 +2359,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -2886,6 +2896,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -3200,6 +3211,7 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -3529,7 +3541,7 @@
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject"/>
-      <short value="Referenz auf den Patienten"/>
+      <short value="Reference to the patient"/>
       <definition value="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation."/>
       <comment value="One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated."/>
       <requirements value="Observations have no value if you don't know who or what they're about."/>
@@ -3957,7 +3969,7 @@
     </element>
     <element id="Observation.performer">
       <path value="Observation.performer"/>
-      <short value="Who is responsible for the observation"/>
+      <short value="Reference to the person who performed the measurement"/>
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;."/>
       <requirements value="May give a degree of confidence in the observation and also indicates where follow-up questions should be directed."/>
       <min value="0"/>
@@ -5680,7 +5692,7 @@
     </element>
     <element id="Observation.device">
       <path value="Observation.device"/>
-      <short value="(Measurement) Device"/>
+      <short value="Reference to the PHD measurement device"/>
       <definition value="The device used to generate the observation data."/>
       <comment value="This field will reference the PHD Device."/>
       <min value="1"/>

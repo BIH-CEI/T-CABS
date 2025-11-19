@@ -1,0 +1,17 @@
+{
+  "id" : "Organization-beispiel-provider-loewenstein",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "en",
+      "entries" : [
+        {
+          "id" : "Organization.name",
+          "context" : "A name associated with the organization.",
+          "source" : "Löwenstein Medical",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

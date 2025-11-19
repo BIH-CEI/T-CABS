@@ -1,12 +1,14 @@
-# Beispiel arterielle SPO2 Messung - v0.1.0
+# Example Arterial SPO2 Measurement - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel arterielle SPO2 Messung**
+* **Example Arterial SPO2 Measurement**
 
-## Example Observation: Beispiel arterielle SPO2 Messung
+## Example Observation: Example Arterial SPO2 Measurement
 
-Profile: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md)
+Profiles: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)
+
+**Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
 **status**: Final
 
@@ -22,7 +24,7 @@ Profile: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteri
 
 **bodySite**: Arterial system structure (body structure)
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
 
 
 
@@ -34,9 +36,18 @@ Profile: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteri
   "id" : "Example-ArterielleSPO2-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell"
     ]
   },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference" : {
+        "reference" : "Device/beispiel-phg-doccla"
+      }
+    }
+  ],
   "status" : "final",
   "category" : [
     {

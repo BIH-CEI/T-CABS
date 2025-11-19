@@ -1,18 +1,18 @@
-# T-CABS Funktion - v0.1.0
+# T-CABS Function - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Funktion**
+* **T-CABS Function**
 
-## Resource Profile: T-CABS Funktion 
+## Resource Profile: T-CABS Function 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_PractitionerRole_Funktion |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_PractitionerRole_Funktion |
 
  
-Profil für eine Funktion einer Person innerhalb der T-CABS Studie 
+Profile for a function of a person within the T-CABS study 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-practitioner-
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion",
   "version" : "0.1.0",
   "name" : "T_CABS_PractitionerRole_Funktion",
-  "title" : "T-CABS Funktion",
+  "title" : "T-CABS Function",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-practitioner-
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für eine Funktion einer Person innerhalb der T-CABS Studie",
+  "description" : "Profile for a function of a person within the T-CABS study",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/Organization/beispiel-provider-doccla> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "beispiel-provider-doccla"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-organisation>
+     ] [
+       fhir:v "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation"^^xsd:anyURI ;
+       fhir:l <https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization beispiel-provider-doccla</b></p><a name=\"beispiel-provider-doccla\"> </a><a name=\"hcbeispiel-provider-doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-t-cabs-organisation.html\">T-CABS Organization</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation\">https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/providers</code>/PROV-DOCCLA-001</p><p><b>name</b>: Doccla Deutschland GmbH</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://tcabs.example.org/providers"^^xsd:anyURI ;
+       fhir:l <http://tcabs.example.org/providers>
+     ] ;
+     fhir:value [ fhir:v "PROV-DOCCLA-001" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Doccla Deutschland GmbH"] . # 
+
+# -------------------------------------------------------------------------------------
+

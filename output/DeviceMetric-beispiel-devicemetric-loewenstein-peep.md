@@ -1,10 +1,10 @@
-# Beispiel DeviceMetric Löwenstein PEEP - v0.1.0
+# Example DeviceMetric Löwenstein PEEP - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel DeviceMetric Löwenstein PEEP**
+* **Example DeviceMetric Löwenstein PEEP**
 
-## Example DeviceMetric: Beispiel DeviceMetric Löwenstein PEEP
+## Example DeviceMetric: Example DeviceMetric Löwenstein PEEP
 
 Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md)
 
@@ -16,7 +16,7 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
 
 **source**: [Device: extension = 12450; identifier = UDI; manufacturer = Löwenstein Medical; serialNumber = PRISMA30-SN-345678; type = MDC_DEV_SYS_PT_VENT_MDS](Device-beispiel-beatmungsgeraet-loewenstein.md)
 
-**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-LOEW-PEEP-001; type = MDC_DEV_SYS_PT_VENT_CHAN](Device-beispiel-channel-loewenstein-peep.md)
+**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-LOEW-PEEP-001; type = MDC_DEV_CHAN](Device-beispiel-channel-loewenstein-peep.md)
 
 **operationalStatus**: On
 

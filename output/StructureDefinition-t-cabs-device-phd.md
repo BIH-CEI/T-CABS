@@ -1,4 +1,4 @@
-# T-CABS Device PHD - v0.1.0
+# T-CABS Device PHD - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-phd | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Device_PHD |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Device_PHD |
 
  
-Profil für ein Messgerät am Patienten 
+Profile for a personal health device measuring at the patient 
 
 **Usages:**
 
-* Refer to this Profile: [T-CABS Observation Vitalparamter](StructureDefinition-t-cabs-observation-vitalparameter.md)
+* Refer to this Profile: [T-CABS Observation Vital Parameter](StructureDefinition-t-cabs-observation-vitalparameter.md) and [T-CABS Observation Vital Parameter with Components](StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.md)
 * Examples for this Profile: [Device/beispiel-phd-doccla](Device-beispiel-phd-doccla.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-device-phd)
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phd.cs
   "name" : "T_CABS_Device_PHD",
   "title" : "T-CABS Device PHD",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -50,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phd.cs
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für ein Messgerät am Patienten",
+  "description" : "Profile for a personal health device measuring at the patient",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -108,20 +119,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phd.cs
       {
         "id" : "Device.serialNumber",
         "path" : "Device.serialNumber",
-        "short" : "Seriennummer des Geraetes",
+        "short" : "Serial number of the device",
         "mustSupport" : true
       },
       {
         "id" : "Device.specialization.systemType.coding:MDCType",
         "path" : "Device.specialization.systemType.coding",
         "sliceName" : "MDCType",
-        "short" : "Art des Messgerätes",
-        "definition" : "528388 MDC_DEV_SPEC_PROFILE_PULS_OXIM - Pulsoximeter\n528399 MDC_DEV_SPEC_PROFILE_SCALE - Waage\n528426 MDC_DEV_SPEC_PROFILE_HF_STRENGTH - Handstärkemesser\n528391 MDC_DEV_SPEC_PROFILE_BP - Sphygmomanometer\n69680 MDC_DEV_ANALY_AWAY_MULTI_PARAM - Spirometer\n528484 MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER - Schrittzähler\n528405\tMDC_DEV_SPEC_PROFILE_BCA - Peak Flow Meter\n"
+        "short" : "Type of measurement device",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp"
+        }
       },
       {
         "id" : "Device.patient",
         "path" : "Device.patient",
-        "short" : "Referenz auf den Patienten",
+        "short" : "Reference to the patient",
         "min" : 1,
         "type" : [
           {

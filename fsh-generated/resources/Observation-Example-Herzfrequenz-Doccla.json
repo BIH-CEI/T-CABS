@@ -3,7 +3,8 @@
   "id": "Example-Herzfrequenz-Doccla",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz"
     ]
   },
   "category": [
@@ -47,6 +48,14 @@
     "code": "/min",
     "value": 72
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference": {
+        "reference": "Device/beispiel-phg-doccla"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/tcabs-patient-example"

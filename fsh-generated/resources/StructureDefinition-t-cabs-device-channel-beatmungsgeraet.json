@@ -3,9 +3,9 @@
   "id": "t-cabs-device-channel-beatmungsgeraet",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
   "name": "T_CABS_Device_Channel_Beatmungsgeraet",
-  "title": "T-CABS Device Channel Beatmungsgeraet",
+  "title": "T-CABS Device Channel Ventilator",
   "status": "draft",
-  "description": "Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics",
+  "description": "Profile representing a channel for grouping DeviceMetrics",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -14,15 +14,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Device.type.coding",
-        "path": "Device.type.coding",
-        "patternCoding": {
-          "code": "70003",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_DEV_SYS_PT_VENT_CHAN"
-        }
-      },
       {
         "id": "Device.parent",
         "path": "Device.parent",

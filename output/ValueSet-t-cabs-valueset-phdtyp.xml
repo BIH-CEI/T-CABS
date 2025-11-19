@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="t-cabs-valueset-phdtyp"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet t-cabs-valueset-phdtyp</b></p><a name="t-cabs-valueset-phdtyp"> </a><a name="hct-cabs-valueset-phdtyp"> </a><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-mdc.html"><code>urn:iso:std:iso:11073:10101</code></a><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>528388</td><td>MDC_DEV_SPEC_PROFILE_PULS_OXIM</td></tr><tr><td>528399</td><td>MDC_DEV_SPEC_PROFILE_SCALE</td></tr><tr><td>69876</td><td>MDC_DEV_METER_STRENGTH_MUSCL</td></tr><tr><td>528391</td><td>MDC_DEV_SPEC_PROFILE_BP</td></tr><tr><td>69680</td><td>MDC_DEV_ANALY_AWAY_MULTI_PARAM</td></tr><tr><td>528484</td><td>MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER</td></tr><tr><td>528405</td><td>MDC_DEV_SPEC_PROFILE_BCA</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp"/>
+  <version value="0.1.0"/>
+  <name value="T_CABS_ValueSet_PHDTyp"/>
+  <title value="T-CABS ValueSet PHD Type"/>
+  <status value="draft"/>
+  <date value="2025-11-19T11:55:29+01:00"/>
+  <publisher value="BIH-CEI"/>
+  <contact>
+    <name value="BIH-CEI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet contains codes to represent the different PHD measurement devices"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <concept>
+        <code value="528388"/>
+        <display value="MDC_DEV_SPEC_PROFILE_PULS_OXIM"/>
+      </concept>
+      <concept>
+        <code value="528399"/>
+        <display value="MDC_DEV_SPEC_PROFILE_SCALE"/>
+      </concept>
+      <concept>
+        <code value="69876"/>
+        <display value="MDC_DEV_METER_STRENGTH_MUSCL"/>
+      </concept>
+      <concept>
+        <code value="528391"/>
+        <display value="MDC_DEV_SPEC_PROFILE_BP"/>
+      </concept>
+      <concept>
+        <code value="69680"/>
+        <display value="MDC_DEV_ANALY_AWAY_MULTI_PARAM"/>
+      </concept>
+      <concept>
+        <code value="528484"/>
+        <display value="MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER"/>
+      </concept>
+      <concept>
+        <code value="528405"/>
+        <display value="MDC_DEV_SPEC_PROFILE_BCA"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

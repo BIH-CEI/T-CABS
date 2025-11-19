@@ -1,10 +1,10 @@
-# Beispiel DeviceMetric BREAS AMV - v0.1.0
+# Example DeviceMetric BREAS AMV - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel DeviceMetric BREAS AMV**
+* **Example DeviceMetric BREAS AMV**
 
-## Example DeviceMetric: Beispiel DeviceMetric BREAS AMV
+## Example DeviceMetric: Example DeviceMetric BREAS AMV
 
 Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md)
 
@@ -16,7 +16,7 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
 
 **source**: [Device: extension = 8760; identifier = UDI; manufacturer = BREAS Medical; serialNumber = VIVO45-SN-789012; type = MDC_DEV_SYS_PT_VENT_MDS](Device-beispiel-beatmungsgeraet-breas.md)
 
-**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-BREAS-AMV-001; type = MDC_DEV_SYS_PT_VENT_CHAN](Device-beispiel-channel-breas-amv.md)
+**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-BREAS-AMV-001; type = MDC_DEV_CHAN](Device-beispiel-channel-breas-amv.md)
 
 **operationalStatus**: On
 

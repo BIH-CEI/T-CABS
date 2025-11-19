@@ -1,22 +1,22 @@
-# T-CABS Encounter Kontakt - v0.1.0
+# T-CABS Encounter Contact - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Encounter Kontakt**
+* **T-CABS Encounter Contact**
 
-## Resource Profile: T-CABS Encounter Kontakt 
+## Resource Profile: T-CABS Encounter Contact 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Encounter_Kontakt |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Encounter_Kontakt |
 
  
-Profil für einen Kontakt/ eine Visite innerhalb der T-CABS Studie 
+Profile for a contact with the patient. Compatibility: The T_CABS_Encounter_Kontakt profile aims for compatibility with the ISiKKontaktGesundheitseinrichtung, however it cannot be guaranteed that instances valid against T_CABS_Encounter_Kontakt are also valid against the[ISiKKontaktGesundheitseinrichtung](https://simplifier.net/isik-stufe-5/isikkontaktgesundheitseinrichtung) 
 
 **Usages:**
 
-* Refer to this Profile: [T-CABS DiagnosticReport Visitenbefund](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)
+* Refer to this Profile: [T-CABS DiagnosticReport Visit Finding](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)
 * Examples for this Profile: [Encounter/Example-Encounter-Telemedizinische-Visite](Encounter-Example-Encounter-Telemedizinische-Visite.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-encounter-kontakt)
@@ -54,9 +54,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-encounter-kon
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
   "version" : "0.1.0",
   "name" : "T_CABS_Encounter_Kontakt",
-  "title" : "T-CABS Encounter Kontakt",
+  "title" : "T-CABS Encounter Contact",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -64,12 +64,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-encounter-kon
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für einen Kontakt/ eine Visite innerhalb der T-CABS Studie",
+  "description" : "Profile for a contact with the patient.\nCompatibility:\nThe T_CABS_Encounter_Kontakt profile aims for compatibility with the ISiKKontaktGesundheitseinrichtung, however it cannot be guaranteed that instances valid against T_CABS_Encounter_Kontakt are also valid against the [ISiKKontaktGesundheitseinrichtung](https://simplifier.net/isik-stufe-5/isikkontaktgesundheitseinrichtung)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "kind" : "resource",
   "abstract" : false,

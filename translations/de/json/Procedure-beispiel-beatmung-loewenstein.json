@@ -1,0 +1,23 @@
+{
+  "id" : "Procedure-beispiel-beatmung-loewenstein",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Invasive mechanical ventilation (regime/therapy)",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>T-CABS DiagnosticReport Visitenbefund - Definitions -  v0.1.0</title>
+    <title>T-CABS DiagnosticReport Visit Finding - Definitions - T-CABS Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,16 +54,26 @@
 
         <!-- Placeholder for child template header declarations -->
 
-<div id="hl7-nav">
-    <a id="logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
         <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
     </a>            
 </div>
 
+<div id="family-nav">
+    <a id="family-logo" no-external="true" href="https://www.charite.de/">
+        <img alt="visit the website" height="60" src="Logo_Charite.png" />
+    </a>            
+</div>
+
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
 
 
             </span>
@@ -94,37 +104,37 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="Informationsmodell.html">Informationsmodell</a>
+    <a href="Information-Model.html">Information Model</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profile
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profiles
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Profile-Allgemein.html">Profile-Allgemein</a>
+        <a href="Cross-Domain-Profiles.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Profile-Vitalparameter.html">Profile-Vitalparameter</a>
+        <a href="Vital-Data-Profiles.html">Vital Data</a>
       </li>
       <li>
-        <a href="Profile-Beatmungsparameter.html">Profile-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Profiles.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Beispiele
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Beispiele-Allgemein.html">Beispiele-Allgemein</a>
+        <a href="Cross-Domain-Examples.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Beispiele-Vitalparameter.html">Beispiele-Vitalparameter</a>
+        <a href="Vital-Data-Examples.html">Vital Data</a>
       </li>
       <li>
-        <a href="Beispiele-Beatmungsparameter.html">Beispiele-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Examples.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
@@ -134,18 +144,18 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Implementation-Allgemein.html">Implementation-Allgemein</a>
+        <a href="Cross-Domain-Implementation.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Implementation-Vitalparameter.html">Implementation-Vitalparameter</a>
+        <a href="Vital-Data-Implementation.html">Vital Data</a>
       </li>
       <li>
-        <a href="Implementation-Beatmungsparameter.html">Implementation-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Implementation.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="Terminologien.html">Terminologien</a>
+    <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -162,7 +172,17 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>T-CABS DiagnosticReport Visitenbefund</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>T-CABS DiagnosticReport Visit Finding</b></li>
+
+          <span style="float:right;">
+
+            <a href="StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="StructureDefinition-t-cabs-diagnosticreport-visitenbefund-mappings.html">next&gt;</a>
+
+          </span>
 
         </ul>
       </div>  <!-- /container -->
@@ -175,7 +195,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TCABS - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -258,7 +278,7 @@
         
           Draft
           
-            as of 2025-10-16
+            as of 2025-11-19
           
         
       </td>
@@ -317,7 +337,7 @@
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_DiagnosticReport.encounter">  </a><span style="color: grey">12</span><b>. DiagnosticReport.encounter</b><a href="#key_DiagnosticReport.encounter" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="color:DarkGray">The healthcare event  (e.g. a patient and healthcare provider interaction) which this DiagnosticReport is about.</p>
 </td></tr><tr><td style="white-space: nowrap">Short</td><td><span style="color:DarkGray">Health care event when test ordered</span></td></tr><tr><td style="white-space: nowrap">Comments</td><td><p style="color:DarkGray">This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter  but still be tied to the context of the encounter  (e.g. pre-admission laboratory tests).</p>
-</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">0</span>..<span style="color:DarkGray">1</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<a href="StructureDefinition-t-cabs-encounter-kontakt.html">T-CABS Encounter Kontakt</a>, <span style="color:DarkGray;text-decoration:line-through"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></span>)</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td><span style="color:DarkGray">false</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p style="color:DarkGray">Links the request to the Encounter context.</p>
+</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">0</span>..<span style="color:DarkGray">1</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<a href="StructureDefinition-t-cabs-encounter-kontakt.html">T-CABS Encounter Contact</a>, <span style="color:DarkGray;text-decoration:line-through"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></span>)</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td><span style="color:DarkGray">false</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p style="color:DarkGray">Links the request to the Encounter context.</p>
 </td></tr><tr><td style="white-space: nowrap">Alternate Names</td><td><span style="color:DarkGray">Context</span></td></tr><tr><td style="white-space: nowrap">Invariants</td><td><span style="color:DarkGray"><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (hasValue() or (children().count() &gt; id.count()))</span></td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_DiagnosticReport.issued">  </a><span style="color: grey">14</span><b>. DiagnosticReport.issued</b><a href="#key_DiagnosticReport.issued" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="color:DarkGray">The date and time that this version of the report was made available to providers, typically after the report was reviewed and verified.</p>
@@ -327,7 +347,7 @@
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_DiagnosticReport.result">  </a><span style="color: grey">16</span><b>. DiagnosticReport.result</b><a href="#key_DiagnosticReport.result" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="color:DarkGray"><a href="http://hl7.org/fhir/R4/observation.html">Observations</a>  that are part of this diagnostic report.</p>
 </td></tr><tr><td style="white-space: nowrap">Short</td><td><span style="color:DarkGray">Observations</span></td></tr><tr><td style="white-space: nowrap">Comments</td><td><p style="color:DarkGray">Observations can contain observations.</p>
-</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">0</span>..<span style="color:DarkGray">*</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<a href="StructureDefinition-t-cabs-observation-beatmungsparameter.html">T-CABS Observation Beatmungsparameter (abstract)</a>, <a href="StructureDefinition-t-cabs-observation-vitalparameter.html">T-CABS Observation Vitalparamter</a>, <span style="color:DarkGray;text-decoration:line-through"><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></span>)</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td><span style="color:DarkGray">false</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p style="color:DarkGray">Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.</p>
+</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">0</span>..<span style="color:DarkGray">*</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<a href="StructureDefinition-t-cabs-observation-beatmungsparameter.html">T-CABS Observation Ventilation Parameter (abstract)</a>, <a href="StructureDefinition-t-cabs-observation-vitalparameter.html">T-CABS Observation Vital Parameter</a>, <span style="color:DarkGray;text-decoration:line-through"><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></span>)</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td><span style="color:DarkGray">false</span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p style="color:DarkGray">Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.</p>
 </td></tr><tr><td style="white-space: nowrap">Alternate Names</td><td><span style="color:DarkGray">Data</span>, <span style="color:DarkGray">Atomic Value</span>, <span style="color:DarkGray">Result</span>, <span style="color:DarkGray">Atomic result</span>, <span style="color:DarkGray">Data</span>, <span style="color:DarkGray">Test</span>, <span style="color:DarkGray">Analyte</span>, <span style="color:DarkGray">Battery</span>, <span style="color:DarkGray">Organizer</span></td></tr><tr><td style="white-space: nowrap">Invariants</td><td><span style="color:DarkGray"><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (hasValue() or (children().count() &gt; id.count()))</span></td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_DiagnosticReport.conclusion">  </a><span style="color: grey">18</span><b>. DiagnosticReport.conclusion</b><a href="#key_DiagnosticReport.conclusion" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="color:DarkGray">Concise and clinically contextualized summary conclusion (interpretation/impression) of the diagnostic report.</p>
@@ -350,11 +370,11 @@
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_DiagnosticReport.subject">  </a><span style="color: grey">6</span><b>. DiagnosticReport.subject</b><a href="#diff_DiagnosticReport.subject" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient</a>)</td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_DiagnosticReport.encounter">  </a><span style="color: grey">8</span><b>. DiagnosticReport.encounter</b><a href="#diff_DiagnosticReport.encounter" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-t-cabs-encounter-kontakt.html">T-CABS Encounter Kontakt</a>)</td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_DiagnosticReport.encounter">  </a><span style="color: grey">8</span><b>. DiagnosticReport.encounter</b><a href="#diff_DiagnosticReport.encounter" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-t-cabs-encounter-kontakt.html">T-CABS Encounter Contact</a>)</td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_DiagnosticReport.issued">  </a><span style="color: grey">10</span><b>. DiagnosticReport.issued</b><a href="#diff_DiagnosticReport.issued" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..?</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_DiagnosticReport.result">  </a><span style="color: grey">12</span><b>. DiagnosticReport.result</b><a href="#diff_DiagnosticReport.result" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-t-cabs-observation-beatmungsparameter.html">T-CABS Observation Beatmungsparameter (abstract)</a>, <a href="StructureDefinition-t-cabs-observation-vitalparameter.html">T-CABS Observation Vitalparamter</a>)</td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_DiagnosticReport.result">  </a><span style="color: grey">12</span><b>. DiagnosticReport.result</b><a href="#diff_DiagnosticReport.result" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-t-cabs-observation-beatmungsparameter.html">T-CABS Observation Ventilation Parameter (abstract)</a>, <a href="StructureDefinition-t-cabs-observation-vitalparameter.html">T-CABS Observation Vital Parameter</a>)</td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_DiagnosticReport.conclusion">  </a><span style="color: grey">14</span><b>. DiagnosticReport.conclusion</b><a href="#diff_DiagnosticReport.conclusion" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..?</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
 
@@ -432,7 +452,7 @@
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="DiagnosticReport.encounter">  </a><span style="color: grey">30</span><b>. DiagnosticReport.encounter</b><a href="#DiagnosticReport.encounter" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px">The healthcare event  (e.g. a patient and healthcare provider interaction) which this DiagnosticReport is about.</p>
 </td></tr><tr><td style="white-space: nowrap">Short</td><td>Health care event when test ordered</td></tr><tr><td style="white-space: nowrap">Comments</td><td><p style="font-size: 11px">This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter  but still be tied to the context of the encounter  (e.g. pre-admission laboratory tests).</p>
-</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-t-cabs-encounter-kontakt.html">T-CABS Encounter Kontakt</a>)</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>false</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p style="font-size: 11px">Links the request to the Encounter context.</p>
+</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-t-cabs-encounter-kontakt.html">T-CABS Encounter Contact</a>)</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>false</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p style="font-size: 11px">Links the request to the Encounter context.</p>
 </td></tr><tr><td style="white-space: nowrap">Alternate Names</td><td>Context</td></tr><tr><td style="white-space: nowrap">Invariants</td><td><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (<code>hasValue() or (children().count() &gt; id.count())</code>)</td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="DiagnosticReport.effective[x]">  </a><a name="DiagnosticReport.effectiveDateTime">  </a><a name="DiagnosticReport.effective[x]:effectiveDateTime">  </a><a name="DiagnosticReport.effectiveDateTime:effectiveDateTime">  </a><a name="DiagnosticReport.effectivePeriod">  </a><a name="DiagnosticReport.effective[x]:effectivePeriod">  </a><a name="DiagnosticReport.effectivePeriod:effectivePeriod">  </a><span style="color: grey">32</span><b>. DiagnosticReport.effective[x]</b><a href="#DiagnosticReport.effective[x]" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px">The time or time-period the observed values are related to. When the subject of the report is a patient, this is usually either the time of the procedure or of specimen collection(s), but very often the source of the date/time is not known, only the date/time itself.</p>
@@ -462,7 +482,7 @@
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="DiagnosticReport.result">  </a><span style="color: grey">42</span><b>. DiagnosticReport.result</b><a href="#DiagnosticReport.result" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px"><a href="http://hl7.org/fhir/R4/observation.html">Observations</a>  that are part of this diagnostic report.</p>
 </td></tr><tr><td style="white-space: nowrap">Short</td><td>Observations</td></tr><tr><td style="white-space: nowrap">Comments</td><td><p style="font-size: 11px">Observations can contain observations.</p>
-</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-t-cabs-observation-beatmungsparameter.html">T-CABS Observation Beatmungsparameter (abstract)</a>, <a href="StructureDefinition-t-cabs-observation-vitalparameter.html">T-CABS Observation Vitalparamter</a>)</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>false</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p style="font-size: 11px">Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.</p>
+</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-t-cabs-observation-beatmungsparameter.html">T-CABS Observation Ventilation Parameter (abstract)</a>, <a href="StructureDefinition-t-cabs-observation-vitalparameter.html">T-CABS Observation Vital Parameter</a>)</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>false</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p style="font-size: 11px">Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.</p>
 </td></tr><tr><td style="white-space: nowrap">Alternate Names</td><td>Data, Atomic Value, Result, Atomic result, Data, Test, Analyte, Battery, Organizer</td></tr><tr><td style="white-space: nowrap">Invariants</td><td><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (<code>hasValue() or (children().count() &gt; id.count())</code>)</td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="DiagnosticReport.imagingStudy">  </a><span style="color: grey">44</span><b>. DiagnosticReport.imagingStudy</b><a href="#DiagnosticReport.imagingStudy" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px">One or more links to full details of any imaging performed during the diagnostic investigation. Typically, this is imaging performed by DICOM enabled modalities, but this is not required. A fully enabled PACS viewer can use this information to provide views of the source images.</p>
@@ -533,9 +553,31 @@
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="StructureDefinition-t-cabs-diagnosticreport-visitenbefund-mappings.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 16, 2025 18:59+0200">2025-10-16</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 19, 2025 11:55+0100">2025-11-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

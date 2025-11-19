@@ -1,12 +1,14 @@
-# Beispiel arterieller Blutdruck Messung - v0.1.0
+# Example Arterial Blood Pressure Measurement - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel arterieller Blutdruck Messung**
+* **Example Arterial Blood Pressure Measurement**
 
-## Example Observation: Beispiel arterieller Blutdruck Messung
+## Example Observation: Example Arterial Blood Pressure Measurement
 
-Profile: [T-CABS Observation Arterieller Blutdruck](StructureDefinition-t-cabs-observation-arteriellerblutdruck.md)
+Profiles: [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cabs-observation-arteriellerblutdruck.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell)
+
+**Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
 **status**: Final
 
@@ -18,7 +20,7 @@ Profile: [T-CABS Observation Arterieller Blutdruck](StructureDefinition-t-cabs-o
 
 **effective**: 2024-01-15 09:00:00+0000 --> 2024-01-15 09:00:00+0000
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
 
 > **component****code**:Systolic blood pressure**value**: 125 mm[Hg](Details: UCUM codemm[Hg] = 'mm[Hg]')
 
@@ -34,9 +36,18 @@ Profile: [T-CABS Observation Arterieller Blutdruck](StructureDefinition-t-cabs-o
   "id" : "Example-ArteriellerBlutdruck-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell"
     ]
   },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference" : {
+        "reference" : "Device/beispiel-phg-doccla"
+      }
+    }
+  ],
   "status" : "final",
   "category" : [
     {

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Beispiel VMD BREAS IPAP Module - JSON Representation -  v0.1.0</title>
+    <title>Example VMD BREAS IPAP Module - JSON Representation - T-CABS Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,23 +45,33 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.98"}
-    h3,h4,h5,h6{--heading-prefix:"13.98"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.109"}
+    h3,h4,h5,h6{--heading-prefix:"13.109"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
-<div id="hl7-nav">
-    <a id="logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
         <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
     </a>            
 </div>
 
+<div id="family-nav">
+    <a id="family-logo" no-external="true" href="https://www.charite.de/">
+        <img alt="visit the website" height="60" src="Logo_Charite.png" />
+    </a>            
+</div>
+
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
 
 
             </span>
@@ -92,37 +102,37 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="Informationsmodell.html">Informationsmodell</a>
+    <a href="Information-Model.html">Information Model</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profile
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profiles
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Profile-Allgemein.html">Profile-Allgemein</a>
+        <a href="Cross-Domain-Profiles.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Profile-Vitalparameter.html">Profile-Vitalparameter</a>
+        <a href="Vital-Data-Profiles.html">Vital Data</a>
       </li>
       <li>
-        <a href="Profile-Beatmungsparameter.html">Profile-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Profiles.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Beispiele
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Beispiele-Allgemein.html">Beispiele-Allgemein</a>
+        <a href="Cross-Domain-Examples.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Beispiele-Vitalparameter.html">Beispiele-Vitalparameter</a>
+        <a href="Vital-Data-Examples.html">Vital Data</a>
       </li>
       <li>
-        <a href="Beispiele-Beatmungsparameter.html">Beispiele-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Examples.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
@@ -132,18 +142,18 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Implementation-Allgemein.html">Implementation-Allgemein</a>
+        <a href="Cross-Domain-Implementation.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Implementation-Vitalparameter.html">Implementation-Vitalparameter</a>
+        <a href="Vital-Data-Implementation.html">Vital Data</a>
       </li>
       <li>
-        <a href="Implementation-Beatmungsparameter.html">Implementation-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Implementation.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="Terminologien.html">Terminologien</a>
+    <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -160,7 +170,17 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Beispiel VMD BREAS IPAP Module</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example VMD BREAS IPAP Module</b></li>
+
+          <span style="float:right;">
+
+            <a href="Device-beispiel-vmd-breas-ipap.xml.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="Device-beispiel-vmd-breas-ipap.ttl.html">next&gt;</a>
+
+          </span>
 
         </ul>
       </div>  <!-- /container -->
@@ -173,7 +193,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">TCABS - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -219,7 +239,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Beispiel VMD BREAS IPAP Module - JSON Representation</h2>
+<h2 id="root">: Example VMD BREAS IPAP Module - JSON Representation</h2>
 
 
 <p><a href="Device-beispiel-vmd-breas-ipap.json" no-download="true">Raw json</a> | <a href="Device-beispiel-vmd-breas-ipap.json" download>Download</a></p>
@@ -239,7 +259,7 @@
   },
   "<a href="http://hl7.org/fhir/R4/device.html#Device.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Device beispiel-vmd-breas-ipap&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;beispiel-vmd-breas-ipap\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcbeispiel-vmd-breas-ipap\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html\&quot;&gt;T-CABS Device VMD Beatmungsgeraet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://tcabs.example.org/device-vmd&lt;/code&gt;/VMD-BREAS-IPAP-001&lt;/p&gt;&lt;h3&gt;DeviceNames&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Vivo45 IPAP Module&lt;/td&gt;&lt;td&gt;User Friendly name&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:iso:std:iso:11073:10101 70002}\&quot;&gt;MDC_DEV_SYS_PT_VENT_VMD&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;parent&lt;/b&gt;: &lt;a href=\&quot;Device-beispiel-beatmungsgeraet-breas.html\&quot;&gt;Device: extension = 8760; identifier = UDI; manufacturer = BREAS Medical; serialNumber = VIVO45-SN-789012; type = MDC_DEV_SYS_PT_VENT_MDS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Device beispiel-vmd-breas-ipap&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;beispiel-vmd-breas-ipap\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcbeispiel-vmd-breas-ipap\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html\&quot;&gt;T-CABS Device VMD Ventilator&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://tcabs.example.org/device-vmd&lt;/code&gt;/VMD-BREAS-IPAP-001&lt;/p&gt;&lt;h3&gt;DeviceNames&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Vivo45 IPAP Module&lt;/td&gt;&lt;td&gt;User Friendly name&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:iso:std:iso:11073:10101 69634}\&quot;&gt;MDC_DEV_VMD&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;parent&lt;/b&gt;: &lt;a href=\&quot;Device-beispiel-beatmungsgeraet-breas.html\&quot;&gt;Device: extension = 8760; identifier = UDI; manufacturer = BREAS Medical; serialNumber = VIVO45-SN-789012; type = MDC_DEV_SYS_PT_VENT_MDS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/device.html#Device.identifier">identifier</a>" : [
     {
@@ -257,8 +277,8 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:11073:10101",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "70002",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "MDC_DEV_SYS_PT_VENT_VMD"
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "69634",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "MDC_DEV_VMD"
       }
     ]
   },
@@ -287,9 +307,31 @@
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="Device-beispiel-vmd-breas-ipap.xml.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="Device-beispiel-vmd-breas-ipap.ttl.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 16, 2025 18:59+0200">2025-10-16</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 19, 2025 11:55+0100">2025-11-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

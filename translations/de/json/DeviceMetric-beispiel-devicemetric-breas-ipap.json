@@ -1,0 +1,23 @@
+{
+  "id" : "DeviceMetric-beispiel-devicemetric-breas-ipap",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "MDC_SABTE_PRESS_IPAP_SET",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "mbar",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

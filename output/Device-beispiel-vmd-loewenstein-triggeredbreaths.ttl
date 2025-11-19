@@ -12,15 +12,18 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-vmd-loewenstein-triggeredbreaths</b></p><a name=\"beispiel-vmd-loewenstein-triggeredbreaths\"> </a><a name=\"hcbeispiel-vmd-loewenstein-triggeredbreaths\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html\">T-CABS Device VMD Beatmungsgeraet</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-vmd</code>/VMD-LOEW-TRIG-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Prisma VENT30 TriggeredBreaths Module</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 70002}\">MDC_DEV_SYS_PT_VENT_VMD</span></p><p><b>parent</b>: <a href=\"Device-beispiel-beatmungsgeraet-loewenstein.html\">Device: extension = 12450; identifier = UDI; manufacturer = Löwenstein Medical; serialNumber = PRISMA30-SN-345678; type = MDC_DEV_SYS_PT_VENT_MDS</a></p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-vmd-loewenstein-triggeredbreaths</b></p><a name=\"beispiel-vmd-loewenstein-triggeredbreaths\"> </a><a name=\"hcbeispiel-vmd-loewenstein-triggeredbreaths\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html\">T-CABS Device VMD Ventilator</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-vmd</code>/VMD-LOEW-TRIG-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Prisma VENT30 TriggeredBreaths Module</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 70998}\">MDC_DEV_ANALY_BREATH_PATTERN_VMD</span></p><p><b>parent</b>: <a href=\"Device-beispiel-beatmungsgeraet-loewenstein.html\">Device: extension = 12450; identifier = UDI; manufacturer = Löwenstein Medical; serialNumber = PRISMA30-SN-345678; type = MDC_DEV_SYS_PT_VENT_MDS</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://tcabs.example.org/device-vmd"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://tcabs.example.org/device-vmd"^^xsd:anyURI ;
+       fhir:l <http://tcabs.example.org/device-vmd>
+     ] ;
      fhir:value [ fhir:v "VMD-LOEW-TRIG-001" ]
   ] ) ; # 
   fhir:deviceName ( [
@@ -29,13 +32,16 @@
   ] ) ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "70002" ] ;
-       fhir:display [ fhir:v "MDC_DEV_SYS_PT_VENT_VMD" ]
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
+       fhir:code [ fhir:v "70998" ] ;
+       fhir:display [ fhir:v "MDC_DEV_ANALY_BREATH_PATTERN_VMD" ]
      ] )
   ] ; # 
   fhir:parent [
-     fhir:link <http://t-cabs.org/Device/beispiel-beatmungsgeraet-loewenstein> ;
+     fhir:l <http://t-cabs.org/Device/beispiel-beatmungsgeraet-loewenstein> ;
      fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-loewenstein" ]
   ] . # 
 

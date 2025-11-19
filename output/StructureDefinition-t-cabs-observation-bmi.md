@@ -1,4 +1,4 @@
-# T-CABS Observation BMI - v0.1.0
+# T-CABS Observation BMI - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_BMI |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_BMI |
 
  
-Profil für den Body Mass Index (BMI) 
+Profile for Body Mass Index (BMI) 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
   "name" : "T_CABS_Observation_BMI",
   "title" : "T-CABS Observation BMI",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für den Body Mass Index (BMI)",
+  "description" : "Profile for Body Mass Index (BMI)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
         "sliceName" : "LoincCoding",
         "patternCoding" : {
           "system" : "http://loinc.org",
-          "code" : "39156-5",
-          "display" : "Body mass index (BMI) [Ratio]"
+          "code" : "39156-5"
         }
       },
       {

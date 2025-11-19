@@ -3,9 +3,9 @@
   "id": "t-cabs-observation-triggeredbreaths",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
   "name": "T_CABS_Observation_TriggeredBreaths",
-  "title": "T-CABS Observation TriggeredBreaths",
+  "title": "T-CABS Observation Triggered Breaths",
   "status": "draft",
-  "description": "Profil für die Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums",
+  "description": "Profile for the percentage of spontaneously triggered breaths within a time period",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -19,8 +19,7 @@
         "path": "Observation.code.coding",
         "patternCoding": {
           "code": "152498",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_RESP_BTSD_P_RATE"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

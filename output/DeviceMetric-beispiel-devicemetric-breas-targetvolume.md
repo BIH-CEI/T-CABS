@@ -1,10 +1,10 @@
-# Beispiel DeviceMetric BREAS Target Volume - v0.1.0
+# Example DeviceMetric BREAS Target Volume - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel DeviceMetric BREAS Target Volume**
+* **Example DeviceMetric BREAS Target Volume**
 
-## Example DeviceMetric: Beispiel DeviceMetric BREAS Target Volume
+## Example DeviceMetric: Example DeviceMetric BREAS Target Volume
 
 Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md)
 
@@ -16,11 +16,11 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
 
 **source**: [Device: extension = 8760; identifier = UDI; manufacturer = BREAS Medical; serialNumber = VIVO45-SN-789012; type = MDC_DEV_SYS_PT_VENT_MDS](Device-beispiel-beatmungsgeraet-breas.md)
 
-**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-BREAS-TGTVOL-001; type = MDC_DEV_SYS_PT_VENT_CHAN](Device-beispiel-channel-breas-targetvolume.md)
+**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-BREAS-TGTVOL-001; type = MDC_DEV_CHAN](Device-beispiel-channel-breas-targetvolume.md)
 
 **operationalStatus**: On
 
-**color**: pink
+**color**: Color Magenta
 
 **category**: Setting
 
@@ -77,7 +77,7 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
     "reference" : "Device/beispiel-channel-breas-targetvolume"
   },
   "operationalStatus" : "on",
-  "color" : "pink",
+  "color" : "magenta",
   "category" : "setting",
   "measurementPeriod" : {
     "repeat" : {

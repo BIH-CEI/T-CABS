@@ -1,22 +1,22 @@
-# T-CABS Device MDS Heimbeatmungsgerät - v0.1.0
+# T-CABS Device MDS Home Ventilator - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Device MDS Heimbeatmungsgerät**
+* **T-CABS Device MDS Home Ventilator**
 
-## Resource Profile: T-CABS Device MDS Heimbeatmungsgerät 
+## Resource Profile: T-CABS Device MDS Home Ventilator 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Device_MDS_Beatmungsgeraet |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Device_MDS_Beatmungsgeraet |
 
  
-Profil für ein Heimbeatmungsgerät 
+Profile for a home ventilator device 
 
 **Usages:**
 
-* Refer to this Profile: [T-CABS Device VMD Beatmungsgeraet](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md) and [T-CABS Procedure Beatmung](StructureDefinition-t-cabs-procedure-beatmung.md)
+* Refer to this Profile: [T-CABS Device VMD Ventilator](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md), [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md) and [T-CABS Procedure Ventilation](StructureDefinition-t-cabs-procedure-beatmung.md)
 * Examples for this Profile: [Device/beispiel-beatmungsgeraet-breas](Device-beispiel-beatmungsgeraet-breas.md), [Device/beispiel-beatmungsgeraet-loewenstein](Device-beispiel-beatmungsgeraet-loewenstein.md) and [Device/beispiel-beatmungsgeraet-resmed](Device-beispiel-beatmungsgeraet-resmed.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-device-mds-beatmungsgeraet)
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-mds-be
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
   "version" : "0.1.0",
   "name" : "T_CABS_Device_MDS_Beatmungsgeraet",
-  "title" : "T-CABS Device MDS Heimbeatmungsgerät",
+  "title" : "T-CABS Device MDS Home Ventilator",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -50,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-mds-be
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für ein Heimbeatmungsgerät",
+  "description" : "Profile for a home ventilator device",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -125,21 +136,27 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-mds-be
       {
         "id" : "Device.manufacturer",
         "path" : "Device.manufacturer",
-        "short" : "Name des Gerätehersteller",
+        "short" : "Name of the device manufacturer",
         "definition" : "Löwenstein Medical;\nBREAS Medical; \nResMed;\n",
         "min" : 1
       },
       {
         "id" : "Device.serialNumber",
         "path" : "Device.serialNumber",
-        "short" : "Seriennummer des Gerätes",
+        "short" : "Serial number of the device",
+        "min" : 1
+      },
+      {
+        "id" : "Device.deviceName",
+        "path" : "Device.deviceName",
         "min" : 1
       },
       {
         "id" : "Device.deviceName.name",
         "path" : "Device.deviceName.name",
-        "short" : "Modellname des Gerätes",
-        "definition" : "Luisa;\nPrisma VENT30;\nPrisma VENT40;\nPrisma VENT50/50-C;\nVivo3;\nVivo45;\nVivo45LS;\nVivo50;\nVivo55;\nVivo65;\nLumis150;\nStellar100;\nStellar130;\nStellar150;\nAstral100;\nAstral150"
+        "short" : "Model name of the device",
+        "definition" : "Luisa;\nPrisma VENT30;\nPrisma VENT40;\nPrisma VENT50/50-C;\nVivo3;\nVivo45;\nVivo45LS;\nVivo50;\nVivo55;\nVivo65;\nLumis150;\nStellar100;\nStellar130;\nStellar150;\nAstral100;\nAstral150",
+        "mustSupport" : true
       },
       {
         "id" : "Device.deviceName.type",
@@ -151,14 +168,13 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-mds-be
         "path" : "Device.type.coding",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "70001",
-          "display" : "MDC_DEV_SYS_PT_VENT_MDS"
+          "code" : "70001"
         }
       },
       {
         "id" : "Device.patient",
         "path" : "Device.patient",
-        "short" : "Referenz auf den Patienten",
+        "short" : "Reference to the patient",
         "min" : 1,
         "type" : [
           {
@@ -170,7 +186,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-mds-be
       {
         "id" : "Device.owner",
         "path" : "Device.owner",
-        "short" : "Referenz auf den Provider des Gerätes",
+        "short" : "Reference to the provider of the device",
         "comment" : "Zum Beispiel: \nJochum;\nzuther + hautmann;\nproVita arndt;\nLöwenstein;\nVivisol;\nSapio Life;\n",
         "min" : 1,
         "mustSupport" : true

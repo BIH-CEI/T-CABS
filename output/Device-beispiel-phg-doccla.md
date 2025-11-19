@@ -1,10 +1,10 @@
-# Beispiel PHG Tablet - v0.1.0
+# Example PHG Tablet - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel PHG Tablet**
+* **Example PHG Tablet**
 
-## Example Device: Beispiel PHG Tablet
+## Example Device: Example PHG Tablet
 
 Profile: [T-CABS Device PHG](StructureDefinition-t-cabs-device-phg.md)
 
@@ -39,7 +39,7 @@ Profile: [T-CABS Device PHG](StructureDefinition-t-cabs-device-phg.md)
 | - | **Type** | **Value** |
 | * | MDC_REG_CERT_DATA_CONTINUA_VERSION | 2.1.0 |
 
-> **property****type**:MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST**valueCode**:MDC_DEV_SPEC_PROFILE_PULS_OXIM,MDC_DEV_SPEC_PROFILE_SCALE,MDC_DEV_SPEC_PROFILE_HF_STRENGTH,MDC_DEV_SPEC_PROFILE_BP,MDC_DEV_ANALY_AWAY_MULTI_PARAM,MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER,MDC_DEV_SPEC_PROFILE_PEFM
+> **property****type**:MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST**valueCode**:MDC_DEV_SPEC_PROFILE_PULS_OXIM,MDC_DEV_SPEC_PROFILE_SCALE,MDC_DEV_METER_STRENGTH_MUSCL,MDC_DEV_SPEC_PROFILE_BP,MDC_DEV_ANALY_AWAY_MULTI_PARAM,MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER,MDC_DEV_SPEC_PROFILE_PEFM
 
 **patient**: [Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)](Patient-tcabs-patient-example.md)
 
@@ -143,7 +143,7 @@ Profile: [T-CABS Device PHG](StructureDefinition-t-cabs-device-phg.md)
           "coding" : [
             {
               "system" : "urn:iso:std:iso:11073:10101",
-              "code" : "528426"
+              "code" : "69876"
             }
           ]
         },

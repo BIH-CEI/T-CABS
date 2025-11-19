@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Beispiel Atemfrequenz Messung ResMed - XML Representation -  v0.1.0</title>
+    <title>Example Respiratory Rate Measurement ResMed - XML Representation - T-CABS Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,23 +45,33 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.46"}
-    h3,h4,h5,h6{--heading-prefix:"13.46"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.95"}
+    h3,h4,h5,h6{--heading-prefix:"13.95"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
-<div id="hl7-nav">
-    <a id="logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
         <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
     </a>            
 </div>
 
+<div id="family-nav">
+    <a id="family-logo" no-external="true" href="https://www.charite.de/">
+        <img alt="visit the website" height="60" src="Logo_Charite.png" />
+    </a>            
+</div>
+
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
 
 
             </span>
@@ -92,37 +102,37 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="Informationsmodell.html">Informationsmodell</a>
+    <a href="Information-Model.html">Information Model</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profile
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profiles
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Profile-Allgemein.html">Profile-Allgemein</a>
+        <a href="Cross-Domain-Profiles.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Profile-Vitalparameter.html">Profile-Vitalparameter</a>
+        <a href="Vital-Data-Profiles.html">Vital Data</a>
       </li>
       <li>
-        <a href="Profile-Beatmungsparameter.html">Profile-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Profiles.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Beispiele
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Beispiele-Allgemein.html">Beispiele-Allgemein</a>
+        <a href="Cross-Domain-Examples.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Beispiele-Vitalparameter.html">Beispiele-Vitalparameter</a>
+        <a href="Vital-Data-Examples.html">Vital Data</a>
       </li>
       <li>
-        <a href="Beispiele-Beatmungsparameter.html">Beispiele-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Examples.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
@@ -132,18 +142,18 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Implementation-Allgemein.html">Implementation-Allgemein</a>
+        <a href="Cross-Domain-Implementation.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Implementation-Vitalparameter.html">Implementation-Vitalparameter</a>
+        <a href="Vital-Data-Implementation.html">Vital Data</a>
       </li>
       <li>
-        <a href="Implementation-Beatmungsparameter.html">Implementation-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Implementation.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="Terminologien.html">Terminologien</a>
+    <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -160,7 +170,17 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Beispiel Atemfrequenz Messung ResMed</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example Respiratory Rate Measurement ResMed</b></li>
+
+          <span style="float:right;">
+
+            <a href="Observation-Example-Atemfrequenz-ResMed-gemessen.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="Observation-Example-Atemfrequenz-ResMed-gemessen.json.html">next&gt;</a>
+
+          </span>
 
         </ul>
       </div>  <!-- /container -->
@@ -173,7 +193,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">TCABS - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -219,7 +239,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Beispiel Atemfrequenz Messung ResMed - XML Representation</h2>
+<h2 id="root">: Example Respiratory Rate Measurement ResMed - XML Representation</h2>
 
 
 <p><a href="Observation-Example-Atemfrequenz-ResMed-gemessen.xml" no-download="true">Raw xml</a> | <a href="Observation-Example-Atemfrequenz-ResMed-gemessen.xml" download>Download</a></p>
@@ -238,7 +258,7 @@
   &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation Example-Atemfrequenz-ResMed-gemessen&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Example-Atemfrequenz-ResMed-gemessen&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcExample-Atemfrequenz-ResMed-gemessen&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html&quot;&gt;T-CABS Observation AF&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Procedure-beispiel-beatmung-resmed.html&quot;&gt;Procedure MDC_PRESS_AWAY_CTS_POS&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 151586}&quot;&gt;MDC_VENT_RESP_RATE&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-tcabs-patient-example.html&quot;&gt;Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-01-15 23:20:00+0000 --&amp;gt; 2024-01-15 23:20:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 14 /min&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  code/min = '/min')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;device&lt;/b&gt;: &lt;a href=&quot;DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.html&quot;&gt;DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-ATEMFREQ-001; type = MDC_VENT_RESP_RATE; unit = /min; operationalStatus = on; color = cyan; category = measurement; measurementPeriod = Once per 1 minute&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Observation Example-Atemfrequenz-ResMed-gemessen&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;Example-Atemfrequenz-ResMed-gemessen&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcExample-Atemfrequenz-ResMed-gemessen&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html&quot;&gt;T-CABS Observation Respiratory Rate Ventilated&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Procedure-beispiel-beatmung-resmed.html&quot;&gt;Procedure MDC_PRESS_AWAY_CTS_POS&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 151586}&quot;&gt;MDC_VENT_RESP_RATE&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-tcabs-patient-example.html&quot;&gt;Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-01-15 23:20:00+0000 --&amp;gt; 2024-01-15 23:20:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 14 /min&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM  code/min = '/min')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;device&lt;/b&gt;: &lt;a href=&quot;DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.html&quot;&gt;DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-ATEMFREQ-001; type = MDC_VENT_RESP_RATE; unit = /min; operationalStatus = on; color = cyan; category = measurement; measurementPeriod = Once per 1 minute&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.partOf">partOf</a>&gt;<a href="Procedure-beispiel-beatmung-resmed.html" style="color: Maroon">&#x1F517;</a> 
     &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Procedure/beispiel-beatmung-resmed&quot;/&gt;
@@ -290,9 +310,31 @@
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="Observation-Example-Atemfrequenz-ResMed-gemessen.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="Observation-Example-Atemfrequenz-ResMed-gemessen.json.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 16, 2025 18:59+0200">2025-10-16</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 19, 2025 11:55+0100">2025-11-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -13,38 +13,64 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck"^^xsd:anyURI ;
-       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck>
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck>
+     ] [
+       fhir:v "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell"^^xsd:anyURI ;
+       fhir:l <https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell>
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-ArteriellerBlutdruck-Doccla</b></p><a name=\"Example-ArteriellerBlutdruck-Doccla\"> </a><a name=\"hcExample-ArteriellerBlutdruck-Doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-arteriellerblutdruck.html\">T-CABS Observation Arterieller Blutdruck</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}\">PHD generated Observation</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}, {urn:iso:std:iso:11073:10101 150016}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 09:00:00+0000 --&gt; 2024-01-15 09:00:00+0000</p><p><b>device</b>: <a href=\"Device-beispiel-phd-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 125 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 80 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"^^rdf:XMLLiteral
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-ArteriellerBlutdruck-Doccla</b></p><a name=\"Example-ArteriellerBlutdruck-Doccla\"> </a><a name=\"hcExample-ArteriellerBlutdruck-Doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-t-cabs-observation-arteriellerblutdruck.html\">T-CABS Observation Arterial Blood Pressure</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell\">https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell</a></p></div><p><b>Observation Gateway Device</b>: <a href=\"Device-beispiel-phg-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}\">PHD generated Observation</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}, {urn:iso:std:iso:11073:10101 150016}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 09:00:00+0000 --&gt; 2024-01-15 09:00:00+0000</p><p><b>device</b>: <a href=\"Device-beispiel-phd-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 125 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 80 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://t-cabs.org/Device/beispiel-phg-doccla> ;
+       fhir:reference [ fhir:v "Device/beispiel-phg-doccla" ]
+     ]
+  ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
        fhir:code [ fhir:v "vital-signs" ]
      ] )
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories>
+       ] ;
        fhir:code [ fhir:v "phd-observation" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:85354-9 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "85354-9" ] ;
        fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
      ] [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "150016" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
      fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
   ] ; # 
   fhir:effective [
@@ -53,14 +79,17 @@
      fhir:end [ fhir:v "2024-01-15T09:00:00Z"^^xsd:dateTime ]
   ] ; # 
   fhir:device [
-     fhir:link <http://t-cabs.org/Device/beispiel-phd-doccla> ;
+     fhir:l <http://t-cabs.org/Device/beispiel-phd-doccla> ;
      fhir:reference [ fhir:v "Device/beispiel-phd-doccla" ]
   ] ; # 
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
          a loinc:8480-6 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "8480-6" ]
        ] )
      ] ;
@@ -68,14 +97,20 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "125"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mm[Hg]" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mm[Hg]" ]
      ]
   ] [
      fhir:code [
        fhir:coding ( [
          a loinc:8462-4 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "8462-4" ]
        ] )
      ] ;
@@ -83,7 +118,10 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "80"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mm[Hg]" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mm[Hg]" ]
      ]
   ] ) . # 

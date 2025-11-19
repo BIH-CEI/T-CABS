@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://fhir.de/ValueSet/DiagnoseTyp",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "DiagnoseTyp",
       "title" : "DiagnoseTyp ValueSet",
@@ -10,11 +10,11 @@
       "systems" : ["http://fhir.de/CodeSystem/KontaktDiagnoseProzedur"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/Diagnosesubtyp",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "Diagnosesubtyp",
       "title" : "Diagnosesubtyp ValueSet",
@@ -25,11 +25,11 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/EncounterClassDE",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "EncounterClassDE",
       "title" : "EncounterClassDE",
@@ -37,11 +37,11 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/EncounterStatusDe",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "EncounterStatusDe",
       "title" : "Encounter Status ValueSet",
@@ -49,11 +49,11 @@
       "systems" : ["http://hl7.org/fhir/encounter-status"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/dgkev/Aufnahmeanlass",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "AufnahmeanlassVS",
       "title" : "Aufnahmeanlass ValueSet",
@@ -61,11 +61,11 @@
       "systems" : ["http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/dkgev/AufnahmegrundDritteStelle",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "AufnahmegrundDritteStelleVS",
       "title" : "AufnahmegrundDritteStelle ValueSet",
@@ -73,11 +73,11 @@
       "systems" : ["http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/dkgev/AufnahmegrundErsteUndZweiteStelle",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "AufnahmegrundErsteUndZweiteStelleVS",
       "title" : "Aufnahmegrund Erste und Zweite Stelle ValueSet",
@@ -87,11 +87,11 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/dkgev/AufnahmegrundVierteStelle",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "AufnahmegrundVierteStelleVS",
       "title" : "Aufnahmegrund Vierte Stelle ValueSet",
@@ -99,11 +99,11 @@
       "systems" : ["http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "FachabteilungsschluesselVS",
       "title" : "Fachabteilungsschlüssel ValueSet",
@@ -111,11 +111,11 @@
       "systems" : ["http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "ValueSetFachabteilungsschluesselErweitert",
       "title" : "FachabteilungsschluesselErweitert ValueSet",
@@ -125,13 +125,13 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/identifier-type-de-basis",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
-      "name" : "IdentifierTypeDeBasis",
+      "name" : "IdentifierTypeDeBasisVS",
       "title" : "Identifier Type DeBasis ValueSet",
       "description" : "ValueSet zur Codierung des Identifier-Typs",
       "systems" : [
@@ -144,7 +144,7 @@
     },
     {
       "url" : "http://fhir.de/ValueSet/iso/bundeslaender",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "ValueSetISO31662DE",
       "title" : "ISO-3166-2:de-Laendercodes",
@@ -156,7 +156,7 @@
     },
     {
       "url" : "http://fhir.de/ValueSet/kontaktart-de",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "KontaktartDe",
       "title" : "KontaktartDe ValueSet",
@@ -164,11 +164,11 @@
       "systems" : ["http://fhir.de/CodeSystem/kontaktart-de"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://fhir.de/ValueSet/kontaktebene-de",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "KontaktebeneDe",
       "title" : "KontaktebeneDe ValueSet",
@@ -176,7 +176,7 @@
       "systems" : ["http://fhir.de/CodeSystem/Kontaktebene"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
@@ -218,8 +218,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person mit Funktion",
-      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient"
+      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
+      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person with Function"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -233,29 +233,34 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -269,7 +274,7 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-practitioner-funktion.html" : "T-CABS Funktion"
+      "StructureDefinition-t-cabs-practitioner-funktion.html" : "T-CABS Function"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -283,7 +288,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.232"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html" : "T-CABS DiagnosticReport Visitenbefund"
+      "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html" : "T-CABS DiagnosticReport Visit Finding"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -297,30 +302,36 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -334,8 +345,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-researchstudy-studie.html" : "T-CABS ResearchStudy Studie",
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -349,7 +359,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.416"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-organisation.html" : "T-CABS Organisation"
+      "StructureDefinition-t-cabs-organisation.html" : "T-CABS Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -363,28 +373,34 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -398,8 +414,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-practitioner-funktion.html" : "T-CABS Funktion",
-      "StructureDefinition-t-cabs-devicemetric-numericmetric.html" : "T-CABS DeviceMetric NumericMetric"
+      "StructureDefinition-t-cabs-devicemetric-numericmetric.html" : "T-CABS DeviceMetric NumericMetric",
+      "StructureDefinition-t-cabs-practitioner-funktion.html" : "T-CABS Function"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -413,7 +429,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.425"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-kind",
@@ -427,7 +443,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.208"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
@@ -441,11 +457,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1083"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät",
       "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
-      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG"
+      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Ventilator",
+      "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
+      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Ventilator",
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-status",
@@ -459,11 +475,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.209"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät",
       "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
-      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG"
+      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Ventilator",
+      "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
+      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Ventilator",
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-status-reason",
@@ -477,11 +493,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1081"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät",
       "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
-      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG"
+      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Ventilator",
+      "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
+      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Ventilator",
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-type",
@@ -510,7 +526,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.235"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html" : "T-CABS DiagnosticReport Visitenbefund"
+      "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html" : "T-CABS DiagnosticReport Visit Finding"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
@@ -524,7 +540,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.234"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html" : "T-CABS DiagnosticReport Visitenbefund"
+      "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html" : "T-CABS DiagnosticReport Visit Finding"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
@@ -538,7 +554,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.255"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
@@ -554,7 +570,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.259"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
@@ -568,7 +584,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.262"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
@@ -585,7 +601,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -599,7 +615,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -615,7 +631,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.253"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
@@ -632,7 +648,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.252"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
@@ -646,7 +662,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.246"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
@@ -660,7 +676,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.248"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/event-status",
@@ -674,7 +690,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/event-timing",
@@ -705,7 +721,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.284"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-group-patientengruppe.html" : "T-CABS Patientengruppe"
+      "StructureDefinition-t-cabs-group-patientengruppe.html" : "T-CABS Patient Group"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -719,24 +735,29 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person mit Funktion",
-      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
       "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Beatmungsgeraet",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät",
-      "StructureDefinition-t-cabs-organisation.html" : "T-CABS Organisation",
-      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
+      "StructureDefinition-t-cabs-organisation.html" : "T-CABS Organization",
       "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person with Function",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Ventilator",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
+      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Ventilator",
       "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -750,25 +771,30 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person mit Funktion",
-      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
       "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Beatmungsgeraet",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät",
-      "StructureDefinition-t-cabs-organisation.html" : "T-CABS Organisation",
-      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
+      "StructureDefinition-t-cabs-organisation.html" : "T-CABS Organization",
       "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person with Function",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Ventilator",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
+      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Ventilator",
       "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact",
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-2",
@@ -798,9 +824,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.48"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-researchstudy-studie.html" : "T-CABS ResearchStudy Studie",
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät",
-      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Beatmungsgeraet"
+      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Ventilator",
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -814,44 +839,48 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person mit Funktion",
-      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html" : "T-CABS DiagnosticReport Visitenbefund",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Beatmungsgeraet",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-devicemetric-numericmetric.html" : "T-CABS DeviceMetric NumericMetric",
-      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
-      "StructureDefinition-t-cabs-practitioner-funktion.html" : "T-CABS Funktion",
-      "StructureDefinition-t-cabs-researchstudy-studie.html" : "T-CABS ResearchStudy Studie",
-      "StructureDefinition-t-cabs-researchsubject-studienteilnehmer.html" : "T-CABS ResearchSubject Studie",
-      "StructureDefinition-t-cabs-group-patientengruppe.html" : "T-CABS Patientengruppe",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-organisation.html" : "T-CABS Organisation",
-      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-organisation.html" : "T-CABS Organization",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person with Function",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact",
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator",
+      "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html" : "T-CABS DiagnosticReport Visit Finding",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-practitioner-funktion.html" : "T-CABS Function",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Ventilator",
+      "StructureDefinition-t-cabs-devicemetric-numericmetric.html" : "T-CABS DeviceMetric NumericMetric",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
+      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Ventilator",
+      "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
+      "StructureDefinition-t-cabs-group-patientengruppe.html" : "T-CABS Patient Group",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -881,7 +910,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -982,8 +1011,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person mit Funktion",
-      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient"
+      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
+      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person with Function"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -997,28 +1026,34 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -1032,28 +1067,32 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -1069,28 +1108,34 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -1104,28 +1149,34 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -1139,28 +1190,34 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -1174,7 +1231,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.414"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-organisation.html" : "T-CABS Organisation"
+      "StructureDefinition-t-cabs-organisation.html" : "T-CABS Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -1202,7 +1259,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.433"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
@@ -1219,7 +1276,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.439"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-practitioner-funktion.html" : "T-CABS Funktion"
+      "StructureDefinition-t-cabs-practitioner-funktion.html" : "T-CABS Function"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-category",
@@ -1233,7 +1290,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.430"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
@@ -1247,7 +1304,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.427"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-followup",
@@ -1261,7 +1318,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.429"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason",
@@ -1275,7 +1332,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.431"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-outcome",
@@ -1289,7 +1346,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.428"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
@@ -1303,7 +1360,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.432"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
@@ -1317,29 +1374,35 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -1356,28 +1419,34 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -1393,28 +1462,34 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/report-codes",
@@ -1428,97 +1503,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.233"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html" : "T-CABS DiagnosticReport Visitenbefund"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/research-study-objective-type",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ResearchStudyObjectiveType",
-      "title" : "ResearchStudyObjectiveType",
-      "description" : "Codes for the kind of study objective.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/research-study-objective-type"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.823"],
-      "sources" : ["2.16.840.1.113883.4.642.3.823"],
-      "uses" : {
-      },
-      "StructureDefinition-t-cabs-researchstudy-studie.html" : "T-CABS ResearchStudy Studie"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/research-study-phase",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ResearchStudyPhase",
-      "title" : "ResearchStudyPhase",
-      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/research-study-phase"],
-      "oids" : ["2.16.840.1.113883.4.642.3.821"],
-      "sources" : ["2.16.840.1.113883.4.642.3.821"],
-      "uses" : {
-      },
-      "StructureDefinition-t-cabs-researchstudy-studie.html" : "T-CABS ResearchStudy Studie"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ResearchStudyPrimaryPurposeType",
-      "title" : "ResearchStudyPrimaryPurposeType",
-      "description" : "Codes for the main intent of the study.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.827"],
-      "sources" : ["2.16.840.1.113883.4.642.3.827"],
-      "uses" : {
-      },
-      "StructureDefinition-t-cabs-researchstudy-studie.html" : "T-CABS ResearchStudy Studie"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/research-study-reason-stopped",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ResearchStudyReasonStopped",
-      "title" : "ResearchStudyReasonStopped",
-      "description" : "Codes for why the study ended prematurely.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/research-study-reason-stopped"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.825"],
-      "sources" : ["2.16.840.1.113883.4.642.3.825"],
-      "uses" : {
-      },
-      "StructureDefinition-t-cabs-researchstudy-studie.html" : "T-CABS ResearchStudy Studie"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/research-study-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ResearchStudyStatus",
-      "title" : "ResearchStudyStatus",
-      "description" : "Codes that convey the current status of the research study.",
-      "systems" : ["http://hl7.org/fhir/research-study-status"],
-      "oids" : ["2.16.840.1.113883.4.642.3.819"],
-      "sources" : ["2.16.840.1.113883.4.642.3.819"],
-      "uses" : {
-      },
-      "StructureDefinition-t-cabs-researchstudy-studie.html" : "T-CABS ResearchStudy Studie"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/research-subject-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ResearchSubjectStatus",
-      "title" : "ResearchSubjectStatus",
-      "description" : "Indicates the progression of a study subject through a study.",
-      "systems" : ["http://hl7.org/fhir/research-subject-status"],
-      "oids" : ["2.16.840.1.113883.4.642.3.829"],
-      "sources" : ["2.16.840.1.113883.4.642.3.829"],
-      "uses" : {
-      },
-      "StructureDefinition-t-cabs-researchsubject-studienteilnehmer.html" : "T-CABS ResearchSubject Studie"
+      "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html" : "T-CABS DiagnosticReport Visit Finding"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -1532,17 +1517,22 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
       "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1562,30 +1552,36 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-patient.html" : "T-CABS Patient",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -1599,7 +1595,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",
@@ -1627,11 +1623,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.211"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät",
       "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
-      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG"
+      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Ventilator",
+      "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
+      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Ventilator",
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
@@ -1657,18 +1653,21 @@
       "systems" : ["http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
       "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
       "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6"
     },
     {
       "url" : "http://hl7.org/fhir/uv/phd/ValueSet/CodeableConcept11073MDC",
@@ -1680,18 +1679,36 @@
       "systems" : ["urn:iso:std:iso:11073:10101"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
       "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
       "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phd/ValueSet/MDCnotObject",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "MDCnotObject",
+      "title" : "11073 MDC Non-Object codes",
+      "description" : "ValueSet for the ISO/IEEE 11073-10101 Nomenclature excluding Object partition.",
+      "systems" : ["urn:iso:std:iso:11073:10101"],
+      "uses" : {
+      },
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components"
     },
     {
       "url" : "http://hl7.org/fhir/uv/phd/ValueSet/Quantity11073MDC",
@@ -1703,18 +1720,23 @@
       "systems" : ["urn:iso:std:iso:11073:10101"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
       "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html" : "T-CABS Observation Vital Parameter with Components",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterial Blood Pressure",
+      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD",
       "StructureDefinition-t-cabs-device-phg.html" : "T-CABS Device PHG",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6"
     },
     {
       "url" : "http://hl7.org/fhir/uv/phd/ValueSet/Range11073MDC",
@@ -1726,16 +1748,19 @@
       "systems" : ["urn:iso:std:iso:11073:10101"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
       "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6"
     },
     {
       "url" : "http://hl7.org/fhir/uv/phd/ValueSet/String11073MDC",
@@ -1747,16 +1772,19 @@
       "systems" : ["urn:iso:std:iso:11073:10101"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vitalparamter",
-      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Herzfrequenz",
-      "StructureDefinition-t-cabs-observation-arteriellerblutdruck.html" : "T-CABS Observation Arterieller Blutdruck",
-      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Gehstrecke",
-      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
-      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
       "StructureDefinition-t-cabs-observationfev1.html" : "T-CABS Observation FEV1",
-      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Atemfrequenz",
-      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Koerpergewicht",
-      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Koerpertemperatur"
+      "StructureDefinition-t-cabs-observation-bmi.html" : "T-CABS Observation BMI",
+      "StructureDefinition-t-cabs-observation-gehstrecke.html" : "T-CABS Observation Walking Distance",
+      "StructureDefinition-t-cabs-observation-atemfrequenz.html" : "T-CABS Observation Respiratory Rate",
+      "StructureDefinition-t-cabs-observation-koerpergewicht.html" : "T-CABS Observation Body Weight",
+      "StructureDefinition-t-cabs-observationfev1fef25-75.html" : "T-CABS Observation FEF25-75",
+      "StructureDefinition-t-cabs-observation-arteriellespo2.html" : "T-CABS Observation SPO2",
+      "StructureDefinition-t-cabs-observationhandgriffstaerke.html" : "T-CABS Observation Hand Grip Strength",
+      "StructureDefinition-t-cabs-observation-vitalparameter.html" : "T-CABS Observation Vital Parameter",
+      "StructureDefinition-t-cabs-observationfev1fev6.html" : "T-CABS Observation FEV1/FEV6",
+      "StructureDefinition-t-cabs-observation-herzfrequenz.html" : "T-CABS Observation Heart Rate",
+      "StructureDefinition-t-cabs-observation-koerpertemperatur.html" : "T-CABS Observation Body Temperature",
+      "StructureDefinition-t-cabs-observationfev6.html" : "T-CABS Observation FEV6"
     },
     {
       "url" : "http://hl7.org/fhir/uv/pocd/ValueSet/11073MDC-dimension",
@@ -1780,19 +1808,20 @@
       "systems" : ["urn:iso:std:iso:11073:10101"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
-      "StructureDefinition-t-cabs-devicemetric-numericmetric.html" : "T-CABS DeviceMetric NumericMetric",
-      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX"
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-devicemetric-numericmetric.html" : "T-CABS DeviceMetric NumericMetric",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
+      "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
       "url" : "http://hl7.org/fhir/uv/pocd/ValueSet/11073MDC-object",
@@ -1804,9 +1833,9 @@
       "systems" : ["urn:iso:std:iso:11073:10101"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät",
-      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Beatmungsgeraet"
+      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Ventilator",
+      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Ventilator",
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator"
     },
     {
       "url" : "http://hl7.org/fhir/uv/pocd/ValueSet/observation-interpretation",
@@ -1821,17 +1850,18 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
-      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Beatmungsparameter (abstract)",
-      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
-      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Atemzeitverhaeltnis",
-      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation TriggeredBreaths",
-      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
-      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leckage",
-      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
-      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation AF",
       "StructureDefinition-t-cabs-observation-amv.html" : "T-CABS Observation AMV",
-      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Druck MIN/MAX",
+      "StructureDefinition-t-cabs-observation-leckage.html" : "T-CABS Observation Leakage",
+      "StructureDefinition-t-cabs-observation-druck-minmax.html" : "T-CABS Observation Pressure MIN/MAX",
+      "StructureDefinition-t-cabs-observation-ti.html" : "T-CABS Observation TI",
+      "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html" : "T-CABS Observation Respiratory Time Ratio",
+      "StructureDefinition-t-cabs-observation-peep.html" : "T-CABS Observation PEEP",
+      "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
+      "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html" : "T-CABS Observation Respiratory Rate Ventilated",
+      "StructureDefinition-t-cabs-observation-triggeredbreaths.html" : "T-CABS Observation Triggered Breaths",
+      "StructureDefinition-t-cabs-observation-beatmungsparameter.html" : "T-CABS Observation Ventilation Parameter (abstract)",
+      "StructureDefinition-t-cabs-observation-ahi.html" : "T-CABS Observation AHI",
+      "StructureDefinition-t-cabs-observation-targetvolume.html" : "T-CABS Observation Target Volume",
       "StructureDefinition-t-cabs-observation-ipap.html" : "T-CABS Observation IPAP"
     },
     {
@@ -1844,7 +1874,7 @@
       "systems" : ["http://hl7.org/fhir/uv/pocd/CodeSystem/operating-mode"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät"
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator"
     },
     {
       "url" : "http://hl7.org/fhir/uv/pocd/ValueSet/safety",
@@ -1856,33 +1886,57 @@
       "systems" : ["http://hl7.org/fhir/uv/pocd/CodeSystem/safety"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Beatmungsgeraet",
-      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Heimbeatmungsgerät",
-      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Beatmungsgeraet"
+      "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html" : "T-CABS Device VMD Ventilator",
+      "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html" : "T-CABS Device Channel Ventilator",
+      "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html" : "T-CABS Device MDS Home Ventilator"
     },
     {
       "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "T_CABS_ValueSet_Beatmungsform",
-      "title" : "T-CABS ValueSet Beatmungsform",
-      "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",
+      "title" : "T-CABS ValueSet Ventilation Type",
+      "description" : "This ValueSet contains codes to represent the different types of ventilation",
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
       "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "T_CABS_ValueSet_Beatmungsmodus",
-      "title" : "T-CABS ValueSet Beatmungsmodus",
-      "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",
+      "title" : "T-CABS ValueSet Ventilation Mode",
+      "description" : "This ValueSet contains codes to represent the different ventilation modes",
       "systems" : ["urn:iso:std:iso:11073:10101"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Beatmung"
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
+    },
+    {
+      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "T_CABS_ValueSet_Beatmungsstelle",
+      "title" : "T-CABS ValueSet Ventilation Site",
+      "description" : "This ValueSet contains codes to represent the body sites where ventilation is applied",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
+    },
+    {
+      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "T_CABS_ValueSet_PHDTyp",
+      "title" : "T-CABS ValueSet PHD Type",
+      "description" : "This ValueSet contains codes to represent the different PHD measurement devices",
+      "systems" : ["urn:iso:std:iso:11073:10101"],
+      "uses" : {
+      },
+      "StructureDefinition-t-cabs-device-phd.html" : "T-CABS Device PHD"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
@@ -1896,7 +1950,7 @@
       "sources" : ["2.16.840.1.113883.21.40"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
@@ -1908,7 +1962,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person mit Funktion"
+      "StructureDefinition-t-cabs-practitioner-personmitfunktion.html" : "T-CABS Person with Function"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
@@ -1922,7 +1976,7 @@
       "sources" : ["2.16.840.1.113883.1.11.13955"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
@@ -1936,7 +1990,7 @@
       "sources" : ["2.16.840.1.113883.1.11.16866"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/identifier-type-codes",
@@ -1948,7 +2002,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/location-physical-type",
@@ -1962,7 +2016,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     },
     {
       "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/mii-vs-fall-diagnosis-use",
@@ -1977,7 +2031,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Kontakt"
+      "StructureDefinition-t-cabs-encounter-kontakt.html" : "T-CABS Encounter Contact"
     }
   ]
 }

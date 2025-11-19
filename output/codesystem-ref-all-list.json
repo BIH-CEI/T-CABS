@@ -2,11 +2,11 @@
   "codeSystems" : [
     {
       "url" : "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "KontaktDiagnoseProzedur",
       "title" : "KontaktDiagnoseProzedur",
-      "description" : "Rolle/Relevanz von Diagnosen und Prozeduren im Encounter-Kontext",
+      "description" : "Rolle/Relevanz von Diagnosen",
       "uses" : {
       },
       "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/Diagnosesubtyp" : "Diagnosesubtyp ValueSet",
@@ -14,7 +14,7 @@
     },
     {
       "url" : "http://fhir.de/CodeSystem/Kontaktebene",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "Kontaktebene",
       "title" : "Kontaktebene",
@@ -25,7 +25,7 @@
     },
     {
       "url" : "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "CodeSystemAufnahmeanlass",
       "title" : "CodeSystemAufnahmeanlass",
@@ -36,7 +36,7 @@
     },
     {
       "url" : "http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "AufnahmegrundDritteStelle",
       "title" : "AufnahmegrundDritteStelle",
@@ -47,7 +47,7 @@
     },
     {
       "url" : "http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "CodeSystemAufnahmegrundErsteUndZweiteStelle",
       "title" : "CodeSystemAufnahmegrundErsteUndZweiteStelle",
@@ -58,7 +58,7 @@
     },
     {
       "url" : "http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "AufnahmegrundVierteStelle",
       "title" : "AufnahmegrundVierteStelle",
@@ -69,7 +69,7 @@
     },
     {
       "url" : "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "CodeSystemFachabteilungsschluessel",
       "title" : "Fachabteilungsschluessel",
@@ -80,7 +80,7 @@
     },
     {
       "url" : "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel-erweitert",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "CodeSystemFachabteilungsschluesselErweitert",
       "title" : "Fachabteilungsschluessel Erweitert",
@@ -91,7 +91,7 @@
     },
     {
       "url" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "IdentifierTypeDeBasis",
       "title" : "Identifier Type De Basis",
@@ -102,7 +102,7 @@
     },
     {
       "url" : "http://fhir.de/CodeSystem/kontaktart-de",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "KontaktArtDe",
       "title" : "KontaktArtDe",
@@ -217,8 +217,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.247"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/EncounterStatusDe" : "Encounter Status ValueSet"
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/EncounterStatusDe" : "Encounter Status ValueSet",
+      "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
     },
     {
       "url" : "http://hl7.org/fhir/event-status",
@@ -377,30 +377,6 @@
       "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
     },
     {
-      "url" : "http://hl7.org/fhir/research-study-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ResearchStudyStatus",
-      "title" : "ResearchStudyStatus",
-      "description" : "Codes that convey the current status of the research study.",
-      "oids" : ["2.16.840.1.113883.4.642.4.820"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-research-study-status.html" : "ResearchStudyStatus"
-    },
-    {
-      "url" : "http://hl7.org/fhir/research-subject-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ResearchSubjectStatus",
-      "title" : "ResearchSubjectStatus",
-      "description" : "Indicates the progression of a study subject through a study.",
-      "oids" : ["2.16.840.1.113883.4.642.4.830"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-research-subject-status.html" : "ResearchSubjectStatus"
-    },
-    {
       "url" : "http://hl7.org/fhir/resource-types",
       "version" : "4.0.1",
       "status" : "active",
@@ -490,25 +466,26 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
-      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-      "ValueSet-t-cabs-valueset-Beatmungsform.html" : "T-CABS ValueSet Beatmungsform",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "ValueSet-t-cabs-valueset-Beatmungsform.html" : "T-CABS ValueSet Ventilation Type",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "ValueSet-t-cabs-valueset-beatmungsstelle.html" : "T-CABS ValueSet Ventilation Site",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -633,7 +610,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
-      "version" : "1.0.1",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "ObservationCategoryCodes",
       "title" : "Observation Category Codes",
@@ -692,54 +669,6 @@
       "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/research-study-objective-type",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "ResearchStudyObjectiveType",
-      "title" : "ResearchStudyObjectiveType",
-      "description" : "Codes for the kind of study objective.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1248"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-research-study-objective-type.html" : "ResearchStudyObjectiveType"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/research-study-phase",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "ResearchStudyPhase",
-      "title" : "ResearchStudyPhase",
-      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1247"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-research-study-phase.html" : "ResearchStudyPhase"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "ResearchStudyPrimaryPurposeType",
-      "title" : "ResearchStudyPrimaryPurposeType",
-      "description" : "Codes for the main intent of the study.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1250"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html" : "ResearchStudyPrimaryPurposeType"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/research-study-reason-stopped",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "ResearchStudyReasonStopped",
-      "title" : "ResearchStudyReasonStopped",
-      "description" : "Codes for why the study ended prematurely.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1249"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-research-study-reason-stopped.html" : "ResearchStudyReasonStopped"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/service-type",
       "version" : "1.1.1",
       "status" : "active",
@@ -773,7 +702,7 @@
       "oids" : ["2.16.840.1.113883.18.36"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
+      "http://terminology.hl7.org/7.0.0/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -798,8 +727,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/identifier-type-de-basis" : "Identifier Type DeBasis ValueSet",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.fall@2025.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/identifier-type-codes" : "MII VS Fall Identifier Type Codes"
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.fall@2025.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/identifier-type-codes" : "MII VS Fall Identifier Type Codes",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/identifier-type-de-basis" : "Identifier Type DeBasis ValueSet"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -812,7 +741,7 @@
       "uses" : {
       },
       "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/EncounterClassDE" : "EncounterClassDE",
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
+      "http://terminology.hl7.org/7.0.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -824,7 +753,7 @@
       "oids" : ["2.16.840.1.113883.5.7"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActPriority.html" : "ActPriority"
+      "http://terminology.hl7.org/7.0.0/ValueSet-v3-ActPriority.html" : "ActPriority"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
@@ -885,8 +814,8 @@
       "oids" : ["2.16.840.1.113883.5.83"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes",
-      "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-observation-interpretation.html" : "Observation interpretation codes"
+      "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-observation-interpretation.html" : "Observation interpretation codes",
+      "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
@@ -938,22 +867,24 @@
     },
     {
       "url" : "urn:iso:std:iso:11073:10101",
-      "version" : "20250520",
+      "version" : "2.0.1",
       "status" : "active",
       "name" : "Mdc",
-      "title" : "ISO/IEEE 11073 Medical Device Communication Nomenclature",
+      "title" : "ISO 11073-10101 Health informatics - Point-of-care",
       "description" : "The nomenclature relates primarily to vital signs monitoring, but also includes semantics of other medical devices that are commonly used in acute care settings. There are multiple coding partitions each of which has a systematic name consisting of a set of base concepts and differentiating criteria.",
       "oids" : ["2.16.840.1.113883.6.24"],
       "uses" : {
       },
       "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-11073MDC-dimension.html" : "MDC Unit of Measurement",
-      "ValueSet-t-cabs-valueset-Beatmungsmodus.html" : "T-CABS ValueSet Beatmungsmodus",
-      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-Range11073MDC.html" : "Range 11073 Attributes",
-      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-Quantity11073MDC.html" : "Quantity 11073 Attributes",
       "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-11073MDC-object.html" : "MDC Object infrastructure and Device nomenclature",
-      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-CodeableConcept11073MDC.html" : "CodeableConcept 11073 Attributes",
       "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-11073MDC-metric.html" : "MDC Metric nomenclature",
-      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-String11073MDC.html" : "String 11073 Attributes"
+      "ValueSet-t-cabs-valueset-phdtyp.html" : "T-CABS ValueSet PHD Type",
+      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-CodeableConcept11073MDC.html" : "CodeableConcept 11073 Attributes",
+      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-Range11073MDC.html" : "Range 11073 Attributes",
+      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-String11073MDC.html" : "String 11073 Attributes",
+      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-Quantity11073MDC.html" : "Quantity 11073 Attributes",
+      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-MDCnotObject.html" : "11073 MDC Non-Object codes",
+      "ValueSet-t-cabs-valueset-Beatmungsmodus.html" : "T-CABS ValueSet Ventilation Mode"
     },
     {
       "url" : "urn:iso:std:iso:3166",
@@ -970,7 +901,7 @@
     },
     {
       "url" : "urn:iso:std:iso:3166-2:de",
-      "version" : "1.5.3",
+      "version" : "1.5.4",
       "status" : "active",
       "name" : "CodeSystemISO31662DE",
       "title" : "ISO-3166-2:de-Laendercodes",

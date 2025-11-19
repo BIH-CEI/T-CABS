@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/Observation/Example-Handgriffstaerke-Doccla> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Example-Handgriffstaerke-Doccla"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke"^^xsd:anyURI ;
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-Handgriffstaerke-Doccla</b></p><a name=\"Example-Handgriffstaerke-Doccla\"> </a><a name=\"hcExample-Handgriffstaerke-Doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observationhandgriffstaerke.html\">T-CABS Observation Hand Grip Strength</a></p></div><p><b>Observation Gateway Device</b>: <a href=\"Device-beispiel-phg-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}\">PHD generated Observation</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251433001}, {urn:iso:std:iso:11073:10101 8455547}\">Grip strength (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 09:30:00+0000 --&gt; 2024-01-15 09:30:00+0000</p><p><b>value</b>: 42 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 85562004}\">Hand structure (body structure)</span></p><p><b>device</b>: <a href=\"Device-beispiel-phd-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://t-cabs.org/Device/beispiel-phg-doccla> ;
+       fhir:reference [ fhir:v "Device/beispiel-phg-doccla" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories>
+       ] ;
+       fhir:code [ fhir:v "phd-observation" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:251433001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "251433001" ] ;
+       fhir:display [ fhir:v "Grip strength (observable entity)" ]
+     ] [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
+       fhir:code [ fhir:v "8455547" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2024-01-15T09:30:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-01-15T09:30:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "42"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "kg" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "kg" ]
+  ] ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:85562004 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "85562004" ] ;
+       fhir:display [ fhir:v "Hand structure (body structure)" ]
+     ] )
+  ] ; # 
+  fhir:device [
+     fhir:l <http://t-cabs.org/Device/beispiel-phd-doccla> ;
+     fhir:reference [ fhir:v "Device/beispiel-phd-doccla" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

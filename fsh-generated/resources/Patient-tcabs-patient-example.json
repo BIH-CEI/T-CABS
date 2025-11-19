@@ -29,6 +29,27 @@
       "family": "Mustermann"
     }
   ],
+  "address": [
+    {
+      "line": [
+        "Musterstraße 123"
+      ],
+      "type": "both",
+      "city": "Berlin",
+      "postalCode": "10115",
+      "country": "DE",
+      "use": "home"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "reference": "Practitioner/tcabs-practitioner-example"
+    }
+  ],
   "gender": "male",
-  "birthDate": "1980-01-15"
+  "birthDate": "1980-01-15",
+  "deceasedBoolean": false,
+  "managingOrganization": {
+    "reference": "Organization/CABS"
+  }
 }

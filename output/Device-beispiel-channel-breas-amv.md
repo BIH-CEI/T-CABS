@@ -1,12 +1,12 @@
-# Beispiel Channel BREAS AMV - v0.1.0
+# Example Channel BREAS AMV - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Channel BREAS AMV**
+* **Example Channel BREAS AMV**
 
-## Example Device: Beispiel Channel BREAS AMV
+## Example Device: Example Channel BREAS AMV
 
-Profile: [T-CABS Device Channel Beatmungsgeraet](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md)
+Profile: [T-CABS Device Channel Ventilator](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md)
 
 **identifier**: `http://tcabs.example.org/device-channel`/CHAN-BREAS-AMV-001
 
@@ -17,9 +17,9 @@ Profile: [T-CABS Device Channel Beatmungsgeraet](StructureDefinition-t-cabs-devi
 | - | **Name** | **Type** |
 | * | AMV Measurement Channel | User Friendly name |
 
-**type**: MDC_DEV_SYS_PT_VENT_CHAN
+**type**: MDC_DEV_CHAN
 
-**parent**: [Device: identifier = http://tcabs.example.org/device-vmd#VMD-BREAS-AMV-001; type = MDC_DEV_SYS_PT_VENT_VMD](Device-beispiel-vmd-breas-amv.md)
+**parent**: [Device: identifier = http://tcabs.example.org/device-vmd#VMD-BREAS-AMV-001; type = MDC_DEV_VMD](Device-beispiel-vmd-breas-amv.md)
 
 
 
@@ -50,8 +50,8 @@ Profile: [T-CABS Device Channel Beatmungsgeraet](StructureDefinition-t-cabs-devi
     "coding" : [
       {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "70003",
-        "display" : "MDC_DEV_SYS_PT_VENT_CHAN"
+        "code" : "69635",
+        "display" : "MDC_DEV_CHAN"
       }
     ]
   },

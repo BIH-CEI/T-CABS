@@ -3,7 +3,8 @@
   "id": "beispiel-provider-loewenstein",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+      "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation"
     ]
   },
   "identifier": [

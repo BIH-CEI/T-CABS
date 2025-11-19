@@ -16,6 +16,12 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Observation/f:category</sch:title>
+    <sch:rule context="f:Observation/f:category">
+      <sch:assert test="count(f:coding) &lt;= 1">coding: maximum cardinality of 'coding' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:Observation/f:value[x] 1</sch:title>
     <sch:rule context="f:Observation/f:value[x]">
       <sch:assert test="count(f:value) &gt;= 1">value: minimum cardinality of 'value' is 1</sch:assert>

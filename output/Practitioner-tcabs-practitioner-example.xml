@@ -4,16 +4,23 @@
   <id value="tcabs-practitioner-example"/>
   <meta>
     <profile value="http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion"/>
+    <profile value="https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner tcabs-practitioner-example</b></p><a name="tcabs-practitioner-example"> </a><a name="hctcabs-practitioner-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person mit Funktion</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/practitioners</code>/TCABS-DOC-001</p><p><b>name</b>: Anna Schmidt </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner tcabs-practitioner-example</b></p><a name="tcabs-practitioner-example"> </a><a name="hctcabs-practitioner-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function</a>, <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf">https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/practitioners</code>/TCABS-DOC-001</p><p><b>name</b>: Anna Schmidt(Official)</p><p><b>telecom</b>: <a href="mailto:anna.schmidt@tcabs-clinic.de">anna.schmidt@tcabs-clinic.de</a></p></div>
   </text>
   <identifier>
     <system value="http://tcabs.example.org/practitioners"/>
     <value value="TCABS-DOC-001"/>
   </identifier>
   <name>
+    <use value="official"/>
+    <text value="Anna Schmidt"/>
     <family value="Schmidt"/>
     <given value="Anna"/>
   </name>
+  <telecom>
+    <system value="email"/>
+    <value value="anna.schmidt@tcabs-clinic.de"/>
+  </telecom>
 </Practitioner>

@@ -47,6 +47,14 @@
     "code": "{#}/(24.h)",
     "value": 8520
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference": {
+        "reference": "Device/beispiel-phg-doccla"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/tcabs-patient-example"

@@ -1,12 +1,12 @@
-# Beispiel Beatmung BREAS - v0.1.0
+# Example Ventilation BREAS - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Beatmung BREAS**
+* **Example Ventilation BREAS**
 
-## Example Procedure: Beispiel Beatmung BREAS
+## Example Procedure: Example Ventilation BREAS
 
-Profile: [T-CABS Procedure Beatmung](StructureDefinition-t-cabs-procedure-beatmung.md)
+Profile: [T-CABS Procedure Ventilation](StructureDefinition-t-cabs-procedure-beatmung.md)
 
 **status**: Completed
 

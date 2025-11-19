@@ -1,10 +1,10 @@
-# Beispiel DeviceMetric ResMed Druck Min/Max - v0.1.0
+# Example DeviceMetric ResMed Pressure Min/Max - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel DeviceMetric ResMed Druck Min/Max**
+* **Example DeviceMetric ResMed Pressure Min/Max**
 
-## Example DeviceMetric: Beispiel DeviceMetric ResMed Druck Min/Max
+## Example DeviceMetric: Example DeviceMetric ResMed Pressure Min/Max
 
 Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md)
 
@@ -16,11 +16,11 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
 
 **source**: [Device: extension = 6500; identifier = UDI; manufacturer = ResMed; serialNumber = STELLAR150-SN-901234; type = MDC_DEV_SYS_PT_VENT_MDS](Device-beispiel-beatmungsgeraet-resmed.md)
 
-**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-RESMED-DRUCK-001; type = MDC_DEV_SYS_PT_VENT_CHAN](Device-beispiel-channel-resmed-druck.md)
+**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-RESMED-DRUCK-001; type = MDC_DEV_ANALY_PRESS_LUNG_CHAN](Device-beispiel-channel-resmed-druck.md)
 
 **operationalStatus**: On
 
-**color**: brown
+**color**: Color Black
 
 **category**: Measurement
 
@@ -77,7 +77,7 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
     "reference" : "Device/beispiel-channel-resmed-druck"
   },
   "operationalStatus" : "on",
-  "color" : "brown",
+  "color" : "black",
   "category" : "measurement",
   "measurementPeriod" : {
     "repeat" : {

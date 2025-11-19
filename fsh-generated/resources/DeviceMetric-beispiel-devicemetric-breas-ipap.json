@@ -44,7 +44,7 @@
     ]
   },
   "operationalStatus": "on",
-  "color": "lime",
+  "color": "cyan",
   "category": "setting",
   "source": {
     "reference": "Device/beispiel-beatmungsgeraet-breas"

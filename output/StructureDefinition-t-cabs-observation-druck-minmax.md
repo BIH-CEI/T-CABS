@@ -1,18 +1,18 @@
-# T-CABS Observation Druck MIN/MAX - v0.1.0
+# T-CABS Observation Pressure MIN/MAX - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation Druck MIN/MAX**
+* **T-CABS Observation Pressure MIN/MAX**
 
-## Resource Profile: T-CABS Observation Druck MIN/MAX 
+## Resource Profile: T-CABS Observation Pressure MIN/MAX 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_DruckMinMax |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_DruckMinMax |
 
  
-Profil für den minimalen und maximalen Beatmungsdruck 
+Profile for minimal and maximal ventilation pressure 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_DruckMinMax",
-  "title" : "T-CABS Observation Druck MIN/MAX",
+  "title" : "T-CABS Observation Pressure MIN/MAX",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,23 +49,29 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für den minimalen und maximalen Beatmungsdruck",
+  "description" : "Profile for minimal and maximal ventilation pressure",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
       "identity" : "dim",
       "uri" : "urn:iso:std:iso:11073:10201",
       "name" : "IEEE 11073-10201 DIM"
-    },
-    {
-      "identity" : "sdc",
-      "uri" : "urn:iso:std:iso:11073:10207",
-      "name" : "IEEE 11073-10207 SDC"
     },
     {
       "identity" : "workflow",
@@ -101,7 +107,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -114,8 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
         "path" : "Observation.code.coding",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "151792",
-          "display" : "MDC_PRESS_AWAY"
+          "code" : "151792"
         }
       },
       {
@@ -124,33 +129,6 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
         "type" : [
           {
             "code" : "Period"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "max" : "0"
-      },
-      {
-        "id" : "Observation.value[x]:valueQuantity",
-        "path" : "Observation.value[x]",
-        "sliceName" : "valueQuantity",
-        "max" : "0",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x]:valueRatio",
-        "path" : "Observation.value[x]",
-        "sliceName" : "valueRatio",
-        "max" : "0",
-        "type" : [
-          {
-            "code" : "Ratio"
           }
         ]
       },
@@ -186,12 +164,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
               "display" : "MDC_PRESS_AWAY_MIN"
             }
           ]
-        },
-        "mustSupport" : true
+        }
       },
       {
-        "id" : "Observation.component:MinPress.value[x]",
+        "id" : "Observation.component:MinPress.value[x]:valueQuantity",
         "path" : "Observation.component.value[x]",
+        "sliceName" : "valueQuantity",
         "type" : [
           {
             "code" : "Quantity"
@@ -199,17 +177,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
         ]
       },
       {
-        "id" : "Observation.component:MinPress.value[x].unit",
+        "id" : "Observation.component:MinPress.value[x]:valueQuantity.unit",
         "path" : "Observation.component.value[x].unit",
         "patternString" : "mbar"
       },
       {
-        "id" : "Observation.component:MinPress.value[x].system",
-        "path" : "Observation.component.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      },
-      {
-        "id" : "Observation.component:MinPress.value[x].code",
+        "id" : "Observation.component:MinPress.value[x]:valueQuantity.code",
         "path" : "Observation.component.value[x].code",
         "patternCode" : "mbar"
       },
@@ -232,12 +205,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
               "display" : "MDC_PRESS_AWAY_MAX"
             }
           ]
-        },
-        "mustSupport" : true
+        }
       },
       {
-        "id" : "Observation.component:MaxPress.value[x]",
+        "id" : "Observation.component:MaxPress.value[x]:valueQuantity",
         "path" : "Observation.component.value[x]",
+        "sliceName" : "valueQuantity",
         "type" : [
           {
             "code" : "Quantity"
@@ -245,17 +218,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
         ]
       },
       {
-        "id" : "Observation.component:MaxPress.value[x].unit",
+        "id" : "Observation.component:MaxPress.value[x]:valueQuantity.unit",
         "path" : "Observation.component.value[x].unit",
         "patternString" : "mbar"
       },
       {
-        "id" : "Observation.component:MaxPress.value[x].system",
-        "path" : "Observation.component.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      },
-      {
-        "id" : "Observation.component:MaxPress.value[x].code",
+        "id" : "Observation.component:MaxPress.value[x]:valueQuantity.code",
         "path" : "Observation.component.value[x].code",
         "patternCode" : "mbar"
       }

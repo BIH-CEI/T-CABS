@@ -1,12 +1,12 @@
-# Beispiel Atemzeitverhältnis ResMed - v0.1.0
+# Example Respiratory Time Ratio ResMed - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Atemzeitverhältnis ResMed**
+* **Example Respiratory Time Ratio ResMed**
 
-## Example Observation: Beispiel Atemzeitverhältnis ResMed
+## Example Observation: Example Respiratory Time Ratio ResMed
 
-Profile: [T-CABS Observation Atemzeitverhaeltnis](StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.md)
+Profile: [T-CABS Observation Respiratory Time Ratio](StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.md)
 
 **partOf**: [Procedure MDC_PRESS_AWAY_CTS_POS](Procedure-beispiel-beatmung-resmed.md)
 
@@ -20,7 +20,7 @@ Profile: [T-CABS Observation Atemzeitverhaeltnis](StructureDefinition-t-cabs-obs
 
 **value**: 33 %(Details: UCUM code% = '%')
 
-**device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-ATEMZEIT-001; type = MDC_TIME_PD_INSP_NORMALIZED_HF; unit = %; operationalStatus = on; color = purple; category = calculation; measurementPeriod = Once per 15 seconds](DeviceMetric-beispiel-devicemetric-resmed-atemzeit.md)
+**device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-ATEMZEIT-001; type = MDC_TIME_PD_INSP_NORMALIZED_HF; unit = %; operationalStatus = on; color = white; category = calculation; measurementPeriod = Once per 15 seconds](DeviceMetric-beispiel-devicemetric-resmed-atemzeit.md)
 
 
 

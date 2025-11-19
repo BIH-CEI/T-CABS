@@ -1,4 +1,4 @@
-# T-CABS Observation AMV - v0.1.0
+# T-CABS Observation AMV - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-amv | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_AMV |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_AMV |
 
  
-Profil für ein gemessenes oder eingestelltes Atemminutenvolumen 
+Profile for a alveolar minute volume 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "name" : "T_CABS_Observation_AMV",
   "title" : "T-CABS Observation AMV",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für ein gemessenes oder eingestelltes Atemminutenvolumen",
+  "description" : "Profile for a alveolar minute volume",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
         "path" : "Observation.code.coding",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "151996",
-          "display" : "MDC_VENT_VOL_MINUTE"
+          "code" : "151996"
         }
       },
       {

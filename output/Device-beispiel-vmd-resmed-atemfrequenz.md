@@ -1,12 +1,12 @@
-# Beispiel VMD ResMed Atemfrequenz Module - v0.1.0
+# Example VMD ResMed Respiratory Rate Module - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel VMD ResMed Atemfrequenz Module**
+* **Example VMD ResMed Respiratory Rate Module**
 
-## Example Device: Beispiel VMD ResMed Atemfrequenz Module
+## Example Device: Example VMD ResMed Respiratory Rate Module
 
-Profile: [T-CABS Device VMD Beatmungsgeraet](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md)
+Profile: [T-CABS Device VMD Ventilator](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md)
 
 **identifier**: `http://tcabs.example.org/device-vmd`/VMD-RESMED-ATEMFREQ-001
 

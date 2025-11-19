@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "T_CABS_ValueSet_Beatmungsstelle",
+  "id": "t-cabs-valueset-beatmungsstelle",
+  "title": "T-CABS ValueSet Ventilation Site",
+  "description": "This ValueSet contains codes to represent the body sites where ventilation is applied",
+  "url": "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "302549007",
+            "display": "Entire face (body structure)"
+          },
+          {
+            "code": "45206002",
+            "display": "Nasal structure (body structure)"
+          },
+          {
+            "code": "44567001",
+            "display": "Tracheal structure (body structure)"
+          }
+        ]
+      }
+    ]
+  }
+}

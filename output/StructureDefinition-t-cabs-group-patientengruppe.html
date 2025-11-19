@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>T-CABS Patientengruppe -  v0.1.0</title>
+    <title>T-CABS Patient Group - T-CABS Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,23 +47,33 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.34"}
-    h3,h4,h5,h6{--heading-prefix:"13.34"}</style>
+    <style type="text/css">h2{--heading-prefix:"13.40"}
+    h3,h4,h5,h6{--heading-prefix:"13.40"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
-<div id="hl7-nav">
-    <a id="logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
         <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
     </a>            
 </div>
 
+<div id="family-nav">
+    <a id="family-logo" no-external="true" href="https://www.charite.de/">
+        <img alt="visit the website" height="60" src="Logo_Charite.png" />
+    </a>            
+</div>
+
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
 
 
             </span>
@@ -94,37 +104,37 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="Informationsmodell.html">Informationsmodell</a>
+    <a href="Information-Model.html">Information Model</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profile
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profiles
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Profile-Allgemein.html">Profile-Allgemein</a>
+        <a href="Cross-Domain-Profiles.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Profile-Vitalparameter.html">Profile-Vitalparameter</a>
+        <a href="Vital-Data-Profiles.html">Vital Data</a>
       </li>
       <li>
-        <a href="Profile-Beatmungsparameter.html">Profile-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Profiles.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Beispiele
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Beispiele-Allgemein.html">Beispiele-Allgemein</a>
+        <a href="Cross-Domain-Examples.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Beispiele-Vitalparameter.html">Beispiele-Vitalparameter</a>
+        <a href="Vital-Data-Examples.html">Vital Data</a>
       </li>
       <li>
-        <a href="Beispiele-Beatmungsparameter.html">Beispiele-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Examples.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
@@ -134,18 +144,18 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Implementation-Allgemein.html">Implementation-Allgemein</a>
+        <a href="Cross-Domain-Implementation.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Implementation-Vitalparameter.html">Implementation-Vitalparameter</a>
+        <a href="Vital-Data-Implementation.html">Vital Data</a>
       </li>
       <li>
-        <a href="Implementation-Beatmungsparameter.html">Implementation-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Implementation.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="Terminologien.html">Terminologien</a>
+    <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -162,7 +172,17 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>T-CABS Patientengruppe</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>T-CABS Patient Group</b></li>
+
+          <span style="float:right;">
+
+            <a href="StructureDefinition-t-cabs-patient.profile.ttl.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html">next&gt;</a>
+
+          </span>
 
         </ul>
       </div>  <!-- /container -->
@@ -175,7 +195,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TCABS - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -241,7 +261,7 @@
   <a name="root"> </a>
   <h2 id="root">Resource Profile:
 
-    T-CABS Patientengruppe
+    T-CABS Patient Group
 
 
 
@@ -271,7 +291,7 @@
         
           Draft
           
-            as of 2025-10-16
+            as of 2025-11-19
           
         
       </td>
@@ -287,7 +307,7 @@
   </table>
 
 <p>
-<p>Profil um Patienten innerhalb der T-CABS Studie gruppieren zu können</p>
+<p>Profile to group patients within the T-CABS study.</p>
 
 </p>
 
@@ -300,7 +320,7 @@
 
 <p><b>Usages:</b></p>
 <ul>
- <li>Refer to this Profile: <a href="StructureDefinition-t-cabs-researchstudy-studie.html">T-CABS ResearchStudy Studie</a></li>
+ <li>This Profile is not used by any profiles in this Implementation Guide</li>
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-group-patientengruppe">usages in the FHIR IG Statistics</a></p>
 
@@ -378,7 +398,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.managingEntity" title="Entity responsible for defining and maintaining Group characteristics and/or registered members." data-no-external="true">managingEntity</a><a name="k-Group.managingEntity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person mit Funktion</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organisation</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Entity that is the custodian of the Group's definition</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="af" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.member" title="Identifies the resource instances that are members of the group." data-no-external="true">member</a><a name="k-Group.member"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( grp-1 )">C</a></td>
@@ -397,7 +417,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reference to the group member</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5c473e11-a0ed-4e36-9ca0-ecda185967cf
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e1027c85-b8b5-41d3-b995-c9601b932526
 document.getElementById('cbt-cabs-group-patientengruppeK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeK'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeK-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeK'));
 document.getElementById('cbt-cabs-group-patientengruppeK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -577,7 +597,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeK'), 'obligation
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.managingEntity" data-no-external="true">managingEntity</a><a name="Group.managingEntity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person mit Funktion</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organisation</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Entity that is the custodian of the Group's definition</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.member" data-no-external="true">member</a><a name="Group.member"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
@@ -589,7 +609,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeK'), 'obligation
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Reference to the group member</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5c473e11-a0ed-4e36-9ca0-ecda185967cf
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e1027c85-b8b5-41d3-b995-c9601b932526
 document.getElementById('cbt-cabs-group-patientengruppeD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeD'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeD-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeD'));
 document.getElementById('cbt-cabs-group-patientengruppeD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -700,7 +720,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ap" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.managingEntity" title="Entity responsible for defining and maintaining Group characteristics and/or registered members." data-no-external="true">managingEntity</a><a name="s-Group.managingEntity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person mit Funktion</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organisation</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Entity that is the custodian of the Group's definition</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.characteristic" title="Identifies traits whose presence r absence is shared by members of the group." data-no-external="true">characteristic</a><a name="s-Group.characteristic"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
@@ -806,7 +826,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If member is no longer in group</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5c473e11-a0ed-4e36-9ca0-ecda185967cf
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e1027c85-b8b5-41d3-b995-c9601b932526
 document.getElementById('cbt-cabs-group-patientengruppeS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeS-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeS'));
 document.getElementById('cbt-cabs-group-patientengruppeS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -874,7 +894,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'obligation
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Kind of particular resource; e.g. cow, syringe, lake, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not Stated</td>
+    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -884,7 +904,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'obligation
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="List of characteristics used to describe group members; e.g. gender, age, owner, location, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not Stated</td>
+    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -894,7 +914,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'obligation
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Value of descriptive member characteristic; e.g. red, male, pneumonia, Caucasian, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not Stated</td>
+    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
 </table>
@@ -1022,7 +1042,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'obligation
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
-           // <span style="color: navy; opacity: 0.8">T-CABS Patientengruppe</span>
+           // <span style="color: navy; opacity: 0.8">T-CABS Patient Group</span>
  {
    "resourceType" : "Group",
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Logical id of this artifact</span>
@@ -1092,8 +1112,8 @@ Summary
 <p>Must-Support: 2 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person mit Funktion <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion)</span></a></li>
-<li><a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organisation <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-organisation)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-organisation)</span></a></li>
 <li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-patient)</span></a></li>
 
 </ul>
@@ -1140,7 +1160,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.managingEntity" title="Entity responsible for defining and maintaining Group characteristics and/or registered members." data-no-external="true">managingEntity</a><a name="ka-Group.managingEntity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person mit Funktion</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organisation</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Entity that is the custodian of the Group's definition</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="af" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.member" title="Identifies the resource instances that are members of the group." data-no-external="true">member</a><a name="ka-Group.member"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( grp-1 )">C</a></td>
@@ -1159,7 +1179,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reference to the group member</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5c473e11-a0ed-4e36-9ca0-ecda185967cf
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e1027c85-b8b5-41d3-b995-c9601b932526
 document.getElementById('cbt-cabs-group-patientengruppeKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeKA'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeKA-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeKA'));
 document.getElementById('cbt-cabs-group-patientengruppeKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1339,7 +1359,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeKA'), 'obligatio
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.managingEntity" data-no-external="true">managingEntity</a><a name="a-Group.managingEntity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person mit Funktion</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organisation</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Entity that is the custodian of the Group's definition</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.member" data-no-external="true">member</a><a name="a-Group.member"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
@@ -1351,7 +1371,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeKA'), 'obligatio
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Reference to the group member</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5c473e11-a0ed-4e36-9ca0-ecda185967cf
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e1027c85-b8b5-41d3-b995-c9601b932526
 document.getElementById('cbt-cabs-group-patientengruppeDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeDA'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeDA-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeDA'));
 document.getElementById('cbt-cabs-group-patientengruppeDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1461,7 +1481,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ap" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.managingEntity" title="Entity responsible for defining and maintaining Group characteristics and/or registered members." data-no-external="true">managingEntity</a><a name="sa-Group.managingEntity"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person mit Funktion</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organisation</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function</a> | <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Entity that is the custodian of the Group's definition</td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html#Group.characteristic" title="Identifies traits whose presence r absence is shared by members of the group." data-no-external="true">characteristic</a><a name="sa-Group.characteristic"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
@@ -1567,7 +1587,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If member is no longer in group</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5c473e11-a0ed-4e36-9ca0-ecda185967cf
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // e1027c85-b8b5-41d3-b995-c9601b932526
 document.getElementById('cbt-cabs-group-patientengruppeSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeSA-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeSA'));
 document.getElementById('cbt-cabs-group-patientengruppeSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1635,7 +1655,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'obligatio
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Kind of particular resource; e.g. cow, syringe, lake, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not Stated</td>
+    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1645,7 +1665,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'obligatio
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="List of characteristics used to describe group members; e.g. gender, age, owner, location, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not Stated</td>
+    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1655,7 +1675,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'obligatio
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Value of descriptive member characteristic; e.g. red, male, pneumonia, Caucasian, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not Stated</td>
+    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
 </table>
@@ -1783,7 +1803,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'obligatio
           <b>JSON Template</b>
         </p>
         <div id="all-json-inner">
-           // <span style="color: navy; opacity: 0.8">T-CABS Patientengruppe</span>
+           // <span style="color: navy; opacity: 0.8">T-CABS Patient Group</span>
  {
    "resourceType" : "Group",
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Logical id of this artifact</span>
@@ -1849,8 +1869,8 @@ Summary
 <p>Must-Support: 2 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person mit Funktion <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion)</span></a></li>
-<li><a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organisation <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-organisation)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-organisation)</span></a></li>
 <li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-patient)</span></a></li>
 
 </ul>
@@ -1889,9 +1909,31 @@ Summary
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="StructureDefinition-t-cabs-patient.profile.ttl.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="StructureDefinition-t-cabs-group-patientengruppe-definitions.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 16, 2025 18:59+0200">2025-10-16</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 19, 2025 11:55+0100">2025-11-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

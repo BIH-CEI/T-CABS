@@ -1,8 +1,8 @@
 Profile: T_CABS_DiagnosticReport_Visitenbefund
 Parent: DiagnosticReport
 Id: t-cabs-diagnosticreport-visitenbefund
-Title: "T-CABS DiagnosticReport Visitenbefund"
-Description: "Profil für einen Beurteilung der wöchentlichen, telemedizinischen Visite innerhalb der T-CABS Studie"
+Title: "T-CABS DiagnosticReport Visit Finding"
+Description: "Profile for an assessment of the weekly telemedicine visit within the T-CABS study"
 
 * status MS
 
@@ -24,8 +24,8 @@ Description: "Profil für einen Beurteilung der wöchentlichen, telemedizinische
 Instance: Example-DiagnosticReport-Woechentliche-Visite
 InstanceOf: T_CABS_DiagnosticReport_Visitenbefund
 Usage: #example
-Title: "Beispiel DiagnosticReport Wöchentliche Visite"
-Description: "Beispiel für einen Visitenbefund einer wöchentlichen telemedizinischen Visite"
+Title: "Example DiagnosticReport Weekly Visit"
+Description: "Example of a visit finding of a weekly telemedicine visit"
 * identifier.system = "http://tcabs.example.org/diagnosticreports"
 * identifier.value = "DR-TCABS-WEEKLY-001"
 * status = #final
@@ -43,4 +43,4 @@ Description: "Beispiel für einen Visitenbefund einer wöchentlichen telemedizin
 * result[+] = Reference(Observation/Example-TriggeredBreaths-Loewenstein)
 * result[+] = Reference(Observation/Example-BMI-Doccla)
 * result[+] = Reference(Observation/Example-ArterielleSPO2-Doccla)
-* conclusion = "Patient zeigt stabile Beatmungsparameter über alle Geräte hinweg. BREAS: AMV im Normalbereich bei 8,5 L/min, AHI mit 5,2 innerhalb des therapeutischen Ziels. ResMed: Atemfrequenz stabil bei 14/min, Leckage minimal bei 0,6 L/min. Löwenstein: Synchronisation bei 85%, TriggeredBreaths mit 92% zeigen sehr gute Patient-Gerät-Interaktion. Vitalparameter ebenfalls stabil: BMI 25,3 kg/m², SpO2 98%."
+* conclusion = "Patient shows stable ventilation parameters across all devices. BREAS: AMV in normal range at 8.5 L/min, AHI at 5.2 within therapeutic target. ResMed: Respiratory rate stable at 14/min, leakage minimal at 0.6 L/min. Löwenstein: Synchronization at 85%, TriggeredBreaths at 92% show very good patient-device interaction. Vital parameters also stable: BMI 25.3 kg/m², SpO2 98%."

@@ -5,7 +5,7 @@
   "name": "T_CABS_Observation_FEV1",
   "title": "T-CABS Observation FEV1",
   "status": "draft",
-  "description": "Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1)",
+  "description": "Profile for Forced Expiratory Volume in 1 Second (FEV1)",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,7 @@
         "sliceName": "LoincCoding",
         "patternCoding": {
           "code": "20150-9",
-          "system": "http://loinc.org",
-          "display": "FEV1"
+          "system": "http://loinc.org"
         }
       },
       {

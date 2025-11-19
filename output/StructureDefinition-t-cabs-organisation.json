@@ -8,18 +8,25 @@
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
   "version" : "0.1.0",
   "name" : "T_CABS_Organisation",
-  "title" : "T-CABS Organisation",
+  "title" : "T-CABS Organization",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://www.bihealth.org/"
     }]
   }],
-  "description" : "Profil für eine Organisation die mit T-CABS Studie in Verbindung steht",
+  "description" : "Profile for an organization associated with the T-CABS study.\nCompatibility:\nThe T_CABS_Organisation profile aims for compatibility with the ISiKOrganisation version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Organisation are also valid against the [ISiKOrganisation](https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "v2",

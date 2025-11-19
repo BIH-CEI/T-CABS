@@ -12,17 +12,20 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
-       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-beatmungsgeraet-loewenstein</b></p><a name=\"beispiel-beatmungsgeraet-loewenstein\"> </a><a name=\"hcbeispiel-beatmungsgeraet-loewenstein\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html\">T-CABS Device MDS Heimbeatmungsgerät</a></p></div><p><b>Operating hours extension</b>: 12450</p><p><b>identifier</b>: UDI/LOEW-PRISMA30-67890</p><p><b>manufacturer</b>: Löwenstein Medical</p><p><b>serialNumber</b>: PRISMA30-SN-345678</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Prisma VENT30</td><td>Model name</td></tr></table><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 70001}\">MDC_DEV_SYS_PT_VENT_MDS</span></p><p><b>patient</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>owner</b>: <a href=\"Organization-beispiel-provider-loewenstein.html\">Organization Löwenstein Medical</a></p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-beatmungsgeraet-loewenstein</b></p><a name=\"beispiel-beatmungsgeraet-loewenstein\"> </a><a name=\"hcbeispiel-beatmungsgeraet-loewenstein\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html\">T-CABS Device MDS Home Ventilator</a></p></div><p><b>Operating hours extension</b>: 12450</p><p><b>identifier</b>: UDI/LOEW-PRISMA30-67890</p><p><b>manufacturer</b>: Löwenstein Medical</p><p><b>serialNumber</b>: PRISMA30-SN-345678</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Prisma VENT30</td><td>Model name</td></tr></table><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 70001}\">MDC_DEV_SYS_PT_VENT_MDS</span></p><p><b>patient</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>owner</b>: <a href=\"Organization-beispiel-provider-loewenstein.html\">Organization Löwenstein Medical</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours>
+     ] ;
      fhir:value [
-       a fhir:unsignedInt ;
+       a fhir:UnsignedInt ;
        fhir:v "12450"^^xsd:nonNegativeInteger
      ]
   ] ) ; # 
@@ -42,17 +45,20 @@
   ] ) ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "70001" ] ;
        fhir:display [ fhir:v "MDC_DEV_SYS_PT_VENT_MDS" ]
      ] )
   ] ; # 
   fhir:patient [
-     fhir:link <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
      fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
   ] ; # 
   fhir:owner [
-     fhir:link <http://t-cabs.org/Organization/beispiel-provider-loewenstein> ;
+     fhir:l <http://t-cabs.org/Organization/beispiel-provider-loewenstein> ;
      fhir:reference [ fhir:v "Organization/beispiel-provider-loewenstein" ]
   ] . # 
 

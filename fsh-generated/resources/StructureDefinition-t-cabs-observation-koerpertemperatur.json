@@ -3,9 +3,9 @@
   "id": "t-cabs-observation-koerpertemperatur",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur",
   "name": "T_CABS_Observation_Koerpertemperatur",
-  "title": "T-CABS Observation Koerpertemperatur",
+  "title": "T-CABS Observation Body Temperature",
   "status": "draft",
-  "description": "Profil für die Körpertemperatur",
+  "description": "Profile for body temperature.\nCompatibility:\nFor the profile T_CABS_Observation_Koerpertemperatur, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpertemperatur are also valid against the [ISiKKoerpertemperatur](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,7 @@
         "sliceName": "LoincCoding",
         "patternCoding": {
           "code": "8310-5",
-          "system": "http://loinc.org",
-          "display": "Body temperature"
+          "system": "http://loinc.org"
         }
       },
       {

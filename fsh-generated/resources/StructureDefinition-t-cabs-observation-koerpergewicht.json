@@ -3,9 +3,9 @@
   "id": "t-cabs-observation-koerpergewicht",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht",
   "name": "T_CABS_Observation_Koerpergewicht",
-  "title": "T-CABS Observation Koerpergewicht",
+  "title": "T-CABS Observation Body Weight",
   "status": "draft",
-  "description": "Profil für das Körpergewicht",
+  "description": "Profile for body weight.\nCompatibility:\nFor the profile T_CABS_Observation_Koerpergewicht, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpergewicht are also valid against the [ISiKKoerpergewicht](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,7 @@
         "sliceName": "LoincCoding",
         "patternCoding": {
           "code": "29463-7",
-          "system": "http://loinc.org",
-          "display": "Body weight"
+          "system": "http://loinc.org"
         }
       },
       {

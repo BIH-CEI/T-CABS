@@ -10,16 +10,23 @@
   "name" : "T_CABS_Observation_ArterielleSPO2",
   "title" : "T-CABS Observation SPO2",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://www.bihealth.org/"
     }]
   }],
-  "description" : "Profil für die arterielle Sauerstoffsättigung (SPO2)",
+  "description" : "Profile for arterial oxygen saturation (SPO2)\nCompatibility:\nFor the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
@@ -1062,7 +1069,7 @@
     {
       "id" : "Observation.extension.value[x]",
       "path" : "Observation.extension.value[x]",
-      "short" : "Reference to the Personal Health Gateway (PHG) Device",
+      "short" : "Reference to the PHG device",
       "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
       "min" : 1,
       "max" : "1",
@@ -1072,7 +1079,8 @@
         "max" : "1"
       },
       "type" : [{
-        "code" : "Reference"
+        "code" : "Reference",
+        "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-device-phg"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1741,7 +1749,7 @@
       "definition" : "A code that classifies the general type of observation being made.",
       "comment" : "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.",
       "requirements" : "Used for filtering what observations are retrieved and displayed.",
-      "min" : 1,
+      "min" : 2,
       "max" : "*",
       "base" : {
         "path" : "Observation.category",
@@ -2276,7 +2284,7 @@
       "definition" : "A code that classifies the general type of observation being made.",
       "comment" : "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.",
       "requirements" : "Used for filtering what observations are retrieved and displayed.",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "base" : {
         "path" : "Observation.category",
@@ -2294,6 +2302,7 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
@@ -2398,7 +2407,7 @@
       "comment" : "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
       "requirements" : "Allows for alternative encodings within a code system, and translations to other code systems.",
       "min" : 1,
-      "max" : "*",
+      "max" : "1",
       "base" : {
         "path" : "CodeableConcept.coding",
         "min" : 0,
@@ -2419,6 +2428,7 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -2973,6 +2983,7 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -3297,6 +3308,7 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -3638,7 +3650,7 @@
     {
       "id" : "Observation.subject",
       "path" : "Observation.subject",
-      "short" : "Referenz auf den Patienten",
+      "short" : "Reference to the patient",
       "definition" : "The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation.",
       "comment" : "One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.",
       "requirements" : "Observations have no value if you don't know who or what they're about.",
@@ -4080,7 +4092,7 @@
     {
       "id" : "Observation.performer",
       "path" : "Observation.performer",
-      "short" : "Who is responsible for the observation",
+      "short" : "Reference to the person who performed the measurement",
       "definition" : "Who was responsible for asserting the observed value as \"true\".",
       "requirements" : "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
       "min" : 0,
@@ -5863,7 +5875,7 @@
     {
       "id" : "Observation.device",
       "path" : "Observation.device",
-      "short" : "(Measurement) Device",
+      "short" : "Reference to the PHD measurement device",
       "definition" : "The device used to generate the observation data.",
       "comment" : "This field will reference the PHD Device.",
       "min" : 1,

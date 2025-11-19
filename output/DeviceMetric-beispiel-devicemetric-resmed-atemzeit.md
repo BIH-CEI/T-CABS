@@ -1,10 +1,10 @@
-# Beispiel DeviceMetric ResMed Atemzeitverhältnis - v0.1.0
+# Example DeviceMetric ResMed Respiratory Time Ratio - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel DeviceMetric ResMed Atemzeitverhältnis**
+* **Example DeviceMetric ResMed Respiratory Time Ratio**
 
-## Example DeviceMetric: Beispiel DeviceMetric ResMed Atemzeitverhältnis
+## Example DeviceMetric: Example DeviceMetric ResMed Respiratory Time Ratio
 
 Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md)
 
@@ -16,11 +16,11 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
 
 **source**: [Device: extension = 6500; identifier = UDI; manufacturer = ResMed; serialNumber = STELLAR150-SN-901234; type = MDC_DEV_SYS_PT_VENT_MDS](Device-beispiel-beatmungsgeraet-resmed.md)
 
-**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-RESMED-ATEMZEIT-001; type = MDC_DEV_SYS_PT_VENT_CHAN](Device-beispiel-channel-resmed-atemzeit.md)
+**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-RESMED-ATEMZEIT-001; type = MDC_DEV_CHAN](Device-beispiel-channel-resmed-atemzeit.md)
 
 **operationalStatus**: On
 
-**color**: purple
+**color**: Color White
 
 **category**: Calculation
 
@@ -77,7 +77,7 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
     "reference" : "Device/beispiel-channel-resmed-atemzeit"
   },
   "operationalStatus" : "on",
-  "color" : "purple",
+  "color" : "white",
   "category" : "calculation",
   "measurementPeriod" : {
     "repeat" : {

@@ -44,7 +44,7 @@
     ]
   },
   "operationalStatus": "on",
-  "color": "orange",
+  "color": "yellow",
   "category": "measurement",
   "source": {
     "reference": "Device/beispiel-beatmungsgeraet-loewenstein"

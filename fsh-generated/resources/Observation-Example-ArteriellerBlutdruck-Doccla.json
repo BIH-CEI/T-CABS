@@ -3,7 +3,8 @@
   "id": "Example-ArteriellerBlutdruck-Doccla",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell"
     ]
   },
   "category": [
@@ -72,6 +73,14 @@
             "system": "http://loinc.org"
           }
         ]
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference": {
+        "reference": "Device/beispiel-phg-doccla"
       }
     }
   ],

@@ -1,10 +1,10 @@
-# Beispiel DeviceMetric Löwenstein TI - v0.1.0
+# Example DeviceMetric Löwenstein TI - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel DeviceMetric Löwenstein TI**
+* **Example DeviceMetric Löwenstein TI**
 
-## Example DeviceMetric: Beispiel DeviceMetric Löwenstein TI
+## Example DeviceMetric: Example DeviceMetric Löwenstein TI
 
 Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md)
 
@@ -16,11 +16,11 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
 
 **source**: [Device: extension = 12450; identifier = UDI; manufacturer = Löwenstein Medical; serialNumber = PRISMA30-SN-345678; type = MDC_DEV_SYS_PT_VENT_MDS](Device-beispiel-beatmungsgeraet-loewenstein.md)
 
-**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-LOEW-TI-001; type = MDC_DEV_SYS_PT_VENT_CHAN](Device-beispiel-channel-loewenstein-ti.md)
+**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-LOEW-TI-001; type = MDC_DEV_CHAN](Device-beispiel-channel-loewenstein-ti.md)
 
 **operationalStatus**: On
 
-**color**: orange
+**color**: Color Yellow
 
 **category**: Measurement
 
@@ -77,7 +77,7 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
     "reference" : "Device/beispiel-channel-loewenstein-ti"
   },
   "operationalStatus" : "on",
-  "color" : "orange",
+  "color" : "yellow",
   "category" : "measurement",
   "measurementPeriod" : {
     "repeat" : {

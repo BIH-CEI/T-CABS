@@ -1,18 +1,18 @@
-# T-CABS Observation AF - v0.1.0
+# T-CABS Observation Respiratory Rate Ventilated - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation AF**
+* **T-CABS Observation Respiratory Rate Ventilated**
 
-## Resource Profile: T-CABS Observation AF 
+## Resource Profile: T-CABS Observation Respiratory Rate Ventilated 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_Atemfrequenz_beatmet |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Atemfrequenz_beatmet |
 
  
-Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes 
+Profile for a respiratory rate of the ventilator 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_Atemfrequenz_beatmet",
-  "title" : "T-CABS Observation AF",
+  "title" : "T-CABS Observation Respiratory Rate Ventilated",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes",
+  "description" : "Profile for a respiratory rate of the ventilator",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
         "path" : "Observation.code.coding",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "151586",
-          "display" : "MDC_VENT_RESP_RATE"
+          "code" : "151586"
         }
       },
       {

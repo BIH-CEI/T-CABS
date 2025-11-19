@@ -1,12 +1,14 @@
-# Beispiel Herzfrequenz Messung - v0.1.0
+# Example Heart Rate Measurement - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Herzfrequenz Messung**
+* **Example Heart Rate Measurement**
 
-## Example Observation: Beispiel Herzfrequenz Messung
+## Example Observation: Example Heart Rate Measurement
 
-Profile: [T-CABS Observation Herzfrequenz](StructureDefinition-t-cabs-observation-herzfrequenz.md)
+Profiles: [T-CABS Observation Heart Rate](StructureDefinition-t-cabs-observation-herzfrequenz.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz)
+
+**Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
 **status**: Final
 
@@ -20,7 +22,7 @@ Profile: [T-CABS Observation Herzfrequenz](StructureDefinition-t-cabs-observatio
 
 **value**: 72 /min(Details: UCUM code/min = '/min')
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
 
 
 
@@ -32,9 +34,18 @@ Profile: [T-CABS Observation Herzfrequenz](StructureDefinition-t-cabs-observatio
   "id" : "Example-Herzfrequenz-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz"
     ]
   },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference" : {
+        "reference" : "Device/beispiel-phg-doccla"
+      }
+    }
+  ],
   "status" : "final",
   "category" : [
     {

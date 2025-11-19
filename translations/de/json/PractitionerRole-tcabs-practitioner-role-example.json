@@ -1,0 +1,23 @@
+{
+  "id" : "PractitionerRole-tcabs-practitioner-role-example",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Respiratory physician",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Innere Medizin und Pneumologie",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

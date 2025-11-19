@@ -1,8 +1,8 @@
 Profile: T_CABS_Observation_Beatmungsparameter
 Parent: http://hl7.org/fhir/uv/pocd/StructureDefinition/NumericObservation
 Id: t-cabs-observation-beatmungsparameter
-Title: "T-CABS Observation Beatmungsparameter (abstract)"
-Description: "Abstraktes Profil für Beatmungsparameter"
+Title: "T-CABS Observation Ventilation Parameter (abstract)"
+Description: "Abstract profile for ventilation parameters"
 
 * code.coding MS
 
@@ -10,9 +10,9 @@ Description: "Abstraktes Profil für Beatmungsparameter"
 
 * device only Reference(T_CABS_DeviceMetric_NumericMetric)
 
-* subject 1..1 MS
-* subject ^short = "Referenz auf den Patienten"
+* subject MS
+* subject ^short = "Reference to the patient"
 * subject only Reference(T_CABS_Patient)
 
-* insert Grenzwertdefinition
-* insert Beatmungsprozedur
+* insert ReferenceRangeDefinition
+* insert VentilationProcedure

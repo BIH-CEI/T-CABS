@@ -1,10 +1,10 @@
-# Beispiel DeviceMetric ResMed Leckage - v0.1.0
+# Example DeviceMetric ResMed Leakage - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel DeviceMetric ResMed Leckage**
+* **Example DeviceMetric ResMed Leakage**
 
-## Example DeviceMetric: Beispiel DeviceMetric ResMed Leckage
+## Example DeviceMetric: Example DeviceMetric ResMed Leakage
 
 Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md)
 
@@ -16,7 +16,7 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
 
 **source**: [Device: extension = 6500; identifier = UDI; manufacturer = ResMed; serialNumber = STELLAR150-SN-901234; type = MDC_DEV_SYS_PT_VENT_MDS](Device-beispiel-beatmungsgeraet-resmed.md)
 
-**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-RESMED-LECKAGE-001; type = MDC_DEV_SYS_PT_VENT_CHAN](Device-beispiel-channel-resmed-leckage.md)
+**parent**: [Device: identifier = http://tcabs.example.org/device-channel#CHAN-RESMED-LECKAGE-001; type = MDC_DEV_CHAN](Device-beispiel-channel-resmed-leckage.md)
 
 **operationalStatus**: On
 

@@ -1,10 +1,10 @@
 Profile: T_CABS_Observation_Atemfrequenz_beatmet
 Parent: T_CABS_Observation_Beatmungsparameter
 Id: t-cabs-observation-atemfrequenz-beatmet
-Title: "T-CABS Observation AF"
-Description: "Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes"
+Title: "T-CABS Observation Respiratory Rate Ventilated"
+Description: "Profile for a respiratory rate of the ventilator"
 
-* code.coding = $IEEE-11073#151586 "MDC_VENT_RESP_RATE"
+* code.coding = $IEEE-11073#151586 //"MDC_VENT_RESP_RATE"
 
 * valueQuantity.code = #/min
 * valueQuantity.unit = "/min"
@@ -12,8 +12,8 @@ Description: "Profil für eine gemessene oder eingestellte Atemfrequenz des Beat
 Instance: Example-Atemfrequenz-ResMed-gemessen
 InstanceOf: T_CABS_Observation_Atemfrequenz_beatmet
 Usage: #example
-Title: "Beispiel Atemfrequenz Messung ResMed"
-Description: "Beispiel für eine gemessene Atemfrequenz von einem ResMed Beatmungsgerät"
+Title: "Example Respiratory Rate Measurement ResMed"
+Description: "Example of a measured respiratory rate from a ResMed ventilator"
 * status = #final
 * code.coding = $IEEE-11073#151586 "MDC_VENT_RESP_RATE"
 * subject = Reference(Patient/tcabs-patient-example)

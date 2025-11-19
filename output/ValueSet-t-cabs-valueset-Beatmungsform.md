@@ -1,22 +1,22 @@
-# T-CABS ValueSet Beatmungsform - v0.1.0
+# T-CABS ValueSet Ventilation Type - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS ValueSet Beatmungsform**
+* **T-CABS ValueSet Ventilation Type**
 
-## ValueSet: T-CABS ValueSet Beatmungsform 
+## ValueSet: T-CABS ValueSet Ventilation Type 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_ValueSet_Beatmungsform |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_ValueSet_Beatmungsform |
 
  
-Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden 
+This ValueSet contains codes to represent the different types of ventilation 
 
  **References** 
 
-* [T-CABS Procedure Beatmung](StructureDefinition-t-cabs-procedure-beatmung.md)
+* [T-CABS Procedure Ventilation](StructureDefinition-t-cabs-procedure-beatmung.md)
 
 ### Logical Definition (CLD)
 
@@ -52,9 +52,9 @@ This value set contains 2 concepts
   "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
   "version" : "0.1.0",
   "name" : "T_CABS_ValueSet_Beatmungsform",
-  "title" : "T-CABS ValueSet Beatmungsform",
+  "title" : "T-CABS ValueSet Ventilation Type",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -62,12 +62,23 @@ This value set contains 2 concepts
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",
+  "description" : "This ValueSet contains codes to represent the different types of ventilation",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "compose" : {
     "include" : [
       {

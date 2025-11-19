@@ -11,54 +11,85 @@
   fhir:id [ fhir:v "t-cabs-devicemetric-numericmetric"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition t-cabs-devicemetric-numericmetric</b></p><a name=\"t-cabs-devicemetric-numericmetric\"> </a><a name=\"hct-cabs-devicemetric-numericmetric\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric-definitions.html#DeviceMetric\">DeviceMetric</a><a name=\"DeviceMetric\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/uv/pocd/2021Sep/StructureDefinition-NumericDeviceMetric.html\">NumericDeviceMetric</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Measurement, calculation or setting capability of a medical device</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric-definitions.html#DeviceMetric.parent\">parent</a><a name=\"DeviceMetric.parent\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html\">T-CABS Device Channel Beatmungsgeraet</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Describes the link to the parent Device</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric-definitions.html#DeviceMetric.category\">category</a><a name=\"DeviceMetric.category\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Messung oder Einstellung</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition t-cabs-devicemetric-numericmetric</b></p><a name=\"t-cabs-devicemetric-numericmetric\"> </a><a name=\"hct-cabs-devicemetric-numericmetric\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric-definitions.html#DeviceMetric\">DeviceMetric</a><a name=\"DeviceMetric\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/uv/pocd/2021Sep/StructureDefinition-NumericDeviceMetric.html\">NumericDeviceMetric</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Measurement, calculation or setting capability of a medical device</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric-definitions.html#DeviceMetric.type\" title=\"Coding to identify the parameter\">type</a><a name=\"DeviceMetric.type\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Identity of metric, for example Heart Rate or PEEP Setting</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric-definitions.html#DeviceMetric.source\">source</a><a name=\"DeviceMetric.source\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html\">T-CABS Device MDS Home Ventilator</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Describes the link to the source Device</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric-definitions.html#DeviceMetric.parent\">parent</a><a name=\"DeviceMetric.parent\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html\">T-CABS Device Channel Ventilator</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Describes the link to the parent Device</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-t-cabs-devicemetric-numericmetric-definitions.html#DeviceMetric.category\">category</a><a name=\"DeviceMetric.category\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Measurement or setting</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+     fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "T_CABS_DeviceMetric_NumericMetric"] ; # 
   fhir:title [ fhir:v "T-CABS DeviceMetric NumericMetric"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-16T18:59:10+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-19T11:55:29+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH-CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH-CEI" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+       fhir:value [ fhir:v "https://www.bihealth.org/" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Profil welches eine numerische Messung, Berechnung oder Einstellung darstellt"] ; # 
+  fhir:description [ fhir:v "Profile representing a numeric measurement, calculation, or setting"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "DE" ] ;
+       fhir:display [ fhir:v "Germany" ]
+     ] )
+  ] ) ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "dim" ] ;
-     fhir:uri [ fhir:v "urn:iso:std:iso:11073:10201"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "urn:iso:std:iso:11073:10201"^^xsd:anyURI ;
+       fhir:l <urn:iso:std:iso:11073:10201>
+     ] ;
      fhir:name [ fhir:v "IEEE 11073-10201 DIM" ]
   ] [
      fhir:identity [ fhir:v "sdc" ] ;
-     fhir:uri [ fhir:v "urn:iso:std:iso:11073:10207"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "urn:iso:std:iso:11073:10207"^^xsd:anyURI ;
+       fhir:l <urn:iso:std:iso:11073:10207>
+     ] ;
      fhir:name [ fhir:v "IEEE 11073-10207 SDC" ]
   ] [
      fhir:identity [ fhir:v "w5" ] ;
-     fhir:uri [ fhir:v "http://hl7.org/fhir/fivews"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/fivews"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/fivews>
+     ] ;
      fhir:name [ fhir:v "FiveWs Pattern Mapping" ]
   ] [
      fhir:identity [ fhir:v "rim" ] ;
-     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/v3"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/v3>
+     ] ;
      fhir:name [ fhir:v "RIM Mapping" ]
   ] ) ; # 
   fhir:kind [ fhir:v "resource"] ; # 
   fhir:abstract [ fhir:v false] ; # 
-  fhir:type [ fhir:v "DeviceMetric"^^xsd:anyURI] ; # 
+  fhir:type [
+     fhir:v "DeviceMetric"^^xsd:anyURI ;
+     fhir:l fhir:DeviceMetric
+  ] ; # 
   fhir:baseDefinition [
      fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/NumericDeviceMetric"^^xsd:anyURI ;
-     fhir:link <http://hl7.org/fhir/uv/pocd/StructureDefinition/NumericDeviceMetric>
+     fhir:l <http://hl7.org/fhir/uv/pocd/StructureDefinition/NumericDeviceMetric>
   ] ; # 
   fhir:derivation [ fhir:v "constraint"] ; # 
   fhir:snapshot [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version>
+       ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "0.3.0"
        ]
      ] ) ;
@@ -83,7 +114,7 @@
          fhir:xpath [ fhir:v "not(parent::f:contained and f:contained)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:key [ fhir:v "dom-3" ] ;
@@ -93,7 +124,7 @@
          fhir:xpath [ fhir:v "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:key [ fhir:v "dom-4" ] ;
@@ -103,7 +134,7 @@
          fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:key [ fhir:v "dom-5" ] ;
@@ -113,19 +144,25 @@
          fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:security))" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice>
+           ] ;
            fhir:value [
-             a fhir:boolean ;
+             a fhir:Boolean ;
              fhir:v true
            ]
          ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation>
+           ] ;
            fhir:value [
-             a fhir:markdown ;
+             a fhir:Markdown ;
              fhir:v "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time."
            ]
          ] ) ;
@@ -136,7 +173,7 @@
          fhir:xpath [ fhir:v "exists(f:text/h:div)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DomainResource>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -160,13 +197,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "id"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "id"^^xsd:anyURI ;
+             fhir:l fhir:id
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ]
@@ -183,7 +227,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Meta"^^xsd:anyURI ;
+           fhir:l fhir:Meta
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -193,7 +240,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -212,7 +259,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uri"^^xsd:anyURI ;
+           fhir:l fhir:uri
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -222,7 +272,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v true ] ;
@@ -242,7 +292,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -252,23 +305,29 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet>
+           ] ;
            fhir:value [
-             a fhir:canonical ;
+             a fhir:Canonical ;
              fhir:v "http://hl7.org/fhir/ValueSet/all-languages"^^xsd:anyURI ;
-             fhir:link <http://hl7.org/fhir/ValueSet/all-languages>
+             fhir:l <http://hl7.org/fhir/ValueSet/all-languages>
            ]
          ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "Language"
            ]
          ] ) ;
@@ -276,7 +335,7 @@
          fhir:description [ fhir:v "A human language." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/languages"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/languages>
+           fhir:l <http://hl7.org/fhir/ValueSet/languages>
          ]
        ]
      ] [
@@ -294,7 +353,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Narrative"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Narrative"^^xsd:anyURI ;
+           fhir:l fhir:Narrative
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -304,7 +366,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -328,7 +390,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Resource"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Resource"^^xsd:anyURI ;
+           fhir:l fhir:Resource
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -356,7 +421,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -366,7 +434,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -376,7 +444,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -395,10 +463,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/device-instance"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/uv/pocd/StructureDefinition/device-instance>
+           fhir:l <http://hl7.org/fhir/uv/pocd/StructureDefinition/device-instance>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -410,7 +481,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -420,7 +491,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -440,13 +511,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -475,7 +553,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -485,7 +566,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -495,7 +576,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -514,7 +595,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -524,7 +608,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -534,7 +618,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -554,13 +638,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -591,7 +682,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -601,7 +695,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -611,7 +705,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -635,13 +729,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -672,7 +773,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -682,7 +786,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -692,7 +796,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -717,13 +821,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "uri"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "uri"^^xsd:anyURI ;
+             fhir:l fhir:uri
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -744,105 +855,255 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "base64Binary"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "base64Binary"^^xsd:anyURI ;
+           fhir:l fhir:base64Binary
+         ]
        ] [
-         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
        ] [
-         fhir:code [ fhir:v "canonical"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "canonical"^^xsd:anyURI ;
+           fhir:l fhir:canonical
+         ]
        ] [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] [
-         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
        ] [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
        ] [
-         fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
        ] [
-         fhir:code [ fhir:v "id"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "id"^^xsd:anyURI ;
+           fhir:l fhir:id
+         ]
        ] [
-         fhir:code [ fhir:v "instant"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "instant"^^xsd:anyURI ;
+           fhir:l fhir:instant
+         ]
        ] [
-         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "integer"^^xsd:anyURI ;
+           fhir:l fhir:integer
+         ]
        ] [
-         fhir:code [ fhir:v "markdown"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "markdown"^^xsd:anyURI ;
+           fhir:l fhir:markdown
+         ]
        ] [
-         fhir:code [ fhir:v "oid"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "oid"^^xsd:anyURI ;
+           fhir:l fhir:oid
+         ]
        ] [
-         fhir:code [ fhir:v "positiveInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
        ] [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] [
-         fhir:code [ fhir:v "time"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "time"^^xsd:anyURI ;
+           fhir:l fhir:time
+         ]
        ] [
-         fhir:code [ fhir:v "unsignedInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
        ] [
-         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uri"^^xsd:anyURI ;
+           fhir:l fhir:uri
+         ]
        ] [
-         fhir:code [ fhir:v "url"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "url"^^xsd:anyURI ;
+           fhir:l fhir:url
+         ]
        ] [
-         fhir:code [ fhir:v "uuid"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uuid"^^xsd:anyURI ;
+           fhir:l fhir:uuid
+         ]
        ] [
-         fhir:code [ fhir:v "Address"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Address"^^xsd:anyURI ;
+           fhir:l fhir:Address
+         ]
        ] [
-         fhir:code [ fhir:v "Age"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Age"^^xsd:anyURI ;
+           fhir:l fhir:Age
+         ]
        ] [
-         fhir:code [ fhir:v "Annotation"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Annotation"^^xsd:anyURI ;
+           fhir:l fhir:Annotation
+         ]
        ] [
-         fhir:code [ fhir:v "Attachment"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Attachment"^^xsd:anyURI ;
+           fhir:l fhir:Attachment
+         ]
        ] [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] [
-         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Coding"^^xsd:anyURI ;
+           fhir:l fhir:Coding
+         ]
        ] [
-         fhir:code [ fhir:v "ContactPoint"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "ContactPoint"^^xsd:anyURI ;
+           fhir:l fhir:ContactPoint
+         ]
        ] [
-         fhir:code [ fhir:v "Count"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Count"^^xsd:anyURI ;
+           fhir:l fhir:Count
+         ]
        ] [
-         fhir:code [ fhir:v "Distance"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Distance"^^xsd:anyURI ;
+           fhir:l fhir:Distance
+         ]
        ] [
-         fhir:code [ fhir:v "Duration"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Duration"^^xsd:anyURI ;
+           fhir:l fhir:Duration
+         ]
        ] [
-         fhir:code [ fhir:v "HumanName"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "HumanName"^^xsd:anyURI ;
+           fhir:l fhir:HumanName
+         ]
        ] [
-         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
        ] [
-         fhir:code [ fhir:v "Money"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Money"^^xsd:anyURI ;
+           fhir:l fhir:Money
+         ]
        ] [
-         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Period"^^xsd:anyURI ;
+           fhir:l fhir:Period
+         ]
        ] [
-         fhir:code [ fhir:v "Quantity"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Quantity"^^xsd:anyURI ;
+           fhir:l fhir:Quantity
+         ]
        ] [
-         fhir:code [ fhir:v "Range"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Range"^^xsd:anyURI ;
+           fhir:l fhir:Range
+         ]
        ] [
-         fhir:code [ fhir:v "Ratio"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Ratio"^^xsd:anyURI ;
+           fhir:l fhir:Ratio
+         ]
        ] [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ]
        ] [
-         fhir:code [ fhir:v "SampledData"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "SampledData"^^xsd:anyURI ;
+           fhir:l fhir:SampledData
+         ]
        ] [
-         fhir:code [ fhir:v "Signature"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Signature"^^xsd:anyURI ;
+           fhir:l fhir:Signature
+         ]
        ] [
-         fhir:code [ fhir:v "Timing"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Timing"^^xsd:anyURI ;
+           fhir:l fhir:Timing
+         ]
        ] [
-         fhir:code [ fhir:v "ContactDetail"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "ContactDetail"^^xsd:anyURI ;
+           fhir:l fhir:ContactDetail
+         ]
        ] [
-         fhir:code [ fhir:v "Contributor"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Contributor"^^xsd:anyURI ;
+           fhir:l fhir:Contributor
+         ]
        ] [
-         fhir:code [ fhir:v "DataRequirement"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "DataRequirement"^^xsd:anyURI ;
+           fhir:l fhir:DataRequirement
+         ]
        ] [
-         fhir:code [ fhir:v "Expression"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Expression"^^xsd:anyURI ;
+           fhir:l fhir:Expression
+         ]
        ] [
-         fhir:code [ fhir:v "ParameterDefinition"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "ParameterDefinition"^^xsd:anyURI ;
+           fhir:l fhir:ParameterDefinition
+         ]
        ] [
-         fhir:code [ fhir:v "RelatedArtifact"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "RelatedArtifact"^^xsd:anyURI ;
+           fhir:l fhir:RelatedArtifact
+         ]
        ] [
-         fhir:code [ fhir:v "TriggerDefinition"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "TriggerDefinition"^^xsd:anyURI ;
+           fhir:l fhir:TriggerDefinition
+         ]
        ] [
-         fhir:code [ fhir:v "UsageContext"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "UsageContext"^^xsd:anyURI ;
+           fhir:l fhir:UsageContext
+         ]
        ] [
-         fhir:code [ fhir:v "Dosage"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Dosage"^^xsd:anyURI ;
+           fhir:l fhir:Dosage
+         ]
        ] [
-         fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Meta"^^xsd:anyURI ;
+           fhir:l fhir:Meta
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -852,7 +1113,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -877,17 +1138,25 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "uri"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "uri"^^xsd:anyURI ;
+             fhir:l fhir:uri
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:fixed [
-         a fhir:uri ;
-         fhir:v "number"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "number"^^xsd:anyURI ;
+         fhir:l fhir:number
        ] ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -916,7 +1185,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "unsignedInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -926,7 +1198,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -949,7 +1221,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "unsignedInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -959,7 +1234,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -982,7 +1257,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -992,7 +1270,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1002,7 +1280,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1022,13 +1300,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -1059,7 +1344,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1069,7 +1357,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1079,7 +1367,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1103,13 +1391,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -1140,7 +1435,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1150,7 +1448,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1160,7 +1458,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1185,13 +1483,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "uri"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "uri"^^xsd:anyURI ;
+             fhir:l fhir:uri
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -1212,105 +1517,255 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "base64Binary"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "base64Binary"^^xsd:anyURI ;
+           fhir:l fhir:base64Binary
+         ]
        ] [
-         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
        ] [
-         fhir:code [ fhir:v "canonical"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "canonical"^^xsd:anyURI ;
+           fhir:l fhir:canonical
+         ]
        ] [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] [
-         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
        ] [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
        ] [
-         fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
        ] [
-         fhir:code [ fhir:v "id"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "id"^^xsd:anyURI ;
+           fhir:l fhir:id
+         ]
        ] [
-         fhir:code [ fhir:v "instant"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "instant"^^xsd:anyURI ;
+           fhir:l fhir:instant
+         ]
        ] [
-         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "integer"^^xsd:anyURI ;
+           fhir:l fhir:integer
+         ]
        ] [
-         fhir:code [ fhir:v "markdown"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "markdown"^^xsd:anyURI ;
+           fhir:l fhir:markdown
+         ]
        ] [
-         fhir:code [ fhir:v "oid"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "oid"^^xsd:anyURI ;
+           fhir:l fhir:oid
+         ]
        ] [
-         fhir:code [ fhir:v "positiveInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
        ] [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] [
-         fhir:code [ fhir:v "time"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "time"^^xsd:anyURI ;
+           fhir:l fhir:time
+         ]
        ] [
-         fhir:code [ fhir:v "unsignedInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
        ] [
-         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uri"^^xsd:anyURI ;
+           fhir:l fhir:uri
+         ]
        ] [
-         fhir:code [ fhir:v "url"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "url"^^xsd:anyURI ;
+           fhir:l fhir:url
+         ]
        ] [
-         fhir:code [ fhir:v "uuid"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uuid"^^xsd:anyURI ;
+           fhir:l fhir:uuid
+         ]
        ] [
-         fhir:code [ fhir:v "Address"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Address"^^xsd:anyURI ;
+           fhir:l fhir:Address
+         ]
        ] [
-         fhir:code [ fhir:v "Age"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Age"^^xsd:anyURI ;
+           fhir:l fhir:Age
+         ]
        ] [
-         fhir:code [ fhir:v "Annotation"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Annotation"^^xsd:anyURI ;
+           fhir:l fhir:Annotation
+         ]
        ] [
-         fhir:code [ fhir:v "Attachment"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Attachment"^^xsd:anyURI ;
+           fhir:l fhir:Attachment
+         ]
        ] [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] [
-         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Coding"^^xsd:anyURI ;
+           fhir:l fhir:Coding
+         ]
        ] [
-         fhir:code [ fhir:v "ContactPoint"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "ContactPoint"^^xsd:anyURI ;
+           fhir:l fhir:ContactPoint
+         ]
        ] [
-         fhir:code [ fhir:v "Count"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Count"^^xsd:anyURI ;
+           fhir:l fhir:Count
+         ]
        ] [
-         fhir:code [ fhir:v "Distance"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Distance"^^xsd:anyURI ;
+           fhir:l fhir:Distance
+         ]
        ] [
-         fhir:code [ fhir:v "Duration"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Duration"^^xsd:anyURI ;
+           fhir:l fhir:Duration
+         ]
        ] [
-         fhir:code [ fhir:v "HumanName"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "HumanName"^^xsd:anyURI ;
+           fhir:l fhir:HumanName
+         ]
        ] [
-         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
        ] [
-         fhir:code [ fhir:v "Money"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Money"^^xsd:anyURI ;
+           fhir:l fhir:Money
+         ]
        ] [
-         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Period"^^xsd:anyURI ;
+           fhir:l fhir:Period
+         ]
        ] [
-         fhir:code [ fhir:v "Quantity"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Quantity"^^xsd:anyURI ;
+           fhir:l fhir:Quantity
+         ]
        ] [
-         fhir:code [ fhir:v "Range"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Range"^^xsd:anyURI ;
+           fhir:l fhir:Range
+         ]
        ] [
-         fhir:code [ fhir:v "Ratio"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Ratio"^^xsd:anyURI ;
+           fhir:l fhir:Ratio
+         ]
        ] [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ]
        ] [
-         fhir:code [ fhir:v "SampledData"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "SampledData"^^xsd:anyURI ;
+           fhir:l fhir:SampledData
+         ]
        ] [
-         fhir:code [ fhir:v "Signature"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Signature"^^xsd:anyURI ;
+           fhir:l fhir:Signature
+         ]
        ] [
-         fhir:code [ fhir:v "Timing"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Timing"^^xsd:anyURI ;
+           fhir:l fhir:Timing
+         ]
        ] [
-         fhir:code [ fhir:v "ContactDetail"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "ContactDetail"^^xsd:anyURI ;
+           fhir:l fhir:ContactDetail
+         ]
        ] [
-         fhir:code [ fhir:v "Contributor"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Contributor"^^xsd:anyURI ;
+           fhir:l fhir:Contributor
+         ]
        ] [
-         fhir:code [ fhir:v "DataRequirement"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "DataRequirement"^^xsd:anyURI ;
+           fhir:l fhir:DataRequirement
+         ]
        ] [
-         fhir:code [ fhir:v "Expression"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Expression"^^xsd:anyURI ;
+           fhir:l fhir:Expression
+         ]
        ] [
-         fhir:code [ fhir:v "ParameterDefinition"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "ParameterDefinition"^^xsd:anyURI ;
+           fhir:l fhir:ParameterDefinition
+         ]
        ] [
-         fhir:code [ fhir:v "RelatedArtifact"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "RelatedArtifact"^^xsd:anyURI ;
+           fhir:l fhir:RelatedArtifact
+         ]
        ] [
-         fhir:code [ fhir:v "TriggerDefinition"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "TriggerDefinition"^^xsd:anyURI ;
+           fhir:l fhir:TriggerDefinition
+         ]
        ] [
-         fhir:code [ fhir:v "UsageContext"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "UsageContext"^^xsd:anyURI ;
+           fhir:l fhir:UsageContext
+         ]
        ] [
-         fhir:code [ fhir:v "Dosage"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Dosage"^^xsd:anyURI ;
+           fhir:l fhir:Dosage
+         ]
        ] [
-         fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Meta"^^xsd:anyURI ;
+           fhir:l fhir:Meta
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1320,7 +1775,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1345,17 +1800,25 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "uri"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "uri"^^xsd:anyURI ;
+             fhir:l fhir:uri
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:fixed [
-         a fhir:uri ;
-         fhir:v "label"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "label"^^xsd:anyURI ;
+         fhir:l fhir:label
        ] ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -1384,7 +1847,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1394,7 +1860,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1417,7 +1883,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1427,7 +1896,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1455,17 +1924,25 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "uri"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "uri"^^xsd:anyURI ;
+             fhir:l fhir:uri
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:fixed [
-         a fhir:uri ;
-         fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/device-instance"^^xsd:anyURI
+         a fhir:Uri ;
+         fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/device-instance"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/pocd/StructureDefinition/device-instance>
        ] ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -1486,105 +1963,255 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "base64Binary"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "base64Binary"^^xsd:anyURI ;
+           fhir:l fhir:base64Binary
+         ]
        ] [
-         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
        ] [
-         fhir:code [ fhir:v "canonical"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "canonical"^^xsd:anyURI ;
+           fhir:l fhir:canonical
+         ]
        ] [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] [
-         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "date"^^xsd:anyURI ;
+           fhir:l fhir:date
+         ]
        ] [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
        ] [
-         fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
        ] [
-         fhir:code [ fhir:v "id"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "id"^^xsd:anyURI ;
+           fhir:l fhir:id
+         ]
        ] [
-         fhir:code [ fhir:v "instant"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "instant"^^xsd:anyURI ;
+           fhir:l fhir:instant
+         ]
        ] [
-         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "integer"^^xsd:anyURI ;
+           fhir:l fhir:integer
+         ]
        ] [
-         fhir:code [ fhir:v "markdown"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "markdown"^^xsd:anyURI ;
+           fhir:l fhir:markdown
+         ]
        ] [
-         fhir:code [ fhir:v "oid"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "oid"^^xsd:anyURI ;
+           fhir:l fhir:oid
+         ]
        ] [
-         fhir:code [ fhir:v "positiveInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
        ] [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] [
-         fhir:code [ fhir:v "time"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "time"^^xsd:anyURI ;
+           fhir:l fhir:time
+         ]
        ] [
-         fhir:code [ fhir:v "unsignedInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
        ] [
-         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uri"^^xsd:anyURI ;
+           fhir:l fhir:uri
+         ]
        ] [
-         fhir:code [ fhir:v "url"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "url"^^xsd:anyURI ;
+           fhir:l fhir:url
+         ]
        ] [
-         fhir:code [ fhir:v "uuid"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uuid"^^xsd:anyURI ;
+           fhir:l fhir:uuid
+         ]
        ] [
-         fhir:code [ fhir:v "Address"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Address"^^xsd:anyURI ;
+           fhir:l fhir:Address
+         ]
        ] [
-         fhir:code [ fhir:v "Age"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Age"^^xsd:anyURI ;
+           fhir:l fhir:Age
+         ]
        ] [
-         fhir:code [ fhir:v "Annotation"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Annotation"^^xsd:anyURI ;
+           fhir:l fhir:Annotation
+         ]
        ] [
-         fhir:code [ fhir:v "Attachment"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Attachment"^^xsd:anyURI ;
+           fhir:l fhir:Attachment
+         ]
        ] [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] [
-         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Coding"^^xsd:anyURI ;
+           fhir:l fhir:Coding
+         ]
        ] [
-         fhir:code [ fhir:v "ContactPoint"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "ContactPoint"^^xsd:anyURI ;
+           fhir:l fhir:ContactPoint
+         ]
        ] [
-         fhir:code [ fhir:v "Count"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Count"^^xsd:anyURI ;
+           fhir:l fhir:Count
+         ]
        ] [
-         fhir:code [ fhir:v "Distance"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Distance"^^xsd:anyURI ;
+           fhir:l fhir:Distance
+         ]
        ] [
-         fhir:code [ fhir:v "Duration"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Duration"^^xsd:anyURI ;
+           fhir:l fhir:Duration
+         ]
        ] [
-         fhir:code [ fhir:v "HumanName"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "HumanName"^^xsd:anyURI ;
+           fhir:l fhir:HumanName
+         ]
        ] [
-         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
        ] [
-         fhir:code [ fhir:v "Money"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Money"^^xsd:anyURI ;
+           fhir:l fhir:Money
+         ]
        ] [
-         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Period"^^xsd:anyURI ;
+           fhir:l fhir:Period
+         ]
        ] [
-         fhir:code [ fhir:v "Quantity"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Quantity"^^xsd:anyURI ;
+           fhir:l fhir:Quantity
+         ]
        ] [
-         fhir:code [ fhir:v "Range"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Range"^^xsd:anyURI ;
+           fhir:l fhir:Range
+         ]
        ] [
-         fhir:code [ fhir:v "Ratio"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Ratio"^^xsd:anyURI ;
+           fhir:l fhir:Ratio
+         ]
        ] [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ]
        ] [
-         fhir:code [ fhir:v "SampledData"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "SampledData"^^xsd:anyURI ;
+           fhir:l fhir:SampledData
+         ]
        ] [
-         fhir:code [ fhir:v "Signature"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Signature"^^xsd:anyURI ;
+           fhir:l fhir:Signature
+         ]
        ] [
-         fhir:code [ fhir:v "Timing"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Timing"^^xsd:anyURI ;
+           fhir:l fhir:Timing
+         ]
        ] [
-         fhir:code [ fhir:v "ContactDetail"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "ContactDetail"^^xsd:anyURI ;
+           fhir:l fhir:ContactDetail
+         ]
        ] [
-         fhir:code [ fhir:v "Contributor"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Contributor"^^xsd:anyURI ;
+           fhir:l fhir:Contributor
+         ]
        ] [
-         fhir:code [ fhir:v "DataRequirement"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "DataRequirement"^^xsd:anyURI ;
+           fhir:l fhir:DataRequirement
+         ]
        ] [
-         fhir:code [ fhir:v "Expression"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Expression"^^xsd:anyURI ;
+           fhir:l fhir:Expression
+         ]
        ] [
-         fhir:code [ fhir:v "ParameterDefinition"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "ParameterDefinition"^^xsd:anyURI ;
+           fhir:l fhir:ParameterDefinition
+         ]
        ] [
-         fhir:code [ fhir:v "RelatedArtifact"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "RelatedArtifact"^^xsd:anyURI ;
+           fhir:l fhir:RelatedArtifact
+         ]
        ] [
-         fhir:code [ fhir:v "TriggerDefinition"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "TriggerDefinition"^^xsd:anyURI ;
+           fhir:l fhir:TriggerDefinition
+         ]
        ] [
-         fhir:code [ fhir:v "UsageContext"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "UsageContext"^^xsd:anyURI ;
+           fhir:l fhir:UsageContext
+         ]
        ] [
-         fhir:code [ fhir:v "Dosage"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Dosage"^^xsd:anyURI ;
+           fhir:l fhir:Dosage
+         ]
        ] [
-         fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Meta"^^xsd:anyURI ;
+           fhir:l fhir:Meta
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1594,7 +2221,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1617,10 +2244,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/relation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/uv/pocd/StructureDefinition/relation>
+           fhir:l <http://hl7.org/fhir/uv/pocd/StructureDefinition/relation>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -1632,7 +2262,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1642,7 +2272,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1667,10 +2297,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/metric-availability"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/uv/pocd/StructureDefinition/metric-availability>
+           fhir:l <http://hl7.org/fhir/uv/pocd/StructureDefinition/metric-availability>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -1682,7 +2315,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1692,7 +2325,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -1715,10 +2348,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/technical-range"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/uv/pocd/StructureDefinition/technical-range>
+           fhir:l <http://hl7.org/fhir/uv/pocd/StructureDefinition/technical-range>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -1730,7 +2366,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1740,7 +2376,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -1759,10 +2395,13 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ] ;
          fhir:profile ( [
            fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/resolution"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/uv/pocd/StructureDefinition/resolution>
+           fhir:l <http://hl7.org/fhir/uv/pocd/StructureDefinition/resolution>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -1774,7 +2413,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1784,7 +2423,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -1812,7 +2451,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1822,7 +2464,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1832,7 +2474,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v true ] ;
@@ -1856,7 +2498,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1866,7 +2511,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -1879,7 +2524,7 @@
        fhir:id [ fhir:v "DeviceMetric.type" ] ;
        fhir:path [ fhir:v "DeviceMetric.type" ] ;
        fhir:short [ fhir:v "Identity of metric, for example Heart Rate or PEEP Setting" ] ;
-       fhir:definition [ fhir:v "Describes the type of the metric. For example: Heart Rate, PEEP Setting, etc." ] ;
+       fhir:definition [ fhir:v "Coding to identify the parameter" ] ;
        fhir:comment [ fhir:v "DeviceMetric.type can be referred to either IEEE 11073-10101 or LOINC." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1889,7 +2534,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1899,7 +2547,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -1909,7 +2557,7 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/uv/pocd/ValueSet/11073MDC-metric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/uv/pocd/ValueSet/11073MDC-metric>
+           fhir:l <http://hl7.org/fhir/uv/pocd/ValueSet/11073MDC-metric>
          ]
        ] ;
        fhir:mapping ( [
@@ -1934,13 +2582,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -1971,7 +2626,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1981,7 +2639,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -1991,7 +2649,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2015,7 +2673,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Coding"^^xsd:anyURI ;
+           fhir:l fhir:Coding
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2025,7 +2686,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2055,13 +2716,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -2092,7 +2760,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2102,7 +2773,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -2112,7 +2783,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2136,7 +2807,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uri"^^xsd:anyURI ;
+           fhir:l fhir:uri
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2146,7 +2820,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2178,7 +2852,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2188,7 +2865,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2220,7 +2897,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2230,7 +2910,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2254,9 +2934,12 @@
      ] [
        fhir:id [ fhir:v "DeviceMetric.type.coding.display" ] ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable>
+         ] ;
          fhir:value [
-           a fhir:boolean ;
+           a fhir:Boolean ;
            fhir:v true
          ]
        ] ) ;
@@ -2272,7 +2955,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2282,7 +2968,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2312,7 +2998,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2322,7 +3011,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2340,9 +3029,12 @@
      ] [
        fhir:id [ fhir:v "DeviceMetric.type.text" ] ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable>
+         ] ;
          fhir:value [
-           a fhir:boolean ;
+           a fhir:Boolean ;
            fhir:v true
          ]
        ] ) ;
@@ -2359,7 +3051,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2369,7 +3064,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2401,7 +3096,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2411,7 +3109,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -2421,7 +3119,7 @@
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/uv/pocd/ValueSet/11073MDC-dimension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/uv/pocd/ValueSet/11073MDC-dimension>
+           fhir:l <http://hl7.org/fhir/uv/pocd/ValueSet/11073MDC-dimension>
          ]
        ]
      ] [
@@ -2439,13 +3137,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -2476,7 +3181,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2486,7 +3194,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -2496,7 +3204,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2520,7 +3228,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Coding"^^xsd:anyURI ;
+           fhir:l fhir:Coding
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2530,7 +3241,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2560,13 +3271,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -2597,7 +3315,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2607,7 +3328,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -2617,7 +3338,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2641,7 +3362,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "uri"^^xsd:anyURI ;
+           fhir:l fhir:uri
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2651,7 +3375,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2683,7 +3407,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2693,7 +3420,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2725,7 +3452,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2735,7 +3465,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2759,9 +3489,12 @@
      ] [
        fhir:id [ fhir:v "DeviceMetric.unit.coding.display" ] ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable>
+         ] ;
          fhir:value [
-           a fhir:boolean ;
+           a fhir:Boolean ;
            fhir:v true
          ]
        ] ) ;
@@ -2777,7 +3510,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2787,7 +3523,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2817,7 +3553,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "boolean"^^xsd:anyURI ;
+           fhir:l fhir:boolean
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2827,7 +3566,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2845,9 +3584,12 @@
      ] [
        fhir:id [ fhir:v "DeviceMetric.unit.text" ] ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable>
+         ] ;
          fhir:value [
-           a fhir:boolean ;
+           a fhir:Boolean ;
            fhir:v true
          ]
        ] ) ;
@@ -2864,7 +3606,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2874,7 +3619,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -2905,10 +3650,13 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/MdsDevice"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/uv/pocd/StructureDefinition/MdsDevice>
+           fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
+           fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2919,7 +3667,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -2938,10 +3686,13 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-           fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+           fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2952,7 +3703,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -2971,7 +3722,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2981,7 +3735,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -2989,9 +3743,12 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "DeviceMetricOperationalStatus"
            ]
          ] ) ;
@@ -2999,7 +3756,7 @@
          fhir:description [ fhir:v "Describes the operational status of the DeviceMetric." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/metric-operational-status|4.0.1"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/metric-operational-status|4.0.1>
+           fhir:l <http://hl7.org/fhir/ValueSet/metric-operational-status?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -3022,7 +3779,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3032,16 +3792,19 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "DeviceMetricColor"
            ]
          ] ) ;
@@ -3049,7 +3812,7 @@
          fhir:description [ fhir:v "Describes the typical color of representation." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/metric-color|4.0.1"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/metric-color|4.0.1>
+           fhir:l <http://hl7.org/fhir/ValueSet/metric-color?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -3059,7 +3822,7 @@
      ] [
        fhir:id [ fhir:v "DeviceMetric.category" ] ;
        fhir:path [ fhir:v "DeviceMetric.category" ] ;
-       fhir:short [ fhir:v "Messung oder Einstellung" ] ;
+       fhir:short [ fhir:v "Measurement or setting" ] ;
        fhir:definition [ fhir:v "Indicates the category of the observation generation process. A DeviceMetric can be for example a setting, measurement, or calculation." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -3069,7 +3832,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3079,7 +3845,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -3087,9 +3853,12 @@
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "DeviceMetricCategory"
            ]
          ] ) ;
@@ -3097,7 +3866,7 @@
          fhir:description [ fhir:v "Describes the category of the metric." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/metric-category|4.0.1"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/metric-category|4.0.1>
+           fhir:l <http://hl7.org/fhir/ValueSet/metric-category?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -3123,7 +3892,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Timing"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Timing"^^xsd:anyURI ;
+           fhir:l fhir:Timing
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3133,7 +3905,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -3154,13 +3926,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -3191,7 +3970,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3201,7 +3983,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -3211,7 +3993,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3236,7 +4018,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3246,7 +4031,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -3256,7 +4041,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v true ] ;
@@ -3280,7 +4065,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3290,7 +4078,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3313,7 +4101,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Element"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Element"^^xsd:anyURI ;
+           fhir:l fhir:Element
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3323,7 +4114,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "tim-1" ] ;
@@ -3333,7 +4124,7 @@
          fhir:xpath [ fhir:v "not(exists(f:duration)) or exists(f:durationUnit)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
          ]
        ] [
          fhir:key [ fhir:v "tim-2" ] ;
@@ -3343,7 +4134,7 @@
          fhir:xpath [ fhir:v "not(exists(f:period)) or exists(f:periodUnit)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
          ]
        ] [
          fhir:key [ fhir:v "tim-4" ] ;
@@ -3353,7 +4144,7 @@
          fhir:xpath [ fhir:v "f:duration/@value >= 0 or not(f:duration/@value)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
          ]
        ] [
          fhir:key [ fhir:v "tim-5" ] ;
@@ -3363,7 +4154,7 @@
          fhir:xpath [ fhir:v "f:period/@value >= 0 or not(f:period/@value)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
          ]
        ] [
          fhir:key [ fhir:v "tim-6" ] ;
@@ -3373,7 +4164,7 @@
          fhir:xpath [ fhir:v "not(exists(f:periodMax)) or exists(f:period)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
          ]
        ] [
          fhir:key [ fhir:v "tim-7" ] ;
@@ -3383,7 +4174,7 @@
          fhir:xpath [ fhir:v "not(exists(f:durationMax)) or exists(f:duration)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
          ]
        ] [
          fhir:key [ fhir:v "tim-8" ] ;
@@ -3393,7 +4184,7 @@
          fhir:xpath [ fhir:v "not(exists(f:countMax)) or exists(f:count)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
          ]
        ] [
          fhir:key [ fhir:v "tim-9" ] ;
@@ -3403,7 +4194,7 @@
          fhir:xpath [ fhir:v "not(exists(f:offset)) or exists(f:when)" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
          ]
        ] [
          fhir:key [ fhir:v "tim-10" ] ;
@@ -3413,7 +4204,7 @@
          fhir:xpath [ fhir:v "not(exists(f:timeOfDay)) or not(exists(f:when))" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3437,13 +4228,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -3474,7 +4272,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3484,7 +4285,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -3494,7 +4295,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3516,11 +4317,20 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Duration"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Duration"^^xsd:anyURI ;
+           fhir:l fhir:Duration
+         ]
        ] [
-         fhir:code [ fhir:v "Range"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Range"^^xsd:anyURI ;
+           fhir:l fhir:Range
+         ]
        ] [
-         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Period"^^xsd:anyURI ;
+           fhir:l fhir:Period
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3530,7 +4340,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3554,7 +4364,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "positiveInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3564,7 +4377,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3586,7 +4399,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "positiveInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3596,7 +4412,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3620,7 +4436,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3630,7 +4449,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3657,7 +4476,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3667,7 +4489,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3689,7 +4511,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3699,16 +4524,19 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "UnitsOfTime"
            ]
          ] ) ;
@@ -3716,7 +4544,7 @@
          fhir:description [ fhir:v "A unit of time (units from UCUM)." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/units-of-time|4.0.1"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/units-of-time|4.0.1>
+           fhir:l <http://hl7.org/fhir/ValueSet/units-of-time?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -3736,7 +4564,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "positiveInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
        ] ) ;
        fhir:meaningWhenMissing [ fhir:v "If no frequency is stated, the assumption is that the event occurs once per period, but systems SHOULD always be specific about this" ] ;
        fhir:constraint ( [
@@ -3747,7 +4578,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3769,7 +4600,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "positiveInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "positiveInt"^^xsd:anyURI ;
+           fhir:l fhir:positiveInt
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3779,7 +4613,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3801,7 +4635,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3811,7 +4648,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3836,7 +4673,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3846,7 +4686,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -3868,7 +4708,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3878,16 +4721,19 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "UnitsOfTime"
            ]
          ] ) ;
@@ -3895,7 +4741,7 @@
          fhir:description [ fhir:v "A unit of time (units from UCUM)." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/units-of-time|4.0.1"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/units-of-time|4.0.1>
+           fhir:l <http://hl7.org/fhir/ValueSet/units-of-time?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -3919,7 +4765,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3929,23 +4778,26 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "DayOfWeek"
            ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/days-of-week|4.0.1"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/days-of-week|4.0.1>
+           fhir:l <http://hl7.org/fhir/ValueSet/days-of-week?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -3966,7 +4818,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "time"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "time"^^xsd:anyURI ;
+           fhir:l fhir:time
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3976,7 +4831,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -4000,7 +4855,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -4010,16 +4868,19 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "EventTiming"
            ]
          ] ) ;
@@ -4027,7 +4888,7 @@
          fhir:description [ fhir:v "Real world event relating to the schedule." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/event-timing|4.0.1"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/event-timing|4.0.1>
+           fhir:l <http://hl7.org/fhir/ValueSet/event-timing?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -4047,7 +4908,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "unsignedInt"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "unsignedInt"^^xsd:anyURI ;
+           fhir:l fhir:unsignedInt
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -4057,7 +4921,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -4080,7 +4944,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -4090,16 +4957,19 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "TimingAbbreviation"
            ]
          ] ) ;
@@ -4107,7 +4977,7 @@
          fhir:description [ fhir:v "Code for a known / defined timing pattern." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/timing-abbreviation"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/timing-abbreviation>
+           fhir:l <http://hl7.org/fhir/ValueSet/timing-abbreviation>
          ]
        ] ;
        fhir:mapping ( [
@@ -4127,7 +4997,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "BackboneElement"^^xsd:anyURI ;
+           fhir:l fhir:BackboneElement
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -4137,7 +5010,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v true ] ;
@@ -4158,13 +5031,20 @@
        ] ;
        fhir:type ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
            fhir:value [
-             a fhir:url ;
-             fhir:v "string"^^xsd:anyURI
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
            ]
          ] ) ;
-         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ] ;
@@ -4187,7 +5067,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -4197,7 +5080,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -4207,7 +5090,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -4232,7 +5115,10 @@
          fhir:max [ fhir:v "*" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -4242,7 +5128,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] [
          fhir:key [ fhir:v "ext-1" ] ;
@@ -4252,7 +5138,7 @@
          fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v true ] ;
@@ -4275,7 +5161,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -4285,16 +5174,19 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "DeviceMetricCalibrationType"
            ]
          ] ) ;
@@ -4302,7 +5194,7 @@
          fhir:description [ fhir:v "Describes the type of a metric calibration." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/metric-calibration-type|4.0.1"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/metric-calibration-type|4.0.1>
+           fhir:l <http://hl7.org/fhir/ValueSet/metric-calibration-type?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -4322,7 +5214,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -4332,16 +5227,19 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "DeviceMetricCalibrationState"
            ]
          ] ) ;
@@ -4349,7 +5247,7 @@
          fhir:description [ fhir:v "Describes the state of a metric calibration." ] ;
          fhir:valueSet [
            fhir:v "http://hl7.org/fhir/ValueSet/metric-calibration-state|4.0.1"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/ValueSet/metric-calibration-state|4.0.1>
+           fhir:l <http://hl7.org/fhir/ValueSet/metric-calibration-state?version=4.0.1>
          ]
        ] ;
        fhir:mapping ( [
@@ -4369,7 +5267,10 @@
          fhir:max [ fhir:v "1" ]
        ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "instant"^^xsd:anyURI ]
+         fhir:code [
+           fhir:v "instant"^^xsd:anyURI ;
+           fhir:l fhir:instant
+         ]
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -4379,7 +5280,7 @@
          fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
        fhir:isModifier [ fhir:v false ] ;
@@ -4395,19 +5296,39 @@
        fhir:id [ fhir:v "DeviceMetric" ] ;
        fhir:path [ fhir:v "DeviceMetric" ]
      ] [
+       fhir:id [ fhir:v "DeviceMetric.type" ] ;
+       fhir:path [ fhir:v "DeviceMetric.type" ] ;
+       fhir:definition [ fhir:v "Coding to identify the parameter" ]
+     ] [
+       fhir:id [ fhir:v "DeviceMetric.source" ] ;
+       fhir:path [ fhir:v "DeviceMetric.source" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
+           fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
+         ] )
+       ] )
+     ] [
        fhir:id [ fhir:v "DeviceMetric.parent" ] ;
        fhir:path [ fhir:v "DeviceMetric.parent" ] ;
        fhir:type ( [
-         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
          fhir:targetProfile ( [
            fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-           fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+           fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
          ] )
        ] )
      ] [
        fhir:id [ fhir:v "DeviceMetric.category" ] ;
        fhir:path [ fhir:v "DeviceMetric.category" ] ;
-       fhir:short [ fhir:v "Messung oder Einstellung" ]
+       fhir:short [ fhir:v "Measurement or setting" ]
      ] )
   ] . # 
 

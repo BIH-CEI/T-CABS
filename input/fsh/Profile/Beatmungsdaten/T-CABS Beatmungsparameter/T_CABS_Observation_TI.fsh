@@ -2,9 +2,9 @@ Profile: T_CABS_Observation_TI
 Parent: T_CABS_Observation_Beatmungsparameter
 Id: t-cabs-observation-ti
 Title: "T-CABS Observation TI"
-Description: "Profil für ein Dauer der Einatmungsphase (Inspiration)"
+Description: "Profile for duration of inspiratory phase"
 
-* code.coding = $IEEE-11073#152416 "MDC_VENT_TIME_PD_INSP"
+* code.coding = $IEEE-11073#152416 //"MDC_VENT_TIME_PD_INSP"
 
 * valueQuantity.code = #s
 * valueQuantity.unit = "s"
@@ -13,8 +13,8 @@ Description: "Profil für ein Dauer der Einatmungsphase (Inspiration)"
 Instance: Example-TI-Loewenstein
 InstanceOf: T_CABS_Observation_TI
 Usage: #example
-Title: "Beispiel TI Löwenstein"
-Description: "Beispiel für Inspirationszeit von einem Löwenstein Beatmungsgerät"
+Title: "Example TI Löwenstein"
+Description: "Example of inspiration time from a Löwenstein ventilator"
 * status = #final
 * code.coding = $IEEE-11073#152416 "MDC_VENT_TIME_PD_INSP"
 * subject = Reference(Patient/tcabs-patient-example)

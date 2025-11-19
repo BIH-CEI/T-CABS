@@ -1,4 +1,4 @@
-# T-CABS Observation PEEP - v0.1.0
+# T-CABS Observation PEEP - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-peep | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_PEEP |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_PEEP |
 
  
-Profil für einen Positiven endexspiratorischen Druck (PEEP) 
+Profile for Positive End-Expiratory Pressure (PEEP) 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-p
   "name" : "T_CABS_Observation_PEEP",
   "title" : "T-CABS Observation PEEP",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-p
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für einen Positiven endexspiratorischen Druck (PEEP)",
+  "description" : "Profile for Positive End-Expiratory Pressure (PEEP)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-p
         "path" : "Observation.code.coding",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "152720",
-          "display" : "MDC_VENT_PRESS_AWAY_DELTA"
+          "code" : "152720"
         }
       },
       {

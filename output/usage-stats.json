@@ -2,16 +2,17 @@
   "package": "t-cabs",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "DE",
   "extensions": [],
   "profiles": {
     "Device": [
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
-        "title": "T-CABS Device Channel Beatmungsgeraet"
+        "title": "T-CABS Device Channel Ventilator"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
-        "title": "T-CABS Device MDS Heimbeatmungsgerät"
+        "title": "T-CABS Device MDS Home Ventilator"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-phd",
@@ -23,7 +24,7 @@
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
-        "title": "T-CABS Device VMD Beatmungsgeraet"
+        "title": "T-CABS Device VMD Ventilator"
       }
     ],
     "DeviceMetric": [
@@ -35,19 +36,19 @@
     "DiagnosticReport": [
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund",
-        "title": "T-CABS DiagnosticReport Visitenbefund"
+        "title": "T-CABS DiagnosticReport Visit Finding"
       }
     ],
     "Encounter": [
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
-        "title": "T-CABS Encounter Kontakt"
+        "title": "T-CABS Encounter Contact"
       }
     ],
     "Group": [
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe",
-        "title": "T-CABS Patientengruppe"
+        "title": "T-CABS Patient Group"
       }
     ],
     "Observation": [
@@ -61,7 +62,7 @@
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
-        "title": "T-CABS Observation Arterieller Blutdruck"
+        "title": "T-CABS Observation Arterial Blood Pressure"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
@@ -69,19 +70,23 @@
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
-        "title": "T-CABS Observation Atemfrequenz"
+        "title": "T-CABS Observation Respiratory Rate"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet",
-        "title": "T-CABS Observation AF"
+        "title": "T-CABS Observation Respiratory Rate Ventilated"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis",
-        "title": "T-CABS Observation Atemzeitverhaeltnis"
+        "title": "T-CABS Observation Respiratory Time Ratio"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
-        "title": "T-CABS Observation Beatmungsparameter (abstract)"
+        "title": "T-CABS Observation Ventilation Parameter (abstract)"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
+        "title": "T-CABS Observation Ventilation Parameter with Components (abstract)"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi",
@@ -89,15 +94,15 @@
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax",
-        "title": "T-CABS Observation Druck MIN/MAX"
+        "title": "T-CABS Observation Pressure MIN/MAX"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke",
-        "title": "T-CABS Observation Gehstrecke"
+        "title": "T-CABS Observation Walking Distance"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
-        "title": "T-CABS Observation Herzfrequenz"
+        "title": "T-CABS Observation Heart Rate"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap",
@@ -105,15 +110,15 @@
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht",
-        "title": "T-CABS Observation Koerpergewicht"
+        "title": "T-CABS Observation Body Weight"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur",
-        "title": "T-CABS Observation Koerpertemperatur"
+        "title": "T-CABS Observation Body Temperature"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
-        "title": "T-CABS Observation Leckage"
+        "title": "T-CABS Observation Leakage"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep",
@@ -129,21 +134,41 @@
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
-        "title": "T-CABS Observation TriggeredBreaths"
+        "title": "T-CABS Observation Triggered Breaths"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
-        "title": "T-CABS Observation Vitalparamter"
+        "title": "T-CABS Observation Vital Parameter"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
+        "title": "T-CABS Observation Vital Parameter with Components"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1",
         "title": "T-CABS Observation FEV1"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fef25-75",
+        "title": "T-CABS Observation FEF25-75"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6",
+        "title": "T-CABS Observation FEV1/FEV6"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev6",
+        "title": "T-CABS Observation FEV6"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke",
+        "title": "T-CABS Observation Hand Grip Strength"
       }
     ],
     "Organization": [
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
-        "title": "T-CABS Organisation"
+        "title": "T-CABS Organization"
       }
     ],
     "Patient": [
@@ -155,31 +180,19 @@
     "PractitionerRole": [
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion",
-        "title": "T-CABS Funktion"
+        "title": "T-CABS Function"
       }
     ],
     "Practitioner": [
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
-        "title": "T-CABS Person mit Funktion"
+        "title": "T-CABS Person with Function"
       }
     ],
     "Procedure": [
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
-        "title": "T-CABS Procedure Beatmung"
-      }
-    ],
-    "ResearchStudy": [
-      {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-researchstudy-studie",
-        "title": "T-CABS ResearchStudy Studie"
-      }
-    ],
-    "ResearchSubject": [
-      {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-researchsubject-studienteilnehmer",
-        "title": "T-CABS ResearchSubject Studie"
+        "title": "T-CABS Procedure Ventilation"
       }
     ]
   },
@@ -197,7 +210,8 @@
       "Patient.gender"
     ],
     "http://fhir.de/StructureDefinition/humanname-namenszusatz": [
-      "Patient.name.family"
+      "Patient.name.family",
+      "Practitioner.name.family"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate": [
       "Encounter"
@@ -227,10 +241,12 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-own-name": [
-      "Patient.name.family"
+      "Patient.name.family",
+      "Practitioner.name.family"
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
-      "Patient.name.family"
+      "Patient.name.family",
+      "Practitioner.name.family"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
       "Patient.address.line"
@@ -250,7 +266,11 @@
       "StructureDefinition.snapshot.element.example.valueString"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier": [
-      "Patient.name.prefix"
+      "Patient.name.prefix",
+      "Practitioner.name.prefix"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice": [
+      "Observation"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"

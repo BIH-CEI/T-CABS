@@ -1,12 +1,12 @@
-# Beispiel Beatmungsgerät BREAS - v0.1.0
+# Example Ventilator BREAS - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Beatmungsgerät BREAS**
+* **Example Ventilator BREAS**
 
-## Example Device: Beispiel Beatmungsgerät BREAS
+## Example Device: Example Ventilator BREAS
 
-Profile: [T-CABS Device MDS Heimbeatmungsgerät](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md)
+Profile: [T-CABS Device MDS Home Ventilator](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md)
 
 **Operating hours extension**: 8760
 

@@ -1,18 +1,18 @@
-# T-CABS Observation Atemzeitverhaeltnis - v0.1.0
+# T-CABS Observation Respiratory Time Ratio - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation Atemzeitverhaeltnis**
+* **T-CABS Observation Respiratory Time Ratio**
 
-## Resource Profile: T-CABS Observation Atemzeitverhaeltnis 
+## Resource Profile: T-CABS Observation Respiratory Time Ratio 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_Atemzeitverhaeltnis |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Atemzeitverhaeltnis |
 
  
-Profil für Atemzeitverhältnis 
+Profile for respiratory time ratio 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_Atemzeitverhaeltnis",
-  "title" : "T-CABS Observation Atemzeitverhaeltnis",
+  "title" : "T-CABS Observation Respiratory Time Ratio",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für Atemzeitverhältnis",
+  "description" : "Profile for respiratory time ratio",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -115,8 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
         "definition" : "Duration of an inspiratory phase normalized by the smaller of the duration of the inspiratory phase and the duration of the expiratory phase, during high frequency ventilation.\nExample: if I:E = 1:3, I = 1 (T ≤ T)Example: if I:E = 1:0.33, I = 3 (T < T)\n",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "153500",
-          "display" : "MDC_TIME_PD_INSP_NORMALIZED_HF"
+          "code" : "153500"
         }
       },
       {

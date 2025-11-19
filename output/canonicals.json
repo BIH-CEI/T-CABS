@@ -126,6 +126,13 @@
     "name" : "T_CABS_Observation_Beatmungsparameter"
   },
   {
+    "id" : "t-cabs-observation-beatmungsparametermitkomponenten",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_BeatmungsparameterMitKomponenten"
+  },
+  {
     "id" : "t-cabs-observation-bmi",
     "type" : "StructureDefinition",
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi",
@@ -217,11 +224,46 @@
     "name" : "T_CABS_Observation_Vitalparameter"
   },
   {
+    "id" : "t-cabs-observation-vitalparametermitkomponenten",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_VitalparameterMitKomponenten"
+  },
+  {
     "id" : "t-cabs-observationfev1",
     "type" : "StructureDefinition",
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1",
     "version" : "0.1.0",
     "name" : "T_CABS_Observation_FEV1"
+  },
+  {
+    "id" : "t-cabs-observationfev1fef25-75",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fef25-75",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_FEF25_75"
+  },
+  {
+    "id" : "t-cabs-observationfev1fev6",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_FEV1_FEV6"
+  },
+  {
+    "id" : "t-cabs-observationfev6",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev6",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_FEV6"
+  },
+  {
+    "id" : "t-cabs-observationhandgriffstaerke",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Handgriffstaerke"
   },
   {
     "id" : "t-cabs-organisation",
@@ -259,20 +301,6 @@
     "name" : "T_CABS_Procedure_Beatmung"
   },
   {
-    "id" : "t-cabs-researchstudy-studie",
-    "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-researchstudy-studie",
-    "version" : "0.1.0",
-    "name" : "T_CABS_ResearchStudy_Studie"
-  },
-  {
-    "id" : "t-cabs-researchsubject-studienteilnehmer",
-    "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-researchsubject-studienteilnehmer",
-    "version" : "0.1.0",
-    "name" : "T_CABS_ResearchSubject_Studienteilnehmer"
-  },
-  {
     "id" : "t-cabs-valueset-Beatmungsform",
     "type" : "ValueSet",
     "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
@@ -285,5 +313,19 @@
     "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
     "version" : "0.1.0",
     "name" : "T_CABS_ValueSet_Beatmungsmodus"
+  },
+  {
+    "id" : "t-cabs-valueset-beatmungsstelle",
+    "type" : "ValueSet",
+    "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle",
+    "version" : "0.1.0",
+    "name" : "T_CABS_ValueSet_Beatmungsstelle"
+  },
+  {
+    "id" : "t-cabs-valueset-phdtyp",
+    "type" : "ValueSet",
+    "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+    "version" : "0.1.0",
+    "name" : "T_CABS_ValueSet_PHDTyp"
   }
 ]

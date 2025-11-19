@@ -2,12 +2,19 @@
   "resourceType" : "Observation",
   "id" : "Example-Atemfrequenz-Doccla",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz"]
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
+    "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz"]
   },
   "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-Atemfrequenz-Doccla</b></p><a name=\"Example-Atemfrequenz-Doccla\"> </a><a name=\"hcExample-Atemfrequenz-Doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-atemfrequenz.html\">T-CABS Observation Atemfrequenz</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}\">PHD generated Observation</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9279-1}, {urn:iso:std:iso:11073:10101 152490}\">Respiratory Rate</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 08:30:00+0000 --&gt; 2024-01-15 08:30:00+0000</p><p><b>value</b>: 16 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>device</b>: <a href=\"Device-beispiel-phd-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP</a></p></div>"
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-Atemfrequenz-Doccla</b></p><a name=\"Example-Atemfrequenz-Doccla\"> </a><a name=\"hcExample-Atemfrequenz-Doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-t-cabs-observation-atemfrequenz.html\">T-CABS Observation Respiratory Rate</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz\">https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz</a></p></div><p><b>Observation Gateway Device</b>: <a href=\"Device-beispiel-phg-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}\">PHD generated Observation</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9279-1}, {urn:iso:std:iso:11073:10101 152490}\">Respiratory Rate</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 08:30:00+0000 --&gt; 2024-01-15 08:30:00+0000</p><p><b>value</b>: 16 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>device</b>: <a href=\"Device-beispiel-phd-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP</a></p></div>"
   },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+    "valueReference" : {
+      "reference" : "Device/beispiel-phg-doccla"
+    }
+  }],
   "status" : "final",
   "category" : [{
     "coding" : [{

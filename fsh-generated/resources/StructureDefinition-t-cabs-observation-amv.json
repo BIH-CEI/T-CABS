@@ -5,7 +5,7 @@
   "name": "T_CABS_Observation_AMV",
   "title": "T-CABS Observation AMV",
   "status": "draft",
-  "description": "Profil für ein gemessenes oder eingestelltes Atemminutenvolumen",
+  "description": "Profile for a alveolar minute volume",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -19,8 +19,7 @@
         "path": "Observation.code.coding",
         "patternCoding": {
           "code": "151996",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_VOL_MINUTE"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

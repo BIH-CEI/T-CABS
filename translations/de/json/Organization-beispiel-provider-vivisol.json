@@ -1,0 +1,17 @@
+{
+  "id" : "Organization-beispiel-provider-vivisol",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "Organization.name",
+          "context" : "A name associated with the organization.",
+          "source" : "Vivisol Deutschland GmbH",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

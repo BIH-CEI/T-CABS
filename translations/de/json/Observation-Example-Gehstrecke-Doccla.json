@@ -1,0 +1,23 @@
+{
+  "id" : "Observation-Example-Gehstrecke-Doccla",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Number of steps in 24 hour Measured",
+          "target" : null
+        },
+        {
+          "id" : "Quantity.unit",
+          "context" : "A human-readable form of the unit.",
+          "source" : "{#}/(24.h)",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

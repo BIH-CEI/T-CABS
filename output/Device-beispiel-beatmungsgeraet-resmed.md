@@ -1,12 +1,12 @@
-# Beispiel Beatmungsgerät ResMed - v0.1.0
+# Example Ventilator ResMed - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Beatmungsgerät ResMed**
+* **Example Ventilator ResMed**
 
-## Example Device: Beispiel Beatmungsgerät ResMed
+## Example Device: Example Ventilator ResMed
 
-Profile: [T-CABS Device MDS Heimbeatmungsgerät](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md)
+Profile: [T-CABS Device MDS Home Ventilator](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md)
 
 **Operating hours extension**: 6500
 

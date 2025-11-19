@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de-DE" target-language="de" id="ValueSet-t-cabs-valueset-Beatmungsmodus" original="Resource ValueSet-t-cabs-valueset-Beatmungsmodus" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.name">
+             <notes>
+               <note id="n1">A natural language name identifying the value set. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>T_CABS_ValueSet_Beatmungsmodus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the value set.</note>
+             </notes>
+        <source>T-CABS ValueSet Beatmungsmodus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual that published the value set.</note>
+             </notes>
+        <source>BIH-CEI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>BIH-CEI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.description">
+             <notes>
+               <note id="n1">A free text natural language description of the value set from a consumer's perspective. The textual description specifies the span of meanings for concepts to be included within the Value Set Expansion, and also may specify the intended use and limitations of the Value Set.</note>
+             </notes>
+        <source>Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_AC_PC_6ACAP</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_AC_vtPC_6ACAP</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_CMV_VC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_CSV_6ACAP</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_AC_VC_6ACAPL</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-t-cabs-valueset-Beatmungsmodus" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_HIFLOW_3NIV</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

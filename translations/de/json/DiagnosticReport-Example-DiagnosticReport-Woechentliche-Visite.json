@@ -1,0 +1,23 @@
+{
+  "id" : "DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Outpatient Progress note",
+          "target" : null
+        },
+        {
+          "id" : "DiagnosticReport.conclusion",
+          "context" : "Concise and clinically contextualized summary conclusion (interpretation/impression) of the diagnostic report.",
+          "source" : "Patient zeigt stabile Beatmungsparameter über alle Geräte hinweg. BREAS: AMV im Normalbereich bei 8,5 L/min, AHI mit 5,2 innerhalb des therapeutischen Ziels. ResMed: Atemfrequenz stabil bei 14/min, Leckage minimal bei 0,6 L/min. Löwenstein: Synchronisation bei 85%, TriggeredBreaths mit 92% zeigen sehr gute Patient-Gerät-Interaktion. Vitalparameter ebenfalls stabil: BMI 25,3 kg/m², SpO2 98%.",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

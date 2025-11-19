@@ -1,7 +1,7 @@
 ValueSet: T_CABS_ValueSet_Beatmungsmodus
 Id: t-cabs-valueset-Beatmungsmodus
-Title: "T-CABS ValueSet Beatmungsmodus"
-Description: "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden"
+Title: "T-CABS ValueSet Ventilation Mode"
+Description: "This ValueSet contains codes to represent the different ventilation modes"
 
 // PCV - Pressure Control
 * $IEEE-11073#475172 "MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC"
@@ -22,29 +22,29 @@ Description: "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi 
 * $IEEE-11073#475201 "MDC_VENT_MODE_ISO_CMV_VC"
 
 // CPAP - Continuous pressure in airway during spontaneous respiration.
-* $IEEE-11073#151796 "MDC_PRESS_AWAY_CTS_POS"
+* $IEEE-11073#475161 "MDC_VENT_MODE_ISO_CSV_6ACAP"
+
+// VCV(A) 
+* $IEEE-11073#475140 "MDC_VENT_MODE_ISO_AC_VC_6ACAPL"
+
+// VCV-SIMV - VC: Volume Control, SIMV: Synchronized Intermittent Mandatory Ventilation — Intermittent, triggered, volume-controlled ventilation with a fixed inspiratory flow, allowing spontaneous breathing during the expiratory phase. May include selectable adjuncts.
+* $IEEE-11073#475136 "MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL"
+
+// HFT
+* $IEEE-11073#475190 "MDC_VENT_MODE_ISO_HIFLOW_3NIV"
 
 
 /*
-PCV	
-VCV	
-PSV(TgV)	
-VCV(A)	
-CPAP
-PCV(TgV)		
-PSV	
-VCV-SIMV	
-HFT         - 475190 "MDC_VENT_MODE_ISO_HIFLOW_3NIV" ODER 475168 "MDC_VENT_MODE_ISO_HIFLOW"
+PSV(TgV)	- 475155 "MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015"
+PCV(TgV)	- 
 T		    - 
-PCV(A)	
 aVCV	
-HFNT
-PCV(ATgV)	
+HFNT	
 iVAPS	
 S
 APCV		
 PCV-MPV
-PCV-SIMV		
+PCV-SIMV	- 475144 "MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP"	
 VCV-MPV
 PCV(AE)		
 MPVv

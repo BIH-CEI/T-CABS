@@ -1,8 +1,8 @@
 Profile: T_CABS_Group_Patientengruppe
 Parent: Group
 Id: t-cabs-group-patientengruppe
-Title: "T-CABS Patientengruppe"
-Description: "Profil um Patienten innerhalb der T-CABS Studie gruppieren zu können"
+Title: "T-CABS Patient Group"
+Description: "Profile to group patients within the T-CABS study."
 
 * type = #person
 * actual = true

@@ -3,9 +3,9 @@
   "id": "t-cabs-observation-leckage",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
   "name": "T_CABS_Observation_Leckage",
-  "title": "T-CABS Observation Leckage",
+  "title": "T-CABS Observation Leakage",
   "status": "draft",
-  "description": "Profil für die Leckagerate unter Beatmung",
+  "description": "Profile for leakage rate during ventilation",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -19,8 +19,7 @@
         "path": "Observation.code.coding",
         "patternCoding": {
           "code": "152432",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_VOL_LEAK"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

@@ -15,9 +15,9 @@
   "type": {
     "coding": [
       {
-        "code": "70002",
+        "code": "70998",
         "system": "urn:iso:std:iso:11073:10101",
-        "display": "MDC_DEV_SYS_PT_VENT_VMD"
+        "display": "MDC_DEV_ANALY_BREATH_PATTERN_VMD"
       }
     ]
   },

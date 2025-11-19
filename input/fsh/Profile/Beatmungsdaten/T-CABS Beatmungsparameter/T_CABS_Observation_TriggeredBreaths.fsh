@@ -1,10 +1,10 @@
 Profile: T_CABS_Observation_TriggeredBreaths
 Parent: T_CABS_Observation_Beatmungsparameter
 Id: t-cabs-observation-triggeredbreaths
-Title: "T-CABS Observation TriggeredBreaths"
-Description: "Profil für die Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums"
+Title: "T-CABS Observation Triggered Breaths"
+Description: "Profile for the percentage of spontaneously triggered breaths within a time period"
 
-* code.coding = $IEEE-11073#152498 "MDC_VENT_RESP_BTSD_P_RATE" // Includes unassisted breaths
+* code.coding = $IEEE-11073#152498 //"MDC_VENT_RESP_BTSD_P_RATE" // Includes unassisted breaths
 //* code.coding = $IEEE-11073#152538 "MDC_VENT_RESP_BTSD_PS_RATE" // Includes unassisted and supported breaths
 
 * effective[x] only Period
@@ -16,8 +16,8 @@ Description: "Profil für die Prozentzahl der selbstständig getriggerten Atemz�
 Instance: Example-TriggeredBreaths-Loewenstein
 InstanceOf: T_CABS_Observation_TriggeredBreaths
 Usage: #example
-Title: "Beispiel TriggeredBreaths Löwenstein"
-Description: "Beispiel für getriggerte Atemzüge von einem Löwenstein Beatmungsgerät"
+Title: "Example Triggered Breaths Löwenstein"
+Description: "Example of triggered breaths from a Löwenstein ventilator"
 * status = #final
 * code.coding = $IEEE-11073#152498 "MDC_VENT_RESP_BTSD_P_RATE"
 * subject = Reference(Patient/tcabs-patient-example)

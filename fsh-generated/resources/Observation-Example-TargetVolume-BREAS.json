@@ -30,6 +30,30 @@
       "reference": "Procedure/beispiel-beatmung-breas"
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "system": "http://unitsofmeasure.org",
+        "value": 300,
+        "unit": "mL",
+        "code": "mL"
+      },
+      "high": {
+        "system": "http://unitsofmeasure.org",
+        "value": 800,
+        "unit": "mL",
+        "code": "mL"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "therapeutic",
+            "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+          }
+        ]
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/tcabs-patient-example"

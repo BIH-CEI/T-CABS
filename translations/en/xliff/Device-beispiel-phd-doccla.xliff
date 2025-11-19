@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de-DE" target-language="en" id="Device-beispiel-phd-doccla" original="Resource Device-beispiel-phd-doccla" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Device-beispiel-phd-doccla" resname="Device.manufacturer">
+             <notes>
+               <note id="n1">A name of the manufacturer.</note>
+             </notes>
+        <source>Masimo</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Device-beispiel-phd-doccla" resname="Device.serialNumber">
+             <notes>
+               <note id="n1">The serial number assigned by the organization when the device was manufactured.</note>
+             </notes>
+        <source>PHD-SN-345678</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Device-beispiel-phd-doccla" resname="Device.deviceName.name">
+             <notes>
+               <note id="n1">The name of the device.</note>
+             </notes>
+        <source>Pulsoximeter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Device-beispiel-phd-doccla" resname="Device.modelNumber">
+             <notes>
+               <note id="n1">The model number for the device.</note>
+             </notes>
+        <source>DPO-2024</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Device-beispiel-phd-doccla" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>MDC_MOC_VMS_MDS_SIMP</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Device-beispiel-phd-doccla" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>MDC_DEV_SPEC_PROFILE_PULS_OXIM</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Device-beispiel-phd-doccla" resname="Device.specialization.version">
+             <notes>
+               <note id="n1">The version of the standard that is used to operate and communicate.</note>
+             </notes>
+        <source>1.0</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

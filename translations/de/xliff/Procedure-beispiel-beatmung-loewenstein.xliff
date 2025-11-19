@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de-DE" target-language="de" id="Procedure-beispiel-beatmung-loewenstein" original="Resource Procedure-beispiel-beatmung-loewenstein" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Procedure-beispiel-beatmung-loewenstein" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Invasive mechanical ventilation (regime/therapy)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Procedure-beispiel-beatmung-loewenstein" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

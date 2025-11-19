@@ -3,7 +3,8 @@
   "id": "Example-ArterielleSPO2-Doccla",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell"
     ]
   },
   "category": [
@@ -55,6 +56,14 @@
       }
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference": {
+        "reference": "Device/beispiel-phg-doccla"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/tcabs-patient-example"

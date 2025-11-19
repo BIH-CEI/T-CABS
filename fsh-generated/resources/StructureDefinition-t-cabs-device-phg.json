@@ -5,7 +5,7 @@
   "name": "T_CABS_Device_PHG",
   "title": "T-CABS Device PHG",
   "status": "draft",
-  "description": "Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wird",
+  "description": "Profile for a tablet used as a gateway device",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -37,7 +37,7 @@
       {
         "id": "Device.serialNumber",
         "path": "Device.serialNumber",
-        "short": "Seriennummer des Gerätes",
+        "short": "Serial number of the device",
         "mustSupport": true
       },
       {
@@ -53,14 +53,13 @@
         "sliceName": "MDCType",
         "patternCoding": {
           "code": "8528192",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_AI_APPLIANCE_TABLETPC"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {
         "id": "Device.patient",
         "path": "Device.patient",
-        "short": "Referenz auf den Patienten",
+        "short": "Reference to the patient",
         "min": 1,
         "type": [
           {

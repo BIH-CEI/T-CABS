@@ -1,0 +1,35 @@
+{
+  "id" : "Device-beispiel-beatmungsgeraet-loewenstein",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "en",
+      "entries" : [
+        {
+          "id" : "Device.manufacturer",
+          "context" : "A name of the manufacturer.",
+          "source" : "Löwenstein Medical",
+          "target" : null
+        },
+        {
+          "id" : "Device.serialNumber",
+          "context" : "The serial number assigned by the organization when the device was manufactured.",
+          "source" : "PRISMA30-SN-345678",
+          "target" : null
+        },
+        {
+          "id" : "Device.deviceName.name",
+          "context" : "The name of the device.",
+          "source" : "Prisma VENT30",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "MDC_DEV_SYS_PT_VENT_MDS",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

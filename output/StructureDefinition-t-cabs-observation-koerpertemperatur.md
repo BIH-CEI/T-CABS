@@ -1,18 +1,18 @@
-# T-CABS Observation Koerpertemperatur - v0.1.0
+# T-CABS Observation Body Temperature - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation Koerpertemperatur**
+* **T-CABS Observation Body Temperature**
 
-## Resource Profile: T-CABS Observation Koerpertemperatur 
+## Resource Profile: T-CABS Observation Body Temperature 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_Koerpertemperatur |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Koerpertemperatur |
 
  
-Profil für die Körpertemperatur 
+Profile for body temperature. Compatibility: For the profile T_CABS_Observation_Koerpertemperatur, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpertemperatur are also valid against the[ISiKKoerpertemperatur](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur). 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-k
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_Koerpertemperatur",
-  "title" : "T-CABS Observation Koerpertemperatur",
+  "title" : "T-CABS Observation Body Temperature",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-k
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für die Körpertemperatur",
+  "description" : "Profile for body temperature.\nCompatibility:\nFor the profile T_CABS_Observation_Koerpertemperatur, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpertemperatur are also valid against the [ISiKKoerpertemperatur](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur).",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-k
         "sliceName" : "LoincCoding",
         "patternCoding" : {
           "system" : "http://loinc.org",
-          "code" : "8310-5",
-          "display" : "Body temperature"
+          "code" : "8310-5"
         }
       },
       {

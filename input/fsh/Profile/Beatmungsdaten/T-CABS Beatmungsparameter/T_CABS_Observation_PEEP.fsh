@@ -2,9 +2,9 @@ Profile: T_CABS_Observation_PEEP
 Parent: T_CABS_Observation_Beatmungsparameter
 Id: t-cabs-observation-peep
 Title: "T-CABS Observation PEEP"
-Description: "Profil für einen Positiven endexspiratorischen Druck (PEEP)"
+Description: "Profile for Positive End-Expiratory Pressure (PEEP)"
 
-* code.coding = $IEEE-11073#152720 "MDC_VENT_PRESS_AWAY_DELTA"
+* code.coding = $IEEE-11073#152720 //"MDC_VENT_PRESS_AWAY_DELTA"
 
 * valueQuantity.code = #mbar
 * valueQuantity.unit = "mbar"
@@ -13,8 +13,8 @@ Description: "Profil für einen Positiven endexspiratorischen Druck (PEEP)"
 Instance: Example-PEEP-Loewenstein
 InstanceOf: T_CABS_Observation_PEEP
 Usage: #example
-Title: "Beispiel PEEP Löwenstein"
-Description: "Beispiel für PEEP von einem Löwenstein Beatmungsgerät"
+Title: "Example PEEP Löwenstein"
+Description: "Example of PEEP from a Löwenstein ventilator"
 * status = #final
 * code.coding = $IEEE-11073#152720 "MDC_VENT_PRESS_AWAY_DELTA"
 * subject = Reference(Patient/tcabs-patient-example)

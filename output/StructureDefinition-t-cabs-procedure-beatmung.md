@@ -1,22 +1,22 @@
-# T-CABS Procedure Beatmung - v0.1.0
+# T-CABS Procedure Ventilation - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Procedure Beatmung**
+* **T-CABS Procedure Ventilation**
 
-## Resource Profile: T-CABS Procedure Beatmung 
+## Resource Profile: T-CABS Procedure Ventilation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Procedure_Beatmung |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Procedure_Beatmung |
 
  
-Profil für die Beatmungsprozedur 
+Profile for the ventilation procedure 
 
 **Usages:**
 
-* Refer to this Profile: [T-CABS Observation Beatmungsparameter (abstract)](StructureDefinition-t-cabs-observation-beatmungsparameter.md)
+* Refer to this Profile: [T-CABS Observation Ventilation Parameter (abstract)](StructureDefinition-t-cabs-observation-beatmungsparameter.md) and [T-CABS Observation Ventilation Parameter with Components (abstract)](StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.md)
 * Examples for this Profile: [Procedure/beispiel-beatmung-breas](Procedure-beispiel-beatmung-breas.md), [Procedure/beispiel-beatmung-loewenstein](Procedure-beispiel-beatmung-loewenstein.md) and [Procedure/beispiel-beatmung-resmed](Procedure-beispiel-beatmung-resmed.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-procedure-beatmung)
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-procedure-bea
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
   "version" : "0.1.0",
   "name" : "T_CABS_Procedure_Beatmung",
-  "title" : "T-CABS Procedure Beatmung",
+  "title" : "T-CABS Procedure Ventilation",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -50,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-procedure-bea
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für die Beatmungsprozedur",
+  "description" : "Profile for the ventilation procedure",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -209,7 +220,11 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-procedure-bea
       {
         "id" : "Procedure.bodySite",
         "path" : "Procedure.bodySite",
-        "mustSupport" : true
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle"
+        }
       },
       {
         "id" : "Procedure.usedReference",

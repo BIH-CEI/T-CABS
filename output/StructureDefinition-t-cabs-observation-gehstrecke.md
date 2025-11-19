@@ -1,18 +1,18 @@
-# T-CABS Observation Gehstrecke - v0.1.0
+# T-CABS Observation Walking Distance - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation Gehstrecke**
+* **T-CABS Observation Walking Distance**
 
-## Resource Profile: T-CABS Observation Gehstrecke 
+## Resource Profile: T-CABS Observation Walking Distance 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_Gehstrecke |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Gehstrecke |
 
  
-Profil für die Gehstrecke pro Tag (24 Stunden) 
+Profile for walking distance per day (24 hours) 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-g
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_Gehstrecke",
-  "title" : "T-CABS Observation Gehstrecke",
+  "title" : "T-CABS Observation Walking Distance",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-g
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für die Gehstrecke pro Tag (24 Stunden)",
+  "description" : "Profile for walking distance per day (24 hours)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-g
         "sliceName" : "LoincCoding",
         "patternCoding" : {
           "system" : "http://loinc.org",
-          "code" : "41950-7",
-          "display" : "Number of steps in 24 hour Measured"
+          "code" : "41950-7"
         }
       },
       {

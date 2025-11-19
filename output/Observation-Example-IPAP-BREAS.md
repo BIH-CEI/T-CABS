@@ -1,10 +1,10 @@
-# Beispiel IPAP BREAS - v0.1.0
+# Example IPAP BREAS - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel IPAP BREAS**
+* **Example IPAP BREAS**
 
-## Example Observation: Beispiel IPAP BREAS
+## Example Observation: Example IPAP BREAS
 
 Profile: [T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.md)
 
@@ -20,7 +20,14 @@ Profile: [T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.m
 
 **value**: 15 mbar(Details: UCUM codembar = 'mbar')
 
-**device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-BREAS-IPAP-001; type = MDC_SABTE_PRESS_IPAP_SET; unit = mbar; operationalStatus = on; color = lime; category = setting; measurementPeriod = Once per 5 minutes](DeviceMetric-beispiel-devicemetric-breas-ipap.md)
+**device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-BREAS-IPAP-001; type = MDC_SABTE_PRESS_IPAP_SET; unit = mbar; operationalStatus = on; color = cyan; category = setting; measurementPeriod = Once per 5 minutes](DeviceMetric-beispiel-devicemetric-breas-ipap.md)
+
+### ReferenceRanges
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| - | **Low** | **High** | **Type** |
+| * | 5 mbar(Details: UCUM codembar = 'mbar') | 25 mbar(Details: UCUM codembar = 'mbar') | Therapeutic Desired Level |
 
 
 
@@ -65,7 +72,31 @@ Profile: [T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.m
   },
   "device" : {
     "reference" : "DeviceMetric/beispiel-devicemetric-breas-ipap"
-  }
+  },
+  "referenceRange" : [
+    {
+      "low" : {
+        "value" : 5,
+        "unit" : "mbar",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mbar"
+      },
+      "high" : {
+        "value" : 25,
+        "unit" : "mbar",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mbar"
+      },
+      "type" : {
+        "coding" : [
+          {
+            "system" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+            "code" : "therapeutic"
+          }
+        ]
+      }
+    }
+  ]
 }
 
 ```

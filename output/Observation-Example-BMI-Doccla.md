@@ -1,12 +1,14 @@
-# Beispiel BMI Messung - v0.1.0
+# Example BMI Measurement - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel BMI Messung**
+* **Example BMI Measurement**
 
-## Example Observation: Beispiel BMI Messung
+## Example Observation: Example BMI Measurement
 
 Profile: [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md)
+
+**Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
 **status**: Final
 
@@ -20,7 +22,7 @@ Profile: [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md)
 
 **value**: 25.3 kg/m2(Details: UCUM codekg/m2 = 'kg/m2')
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
 
 
 
@@ -35,6 +37,14 @@ Profile: [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md)
       "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi"
     ]
   },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference" : {
+        "reference" : "Device/beispiel-phg-doccla"
+      }
+    }
+  ],
   "status" : "final",
   "category" : [
     {

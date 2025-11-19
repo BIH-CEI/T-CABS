@@ -1,16 +1,16 @@
-# T-CABS PractitionerRole Funktion Beispiel - v0.1.0
+# T-CABS PractitionerRole Function Example - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS PractitionerRole Funktion Beispiel**
+* **T-CABS PractitionerRole Function Example**
 
-## Example PractitionerRole: T-CABS PractitionerRole Funktion Beispiel
+## Example PractitionerRole: T-CABS PractitionerRole Function Example
 
-Profile: [T-CABS Funktion](StructureDefinition-t-cabs-practitioner-funktion.md)
+Profile: [T-CABS Function](StructureDefinition-t-cabs-practitioner-funktion.md)
 
 **active**: true
 
-**practitioner**: [Practitioner Anna Schmidt](Practitioner-tcabs-practitioner-example.md)
+**practitioner**: [Practitioner Anna Schmidt(official)](Practitioner-tcabs-practitioner-example.md)
 
 **organization**: [Organization Charité Campus Mitte](Organization-CABS.md)
 

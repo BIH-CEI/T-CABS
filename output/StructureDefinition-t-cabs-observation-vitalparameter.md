@@ -1,23 +1,23 @@
-# T-CABS Observation Vitalparamter - v0.1.0
+# T-CABS Observation Vital Parameter - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation Vitalparamter**
+* **T-CABS Observation Vital Parameter**
 
-## Resource Profile: T-CABS Observation Vitalparamter 
+## Resource Profile: T-CABS Observation Vital Parameter 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_Vitalparameter |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Vitalparameter |
 
  
-Abstraktes Profil für die gemessenen Vitalparameter von Doccla 
+Abstract profile for measured vital parameters 
 
 **Usages:**
 
-* Derived from this Profile: [T-CABS Observation Arterieller Blutdruck](StructureDefinition-t-cabs-observation-arteriellerblutdruck.md), [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md), [T-CABS Observation Atemfrequenz](StructureDefinition-t-cabs-observation-atemfrequenz.md), [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md)...Show 5 more,[T-CABS Observation Gehstrecke](StructureDefinition-t-cabs-observation-gehstrecke.md),[T-CABS Observation Herzfrequenz](StructureDefinition-t-cabs-observation-herzfrequenz.md),[T-CABS Observation Koerpergewicht](StructureDefinition-t-cabs-observation-koerpergewicht.md),[T-CABS Observation Koerpertemperatur](StructureDefinition-t-cabs-observation-koerpertemperatur.md)and[T-CABS Observation FEV1](StructureDefinition-t-cabs-observationfev1.md)
-* Refer to this Profile: [T-CABS DiagnosticReport Visitenbefund](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)
+* Derived from this Profile: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md), [T-CABS Observation Respiratory Rate](StructureDefinition-t-cabs-observation-atemfrequenz.md), [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md), [T-CABS Observation Walking Distance](StructureDefinition-t-cabs-observation-gehstrecke.md)...Show 8 more,[T-CABS Observation Heart Rate](StructureDefinition-t-cabs-observation-herzfrequenz.md),[T-CABS Observation Body Weight](StructureDefinition-t-cabs-observation-koerpergewicht.md),[T-CABS Observation Body Temperature](StructureDefinition-t-cabs-observation-koerpertemperatur.md),[T-CABS Observation FEV1](StructureDefinition-t-cabs-observationfev1.md),[T-CABS Observation FEF25-75](StructureDefinition-t-cabs-observationfev1fef25-75.md),[T-CABS Observation FEV1/FEV6](StructureDefinition-t-cabs-observationfev1fev6.md),[T-CABS Observation FEV6](StructureDefinition-t-cabs-observationfev6.md)and[T-CABS Observation Hand Grip Strength](StructureDefinition-t-cabs-observationhandgriffstaerke.md)
+* Refer to this Profile: [T-CABS DiagnosticReport Visit Finding](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-observation-vitalparameter)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_Vitalparameter",
-  "title" : "T-CABS Observation Vitalparamter",
+  "title" : "T-CABS Observation Vital Parameter",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -50,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Abstraktes Profil für die gemessenen Vitalparameter von Doccla",
+  "description" : "Abstract profile for measured vital parameters",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -101,9 +112,25 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
         "path" : "Observation"
       },
       {
+        "id" : "Observation.extension.value[x]",
+        "path" : "Observation.extension.value[x]",
+        "short" : "Reference to the PHG device",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-device-phg"]
+          }
+        ]
+      },
+      {
         "id" : "Observation.status",
         "path" : "Observation.status",
         "mustSupport" : true
+      },
+      {
+        "id" : "Observation.category",
+        "path" : "Observation.category",
+        "min" : 2
       },
       {
         "id" : "Observation.category:PHD-Observation",
@@ -121,15 +148,19 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
       {
         "id" : "Observation.category:VSCat",
         "path" : "Observation.category",
-        "sliceName" : "VSCat"
+        "sliceName" : "VSCat",
+        "min" : 1,
+        "mustSupport" : true
       },
       {
         "id" : "Observation.category:VSCat.coding",
         "path" : "Observation.category.coding",
+        "max" : "1",
         "patternCoding" : {
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
           "code" : "vital-signs"
-        }
+        },
+        "mustSupport" : true
       },
       {
         "id" : "Observation.code",
@@ -137,9 +168,21 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
         "mustSupport" : true
       },
       {
+        "id" : "Observation.code.coding:MDCType",
+        "path" : "Observation.code.coding",
+        "sliceName" : "MDCType",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.code.coding:LoincCoding",
+        "path" : "Observation.code.coding",
+        "sliceName" : "LoincCoding",
+        "mustSupport" : true
+      },
+      {
         "id" : "Observation.subject",
         "path" : "Observation.subject",
-        "short" : "Referenz auf den Patienten",
+        "short" : "Reference to the patient",
         "type" : [
           {
             "code" : "Reference",
@@ -156,11 +199,13 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
       {
         "id" : "Observation.performer",
         "path" : "Observation.performer",
+        "short" : "Reference to the person who performed the measurement",
         "mustSupport" : true
       },
       {
         "id" : "Observation.device",
         "path" : "Observation.device",
+        "short" : "Reference to the PHD measurement device",
         "type" : [
           {
             "code" : "Reference",

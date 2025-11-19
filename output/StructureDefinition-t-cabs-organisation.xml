@@ -13,18 +13,25 @@
   <url value="http://t-cabs.org/StructureDefinition/t-cabs-organisation"/>
   <version value="0.1.0"/>
   <name value="T_CABS_Organisation"/>
-  <title value="T-CABS Organisation"/>
+  <title value="T-CABS Organization"/>
   <status value="draft"/>
-  <date value="2025-10-16T18:59:10+02:00"/>
+  <date value="2025-11-19T11:55:29+01:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="https://www.bihealth.org/"/>
     </telecom>
   </contact>
-  <description value="Profil für eine Organisation die mit T-CABS Studie in Verbindung steht"/>
+  <description value="Profile for an organization associated with the T-CABS study.&#xA;Compatibility:&#xA;The T_CABS_Organisation profile aims for compatibility with the ISiKOrganisation version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Organisation are also valid against the [ISiKOrganisation](https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>

@@ -1,10 +1,10 @@
-# Beispiel PEEP Löwenstein - v0.1.0
+# Example PEEP Löwenstein - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel PEEP Löwenstein**
+* **Example PEEP Löwenstein**
 
-## Example Observation: Beispiel PEEP Löwenstein
+## Example Observation: Example PEEP Löwenstein
 
 Profile: [T-CABS Observation PEEP](StructureDefinition-t-cabs-observation-peep.md)
 

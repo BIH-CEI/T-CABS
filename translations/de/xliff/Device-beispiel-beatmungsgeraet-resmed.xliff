@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de-DE" target-language="de" id="Device-beispiel-beatmungsgeraet-resmed" original="Resource Device-beispiel-beatmungsgeraet-resmed" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Device-beispiel-beatmungsgeraet-resmed" resname="Device.manufacturer">
+             <notes>
+               <note id="n1">A name of the manufacturer.</note>
+             </notes>
+        <source>ResMed</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Device-beispiel-beatmungsgeraet-resmed" resname="Device.serialNumber">
+             <notes>
+               <note id="n1">The serial number assigned by the organization when the device was manufactured.</note>
+             </notes>
+        <source>STELLAR150-SN-901234</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Device-beispiel-beatmungsgeraet-resmed" resname="Device.deviceName.name">
+             <notes>
+               <note id="n1">The name of the device.</note>
+             </notes>
+        <source>Stellar150</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Device-beispiel-beatmungsgeraet-resmed" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>MDC_DEV_SYS_PT_VENT_MDS</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

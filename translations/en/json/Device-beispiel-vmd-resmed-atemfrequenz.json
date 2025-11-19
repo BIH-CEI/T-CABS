@@ -1,0 +1,23 @@
+{
+  "id" : "Device-beispiel-vmd-resmed-atemfrequenz",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "en",
+      "entries" : [
+        {
+          "id" : "Device.deviceName.name",
+          "context" : "The name of the device.",
+          "source" : "Stellar150 Atemfrequenz Module",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "MDC_DEV_SYS_PT_VENT_VMD",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

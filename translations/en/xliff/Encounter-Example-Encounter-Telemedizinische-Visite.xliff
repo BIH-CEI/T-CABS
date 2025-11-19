@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de-DE" target-language="en" id="Encounter-Example-Encounter-Telemedizinische-Visite" original="Resource Encounter-Example-Encounter-Telemedizinische-Visite" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Encounter-Example-Encounter-Telemedizinische-Visite" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>virtual</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-Example-Encounter-Telemedizinische-Visite" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>Konsil</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-Example-Encounter-Telemedizinische-Visite" resname="Coding.display">
+             <notes>
+               <note id="n1">A representation of the meaning of the code in the system, following the rules of the system.</note>
+             </notes>
+        <source>attender</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Encounter-Example-Encounter-Telemedizinische-Visite" resname="Reference.display">
+             <notes>
+               <note id="n1">Plain text narrative that identifies the resource in addition to the resource reference.</note>
+             </notes>
+        <source>Löwenstein Medical</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

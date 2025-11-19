@@ -12,27 +12,30 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax"^^xsd:anyURI ;
-       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax>
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-DruckMinMax-ResMed</b></p><a name=\"Example-DruckMinMax-ResMed\"> </a><a name=\"hcExample-DruckMinMax-ResMed\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-druck-minmax.html\">T-CABS Observation Druck MIN/MAX</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-resmed.html\">Procedure MDC_PRESS_AWAY_CTS_POS</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 151792}\">MDC_PRESS_AWAY</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-10-07 23:00:00+0200 --&gt; 2024-10-07 23:30:00+0200</p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-resmed-druck.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-DRUCK-001; type = MDC_PRESS_AWAY; unit = mbar; operationalStatus = on; color = brown; category = measurement; measurementPeriod = Once per 30 seconds</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 151794}\">MDC_PRESS_AWAY_MIN</span></p><p><b>value</b>: 4 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 151793}\">MDC_PRESS_AWAY_MAX</span></p><p><b>value</b>: 20 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></p></blockquote></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-DruckMinMax-ResMed</b></p><a name=\"Example-DruckMinMax-ResMed\"> </a><a name=\"hcExample-DruckMinMax-ResMed\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-druck-minmax.html\">T-CABS Observation Pressure MIN/MAX</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-resmed.html\">Procedure MDC_PRESS_AWAY_CTS_POS</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 151792}\">MDC_PRESS_AWAY</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-10-07 23:00:00+0200 --&gt; 2024-10-07 23:30:00+0200</p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-resmed-druck.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-DRUCK-001; type = MDC_PRESS_AWAY; unit = mbar; operationalStatus = on; color = black; category = measurement; measurementPeriod = Once per 30 seconds</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 151794}\">MDC_PRESS_AWAY_MIN</span></p><p><b>value</b>: 4 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 151793}\">MDC_PRESS_AWAY_MAX</span></p><p><b>value</b>: 20 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:partOf ( [
-     fhir:link <http://t-cabs.org/Procedure/beispiel-beatmung-resmed> ;
+     fhir:l <http://t-cabs.org/Procedure/beispiel-beatmung-resmed> ;
      fhir:reference [ fhir:v "Procedure/beispiel-beatmung-resmed" ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "151792" ] ;
        fhir:display [ fhir:v "MDC_PRESS_AWAY" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
      fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
   ] ; # 
   fhir:effective [
@@ -41,13 +44,16 @@
      fhir:end [ fhir:v "2024-10-07T23:30:00+02:00"^^xsd:dateTime ]
   ] ; # 
   fhir:device [
-     fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-druck> ;
+     fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-druck> ;
      fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-druck" ]
   ] ; # 
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "151794" ] ;
          fhir:display [ fhir:v "MDC_PRESS_AWAY_MIN" ]
        ] )
@@ -56,13 +62,19 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "4"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mbar" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mbar" ]
      ]
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "151793" ] ;
          fhir:display [ fhir:v "MDC_PRESS_AWAY_MAX" ]
        ] )
@@ -71,7 +83,10 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "20"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mbar" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mbar" ]
      ]
   ] ) . # 

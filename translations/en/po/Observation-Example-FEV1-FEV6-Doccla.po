@@ -1,0 +1,11 @@
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "FEV1/FEV6 Predicted"
+msgstr ""
+
+# A human-readable form of the unit.
+#: Quantity.unit
+msgid "%"
+msgstr ""
+

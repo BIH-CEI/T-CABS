@@ -5,7 +5,7 @@
   "name": "T_CABS_Observation_TargetVolume",
   "title": "T-CABS Observation Target Volume",
   "status": "draft",
-  "description": "Profil für das Zielvolumen",
+  "description": "Profile for the target volume",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -19,8 +19,7 @@
         "path": "Observation.code.coding",
         "patternCoding": {
           "code": "153212",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_VOL_TIDAL_TARGET_AUTO"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

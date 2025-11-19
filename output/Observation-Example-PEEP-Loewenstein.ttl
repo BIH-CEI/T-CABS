@@ -12,27 +12,30 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep"^^xsd:anyURI ;
-       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-peep>
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-peep>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-PEEP-Loewenstein</b></p><a name=\"Example-PEEP-Loewenstein\"> </a><a name=\"hcExample-PEEP-Loewenstein\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-peep.html\">T-CABS Observation PEEP</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-loewenstein.html\">Procedure MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 152720}\">MDC_VENT_PRESS_AWAY_DELTA</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 23:35:00+0000 --&gt; 2024-01-15 23:35:00+0000</p><p><b>value</b>: 18 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-loewenstein-peep.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-LOEW-PEEP-001; type = MDC_VENT_PRESS_AWAY_DELTA; unit = mbar; operationalStatus = on; color = magenta; category = calculation; measurementPeriod = Once per 1 minute</a></p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-PEEP-Loewenstein</b></p><a name=\"Example-PEEP-Loewenstein\"> </a><a name=\"hcExample-PEEP-Loewenstein\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-peep.html\">T-CABS Observation PEEP</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-loewenstein.html\">Procedure MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 152720}\">MDC_VENT_PRESS_AWAY_DELTA</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 23:35:00+0000 --&gt; 2024-01-15 23:35:00+0000</p><p><b>value</b>: 18 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-loewenstein-peep.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-LOEW-PEEP-001; type = MDC_VENT_PRESS_AWAY_DELTA; unit = mbar; operationalStatus = on; color = magenta; category = calculation; measurementPeriod = Once per 1 minute</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:partOf ( [
-     fhir:link <http://t-cabs.org/Procedure/beispiel-beatmung-loewenstein> ;
+     fhir:l <http://t-cabs.org/Procedure/beispiel-beatmung-loewenstein> ;
      fhir:reference [ fhir:v "Procedure/beispiel-beatmung-loewenstein" ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "152720" ] ;
        fhir:display [ fhir:v "MDC_VENT_PRESS_AWAY_DELTA" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
      fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
   ] ; # 
   fhir:effective [
@@ -44,11 +47,14 @@
      a fhir:Quantity ;
      fhir:value [ fhir:v "18"^^xsd:decimal ] ;
      fhir:unit [ fhir:v "mbar" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "mbar" ]
   ] ; # 
   fhir:device [
-     fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-loewenstein-peep> ;
+     fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-loewenstein-peep> ;
      fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-loewenstein-peep" ]
   ] . # 
 

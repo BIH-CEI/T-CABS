@@ -12,27 +12,30 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"^^xsd:anyURI ;
-       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage>
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-Leckage-ResMed</b></p><a name=\"Example-Leckage-ResMed\"> </a><a name=\"hcExample-Leckage-ResMed\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-leckage.html\">T-CABS Observation Leckage</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-resmed.html\">Procedure MDC_PRESS_AWAY_CTS_POS</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 152432}\">MDC_VENT_VOL_LEAK</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</p><p><b>value</b>: 0.6 L/min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min = 'L/min')</span></p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-resmed-leckage.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-LECKAGE-001; type = MDC_VENT_VOL_LEAK; unit = L/min; operationalStatus = on; color = red; category = measurement; measurementPeriod = Once per 5 seconds</a></p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-Leckage-ResMed</b></p><a name=\"Example-Leckage-ResMed\"> </a><a name=\"hcExample-Leckage-ResMed\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-leckage.html\">T-CABS Observation Leakage</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-resmed.html\">Procedure MDC_PRESS_AWAY_CTS_POS</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 152432}\">MDC_VENT_VOL_LEAK</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</p><p><b>value</b>: 0.6 L/min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min = 'L/min')</span></p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-resmed-leckage.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-LECKAGE-001; type = MDC_VENT_VOL_LEAK; unit = L/min; operationalStatus = on; color = red; category = measurement; measurementPeriod = Once per 5 seconds</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:partOf ( [
-     fhir:link <http://t-cabs.org/Procedure/beispiel-beatmung-resmed> ;
+     fhir:l <http://t-cabs.org/Procedure/beispiel-beatmung-resmed> ;
      fhir:reference [ fhir:v "Procedure/beispiel-beatmung-resmed" ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "152432" ] ;
        fhir:display [ fhir:v "MDC_VENT_VOL_LEAK" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
      fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
   ] ; # 
   fhir:effective [
@@ -44,11 +47,14 @@
      a fhir:Quantity ;
      fhir:value [ fhir:v 0.6 ] ;
      fhir:unit [ fhir:v "L/min" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "L/min" ]
   ] ; # 
   fhir:device [
-     fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-leckage> ;
+     fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-leckage> ;
      fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-leckage" ]
   ] . # 
 

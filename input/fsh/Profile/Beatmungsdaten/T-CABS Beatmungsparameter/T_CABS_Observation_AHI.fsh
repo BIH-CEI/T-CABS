@@ -2,9 +2,9 @@ Profile: T_CABS_Observation_AHI
 Parent: T_CABS_Observation_Beatmungsparameter
 Id: t-cabs-observation-ahi
 Title: "T-CABS Observation AHI"
-Description: "Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs aufgetretenen Apnoe- und Hypopnoe-Episoden, geteilt durch die Schlafdauer in Stunden"
+Description: "Profile for the Apnea-Hypopnea Index (AHI) - Total number of apnea and hypopnea episodes that occurred during sleep, divided by sleep duration in hours"
 
-* code.coding = $IEEE-11073#8410792 "MDC_SABTE_AHI_TOTAL"
+* code.coding = $IEEE-11073#8410792 //"MDC_SABTE_AHI_TOTAL"
 
 * effective[x] only Period
 
@@ -13,8 +13,8 @@ Description: "Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der währen
 Instance: Example-AHI-BREAS
 InstanceOf: T_CABS_Observation_AHI
 Usage: #example
-Title: "Beispiel AHI Messung BREAS"
-Description: "Beispiel für eine AHI-Messung von einem BREAS Beatmungsgerät"
+Title: "Example AHI Measurement BREAS"
+Description: "Example of an AHI measurement from a BREAS ventilator"
 * status = #final
 * code.coding = $IEEE-11073#8410792 "MDC_SABTE_AHI_TOTAL"
 * subject = Reference(Patient/tcabs-patient-example)

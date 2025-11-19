@@ -3,7 +3,8 @@
   "id": "tcabs-practitioner-example",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion"
+      "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf"
     ]
   },
   "identifier": [
@@ -17,7 +18,15 @@
       "given": [
         "Anna"
       ],
-      "family": "Schmidt"
+      "use": "official",
+      "family": "Schmidt",
+      "text": "Anna Schmidt"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "anna.schmidt@tcabs-clinic.de"
     }
   ]
 }

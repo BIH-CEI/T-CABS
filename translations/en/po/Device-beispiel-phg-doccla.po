@@ -1,0 +1,36 @@
+
+# A name of the manufacturer.
+#: Device.manufacturer
+msgid "Doccla GmbH"
+msgstr ""
+
+# The serial number assigned by the organization when the device was manufactured.
+#: Device.serialNumber
+msgid "PHG-SN-789012"
+msgstr ""
+
+# The name of the device.
+#: Device.deviceName.name
+msgid "Doccla Health Tablet"
+msgstr ""
+
+# The model number for the device.
+#: Device.modelNumber
+msgid "DHT-2024"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "MDC_AI_APPLIANCE_TABLETPC"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "MDC_REG_CERT_DATA_CONTINUA_VERSION"
+msgstr ""
+
+# The version text.
+#: Device.version.value
+msgid "2.1.0"
+msgstr ""
+

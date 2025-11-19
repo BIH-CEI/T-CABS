@@ -2,7 +2,7 @@ Profile: T_CABS_Device_PHG
 Parent: http://hl7.org/fhir/uv/phd/StructureDefinition/PhgDevice
 Id: t-cabs-device-phg
 Title: "T-CABS Device PHG"
-Description: "Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wird"
+Description: "Profile for a tablet used as a gateway device"
 
 * identifier[systemIdIdentifier].type.coding.system MS
 * identifier[systemIdIdentifier].type.coding.code MS
@@ -10,20 +10,20 @@ Description: "Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wi
 
 // Tablet
 * specialization 1..1 MS
-* specialization.systemType.coding[MDCType] = $IEEE-11073#8528192 "MDC_AI_APPLIANCE_TABLETPC"
+* specialization.systemType.coding[MDCType] = $IEEE-11073#8528192 //"MDC_AI_APPLIANCE_TABLETPC"
 
-* serialNumber 0..1 MS
-* serialNumber ^short = "Seriennummer des Gerätes"
+* serialNumber MS
+* serialNumber ^short = "Serial number of the device"
 
 * patient 1..1 MS
-* patient ^short = "Referenz auf den Patienten"
+* patient ^short = "Reference to the patient"
 * patient only Reference(T_CABS_Patient)
 
 Instance: beispiel-phg-doccla
 InstanceOf: T_CABS_Device_PHG
 Usage: #example
-Title: "Beispiel PHG Tablet"
-Description: "Beispiel für ein Personal Health Gateway Tablet von Doccla"
+Title: "Example PHG Tablet"
+Description: "Example of a Personal Health Gateway tablet from Doccla"
 * identifier[systemIdIdentifier].type.coding.system = $ContinuaDeviceIdentifier
 * identifier[systemIdIdentifier].type.coding.code = #SYSID
 * identifier[systemIdIdentifier].value = "PHG-DOCCLA-12345"
@@ -43,7 +43,7 @@ Description: "Beispiel für ein Personal Health Gateway Tablet von Doccla"
 * property[codedListProperties].valueCode[+].coding = $IEEE-11073#528388
 // ....
 * property[codedListProperties].valueCode[+].coding = $IEEE-11073#528399
-* property[codedListProperties].valueCode[+].coding = $IEEE-11073#528426
+* property[codedListProperties].valueCode[+].coding = $IEEE-11073#69876
 * property[codedListProperties].valueCode[+].coding = $IEEE-11073#528391
 * property[codedListProperties].valueCode[+].coding = $IEEE-11073#69680
 * property[codedListProperties].valueCode[+].coding = $IEEE-11073#528484

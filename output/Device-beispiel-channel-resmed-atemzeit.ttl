@@ -12,15 +12,18 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-channel-resmed-atemzeit</b></p><a name=\"beispiel-channel-resmed-atemzeit\"> </a><a name=\"hcbeispiel-channel-resmed-atemzeit\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html\">T-CABS Device Channel Beatmungsgeraet</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-channel</code>/CHAN-RESMED-ATEMZEIT-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Atemzeitverhältnis Calculation Channel</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 70003}\">MDC_DEV_SYS_PT_VENT_CHAN</span></p><p><b>parent</b>: <a href=\"Device-beispiel-vmd-resmed-atemzeit.html\">Device: identifier = http://tcabs.example.org/device-vmd#VMD-RESMED-ATEMZEIT-001; type = MDC_DEV_SYS_PT_VENT_VMD</a></p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-channel-resmed-atemzeit</b></p><a name=\"beispiel-channel-resmed-atemzeit\"> </a><a name=\"hcbeispiel-channel-resmed-atemzeit\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html\">T-CABS Device Channel Ventilator</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-channel</code>/CHAN-RESMED-ATEMZEIT-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Atemzeitverhältnis Calculation Channel</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 69635}\">MDC_DEV_CHAN</span></p><p><b>parent</b>: <a href=\"Device-beispiel-vmd-resmed-atemzeit.html\">Device: identifier = http://tcabs.example.org/device-vmd#VMD-RESMED-ATEMZEIT-001; type = MDC_DEV_VMD</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://tcabs.example.org/device-channel"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://tcabs.example.org/device-channel"^^xsd:anyURI ;
+       fhir:l <http://tcabs.example.org/device-channel>
+     ] ;
      fhir:value [ fhir:v "CHAN-RESMED-ATEMZEIT-001" ]
   ] ) ; # 
   fhir:deviceName ( [
@@ -29,13 +32,16 @@
   ] ) ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "70003" ] ;
-       fhir:display [ fhir:v "MDC_DEV_SYS_PT_VENT_CHAN" ]
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
+       fhir:code [ fhir:v "69635" ] ;
+       fhir:display [ fhir:v "MDC_DEV_CHAN" ]
      ] )
   ] ; # 
   fhir:parent [
-     fhir:link <http://t-cabs.org/Device/beispiel-vmd-resmed-atemzeit> ;
+     fhir:l <http://t-cabs.org/Device/beispiel-vmd-resmed-atemzeit> ;
      fhir:reference [ fhir:v "Device/beispiel-vmd-resmed-atemzeit" ]
   ] . # 
 

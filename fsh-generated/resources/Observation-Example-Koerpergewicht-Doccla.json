@@ -3,7 +3,8 @@
   "id": "Example-Koerpergewicht-Doccla",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht"
     ]
   },
   "category": [
@@ -47,6 +48,14 @@
     "code": "kg",
     "value": 75.8
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference": {
+        "reference": "Device/beispiel-phg-doccla"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/tcabs-patient-example"

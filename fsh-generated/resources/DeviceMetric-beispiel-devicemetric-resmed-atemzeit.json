@@ -44,7 +44,7 @@
     ]
   },
   "operationalStatus": "on",
-  "color": "purple",
+  "color": "white",
   "category": "calculation",
   "source": {
     "reference": "Device/beispiel-beatmungsgeraet-resmed"

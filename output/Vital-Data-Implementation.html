@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Vital Data Implementation - T-CABS Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7.css" rel="stylesheet"/>
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+        <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
+    </a>            
+</div>
+
+<div id="family-nav">
+    <a id="family-logo" no-external="true" href="https://www.charite.de/">
+        <img alt="visit the website" height="60" src="Logo_Charite.png" />
+    </a>            
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="Information-Model.html">Information Model</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profiles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Cross-Domain-Profiles.html">Cross-Domain</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Profiles.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Profiles.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Cross-Domain-Examples.html">Cross-Domain</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Examples.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Examples.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Cross-Domain-Implementation.html">Cross-Domain</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Implementation.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Implementation.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Terminologies.html">Terminologies</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Vital Data Implementation</b></li>
+
+          <span style="float:right;">
+
+            <a href="Cross-Domain-Implementation.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="Ventilation-Data-Implementation.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Vital Data Implementation</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#device-structure" id="markdown-toc-device-structure">Device Structure</a></li>
+  <li><a href="#vital-parameters" id="markdown-toc-vital-parameters">Vital Parameters</a></li>
+  <li><a href="#implementation-notes" id="markdown-toc-implementation-notes">Implementation Notes</a></li>
+  <li><a href="#technical-specifications" id="markdown-toc-technical-specifications">Technical Specifications</a></li>
+</ul>
+
+</div>
+<p>This page describes the implementation of vital parameter profiles. The profiles are based on the FHIR specification <a href="https://hl7.org/fhir/uv/phd/STU1.1/">Personal Health Device (PHD)</a> and enable standard-compliant transmission of vital parameters.
+The following explains the structure of device-related information and demonstrates it through examples in JSON format. Subsequently, the structure of vital parameters is discussed in the same manner.</p>
+
+<h3 id="device-structure">Device Structure</h3>
+<p>PHD-compliant device architecture:</p>
+
+<ul>
+  <li><strong>PHD (Personal Health Device)</strong>: Measurement device for vital parameters (e.g., pulse oximeter)</li>
+  <li><strong>PHG (Personal Health Gateway)</strong>: Gateway for data transmission (tablet)</li>
+</ul>
+
+<p>The structure of devices is divided into measurement devices (PHD) and gateways (PHG). The PHDs measure the respective vital parameters and send them via a Bluetooth connection to the PHG. The gateway forwards the measured values at regular intervals to the manufacturer's cloud.</p>
+
+<p>The following lists the profiles and mandatory elements, i.e., the minimum requirements:</p>
+
+<h4 id="phd-device">PHD Device</h4>
+<p>Mandatory specifications for a T-CABS PHD device:</p>
+<ul>
+  <li>Device.identifier[systemIdIdentifier].type - Fixed to code #SYSID from CodeSystem <a href="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers">ContinuaDeviceIdentifiers</a></li>
+  <li>Device.identifier[systemIdIdentifier].system - Fixed to the EUI-64 Identifier System</li>
+  <li>Device.identifier[systemIdIdentifier].value - Identifier</li>
+  <li>Device.modelNumber - Model number</li>
+  <li>Device.manufacturer - Manufacturer name</li>
+  <li>Device.serialNumber - Serial number</li>
+  <li>Device.type - Fixed coding as PHD device from IEEE 11073-10101 CodeSystem</li>
+  <li>Device.specialization.systemType.coding[MDCType] - Coding fixed to CodeSystem IEEE 11073-10101</li>
+  <li>Device.specialization.systemType.version - Version of the Specialization Standard</li>
+  <li>Device.patient - Reference to Patient</li>
+</ul>
+
+<p><strong>Note:</strong> The repeatability of elements is not specified at this point; it is indicated in the profile representations in the "Card." column. For slice specifications (with [] brackets), the sliced element is always repeatable.</p>
+
+<p>Example instance of a pulse oximeter from manufacturer Doccla:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"beispiel-phd-doccla"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://t-cabs.org/StructureDefinition/t-cabs-device-phd"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SYSID"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PHD-DOCCLA-67890"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"deviceName"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doccla Pulse Oximeter"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user-friendly-name"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"specialization"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"systemType"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"528388"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MDC_DEV_SPEC_PROFILE_PULS_OXIM"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"65573"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MDC_MOC_VMS_MDS_SIMP"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"serialNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PHD-SN-345678"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"manufacturer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doccla GmbH"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"modelNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DPO-2024"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"patient"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/tcabs-patient-example"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="phg-gateway">PHG Gateway</h4>
+
+<p>Mandatory specifications for a T-CABS PHG device:</p>
+<ul>
+  <li>Device.identifier[systemIdIdentifier].type - Fixed to code #SYSID from CodeSystem <a href="http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers">ContinuaDeviceIdentifiers</a></li>
+  <li>Device.identifier[systemIdIdentifier].system - Fixed to the EUI-64 Identifier System</li>
+  <li>Device.identifier[systemIdIdentifier].value - Identifier</li>
+  <li>Device.type - Fixed coding as PHD device from IEEE 11073-10101 CodeSystem</li>
+  <li>Device.specialization.systemType.coding[MDCType] - Fixed coding to 8528192 "MDC_AI_APPLIANCE_TABLETPC" from CodeSystem IEEE 11073-10101</li>
+  <li>Device.specialization.systemType.version - Version of the Specialization Standard</li>
+  <li>Device.patient - Reference to Patient</li>
+  <li>Device.version - Version of software, hardware, firmware, or an internet protocol used</li>
+  <li>Device.property - Device configurations (e.g., codings for PHD devices with which communication takes place)</li>
+</ul>
+
+<p><strong>Note:</strong> The repeatability of elements is not specified at this point; it is indicated in the profile representations in the "Card." column. For slice specifications (with [] brackets), the sliced element is always repeatable.</p>
+
+<p>Example instance of a tablet functioning as a gateway device:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"beispiel-phg-doccla"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://t-cabs.org/StructureDefinition/t-cabs-device-phg"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SYSID"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PHG-DOCCLA-12345"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"deviceName"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doccla Health Tablet"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user-friendly-name"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"532352"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MDC_REG_CERT_DATA_CONTINUA_VERSION"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.1.0"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"specialization"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"systemType"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8528192"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MDC_AI_APPLIANCE_TABLETPC"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"property"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"532353"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueCode"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"528388"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"528399"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"528426"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"528391"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"69680"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"528484"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"528405"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"531981"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"serialNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PHG-SN-789012"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"manufacturer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doccla GmbH"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"modelNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DHT-2024"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"patient"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/tcabs-patient-example"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="observation-hierarchy">Observation Hierarchy</h4>
+<p>All vital parameter observations inherit from the abstract profile <code class="language-plaintext highlighter-rouge">T_CABS_Observation_Vitalparameter</code>, which inherits from the <a href="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation">NumericObservation profile</a> of the PHD specification and was used as a parent profile for the specific parameters within the T-CABS study.</p>
+
+<h3 id="vital-parameters">Vital Parameters</h3>
+<p>At this point, only the mandatory elements of all vital parameter observations are listed. In the parameter-specific profiles, there are sometimes additional requirements (e.g., systolic and diastolic blood pressure in the profile <code class="language-plaintext highlighter-rouge">T_CABS_Observation_ArteriellerBlutdruck</code>)</p>
+
+<p>Mandatory specifications for a T-CABS vital parameter observation:</p>
+<ul>
+  <li>Observation.status - Status coding</li>
+  <li>Observation.code.coding[LoincCoding] - Fixed LOINC coding of the parameter</li>
+  <li>Observation.code.coding[MDCType] - Fixed IEEE coding of the parameter</li>
+  <li>Observation.category[PHD-Observation] - Coding as PHD parameter</li>
+  <li>Observation.category[VSCat] - Coding as vital parameter</li>
+  <li>Observation.subject - Reference to the patient</li>
+  <li>Observation.effective - Time point or period of measurement</li>
+  <li>Observation.device - Reference to PHD</li>
+  <li>Observation.extension[gatewayDevice] - Reference to PHG</li>
+</ul>
+
+<p><strong>Note:</strong> The repeatability of elements is not specified at this point; it is indicated in the profile representations in the "Card." column. For slice specifications (with [] brackets), the sliced element is always repeatable.</p>
+
+<p>Example instance of arterial oxygen saturation (SpO2):</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example-ArterielleSPO2-Doccla"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/phd/StructureDefinition/GatewayDevice"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device/beispiel-phg-doccla"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/observation-category"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vital-signs"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phd-observation"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2708-6"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"160300"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectivePeriod"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-15T08:15:00Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-15T08:15:00Z"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">98</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"bodySite"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11527006"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://snomed.info/sct"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Arterial system structure (body structure)"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/tcabs-patient-example"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"device"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device/beispiel-phd-doccla"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Example instance of arterial blood pressure:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example-ArteriellerBlutdruck-Doccla"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/phd/StructureDefinition/GatewayDevice"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device/beispiel-phg-doccla"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/observation-category"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vital-signs"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phd-observation"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"85354-9"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blood pressure panel with all children optional"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:iso:std:iso:11073:10101"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"150016"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectivePeriod"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-15T09:00:00Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2024-01-15T09:00:00Z"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"component"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm[Hg]"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm[Hg]"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">125</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8480-6"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm[Hg]"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm[Hg]"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8462-4"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/tcabs-patient-example"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"device"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device/beispiel-phd-doccla"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="implementation-notes">Implementation Notes</h3>
+
+<h4 id="device-setup">Device Setup</h4>
+<ul>
+  <li>PHD and PHG devices must be created before the first observation</li>
+  <li>Patient references are required in all device instances</li>
+</ul>
+
+<h4 id="code-systems">Code Systems</h4>
+<ul>
+  <li>LOINC and IEEE 11073 codes for interoperable parameter coding</li>
+  <li>UCUM units for standardized values</li>
+</ul>
+
+<h4 id="validation">Validation</h4>
+<ul>
+  <li>All profiles are PHD-IG compliant</li>
+  <li>Code slices are required bindings</li>
+  <li>Category codes are mandatory</li>
+</ul>
+
+<h3 id="technical-specifications">Technical Specifications</h3>
+
+<h4 id="valuesets">ValueSets</h4>
+<ul>
+  <li>Use of FHIR/PHD ValueSets</li>
+  <li>No manufacturer-specific ValueSets required</li>
+</ul>
+
+<h4 id="extensions">Extensions</h4>
+<ul>
+  <li>Use of PHD standard extensions</li>
+  <li>No Doccla-specific extensions necessary</li>
+</ul>
+
+<h4 id="constraints">Constraints</h4>
+<ul>
+  <li>Mandatory fields according to PHD profiles</li>
+  <li>Cardinalities according to base profiles</li>
+</ul>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="Cross-Domain-Implementation.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="Ventilation-Data-Implementation.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 19, 2025 11:55+0100">2025-11-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

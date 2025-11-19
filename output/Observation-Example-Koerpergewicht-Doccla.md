@@ -1,12 +1,14 @@
-# Beispiel Körpergewicht Messung - v0.1.0
+# Example Body Weight Measurement - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Körpergewicht Messung**
+* **Example Body Weight Measurement**
 
-## Example Observation: Beispiel Körpergewicht Messung
+## Example Observation: Example Body Weight Measurement
 
-Profile: [T-CABS Observation Koerpergewicht](StructureDefinition-t-cabs-observation-koerpergewicht.md)
+Profiles: [T-CABS Observation Body Weight](StructureDefinition-t-cabs-observation-koerpergewicht.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht)
+
+**Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
 **status**: Final
 
@@ -20,7 +22,7 @@ Profile: [T-CABS Observation Koerpergewicht](StructureDefinition-t-cabs-observat
 
 **value**: 75.8 kg(Details: UCUM codekg = 'kg')
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
 
 
 
@@ -32,9 +34,18 @@ Profile: [T-CABS Observation Koerpergewicht](StructureDefinition-t-cabs-observat
   "id" : "Example-Koerpergewicht-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht"
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht"
     ]
   },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+      "valueReference" : {
+        "reference" : "Device/beispiel-phg-doccla"
+      }
+    }
+  ],
   "status" : "final",
   "category" : [
     {

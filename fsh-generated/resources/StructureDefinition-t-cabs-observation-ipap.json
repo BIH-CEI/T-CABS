@@ -5,7 +5,7 @@
   "name": "T_CABS_Observation_IPAP",
   "title": "T-CABS Observation IPAP",
   "status": "draft",
-  "description": "Profil für einen Inspiratory Positive Airway Pressure (IPAP)",
+  "description": "Profile for Inspiratory Positive Airway Pressure (IPAP)",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -19,8 +19,7 @@
         "path": "Observation.code.coding",
         "patternCoding": {
           "code": "8410976",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_SABTE_PRESS_IPAP_SET"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

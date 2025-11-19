@@ -3,8 +3,8 @@
   "status": "draft",
   "name": "T_CABS_ValueSet_Beatmungsmodus",
   "id": "t-cabs-valueset-Beatmungsmodus",
-  "title": "T-CABS ValueSet Beatmungsmodus",
-  "description": "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",
+  "title": "T-CABS ValueSet Ventilation Mode",
+  "description": "This ValueSet contains codes to represent the different ventilation modes",
   "url": "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
   "compose": {
     "include": [
@@ -36,8 +36,20 @@
             "display": "MDC_VENT_MODE_ISO_CMV_VC"
           },
           {
-            "code": "151796",
-            "display": "MDC_PRESS_AWAY_CTS_POS"
+            "code": "475161",
+            "display": "MDC_VENT_MODE_ISO_CSV_6ACAP"
+          },
+          {
+            "code": "475140",
+            "display": "MDC_VENT_MODE_ISO_AC_VC_6ACAPL"
+          },
+          {
+            "code": "475136",
+            "display": "MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL"
+          },
+          {
+            "code": "475190",
+            "display": "MDC_VENT_MODE_ISO_HIFLOW_3NIV"
           }
         ]
       }

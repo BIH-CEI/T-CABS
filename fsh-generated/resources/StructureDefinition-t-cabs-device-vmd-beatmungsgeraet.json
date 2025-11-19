@@ -3,9 +3,9 @@
   "id": "t-cabs-device-vmd-beatmungsgeraet",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
   "name": "T_CABS_Device_VMD_Beatmungsgeraet",
-  "title": "T-CABS Device VMD Beatmungsgeraet",
+  "title": "T-CABS Device VMD Ventilator",
   "status": "draft",
-  "description": "Profil welches ein virtuelles Subsystem oder Modul darstellt",
+  "description": "Profile representing a virtual subsystem or module",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -14,15 +14,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Device.type.coding",
-        "path": "Device.type.coding",
-        "patternCoding": {
-          "code": "70002",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_DEV_SYS_PT_VENT_VMD"
-        }
-      },
       {
         "id": "Device.parent",
         "path": "Device.parent",

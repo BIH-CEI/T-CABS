@@ -19,7 +19,7 @@
   "name": "T_CABS_Patient",
   "title": "T-CABS Patient",
   "status": "draft",
-  "description": "Profil für eine/n Patient/in der T-CABS Studie",
+  "description": "Profile for a patient in the T-CABS study\nCompatibility:\nThe T_CABS_Patient profile aims for compatibility with the ISiKPatient version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Patient are also valid against the [ISiKPatient](https://simplifier.net/isik-stufe-5/isikpatient)",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

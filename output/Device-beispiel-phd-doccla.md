@@ -1,16 +1,16 @@
-# Beispiel PHD Messgerät - v0.1.0
+# Example PHD Measurement Device - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel PHD Messgerät**
+* **Example PHD Measurement Device**
 
-## Example Device: Beispiel PHD Messgerät
+## Example Device: Example PHD Measurement Device
 
 Profile: [T-CABS Device PHD](StructureDefinition-t-cabs-device-phd.md)
 
 **identifier**: IEEE 11073 System Identifier/PHD-DOCCLA-67890
 
-**manufacturer**: Doccla GmbH
+**manufacturer**: Masimo
 
 **serialNumber**: PHD-SN-345678
 
@@ -19,7 +19,7 @@ Profile: [T-CABS Device PHD](StructureDefinition-t-cabs-device-phd.md)
 | | | |
 | :--- | :--- | :--- |
 | - | **Name** | **Type** |
-| * | Doccla Pulsoximeter | User Friendly name |
+| * | Pulsoximeter | User Friendly name |
 
 **modelNumber**: DPO-2024
 
@@ -33,6 +33,8 @@ Profile: [T-CABS Device PHD](StructureDefinition-t-cabs-device-phd.md)
 | * | MDC_DEV_SPEC_PROFILE_PULS_OXIM | 1.0 |
 
 **patient**: [Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)](Patient-tcabs-patient-example.md)
+
+**owner**: [Organization Doccla Deutschland GmbH](Organization-beispiel-provider-doccla.md)
 
 
 
@@ -59,11 +61,11 @@ Profile: [T-CABS Device PHD](StructureDefinition-t-cabs-device-phd.md)
       "value" : "PHD-DOCCLA-67890"
     }
   ],
-  "manufacturer" : "Doccla GmbH",
+  "manufacturer" : "Masimo",
   "serialNumber" : "PHD-SN-345678",
   "deviceName" : [
     {
-      "name" : "Doccla Pulsoximeter",
+      "name" : "Pulsoximeter",
       "type" : "user-friendly-name"
     }
   ],
@@ -93,6 +95,9 @@ Profile: [T-CABS Device PHD](StructureDefinition-t-cabs-device-phd.md)
   ],
   "patient" : {
     "reference" : "Patient/tcabs-patient-example"
+  },
+  "owner" : {
+    "reference" : "Organization/beispiel-provider-doccla"
   }
 }
 

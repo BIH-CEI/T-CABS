@@ -3,9 +3,9 @@
   "id": "t-cabs-observation-gehstrecke",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke",
   "name": "T_CABS_Observation_Gehstrecke",
-  "title": "T-CABS Observation Gehstrecke",
+  "title": "T-CABS Observation Walking Distance",
   "status": "draft",
-  "description": "Profil für die Gehstrecke pro Tag (24 Stunden)",
+  "description": "Profile for walking distance per day (24 hours)",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,7 @@
         "sliceName": "LoincCoding",
         "patternCoding": {
           "code": "41950-7",
-          "system": "http://loinc.org",
-          "display": "Number of steps in 24 hour Measured"
+          "system": "http://loinc.org"
         }
       },
       {

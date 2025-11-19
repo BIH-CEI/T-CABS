@@ -3,14 +3,14 @@
   "id": "t-cabs-observation-arteriellerblutdruck",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
   "name": "T_CABS_Observation_ArteriellerBlutdruck",
-  "title": "T-CABS Observation Arterieller Blutdruck",
+  "title": "T-CABS Observation Arterial Blood Pressure",
   "status": "draft",
-  "description": "Profil für den arteriellen Blutdruck.",
+  "description": "Profile for arterial blood pressure.\nCompatibility:\nFor the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the [ISiKBlutdruckArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell)",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -29,14 +29,8 @@
         "sliceName": "LoincCoding",
         "patternCoding": {
           "code": "85354-9",
-          "system": "http://loinc.org",
-          "display": "Blood pressure panel with all children optional"
+          "system": "http://loinc.org"
         }
-      },
-      {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "max": "0"
       },
       {
         "id": "Observation.component",
@@ -228,6 +222,26 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.component:compound",
+        "path": "Observation.component",
+        "sliceName": "compound"
+      },
+      {
+        "id": "Observation.component:compound.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:compound.value[x]",
+        "path": "Observation.component.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:compound.dataAbsentReason",
+        "path": "Observation.component.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.component:accuracyComponent",
         "path": "Observation.component",
         "sliceName": "accuracyComponent"
@@ -275,106 +289,6 @@
       },
       {
         "id": "Observation.component:accuracyComponent.dataAbsentReason",
-        "path": "Observation.component.dataAbsentReason",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:alertOpStateComponent",
-        "path": "Observation.component",
-        "sliceName": "alertOpStateComponent"
-      },
-      {
-        "id": "Observation.component:alertOpStateComponent.code",
-        "path": "Observation.component.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:alertOpStateComponent.value[x]",
-        "path": "Observation.component.value[x]",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:alertOpStateComponent.dataAbsentReason",
-        "path": "Observation.component.dataAbsentReason",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:currentLimitsComponent",
-        "path": "Observation.component",
-        "sliceName": "currentLimitsComponent"
-      },
-      {
-        "id": "Observation.component:currentLimitsComponent.code",
-        "path": "Observation.component.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:currentLimitsComponent.value[x]",
-        "path": "Observation.component.value[x]",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:currentLimitsComponent.dataAbsentReason",
-        "path": "Observation.component.dataAbsentReason",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:alertOpTextStringComponent",
-        "path": "Observation.component",
-        "sliceName": "alertOpTextStringComponent"
-      },
-      {
-        "id": "Observation.component:alertOpTextStringComponent.code",
-        "path": "Observation.component.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:alertOpTextStringComponent.value[x]",
-        "path": "Observation.component.value[x]",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:alertOpTextStringComponent.dataAbsentReason",
-        "path": "Observation.component.dataAbsentReason",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:measurementConfidence95Component",
-        "path": "Observation.component",
-        "sliceName": "measurementConfidence95Component"
-      },
-      {
-        "id": "Observation.component:measurementConfidence95Component.code",
-        "path": "Observation.component.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:measurementConfidence95Component.value[x]",
-        "path": "Observation.component.value[x]",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:measurementConfidence95Component.dataAbsentReason",
-        "path": "Observation.component.dataAbsentReason",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:thresholdNotificationTextStringComponent",
-        "path": "Observation.component",
-        "sliceName": "thresholdNotificationTextStringComponent"
-      },
-      {
-        "id": "Observation.component:thresholdNotificationTextStringComponent.code",
-        "path": "Observation.component.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:thresholdNotificationTextStringComponent.value[x]",
-        "path": "Observation.component.value[x]",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:thresholdNotificationTextStringComponent.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "mustSupport": true
       },

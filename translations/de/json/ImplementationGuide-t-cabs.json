@@ -1,0 +1,1571 @@
+{
+  "id" : "ImplementationGuide-t-cabs",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "de",
+      "entries" : [
+        {
+          "id" : "ImplementationGuide.name",
+          "context" : "A natural language name identifying the implementation guide. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "source" : "TCABS",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.title",
+          "context" : "A short, descriptive, user-friendly title for the implementation guide.",
+          "source" : "T-CABS Implementation Guide",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.publisher",
+          "context" : "The name of the organization or individual that published the implementation guide.",
+          "source" : "BIH-CEI",
+          "target" : null
+        },
+        {
+          "id" : "ContactDetail.name",
+          "context" : "The name of an individual to contact.",
+          "source" : "BIH-CEI",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Germany",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel AHI Messung BREAS",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine AHI-Messung von einem BREAS Beatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel AMV Messung BREAS",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine gemessene AMV-Messung von einem BREAS Beatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel arterielle SPO2 Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine arterielle SPO2-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel arterieller Blutdruck Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine arterielle Blutdruck-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Atemfrequenz Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine Atemfrequenz-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Atemfrequenz Messung ResMed",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine gemessene Atemfrequenz von einem ResMed Beatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Atemzeitverhältnis ResMed",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für Atemzeitverhältnis von einem ResMed Beatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Beatmung BREAS",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine Beatmungsprozedur mit BREAS Gerät (PCV Modus)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Beatmung Löwenstein",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine Beatmungsprozedur mit Löwenstein Gerät (PSV Modus)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Beatmung ResMed",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine Beatmungsprozedur mit ResMed Gerät (CPAP Modus)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Beatmungsgerät BREAS",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein BREAS Heimbeatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Beatmungsgerät Löwenstein",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein Löwenstein Heimbeatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Beatmungsgerät ResMed",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein ResMed Heimbeatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel BMI Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine BMI-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel BREAS AHI",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen AHI-Channel zur Gruppierung von AHI-Messungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel BREAS AMV",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen AMV-Channel zur Gruppierung von AMV-Messungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel BREAS IPAP",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen IPAP-Channel zur Gruppierung von IPAP-Einstellungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel BREAS Target Volume",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen Target Volume-Channel zur Gruppierung von Target Volume-Einstellungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel Löwenstein PEEP",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen PEEP-Channel zur Gruppierung von PEEP-Messungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel Löwenstein TI",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen TI-Channel zur Gruppierung von TI-Messungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel Löwenstein TriggeredBreaths",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen TriggeredBreaths-Channel zur Gruppierung von TriggeredBreaths-Messungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel ResMed Atemfrequenz",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen Atemfrequenz-Channel zur Gruppierung von Atemfrequenz-Messungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel ResMed Atemzeitverhältnis",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen Atemzeitverhältnis-Channel zur Gruppierung von Atemzeitverhältnis-Berechnungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel ResMed Druck Min/Max",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen Druck Min/Max-Channel zur Gruppierung von Druck-Messungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Channel ResMed Leckage",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen Leckage-Channel zur Gruppierung von Leckage-Messungen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric BREAS AHI",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur AHI-Berechnung eines BREAS Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric BREAS AMV",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur AMV-Messung eines BREAS Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric BREAS IPAP",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur IPAP-Einstellung eines BREAS Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric BREAS Target Volume",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur Target Volume-Einstellung eines BREAS Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric Löwenstein PEEP",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur PEEP-Messung eines Löwenstein Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric Löwenstein TI",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur TI-Messung (Inspirationszeit) eines Löwenstein Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric Löwenstein TriggeredBreaths",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur TriggeredBreaths-Messung eines Löwenstein Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric ResMed Atemfrequenz",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur Atemfrequenz-Messung eines ResMed Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric ResMed Atemzeitverhältnis",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur Atemzeitverhältnis-Berechnung eines ResMed Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric ResMed Druck Min/Max",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur Druck Min/Max-Messung eines ResMed Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DeviceMetric ResMed Leckage",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine DeviceMetric zur Leckage-Messung eines ResMed Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel DiagnosticReport Wöchentliche Visite",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für einen Visitenbefund einer wöchentlichen telemedizinischen Visite",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Druck Min/Max ResMed",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für minimalen und maximalen Beatmungsdruck von einem ResMed Gerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel FEF25-75% Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine FEF25-75%-Messung (Mittlerer forcierter exspiratorischer Fluss) über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel FEV1 Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine FEV1-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel FEV1/FEV6 Ratio Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine FEV1/FEV6-Ratio-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel FEV6 Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine FEV6-Messung (Forciertes exspiratorisches Volumen in 6 Sekunden) über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Gehstrecke Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine Gehstrecken-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Handgriffstärke Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine Handgriffstärke-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Herzfrequenz Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine Herzfrequenz-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel IPAP BREAS",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für IPAP von einem BREAS Beatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Körpergewicht Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine Körpergewicht-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Körpertemperatur Messung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine Körpertemperatur-Messung über Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Leckage ResMed",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für Leckage-Messung von einem ResMed Beatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel PEEP Löwenstein",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für PEEP von einem Löwenstein Beatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel PHD Messgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein Personal Health Device Messgerät von Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel PHG Tablet",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein Personal Health Gateway Tablet von Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Provider Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für den Vitalparameter-Provider Doccla",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Provider Jochum",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für den Beatmungsgeräte-Provider Jochum",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Provider Löwenstein",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für den Beatmungsgeräte-Provider Löwenstein",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Provider Vivisol",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für den Beatmungsgeräte-Provider Vivisol",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Target Volume BREAS",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für Zielvolumen von einem BREAS Beatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel Telemedizinische Visite",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für eine wöchentliche telemedizinische Visite eines T-CABS Patienten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel TI Löwenstein",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für Inspirationszeit von einem Löwenstein Beatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel TriggeredBreaths Löwenstein",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für getriggerte Atemzüge von einem Löwenstein Beatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD BREAS AHI Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles AHI-Modul eines BREAS Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD BREAS AMV Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles AMV-Modul eines BREAS Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD BREAS IPAP Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles IPAP-Modul eines BREAS Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD BREAS Target Volume Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles Target Volume-Modul eines BREAS Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD Löwenstein PEEP Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles PEEP-Modul eines Löwenstein Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD Löwenstein TI Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles TI-Modul eines Löwenstein Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD Löwenstein TriggeredBreaths Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles TriggeredBreaths-Modul eines Löwenstein Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD ResMed Atemfrequenz Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles Atemfrequenz-Modul eines ResMed Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD ResMed Atemzeitverhältnis Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles Atemzeitverhältnis-Modul eines ResMed Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD ResMed Druck Min/Max Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles Druck Min/Max-Modul eines ResMed Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Beispiel VMD ResMed Leckage Module",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel für ein virtuelles Leckage-Modul eines ResMed Beatmungsgeräts",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Das Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS) der Klinik betreut Patient:innen mit Erkrankungen der Lunge, der Muskulatur oder des Nervensystems, die vorübergehend oder dauerhaft auf Unterstützung der Atmung angewiesen sind und ist Teil des zertifizierten Weaningzentrums der Klinik.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Device Channel Beatmungsgeraet",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Device MDS Heimbeatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für ein Heimbeatmungsgerät",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Device PHD",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für ein Messgerät am Patienten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Device PHG",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wird",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Device VMD Beatmungsgeraet",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil welches ein virtuelles Subsystem oder Modul darstellt",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS DeviceMetric NumericMetric",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil welches eine numerische Messung, Berechnung oder Einstellung darstellt",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS DiagnosticReport Visitenbefund",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für einen Beurteilung der wöchentlichen, telemedizinischen Visite innerhalb der T-CABS Studie",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Encounter Kontakt",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für einen Kontakt zum/zur Patienten/Patientin.\nKompatibilität:\nFür das Profil T_CABS_Encounter_Kontakt wird eine Kompatibilität mit dem ISiKKontaktGesundheitseinrichtung angestrebt, allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen T_CABS_Encounter_Kontakt valide sind, auch valide sind gegen den [ISiKKontaktGesundheitseinrichtung](https://simplifier.net/isik-stufe-5/isikkontaktgesundheitseinrichtung)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Funktion",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für eine Funktion einer Person innerhalb der T-CABS Studie",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation AF",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation AHI",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs aufgetretenen Apnoe- und Hypopnoe-Episoden, geteilt durch die Schlafdauer in Stunden",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation AMV",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für ein gemessenes oder eingestelltes Atemminutenvolumen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Arterieller Blutdruck",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für den arteriellen Blutdruck.\nKompatibilität:\nFür das Profil T_CABS_Observation_ArteriellerBlutdruck wird eine Kompatibilität mit ISiK in der Stufe 5 angestrebt, allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen T_CABS_Observation_ArteriellerBlutdruck valide sind, auch valide sind gegen den [ISiKBlutdruckArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Atemfrequenz",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für die Atemfrequenz.\nKompatibilität:\nFür das Profil T_CABS_Observation_Atemfrequenz wird eine Kompatibilität mit ISiK in der Stufe 5 angestrebt, allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen T_CABS_Observation_Atemfrequenz valide sind, auch valide sind gegen den [ISiKAtemfrequenz](https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/StructureDefinition/ISiKAtemfrequenz).",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Atemzeitverhaeltnis",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für Atemzeitverhältnis",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Beatmungsparameter (abstract)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Abstraktes Profil für Beatmungsparameter",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Beatmungsparameter mit Komponenten(abstract)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Abstraktes Profil für Beatmungsparameter mit mehreren Werten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation BMI",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für den Body Mass Index (BMI)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Druck MIN/MAX",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für den minimalen und maximalen Beatmungsdruck",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation FEF25-75",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für den mittleren forcier-exspiratorischen Fluss während der Ausatmung der 25 % bis 75 % der forcierten Vitalkapazität (FVC)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation FEV1",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation FEV1/FEV6",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für das Verhältnis FEV1/FEV6",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation FEV6",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für das forcierte exspiratorische Volumen in sechs Sekunden (FEV6)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Gehstrecke",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für die Gehstrecke pro Tag (24 Stunden)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Handgriffstärke",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für die Handgriffstärke",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Herzfrequenz",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für die Herzfrequenz.\nKompatibilität:\nFür das Profil T_CABS_Observation_Herzfrequenz wird eine Kompatibilität mit ISiK in der Stufe 5 angestrebt, allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen T_CABS_Observation_Herzfrequenz valide sind, auch valide sind gegen den [ISiKHerzfrequenz](https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz).",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation IPAP",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für einen Inspiratory Positive Airway Pressure (IPAP)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Koerpergewicht",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für das Körpergewicht.\nKompatibilität:\nFür das Profil T_CABS_Observation_Koerpergewicht wird eine Kompatibilität mit ISiK in der Stufe 5 angestrebt, allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen T_CABS_Observation_Koerpergewicht valide sind, auch valide sind gegen den [ISiKKoerpergewicht](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht).",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Koerpertemperatur",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für die Körpertemperatur.\nKompatibilität:\nFür das Profil T_CABS_Observation_Koerpertemperatur wird eine Kompatibilität mit ISiK in der Stufe 5 angestrebt, allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen T_CABS_Observation_Koerpertemperatur valide sind, auch valide sind gegen den [ISiKKoerpertemperatur](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur).",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Leckage",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für die Leckagerate unter Beatmung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation PEEP",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für einen Positiven endexspiratorischen Druck (PEEP)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation SPO2",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für die arterielle Sauerstoffsättigung (SPO2)\nKompatibilität:\nFür das Profil T_CABS_Observation_ArterielleSPO2 wird eine Kompatibilität mit ISiK in der Stufe 5 angestrebt, allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen T_CABS_Observation_ArterielleSPO2 valide sind, auch valide sind gegen den [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Target Volume",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für das Zielvolumen",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation TI",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für ein Dauer der Einatmungsphase (Inspiration)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation TriggeredBreaths",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für die Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Vitalparamter",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Abstraktes Profil für die gemessenen Vitalparameter",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Observation Vitalparamter mit Komponenten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Abstraktes Profil für die gemessenen Vitalparameter mit mehreren Werten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Organisation",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für eine Organisation die mit T-CABS Studie in Verbindung steht.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Patient",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für eine/n Patient/in der T-CABS Studie\nKompatibilität:\nFür das Profil T_CABS_Patient wird eine Kompatibilität mit dem ISiK-Patient angestrebt, allerdings kann nicht sichergestellt werden, dass Instanzen, die gegen T_CABS_Patient valide sind, auch valide sind gegen den [ISiKPatient](https://simplifier.net/isik-stufe-5/isikpatient)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Patient Example",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispielpatient für das T-CABS Projekt",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Patientengruppe",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil um Patienten innerhalb der T-CABS Studie gruppieren zu können.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Person mit Funktion",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für eine beteildigte Person innerhalb der T-CABS Studie.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Practitioner Example",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispielärztin für das T-CABS Projekt",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS PractitionerRole Funktion Beispiel",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Beispiel einer PractitionerRole für einen Pneumologen in der T-CABS Studie",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS Procedure Beatmung",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil für die Beatmungsprozedur",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS ValueSet Beatmungsform",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS ValueSet Beatmungsmodus",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS ValueSet Beatmungsstelle",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Dieses ValueSet enthält Codes um Beatmungsstellen abzubilden",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "T-CABS ValueSet PHDTyp",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Dieses ValueSet enthält Codes um die verschiedenen PHD-Messgeräte abzubilden",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Table of Contents",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Home",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Informationsmodell",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Profile Domaenenuebergreifend",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Profile Vitaldaten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Profile Beatmungsdaten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Beispiele Domaenenuebergreifend",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Beispiele Vitaldaten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Beispiele Beatmungsdaten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Implementierung Domaenenuebergreifend",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Implementierung Vitaldaten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Implementierung Beatmungsdaten",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Terminologien",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

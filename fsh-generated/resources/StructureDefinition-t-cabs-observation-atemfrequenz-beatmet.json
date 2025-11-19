@@ -3,9 +3,9 @@
   "id": "t-cabs-observation-atemfrequenz-beatmet",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet",
   "name": "T_CABS_Observation_Atemfrequenz_beatmet",
-  "title": "T-CABS Observation AF",
+  "title": "T-CABS Observation Respiratory Rate Ventilated",
   "status": "draft",
-  "description": "Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes",
+  "description": "Profile for a respiratory rate of the ventilator",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -19,8 +19,7 @@
         "path": "Observation.code.coding",
         "patternCoding": {
           "code": "151586",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_RESP_RATE"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

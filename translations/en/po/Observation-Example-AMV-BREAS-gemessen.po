@@ -1,0 +1,11 @@
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "MDC_VENT_VOL_MINUTE"
+msgstr ""
+
+# A human-readable form of the unit.
+#: Quantity.unit
+msgid "L/min"
+msgstr ""
+

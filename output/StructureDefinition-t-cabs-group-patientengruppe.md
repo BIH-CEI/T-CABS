@@ -1,22 +1,22 @@
-# T-CABS Patientengruppe - v0.1.0
+# T-CABS Patient Group - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Patientengruppe**
+* **T-CABS Patient Group**
 
-## Resource Profile: T-CABS Patientengruppe 
+## Resource Profile: T-CABS Patient Group 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Group_Patientengruppe |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Group_Patientengruppe |
 
  
-Profil um Patienten innerhalb der T-CABS Studie gruppieren zu können 
+Profile to group patients within the T-CABS study. 
 
 **Usages:**
 
-* Refer to this Profile: [T-CABS ResearchStudy Studie](StructureDefinition-t-cabs-researchstudy-studie.md)
+* This Profile is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-group-patientengruppe)
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-group-patient
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe",
   "version" : "0.1.0",
   "name" : "T_CABS_Group_Patientengruppe",
-  "title" : "T-CABS Patientengruppe",
+  "title" : "T-CABS Patient Group",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-group-patient
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil um Patienten innerhalb der T-CABS Studie gruppieren zu können",
+  "description" : "Profile to group patients within the T-CABS study.",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

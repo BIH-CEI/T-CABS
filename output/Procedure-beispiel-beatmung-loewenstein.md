@@ -1,12 +1,12 @@
-# Beispiel Beatmung Löwenstein - v0.1.0
+# Example Ventilation Löwenstein - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Beatmung Löwenstein**
+* **Example Ventilation Löwenstein**
 
-## Example Procedure: Beispiel Beatmung Löwenstein
+## Example Procedure: Example Ventilation Löwenstein
 
-Profile: [T-CABS Procedure Beatmung](StructureDefinition-t-cabs-procedure-beatmung.md)
+Profile: [T-CABS Procedure Ventilation](StructureDefinition-t-cabs-procedure-beatmung.md)
 
 **status**: Completed
 
@@ -16,7 +16,7 @@ Profile: [T-CABS Procedure Beatmung](StructureDefinition-t-cabs-procedure-beatmu
 
 **subject**: [Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)](Patient-tcabs-patient-example.md)
 
-**performed**: 2024-01-15 22:00:00+0000 --> 2024-01-16 06:00:00+0000
+**performed**: 2024-01-15 22:00:00+0000 --> 2024-02-18 06:00:00+0000
 
 **usedReference**: [Device: extension = 12450; identifier = UDI; manufacturer = Löwenstein Medical; serialNumber = PRISMA30-SN-345678; type = MDC_DEV_SYS_PT_VENT_MDS](Device-beispiel-beatmungsgeraet-loewenstein.md)
 
@@ -57,7 +57,7 @@ Profile: [T-CABS Procedure Beatmung](StructureDefinition-t-cabs-procedure-beatmu
   },
   "performedPeriod" : {
     "start" : "2024-01-15T22:00:00Z",
-    "end" : "2024-01-16T06:00:00Z"
+    "end" : "2024-02-18T06:00:00Z"
   },
   "usedReference" : [
     {

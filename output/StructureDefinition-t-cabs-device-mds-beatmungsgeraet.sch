@@ -19,6 +19,7 @@
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-mode']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-mode': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:manufacturer) &gt;= 1">manufacturer: minimum cardinality of 'manufacturer' is 1</sch:assert>
       <sch:assert test="count(f:serialNumber) &gt;= 1">serialNumber: minimum cardinality of 'serialNumber' is 1</sch:assert>
+      <sch:assert test="count(f:deviceName) &gt;= 1">deviceName: minimum cardinality of 'deviceName' is 1</sch:assert>
       <sch:assert test="count(f:patient) &gt;= 1">patient: minimum cardinality of 'patient' is 1</sch:assert>
       <sch:assert test="count(f:owner) &gt;= 1">owner: minimum cardinality of 'owner' is 1</sch:assert>
     </sch:rule>

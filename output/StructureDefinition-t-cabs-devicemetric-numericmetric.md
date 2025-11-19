@@ -1,4 +1,4 @@
-# T-CABS DeviceMetric NumericMetric - v0.1.0
+# T-CABS DeviceMetric NumericMetric - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_DeviceMetric_NumericMetric |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_DeviceMetric_NumericMetric |
 
  
-Profil welches eine numerische Messung, Berechnung oder Einstellung darstellt 
+Profile representing a numeric measurement, calculation, or setting 
 
 **Usages:**
 
-* Refer to this Profile: [T-CABS Observation Beatmungsparameter (abstract)](StructureDefinition-t-cabs-observation-beatmungsparameter.md)
+* Refer to this Profile: [T-CABS Observation Ventilation Parameter (abstract)](StructureDefinition-t-cabs-observation-beatmungsparameter.md) and [T-CABS Observation Ventilation Parameter with Components (abstract)](StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.md)
 * Examples for this Profile: [DeviceMetric/beispiel-devicemetric-breas-ahi](DeviceMetric-beispiel-devicemetric-breas-ahi.md), [DeviceMetric/beispiel-devicemetric-breas-amv](DeviceMetric-beispiel-devicemetric-breas-amv.md), [DeviceMetric/beispiel-devicemetric-breas-ipap](DeviceMetric-beispiel-devicemetric-breas-ipap.md), [DeviceMetric/beispiel-devicemetric-breas-targetvolume](DeviceMetric-beispiel-devicemetric-breas-targetvolume.md)...Show 7 more,[DeviceMetric/beispiel-devicemetric-loewenstein-peep](DeviceMetric-beispiel-devicemetric-loewenstein-peep.md),[DeviceMetric/beispiel-devicemetric-loewenstein-ti](DeviceMetric-beispiel-devicemetric-loewenstein-ti.md),[DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths](DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.md),[DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz](DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.md),[DeviceMetric/beispiel-devicemetric-resmed-atemzeit](DeviceMetric-beispiel-devicemetric-resmed-atemzeit.md),[DeviceMetric/beispiel-devicemetric-resmed-druck](DeviceMetric-beispiel-devicemetric-resmed-druck.md)and[DeviceMetric/beispiel-devicemetric-resmed-leckage](DeviceMetric-beispiel-devicemetric-resmed-leckage.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-devicemetric-numericmetric)
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-devicemetric-
   "name" : "T_CABS_DeviceMetric_NumericMetric",
   "title" : "T-CABS DeviceMetric NumericMetric",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -50,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-devicemetric-
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil welches eine numerische Messung, Berechnung oder Einstellung darstellt",
+  "description" : "Profile representing a numeric measurement, calculation, or setting",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -91,6 +102,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-devicemetric-
         "path" : "DeviceMetric"
       },
       {
+        "id" : "DeviceMetric.type",
+        "path" : "DeviceMetric.type",
+        "definition" : "Coding to identify the parameter"
+      },
+      {
+        "id" : "DeviceMetric.source",
+        "path" : "DeviceMetric.source",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+            ]
+          }
+        ]
+      },
+      {
         "id" : "DeviceMetric.parent",
         "path" : "DeviceMetric.parent",
         "type" : [
@@ -105,7 +133,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-devicemetric-
       {
         "id" : "DeviceMetric.category",
         "path" : "DeviceMetric.category",
-        "short" : "Messung oder Einstellung"
+        "short" : "Measurement or setting"
       }
     ]
   }

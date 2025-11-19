@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary -  v0.1.0</title>
+    <title>Artifacts Summary - T-CABS Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -50,16 +50,26 @@
 
         <!-- Placeholder for child template header declarations -->
 
-<div id="hl7-nav">
-    <a id="logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
         <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
     </a>            
 </div>
 
+<div id="family-nav">
+    <a id="family-logo" no-external="true" href="https://www.charite.de/">
+        <img alt="visit the website" height="60" src="Logo_Charite.png" />
+    </a>            
+</div>
+
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
 
 
             </span>
@@ -90,37 +100,37 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="Informationsmodell.html">Informationsmodell</a>
+    <a href="Information-Model.html">Information Model</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profile
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profiles
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Profile-Allgemein.html">Profile-Allgemein</a>
+        <a href="Cross-Domain-Profiles.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Profile-Vitalparameter.html">Profile-Vitalparameter</a>
+        <a href="Vital-Data-Profiles.html">Vital Data</a>
       </li>
       <li>
-        <a href="Profile-Beatmungsparameter.html">Profile-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Profiles.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Beispiele
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Beispiele-Allgemein.html">Beispiele-Allgemein</a>
+        <a href="Cross-Domain-Examples.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Beispiele-Vitalparameter.html">Beispiele-Vitalparameter</a>
+        <a href="Vital-Data-Examples.html">Vital Data</a>
       </li>
       <li>
-        <a href="Beispiele-Beatmungsparameter.html">Beispiele-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Examples.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
@@ -130,18 +140,18 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Implementation-Allgemein.html">Implementation-Allgemein</a>
+        <a href="Cross-Domain-Implementation.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="Implementation-Vitalparameter.html">Implementation-Vitalparameter</a>
+        <a href="Vital-Data-Implementation.html">Vital Data</a>
       </li>
       <li>
-        <a href="Implementation-Beatmungsparameter.html">Implementation-Beatmungsparameter</a>
+        <a href="Ventilation-Data-Implementation.html">Ventilation Data</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="Terminologien.html">Terminologien</a>
+    <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -159,6 +169,16 @@
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+          <span style="float:right;">
+
+            <a href="Terminologies.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html">next&gt;</a>
+
+          </span>
 
         </ul>
       </div>  <!-- /container -->
@@ -178,7 +198,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TCABS - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -213,19 +233,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html"
-                  title="StructureDefinition/t-cabs-device-channel-beatmungsgeraet">T-CABS Device Channel Beatmungsgeraet</a>
+                  title="StructureDefinition/t-cabs-device-channel-beatmungsgeraet">T-CABS Device Channel Ventilator</a>
             </td>
             <td>
-<p>Profil das eine Channel darstellt, zur Gruppierung von DeviceMetrics</p>
+<p>Profile representing a channel for grouping DeviceMetrics</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html"
-                  title="StructureDefinition/t-cabs-device-mds-beatmungsgeraet">T-CABS Device MDS Heimbeatmungsgerät</a>
+                  title="StructureDefinition/t-cabs-device-mds-beatmungsgeraet">T-CABS Device MDS Home Ventilator</a>
             </td>
             <td>
-<p>Profil für ein Heimbeatmungsgerät</p>
+<p>Profile for a home ventilator device</p>
 </td>
          </tr>
          <tr>
@@ -234,7 +254,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-device-phd">T-CABS Device PHD</a>
             </td>
             <td>
-<p>Profil für ein Messgerät am Patienten</p>
+<p>Profile for a personal health device measuring at the patient</p>
 </td>
          </tr>
          <tr>
@@ -243,16 +263,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-device-phg">T-CABS Device PHG</a>
             </td>
             <td>
-<p>Profil für ein Tablet welches u.a. als Gatewaydevice verwendet wird</p>
+<p>Profile for a tablet used as a gateway device</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html"
-                  title="StructureDefinition/t-cabs-device-vmd-beatmungsgeraet">T-CABS Device VMD Beatmungsgeraet</a>
+                  title="StructureDefinition/t-cabs-device-vmd-beatmungsgeraet">T-CABS Device VMD Ventilator</a>
             </td>
             <td>
-<p>Profil welches ein virtuelles Subsystem oder Modul darstellt</p>
+<p>Profile representing a virtual subsystem or module</p>
 </td>
          </tr>
          <tr>
@@ -261,43 +281,36 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-devicemetric-numericmetric">T-CABS DeviceMetric NumericMetric</a>
             </td>
             <td>
-<p>Profil welches eine numerische Messung, Berechnung oder Einstellung darstellt</p>
+<p>Profile representing a numeric measurement, calculation, or setting</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html"
-                  title="StructureDefinition/t-cabs-diagnosticreport-visitenbefund">T-CABS DiagnosticReport Visitenbefund</a>
+                  title="StructureDefinition/t-cabs-diagnosticreport-visitenbefund">T-CABS DiagnosticReport Visit Finding</a>
             </td>
             <td>
-<p>Profil für einen Beurteilung der wöchentlichen, telemedizinischen Visite innerhalb der T-CABS Studie</p>
+<p>Profile for an assessment of the weekly telemedicine visit within the T-CABS study</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-encounter-kontakt.html"
-                  title="StructureDefinition/t-cabs-encounter-kontakt">T-CABS Encounter Kontakt</a>
+                  title="StructureDefinition/t-cabs-encounter-kontakt">T-CABS Encounter Contact</a>
             </td>
             <td>
-<p>Profil für einen Kontakt/ eine Visite innerhalb der T-CABS Studie</p>
+<p>Profile for a contact with the patient.
+Compatibility:
+The T_CABS_Encounter_Kontakt profile aims for compatibility with the ISiKKontaktGesundheitseinrichtung, however it cannot be guaranteed that instances valid against T_CABS_Encounter_Kontakt are also valid against the <a href="https://simplifier.net/isik-stufe-5/isikkontaktgesundheitseinrichtung">ISiKKontaktGesundheitseinrichtung</a></p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-practitioner-funktion.html"
-                  title="StructureDefinition/t-cabs-practitioner-funktion">T-CABS Funktion</a>
+                  title="StructureDefinition/t-cabs-practitioner-funktion">T-CABS Function</a>
             </td>
             <td>
-<p>Profil für eine Funktion einer Person innerhalb der T-CABS Studie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html"
-                  title="StructureDefinition/t-cabs-observation-atemfrequenz-beatmet">T-CABS Observation AF</a>
-            </td>
-            <td>
-<p>Profil für eine gemessene oder eingestellte Atemfrequenz des Beatmungsgerätes</p>
+<p>Profile for a function of a person within the T-CABS study</p>
 </td>
          </tr>
          <tr>
@@ -306,7 +319,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-observation-ahi">T-CABS Observation AHI</a>
             </td>
             <td>
-<p>Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs aufgetretenen Apnoe- und Hypopnoe-Episoden, geteilt durch die Schlafdauer in Stunden</p>
+<p>Profile for the Apnea-Hypopnea Index (AHI) - Total number of apnea and hypopnea episodes that occurred during sleep, divided by sleep duration in hours</p>
 </td>
          </tr>
          <tr>
@@ -315,34 +328,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-observation-amv">T-CABS Observation AMV</a>
             </td>
             <td>
-<p>Profil für ein gemessenes oder eingestelltes Atemminutenvolumen</p>
+<p>Profile for a alveolar minute volume</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-observation-arteriellerblutdruck.html"
-                  title="StructureDefinition/t-cabs-observation-arteriellerblutdruck">T-CABS Observation Arterieller Blutdruck</a>
+                  title="StructureDefinition/t-cabs-observation-arteriellerblutdruck">T-CABS Observation Arterial Blood Pressure</a>
             </td>
             <td>
-<p>Profil für den arteriellen Blutdruck.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-observation-atemfrequenz.html"
-                  title="StructureDefinition/t-cabs-observation-atemfrequenz">T-CABS Observation Atemfrequenz</a>
-            </td>
-            <td>
-<p>Profil für die Atemfrequenz per Doccla</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html"
-                  title="StructureDefinition/t-cabs-observation-atemzeitverhaeltnis">T-CABS Observation Atemzeitverhaeltnis</a>
-            </td>
-            <td>
-<p>Profil für Atemzeitverhältnis</p>
+<p>Profile for arterial blood pressure.
+Compatibility:
+For the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the <a href="https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell">ISiKBlutdruckArteriell</a></p>
 </td>
          </tr>
          <tr>
@@ -351,25 +348,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-observation-bmi">T-CABS Observation BMI</a>
             </td>
             <td>
-<p>Profil für den Body Mass Index (BMI)</p>
+<p>Profile for Body Mass Index (BMI)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-observation-beatmungsparameter.html"
-                  title="StructureDefinition/t-cabs-observation-beatmungsparameter">T-CABS Observation Beatmungsparameter (abstract)</a>
+               <a href="StructureDefinition-t-cabs-observation-koerpertemperatur.html"
+                  title="StructureDefinition/t-cabs-observation-koerpertemperatur">T-CABS Observation Body Temperature</a>
             </td>
             <td>
-<p>Abstraktes Profil für Beatmungsparameter</p>
+<p>Profile for body temperature.
+Compatibility:
+For the profile T_CABS_Observation_Koerpertemperatur, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpertemperatur are also valid against the <a href="https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur">ISiKKoerpertemperatur</a>.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-observation-druck-minmax.html"
-                  title="StructureDefinition/t-cabs-observation-druck-minmax">T-CABS Observation Druck MIN/MAX</a>
+               <a href="StructureDefinition-t-cabs-observation-koerpergewicht.html"
+                  title="StructureDefinition/t-cabs-observation-koerpergewicht">T-CABS Observation Body Weight</a>
             </td>
             <td>
-<p>Profil für den minimalen und maximalen Beatmungsdruck</p>
+<p>Profile for body weight.
+Compatibility:
+For the profile T_CABS_Observation_Koerpergewicht, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpergewicht are also valid against the <a href="https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht">ISiKKoerpergewicht</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observationfev1fef25-75.html"
+                  title="StructureDefinition/t-cabs-observationfev1fef25-75">T-CABS Observation FEF25-75</a>
+            </td>
+            <td>
+<p>Profile for mean forced expiratory flow during exhalation of 25% to 75% of forced vital capacity (FVC)</p>
 </td>
          </tr>
          <tr>
@@ -378,25 +388,45 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-observationfev1">T-CABS Observation FEV1</a>
             </td>
             <td>
-<p>Profil für das forcierte exspiratorische Volumen in einer Sekunde (FEV1)</p>
+<p>Profile for Forced Expiratory Volume in 1 Second (FEV1)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-observation-gehstrecke.html"
-                  title="StructureDefinition/t-cabs-observation-gehstrecke">T-CABS Observation Gehstrecke</a>
+               <a href="StructureDefinition-t-cabs-observationfev1fev6.html"
+                  title="StructureDefinition/t-cabs-observationfev1fev6">T-CABS Observation FEV1/FEV6</a>
             </td>
             <td>
-<p>Profil für die Gehstrecke pro Tag (24 Stunden)</p>
+<p>Profile for FEV1/FEV6 ratio</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observationfev6.html"
+                  title="StructureDefinition/t-cabs-observationfev6">T-CABS Observation FEV6</a>
+            </td>
+            <td>
+<p>Profile for Forced Expiratory Volume in 6 Seconds (FEV6)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observationhandgriffstaerke.html"
+                  title="StructureDefinition/t-cabs-observationhandgriffstaerke">T-CABS Observation Hand Grip Strength</a>
+            </td>
+            <td>
+<p>Profile for hand grip strength</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-observation-herzfrequenz.html"
-                  title="StructureDefinition/t-cabs-observation-herzfrequenz">T-CABS Observation Herzfrequenz</a>
+                  title="StructureDefinition/t-cabs-observation-herzfrequenz">T-CABS Observation Heart Rate</a>
             </td>
             <td>
-<p>Profil für die Herzfrequenz</p>
+<p>Profile for heart rate.
+Compatibility:
+For the profile T_CABS_Observation_Herzfrequenz, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Herzfrequenz are also valid against the <a href="https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz">ISiKHerzfrequenz</a>.</p>
 </td>
          </tr>
          <tr>
@@ -405,34 +435,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-observation-ipap">T-CABS Observation IPAP</a>
             </td>
             <td>
-<p>Profil für einen Inspiratory Positive Airway Pressure (IPAP)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-observation-koerpergewicht.html"
-                  title="StructureDefinition/t-cabs-observation-koerpergewicht">T-CABS Observation Koerpergewicht</a>
-            </td>
-            <td>
-<p>Profil für das Körpergewicht</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-observation-koerpertemperatur.html"
-                  title="StructureDefinition/t-cabs-observation-koerpertemperatur">T-CABS Observation Koerpertemperatur</a>
-            </td>
-            <td>
-<p>Profil für die Körpertemperatur</p>
+<p>Profile for Inspiratory Positive Airway Pressure (IPAP)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-observation-leckage.html"
-                  title="StructureDefinition/t-cabs-observation-leckage">T-CABS Observation Leckage</a>
+                  title="StructureDefinition/t-cabs-observation-leckage">T-CABS Observation Leakage</a>
             </td>
             <td>
-<p>Profil für die Leckagerate unter Beatmung</p>
+<p>Profile for leakage rate during ventilation</p>
 </td>
          </tr>
          <tr>
@@ -441,7 +453,45 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-observation-peep">T-CABS Observation PEEP</a>
             </td>
             <td>
-<p>Profil für einen Positiven endexspiratorischen Druck (PEEP)</p>
+<p>Profile for Positive End-Expiratory Pressure (PEEP)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observation-druck-minmax.html"
+                  title="StructureDefinition/t-cabs-observation-druck-minmax">T-CABS Observation Pressure MIN/MAX</a>
+            </td>
+            <td>
+<p>Profile for minimal and maximal ventilation pressure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observation-atemfrequenz.html"
+                  title="StructureDefinition/t-cabs-observation-atemfrequenz">T-CABS Observation Respiratory Rate</a>
+            </td>
+            <td>
+<p>Profile for respiratory rate.
+Compatibility:
+For the profile T_CABS_Observation_Atemfrequenz, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Atemfrequenz are also valid against the <a href="https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/StructureDefinition/ISiKAtemfrequenz">ISiKAtemfrequenz</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html"
+                  title="StructureDefinition/t-cabs-observation-atemfrequenz-beatmet">T-CABS Observation Respiratory Rate Ventilated</a>
+            </td>
+            <td>
+<p>Profile for a respiratory rate of the ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html"
+                  title="StructureDefinition/t-cabs-observation-atemzeitverhaeltnis">T-CABS Observation Respiratory Time Ratio</a>
+            </td>
+            <td>
+<p>Profile for respiratory time ratio</p>
 </td>
          </tr>
          <tr>
@@ -450,7 +500,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-observation-arteriellespo2">T-CABS Observation SPO2</a>
             </td>
             <td>
-<p>Profil für die arterielle Sauerstoffsättigung (SPO2)</p>
+<p>Profile for arterial oxygen saturation (SPO2)
+Compatibility:
+For the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the <a href="https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell">ISiKSauerstoffsaettigungArteriell</a></p>
 </td>
          </tr>
          <tr>
@@ -459,7 +511,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-observation-ti">T-CABS Observation TI</a>
             </td>
             <td>
-<p>Profil für ein Dauer der Einatmungsphase (Inspiration)</p>
+<p>Profile for duration of inspiratory phase</p>
 </td>
          </tr>
          <tr>
@@ -468,34 +520,72 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-observation-targetvolume">T-CABS Observation Target Volume</a>
             </td>
             <td>
-<p>Profil für das Zielvolumen</p>
+<p>Profile for the target volume</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-observation-triggeredbreaths.html"
-                  title="StructureDefinition/t-cabs-observation-triggeredbreaths">T-CABS Observation TriggeredBreaths</a>
+                  title="StructureDefinition/t-cabs-observation-triggeredbreaths">T-CABS Observation Triggered Breaths</a>
             </td>
             <td>
-<p>Profil für die Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums</p>
+<p>Profile for the percentage of spontaneously triggered breaths within a time period</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observation-beatmungsparameter.html"
+                  title="StructureDefinition/t-cabs-observation-beatmungsparameter">T-CABS Observation Ventilation Parameter (abstract)</a>
+            </td>
+            <td>
+<p>Abstract profile for ventilation parameters</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html"
+                  title="StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten">T-CABS Observation Ventilation Parameter with Components (abstract)</a>
+            </td>
+            <td>
+<p>Abstract profile for ventilation parameters with multiple values</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-observation-vitalparameter.html"
-                  title="StructureDefinition/t-cabs-observation-vitalparameter">T-CABS Observation Vitalparamter</a>
+                  title="StructureDefinition/t-cabs-observation-vitalparameter">T-CABS Observation Vital Parameter</a>
             </td>
             <td>
-<p>Abstraktes Profil für die gemessenen Vitalparameter von Doccla</p>
+<p>Abstract profile for measured vital parameters</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.html"
+                  title="StructureDefinition/t-cabs-observation-vitalparametermitkomponenten">T-CABS Observation Vital Parameter with Components</a>
+            </td>
+            <td>
+<p>Abstract profile for measured vital parameters with multiple values</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observation-gehstrecke.html"
+                  title="StructureDefinition/t-cabs-observation-gehstrecke">T-CABS Observation Walking Distance</a>
+            </td>
+            <td>
+<p>Profile for walking distance per day (24 hours)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-organisation.html"
-                  title="StructureDefinition/t-cabs-organisation">T-CABS Organisation</a>
+                  title="StructureDefinition/t-cabs-organisation">T-CABS Organization</a>
             </td>
             <td>
-<p>Profil für eine Organisation die mit T-CABS Studie in Verbindung steht</p>
+<p>Profile for an organization associated with the T-CABS study.
+Compatibility:
+The T_CABS_Organisation profile aims for compatibility with the ISiKOrganisation version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Organisation are also valid against the <a href="https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation">ISiKOrganisation</a></p>
 </td>
          </tr>
          <tr>
@@ -504,52 +594,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/t-cabs-patient">T-CABS Patient</a>
             </td>
             <td>
-<p>Profil für eine/n Patient/in der T-CABS Studie</p>
+<p>Profile for a patient in the T-CABS study
+Compatibility:
+The T_CABS_Patient profile aims for compatibility with the ISiKPatient version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Patient are also valid against the <a href="https://simplifier.net/isik-stufe-5/isikpatient">ISiKPatient</a></p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-group-patientengruppe.html"
-                  title="StructureDefinition/t-cabs-group-patientengruppe">T-CABS Patientengruppe</a>
+                  title="StructureDefinition/t-cabs-group-patientengruppe">T-CABS Patient Group</a>
             </td>
             <td>
-<p>Profil um Patienten innerhalb der T-CABS Studie gruppieren zu können</p>
+<p>Profile to group patients within the T-CABS study.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html"
-                  title="StructureDefinition/t-cabs-practitioner-personmitfunktion">T-CABS Person mit Funktion</a>
+                  title="StructureDefinition/t-cabs-practitioner-personmitfunktion">T-CABS Person with Function</a>
             </td>
             <td>
-<p>Profil für eine beteildigte Person innerhalb der T-CABS Studie</p>
+<p>Profile for an involved person within the T-CABS study.
+Compatibility:
+The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with ISiK version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Practitioner_PersonMitFunktion are also valid against the <a href="https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf">ISiKPersonImGesundheitsberuf</a></p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-procedure-beatmung.html"
-                  title="StructureDefinition/t-cabs-procedure-beatmung">T-CABS Procedure Beatmung</a>
+                  title="StructureDefinition/t-cabs-procedure-beatmung">T-CABS Procedure Ventilation</a>
             </td>
             <td>
-<p>Profil für die Beatmungsprozedur</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-researchstudy-studie.html"
-                  title="StructureDefinition/t-cabs-researchstudy-studie">T-CABS ResearchStudy Studie</a>
-            </td>
-            <td>
-<p>Profil um die Metadaten der T-CABS Studie abzubilden</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-researchsubject-studienteilnehmer.html"
-                  title="StructureDefinition/t-cabs-researchsubject-studienteilnehmer">T-CABS ResearchSubject Studie</a>
-            </td>
-            <td>
-<p>Profil um Patienten innerhalb der Studie referenzieren können</p>
+<p>Profile for the ventilation procedure</p>
 </td>
          </tr>
       </tbody>
@@ -562,20 +638,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-t-cabs-valueset-Beatmungsform.html"
-                  title="ValueSet/t-cabs-valueset-Beatmungsform">T-CABS ValueSet Beatmungsform</a>
+               <a href="ValueSet-t-cabs-valueset-phdtyp.html"
+                  title="ValueSet/t-cabs-valueset-phdtyp">T-CABS ValueSet PHD Type</a>
             </td>
             <td>
-<p>Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden</p>
+<p>This ValueSet contains codes to represent the different PHD measurement devices</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-t-cabs-valueset-Beatmungsmodus.html"
-                  title="ValueSet/t-cabs-valueset-Beatmungsmodus">T-CABS ValueSet Beatmungsmodus</a>
+                  title="ValueSet/t-cabs-valueset-Beatmungsmodus">T-CABS ValueSet Ventilation Mode</a>
             </td>
             <td>
-<p>Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden</p>
+<p>This ValueSet contains codes to represent the different ventilation modes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-t-cabs-valueset-beatmungsstelle.html"
+                  title="ValueSet/t-cabs-valueset-beatmungsstelle">T-CABS ValueSet Ventilation Site</a>
+            </td>
+            <td>
+<p>This ValueSet contains codes to represent the body sites where ventilation is applied</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-t-cabs-valueset-Beatmungsform.html"
+                  title="ValueSet/t-cabs-valueset-Beatmungsform">T-CABS ValueSet Ventilation Type</a>
+            </td>
+            <td>
+<p>This ValueSet contains codes to represent the different types of ventilation</p>
 </td>
          </tr>
       </tbody>
@@ -588,604 +682,649 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-Example-AHI-BREAS.html"
-                  title="Observation/Example-AHI-BREAS">Beispiel AHI Messung BREAS</a>
+               <a href="Organization-CABS.html" title="Organization/CABS">Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS)</a>
             </td>
             <td>
-<p>Beispiel für eine AHI-Messung von einem BREAS Beatmungsgerät</p>
+<p>The Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS) of the clinic cares for patients with diseases of the lungs, muscles or nervous system who are temporarily or permanently dependent on respiratory support and is part of the clinic's certified weaning center.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-AHI-BREAS.html"
+                  title="Observation/Example-AHI-BREAS">Example AHI Measurement BREAS</a>
+            </td>
+            <td>
+<p>Example of an AHI measurement from a BREAS ventilator</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-Example-AMV-BREAS-gemessen.html"
-                  title="Observation/Example-AMV-BREAS-gemessen">Beispiel AMV Messung BREAS</a>
+                  title="Observation/Example-AMV-BREAS-gemessen">Example AMV Measurement BREAS</a>
             </td>
             <td>
-<p>Beispiel für eine gemessene AMV-Messung von einem BREAS Beatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-Atemfrequenz-Doccla.html"
-                  title="Observation/Example-Atemfrequenz-Doccla">Beispiel Atemfrequenz Messung</a>
-            </td>
-            <td>
-<p>Beispiel für eine Atemfrequenz-Messung über Doccla</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-Atemfrequenz-ResMed-gemessen.html"
-                  title="Observation/Example-Atemfrequenz-ResMed-gemessen">Beispiel Atemfrequenz Messung ResMed</a>
-            </td>
-            <td>
-<p>Beispiel für eine gemessene Atemfrequenz von einem ResMed Beatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-Atemzeitverhaeltnis-ResMed.html"
-                  title="Observation/Example-Atemzeitverhaeltnis-ResMed">Beispiel Atemzeitverhältnis ResMed</a>
-            </td>
-            <td>
-<p>Beispiel für Atemzeitverhältnis von einem ResMed Beatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-BMI-Doccla.html"
-                  title="Observation/Example-BMI-Doccla">Beispiel BMI Messung</a>
-            </td>
-            <td>
-<p>Beispiel für eine BMI-Messung über Doccla</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Procedure-beispiel-beatmung-breas.html"
-                  title="Procedure/beispiel-beatmung-breas">Beispiel Beatmung BREAS</a>
-            </td>
-            <td>
-<p>Beispiel für eine Beatmungsprozedur mit BREAS Gerät (PCV Modus)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Procedure-beispiel-beatmung-loewenstein.html"
-                  title="Procedure/beispiel-beatmung-loewenstein">Beispiel Beatmung Löwenstein</a>
-            </td>
-            <td>
-<p>Beispiel für eine Beatmungsprozedur mit Löwenstein Gerät (PSV Modus)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Procedure-beispiel-beatmung-resmed.html"
-                  title="Procedure/beispiel-beatmung-resmed">Beispiel Beatmung ResMed</a>
-            </td>
-            <td>
-<p>Beispiel für eine Beatmungsprozedur mit ResMed Gerät (CPAP Modus)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-beatmungsgeraet-breas.html"
-                  title="Device/beispiel-beatmungsgeraet-breas">Beispiel Beatmungsgerät BREAS</a>
-            </td>
-            <td>
-<p>Beispiel für ein BREAS Heimbeatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-beatmungsgeraet-loewenstein.html"
-                  title="Device/beispiel-beatmungsgeraet-loewenstein">Beispiel Beatmungsgerät Löwenstein</a>
-            </td>
-            <td>
-<p>Beispiel für ein Löwenstein Heimbeatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-beatmungsgeraet-resmed.html"
-                  title="Device/beispiel-beatmungsgeraet-resmed">Beispiel Beatmungsgerät ResMed</a>
-            </td>
-            <td>
-<p>Beispiel für ein ResMed Heimbeatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-breas-ahi.html"
-                  title="Device/beispiel-channel-breas-ahi">Beispiel Channel BREAS AHI</a>
-            </td>
-            <td>
-<p>Beispiel für einen AHI-Channel zur Gruppierung von AHI-Messungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-breas-amv.html"
-                  title="Device/beispiel-channel-breas-amv">Beispiel Channel BREAS AMV</a>
-            </td>
-            <td>
-<p>Beispiel für einen AMV-Channel zur Gruppierung von AMV-Messungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-breas-ipap.html"
-                  title="Device/beispiel-channel-breas-ipap">Beispiel Channel BREAS IPAP</a>
-            </td>
-            <td>
-<p>Beispiel für einen IPAP-Channel zur Gruppierung von IPAP-Einstellungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-breas-targetvolume.html"
-                  title="Device/beispiel-channel-breas-targetvolume">Beispiel Channel BREAS Target Volume</a>
-            </td>
-            <td>
-<p>Beispiel für einen Target Volume-Channel zur Gruppierung von Target Volume-Einstellungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-loewenstein-peep.html"
-                  title="Device/beispiel-channel-loewenstein-peep">Beispiel Channel Löwenstein PEEP</a>
-            </td>
-            <td>
-<p>Beispiel für einen PEEP-Channel zur Gruppierung von PEEP-Messungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-loewenstein-ti.html"
-                  title="Device/beispiel-channel-loewenstein-ti">Beispiel Channel Löwenstein TI</a>
-            </td>
-            <td>
-<p>Beispiel für einen TI-Channel zur Gruppierung von TI-Messungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-loewenstein-triggeredbreaths.html"
-                  title="Device/beispiel-channel-loewenstein-triggeredbreaths">Beispiel Channel Löwenstein TriggeredBreaths</a>
-            </td>
-            <td>
-<p>Beispiel für einen TriggeredBreaths-Channel zur Gruppierung von TriggeredBreaths-Messungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-resmed-atemfrequenz.html"
-                  title="Device/beispiel-channel-resmed-atemfrequenz">Beispiel Channel ResMed Atemfrequenz</a>
-            </td>
-            <td>
-<p>Beispiel für einen Atemfrequenz-Channel zur Gruppierung von Atemfrequenz-Messungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-resmed-atemzeit.html"
-                  title="Device/beispiel-channel-resmed-atemzeit">Beispiel Channel ResMed Atemzeitverhältnis</a>
-            </td>
-            <td>
-<p>Beispiel für einen Atemzeitverhältnis-Channel zur Gruppierung von Atemzeitverhältnis-Berechnungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-resmed-druck.html"
-                  title="Device/beispiel-channel-resmed-druck">Beispiel Channel ResMed Druck Min/Max</a>
-            </td>
-            <td>
-<p>Beispiel für einen Druck Min/Max-Channel zur Gruppierung von Druck-Messungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-channel-resmed-leckage.html"
-                  title="Device/beispiel-channel-resmed-leckage">Beispiel Channel ResMed Leckage</a>
-            </td>
-            <td>
-<p>Beispiel für einen Leckage-Channel zur Gruppierung von Leckage-Messungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-breas-ahi.html"
-                  title="DeviceMetric/beispiel-devicemetric-breas-ahi">Beispiel DeviceMetric BREAS AHI</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur AHI-Berechnung eines BREAS Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-breas-amv.html"
-                  title="DeviceMetric/beispiel-devicemetric-breas-amv">Beispiel DeviceMetric BREAS AMV</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur AMV-Messung eines BREAS Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-breas-ipap.html"
-                  title="DeviceMetric/beispiel-devicemetric-breas-ipap">Beispiel DeviceMetric BREAS IPAP</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur IPAP-Einstellung eines BREAS Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-breas-targetvolume.html"
-                  title="DeviceMetric/beispiel-devicemetric-breas-targetvolume">Beispiel DeviceMetric BREAS Target Volume</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur Target Volume-Einstellung eines BREAS Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-loewenstein-peep.html"
-                  title="DeviceMetric/beispiel-devicemetric-loewenstein-peep">Beispiel DeviceMetric Löwenstein PEEP</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur PEEP-Messung eines Löwenstein Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-loewenstein-ti.html"
-                  title="DeviceMetric/beispiel-devicemetric-loewenstein-ti">Beispiel DeviceMetric Löwenstein TI</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur TI-Messung (Inspirationszeit) eines Löwenstein Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.html"
-                  title="DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths">Beispiel DeviceMetric Löwenstein TriggeredBreaths</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur TriggeredBreaths-Messung eines Löwenstein Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.html"
-                  title="DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz">Beispiel DeviceMetric ResMed Atemfrequenz</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur Atemfrequenz-Messung eines ResMed Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-resmed-atemzeit.html"
-                  title="DeviceMetric/beispiel-devicemetric-resmed-atemzeit">Beispiel DeviceMetric ResMed Atemzeitverhältnis</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur Atemzeitverhältnis-Berechnung eines ResMed Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-resmed-druck.html"
-                  title="DeviceMetric/beispiel-devicemetric-resmed-druck">Beispiel DeviceMetric ResMed Druck Min/Max</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur Druck Min/Max-Messung eines ResMed Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DeviceMetric-beispiel-devicemetric-resmed-leckage.html"
-                  title="DeviceMetric/beispiel-devicemetric-resmed-leckage">Beispiel DeviceMetric ResMed Leckage</a>
-            </td>
-            <td>
-<p>Beispiel für eine DeviceMetric zur Leckage-Messung eines ResMed Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite.html"
-                  title="DiagnosticReport/Example-DiagnosticReport-Woechentliche-Visite">Beispiel DiagnosticReport Wöchentliche Visite</a>
-            </td>
-            <td>
-<p>Beispiel für einen Visitenbefund einer wöchentlichen telemedizinischen Visite</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-DruckMinMax-ResMed.html"
-                  title="Observation/Example-DruckMinMax-ResMed">Beispiel Druck Min/Max ResMed</a>
-            </td>
-            <td>
-<p>Beispiel für minimalen und maximalen Beatmungsdruck von einem ResMed Gerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-FEV1-Doccla.html"
-                  title="Observation/Example-FEV1-Doccla">Beispiel FEV1 Messung</a>
-            </td>
-            <td>
-<p>Beispiel für eine FEV1-Messung über Doccla</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-Gehstrecke-Doccla.html"
-                  title="Observation/Example-Gehstrecke-Doccla">Beispiel Gehstrecke Messung</a>
-            </td>
-            <td>
-<p>Beispiel für eine Gehstrecken-Messung über Doccla</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-Herzfrequenz-Doccla.html"
-                  title="Observation/Example-Herzfrequenz-Doccla">Beispiel Herzfrequenz Messung</a>
-            </td>
-            <td>
-<p>Beispiel für eine Herzfrequenz-Messung über Doccla</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-IPAP-BREAS.html"
-                  title="Observation/Example-IPAP-BREAS">Beispiel IPAP BREAS</a>
-            </td>
-            <td>
-<p>Beispiel für IPAP von einem BREAS Beatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-Koerpergewicht-Doccla.html"
-                  title="Observation/Example-Koerpergewicht-Doccla">Beispiel Körpergewicht Messung</a>
-            </td>
-            <td>
-<p>Beispiel für eine Körpergewicht-Messung über Doccla</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-Koerpertemperatur-Doccla.html"
-                  title="Observation/Example-Koerpertemperatur-Doccla">Beispiel Körpertemperatur Messung</a>
-            </td>
-            <td>
-<p>Beispiel für eine Körpertemperatur-Messung über Doccla</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-Leckage-ResMed.html"
-                  title="Observation/Example-Leckage-ResMed">Beispiel Leckage ResMed</a>
-            </td>
-            <td>
-<p>Beispiel für Leckage-Messung von einem ResMed Beatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-PEEP-Loewenstein.html"
-                  title="Observation/Example-PEEP-Loewenstein">Beispiel PEEP Löwenstein</a>
-            </td>
-            <td>
-<p>Beispiel für PEEP von einem Löwenstein Beatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-phd-doccla.html"
-                  title="Device/beispiel-phd-doccla">Beispiel PHD Messgerät</a>
-            </td>
-            <td>
-<p>Beispiel für ein Personal Health Device Messgerät von Doccla</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-phg-doccla.html"
-                  title="Device/beispiel-phg-doccla">Beispiel PHG Tablet</a>
-            </td>
-            <td>
-<p>Beispiel für ein Personal Health Gateway Tablet von Doccla</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-beispiel-provider-jochum.html"
-                  title="Organization/beispiel-provider-jochum">Beispiel Provider Jochum</a>
-            </td>
-            <td>
-<p>Beispiel für den Beatmungsgeräte-Provider Jochum</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-beispiel-provider-loewenstein.html"
-                  title="Organization/beispiel-provider-loewenstein">Beispiel Provider Löwenstein</a>
-            </td>
-            <td>
-<p>Beispiel für den Beatmungsgeräte-Provider Löwenstein</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-beispiel-provider-vivisol.html"
-                  title="Organization/beispiel-provider-vivisol">Beispiel Provider Vivisol</a>
-            </td>
-            <td>
-<p>Beispiel für den Beatmungsgeräte-Provider Vivisol</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-TI-Loewenstein.html"
-                  title="Observation/Example-TI-Loewenstein">Beispiel TI Löwenstein</a>
-            </td>
-            <td>
-<p>Beispiel für Inspirationszeit von einem Löwenstein Beatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-TargetVolume-BREAS.html"
-                  title="Observation/Example-TargetVolume-BREAS">Beispiel Target Volume BREAS</a>
-            </td>
-            <td>
-<p>Beispiel für Zielvolumen von einem BREAS Beatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Encounter-Example-Encounter-Telemedizinische-Visite.html"
-                  title="Encounter/Example-Encounter-Telemedizinische-Visite">Beispiel Telemedizinische Visite</a>
-            </td>
-            <td>
-<p>Beispiel für eine wöchentliche telemedizinische Visite eines T-CABS Patienten</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-TriggeredBreaths-Loewenstein.html"
-                  title="Observation/Example-TriggeredBreaths-Loewenstein">Beispiel TriggeredBreaths Löwenstein</a>
-            </td>
-            <td>
-<p>Beispiel für getriggerte Atemzüge von einem Löwenstein Beatmungsgerät</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-breas-ahi.html"
-                  title="Device/beispiel-vmd-breas-ahi">Beispiel VMD BREAS AHI Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles AHI-Modul eines BREAS Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-breas-amv.html"
-                  title="Device/beispiel-vmd-breas-amv">Beispiel VMD BREAS AMV Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles AMV-Modul eines BREAS Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-breas-ipap.html"
-                  title="Device/beispiel-vmd-breas-ipap">Beispiel VMD BREAS IPAP Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles IPAP-Modul eines BREAS Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-breas-targetvolume.html"
-                  title="Device/beispiel-vmd-breas-targetvolume">Beispiel VMD BREAS Target Volume Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles Target Volume-Modul eines BREAS Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-loewenstein-peep.html"
-                  title="Device/beispiel-vmd-loewenstein-peep">Beispiel VMD Löwenstein PEEP Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles PEEP-Modul eines Löwenstein Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-loewenstein-ti.html"
-                  title="Device/beispiel-vmd-loewenstein-ti">Beispiel VMD Löwenstein TI Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles TI-Modul eines Löwenstein Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-loewenstein-triggeredbreaths.html"
-                  title="Device/beispiel-vmd-loewenstein-triggeredbreaths">Beispiel VMD Löwenstein TriggeredBreaths Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles TriggeredBreaths-Modul eines Löwenstein Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-resmed-atemfrequenz.html"
-                  title="Device/beispiel-vmd-resmed-atemfrequenz">Beispiel VMD ResMed Atemfrequenz Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles Atemfrequenz-Modul eines ResMed Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-resmed-atemzeit.html"
-                  title="Device/beispiel-vmd-resmed-atemzeit">Beispiel VMD ResMed Atemzeitverhältnis Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles Atemzeitverhältnis-Modul eines ResMed Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-resmed-druck.html"
-                  title="Device/beispiel-vmd-resmed-druck">Beispiel VMD ResMed Druck Min/Max Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles Druck Min/Max-Modul eines ResMed Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Device-beispiel-vmd-resmed-leckage.html"
-                  title="Device/beispiel-vmd-resmed-leckage">Beispiel VMD ResMed Leckage Module</a>
-            </td>
-            <td>
-<p>Beispiel für ein virtuelles Leckage-Modul eines ResMed Beatmungsgeräts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Example-ArterielleSPO2-Doccla.html"
-                  title="Observation/Example-ArterielleSPO2-Doccla">Beispiel arterielle SPO2 Messung</a>
-            </td>
-            <td>
-<p>Beispiel für eine arterielle SPO2-Messung über Doccla</p>
+<p>Example of a measured AMV measurement from a BREAS ventilator</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-Example-ArteriellerBlutdruck-Doccla.html"
-                  title="Observation/Example-ArteriellerBlutdruck-Doccla">Beispiel arterieller Blutdruck Messung</a>
+                  title="Observation/Example-ArteriellerBlutdruck-Doccla">Example Arterial Blood Pressure Measurement</a>
             </td>
             <td>
-<p>Beispiel für eine arterielle Blutdruck-Messung über Doccla</p>
+<p>Example of an arterial blood pressure measurement via Doccla</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Organization-CABS.html" title="Organization/CABS">Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS)</a>
+               <a href="Observation-Example-ArterielleSPO2-Doccla.html"
+                  title="Observation/Example-ArterielleSPO2-Doccla">Example Arterial SPO2 Measurement</a>
             </td>
             <td>
-<p>Das Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS) der Klinik betreut Patient:innen mit Erkrankungen der Lunge, der Muskulatur oder des Nervensystems, die vorübergehend oder dauerhaft auf Unterstützung der Atmung angewiesen sind und ist Teil des zertifizierten Weaningzentrums der Klinik.</p>
+<p>Example of an arterial SPO2 measurement via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-BMI-Doccla.html"
+                  title="Observation/Example-BMI-Doccla">Example BMI Measurement</a>
+            </td>
+            <td>
+<p>Example of a BMI measurement via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-Koerpertemperatur-Doccla.html"
+                  title="Observation/Example-Koerpertemperatur-Doccla">Example Body Temperature Measurement</a>
+            </td>
+            <td>
+<p>Example of a body temperature measurement via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-Koerpergewicht-Doccla.html"
+                  title="Observation/Example-Koerpergewicht-Doccla">Example Body Weight Measurement</a>
+            </td>
+            <td>
+<p>Example of a body weight measurement via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-breas-ahi.html"
+                  title="Device/beispiel-channel-breas-ahi">Example Channel BREAS AHI</a>
+            </td>
+            <td>
+<p>Example of an AHI channel for grouping AHI measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-breas-amv.html"
+                  title="Device/beispiel-channel-breas-amv">Example Channel BREAS AMV</a>
+            </td>
+            <td>
+<p>Example of an AMV channel for grouping AMV measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-breas-ipap.html"
+                  title="Device/beispiel-channel-breas-ipap">Example Channel BREAS IPAP</a>
+            </td>
+            <td>
+<p>Example of an IPAP channel for grouping IPAP settings</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-breas-targetvolume.html"
+                  title="Device/beispiel-channel-breas-targetvolume">Example Channel BREAS Target Volume</a>
+            </td>
+            <td>
+<p>Example of a target volume channel for grouping target volume settings</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-loewenstein-peep.html"
+                  title="Device/beispiel-channel-loewenstein-peep">Example Channel Löwenstein PEEP</a>
+            </td>
+            <td>
+<p>Example of a PEEP channel for grouping PEEP measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-loewenstein-ti.html"
+                  title="Device/beispiel-channel-loewenstein-ti">Example Channel Löwenstein TI</a>
+            </td>
+            <td>
+<p>Example of a TI channel for grouping TI measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-loewenstein-triggeredbreaths.html"
+                  title="Device/beispiel-channel-loewenstein-triggeredbreaths">Example Channel Löwenstein TriggeredBreaths</a>
+            </td>
+            <td>
+<p>Example of a TriggeredBreaths channel for grouping TriggeredBreaths measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-resmed-leckage.html"
+                  title="Device/beispiel-channel-resmed-leckage">Example Channel ResMed Leakage</a>
+            </td>
+            <td>
+<p>Example of a leakage channel for grouping leakage measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-resmed-druck.html"
+                  title="Device/beispiel-channel-resmed-druck">Example Channel ResMed Pressure Min/Max</a>
+            </td>
+            <td>
+<p>Example of a pressure min/max channel for grouping pressure measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-resmed-atemfrequenz.html"
+                  title="Device/beispiel-channel-resmed-atemfrequenz">Example Channel ResMed Respiratory Rate</a>
+            </td>
+            <td>
+<p>Example of a respiratory rate channel for grouping respiratory rate measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-channel-resmed-atemzeit.html"
+                  title="Device/beispiel-channel-resmed-atemzeit">Example Channel ResMed Respiratory Time Ratio</a>
+            </td>
+            <td>
+<p>Example of a respiratory time ratio channel for grouping respiratory time ratio calculations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-breas-ahi.html"
+                  title="DeviceMetric/beispiel-devicemetric-breas-ahi">Example DeviceMetric BREAS AHI</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for AHI calculation of a BREAS ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-breas-amv.html"
+                  title="DeviceMetric/beispiel-devicemetric-breas-amv">Example DeviceMetric BREAS AMV</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for AMV measurement of a BREAS ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-breas-ipap.html"
+                  title="DeviceMetric/beispiel-devicemetric-breas-ipap">Example DeviceMetric BREAS IPAP</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for IPAP setting of a BREAS ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-breas-targetvolume.html"
+                  title="DeviceMetric/beispiel-devicemetric-breas-targetvolume">Example DeviceMetric BREAS Target Volume</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for target volume setting of a BREAS ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-loewenstein-peep.html"
+                  title="DeviceMetric/beispiel-devicemetric-loewenstein-peep">Example DeviceMetric Löwenstein PEEP</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for PEEP measurement of a Löwenstein ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-loewenstein-ti.html"
+                  title="DeviceMetric/beispiel-devicemetric-loewenstein-ti">Example DeviceMetric Löwenstein TI</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for TI measurement (inspiration time) of a Löwenstein ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.html"
+                  title="DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths">Example DeviceMetric Löwenstein TriggeredBreaths</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for TriggeredBreaths measurement of a Löwenstein ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-resmed-leckage.html"
+                  title="DeviceMetric/beispiel-devicemetric-resmed-leckage">Example DeviceMetric ResMed Leakage</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for leakage measurement of a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-resmed-druck.html"
+                  title="DeviceMetric/beispiel-devicemetric-resmed-druck">Example DeviceMetric ResMed Pressure Min/Max</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for pressure min/max measurement of a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.html"
+                  title="DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz">Example DeviceMetric ResMed Respiratory Rate</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for respiratory rate measurement of a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-beispiel-devicemetric-resmed-atemzeit.html"
+                  title="DeviceMetric/beispiel-devicemetric-resmed-atemzeit">Example DeviceMetric ResMed Respiratory Time Ratio</a>
+            </td>
+            <td>
+<p>Example of a DeviceMetric for respiratory time ratio calculation of a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite.html"
+                  title="DiagnosticReport/Example-DiagnosticReport-Woechentliche-Visite">Example DiagnosticReport Weekly Visit</a>
+            </td>
+            <td>
+<p>Example of a visit finding of a weekly telemedicine visit</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-FEF25-75-Doccla.html"
+                  title="Observation/Example-FEF25-75-Doccla">Example FEF25-75% Measurement</a>
+            </td>
+            <td>
+<p>Example of a FEF25-75% measurement (Mean forced expiratory flow) via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-FEV1-Doccla.html"
+                  title="Observation/Example-FEV1-Doccla">Example FEV1 Measurement</a>
+            </td>
+            <td>
+<p>Example of a FEV1 measurement via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-FEV1-FEV6-Doccla.html"
+                  title="Observation/Example-FEV1-FEV6-Doccla">Example FEV1/FEV6 Ratio Measurement</a>
+            </td>
+            <td>
+<p>Example of a FEV1/FEV6 ratio measurement via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-FEV6-Doccla.html"
+                  title="Observation/Example-FEV6-Doccla">Example FEV6 Measurement</a>
+            </td>
+            <td>
+<p>Example of a FEV6 measurement (Forced Expiratory Volume in 6 Seconds) via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-Handgriffstaerke-Doccla.html"
+                  title="Observation/Example-Handgriffstaerke-Doccla">Example Hand Grip Strength Measurement</a>
+            </td>
+            <td>
+<p>Example of a hand grip strength measurement via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-Herzfrequenz-Doccla.html"
+                  title="Observation/Example-Herzfrequenz-Doccla">Example Heart Rate Measurement</a>
+            </td>
+            <td>
+<p>Example of a heart rate measurement via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-IPAP-BREAS.html"
+                  title="Observation/Example-IPAP-BREAS">Example IPAP BREAS</a>
+            </td>
+            <td>
+<p>Example of IPAP from a BREAS ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-Leckage-ResMed.html"
+                  title="Observation/Example-Leckage-ResMed">Example Leakage ResMed</a>
+            </td>
+            <td>
+<p>Example of leakage measurement from a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-PEEP-Loewenstein.html"
+                  title="Observation/Example-PEEP-Loewenstein">Example PEEP Löwenstein</a>
+            </td>
+            <td>
+<p>Example of PEEP from a Löwenstein ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-phd-doccla.html"
+                  title="Device/beispiel-phd-doccla">Example PHD Measurement Device</a>
+            </td>
+            <td>
+<p>Example of a Personal Health Device measurement device from Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-phg-doccla.html"
+                  title="Device/beispiel-phg-doccla">Example PHG Tablet</a>
+            </td>
+            <td>
+<p>Example of a Personal Health Gateway tablet from Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-DruckMinMax-ResMed.html"
+                  title="Observation/Example-DruckMinMax-ResMed">Example Pressure Min/Max ResMed</a>
+            </td>
+            <td>
+<p>Example of minimal and maximal ventilation pressure from a ResMed device</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-beispiel-provider-doccla.html"
+                  title="Organization/beispiel-provider-doccla">Example Provider Doccla</a>
+            </td>
+            <td>
+<p>Example for the vital parameter provider Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-beispiel-provider-jochum.html"
+                  title="Organization/beispiel-provider-jochum">Example Provider Jochum</a>
+            </td>
+            <td>
+<p>Example for the ventilation equipment provider Jochum</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-beispiel-provider-loewenstein.html"
+                  title="Organization/beispiel-provider-loewenstein">Example Provider Löwenstein</a>
+            </td>
+            <td>
+<p>Example for the ventilation equipment provider Löwenstein</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-beispiel-provider-vivisol.html"
+                  title="Organization/beispiel-provider-vivisol">Example Provider Vivisol</a>
+            </td>
+            <td>
+<p>Example for the ventilation equipment provider Vivisol</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-Atemfrequenz-Doccla.html"
+                  title="Observation/Example-Atemfrequenz-Doccla">Example Respiratory Rate Measurement</a>
+            </td>
+            <td>
+<p>Example of a respiratory rate measurement via Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-Atemfrequenz-ResMed-gemessen.html"
+                  title="Observation/Example-Atemfrequenz-ResMed-gemessen">Example Respiratory Rate Measurement ResMed</a>
+            </td>
+            <td>
+<p>Example of a measured respiratory rate from a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-Atemzeitverhaeltnis-ResMed.html"
+                  title="Observation/Example-Atemzeitverhaeltnis-ResMed">Example Respiratory Time Ratio ResMed</a>
+            </td>
+            <td>
+<p>Example of respiratory time ratio from a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-TI-Loewenstein.html"
+                  title="Observation/Example-TI-Loewenstein">Example TI Löwenstein</a>
+            </td>
+            <td>
+<p>Example of inspiration time from a Löwenstein ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-TargetVolume-BREAS.html"
+                  title="Observation/Example-TargetVolume-BREAS">Example Target Volume BREAS</a>
+            </td>
+            <td>
+<p>Example of target volume from a BREAS ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-Example-Encounter-Telemedizinische-Visite.html"
+                  title="Encounter/Example-Encounter-Telemedizinische-Visite">Example Telemedicine Visit</a>
+            </td>
+            <td>
+<p>Example of a weekly telemedicine visit of a T-CABS patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-TriggeredBreaths-Loewenstein.html"
+                  title="Observation/Example-TriggeredBreaths-Loewenstein">Example Triggered Breaths Löwenstein</a>
+            </td>
+            <td>
+<p>Example of triggered breaths from a Löwenstein ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-breas-ahi.html"
+                  title="Device/beispiel-vmd-breas-ahi">Example VMD BREAS AHI Module</a>
+            </td>
+            <td>
+<p>Example of a virtual AHI module of a BREAS ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-breas-amv.html"
+                  title="Device/beispiel-vmd-breas-amv">Example VMD BREAS AMV Module</a>
+            </td>
+            <td>
+<p>Example of a virtual AMV module of a BREAS ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-breas-ipap.html"
+                  title="Device/beispiel-vmd-breas-ipap">Example VMD BREAS IPAP Module</a>
+            </td>
+            <td>
+<p>Example of a virtual IPAP module of a BREAS ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-breas-targetvolume.html"
+                  title="Device/beispiel-vmd-breas-targetvolume">Example VMD BREAS Target Volume Module</a>
+            </td>
+            <td>
+<p>Example of a virtual target volume module of a BREAS ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-loewenstein-peep.html"
+                  title="Device/beispiel-vmd-loewenstein-peep">Example VMD Löwenstein PEEP Module</a>
+            </td>
+            <td>
+<p>Example of a virtual PEEP module of a Löwenstein ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-loewenstein-ti.html"
+                  title="Device/beispiel-vmd-loewenstein-ti">Example VMD Löwenstein TI Module</a>
+            </td>
+            <td>
+<p>Example of a virtual TI module of a Löwenstein ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-loewenstein-triggeredbreaths.html"
+                  title="Device/beispiel-vmd-loewenstein-triggeredbreaths">Example VMD Löwenstein TriggeredBreaths Module</a>
+            </td>
+            <td>
+<p>Example of a virtual TriggeredBreaths module of a Löwenstein ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-resmed-leckage.html"
+                  title="Device/beispiel-vmd-resmed-leckage">Example VMD ResMed Leakage Module</a>
+            </td>
+            <td>
+<p>Example of a virtual leakage module of a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-resmed-druck.html"
+                  title="Device/beispiel-vmd-resmed-druck">Example VMD ResMed Pressure Min/Max Module</a>
+            </td>
+            <td>
+<p>Example of a virtual pressure min/max module of a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-resmed-atemfrequenz.html"
+                  title="Device/beispiel-vmd-resmed-atemfrequenz">Example VMD ResMed Respiratory Rate Module</a>
+            </td>
+            <td>
+<p>Example of a virtual respiratory rate module of a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-vmd-resmed-atemzeit.html"
+                  title="Device/beispiel-vmd-resmed-atemzeit">Example VMD ResMed Respiratory Time Ratio Module</a>
+            </td>
+            <td>
+<p>Example of a virtual respiratory time ratio module of a ResMed ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-beispiel-beatmung-breas.html"
+                  title="Procedure/beispiel-beatmung-breas">Example Ventilation BREAS</a>
+            </td>
+            <td>
+<p>Example of a ventilation procedure with BREAS device (PCV mode)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-beispiel-beatmung-loewenstein.html"
+                  title="Procedure/beispiel-beatmung-loewenstein">Example Ventilation Löwenstein</a>
+            </td>
+            <td>
+<p>Example of a ventilation procedure with Löwenstein device (PSV mode)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-beispiel-beatmung-resmed.html"
+                  title="Procedure/beispiel-beatmung-resmed">Example Ventilation ResMed</a>
+            </td>
+            <td>
+<p>Example of a ventilation procedure with ResMed device (CPAP mode)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-beatmungsgeraet-breas.html"
+                  title="Device/beispiel-beatmungsgeraet-breas">Example Ventilator BREAS</a>
+            </td>
+            <td>
+<p>Example of a BREAS home ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-beatmungsgeraet-loewenstein.html"
+                  title="Device/beispiel-beatmungsgeraet-loewenstein">Example Ventilator Löwenstein</a>
+            </td>
+            <td>
+<p>Example of a Löwenstein home ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-beatmungsgeraet-resmed.html"
+                  title="Device/beispiel-beatmungsgeraet-resmed">Example Ventilator ResMed</a>
+            </td>
+            <td>
+<p>Example of a ResMed home ventilator</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-Gehstrecke-Doccla.html"
+                  title="Observation/Example-Gehstrecke-Doccla">Example Walking Distance Measurement</a>
+            </td>
+            <td>
+<p>Example of a walking distance measurement via Doccla</p>
 </td>
          </tr>
          <tr>
@@ -1194,7 +1333,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="Patient/tcabs-patient-example">T-CABS Patient Example</a>
             </td>
             <td>
-<p>Beispielpatient für das T-CABS Projekt</p>
+<p>Example patient for the T-CABS project</p>
 </td>
          </tr>
          <tr>
@@ -1203,16 +1342,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="Practitioner/tcabs-practitioner-example">T-CABS Practitioner Example</a>
             </td>
             <td>
-<p>Beispielärztin für das T-CABS Projekt</p>
+<p>Example physician for the T-CABS project</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="PractitionerRole-tcabs-practitioner-role-example.html"
-                  title="PractitionerRole/tcabs-practitioner-role-example">T-CABS PractitionerRole Funktion Beispiel</a>
+                  title="PractitionerRole/tcabs-practitioner-role-example">T-CABS PractitionerRole Function Example</a>
             </td>
             <td>
-<p>Beispiel einer PractitionerRole für einen Pneumologen in der T-CABS Studie</p>
+<p>Example of a PractitionerRole for a pulmonologist in the T-CABS study</p>
 </td>
          </tr>
       </tbody>
@@ -1233,9 +1372,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="Terminologies.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 16, 2025 18:59+0200">2025-10-16</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 19, 2025 11:55+0100">2025-11-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

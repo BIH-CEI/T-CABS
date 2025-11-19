@@ -5,7 +5,7 @@
   "name": "T_CABS_Device_PHD",
   "title": "T-CABS Device PHD",
   "status": "draft",
-  "description": "Profil für ein Messgerät am Patienten",
+  "description": "Profile for a personal health device measuring at the patient",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -37,20 +37,23 @@
       {
         "id": "Device.serialNumber",
         "path": "Device.serialNumber",
-        "short": "Seriennummer des Geraetes",
+        "short": "Serial number of the device",
         "mustSupport": true
       },
       {
         "id": "Device.specialization.systemType.coding:MDCType",
         "path": "Device.specialization.systemType.coding",
         "sliceName": "MDCType",
-        "short": "Art des Messgerätes",
-        "definition": "528388 MDC_DEV_SPEC_PROFILE_PULS_OXIM - Pulsoximeter\n528399 MDC_DEV_SPEC_PROFILE_SCALE - Waage\n528426 MDC_DEV_SPEC_PROFILE_HF_STRENGTH - Handstärkemesser\n528391 MDC_DEV_SPEC_PROFILE_BP - Sphygmomanometer\n69680 MDC_DEV_ANALY_AWAY_MULTI_PARAM - Spirometer\n528484 MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER - Schrittzähler\n528405\tMDC_DEV_SPEC_PROFILE_BCA - Peak Flow Meter\n"
+        "short": "Type of measurement device",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp"
+        }
       },
       {
         "id": "Device.patient",
         "path": "Device.patient",
-        "short": "Referenz auf den Patienten",
+        "short": "Reference to the patient",
         "min": 1,
         "type": [
           {

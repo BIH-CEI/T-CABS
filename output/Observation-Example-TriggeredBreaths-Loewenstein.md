@@ -1,12 +1,12 @@
-# Beispiel TriggeredBreaths Löwenstein - v0.1.0
+# Example Triggered Breaths Löwenstein - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel TriggeredBreaths Löwenstein**
+* **Example Triggered Breaths Löwenstein**
 
-## Example Observation: Beispiel TriggeredBreaths Löwenstein
+## Example Observation: Example Triggered Breaths Löwenstein
 
-Profile: [T-CABS Observation TriggeredBreaths](StructureDefinition-t-cabs-observation-triggeredbreaths.md)
+Profile: [T-CABS Observation Triggered Breaths](StructureDefinition-t-cabs-observation-triggeredbreaths.md)
 
 **partOf**: [Procedure MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015](Procedure-beispiel-beatmung-loewenstein.md)
 

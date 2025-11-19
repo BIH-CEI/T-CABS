@@ -1,18 +1,18 @@
-# T-CABS DiagnosticReport Visitenbefund - v0.1.0
+# T-CABS DiagnosticReport Visit Finding - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS DiagnosticReport Visitenbefund**
+* **T-CABS DiagnosticReport Visit Finding**
 
-## Resource Profile: T-CABS DiagnosticReport Visitenbefund 
+## Resource Profile: T-CABS DiagnosticReport Visit Finding 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_DiagnosticReport_Visitenbefund |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_DiagnosticReport_Visitenbefund |
 
  
-Profil für einen Beurteilung der wöchentlichen, telemedizinischen Visite innerhalb der T-CABS Studie 
+Profile for an assessment of the weekly telemedicine visit within the T-CABS study 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-diagnosticrep
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund",
   "version" : "0.1.0",
   "name" : "T_CABS_DiagnosticReport_Visitenbefund",
-  "title" : "T-CABS DiagnosticReport Visitenbefund",
+  "title" : "T-CABS DiagnosticReport Visit Finding",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-diagnosticrep
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für einen Beurteilung der wöchentlichen, telemedizinischen Visite innerhalb der T-CABS Studie",
+  "description" : "Profile for an assessment of the weekly telemedicine visit within the T-CABS study",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

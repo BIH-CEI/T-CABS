@@ -1,12 +1,12 @@
-# Beispiel Beatmungsgerät Löwenstein - v0.1.0
+# Example Ventilator Löwenstein - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Beatmungsgerät Löwenstein**
+* **Example Ventilator Löwenstein**
 
-## Example Device: Beispiel Beatmungsgerät Löwenstein
+## Example Device: Example Ventilator Löwenstein
 
-Profile: [T-CABS Device MDS Heimbeatmungsgerät](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md)
+Profile: [T-CABS Device MDS Home Ventilator](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md)
 
 **Operating hours extension**: 12450
 

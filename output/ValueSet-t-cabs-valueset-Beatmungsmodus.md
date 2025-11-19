@@ -1,22 +1,22 @@
-# T-CABS ValueSet Beatmungsmodus - v0.1.0
+# T-CABS ValueSet Ventilation Mode - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS ValueSet Beatmungsmodus**
+* **T-CABS ValueSet Ventilation Mode**
 
-## ValueSet: T-CABS ValueSet Beatmungsmodus 
+## ValueSet: T-CABS ValueSet Ventilation Mode 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_ValueSet_Beatmungsmodus |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_ValueSet_Beatmungsmodus |
 
  
-Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden 
+This ValueSet contains codes to represent the different ventilation modes 
 
  **References** 
 
-* [T-CABS Procedure Beatmung](StructureDefinition-t-cabs-procedure-beatmung.md)
+* [T-CABS Procedure Ventilation](StructureDefinition-t-cabs-procedure-beatmung.md)
 
 ### Logical Definition (CLD)
 
@@ -24,9 +24,9 @@ Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden
 
 ### Expansion
 
-Expansion from tx.fhir.org based on codesystem ISO/IEEE 11073 Medical Device Communication Nomenclature version 2024-12-05
+Expansion from tx.fhir.org based on codesystem ISO 11073-10101 Health informatics - Point-of-care version 2024-12-05
 
-This value set contains 7 concepts
+This value set contains 10 concepts
 
 -------
 
@@ -52,9 +52,9 @@ This value set contains 7 concepts
   "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
   "version" : "0.1.0",
   "name" : "T_CABS_ValueSet_Beatmungsmodus",
-  "title" : "T-CABS ValueSet Beatmungsmodus",
+  "title" : "T-CABS ValueSet Ventilation Mode",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -62,12 +62,23 @@ This value set contains 7 concepts
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",
+  "description" : "This ValueSet contains codes to represent the different ventilation modes",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "compose" : {
     "include" : [
       {
@@ -98,8 +109,20 @@ This value set contains 7 concepts
             "display" : "MDC_VENT_MODE_ISO_CMV_VC"
           },
           {
-            "code" : "151796",
-            "display" : "MDC_PRESS_AWAY_CTS_POS"
+            "code" : "475161",
+            "display" : "MDC_VENT_MODE_ISO_CSV_6ACAP"
+          },
+          {
+            "code" : "475140",
+            "display" : "MDC_VENT_MODE_ISO_AC_VC_6ACAPL"
+          },
+          {
+            "code" : "475136",
+            "display" : "MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL"
+          },
+          {
+            "code" : "475190",
+            "display" : "MDC_VENT_MODE_ISO_HIFLOW_3NIV"
           }
         ]
       }

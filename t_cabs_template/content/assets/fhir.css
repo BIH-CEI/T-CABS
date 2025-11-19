@@ -2,7 +2,7 @@
     background-color: #299FED;
   }
   .navbar-inverse {
-    background-color: #299FED;
+    background-color: hsl(213, 85%, 50%);
   }
   .navbar-inverse .navbar-nav > li > a:hover {
     background-color: #c01e75;

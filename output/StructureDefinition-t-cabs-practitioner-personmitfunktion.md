@@ -1,22 +1,22 @@
-# T-CABS Person mit Funktion - v0.1.0
+# T-CABS Person with Function - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Person mit Funktion**
+* **T-CABS Person with Function**
 
-## Resource Profile: T-CABS Person mit Funktion 
+## Resource Profile: T-CABS Person with Function 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Practitioner_PersonMitFunktion |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Practitioner_PersonMitFunktion |
 
  
-Profil für eine beteildigte Person innerhalb der T-CABS Studie 
+Profile for an involved person within the T-CABS study. Compatibility: The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with ISiK version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Practitioner_PersonMitFunktion are also valid against the[ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf) 
 
 **Usages:**
 
-* Refer to this Profile: [T-CABS Patientengruppe](StructureDefinition-t-cabs-group-patientengruppe.md) and [T-CABS ResearchStudy Studie](StructureDefinition-t-cabs-researchstudy-studie.md)
+* Refer to this Profile: [T-CABS Patient Group](StructureDefinition-t-cabs-group-patientengruppe.md)
 * Examples for this Profile: [Practitioner/tcabs-practitioner-example](Practitioner-tcabs-practitioner-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-practitioner-personmitfunktion)
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-practitioner-
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
   "version" : "0.1.0",
   "name" : "T_CABS_Practitioner_PersonMitFunktion",
-  "title" : "T-CABS Person mit Funktion",
+  "title" : "T-CABS Person with Function",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -50,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-practitioner-
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für eine beteildigte Person innerhalb der T-CABS Studie",
+  "description" : "Profile for an involved person within the T-CABS study.\nCompatibility:\nThe T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with ISiK version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Practitioner_PersonMitFunktion are also valid against the [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -91,12 +102,6 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-practitioner-
         "path" : "Practitioner"
       },
       {
-        "id" : "Practitioner.identifier",
-        "path" : "Practitioner.identifier",
-        "min" : 1,
-        "mustSupport" : true
-      },
-      {
         "id" : "Practitioner.identifier.system",
         "path" : "Practitioner.identifier.system",
         "min" : 1,
@@ -111,19 +116,58 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-practitioner-
       {
         "id" : "Practitioner.name",
         "path" : "Practitioner.name",
-        "min" : 1
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "pattern",
+              "path" : "$this"
+            }
+          ],
+          "rules" : "open"
+        },
+        "min" : 1,
+        "mustSupport" : true
       },
       {
-        "id" : "Practitioner.name.family",
+        "id" : "Practitioner.name:Name",
+        "path" : "Practitioner.name",
+        "sliceName" : "Name",
+        "short" : "Full name",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "HumanName",
+            "profile" : ["http://fhir.de/StructureDefinition/humanname-de-basis"]
+          }
+        ],
+        "patternHumanName" : {
+          "use" : "official"
+        },
+        "mustSupport" : true
+      },
+      {
+        "id" : "Practitioner.name:Name.use",
+        "path" : "Practitioner.name.use",
+        "min" : 1,
+        "fixedCode" : "official",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Practitioner.name:Name.family",
         "path" : "Practitioner.name.family",
         "min" : 1,
         "mustSupport" : true
       },
       {
-        "id" : "Practitioner.name.given",
+        "id" : "Practitioner.name:Name.given",
         "path" : "Practitioner.name.given",
         "min" : 1,
-        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Practitioner.name:Name.prefix",
+        "path" : "Practitioner.name.prefix",
         "mustSupport" : true
       }
     ]

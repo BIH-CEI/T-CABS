@@ -8,18 +8,25 @@
   "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
   "version" : "0.1.0",
   "name" : "T_CABS_ValueSet_Beatmungsform",
-  "title" : "T-CABS ValueSet Beatmungsform",
+  "title" : "T-CABS ValueSet Ventilation Type",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://www.bihealth.org/"
     }]
   }],
-  "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",
+  "description" : "This ValueSet contains codes to represent the different types of ventilation",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",

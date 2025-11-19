@@ -5,8 +5,8 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "T_CABS_ValueSet_Beatmungsform",
-      "title" : "T-CABS ValueSet Beatmungsform",
-      "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",
+      "title" : "T-CABS ValueSet Ventilation Type",
+      "description" : "This ValueSet contains codes to represent the different types of ventilation",
       "systems" : ["http://snomed.info/sct"]
     },
     {
@@ -14,8 +14,26 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "T_CABS_ValueSet_Beatmungsmodus",
-      "title" : "T-CABS ValueSet Beatmungsmodus",
-      "description" : "Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",
+      "title" : "T-CABS ValueSet Ventilation Mode",
+      "description" : "This ValueSet contains codes to represent the different ventilation modes",
+      "systems" : ["urn:iso:std:iso:11073:10101"]
+    },
+    {
+      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "T_CABS_ValueSet_Beatmungsstelle",
+      "title" : "T-CABS ValueSet Ventilation Site",
+      "description" : "This ValueSet contains codes to represent the body sites where ventilation is applied",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "T_CABS_ValueSet_PHDTyp",
+      "title" : "T-CABS ValueSet PHD Type",
+      "description" : "This ValueSet contains codes to represent the different PHD measurement devices",
       "systems" : ["urn:iso:std:iso:11073:10101"]
     }
   ]

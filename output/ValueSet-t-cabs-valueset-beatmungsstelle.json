@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "t-cabs-valueset-beatmungsstelle",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet t-cabs-valueset-beatmungsstelle</b></p><a name=\"t-cabs-valueset-beatmungsstelle\"> </a><a name=\"hct-cabs-valueset-beatmungsstelle\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/302549007\">302549007</a></td><td>Entire face (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/45206002\">45206002</a></td><td>Nasal structure (body structure)</td></tr><tr><td><a href=\"http://snomed.info/id/44567001\">44567001</a></td><td>Tracheal structure (body structure)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle",
+  "version" : "0.1.0",
+  "name" : "T_CABS_ValueSet_Beatmungsstelle",
+  "title" : "T-CABS ValueSet Ventilation Site",
+  "status" : "draft",
+  "date" : "2025-11-19T11:55:29+01:00",
+  "publisher" : "BIH-CEI",
+  "contact" : [{
+    "name" : "BIH-CEI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "This ValueSet contains codes to represent the body sites where ventilation is applied",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "302549007",
+        "display" : "Entire face (body structure)"
+      },
+      {
+        "code" : "45206002",
+        "display" : "Nasal structure (body structure)"
+      },
+      {
+        "code" : "44567001",
+        "display" : "Tracheal structure (body structure)"
+      }]
+    }]
+  }
+}

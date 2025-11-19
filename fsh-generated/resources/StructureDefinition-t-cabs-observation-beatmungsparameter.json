@@ -3,9 +3,9 @@
   "id": "t-cabs-observation-beatmungsparameter",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "name": "T_CABS_Observation_Beatmungsparameter",
-  "title": "T-CABS Observation Beatmungsparameter (abstract)",
+  "title": "T-CABS Observation Ventilation Parameter (abstract)",
   "status": "draft",
-  "description": "Abstraktes Profil für Beatmungsparameter",
+  "description": "Abstract profile for ventilation parameters",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -37,7 +37,7 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "short": "Referenz auf den Patienten",
+        "short": "Reference to the patient",
         "type": [
           {
             "code": "Reference",
@@ -67,12 +67,12 @@
       {
         "id": "Observation.referenceRange",
         "path": "Observation.referenceRange",
-        "definition": "Grenzwerte des jeweiligen Parameters."
+        "short": "Reference ranges for the parameter."
       },
       {
         "id": "Observation.referenceRange.low",
         "path": "Observation.referenceRange.low",
-        "short": "Untere Grenze des Parameters.",
+        "short": "Lower limit of the parameter.",
         "mustSupport": true
       },
       {
@@ -100,7 +100,7 @@
       {
         "id": "Observation.referenceRange.high",
         "path": "Observation.referenceRange.high",
-        "short": "Obere Grenze des Parameters.",
+        "short": "Upper limit of the parameter.",
         "mustSupport": true
       },
       {

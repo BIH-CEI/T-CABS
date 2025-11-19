@@ -1,12 +1,12 @@
-# Beispiel Leckage ResMed - v0.1.0
+# Example Leakage ResMed - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Leckage ResMed**
+* **Example Leakage ResMed**
 
-## Example Observation: Beispiel Leckage ResMed
+## Example Observation: Example Leakage ResMed
 
-Profile: [T-CABS Observation Leckage](StructureDefinition-t-cabs-observation-leckage.md)
+Profile: [T-CABS Observation Leakage](StructureDefinition-t-cabs-observation-leckage.md)
 
 **partOf**: [Procedure MDC_PRESS_AWAY_CTS_POS](Procedure-beispiel-beatmung-resmed.md)
 

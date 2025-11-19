@@ -1,23 +1,23 @@
-# T-CABS Observation Beatmungsparameter (abstract) - v0.1.0
+# T-CABS Observation Ventilation Parameter (abstract) - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation Beatmungsparameter (abstract)**
+* **T-CABS Observation Ventilation Parameter (abstract)**
 
-## Resource Profile: T-CABS Observation Beatmungsparameter (abstract) 
+## Resource Profile: T-CABS Observation Ventilation Parameter (abstract) 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_Beatmungsparameter |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Beatmungsparameter |
 
  
-Abstraktes Profil für Beatmungsparameter 
+Abstract profile for ventilation parameters 
 
 **Usages:**
 
-* Derived from this Profile: [T-CABS Observation AHI](StructureDefinition-t-cabs-observation-ahi.md), [T-CABS Observation AMV](StructureDefinition-t-cabs-observation-amv.md), [T-CABS Observation AF](StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.md), [T-CABS Observation Atemzeitverhaeltnis](StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.md)...Show 7 more,[T-CABS Observation Druck MIN/MAX](StructureDefinition-t-cabs-observation-druck-minmax.md),[T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.md),[T-CABS Observation Leckage](StructureDefinition-t-cabs-observation-leckage.md),[T-CABS Observation PEEP](StructureDefinition-t-cabs-observation-peep.md),[T-CABS Observation Target Volume](StructureDefinition-t-cabs-observation-targetvolume.md),[T-CABS Observation TI](StructureDefinition-t-cabs-observation-ti.md)and[T-CABS Observation TriggeredBreaths](StructureDefinition-t-cabs-observation-triggeredbreaths.md)
-* Refer to this Profile: [T-CABS DiagnosticReport Visitenbefund](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)
+* Derived from this Profile: [T-CABS Observation AHI](StructureDefinition-t-cabs-observation-ahi.md), [T-CABS Observation AMV](StructureDefinition-t-cabs-observation-amv.md), [T-CABS Observation Respiratory Rate Ventilated](StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.md), [T-CABS Observation Respiratory Time Ratio](StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.md)...Show 6 more,[T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.md),[T-CABS Observation Leakage](StructureDefinition-t-cabs-observation-leckage.md),[T-CABS Observation PEEP](StructureDefinition-t-cabs-observation-peep.md),[T-CABS Observation Target Volume](StructureDefinition-t-cabs-observation-targetvolume.md),[T-CABS Observation TI](StructureDefinition-t-cabs-observation-ti.md)and[T-CABS Observation Triggered Breaths](StructureDefinition-t-cabs-observation-triggeredbreaths.md)
+* Refer to this Profile: [T-CABS DiagnosticReport Visit Finding](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-observation-beatmungsparameter)
 
@@ -40,9 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_Beatmungsparameter",
-  "title" : "T-CABS Observation Beatmungsparameter (abstract)",
+  "title" : "T-CABS Observation Ventilation Parameter (abstract)",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -50,12 +50,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Abstraktes Profil für Beatmungsparameter",
+  "description" : "Abstract profile for ventilation parameters",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -133,7 +144,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
       {
         "id" : "Observation.subject",
         "path" : "Observation.subject",
-        "short" : "Referenz auf den Patienten",
+        "short" : "Reference to the patient",
         "type" : [
           {
             "code" : "Reference",
@@ -161,12 +172,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
       {
         "id" : "Observation.referenceRange",
         "path" : "Observation.referenceRange",
-        "definition" : "Grenzwerte des jeweiligen Parameters."
+        "short" : "Reference ranges for the parameter."
       },
       {
         "id" : "Observation.referenceRange.low",
         "path" : "Observation.referenceRange.low",
-        "short" : "Untere Grenze des Parameters.",
+        "short" : "Lower limit of the parameter.",
         "mustSupport" : true
       },
       {
@@ -194,7 +205,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
       {
         "id" : "Observation.referenceRange.high",
         "path" : "Observation.referenceRange.high",
-        "short" : "Obere Grenze des Parameters.",
+        "short" : "Upper limit of the parameter.",
         "mustSupport" : true
       },
       {

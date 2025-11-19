@@ -1,3 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform,0.1.0,draft,,T_CABS_ValueSet_Beatmungsform,T-CABS ValueSet Beatmungsform,"Dieses ValueSet enthält Codes um die verschiedenen Beatmungsformen abzubilden",,"SCT"
-http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus,0.1.0,draft,,T_CABS_ValueSet_Beatmungsmodus,T-CABS ValueSet Beatmungsmodus,"Dieses ValueSet enthält Codes um die verschiedenen Beatmungsmodi abzubilden",,"hl7.terminology.r4"
+http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform,0.1.0,draft,,T_CABS_ValueSet_Beatmungsform,T-CABS ValueSet Ventilation Type,"This ValueSet contains codes to represent the different types of ventilation",,"SCT"
+http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus,0.1.0,draft,,T_CABS_ValueSet_Beatmungsmodus,T-CABS ValueSet Ventilation Mode,"This ValueSet contains codes to represent the different ventilation modes",,"hl7.terminology.r4"
+http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle,0.1.0,draft,,T_CABS_ValueSet_Beatmungsstelle,T-CABS ValueSet Ventilation Site,"This ValueSet contains codes to represent the body sites where ventilation is applied",,"SCT"
+http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp,0.1.0,draft,,T_CABS_ValueSet_PHDTyp,T-CABS ValueSet PHD Type,"This ValueSet contains codes to represent the different PHD measurement devices",,"hl7.terminology.r4"

@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TCABS</h1>
- <p>Generated Thu Oct 16 19:02:31 CEST 2025, FHIR version 4.0.1 for t-cabs#0.1.0 (canonical = <a href="http://t-cabs.org">http://t-cabs.org</a> (<a href="http://t-cabs.org/history.html">history</a>))</p>
+ <p>Generated Wed Nov 19 11:58:51 CET 2025, FHIR version 4.0.1 for t-cabs#0.1.0 (canonical = <a href="http://t-cabs.org">http://t-cabs.org</a> (<a href="http://t-cabs.org/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -22,7 +22,7 @@
   </li>
   <li>
     <b>defaultDisplayLanguage</b>
-:     <code>en-US</code>
+:     <code>en</code>
   </li>
 </ul>
 <h2>Tx Manager report for 'https://tx.fhir.org/tx-reg'</h2>
@@ -48,6 +48,13 @@
     </td>
   </tr>
   <tr>
+    <td>Found candidate server https://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=https://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
@@ -55,25 +62,18 @@
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
   </tr>
   <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>urn:iso:std:iso:11073:10101|20250520</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>Found candidate server https://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
     <td>urn:iso:std:iso:11073:10101|2.0.1</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4</td>
+    <td>auth = , candidates=https://tx.fhir.org/r4</td>
   </tr>
   <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>Found candidate server https://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
     <td>urn:iso:std:iso:11073:10101</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4</td>
+    <td>auth = , candidates=https://tx.fhir.org/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
@@ -89,10 +89,68 @@
     <td>http://unitsofmeasure.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4</td>
   </tr>
+  <tr>
+    <td>Found candidate server https://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=https://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server https://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/iso3166-1-2|4.0.1</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=https://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[urn:oid:1.2.276.0.76.5.514, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=https://tx.fhir.org/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4]</td>
+  </tr>
+</table>
+<p>
+  <b>Errors</b>
+</p>
+<table class="grid">
+  <tr>
+    <td>
+      <b>URL</b>
+    </td>
+    <td>
+      <b>Message</b>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:11073:10101</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A11073%3A10101&amp;usage=publication">Error resolving system urn:iso:std:iso:11073:10101: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:11073:10101|2.0.1</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A11073%3A10101%7C2.0.1&amp;usage=publication">Error resolving system urn:iso:std:iso:11073:10101|2.0.1: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:3166</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication">Error resolving system urn:iso:std:iso:3166: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:1.2.276.0.76.5.514</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;url=urn%3Aoid%3A1.2.276.0.76.5.514&amp;usage=publication">Error resolving system urn:oid:1.2.276.0.76.5.514: Bad Request</span>
+    </td>
+  </tr>
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 0. Code Systems used: </p>
+<p>Use Count: 3. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -113,7 +171,7 @@
     <td>0</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
   </tr>
   <tr>
@@ -129,7 +187,7 @@
     <td>0</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
     </td>
   </tr>
   <tr>
@@ -137,7 +195,7 @@
     <td>0</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html">ISO/IEEE 11073 Medical Device Communication Nomenclature</a>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>
     </td>
   </tr>
   <tr>
@@ -149,11 +207,11 @@
     </td>
   </tr>
   <tr>
-    <td>urn:iso:std:iso:11073:10101|20250520</td>
+    <td>urn:iso:std:iso:3166</td>
     <td>0</td>
-    <td>1</td>
+    <td>3</td>
     <td>
-      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html">ISO/IEEE 11073 Medical Device Communication Nomenclature</a>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
     </td>
   </tr>
 </table>

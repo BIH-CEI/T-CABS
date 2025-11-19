@@ -12,27 +12,30 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap"^^xsd:anyURI ;
-       fhir:link <http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap>
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-IPAP-BREAS</b></p><a name=\"Example-IPAP-BREAS\"> </a><a name=\"hcExample-IPAP-BREAS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-ipap.html\">T-CABS Observation IPAP</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-breas.html\">Procedure MDC_VENT_MODE_ISO_AC_PC_6ACAP</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 8410976}\">MDC_SABTE_PRESS_IPAP_SET</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-10-07 22:00:00+0200 --&gt; 2024-10-07 22:15:00+0200</p><p><b>value</b>: 15 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-breas-ipap.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-BREAS-IPAP-001; type = MDC_SABTE_PRESS_IPAP_SET; unit = mbar; operationalStatus = on; color = lime; category = setting; measurementPeriod = Once per 5 minutes</a></p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-IPAP-BREAS</b></p><a name=\"Example-IPAP-BREAS\"> </a><a name=\"hcExample-IPAP-BREAS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-ipap.html\">T-CABS Observation IPAP</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-breas.html\">Procedure MDC_VENT_MODE_ISO_AC_PC_6ACAP</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 8410976}\">MDC_SABTE_PRESS_IPAP_SET</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-10-07 22:00:00+0200 --&gt; 2024-10-07 22:15:00+0200</p><p><b>value</b>: 15 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-breas-ipap.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-BREAS-IPAP-001; type = MDC_SABTE_PRESS_IPAP_SET; unit = mbar; operationalStatus = on; color = cyan; category = setting; measurementPeriod = Once per 5 minutes</a></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></td><td>25 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning therapeutic}\">Therapeutic Desired Level</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:partOf ( [
-     fhir:link <http://t-cabs.org/Procedure/beispiel-beatmung-breas> ;
+     fhir:l <http://t-cabs.org/Procedure/beispiel-beatmung-breas> ;
      fhir:reference [ fhir:v "Procedure/beispiel-beatmung-breas" ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "8410976" ] ;
        fhir:display [ fhir:v "MDC_SABTE_PRESS_IPAP_SET" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
      fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
   ] ; # 
   fhir:effective [
@@ -44,13 +47,45 @@
      a fhir:Quantity ;
      fhir:value [ fhir:v "15"^^xsd:decimal ] ;
      fhir:unit [ fhir:v "mbar" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "mbar" ]
   ] ; # 
   fhir:device [
-     fhir:link <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-ipap> ;
+     fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-ipap> ;
      fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-breas-ipap" ]
-  ] . # 
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mbar" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mbar" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "25"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mbar" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mbar" ]
+     ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/referencerange-meaning"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/referencerange-meaning>
+         ] ;
+         fhir:code [ fhir:v "therapeutic" ]
+       ] )
+     ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

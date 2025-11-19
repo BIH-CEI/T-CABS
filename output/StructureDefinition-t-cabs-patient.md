@@ -1,4 +1,4 @@
-# T-CABS Patient - v0.1.0
+# T-CABS Patient - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-patient | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Patient |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Patient |
 
  
-Profil für eine/n Patient/in der T-CABS Studie 
+Profile for a patient in the T-CABS study Compatibility: The T_CABS_Patient profile aims for compatibility with the ISiKPatient version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Patient are also valid against the[ISiKPatient](https://simplifier.net/isik-stufe-5/isikpatient) 
 
 **Usages:**
 
-* Refer to this Profile: [T-CABS Device MDS Heimbeatmungsgerät](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md), [T-CABS Device PHD](StructureDefinition-t-cabs-device-phd.md), [T-CABS Device PHG](StructureDefinition-t-cabs-device-phg.md), [T-CABS DiagnosticReport Visitenbefund](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)...Show 6 more,[T-CABS Encounter Kontakt](StructureDefinition-t-cabs-encounter-kontakt.md),[T-CABS Patientengruppe](StructureDefinition-t-cabs-group-patientengruppe.md),[T-CABS Observation Beatmungsparameter (abstract)](StructureDefinition-t-cabs-observation-beatmungsparameter.md),[T-CABS Observation Vitalparamter](StructureDefinition-t-cabs-observation-vitalparameter.md),[T-CABS Procedure Beatmung](StructureDefinition-t-cabs-procedure-beatmung.md)and[T-CABS ResearchSubject Studie](StructureDefinition-t-cabs-researchsubject-studienteilnehmer.md)
+* Refer to this Profile: [T-CABS Device MDS Home Ventilator](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md), [T-CABS Device PHD](StructureDefinition-t-cabs-device-phd.md), [T-CABS Device PHG](StructureDefinition-t-cabs-device-phg.md), [T-CABS DiagnosticReport Visit Finding](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)...Show 7 more,[T-CABS Encounter Contact](StructureDefinition-t-cabs-encounter-kontakt.md),[T-CABS Patient Group](StructureDefinition-t-cabs-group-patientengruppe.md),[T-CABS Observation Ventilation Parameter (abstract)](StructureDefinition-t-cabs-observation-beatmungsparameter.md),[T-CABS Observation Ventilation Parameter with Components (abstract)](StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.md),[T-CABS Observation Vital Parameter](StructureDefinition-t-cabs-observation-vitalparameter.md),[T-CABS Observation Vital Parameter with Components](StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.md)and[T-CABS Procedure Ventilation](StructureDefinition-t-cabs-procedure-beatmung.md)
 * Examples for this Profile: [Patient/tcabs-patient-example](Patient-tcabs-patient-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-patient)
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-patient.csv),
   "name" : "T_CABS_Patient",
   "title" : "T-CABS Patient",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -64,12 +64,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-patient.csv),
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für eine/n Patient/in der T-CABS Studie",
+  "description" : "Profile for a patient in the T-CABS study\nCompatibility:\nThe T_CABS_Patient profile aims for compatibility with the ISiKPatient version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Patient are also valid against the [ISiKPatient](https://simplifier.net/isik-stufe-5/isikpatient)",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "kind" : "resource",
   "abstract" : false,

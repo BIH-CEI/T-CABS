@@ -1,14 +1,12 @@
 Profile: T_CABS_Observation_DruckMinMax
-Parent: T_CABS_Observation_Beatmungsparameter
+Parent: T_CABS_Observation_BeatmungsparameterMitKomponenten
 Id: t-cabs-observation-druck-minmax
-Title: "T-CABS Observation Druck MIN/MAX"
-Description: "Profil für den minimalen und maximalen Beatmungsdruck"
+Title: "T-CABS Observation Pressure MIN/MAX"
+Description: "Profile for minimal and maximal ventilation pressure"
 
-* code.coding = $IEEE-11073#151792 "MDC_PRESS_AWAY"
+* code.coding = $IEEE-11073#151792 //"MDC_PRESS_AWAY"
 
 * effective[x] only Period
-
-* value[x] 0..0
 
 * component ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "code"
@@ -20,20 +18,18 @@ Description: "Profil für den minimalen und maximalen Beatmungsdruck"
 * component[MinPress].code = $IEEE-11073#151794 "MDC_PRESS_AWAY_MIN"
 * component[MinPress].value[x] only Quantity
 * component[MinPress].valueQuantity.unit = "mbar"
-* component[MinPress].valueQuantity.system = $UCUM
 * component[MinPress].valueQuantity.code = #mbar
 * component[MaxPress].code MS
 * component[MaxPress].code = $IEEE-11073#151793 "MDC_PRESS_AWAY_MAX"
 * component[MaxPress].value[x] only Quantity
 * component[MaxPress].valueQuantity.unit = "mbar"
-* component[MaxPress].valueQuantity.system = $UCUM
 * component[MaxPress].valueQuantity.code = #mbar
 
 Instance: Example-DruckMinMax-ResMed
 InstanceOf: T_CABS_Observation_DruckMinMax
 Usage: #example
-Title: "Beispiel Druck Min/Max ResMed"
-Description: "Beispiel für minimalen und maximalen Beatmungsdruck von einem ResMed Gerät"
+Title: "Example Pressure Min/Max ResMed"
+Description: "Example of minimal and maximal ventilation pressure from a ResMed device"
 * status = #final
 * code.coding = $IEEE-11073#151792 "MDC_PRESS_AWAY"
 * subject = Reference(Patient/tcabs-patient-example)

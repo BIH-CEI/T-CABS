@@ -1,12 +1,12 @@
-# Beispiel Druck Min/Max ResMed - v0.1.0
+# Example Pressure Min/Max ResMed - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Druck Min/Max ResMed**
+* **Example Pressure Min/Max ResMed**
 
-## Example Observation: Beispiel Druck Min/Max ResMed
+## Example Observation: Example Pressure Min/Max ResMed
 
-Profile: [T-CABS Observation Druck MIN/MAX](StructureDefinition-t-cabs-observation-druck-minmax.md)
+Profile: [T-CABS Observation Pressure MIN/MAX](StructureDefinition-t-cabs-observation-druck-minmax.md)
 
 **partOf**: [Procedure MDC_PRESS_AWAY_CTS_POS](Procedure-beispiel-beatmung-resmed.md)
 
@@ -18,7 +18,7 @@ Profile: [T-CABS Observation Druck MIN/MAX](StructureDefinition-t-cabs-observati
 
 **effective**: 2024-10-07 23:00:00+0200 --> 2024-10-07 23:30:00+0200
 
-**device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-DRUCK-001; type = MDC_PRESS_AWAY; unit = mbar; operationalStatus = on; color = brown; category = measurement; measurementPeriod = Once per 30 seconds](DeviceMetric-beispiel-devicemetric-resmed-druck.md)
+**device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-DRUCK-001; type = MDC_PRESS_AWAY; unit = mbar; operationalStatus = on; color = black; category = measurement; measurementPeriod = Once per 30 seconds](DeviceMetric-beispiel-devicemetric-resmed-druck.md)
 
 > **component****code**:MDC_PRESS_AWAY_MIN**value**: 4 mbar(Details: UCUM codembar = 'mbar')
 

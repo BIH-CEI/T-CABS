@@ -1,18 +1,18 @@
-# T-CABS Observation Koerpergewicht - v0.1.0
+# T-CABS Observation Body Weight - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation Koerpergewicht**
+* **T-CABS Observation Body Weight**
 
-## Resource Profile: T-CABS Observation Koerpergewicht 
+## Resource Profile: T-CABS Observation Body Weight 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_Koerpergewicht |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Koerpergewicht |
 
  
-Profil für das Körpergewicht 
+Profile for body weight. Compatibility: For the profile T_CABS_Observation_Koerpergewicht, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpergewicht are also valid against the[ISiKKoerpergewicht](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht). 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-k
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_Koerpergewicht",
-  "title" : "T-CABS Observation Koerpergewicht",
+  "title" : "T-CABS Observation Body Weight",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-k
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für das Körpergewicht",
+  "description" : "Profile for body weight.\nCompatibility:\nFor the profile T_CABS_Observation_Koerpergewicht, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpergewicht are also valid against the [ISiKKoerpergewicht](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht).",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-k
         "sliceName" : "LoincCoding",
         "patternCoding" : {
           "system" : "http://loinc.org",
-          "code" : "29463-7",
-          "display" : "Body weight"
+          "code" : "29463-7"
         }
       },
       {

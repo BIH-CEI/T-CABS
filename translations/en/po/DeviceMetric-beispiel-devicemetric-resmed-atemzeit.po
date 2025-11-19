@@ -1,0 +1,11 @@
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "MDC_TIME_PD_INSP_NORMALIZED_HF"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "%"
+msgstr ""
+

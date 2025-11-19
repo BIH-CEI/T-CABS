@@ -1,18 +1,18 @@
-# T-CABS Observation TriggeredBreaths - v0.1.0
+# T-CABS Observation Triggered Breaths - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation TriggeredBreaths**
+* **T-CABS Observation Triggered Breaths**
 
-## Resource Profile: T-CABS Observation TriggeredBreaths 
+## Resource Profile: T-CABS Observation Triggered Breaths 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_TriggeredBreaths |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_TriggeredBreaths |
 
  
-Profil für die Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums 
+Profile for the percentage of spontaneously triggered breaths within a time period 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-t
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_TriggeredBreaths",
-  "title" : "T-CABS Observation TriggeredBreaths",
+  "title" : "T-CABS Observation Triggered Breaths",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-t
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für die Prozentzahl der selbstständig getriggerten Atemzüge innerhalb eines Zeitraums",
+  "description" : "Profile for the percentage of spontaneously triggered breaths within a time period",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-t
         "path" : "Observation.code.coding",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "152498",
-          "display" : "MDC_VENT_RESP_BTSD_P_RATE"
+          "code" : "152498"
         }
       },
       {

@@ -5,7 +5,7 @@
   "name": "T_CABS_Observation_BMI",
   "title": "T-CABS Observation BMI",
   "status": "draft",
-  "description": "Profil für den Body Mass Index (BMI)",
+  "description": "Profile for Body Mass Index (BMI)",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,7 @@
         "sliceName": "LoincCoding",
         "patternCoding": {
           "code": "39156-5",
-          "system": "http://loinc.org",
-          "display": "Body mass index (BMI) [Ratio]"
+          "system": "http://loinc.org"
         }
       },
       {

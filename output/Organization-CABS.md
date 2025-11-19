@@ -1,12 +1,14 @@
-# Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS) - v0.1.0
+# Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS) - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS)**
+* **Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS)**
 
-## Example Organization: Centrum für Außerklinische Beatmung und Sauerstofftherapie (CABS)
+## Example Organization: Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS)
 
-Profile: [T-CABS Organisation](StructureDefinition-t-cabs-organisation.md)
+Profiles: [T-CABS Organization](StructureDefinition-t-cabs-organisation.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation)
+
+**identifier**: `http://tcabs.example.org/cabs`/CABS-001
 
 **active**: true
 
@@ -27,8 +29,17 @@ Profile: [T-CABS Organisation](StructureDefinition-t-cabs-organisation.md)
   "resourceType" : "Organization",
   "id" : "CABS",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-organisation"]
+    "profile" : [
+      "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation"
+    ]
   },
+  "identifier" : [
+    {
+      "system" : "http://tcabs.example.org/cabs",
+      "value" : "CABS-001"
+    }
+  ],
   "active" : true,
   "type" : [
     {

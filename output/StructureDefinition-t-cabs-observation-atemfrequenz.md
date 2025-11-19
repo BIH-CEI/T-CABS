@@ -1,18 +1,18 @@
-# T-CABS Observation Atemfrequenz - v0.1.0
+# T-CABS Observation Respiratory Rate - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation Atemfrequenz**
+* **T-CABS Observation Respiratory Rate**
 
-## Resource Profile: T-CABS Observation Atemfrequenz 
+## Resource Profile: T-CABS Observation Respiratory Rate 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_Atemfrequenz |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Atemfrequenz |
 
  
-Profil für die Atemfrequenz per Doccla 
+Profile for respiratory rate. Compatibility: For the profile T_CABS_Observation_Atemfrequenz, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Atemfrequenz are also valid against the[ISiKAtemfrequenz](https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/StructureDefinition/ISiKAtemfrequenz). 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_Atemfrequenz",
-  "title" : "T-CABS Observation Atemfrequenz",
+  "title" : "T-CABS Observation Respiratory Rate",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für die Atemfrequenz per Doccla",
+  "description" : "Profile for respiratory rate.\nCompatibility:\nFor the profile T_CABS_Observation_Atemfrequenz, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Atemfrequenz are also valid against the [ISiKAtemfrequenz](https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/StructureDefinition/ISiKAtemfrequenz).",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
         "sliceName" : "LoincCoding",
         "patternCoding" : {
           "system" : "http://loinc.org",
-          "code" : "9279-1",
-          "display" : "Respiratory Rate"
+          "code" : "9279-1"
         }
       },
       {

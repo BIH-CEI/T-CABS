@@ -1,8 +1,8 @@
 Profile: T_CABS_Device_MDS_Beatmungsgeraet
 Parent: http://hl7.org/fhir/uv/pocd/StructureDefinition/MdsDevice
 Id: t-cabs-device-mds-beatmungsgeraet
-Title: "T-CABS Device MDS Heimbeatmungsgerät"
-Description: "Profil für ein Heimbeatmungsgerät"
+Title: "T-CABS Device MDS Home Ventilator"
+Description: "Profile for a home ventilator device"
 
 // Beatmungsstunden
 * extension[operatingHours] 1..1
@@ -11,21 +11,21 @@ Description: "Profil für ein Heimbeatmungsgerät"
 * identifier.type = #UDI
 * identifier ^definition = "Alternativer Identifier zur Seriennummer"
 
-* type.coding = $IEEE-11073#70001 "MDC_DEV_SYS_PT_VENT_MDS" 
+* type.coding = $IEEE-11073#70001 //"MDC_DEV_SYS_PT_VENT_MDS" 
 
 // Hersteller
 * manufacturer 1..1 MS
-* manufacturer ^short = "Name des Gerätehersteller"
+* manufacturer ^short = "Name of the device manufacturer"
 * manufacturer ^definition = "Löwenstein Medical;
 BREAS Medical; 
 ResMed;
 "
 * serialNumber 1..1 MS
-* serialNumber ^short = "Seriennummer des Gerätes"
+* serialNumber ^short = "Serial number of the device"
 
 // Provider - Organization definieren?
 * owner 1..1 MS
-* owner ^short = "Referenz auf den Provider des Gerätes"
+* owner ^short = "Reference to the provider of the device"
 * owner ^comment = "Zum Beispiel: 
 Jochum;
 zuther + hautmann;
@@ -35,8 +35,10 @@ Vivisol;
 Sapio Life;
 "
 
+* deviceName 1..
 * deviceName.type = #model-name
-* deviceName.name ^short = "Modellname des Gerätes"
+* deviceName.name MS
+* deviceName.name ^short = "Model name of the device"
 * deviceName.name ^definition = "Luisa;
 Prisma VENT30;
 Prisma VENT40;
@@ -55,7 +57,7 @@ Astral100;
 Astral150"
 
 * patient 1..1 MS
-* patient ^short = "Referenz auf den Patienten"
+* patient ^short = "Reference to the patient"
 * patient only Reference(T_CABS_Patient)
 // * contact
 // * location
@@ -64,8 +66,8 @@ Astral150"
 Instance: beispiel-beatmungsgeraet-breas
 InstanceOf: T_CABS_Device_MDS_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Beatmungsgerät BREAS"
-Description: "Beispiel für ein BREAS Heimbeatmungsgerät"
+Title: "Example Ventilator BREAS"
+Description: "Example of a BREAS home ventilator"
 * extension[operatingHours].valueUnsignedInt = 8760
 * identifier.type = #UDI
 * identifier.value = "BREAS-VIVO45-12345"
@@ -80,8 +82,8 @@ Description: "Beispiel für ein BREAS Heimbeatmungsgerät"
 Instance: beispiel-beatmungsgeraet-loewenstein
 InstanceOf: T_CABS_Device_MDS_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Beatmungsgerät Löwenstein"
-Description: "Beispiel für ein Löwenstein Heimbeatmungsgerät"
+Title: "Example Ventilator Löwenstein"
+Description: "Example of a Löwenstein home ventilator"
 * extension[operatingHours].valueUnsignedInt = 12450
 * identifier.type = #UDI
 * identifier.value = "LOEW-PRISMA30-67890"
@@ -96,8 +98,8 @@ Description: "Beispiel für ein Löwenstein Heimbeatmungsgerät"
 Instance: beispiel-beatmungsgeraet-resmed
 InstanceOf: T_CABS_Device_MDS_Beatmungsgeraet
 Usage: #example
-Title: "Beispiel Beatmungsgerät ResMed"
-Description: "Beispiel für ein ResMed Heimbeatmungsgerät"
+Title: "Example Ventilator ResMed"
+Description: "Example of a ResMed home ventilator"
 * extension[operatingHours].valueUnsignedInt = 6500
 * identifier.type = #UDI
 * identifier.value = "RESMED-STELLAR150-54321"

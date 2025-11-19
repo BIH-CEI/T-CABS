@@ -1,10 +1,10 @@
-# Beispiel AMV Messung BREAS - v0.1.0
+# Example AMV Measurement BREAS - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel AMV Messung BREAS**
+* **Example AMV Measurement BREAS**
 
-## Example Observation: Beispiel AMV Messung BREAS
+## Example Observation: Example AMV Measurement BREAS
 
 Profile: [T-CABS Observation AMV](StructureDefinition-t-cabs-observation-amv.md)
 

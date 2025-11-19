@@ -1,10 +1,10 @@
 Profile: T_CABS_Observation_Leckage
 Parent: T_CABS_Observation_Beatmungsparameter
 Id: t-cabs-observation-leckage
-Title: "T-CABS Observation Leckage"
-Description: "Profil für die Leckagerate unter Beatmung"
+Title: "T-CABS Observation Leakage"
+Description: "Profile for leakage rate during ventilation"
 
-* code.coding = $IEEE-11073#152432 "MDC_VENT_VOL_LEAK"
+* code.coding = $IEEE-11073#152432 //"MDC_VENT_VOL_LEAK"
 
 * effective[x] only Period
 
@@ -14,8 +14,8 @@ Description: "Profil für die Leckagerate unter Beatmung"
 Instance: Example-Leckage-ResMed
 InstanceOf: T_CABS_Observation_Leckage
 Usage: #example
-Title: "Beispiel Leckage ResMed"
-Description: "Beispiel für Leckage-Messung von einem ResMed Beatmungsgerät"
+Title: "Example Leakage ResMed"
+Description: "Example of leakage measurement from a ResMed ventilator"
 * status = #final
 * code.coding = $IEEE-11073#152432 "MDC_VENT_VOL_LEAK"
 * subject = Reference(Patient/tcabs-patient-example)

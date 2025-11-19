@@ -1,18 +1,18 @@
 Profile: T_CABS_Observation_ArteriellerBlutdruck
-Parent: t-cabs-observation-vitalparameter
+Parent: T_CABS_Observation_VitalparameterMitKomponenten
 Id: t-cabs-observation-arteriellerblutdruck
-Title: "T-CABS Observation Arterieller Blutdruck"
-Description: "Profil für den arteriellen Blutdruck."
+Title: "T-CABS Observation Arterial Blood Pressure"
+Description: "Profile for arterial blood pressure.
+Compatibility:
+For the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the [ISiKBlutdruckArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell)"
 
 // Kompatibel zu "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell"
 
-* code.coding[LoincCoding] = $LOINC#85354-9 "Blood pressure panel with all children optional"
+* code.coding[LoincCoding] = $LOINC#85354-9 //"Blood pressure panel with all children optional"
 * code.coding[MDCType] = $IEEE-11073#150016
-* value[x] ..0
 
 * component MS
 * component.code MS
-
 * component.value[x] MS
 * component.valueQuantity MS
 * component.valueQuantity.value MS
@@ -44,8 +44,9 @@ Description: "Profil für den arteriellen Blutdruck."
 Instance: Example-ArteriellerBlutdruck-Doccla
 InstanceOf: T_CABS_Observation_ArteriellerBlutdruck
 Usage: #example
-Title: "Beispiel arterieller Blutdruck Messung"
-Description: "Beispiel für eine arterielle Blutdruck-Messung über Doccla"
+Title: "Example Arterial Blood Pressure Measurement"
+Description: "Example of an arterial blood pressure measurement via Doccla"
+* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell"
 * status = #final
 * category[VSCat].coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd-observation
@@ -65,3 +66,4 @@ Description: "Beispiel für eine arterielle Blutdruck-Messung über Doccla"
 * component[DiastolicBP].valueQuantity.system = $UCUM
 * component[DiastolicBP].valueQuantity.code = #mm[Hg]
 * device = Reference(Device/beispiel-phd-doccla)
+* extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

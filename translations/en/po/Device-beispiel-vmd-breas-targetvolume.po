@@ -1,0 +1,11 @@
+
+# The name of the device.
+#: Device.deviceName.name
+msgid "Vivo45 Target Volume Module"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "MDC_DEV_REGUL_PRESS_LUNG_VMD"
+msgstr ""
+

@@ -1,18 +1,18 @@
-# Beispiel Telemedizinische Visite - v0.1.0
+# Example Telemedicine Visit - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel Telemedizinische Visite**
+* **Example Telemedicine Visit**
 
-## Example Encounter: Beispiel Telemedizinische Visite
+## Example Encounter: Example Telemedicine Visit
 
-Profile: [T-CABS Encounter Kontakt](StructureDefinition-t-cabs-encounter-kontakt.md)
+Profiles: [T-CABS Encounter Contact](StructureDefinition-t-cabs-encounter-kontakt.md), [MII PR Fall Kontakt mit einer Gesundheitseinrichtung](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.fall@2025.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung)
 
 **identifier**: `http://tcabs.example.org/encounters`/ENC-TCABS-WEEKLY-001
 
 **status**: Finished
 
-**class**: [ActCode VR](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR): virtual
+**class**: [ActCode: VR](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR) (virtual)
 
 **type**: Konsil
 
@@ -23,7 +23,7 @@ Profile: [T-CABS Encounter Kontakt](StructureDefinition-t-cabs-encounter-kontakt
 | | | |
 | :--- | :--- | :--- |
 | - | **Type** | **Individual** |
-| * | attender | [Practitioner Anna Schmidt](Practitioner-tcabs-practitioner-example.md) |
+| * | attender | [Practitioner Anna Schmidt(official)](Practitioner-tcabs-practitioner-example.md) |
 
 **period**: 2024-01-22 09:00:00+0000 --> 2024-01-22 09:30:00+0000
 
@@ -39,7 +39,8 @@ Profile: [T-CABS Encounter Kontakt](StructureDefinition-t-cabs-encounter-kontakt
   "id" : "Example-Encounter-Telemedizinische-Visite",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"
+      "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
     ]
   },
   "identifier" : [

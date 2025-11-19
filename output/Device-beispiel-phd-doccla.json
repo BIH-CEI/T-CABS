@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-phd-doccla</b></p><a name=\"beispiel-phd-doccla\"> </a><a name=\"hcbeispiel-phd-doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-phd.html\">T-CABS Device PHD</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier/PHD-DOCCLA-67890</p><p><b>manufacturer</b>: Doccla GmbH</p><p><b>serialNumber</b>: PHD-SN-345678</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Doccla Pulsoximeter</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: DPO-2024</p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 65573}\">MDC_MOC_VMS_MDS_SIMP</span></p><h3>Specializations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:iso:std:iso:11073:10101 528388}\">MDC_DEV_SPEC_PROFILE_PULS_OXIM</span></td><td>1.0</td></tr></table><p><b>patient</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-phd-doccla</b></p><a name=\"beispiel-phd-doccla\"> </a><a name=\"hcbeispiel-phd-doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-phd.html\">T-CABS Device PHD</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier/PHD-DOCCLA-67890</p><p><b>manufacturer</b>: Masimo</p><p><b>serialNumber</b>: PHD-SN-345678</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Pulsoximeter</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: DPO-2024</p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 65573}\">MDC_MOC_VMS_MDS_SIMP</span></p><h3>Specializations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:iso:std:iso:11073:10101 528388}\">MDC_DEV_SPEC_PROFILE_PULS_OXIM</span></td><td>1.0</td></tr></table><p><b>patient</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>owner</b>: <a href=\"Organization-beispiel-provider-doccla.html\">Organization Doccla Deutschland GmbH</a></p></div>"
   },
   "identifier" : [{
     "type" : {
@@ -18,10 +18,10 @@
     "system" : "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680",
     "value" : "PHD-DOCCLA-67890"
   }],
-  "manufacturer" : "Doccla GmbH",
+  "manufacturer" : "Masimo",
   "serialNumber" : "PHD-SN-345678",
   "deviceName" : [{
-    "name" : "Doccla Pulsoximeter",
+    "name" : "Pulsoximeter",
     "type" : "user-friendly-name"
   }],
   "modelNumber" : "DPO-2024",
@@ -44,5 +44,8 @@
   }],
   "patient" : {
     "reference" : "Patient/tcabs-patient-example"
+  },
+  "owner" : {
+    "reference" : "Organization/beispiel-provider-doccla"
   }
 }

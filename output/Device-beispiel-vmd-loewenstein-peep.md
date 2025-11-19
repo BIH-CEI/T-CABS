@@ -1,12 +1,12 @@
-# Beispiel VMD Löwenstein PEEP Module - v0.1.0
+# Example VMD Löwenstein PEEP Module - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel VMD Löwenstein PEEP Module**
+* **Example VMD Löwenstein PEEP Module**
 
-## Example Device: Beispiel VMD Löwenstein PEEP Module
+## Example Device: Example VMD Löwenstein PEEP Module
 
-Profile: [T-CABS Device VMD Beatmungsgeraet](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md)
+Profile: [T-CABS Device VMD Ventilator](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md)
 
 **identifier**: `http://tcabs.example.org/device-vmd`/VMD-LOEW-PEEP-001
 
@@ -17,7 +17,7 @@ Profile: [T-CABS Device VMD Beatmungsgeraet](StructureDefinition-t-cabs-device-v
 | - | **Name** | **Type** |
 | * | Prisma VENT30 PEEP Module | User Friendly name |
 
-**type**: MDC_DEV_SYS_PT_VENT_VMD
+**type**: MDC_DEV_ANALY_PRESS_AWAY_VMD
 
 **parent**: [Device: extension = 12450; identifier = UDI; manufacturer = Löwenstein Medical; serialNumber = PRISMA30-SN-345678; type = MDC_DEV_SYS_PT_VENT_MDS](Device-beispiel-beatmungsgeraet-loewenstein.md)
 
@@ -50,8 +50,8 @@ Profile: [T-CABS Device VMD Beatmungsgeraet](StructureDefinition-t-cabs-device-v
     "coding" : [
       {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "70002",
-        "display" : "MDC_DEV_SYS_PT_VENT_VMD"
+        "code" : "69706",
+        "display" : "MDC_DEV_ANALY_PRESS_AWAY_VMD"
       }
     ]
   },

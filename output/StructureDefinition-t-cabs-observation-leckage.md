@@ -1,18 +1,18 @@
-# T-CABS Observation Leckage - v0.1.0
+# T-CABS Observation Leakage - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation Leckage**
+* **T-CABS Observation Leakage**
 
-## Resource Profile: T-CABS Observation Leckage 
+## Resource Profile: T-CABS Observation Leakage 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage | *Version*:0.1.0 |
-| Draft as of 2025-10-16 | *Computable Name*:T_CABS_Observation_Leckage |
+| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Leckage |
 
  
-Profil für die Leckagerate unter Beatmung 
+Profile for leakage rate during ventilation 
 
 **Usages:**
 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-l
   "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_Leckage",
-  "title" : "T-CABS Observation Leckage",
+  "title" : "T-CABS Observation Leakage",
   "status" : "draft",
-  "date" : "2025-10-16T18:59:10+02:00",
+  "date" : "2025-11-19T11:55:29+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -49,12 +49,23 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-l
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.bihealth.org/"
         }
       ]
     }
   ],
-  "description" : "Profil für die Leckagerate unter Beatmung",
+  "description" : "Profile for leakage rate during ventilation",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }
+      ]
+    }
+  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,8 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-l
         "path" : "Observation.code.coding",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
-          "code" : "152432",
-          "display" : "MDC_VENT_VOL_LEAK"
+          "code" : "152432"
         }
       },
       {

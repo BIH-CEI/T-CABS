@@ -1,12 +1,12 @@
-# Beispiel DiagnosticReport Wöchentliche Visite - v0.1.0
+# Example DiagnosticReport Weekly Visit - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Beispiel DiagnosticReport Wöchentliche Visite**
+* **Example DiagnosticReport Weekly Visit**
 
-## Example DiagnosticReport: Beispiel DiagnosticReport Wöchentliche Visite
+## Example DiagnosticReport: Example DiagnosticReport Weekly Visit
 
-Profile: [T-CABS DiagnosticReport Visitenbefund](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)
+Profile: [T-CABS DiagnosticReport Visit Finding](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)
 
 ## Outpatient Progress note 
 
@@ -15,7 +15,7 @@ Profile: [T-CABS DiagnosticReport Visitenbefund](StructureDefinition-t-cabs-diag
 | Subject | Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number) |
 | When For | 2024-01-22 09:00:00+0000 |
 | Reported | 2024-01-22 10:00:00+0000 |
-| Performer | [Practitioner Anna Schmidt](Practitioner-tcabs-practitioner-example.md) |
+| Performer | [Practitioner Anna Schmidt(official)](Practitioner-tcabs-practitioner-example.md) |
 | Identifier | `http://tcabs.example.org/diagnosticreports`/DR-TCABS-WEEKLY-001 |
 
 **Report Details**
@@ -53,7 +53,7 @@ Profile: [T-CABS DiagnosticReport Visitenbefund](StructureDefinition-t-cabs-diag
   * **Flags**: Final
   * **When For**: 2024-01-15 08:15:00+0000 --> 2024-01-15 08:15:00+0000
 
-Patient zeigt stabile Beatmungsparameter über alle Geräte hinweg. BREAS: AMV im Normalbereich bei 8,5 L/min, AHI mit 5,2 innerhalb des therapeutischen Ziels. ResMed: Atemfrequenz stabil bei 14/min, Leckage minimal bei 0,6 L/min. Löwenstein: Synchronisation bei 85%, TriggeredBreaths mit 92% zeigen sehr gute Patient-Gerät-Interaktion. Vitalparameter ebenfalls stabil: BMI 25,3 kg/m², SpO2 98%.
+Patient shows stable ventilation parameters across all devices. BREAS: AMV in normal range at 8.5 L/min, AHI at 5.2 within therapeutic target. ResMed: Respiratory rate stable at 14/min, leakage minimal at 0.6 L/min. Löwenstein: Synchronization at 85%, TriggeredBreaths at 92% show very good patient-device interaction. Vital parameters also stable: BMI 25.3 kg/m², SpO2 98%.
 
 
 
@@ -123,7 +123,7 @@ Patient zeigt stabile Beatmungsparameter über alle Geräte hinweg. BREAS: AMV i
       "reference" : "Observation/Example-ArterielleSPO2-Doccla"
     }
   ],
-  "conclusion" : "Patient zeigt stabile Beatmungsparameter über alle Geräte hinweg. BREAS: AMV im Normalbereich bei 8,5 L/min, AHI mit 5,2 innerhalb des therapeutischen Ziels. ResMed: Atemfrequenz stabil bei 14/min, Leckage minimal bei 0,6 L/min. Löwenstein: Synchronisation bei 85%, TriggeredBreaths mit 92% zeigen sehr gute Patient-Gerät-Interaktion. Vitalparameter ebenfalls stabil: BMI 25,3 kg/m², SpO2 98%."
+  "conclusion" : "Patient shows stable ventilation parameters across all devices. BREAS: AMV in normal range at 8.5 L/min, AHI at 5.2 within therapeutic target. ResMed: Respiratory rate stable at 14/min, leakage minimal at 0.6 L/min. Löwenstein: Synchronization at 85%, TriggeredBreaths at 92% show very good patient-device interaction. Vital parameters also stable: BMI 25.3 kg/m², SpO2 98%."
 }
 
 ```

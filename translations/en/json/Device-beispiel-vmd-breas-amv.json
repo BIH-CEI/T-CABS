@@ -1,0 +1,23 @@
+{
+  "id" : "Device-beispiel-vmd-breas-amv",
+  "baseLang" : "de-DE",
+  "languages" : [
+    {
+      "targetLang" : "en",
+      "entries" : [
+        {
+          "id" : "Device.deviceName.name",
+          "context" : "The name of the device.",
+          "source" : "Vivo45 AMV Module",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "MDC_DEV_VMD",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

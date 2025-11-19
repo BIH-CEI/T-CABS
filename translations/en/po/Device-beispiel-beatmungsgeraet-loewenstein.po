@@ -1,0 +1,21 @@
+
+# A name of the manufacturer.
+#: Device.manufacturer
+msgid "Löwenstein Medical"
+msgstr ""
+
+# The serial number assigned by the organization when the device was manufactured.
+#: Device.serialNumber
+msgid "PRISMA30-SN-345678"
+msgstr ""
+
+# The name of the device.
+#: Device.deviceName.name
+msgid "Prisma VENT30"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "MDC_DEV_SYS_PT_VENT_MDS"
+msgstr ""
+
