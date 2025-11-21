@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observationhandgriffstaerke",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke",
+  "name": "T_CABS_Observation_Handgriffstaerke",
+  "title": "T-CABS Observation Hand Grip Strength",
+  "status": "draft",
+  "description": "Profile for hand grip strength",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:MDCType",
+        "path": "Observation.code.coding",
+        "sliceName": "MDCType"
+      },
+      {
+        "id": "Observation.code.coding:MDCType.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "8455547"
+      },
+      {
+        "id": "Observation.code.coding:SnomedCoding",
+        "path": "Observation.code.coding",
+        "sliceName": "SnomedCoding",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:SnomedCoding.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:SnomedCoding.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "251433001"
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "kg"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "kg"
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "85562004",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "mustSupport": true
+      }
+    ]
+  }
+}

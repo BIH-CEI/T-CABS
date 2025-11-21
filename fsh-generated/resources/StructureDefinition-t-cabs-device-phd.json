@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-device-phd",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-phd",
+  "name": "T_CABS_Device_PHD",
+  "title": "T-CABS Device PHD",
+  "status": "draft",
+  "description": "Profile for a personal health device measuring at the patient",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device.identifier:systemIdIdentifier",
+        "path": "Device.identifier",
+        "sliceName": "systemIdIdentifier"
+      },
+      {
+        "id": "Device.identifier:systemIdIdentifier.type.coding.system",
+        "path": "Device.identifier.type.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.identifier:systemIdIdentifier.type.coding.code",
+        "path": "Device.identifier.type.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.identifier:systemIdIdentifier.value",
+        "path": "Device.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.serialNumber",
+        "path": "Device.serialNumber",
+        "short": "Serial number of the device",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.specialization.systemType.coding:MDCType",
+        "path": "Device.specialization.systemType.coding",
+        "sliceName": "MDCType",
+        "short": "Type of measurement device",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp"
+        }
+      },
+      {
+        "id": "Device.patient",
+        "path": "Device.patient",
+        "short": "Reference to the patient",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

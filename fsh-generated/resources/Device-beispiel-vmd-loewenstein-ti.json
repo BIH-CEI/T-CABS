@@ -1,0 +1,33 @@
+{
+  "resourceType": "Device",
+  "id": "beispiel-vmd-loewenstein-ti",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/device-vmd",
+      "value": "VMD-LOEW-TI-001"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "69634",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_DEV_VMD"
+      }
+    ]
+  },
+  "deviceName": [
+    {
+      "name": "PrismaVent TI Module",
+      "type": "user-friendly-name"
+    }
+  ],
+  "parent": {
+    "reference": "Device/beispiel-beatmungsgeraet-loewenstein"
+  }
+}

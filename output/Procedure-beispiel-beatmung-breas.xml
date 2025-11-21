@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="beispiel-beatmung-breas"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure beispiel-beatmung-breas</b></p><a name="beispiel-beatmung-breas"> </a><a name="hcbeispiel-beatmung-breas"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-procedure-beatmung.html">T-CABS Procedure Ventilation</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 1258985005}">Invasive mechanical ventilation (regime/therapy)</span></p><p><b>code</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 475147}">MDC_VENT_MODE_ISO_AC_PC_6ACAP</span></p><p><b>subject</b>: <a href="Patient-tcabs-patient-example.html">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>performed</b>: 2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</p><p><b>usedReference</b>: <a href="Device-beispiel-beatmungsgeraet-breas.html">Device: extension = 8760; identifier = UDI; manufacturer = BREAS Medical; serialNumber = VIVO45-SN-789012; type = MDC_DEV_SYS_PT_VENT_MDS</a></p></div>
+  </text>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1258985005"/>
+      <display value="Invasive mechanical ventilation (regime/therapy)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="475147"/>
+      <display value="MDC_VENT_MODE_ISO_AC_PC_6ACAP"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/tcabs-patient-example"/>
+  </subject>
+  <performedPeriod>
+    <start value="2024-01-15T22:00:00Z"/>
+    <end value="2024-01-16T06:00:00Z"/>
+  </performedPeriod>
+  <usedReference>
+    <reference value="Device/beispiel-beatmungsgeraet-breas"/>
+  </usedReference>
+</Procedure>

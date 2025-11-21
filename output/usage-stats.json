@@ -2,43 +2,56 @@
   "package": "t-cabs",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "DE",
   "extensions": [],
   "profiles": {
-    "Communication": [
-      {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-alarm",
-        "title": "T-CABS Communication Alarm"
-      },
-      {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm",
-        "title": "T-CABS Communication Atemfrequenz high Alarm"
-      },
-      {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm",
-        "title": "T-CABS Communication Atemfrequenz low Alarm"
-      },
-      {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-communication-diskonnektion-alarm",
-        "title": "T-CABS Communication Diskonnektion Alarm"
-      }
-    ],
     "Device": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet",
-        "title": "T-CABS Device Beatmungsgerät"
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
+        "title": "T-CABS Device Channel Ventilator"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
+        "title": "T-CABS Device MDS Home Ventilator"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-phd",
+        "title": "T-CABS Device PHD"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-phg",
+        "title": "T-CABS Device PHG"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
+        "title": "T-CABS Device VMD Ventilator"
       }
     ],
     "DeviceMetric": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter",
-        "title": "T-CABS DeviceMetric eingestellter oder gemessener Parameter"
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric",
+        "title": "T-CABS DeviceMetric NumericMetric"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund",
+        "title": "T-CABS DiagnosticReport Visit Finding"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
+        "title": "T-CABS Encounter Contact"
+      }
+    ],
+    "Group": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe",
+        "title": "T-CABS Patient Group"
       }
     ],
     "Observation": [
-      {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-af",
-        "title": "T-CABS Observation AF"
-      },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
         "title": "T-CABS Observation AHI"
@@ -48,31 +61,166 @@
         "title": "T-CABS Observation AMV"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden",
-        "title": "T-CABS Observation Beatmungsstunden"
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
+        "title": "T-CABS Observation Arterial Blood Pressure"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
+        "title": "T-CABS Observation SPO2"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
+        "title": "T-CABS Observation Respiratory Rate"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet",
+        "title": "T-CABS Observation Respiratory Rate Ventilated"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis",
+        "title": "T-CABS Observation Respiratory Time Ratio"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+        "title": "T-CABS Observation Ventilation Parameter (abstract)"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
+        "title": "T-CABS Observation Ventilation Parameter with Components (abstract)"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi",
+        "title": "T-CABS Observation BMI"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax",
+        "title": "T-CABS Observation Pressure MIN/MAX"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke",
+        "title": "T-CABS Observation Walking Distance"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
+        "title": "T-CABS Observation Heart Rate"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap",
+        "title": "T-CABS Observation IPAP"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht",
+        "title": "T-CABS Observation Body Weight"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur",
+        "title": "T-CABS Observation Body Temperature"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
-        "title": "T-CABS Observation Leckage"
+        "title": "T-CABS Observation Leakage"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep",
+        "title": "T-CABS Observation PEEP"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume",
+        "title": "T-CABS Observation Target Volume"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti",
+        "title": "T-CABS Observation TI"
       },
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
-        "title": "T-CABS Observation TriggeredBreaths"
+        "title": "T-CABS Observation Triggered Breaths"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+        "title": "T-CABS Observation Vital Parameter"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
+        "title": "T-CABS Observation Vital Parameter with Components"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1",
+        "title": "T-CABS Observation FEV1"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fef25-75",
+        "title": "T-CABS Observation FEF25-75"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6",
+        "title": "T-CABS Observation FEV1/FEV6"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev6",
+        "title": "T-CABS Observation FEV6"
+      },
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke",
+        "title": "T-CABS Observation Hand Grip Strength"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+        "title": "T-CABS Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-patient",
+        "title": "T-CABS Patient"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion",
+        "title": "T-CABS Function"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
+        "title": "T-CABS Person with Function"
       }
     ],
     "Procedure": [
       {
         "url": "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
-        "title": "T-CABS Procedure Beatmung"
+        "title": "T-CABS Procedure Ventilation"
       }
     ]
   },
   "usage": {
-    "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum": [
-      "Procedure"
+    "http://fhir.de/StructureDefinition/Aufnahmegrund": [
+      "Encounter"
     ],
-    "http://fhir.de/StructureDefinition/seitenlokalisation": [
-      "Procedure.code.coding"
+    "http://fhir.de/StructureDefinition/Entlassungsgrund": [
+      "Encounter.hospitalization.dischargeDisposition"
+    ],
+    "http://fhir.de/StructureDefinition/destatis/ags": [
+      "Patient.address.city"
+    ],
+    "http://fhir.de/StructureDefinition/gender-amtlich-de": [
+      "Patient.gender"
+    ],
+    "http://fhir.de/StructureDefinition/humanname-namenszusatz": [
+      "Patient.name.family",
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate": [
+      "Encounter"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate": [
+      "Encounter"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Patient.birthDate"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -83,11 +231,49 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-name": [
+      "Patient.name.family",
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
+      "Patient.name.family",
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Patient.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct": [
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Patient.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier": [
+      "Patient.name.prefix",
+      "Practitioner.name.prefix"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
@@ -95,11 +281,18 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "StructureDefinition.snapshot.element.definition",
+      "StructureDefinition.snapshot.element.short"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -120,8 +313,39 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht": [
-      "Procedure"
+    "http://hl7.org/fhir/uv/pocd/StructureDefinition/approved-jurisdictions": [
+      "Device"
+    ],
+    "http://hl7.org/fhir/uv/pocd/StructureDefinition/device-instance": [
+      "Device",
+      "DeviceMetric"
+    ],
+    "http://hl7.org/fhir/uv/pocd/StructureDefinition/metric-availability": [
+      "DeviceMetric"
+    ],
+    "http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-cycles": [
+      "Device"
+    ],
+    "http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours": [
+      "Device"
+    ],
+    "http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-mode": [
+      "Device"
+    ],
+    "http://hl7.org/fhir/uv/pocd/StructureDefinition/operator": [
+      "Device"
+    ],
+    "http://hl7.org/fhir/uv/pocd/StructureDefinition/relation": [
+      "DeviceMetric"
+    ],
+    "http://hl7.org/fhir/uv/pocd/StructureDefinition/resolution": [
+      "DeviceMetric"
+    ],
+    "http://hl7.org/fhir/uv/pocd/StructureDefinition/technical-range": [
+      "DeviceMetric"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable": [
+      "StructureDefinition"
     ]
   }
 }

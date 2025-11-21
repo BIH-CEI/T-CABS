@@ -13,21 +13,59 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li>
+    <a href="Information-Model.html">Information Model</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spezifikation
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profiles
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="logisches_modell.html">Logisches Modell</a>
+        <a href="Cross-Domain-Profiles.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="profile.html">Profile</a>
+        <a href="Vital-Data-Profiles.html">Vital Data</a>
       </li>
       <li>
-        <a href="beispiele.html">Beispiele</a>
+        <a href="Ventilation-Data-Profiles.html">Ventilation Data</a>
       </li>
     </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Cross-Domain-Examples.html">Cross-Domain</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Examples.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Examples.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Cross-Domain-Implementation.html">Cross-Domain</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Implementation.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Implementation.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>

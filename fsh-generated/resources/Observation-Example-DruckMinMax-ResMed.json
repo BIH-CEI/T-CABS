@@ -1,0 +1,70 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-DruckMinMax-ResMed",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "151792",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_PRESS_AWAY"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2024-10-07T23:00:00+02:00",
+    "end": "2024-10-07T23:30:00+02:00"
+  },
+  "component": [
+    {
+      "valueQuantity": {
+        "unit": "mbar",
+        "system": "http://unitsofmeasure.org",
+        "code": "mbar",
+        "value": 4
+      },
+      "code": {
+        "coding": [
+          {
+            "code": "151794",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "MDC_PRESS_AWAY_MIN"
+          }
+        ]
+      }
+    },
+    {
+      "valueQuantity": {
+        "unit": "mbar",
+        "system": "http://unitsofmeasure.org",
+        "code": "mbar",
+        "value": 20
+      },
+      "code": {
+        "coding": [
+          {
+            "code": "151793",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "MDC_PRESS_AWAY_MAX"
+          }
+        ]
+      }
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/beispiel-beatmung-resmed"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  },
+  "device": {
+    "reference": "DeviceMetric/beispiel-devicemetric-resmed-druck"
+  }
+}

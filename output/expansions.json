@@ -1,32 +1,39 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b4988a25-b414-4bad-913d-90d439500a79",
+  "id" : "7911f90f-92dd-4a66-923c-9aae9c4124f8",
   "meta" : {
-    "lastUpdated" : "2025-03-25T16:42:29.393+01:00"
+    "lastUpdated" : "2025-11-20T17:13:04.355+01:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+    "fullUrl" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on codesystem ISO 11073-10101 Health informatics - Point-of-care version2023-04-26</p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475172\"> </a>\u00a0\u00a0475172</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475147\"> </a>\u00a0\u00a0475147</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_AC_PC_6ACAP</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475148\"> </a>\u00a0\u00a0475148</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_AC_vtPC_6ACAP</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475154\"> </a>\u00a0\u00a0475154</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475197\"> </a>\u00a0\u00a0475197</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:iso:std:iso:11073:10101-475201\"> </a>\u00a0\u00a0475201</td><td>urn:iso:std:iso:11073:10101</td><td>MDC_VENT_MODE_ISO_CMV_VC</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb. 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-428311008\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/428311008\">428311008</a></td><td>Non-invasive ventilation</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;428311008&quot;, &quot;display&quot;: &quot;Non-invasive ventilation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;428311008&quot;&gt;&lt;display value=&quot;Non-invasive ventilation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-1258985005\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/1258985005\">1258985005</a></td><td>Invasive mechanical ventilation (regime/therapy)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1258985005&quot;, &quot;display&quot;: &quot;Invasive mechanical ventilation (regime/therapy)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;1258985005&quot;&gt;&lt;display value=&quot;Invasive mechanical ventilation (regime/therapy)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
-      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
       "version" : "0.1.0",
-      "name" : "T_CABS_ValueSet_Beatmungsmodus",
-      "title" : "T-CABS ValueSet Beatmungsmodus",
+      "name" : "T_CABS_ValueSet_Beatmungsform",
+      "title" : "T-CABS ValueSet Ventilation Type",
       "status" : "draft",
-      "date" : "2025-03-25T16:42:03+01:00",
+      "date" : "2025-11-20T17:13:04+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:3e69f1e8-743d-4aaa-9959-d651b563ee65",
-        "timestamp" : "2025-03-25T16:42:53+01:00",
-        "total" : 6,
+        "identifier" : "urn:uuid:903a8f45-fc39-4945-92bb-8a4da160f1b3",
+        "timestamp" : "2025-11-20T17:14:23+01:00",
+        "total" : 2,
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
-          "valueCode" : "en-US"
+          "valueCode" : "en"
         },
         {
           "name" : "count",
@@ -46,41 +53,378 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "urn:iso:std:iso:11073:10101|2023-04-26"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "428311008",
+          "display" : "Non-invasive ventilation"
         },
         {
-          "name" : "version",
-          "valueUri" : "urn:iso:std:iso:11073:10101|2023-04-26"
+          "system" : "http://snomed.info/sct",
+          "code" : "1258985005",
+          "display" : "Invasive mechanical ventilation (regime/therapy)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on codesystem ISO 11073-10101 Health informatics - Point-of-care version 2024-12-05<span class=\"copy-text-inline\"><button data-clipboard-text=\"urn:iso:std:iso:11073:10101|2024-12-05\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 12 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b><a href=\"http://hl7.org/fhir/concept-properties#status\">status</a></b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475172\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475172</td><td>MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475172&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475172&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475147\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475147</td><td>MDC_VENT_MODE_ISO_AC_PC_6ACAP</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475147&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_AC_PC_6ACAP&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475147&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_AC_PC_6ACAP&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475148\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475148</td><td>MDC_VENT_MODE_ISO_AC_vtPC_6ACAP</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475148&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_AC_vtPC_6ACAP&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475148&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_AC_vtPC_6ACAP&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475154\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475154</td><td>MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475154&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475154&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475197\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475197</td><td>MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475197&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475197&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475201\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475201</td><td>MDC_VENT_MODE_ISO_CMV_VC</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475201&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_CMV_VC&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475201&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_CMV_VC&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475161\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475161</td><td>MDC_VENT_MODE_ISO_CSV_6ACAP</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475161&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_CSV_6ACAP&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475161&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_CSV_6ACAP&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475140\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475140</td><td>MDC_VENT_MODE_ISO_AC_VC_6ACAPL</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475140&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_AC_VC_6ACAPL&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475140&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_AC_VC_6ACAPL&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475136\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475136</td><td>MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475136&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475136&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475190\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475190</td><td>MDC_VENT_MODE_ISO_HIFLOW_3NIV</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475190&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_HIFLOW_3NIV&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475190&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_HIFLOW_3NIV&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475155\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475155</td><td>MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475155&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475155&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-475144\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0475144</td><td>MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475144&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475144&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+      "version" : "0.1.0",
+      "name" : "T_CABS_ValueSet_Beatmungsmodus",
+      "title" : "T-CABS ValueSet Ventilation Mode",
+      "status" : "draft",
+      "date" : "2025-11-20T17:13:04+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:40c1ce17-43a1-4f02-a2ce-758e335b6926",
+        "timestamp" : "2025-11-20T17:14:23+01:00",
+        "total" : 12,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "warning-draft",
+          "valueUri" : "urn:iso:std:iso:11073:10101|2024-12-05"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "urn:iso:std:iso:11073:10101|2024-12-05"
+        }],
+        "property" : [{
+          "code" : "status",
+          "uri" : "http://hl7.org/fhir/concept-properties#status"
         }],
         "contains" : [{
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "475172",
-          "display" : "MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC"
+          "display" : "MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
         },
         {
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "475147",
-          "display" : "MDC_VENT_MODE_ISO_AC_PC_6ACAP"
+          "display" : "MDC_VENT_MODE_ISO_AC_PC_6ACAP",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
         },
         {
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "475148",
-          "display" : "MDC_VENT_MODE_ISO_AC_vtPC_6ACAP"
+          "display" : "MDC_VENT_MODE_ISO_AC_vtPC_6ACAP",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
         },
         {
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "475154",
-          "display" : "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"
+          "display" : "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
         },
         {
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "475197",
-          "display" : "MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP"
+          "display" : "MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
         },
         {
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "475201",
-          "display" : "MDC_VENT_MODE_ISO_CMV_VC"
+          "display" : "MDC_VENT_MODE_ISO_CMV_VC",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475161",
+          "display" : "MDC_VENT_MODE_ISO_CSV_6ACAP",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475140",
+          "display" : "MDC_VENT_MODE_ISO_AC_VC_6ACAPL",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475136",
+          "display" : "MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475190",
+          "display" : "MDC_VENT_MODE_ISO_HIFLOW_3NIV",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475155",
+          "display" : "MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "475144",
+          "display" : "MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb. 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-302549007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/302549007\">302549007</a></td><td>Entire face</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;302549007&quot;, &quot;display&quot;: &quot;Entire face&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;302549007&quot;&gt;&lt;display value=&quot;Entire face&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-45206002\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/45206002\">45206002</a></td><td>Nose</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;45206002&quot;, &quot;display&quot;: &quot;Nose&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;45206002&quot;&gt;&lt;display value=&quot;Nose&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-44567001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/44567001\">44567001</a></td><td>Trachea</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;44567001&quot;, &quot;display&quot;: &quot;Trachea&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;44567001&quot;&gt;&lt;display value=&quot;Trachea&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle",
+      "version" : "0.1.0",
+      "name" : "T_CABS_ValueSet_Beatmungsstelle",
+      "title" : "T-CABS ValueSet Ventilation Site",
+      "status" : "draft",
+      "date" : "2025-11-20T17:13:04+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1f1095e9-6d5f-4310-885e-b4f40829b09b",
+        "timestamp" : "2025-11-20T17:14:23+01:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "302549007",
+          "display" : "Entire face"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "45206002",
+          "display" : "Nose"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "44567001",
+          "display" : "Trachea"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on codesystem ISO 11073-10101 Health informatics - Point-of-care version 2024-12-05<span class=\"copy-text-inline\"><button data-clipboard-text=\"urn:iso:std:iso:11073:10101|2024-12-05\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 7 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b><a href=\"http://hl7.org/fhir/concept-properties#status\">status</a></b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-528388\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0528388</td><td>MDC_DEV_SPEC_PROFILE_PULS_OXIM</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;528388&quot;, &quot;display&quot;: &quot;MDC_DEV_SPEC_PROFILE_PULS_OXIM&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;528388&quot;&gt;&lt;display value=&quot;MDC_DEV_SPEC_PROFILE_PULS_OXIM&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-528399\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0528399</td><td>MDC_DEV_SPEC_PROFILE_SCALE</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;528399&quot;, &quot;display&quot;: &quot;MDC_DEV_SPEC_PROFILE_SCALE&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;528399&quot;&gt;&lt;display value=&quot;MDC_DEV_SPEC_PROFILE_SCALE&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-69876\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a069876</td><td>MDC_DEV_METER_STRENGTH_MUSCL</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;69876&quot;, &quot;display&quot;: &quot;MDC_DEV_METER_STRENGTH_MUSCL&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;69876&quot;&gt;&lt;display value=&quot;MDC_DEV_METER_STRENGTH_MUSCL&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-528391\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0528391</td><td>MDC_DEV_SPEC_PROFILE_BP</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;528391&quot;, &quot;display&quot;: &quot;MDC_DEV_SPEC_PROFILE_BP&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;528391&quot;&gt;&lt;display value=&quot;MDC_DEV_SPEC_PROFILE_BP&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-69680\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a069680</td><td>MDC_DEV_ANALY_AWAY_MULTI_PARAM</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;69680&quot;, &quot;display&quot;: &quot;MDC_DEV_ANALY_AWAY_MULTI_PARAM&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;69680&quot;&gt;&lt;display value=&quot;MDC_DEV_ANALY_AWAY_MULTI_PARAM&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-528484\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0528484</td><td>MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;528484&quot;, &quot;display&quot;: &quot;MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;528484&quot;&gt;&lt;display value=&quot;MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:iso:std:iso:11073:10101-528405\"> </a><code>urn:iso:std:iso:11073:10101</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0528405</td><td>MDC_DEV_SPEC_PROFILE_PEFM</td><td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;528405&quot;, &quot;display&quot;: &quot;MDC_DEV_SPEC_PROFILE_PEFM&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;528405&quot;&gt;&lt;display value=&quot;MDC_DEV_SPEC_PROFILE_PEFM&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+      "version" : "0.1.0",
+      "name" : "T_CABS_ValueSet_PHDTyp",
+      "title" : "T-CABS ValueSet PHD Type",
+      "status" : "draft",
+      "date" : "2025-11-20T17:13:04+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:38672d4e-bd6e-476b-a2ea-98ae54299c92",
+        "timestamp" : "2025-11-20T17:14:24+01:00",
+        "total" : 7,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "warning-draft",
+          "valueUri" : "urn:iso:std:iso:11073:10101|2024-12-05"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "urn:iso:std:iso:11073:10101|2024-12-05"
+        }],
+        "property" : [{
+          "code" : "status",
+          "uri" : "http://hl7.org/fhir/concept-properties#status"
+        }],
+        "contains" : [{
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "528388",
+          "display" : "MDC_DEV_SPEC_PROFILE_PULS_OXIM",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "528399",
+          "display" : "MDC_DEV_SPEC_PROFILE_SCALE",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "69876",
+          "display" : "MDC_DEV_METER_STRENGTH_MUSCL",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "528391",
+          "display" : "MDC_DEV_SPEC_PROFILE_BP",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "69680",
+          "display" : "MDC_DEV_ANALY_AWAY_MULTI_PARAM",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "528484",
+          "display" : "MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "528405",
+          "display" : "MDC_DEV_SPEC_PROFILE_PEFM",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "http://devices.fhir.org/CodeSystem/MDC-concept-status#published"
+          }]
         }]
       }
     }

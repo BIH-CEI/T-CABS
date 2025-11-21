@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/Observation/Example-Atemfrequenz-ResMed-gemessen> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Example-Atemfrequenz-ResMed-gemessen"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"^^xsd:anyURI ;
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-Atemfrequenz-ResMed-gemessen</b></p><a name=\"Example-Atemfrequenz-ResMed-gemessen\"> </a><a name=\"hcExample-Atemfrequenz-ResMed-gemessen\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html\">T-CABS Observation Respiratory Rate Ventilated</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-resmed.html\">Procedure MDC_PRESS_AWAY_CTS_POS</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 151586}\">MDC_VENT_RESP_RATE</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 23:20:00+0000 --&gt; 2024-01-15 23:20:00+0000</p><p><b>value</b>: 14 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-ATEMFREQ-001; type = MDC_VENT_RESP_RATE; unit = /min; operationalStatus = on; color = cyan; category = measurement; measurementPeriod = Once per 1 minute</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:partOf ( [
+     fhir:l <http://t-cabs.org/Procedure/beispiel-beatmung-resmed> ;
+     fhir:reference [ fhir:v "Procedure/beispiel-beatmung-resmed" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
+       fhir:code [ fhir:v "151586" ] ;
+       fhir:display [ fhir:v "MDC_VENT_RESP_RATE" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2024-01-15T23:20:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-01-15T23:20:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "14"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "/min" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "/min" ]
+  ] ; # 
+  fhir:device [
+     fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz> ;
+     fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,57 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Example-Gehstrecke-Doccla",
+  "meta" : {
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-Gehstrecke-Doccla</b></p><a name=\"Example-Gehstrecke-Doccla\"> </a><a name=\"hcExample-Gehstrecke-Doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-gehstrecke.html\">T-CABS Observation Walking Distance</a></p></div><p><b>Observation Gateway Device</b>: <a href=\"Device-beispiel-phg-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}\">PHD generated Observation</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 41950-7}, {urn:iso:std:iso:11073:10101 158033}\">Number of steps in 24 hour Measured</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 23:59:00+0000 --&gt; 2024-01-15 23:59:00+0000</p><p><b>value</b>: 8520 {#}/(24.h)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{#}/(24.h) = '{#}/(24.h)')</span></p><p><b>device</b>: <a href=\"Device-beispiel-phd-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+    "valueReference" : {
+      "reference" : "Device/beispiel-phg-doccla"
+    }
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories",
+      "code" : "phd-observation"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "41950-7",
+      "display" : "Number of steps in 24 hour Measured"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "158033"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/tcabs-patient-example"
+  },
+  "effectivePeriod" : {
+    "start" : "2024-01-15T23:59:00Z",
+    "end" : "2024-01-15T23:59:00Z"
+  },
+  "valueQuantity" : {
+    "value" : 8520,
+    "unit" : "{#}/(24.h)",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{#}/(24.h)"
+  },
+  "device" : {
+    "reference" : "Device/beispiel-phd-doccla"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resourceType": "Device",
+  "id": "beispiel-vmd-loewenstein-peep",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/device-vmd",
+      "value": "VMD-LOEW-PEEP-001"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "69706",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_DEV_ANALY_PRESS_AWAY_VMD"
+      }
+    ]
+  },
+  "deviceName": [
+    {
+      "name": "Prisma VENT30 PEEP Module",
+      "type": "user-friendly-name"
+    }
+  ],
+  "parent": {
+    "reference": "Device/beispiel-beatmungsgeraet-loewenstein"
+  }
+}

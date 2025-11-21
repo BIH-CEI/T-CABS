@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Example-TriggeredBreaths-Loewenstein"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Example-TriggeredBreaths-Loewenstein</b></p><a name="Example-TriggeredBreaths-Loewenstein"> </a><a name="hcExample-TriggeredBreaths-Loewenstein"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-observation-triggeredbreaths.html">T-CABS Observation Triggered Breaths</a></p></div><p><b>partOf</b>: <a href="Procedure-beispiel-beatmung-loewenstein.html">Procedure MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 152498}">MDC_VENT_RESP_BTSD_P_RATE</span></p><p><b>subject</b>: <a href="Patient-tcabs-patient-example.html">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</p><p><b>value</b>: 92 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p><p><b>device</b>: <a href="DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.html">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-LOEW-TRIG-001; type = MDC_VENT_RESP_BTSD_P_RATE; unit = %; operationalStatus = on; color = yellow; category = measurement; measurementPeriod = Once per 1 minute</a></p></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/beispiel-beatmung-loewenstein"/>
+  </partOf>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="152498"/>
+      <display value="MDC_VENT_RESP_BTSD_P_RATE"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/tcabs-patient-example"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2024-01-15T22:00:00Z"/>
+    <end value="2024-01-16T06:00:00Z"/>
+  </effectivePeriod>
+  <valueQuantity>
+    <value value="92"/>
+    <unit value="%"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <device>
+    <reference value="DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths"/>
+  </device>
+</Observation>

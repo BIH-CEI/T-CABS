@@ -1,0 +1,420 @@
+@startuml T-CABS Profile Relationships & Examples
+!theme plain
+skinparam backgroundColor white
+skinparam class {
+    BackgroundColor<<General>> LightBlue
+    BackgroundColor<<Ventilation>> LightGreen
+    BackgroundColor<<VitalData>> LightYellow
+    BackgroundColor<<Device>> LightCoral
+    BackgroundColor<<DeviceMetric>> Orange
+    BackgroundColor<<Procedure>> LightSalmon
+    BackgroundColor<<Observation>> Wheat
+    BackgroundColor<<Patient>> LightCyan
+    BackgroundColor<<Encounter>> PaleGreen
+    BackgroundColor<<DiagnosticReport>> Lavender
+    BackgroundColor<<Practitioner>> LightSteelBlue
+    BackgroundColor<<Organization>> Khaki
+    BackgroundColor<<Group>> LemonChiffon
+    BackgroundColor<<PractitionerRole>> Thistle
+    BorderColor Black
+}
+
+' Compact layout settings
+skinparam maxMessageSize 80
+skinparam wrapWidth 200
+skinparam minClassWidth 50
+skinparam packageStyle rectangle
+
+' Force vertical layout and hide relationships for spacing
+hide circle
+hide empty methods
+hide empty attributes
+
+' Main structure from top to bottom
+top to bottom direction
+
+' Layout hints for compactness
+!define LAYOUT_TOP_DOWN top to bottom direction
+
+' Top Level - General Profiles
+package "Allgemein (General)" {
+    class T_CABS_Patient <<Patient>> {
+        +Base: MIIPatient
+        +ID: t-cabs-patient
+        +Example: tcabs-patient-example
+    }
+    
+    class T_CABS_Encounter_Kontakt <<Encounter>> {
+        +Base: MIIEncounter
+        +ID: t-cabs-encounter-kontakt
+        +Example: Example-Encounter-Telemedizinische-Visite
+    }
+    
+    class T_CABS_DiagnosticReport_Visitenbefund <<DiagnosticReport>> {
+        +Base: DiagnosticReport
+        +ID: t-cabs-diagnosticreport-visitenbefund
+        +Example: Example-DiagnosticReport-Woechentliche-Visite
+    }
+    
+    class T_CABS_Practitioner_PersonMitFunktion <<Practitioner>> {
+        +Base: practitioner
+        +ID: t-cabs-practitioner-arzt
+        +Example: tcabs-practitioner-example
+    }
+    
+    class T_CABS_Organisation <<Organization>> {
+        +Base: Organization
+        +ID: t-cabs-organisation
+        +Examples: beispiel-provider-jochum,
+        beispiel-provider-loewenstein,
+        beispiel-provider-vivisol, CABS
+    }
+    
+    ' Study Management
+    class T_CABS_Group_Patientengruppe <<Group>> {
+        +Base: Group
+        +ID: t-cabs-group-patientengruppe
+    }
+    
+    
+    class T_CABS_PractitionerRole_Rolle <<PractitionerRole>> {
+        +Base: PractitionerRole
+        +ID: t-cabs-practitionerrole-rolle
+    }
+}
+
+' Vital Data Profiles
+package "Vitaldaten (Vital Data) - Doccla" {
+        ' Vital Data Device Profiles
+    class T_CABS_Device_PHD <<Device>> {
+        +Base: PhdDevice
+        +ID: t-cabs-device-phd
+        +Example: beispiel-phd-doccla
+    }
+    
+    class T_CABS_Device_PHG <<Device>> {
+        +Base: PhgDevice
+        +ID: t-cabs-device-phg
+        +Example: beispiel-phg-doccla
+    }
+
+    ' Vital Data Observations with Code Slices
+    class T_CABS_Observation_Vitalparameter <<Observation>> {
+        +Base: PhdNumericObservation
+        +ID: t-cabs-observation-vitalparameter
+        +{abstract}
+    }
+    
+    class T_CABS_Observation_VitalparameterMitKomponenten <<Observation>> {
+        +Base: PhdNumericObservation
+        +ID: t-cabs-observation-vitalparameter-mitkomponenten
+        +{abstract}
+    }
+    
+    class T_CABS_Observation_ArterielleSPO2 <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observation-arteriellespo2
+        +Example: Example-ArterielleSPO2-Doccla
+    }
+    
+    class T_CABS_Observation_ArteriellerBlutdruck <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observation-arteriellerblutdruck
+        +Example: Example-ArteriellerBlutdruck-Doccla
+    }
+    
+    class T_CABS_Observation_Atemfrequenz <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observation-atemfrequenz
+        +Example: Example-Atemfrequenz-Doccla
+    }
+    
+    class T_CABS_Observation_BMI <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observation-bmi
+        +Example: Example-BMI-Doccla
+    }
+    
+    class T_CABS_Observation_FEV1 <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observationfev1
+        +Example: Example-FEV1-Doccla
+    }
+    
+    class T_CABS_Observation_Gehstrecke <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observation-gehstrecke
+        +Example: Example-Gehstrecke-Doccla
+    }
+    
+    class T_CABS_Observation_Herzfrequenz <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observation-herzfrequenz
+        +Example: Example-Herzfrequenz-Doccla
+    }
+    
+    class T_CABS_Observation_Koerpergewicht <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observation-koerpergewicht
+        +Example: Example-Koerpergewicht-Doccla
+    }
+    
+    class T_CABS_Observation_Koerpertemperatur <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observation-koerpertemperatur
+        +Example: Example-Koerpertemperatur-Doccla
+    }
+    
+    class T_CABS_Observation_FEV6 <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observationfev6
+        +Example: Example-FEV6-Doccla
+    }
+    
+    class T_CABS_Observation_FEF25_75 <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observationfev1fef25-75
+        +Example: Example-FEF25-75-Doccla
+    }
+    
+    class T_CABS_Observation_FEV1_FEV6 <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observationfev1fev6
+        +Example: Example-FEV1-FEV6-Doccla
+    }
+    
+    class T_CABS_Observation_Handgriffstaerke <<Observation>> {
+        +Parent: t-cabs-observation-vitalparameter
+        +ID: t-cabs-observationhandgriffstaerke
+        +Example: Example-Handgriffstaerke-Doccla
+    }
+}
+
+' Ventilation Related Profiles
+package "Beatmungsdaten (Ventilation)" {
+    ' Ventilation Device Hierarchy
+    class T_CABS_Device_MDS_Beatmungsgeraet <<Device>> {
+        +Base: MdsDevice
+        +ID: t-cabs-device-mds-beatmungsgeraet
+        +Examples: beispiel-beatmungsgeraet-breas,
+        beispiel-beatmungsgeraet-loewenstein,
+        beispiel-beatmungsgeraet-resmed
+    }
+    
+    class T_CABS_Device_VMD_Beatmungsgeraet <<Device>> {
+        +Base: VmdDevice
+        +ID: t-cabs-device-vmd-beatmungsgeraet
+    }
+    
+    class T_CABS_Device_Channel_Beatmungsgeraet <<Device>> {
+        +Base: ChannelDevice
+        +ID: t-cabs-device-channel-beatmungsgeraet
+    }
+    
+    class T_CABS_DeviceMetric_NumericMetric <<DeviceMetric>> {
+        +Base: NumericDeviceMetric
+        +ID: t-cabs-devicemetric-numericmetric
+    }
+
+    ' Ventilation Procedure
+    class T_CABS_Procedure_Beatmung <<Procedure>> {
+        +Base: MII Procedure
+        +ID: t-cabs-procedure-beatmung
+        +Examples: beispiel-beatmung-breas,
+        beispiel-beatmung-loewenstein,
+        beispiel-beatmung-resmed
+    }
+
+    ' Updated Ventilation Parameter Observations
+    class T_CABS_Observation_Beatmungsparameter <<Observation>> {
+        +Base: NumericObservation
+        +ID: t-cabs-observation-beatmungsparameter
+        +{abstract}
+    }
+    
+    class T_CABS_Observation_BeatmungsparameterMitKomponenten <<Observation>> {
+        +Base: NumericObservation
+        +ID: t-cabs-observation-beatmungsparameter-mitkomponenten
+        +{abstract}
+    }
+    
+    class T_CABS_Observation_AHI <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-ahi
+        +Example: Example-AHI-BREAS
+    }
+    
+    class T_CABS_Observation_AMV <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-amv
+        +Example: Example-AMV-BREAS-gemessen
+    }
+    
+    class T_CABS_Observation_Atemfrequenz_beatmet <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-atemfrequenz-beatmet
+        +Example: Example-Atemfrequenz-ResMed-gemessen
+    }
+    
+    class T_CABS_Observation_Leckage <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-leckage
+        +Example: Example-Leckage-ResMed
+    }
+    
+    
+    class T_CABS_Observation_TriggeredBreaths <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-triggeredbreaths
+        +Example: Example-TriggeredBreaths-Loewenstein
+    }
+    
+    class T_CABS_Observation_TI <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-ti
+        +Example: Example-TI-Loewenstein
+    }
+    
+    class T_CABS_Observation_Atemzeitverhaeltnis <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-atemzeitverhaeltnis
+        +Example: Example-Atemzeitverhaeltnis-ResMed
+    }
+    
+    class T_CABS_Observation_DruckMinMax <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-druck-minmax
+        +Example: Example-DruckMinMax-ResMed
+    }
+    
+    class T_CABS_Observation_IPAP <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-ipap
+        +Example: Example-IPAP-BREAS
+    }
+    
+    class T_CABS_Observation_TargetVolume <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-targetvolume
+        +Example: Example-TargetVolume-BREAS
+    }
+    
+    class T_CABS_Observation_PEEP <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-peep
+        +Example: Example-PEEP-Loewenstein
+    }
+}
+
+' === CLINICAL WORKFLOW RELATIONSHIPS ===
+
+' Core Clinical Workflow - Telemedical Visit
+T_CABS_Patient ||--o{ T_CABS_Encounter_Kontakt : subject
+T_CABS_Encounter_Kontakt ||--|| T_CABS_DiagnosticReport_Visitenbefund : encounter
+T_CABS_DiagnosticReport_Visitenbefund }o--|| T_CABS_Patient : subject
+T_CABS_DiagnosticReport_Visitenbefund }o--o{ T_CABS_Observation_Beatmungsparameter : result
+T_CABS_DiagnosticReport_Visitenbefund }o--o{ T_CABS_Observation_Vitalparameter : result
+
+' Staff and Organization
+T_CABS_Encounter_Kontakt }o--|| T_CABS_Practitioner_PersonMitFunktion : participant
+T_CABS_Encounter_Kontakt }o--|| T_CABS_Organisation : serviceProvider
+T_CABS_DiagnosticReport_Visitenbefund }o--|| T_CABS_Practitioner_PersonMitFunktion : performer
+
+' Group-Patient Relationship
+T_CABS_Group_Patientengruppe }o--o{ T_CABS_Patient : member
+
+' Group Management
+T_CABS_Group_Patientengruppe }o--|| T_CABS_Practitioner_PersonMitFunktion : managingEntity
+T_CABS_Group_Patientengruppe }o--|| T_CABS_Organisation : managingEntity
+
+' PractitionerRole Relationships
+T_CABS_PractitionerRole_Rolle }o--|| T_CABS_Practitioner_PersonMitFunktion : practitioner
+T_CABS_PractitionerRole_Rolle }o--|| T_CABS_Organisation : organization
+
+' === DEVICE AND PROCEDURE RELATIONSHIPS ===
+
+' Ventilation Therapy
+T_CABS_Procedure_Beatmung }o--|| T_CABS_Patient : subject
+T_CABS_Procedure_Beatmung }o--|| T_CABS_Device_MDS_Beatmungsgeraet : usedReference
+T_CABS_Encounter_Kontakt }o--o{ T_CABS_Procedure_Beatmung : reasonReference
+
+' Device-Patient Relationships
+T_CABS_Device_MDS_Beatmungsgeraet }o--|| T_CABS_Patient : patient
+T_CABS_Device_PHD }o--|| T_CABS_Patient : patient
+T_CABS_Device_PHG }o--|| T_CABS_Patient : patient
+
+' Device Hierarchy (Ventilation)
+T_CABS_Device_VMD_Beatmungsgeraet }o--|| T_CABS_Device_MDS_Beatmungsgeraet : parent
+T_CABS_Device_Channel_Beatmungsgeraet }o--|| T_CABS_Device_VMD_Beatmungsgeraet : parent
+T_CABS_DeviceMetric_NumericMetric }o--|| T_CABS_Device_Channel_Beatmungsgeraet : parent
+T_CABS_DeviceMetric_NumericMetric }o--|| T_CABS_Device_MDS_Beatmungsgeraet : source
+
+' === OBSERVATION RELATIONSHIPS ===
+
+' Observation Device References
+T_CABS_Observation_Vitalparameter }o--|| T_CABS_Device_PHD : device
+T_CABS_Observation_Vitalparameter }o--|| T_CABS_Device_PHG : gatewayDevice
+T_CABS_Observation_Beatmungsparameter }o--|| T_CABS_DeviceMetric_NumericMetric : device
+T_CABS_Observation_BeatmungsparameterMitKomponenten }o--|| T_CABS_DeviceMetric_NumericMetric : device
+
+' Observation Subject References
+T_CABS_Observation_Vitalparameter }o--|| T_CABS_Patient : subject
+T_CABS_Observation_Beatmungsparameter }o--|| T_CABS_Patient : subject
+T_CABS_Observation_BeatmungsparameterMitKomponenten }o--|| T_CABS_Patient : subject
+
+' Procedure References (Ventilation Observations)
+T_CABS_Observation_Beatmungsparameter }o--|| T_CABS_Procedure_Beatmung : partOf
+T_CABS_Observation_BeatmungsparameterMitKomponenten }o--|| T_CABS_Procedure_Beatmung : partOf
+
+' === INHERITANCE RELATIONSHIPS ===
+
+' Ventilation Parameter Inheritance (Updated Parent)
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_AHI
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_AMV
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_Atemfrequenz_beatmet
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_Leckage
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_TriggeredBreaths
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_TI
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_Atemzeitverhaeltnis
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_IPAP
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_TargetVolume
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_PEEP
+
+' Vital Parameter Inheritance (with Code Slices)
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_ArterielleSPO2
+T_CABS_Observation_VitalparameterMitKomponenten <|-- T_CABS_Observation_ArteriellerBlutdruck
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Atemfrequenz
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_BMI
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_FEV1
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Gehstrecke
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Herzfrequenz
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Koerpergewicht
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Koerpertemperatur
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_FEV6
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_FEF25_75
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_FEV1_FEV6
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Handgriffstaerke
+
+' Ventilation Parameter Inheritance - Components
+T_CABS_Observation_BeatmungsparameterMitKomponenten <|-- T_CABS_Observation_DruckMinMax
+
+' === LAYOUT CONSTRAINTS FOR COMPACTNESS ===
+' Horizontal grouping of similar elements
+T_CABS_Observation_ArterielleSPO2 -[hidden]right- T_CABS_Observation_ArteriellerBlutdruck
+T_CABS_Observation_ArteriellerBlutdruck -[hidden]right- T_CABS_Observation_Atemfrequenz
+T_CABS_Observation_BMI -[hidden]right- T_CABS_Observation_FEV1
+T_CABS_Observation_FEV1 -[hidden]right- T_CABS_Observation_Gehstrecke
+T_CABS_Observation_Herzfrequenz -[hidden]right- T_CABS_Observation_Koerpergewicht
+T_CABS_Observation_Koerpergewicht -[hidden]right- T_CABS_Observation_Koerpertemperatur
+T_CABS_Observation_FEV6 -[hidden]right- T_CABS_Observation_FEF25_75
+T_CABS_Observation_FEF25_75 -[hidden]right- T_CABS_Observation_FEV1_FEV6
+T_CABS_Observation_FEV1_FEV6 -[hidden]right- T_CABS_Observation_Handgriffstaerke
+
+' Beatmungsparameter horizontal grouping
+T_CABS_Observation_AHI -[hidden]right- T_CABS_Observation_AMV
+T_CABS_Observation_AMV -[hidden]right- T_CABS_Observation_Atemfrequenz_beatmet
+T_CABS_Observation_Leckage -[hidden]right- T_CABS_Observation_TriggeredBreaths
+T_CABS_Observation_TI -[hidden]right- T_CABS_Observation_Atemzeitverhaeltnis
+T_CABS_Observation_IPAP -[hidden]right- T_CABS_Observation_TargetVolume
+
+@enduml

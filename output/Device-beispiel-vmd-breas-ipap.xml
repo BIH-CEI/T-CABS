@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="beispiel-vmd-breas-ipap"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device beispiel-vmd-breas-ipap</b></p><a name="beispiel-vmd-breas-ipap"> </a><a name="hcbeispiel-vmd-breas-ipap"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html">T-CABS Device VMD Ventilator</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-vmd</code>/VMD-BREAS-IPAP-001</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Vivo45 IPAP Module</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 69634}">MDC_DEV_VMD</span></p><p><b>parent</b>: <a href="Device-beispiel-beatmungsgeraet-breas.html">Device: extension = 8760; identifier = UDI; manufacturer = BREAS Medical; serialNumber = VIVO45-SN-789012; type = MDC_DEV_SYS_PT_VENT_MDS</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://tcabs.example.org/device-vmd"/>
+    <value value="VMD-BREAS-IPAP-001"/>
+  </identifier>
+  <deviceName>
+    <name value="Vivo45 IPAP Module"/>
+    <type value="user-friendly-name"/>
+  </deviceName>
+  <type>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="69634"/>
+      <display value="MDC_DEV_VMD"/>
+    </coding>
+  </type>
+  <parent>
+    <reference value="Device/beispiel-beatmungsgeraet-breas"/>
+  </parent>
+</Device>

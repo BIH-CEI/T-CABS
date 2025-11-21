@@ -1,0 +1,33 @@
+{
+  "resourceType": "Device",
+  "id": "beispiel-vmd-breas-amv",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/device-vmd",
+      "value": "VMD-BREAS-AMV-001"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "69634",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_DEV_VMD"
+      }
+    ]
+  },
+  "deviceName": [
+    {
+      "name": "Vivo45 AMV Module",
+      "type": "user-friendly-name"
+    }
+  ],
+  "parent": {
+    "reference": "Device/beispiel-beatmungsgeraet-breas"
+  }
+}

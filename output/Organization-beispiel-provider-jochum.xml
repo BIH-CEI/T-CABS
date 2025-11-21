@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="beispiel-provider-jochum"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-organisation"/>
+    <profile value="https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization beispiel-provider-jochum</b></p><a name="beispiel-provider-jochum"> </a><a name="hcbeispiel-provider-jochum"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization</a>, <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation">https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/providers</code>/PROV-JOCHUM-001</p><p><b>name</b>: Jochum GmbH</p></div>
+  </text>
+  <identifier>
+    <system value="http://tcabs.example.org/providers"/>
+    <value value="PROV-JOCHUM-001"/>
+  </identifier>
+  <name value="Jochum GmbH"/>
+</Organization>

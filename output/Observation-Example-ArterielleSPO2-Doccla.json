@@ -1,0 +1,64 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Example-ArterielleSPO2-Doccla",
+  "meta" : {
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
+    "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-ArterielleSPO2-Doccla</b></p><a name=\"Example-ArterielleSPO2-Doccla\"> </a><a name=\"hcExample-ArterielleSPO2-Doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-t-cabs-observation-arteriellespo2.html\">T-CABS Observation SPO2</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell\">https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell</a></p></div><p><b>Observation Gateway Device</b>: <a href=\"Device-beispiel-phg-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}\">PHD generated Observation</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2708-6}, {urn:iso:std:iso:11073:10101 160300}\">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-01-15 08:15:00+0000 --&gt; 2024-01-15 08:15:00+0000</p><p><b>value</b>: 98 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 11527006}\">Arterial system structure (body structure)</span></p><p><b>device</b>: <a href=\"Device-beispiel-phd-doccla.html\">Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice",
+    "valueReference" : {
+      "reference" : "Device/beispiel-phg-doccla"
+    }
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories",
+      "code" : "phd-observation"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2708-6"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "160300"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/tcabs-patient-example"
+  },
+  "effectivePeriod" : {
+    "start" : "2024-01-15T08:15:00Z",
+    "end" : "2024-01-15T08:15:00Z"
+  },
+  "valueQuantity" : {
+    "value" : 98,
+    "unit" : "%",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "%"
+  },
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "11527006",
+      "display" : "Arterial system structure (body structure)"
+    }]
+  },
+  "device" : {
+    "reference" : "Device/beispiel-phd-doccla"
+  }
+}

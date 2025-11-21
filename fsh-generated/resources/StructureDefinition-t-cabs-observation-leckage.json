@@ -3,41 +3,28 @@
   "id": "t-cabs-observation-leckage",
   "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
   "name": "T_CABS_Observation_Leckage",
-  "title": "T-CABS Observation Leckage",
+  "title": "T-CABS Observation Leakage",
   "status": "draft",
-  "description": "Profil für die Leckagerate unter Beatmung",
+  "description": "Profile for leakage rate during ventilation",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.code.coding:loinc",
+        "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "patternCoding": {
-          "code": "76296-3",
-          "system": "http://loinc.org",
-          "display": "Ventilator airway circuit leakage volume"
-        }
-      },
-      {
-        "id": "Observation.code.coding:IEEE-11073",
-        "path": "Observation.code.coding",
-        "sliceName": "IEEE-11073",
         "patternCoding": {
           "code": "152432",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_VOL_LEAK"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "min": 1,
         "type": [
           {
             "code": "Period"
@@ -45,88 +32,24 @@
         ]
       },
       {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
       },
       {
-        "id": "Observation.value[x].code",
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "L/min"
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
         "path": "Observation.value[x].code",
         "patternCode": "L/min"
-      },
-      {
-        "id": "Observation.referenceRange",
-        "path": "Observation.referenceRange",
-        "definition": "Grenzwerte, die bei Unter- oder Überschreitung einen Alarm auslösen.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.low",
-        "path": "Observation.referenceRange.low",
-        "short": "Untere Grenze des Parameters.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.low.value",
-        "path": "Observation.referenceRange.low.value",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.low.unit",
-        "path": "Observation.referenceRange.low.unit",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.low.system",
-        "path": "Observation.referenceRange.low.system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Observation.referenceRange.low.code",
-        "path": "Observation.referenceRange.low.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.high",
-        "path": "Observation.referenceRange.high",
-        "short": "Obere Grenze des Parameters.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.high.value",
-        "path": "Observation.referenceRange.high.value",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.high.unit",
-        "path": "Observation.referenceRange.high.unit",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.high.system",
-        "path": "Observation.referenceRange.high.system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Observation.referenceRange.high.code",
-        "path": "Observation.referenceRange.high.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.type",
-        "path": "Observation.referenceRange.type",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "therapeutic",
-              "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
-            }
-          ]
-        }
       }
     ]
   }

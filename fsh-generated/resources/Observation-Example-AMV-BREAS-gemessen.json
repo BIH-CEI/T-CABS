@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-AMV-BREAS-gemessen",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "151996",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_VENT_VOL_MINUTE"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "unit": "L/min",
+    "system": "http://unitsofmeasure.org",
+    "code": "L/min",
+    "value": 8.5
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/beispiel-beatmung-breas"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  },
+  "effectiveDateTime": "2024-01-15T23:30:00Z",
+  "device": {
+    "reference": "DeviceMetric/beispiel-devicemetric-breas-amv"
+  }
+}

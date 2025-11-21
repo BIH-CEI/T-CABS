@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-device-vmd-beatmungsgeraet",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
+  "name": "T_CABS_Device_VMD_Beatmungsgeraet",
+  "title": "T-CABS Device VMD Ventilator",
+  "status": "draft",
+  "description": "Profile representing a virtual subsystem or module",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/uv/pocd/StructureDefinition/VmdDevice",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device.parent",
+        "path": "Device.parent",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

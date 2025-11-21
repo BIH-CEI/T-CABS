@@ -1,0 +1,153 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/Device/beispiel-phg-doccla> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "beispiel-phg-doccla"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phg"^^xsd:anyURI ;
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phg>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-phg-doccla</b></p><a name=\"beispiel-phg-doccla\"> </a><a name=\"hcbeispiel-phg-doccla\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-phg.html\">T-CABS Device PHG</a></p></div><p><b>identifier</b>: IEEE 11073 System Identifier/PHG-DOCCLA-12345</p><p><b>manufacturer</b>: Doccla GmbH</p><p><b>serialNumber</b>: PHG-SN-789012</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Doccla Health Tablet</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: DHT-2024</p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 531981}\">MDC_MOC_VMS_MDS_AHD</span></p><h3>Specializations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>SystemType</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:iso:std:iso:11073:10101 8528192}\">MDC_AI_APPLIANCE_TABLETPC</span></td></tr></table><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:iso:std:iso:11073:10101 532352}\">MDC_REG_CERT_DATA_CONTINUA_VERSION</span></td><td>2.1.0</td></tr></table><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 532353}\">MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST</span></p><p><b>valueCode</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 528388}\">MDC_DEV_SPEC_PROFILE_PULS_OXIM</span>, <span title=\"Codes:{urn:iso:std:iso:11073:10101 528399}\">MDC_DEV_SPEC_PROFILE_SCALE</span>, <span title=\"Codes:{urn:iso:std:iso:11073:10101 69876}\">MDC_DEV_METER_STRENGTH_MUSCL</span>, <span title=\"Codes:{urn:iso:std:iso:11073:10101 528391}\">MDC_DEV_SPEC_PROFILE_BP</span>, <span title=\"Codes:{urn:iso:std:iso:11073:10101 69680}\">MDC_DEV_ANALY_AWAY_MULTI_PARAM</span>, <span title=\"Codes:{urn:iso:std:iso:11073:10101 528484}\">MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER</span>, <span title=\"Codes:{urn:iso:std:iso:11073:10101 528405}\">MDC_DEV_SPEC_PROFILE_PEFM</span></p></blockquote><p><b>patient</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers>
+         ] ;
+         fhir:code [ fhir:v "SYSID" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ;
+       fhir:l <urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680>
+     ] ;
+     fhir:value [ fhir:v "PHG-DOCCLA-12345" ]
+  ] ) ; # 
+  fhir:manufacturer [ fhir:v "Doccla GmbH"] ; # 
+  fhir:serialNumber [ fhir:v "PHG-SN-789012"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Doccla Health Tablet" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "DHT-2024"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
+       fhir:code [ fhir:v "531981" ]
+     ] )
+  ] ; # 
+  fhir:specialization ( [
+     fhir:systemType [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "8528192" ] ;
+         fhir:display [ fhir:v "MDC_AI_APPLIANCE_TABLETPC" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:version ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "532352" ] ;
+         fhir:display [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_VERSION" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "2.1.0" ]
+  ] ) ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "532353" ]
+       ] )
+     ] ;
+     fhir:valueCode ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "528388" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "528399" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "69876" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "528391" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "69680" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "528484" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:11073:10101>
+         ] ;
+         fhir:code [ fhir:v "528405" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

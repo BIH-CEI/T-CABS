@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "T_CABS_ValueSet_PHDTyp",
+  "id": "t-cabs-valueset-phdtyp",
+  "title": "T-CABS ValueSet PHD Type",
+  "description": "This ValueSet contains codes to represent the different PHD measurement devices",
+  "url": "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "concept": [
+          {
+            "code": "528388",
+            "display": "MDC_DEV_SPEC_PROFILE_PULS_OXIM"
+          },
+          {
+            "code": "528399",
+            "display": "MDC_DEV_SPEC_PROFILE_SCALE"
+          },
+          {
+            "code": "69876",
+            "display": "MDC_DEV_METER_STRENGTH_MUSCL"
+          },
+          {
+            "code": "528391",
+            "display": "MDC_DEV_SPEC_PROFILE_BP"
+          },
+          {
+            "code": "69680",
+            "display": "MDC_DEV_ANALY_AWAY_MULTI_PARAM"
+          },
+          {
+            "code": "528484",
+            "display": "MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER"
+          },
+          {
+            "code": "528405",
+            "display": "MDC_DEV_SPEC_PROFILE_BCA"
+          }
+        ]
+      }
+    ]
+  }
+}

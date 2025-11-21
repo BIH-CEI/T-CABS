@@ -1,0 +1,131 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observation-druck-minmax",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax",
+  "name": "T_CABS_Observation_DruckMinMax",
+  "title": "T-CABS Observation Pressure MIN/MAX",
+  "status": "draft",
+  "description": "Profile for minimal and maximal ventilation pressure",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "patternCoding": {
+          "code": "151792",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:MinPress",
+        "path": "Observation.component",
+        "sliceName": "MinPress",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:MinPress.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "151794",
+              "system": "urn:iso:std:iso:11073:10101",
+              "display": "MDC_PRESS_AWAY_MIN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:MinPress.value[x]:valueQuantity",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:MinPress.value[x]:valueQuantity.unit",
+        "path": "Observation.component.value[x].unit",
+        "patternString": "mbar"
+      },
+      {
+        "id": "Observation.component:MinPress.value[x]:valueQuantity.code",
+        "path": "Observation.component.value[x].code",
+        "patternCode": "mbar"
+      },
+      {
+        "id": "Observation.component:MaxPress",
+        "path": "Observation.component",
+        "sliceName": "MaxPress",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:MaxPress.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "151793",
+              "system": "urn:iso:std:iso:11073:10101",
+              "display": "MDC_PRESS_AWAY_MAX"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:MaxPress.value[x]:valueQuantity",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:MaxPress.value[x]:valueQuantity.unit",
+        "path": "Observation.component.value[x].unit",
+        "patternString": "mbar"
+      },
+      {
+        "id": "Observation.component:MaxPress.value[x]:valueQuantity.code",
+        "path": "Observation.component.value[x].code",
+        "patternCode": "mbar"
+      }
+    ]
+  }
+}

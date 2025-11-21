@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "beispiel-beatmung-loewenstein",
+  "meta" : {
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure beispiel-beatmung-loewenstein</b></p><a name=\"beispiel-beatmung-loewenstein\"> </a><a name=\"hcbeispiel-beatmung-loewenstein\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-procedure-beatmung.html\">T-CABS Procedure Ventilation</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 1258985005}\">Invasive mechanical ventilation (regime/therapy)</span></p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 475154}\">MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>performed</b>: 2024-01-15 22:00:00+0000 --&gt; 2024-02-18 06:00:00+0000</p><p><b>usedReference</b>: <a href=\"Device-beispiel-beatmungsgeraet-loewenstein.html\">Device: extension = 12450; identifier = UDI; manufacturer = Löwenstein Medical; serialNumber = PRISMA30-SN-345678; type = MDC_DEV_SYS_PT_VENT_MDS</a></p></div>"
+  },
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1258985005",
+      "display" : "Invasive mechanical ventilation (regime/therapy)"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "475154",
+      "display" : "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/tcabs-patient-example"
+  },
+  "performedPeriod" : {
+    "start" : "2024-01-15T22:00:00Z",
+    "end" : "2024-02-18T06:00:00Z"
+  },
+  "usedReference" : [{
+    "reference" : "Device/beispiel-beatmungsgeraet-loewenstein"
+  }]
+}

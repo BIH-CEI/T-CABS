@@ -1,0 +1,55 @@
+{
+  "resourceType": "DeviceMetric",
+  "id": "beispiel-devicemetric-breas-ipap",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/device-metric",
+      "value": "DM-BREAS-IPAP-001"
+    }
+  ],
+  "measurementPeriod": {
+    "repeat": {
+      "frequency": 1,
+      "period": 5,
+      "periodUnit": "min"
+    }
+  },
+  "calibration": [
+    {
+      "type": "offset",
+      "state": "calibrated"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "8410976",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_SABTE_PRESS_IPAP_SET"
+      }
+    ]
+  },
+  "unit": {
+    "coding": [
+      {
+        "code": "mbar",
+        "system": "http://unitsofmeasure.org",
+        "display": "mbar"
+      }
+    ]
+  },
+  "operationalStatus": "on",
+  "color": "cyan",
+  "category": "setting",
+  "source": {
+    "reference": "Device/beispiel-beatmungsgeraet-breas"
+  },
+  "parent": {
+    "reference": "Device/beispiel-channel-breas-ipap"
+  }
+}

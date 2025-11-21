@@ -1,238 +1,677 @@
 TCABS : Validation Results
 =========================================
 
-err = 36, warn = 51, info = 38
+err = 0, warn = 173, info = 251
 $--
 Generated $--. FHIR version $-- for t-cabs#$-- (canonical = http://t-cabs.org)
- Build Errors : 0 / 6 / 0
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Communication-atemfrequenz-alarm-23 : 0 / 0 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Device-device-1234 : 0 / 0 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Device-device-12547854521 : 0 / 0 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Device-device-1573 : 0 / 0 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/DeviceMetric-deviceMetric-Eingestellt-Beispiel-Loewenstein : 0 / 0 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/DeviceMetric-deviceMetric-Gemessen-Beispiel-Loewenstein : 0 / 0 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/DeviceMetric-deviceMetric-eingestellt-beispiel-breas : 0 / 0 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/DeviceMetric-deviceMetric-eingestellt-beispiel-resmed : 0 / 0 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/DeviceMetric-deviceMetric-gemessen-beispiel-breas : 0 / 0 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/DeviceMetric-deviceMetric-gemessen-beispiel-resmed : 0 / 0 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/ImplementationGuide-t-cabs : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-amv-gemessen-beispiel-breas : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-amv-gemessen-beispiel-loewenstein : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-amv-gemessen-beispiel-resmed : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-atemfrequenz-eingestellt-beispiel-breas : 4 / 1 / 3
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-atemfrequenz-gemessen-beispiel-breas : 2 / 1 / 3
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-atemfrequenz-gemessen-beispiel-loewenstein : 6 / 1 / 3
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-atemfrequenz-gemessen-beispiel-resmed : 6 / 1 / 3
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-beatmungsstunden-gemessen-beispiel-breas : 1 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-beatmungsstunden-gemessen-beispiel-loewenstein : 1 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-beatmungsstunden-gemessen-beispiel-resmed : 1 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-inspPress-eingestellt-beispiel-breas : 1 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-leckage-gemessen-beispiel-breas : 2 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-leckage-gemessen-beispiel-loewenstein : 2 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-leckage-gemessen-beispiel-resmed : 2 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-maximalInspiratoryPressure-eingestellt-beispiel-breas : 1 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-peep-eingestellt-beispiel-breas : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-tidalvolumen-eingestellt-beispiel-breas : 1 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-tidalvolumen-gemessen-beispiel-breas : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-triggeredBreaths-gemessen-beispiel-breas : 2 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-triggeredBreaths-gemessen-beispiel-loewenstein : 2 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Observation-triggeredBreaths-gemessen-beispiel-resmed : 2 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Patient-patient-123456 : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Patient-patient-44187887-a48d-4f4e-9393-e4207045a2c4 : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Patient-patient-98219fce-813a-41f2-94ff-861d59b89715 : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Procedure-procedure-Bilevel-123 : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Procedure-procedure-CPAP-123 : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/Procedure-procedure-PSV-123 : 0 / 1 / 1
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-communication-alarm : 0 / 2 / 3
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-communication-atemfrequenz-high-alarm : 0 / 1 / 2
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-communication-atemfrequenz-low-alarm : 0 / 2 / 2
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-communication-diskonnektion-alarm : 0 / 2 / 3
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-device-beatmungsgeraet : 0 / 2 / 2
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter : 0 / 0 / 2
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-af : 0 / 0 / 3
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-ahi : 0 / 1 / 6
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-amv : 0 / 0 / 3
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-beatmungsstunden : 0 / 0 / 6
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-leckage : 0 / 0 / 6
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-triggeredbreaths : 0 / 0 / 6
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-procedure-beatmung : 0 / 6 / 3
- /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/fsh-generated/resources/ValueSet-t-cabs-valueset-Beatmungsmodus : 0 / 1 / 1
+ Build Errors : 0 / 4 / 0
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-beatmungsgeraet-breas : 0 / 1 / 3
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-beatmungsgeraet-loewenstein : 0 / 1 / 3
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-beatmungsgeraet-resmed : 0 / 1 / 3
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-breas-ahi : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-breas-amv : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-breas-ipap : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-breas-targetvolume : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-loewenstein-peep : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-loewenstein-ti : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-loewenstein-triggeredbreaths : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-resmed-atemfrequenz : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-resmed-atemzeit : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-resmed-druck : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-channel-resmed-leckage : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-phd-doccla : 0 / 0 / 3
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-phg-doccla : 0 / 0 / 12
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-breas-ahi : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-breas-amv : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-breas-ipap : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-breas-targetvolume : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-loewenstein-peep : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-loewenstein-ti : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-loewenstein-triggeredbreaths : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-resmed-atemfrequenz : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-resmed-atemzeit : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-resmed-druck : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Device-beispiel-vmd-resmed-leckage : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-breas-ahi : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-breas-amv : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-breas-ipap : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-breas-targetvolume : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-loewenstein-peep : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-loewenstein-ti : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-resmed-atemzeit : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-resmed-druck : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-resmed-leckage : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite : 0 / 0 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite : 0 / 0 / 7
+ /Users/thimo/T-CABS/fsh-generated/resources/ImplementationGuide-t-cabs : 0 / 2 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-AHI-BREAS : 0 / 2 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-AMV-BREAS-gemessen : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-ArterielleSPO2-Doccla : 0 / 3 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-ArteriellerBlutdruck-Doccla : 0 / 3 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-Atemfrequenz-Doccla : 0 / 3 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-Atemfrequenz-ResMed-gemessen : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-Atemzeitverhaeltnis-ResMed : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-BMI-Doccla : 0 / 1 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-DruckMinMax-ResMed : 0 / 1 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-FEF25-75-Doccla : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-FEV1-Doccla : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-FEV1-FEV6-Doccla : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-FEV6-Doccla : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-Gehstrecke-Doccla : 0 / 2 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-Handgriffstaerke-Doccla : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-Herzfrequenz-Doccla : 0 / 3 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-IPAP-BREAS : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-Koerpergewicht-Doccla : 0 / 3 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-Koerpertemperatur-Doccla : 0 / 3 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-Leckage-ResMed : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-PEEP-Loewenstein : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-TI-Loewenstein : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-TargetVolume-BREAS : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-TriggeredBreaths-Loewenstein : 0 / 1 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Organization-CABS : 0 / 2 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/Organization-beispiel-provider-doccla : 0 / 2 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/Organization-beispiel-provider-jochum : 0 / 2 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/Organization-beispiel-provider-loewenstein : 0 / 2 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/Organization-beispiel-provider-vivisol : 0 / 2 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/Patient-tcabs-patient-example : 0 / 0 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/Practitioner-tcabs-practitioner-example : 0 / 2 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/PractitionerRole-tcabs-practitioner-role-example : 0 / 1 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/Procedure-beispiel-beatmung-breas : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Procedure-beispiel-beatmung-loewenstein : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/Procedure-beispiel-beatmung-resmed : 0 / 0 / 3
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-device-channel-beatmungsgeraet : 0 / 0 / 2
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-device-mds-beatmungsgeraet : 0 / 3 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-device-phd : 0 / 0 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-device-phg : 0 / 0 / 3
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-device-vmd-beatmungsgeraet : 0 / 0 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-devicemetric-numericmetric : 0 / 0 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-diagnosticreport-visitenbefund : 0 / 0 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-encounter-kontakt : 0 / 2 / 17
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-group-patientengruppe : 0 / 1 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-ahi : 0 / 7 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-amv : 0 / 5 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-arteriellerblutdruck : 0 / 9 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-arteriellespo2 : 0 / 0 / 7
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-atemfrequenz : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-atemfrequenz-beatmet : 0 / 5 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-atemzeitverhaeltnis : 0 / 5 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-beatmungsparameter : 0 / 6 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten : 0 / 4 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-bmi : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-druck-minmax : 0 / 4 / 8
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-gehstrecke : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-herzfrequenz : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-ipap : 0 / 5 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-koerpergewicht : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-koerpertemperatur : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-leckage : 0 / 7 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-peep : 0 / 5 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-targetvolume : 0 / 7 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-ti : 0 / 5 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-triggeredbreaths : 0 / 7 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-vitalparameter : 0 / 1 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observation-vitalparametermitkomponenten : 0 / 1 / 4
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observationfev1 : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observationfev1fef25-75 : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observationfev1fev6 : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observationfev6 : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-observationhandgriffstaerke : 0 / 0 / 3
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-organisation : 0 / 0 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-patient : 0 / 17 / 17
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-practitioner-funktion : 0 / 0 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-practitioner-personmitfunktion : 0 / 3 / 3
+ /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-procedure-beatmung : 0 / 0 / 5
+ /Users/thimo/T-CABS/fsh-generated/resources/ValueSet-t-cabs-valueset-Beatmungsform : 0 / 1 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/ValueSet-t-cabs-valueset-Beatmungsmodus : 0 / 1 / 13
+ /Users/thimo/T-CABS/fsh-generated/resources/ValueSet-t-cabs-valueset-beatmungsstelle : 0 / 1 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/ValueSet-t-cabs-valueset-phdtyp : 0 / 1 / 9
 </table>
 == n/a ==
-WARNING: /Users/thimo/Desktop/Charite/Arbeit/T-CABS/T-CABS/output/StructureDefinition-t-cabs-observation-amv-definitions.html: The html source has duplicate anchor Ids: Observation.value[x].code,Observation.value[x].comparator,Observation.value[x].extension,Observation.value[x].id,Observation.value[x].system,Observation.value[x].unit,Observation.value[x].value,key_Observation.value[x].code,key_Observation.value[x].comparator,key_Observation.value[x].system,key_Observation.value[x].unit,key_Observation.value[x].value
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
-== fsh-generated/resources/Communication-atemfrequenz-alarm-23.json ==
-== fsh-generated/resources/Device-device-1234.json ==
-== fsh-generated/resources/Device-device-12547854521.json ==
-== fsh-generated/resources/Device-device-1573.json ==
-== fsh-generated/resources/DeviceMetric-deviceMetric-Eingestellt-Beispiel-Loewenstein.json ==
-== fsh-generated/resources/DeviceMetric-deviceMetric-Gemessen-Beispiel-Loewenstein.json ==
-== fsh-generated/resources/DeviceMetric-deviceMetric-eingestellt-beispiel-breas.json ==
-== fsh-generated/resources/DeviceMetric-deviceMetric-eingestellt-beispiel-resmed.json ==
-== fsh-generated/resources/DeviceMetric-deviceMetric-gemessen-beispiel-breas.json ==
-== fsh-generated/resources/DeviceMetric-deviceMetric-gemessen-beispiel-resmed.json ==
+== fsh-generated/resources/Device-beispiel-beatmungsgeraet-breas.json ==
+INFORMATION: Device/beispiel-beatmungsgeraet-breas: Device.identifier[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet|0.1.0 überein.
+WARNING: Device/beispiel-beatmungsgeraet-breas: Device.identifier[0].type.coding[0]: Kodierung hat kein System - kann nicht validiert werden
+INFORMATION: Device/beispiel-beatmungsgeraet-breas: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-beatmungsgeraet-loewenstein.json ==
+INFORMATION: Device/beispiel-beatmungsgeraet-loewenstein: Device.identifier[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet|0.1.0 überein.
+WARNING: Device/beispiel-beatmungsgeraet-loewenstein: Device.identifier[0].type.coding[0]: Kodierung hat kein System - kann nicht validiert werden
+INFORMATION: Device/beispiel-beatmungsgeraet-loewenstein: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-beatmungsgeraet-resmed.json ==
+INFORMATION: Device/beispiel-beatmungsgeraet-resmed: Device.identifier[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet|0.1.0 überein.
+WARNING: Device/beispiel-beatmungsgeraet-resmed: Device.identifier[0].type.coding[0]: Kodierung hat kein System - kann nicht validiert werden
+INFORMATION: Device/beispiel-beatmungsgeraet-resmed: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-breas-ahi.json ==
+INFORMATION: Device/beispiel-channel-breas-ahi: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-breas-amv.json ==
+INFORMATION: Device/beispiel-channel-breas-amv: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-breas-ipap.json ==
+INFORMATION: Device/beispiel-channel-breas-ipap: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-breas-targetvolume.json ==
+INFORMATION: Device/beispiel-channel-breas-targetvolume: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-loewenstein-peep.json ==
+INFORMATION: Device/beispiel-channel-loewenstein-peep: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-loewenstein-ti.json ==
+INFORMATION: Device/beispiel-channel-loewenstein-ti: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-loewenstein-triggeredbreaths.json ==
+INFORMATION: Device/beispiel-channel-loewenstein-triggeredbreaths: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-resmed-atemfrequenz.json ==
+INFORMATION: Device/beispiel-channel-resmed-atemfrequenz: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-resmed-atemzeit.json ==
+INFORMATION: Device/beispiel-channel-resmed-atemzeit: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-resmed-druck.json ==
+INFORMATION: Device/beispiel-channel-resmed-druck: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-channel-resmed-leckage.json ==
+INFORMATION: Device/beispiel-channel-resmed-leckage: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-phd-doccla.json ==
+INFORMATION: Device/beispiel-phd-doccla: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phd-doccla: Device.specialization[0].systemType: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-phg-doccla.json ==
+INFORMATION: Device/beispiel-phg-doccla: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phg-doccla: Device.specialization[0].systemType: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phg-doccla: Device.version[0].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phg-doccla: Device.property[0].type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phg-doccla: Device.property[0].valueCode[0]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phg-doccla: Device.property[0].valueCode[1]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phg-doccla: Device.property[0].valueCode[2]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phg-doccla: Device.property[0].valueCode[3]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phg-doccla: Device.property[0].valueCode[4]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phg-doccla: Device.property[0].valueCode[5]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Device/beispiel-phg-doccla: Device.property[0].valueCode[6]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-breas-ahi.json ==
+INFORMATION: Device/beispiel-vmd-breas-ahi: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-breas-amv.json ==
+INFORMATION: Device/beispiel-vmd-breas-amv: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-breas-ipap.json ==
+INFORMATION: Device/beispiel-vmd-breas-ipap: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-breas-targetvolume.json ==
+INFORMATION: Device/beispiel-vmd-breas-targetvolume: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-loewenstein-peep.json ==
+INFORMATION: Device/beispiel-vmd-loewenstein-peep: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-loewenstein-ti.json ==
+INFORMATION: Device/beispiel-vmd-loewenstein-ti: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-loewenstein-triggeredbreaths.json ==
+INFORMATION: Device/beispiel-vmd-loewenstein-triggeredbreaths: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-resmed-atemfrequenz.json ==
+INFORMATION: Device/beispiel-vmd-resmed-atemfrequenz: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-resmed-atemzeit.json ==
+INFORMATION: Device/beispiel-vmd-resmed-atemzeit: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-resmed-druck.json ==
+INFORMATION: Device/beispiel-vmd-resmed-druck: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Device-beispiel-vmd-resmed-leckage.json ==
+INFORMATION: Device/beispiel-vmd-resmed-leckage: Device.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-breas-ahi.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-breas-ahi: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-breas-amv.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-breas-amv: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-breas-ipap.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-breas-ipap: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-breas-targetvolume.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-breas-targetvolume: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-loewenstein-peep.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-loewenstein-peep: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-loewenstein-ti.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-loewenstein-ti: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-resmed-atemzeit.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-resmed-atemzeit: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-resmed-druck.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-resmed-druck: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DeviceMetric-beispiel-devicemetric-resmed-leckage.json ==
+INFORMATION: DeviceMetric/beispiel-devicemetric-resmed-leckage: DeviceMetric.type: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite.json ==
+== fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite.json ==
+INFORMATION: Encounter/Example-Encounter-Telemedizinische-Visite: Encounter.identifier[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt|0.1.0 überein.
+INFORMATION: Encounter/Example-Encounter-Telemedizinische-Visite: Encounter.status: Reference to draft CodeSystem http://hl7.org/fhir/encounter-status|4.0.1
+INFORMATION: Encounter/Example-Encounter-Telemedizinische-Visite: Encounter.identifier[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2025.0.0 überein.
 == fsh-generated/resources/ImplementationGuide-t-cabs.json ==
-WARNING: ImplementationGuide/t-cabs: ImplementationGuide.definition.resource[0].name: Wert sollte nicht mit Leerzeichen beginnen oder enden
-== fsh-generated/resources/Observation-amv-gemessen-beispiel-breas.json ==
-WARNING: Observation/amv-gemessen-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-amv-gemessen-beispiel-loewenstein.json ==
-WARNING: Observation/amv-gemessen-beispiel-loewenstein: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-amv-gemessen-beispiel-resmed.json ==
-WARNING: Observation/amv-gemessen-beispiel-resmed: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-atemfrequenz-eingestellt-beispiel-breas.json ==
-ERROR: Observation/atemfrequenz-eingestellt-beispiel-breas: Observation.referenceRange[0].low: Constraint failed: qty-3: 'If a code for the unit is present, the system SHALL also be present' (defined in http://hl7.org/fhir/StructureDefinition/Quantity)
-ERROR: Observation/atemfrequenz-eingestellt-beispiel-breas: Observation.referenceRange[0].high: Constraint failed: qty-3: 'If a code for the unit is present, the system SHALL also be present' (defined in http://hl7.org/fhir/StructureDefinition/Quantity)
-INFORMATION: Observation/atemfrequenz-eingestellt-beispiel-breas: Observation.category[0]: !!Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 überein.
-ERROR: Observation/atemfrequenz-eingestellt-beispiel-breas: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1). Note that other slices are allowed in addition to this required slice
-ERROR: Observation/atemfrequenz-eingestellt-beispiel-breas: Observation.code: RespRateCode: magic LOINC code 9279-1 required, but not found (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1). Note that other Observation codes are allowed in addition to this required magic code
-WARNING: Observation/atemfrequenz-eingestellt-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-atemfrequenz-gemessen-beispiel-breas.json ==
-INFORMATION: Observation/atemfrequenz-gemessen-beispiel-breas: Observation.category[0]: !!Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 überein.
-ERROR: Observation/atemfrequenz-gemessen-beispiel-breas: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1). Note that other slices are allowed in addition to this required slice
-ERROR: Observation/atemfrequenz-gemessen-beispiel-breas: Observation.code: RespRateCode: magic LOINC code 9279-1 required, but not found (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1). Note that other Observation codes are allowed in addition to this required magic code
-WARNING: Observation/atemfrequenz-gemessen-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-atemfrequenz-gemessen-beispiel-loewenstein.json ==
-ERROR: Observation/atemfrequenz-gemessen-beispiel-loewenstein: Observation.code.coding[2].display: Wrong Display Name 'Total breath rate (observable entity)' for urn:iso:std:iso:11073:10101#152490. Valid display is 'MDC_VENT_RESP_BTSD_PSAZC_RATE' (for the language(s) 'en-US')
-ERROR: Observation/atemfrequenz-gemessen-beispiel-loewenstein: Observation.code.coding[2].display: Wrong Display Name 'Total breath rate (observable entity)' for urn:iso:std:iso:11073:10101#152490. Valid display is one of 2 choices: 'MDC_VENT_RESP_BTSD_PSAZC_RATE' or 'Total respiratory rate; total breath rate' (for the language(s) 'en-US')
-ERROR: Observation/atemfrequenz-gemessen-beispiel-loewenstein: Observation.code.coding[2]: !!Der angegebene Code (urn:iso:std:iso:11073:10101#152490) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [ISO11073]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: Wrong Display Name 'Total breath rate (observable entity)' for urn:iso:std:iso:11073:10101#152490. Valid display is one of 2 choices: 'MDC_VENT_RESP_BTSD_PSAZC_RATE' or 'Total respiratory rate; total breath rate' (for the language(s) 'en-US')
-INFORMATION: Observation/atemfrequenz-gemessen-beispiel-loewenstein: Observation.category[0]: !!Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 überein.
-ERROR: Observation/atemfrequenz-gemessen-beispiel-loewenstein: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1). Note that other slices are allowed in addition to this required slice
-ERROR: Observation/atemfrequenz-gemessen-beispiel-loewenstein: Observation.code: RespRateCode: magic LOINC code 9279-1 required, but not found (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1). Note that other Observation codes are allowed in addition to this required magic code
-ERROR: Observation/atemfrequenz-gemessen-beispiel-loewenstein: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: mindestens erforderlich = 1, aber nur gefunden 0
-WARNING: Observation/atemfrequenz-gemessen-beispiel-loewenstein: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-atemfrequenz-gemessen-beispiel-resmed.json ==
-ERROR: Observation/atemfrequenz-gemessen-beispiel-resmed: Observation.code.coding[2].display: Wrong Display Name 'Total breath rate (observable entity)' for urn:iso:std:iso:11073:10101#152490. Valid display is 'MDC_VENT_RESP_BTSD_PSAZC_RATE' (for the language(s) 'en-US')
-ERROR: Observation/atemfrequenz-gemessen-beispiel-resmed: Observation.code.coding[2].display: Wrong Display Name 'Total breath rate (observable entity)' for urn:iso:std:iso:11073:10101#152490. Valid display is one of 2 choices: 'MDC_VENT_RESP_BTSD_PSAZC_RATE' or 'Total respiratory rate; total breath rate' (for the language(s) 'en-US')
-ERROR: Observation/atemfrequenz-gemessen-beispiel-resmed: Observation.code.coding[2]: !!Der angegebene Code (urn:iso:std:iso:11073:10101#152490) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [ISO11073]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: Wrong Display Name 'Total breath rate (observable entity)' for urn:iso:std:iso:11073:10101#152490. Valid display is one of 2 choices: 'MDC_VENT_RESP_BTSD_PSAZC_RATE' or 'Total respiratory rate; total breath rate' (for the language(s) 'en-US')
-INFORMATION: Observation/atemfrequenz-gemessen-beispiel-resmed: Observation.category[0]: !!Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 überein.
-ERROR: Observation/atemfrequenz-gemessen-beispiel-resmed: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1). Note that other slices are allowed in addition to this required slice
-ERROR: Observation/atemfrequenz-gemessen-beispiel-resmed: Observation.code: RespRateCode: magic LOINC code 9279-1 required, but not found (from http://hl7.org/fhir/StructureDefinition/resprate|4.0.1). Note that other Observation codes are allowed in addition to this required magic code
-ERROR: Observation/atemfrequenz-gemessen-beispiel-resmed: Observation.value.ofType(Quantity): Observation.value[x]:valueQuantity.unit: mindestens erforderlich = 1, aber nur gefunden 0
-WARNING: Observation/atemfrequenz-gemessen-beispiel-resmed: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-beatmungsstunden-gemessen-beispiel-breas.json ==
-ERROR: Observation/beatmungsstunden-gemessen-beispiel-breas: Observation.code.coding[0]: !!Der angegebene Code (http://snomed.info/sct#261774000) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [SNOMED]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://snomed.info/sct#261774000 ('Duration of treatment (qualifier value)')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2'
-WARNING: Observation/beatmungsstunden-gemessen-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-beatmungsstunden-gemessen-beispiel-loewenstein.json ==
-ERROR: Observation/beatmungsstunden-gemessen-beispiel-loewenstein: Observation.code.coding[0]: !!Der angegebene Code (http://snomed.info/sct#261774000) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [SNOMED]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://snomed.info/sct#261774000 ('Duration of treatment (qualifier value)')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2'
-WARNING: Observation/beatmungsstunden-gemessen-beispiel-loewenstein: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-beatmungsstunden-gemessen-beispiel-resmed.json ==
-ERROR: Observation/beatmungsstunden-gemessen-beispiel-resmed: Observation.code.coding[0]: !!Der angegebene Code (http://snomed.info/sct#261774000) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [SNOMED]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://snomed.info/sct#261774000 ('Duration of treatment (qualifier value)')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2'
-WARNING: Observation/beatmungsstunden-gemessen-beispiel-resmed: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-inspPress-eingestellt-beispiel-breas.json ==
-ERROR: Observation/inspPress-eingestellt-beispiel-breas: Observation.code.coding[2].display: Wrong Display Name 'Mean pressure Respiratory system airway --on ventilator' for urn:iso:std:iso:11073:10101#151975. Valid display is 'MDC_VENT_PRESS_AWAY_MEAN' (for the language(s) 'en-US')
-WARNING: Observation/inspPress-eingestellt-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-leckage-gemessen-beispiel-breas.json ==
-ERROR: Observation/leckage-gemessen-beispiel-breas: Observation.code.coding[0]: !!Der angegebene Code (http://loinc.org#76296-3) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [LOINC]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://loinc.org#76296-3 ('Ventilator airway circuit leakage volume')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2'
-ERROR: Observation/leckage-gemessen-beispiel-breas: Observation.code.coding[1]: !!Der angegebene Code (urn:iso:std:iso:11073:10101#152432) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [ISO11073]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'urn:iso:std:iso:11073:10101#152432 ('MDC_VENT_VOL_LEAK')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073|2025.0.2'
-WARNING: Observation/leckage-gemessen-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-leckage-gemessen-beispiel-loewenstein.json ==
-ERROR: Observation/leckage-gemessen-beispiel-loewenstein: Observation.code.coding[0]: !!Der angegebene Code (http://loinc.org#76296-3) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [LOINC]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://loinc.org#76296-3 ('Ventilator airway circuit leakage volume')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2'
-ERROR: Observation/leckage-gemessen-beispiel-loewenstein: Observation.code.coding[1]: !!Der angegebene Code (urn:iso:std:iso:11073:10101#152432) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [ISO11073]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'urn:iso:std:iso:11073:10101#152432 ('MDC_VENT_VOL_LEAK')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073|2025.0.2'
-WARNING: Observation/leckage-gemessen-beispiel-loewenstein: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-leckage-gemessen-beispiel-resmed.json ==
-ERROR: Observation/leckage-gemessen-beispiel-resmed: Observation.code.coding[0]: !!Der angegebene Code (http://loinc.org#76296-3) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [LOINC]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://loinc.org#76296-3 ('Ventilator airway circuit leakage volume')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2'
-ERROR: Observation/leckage-gemessen-beispiel-resmed: Observation.code.coding[1]: !!Der angegebene Code (urn:iso:std:iso:11073:10101#152432) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [ISO11073]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'urn:iso:std:iso:11073:10101#152432 ('MDC_VENT_VOL_LEAK')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073|2025.0.2'
-WARNING: Observation/leckage-gemessen-beispiel-resmed: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-maximalInspiratoryPressure-eingestellt-beispiel-breas.json ==
-ERROR: Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas: Observation.code.coding[2].display: Wrong Display Name 'Pressure.max Respiratory system airway --on ventilator' for urn:iso:std:iso:11073:10101#151973. Valid display is 'MDC_VENT_PRESS_AWAY_MAX' (for the language(s) 'en-US')
-WARNING: Observation/maximalInspiratoryPressure-eingestellt-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-peep-eingestellt-beispiel-breas.json ==
-WARNING: Observation/peep-eingestellt-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-tidalvolumen-eingestellt-beispiel-breas.json ==
-ERROR: Observation/tidalvolumen-eingestellt-beispiel-breas: Observation.code.coding[2].display: Wrong Display Name 'Tidal volume setting' for urn:iso:std:iso:11073:10101#16929196. Valid display is 'MDC_VENT_VOL_TIDAL_SETTING' (for the language(s) 'en-US')
-WARNING: Observation/tidalvolumen-eingestellt-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-tidalvolumen-gemessen-beispiel-breas.json ==
-WARNING: Observation/tidalvolumen-gemessen-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-triggeredBreaths-gemessen-beispiel-breas.json ==
-ERROR: Observation/triggeredBreaths-gemessen-beispiel-breas: Observation.code.coding[0]: !!Der angegebene Code (http://snomed.info/sct#250878004) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [SNOMED]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://snomed.info/sct#250878004 ('Triggered breath rate (observable entity)')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2'
-ERROR: Observation/triggeredBreaths-gemessen-beispiel-breas: Observation.code.coding[1]: !!Der angegebene Code (http://loinc.org#LA20140-2) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [LOINC]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://loinc.org#LA20140-2 ('Unassisted respiratory rate')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2'
-WARNING: Observation/triggeredBreaths-gemessen-beispiel-breas: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-triggeredBreaths-gemessen-beispiel-loewenstein.json ==
-ERROR: Observation/triggeredBreaths-gemessen-beispiel-loewenstein: Observation.code.coding[0]: !!Der angegebene Code (http://snomed.info/sct#250878004) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [SNOMED]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://snomed.info/sct#250878004 ('Triggered breath rate (observable entity)')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2'
-ERROR: Observation/triggeredBreaths-gemessen-beispiel-loewenstein: Observation.code.coding[1]: !!Der angegebene Code (http://loinc.org#LA20140-2) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [LOINC]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://loinc.org#LA20140-2 ('Unassisted respiratory rate')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2'
-WARNING: Observation/triggeredBreaths-gemessen-beispiel-loewenstein: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Observation-triggeredBreaths-gemessen-beispiel-resmed.json ==
-ERROR: Observation/triggeredBreaths-gemessen-beispiel-resmed: Observation.code.coding[0]: !!Der angegebene Code (http://snomed.info/sct#250878004) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [SNOMED]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://snomed.info/sct#250878004 ('Triggered breath rate (observable entity)')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed|2025.0.2'
-ERROR: Observation/triggeredBreaths-gemessen-beispiel-resmed: Observation.code.coding[1]: !!Der angegebene Code (http://loinc.org#LA20140-2) befindet sich nicht im ValueSet 'VS MII ICU Code Observation Beatmung [LOINC]' (https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2), und es wird ein Code aus diesem ValueSet benötigt: The provided code 'http://loinc.org#LA20140-2 ('Unassisted respiratory rate')' was not found in the value set 'https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc|2025.0.2'
-WARNING: Observation/triggeredBreaths-gemessen-beispiel-resmed: Observation: !!Alle Observations sollten einen Performer haben
-== fsh-generated/resources/Patient-patient-123456.json ==
-WARNING: Patient/patient-123456: Patient.identifier[0].type.coding[1]: !!Kodierung hat kein System - kann nicht validiert werden
-== fsh-generated/resources/Patient-patient-44187887-a48d-4f4e-9393-e4207045a2c4.json ==
-WARNING: Patient/patient-44187887-a48d-4f4e-9393-e4207045a2c4: Patient.identifier[0].type.coding[1]: !!Kodierung hat kein System - kann nicht validiert werden
-== fsh-generated/resources/Patient-patient-98219fce-813a-41f2-94ff-861d59b89715.json ==
-WARNING: Patient/patient-98219fce-813a-41f2-94ff-861d59b89715: Patient.identifier[0].type.coding[1]: !!Kodierung hat kein System - kann nicht validiert werden
-== fsh-generated/resources/Procedure-procedure-Bilevel-123.json ==
-WARNING: Procedure/procedure-Bilevel-123: Procedure.code.coding[0]: !!ValueSet https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-mii-code-procedure-beatmung-snomed vom Validator nicht gefunden
-== fsh-generated/resources/Procedure-procedure-CPAP-123.json ==
-WARNING: Procedure/procedure-CPAP-123: Procedure.code.coding[0]: !!ValueSet https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-mii-code-procedure-beatmung-snomed vom Validator nicht gefunden
-== fsh-generated/resources/Procedure-procedure-PSV-123.json ==
-WARNING: Procedure/procedure-PSV-123: Procedure.code.coding[0]: !!ValueSet https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-mii-code-procedure-beatmung-snomed vom Validator nicht gefunden
-== fsh-generated/resources/StructureDefinition-t-cabs-communication-alarm.json ==
-INFORMATION: StructureDefinition/t-cabs-communication-alarm: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-WARNING: StructureDefinition/t-cabs-communication-alarm: StructureDefinition.snapshot.element[19].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ParticipationMode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2.0.0, 2018-08-12, 3.0.0
-INFORMATION: StructureDefinition/t-cabs-communication-alarm: StructureDefinition.snapshot.element[17].pattern.ofType(CodeableConcept): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-WARNING: StructureDefinition.where(url = 'http://t-cabs.org/StructureDefinition/t-cabs-communication-alarm'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-t-cabs-communication-atemfrequenz-high-alarm.json ==
-WARNING: StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm: StructureDefinition.snapshot.element[19].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ParticipationMode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2.0.0, 2018-08-12, 3.0.0
-INFORMATION: StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm: StructureDefinition.snapshot.element[17].pattern.ofType(CodeableConcept): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-== fsh-generated/resources/StructureDefinition-t-cabs-communication-atemfrequenz-low-alarm.json ==
-WARNING: StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm: StructureDefinition.snapshot.element[19].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ParticipationMode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2.0.0, 2018-08-12, 3.0.0
-INFORMATION: StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm: StructureDefinition.snapshot.element[17].pattern.ofType(CodeableConcept): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-WARNING: StructureDefinition.where(url = 'http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-t-cabs-communication-diskonnektion-alarm.json ==
-WARNING: StructureDefinition/t-cabs-communication-diskonnektion-alarm: StructureDefinition.snapshot.element[19].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ParticipationMode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2.0.0, 2018-08-12, 3.0.0
-INFORMATION: StructureDefinition/t-cabs-communication-diskonnektion-alarm: StructureDefinition.snapshot.element[17].pattern.ofType(CodeableConcept): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-INFORMATION: StructureDefinition/t-cabs-communication-diskonnektion-alarm: StructureDefinition.snapshot.element[28].pattern.ofType(CodeableConcept): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-WARNING: StructureDefinition.where(url = 'http://t-cabs.org/StructureDefinition/t-cabs-communication-diskonnektion-alarm'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-t-cabs-device-beatmungsgeraet.json ==
-WARNING: StructureDefinition/t-cabs-device-beatmungsgeraet: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0]: !!Kodierung hat kein System - kann nicht validiert werden
-INFORMATION: StructureDefinition/t-cabs-device-beatmungsgeraet: StructureDefinition.snapshot.element[16].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
-WARNING: StructureDefinition/t-cabs-device-beatmungsgeraet: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: !!Kodierung hat kein System - kann nicht validiert werden
-== fsh-generated/resources/StructureDefinition-t-cabs-devicemetric-eingestellter-gemessener-parameter.json ==
-INFORMATION: StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter: StructureDefinition.snapshot.element[13].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-== fsh-generated/resources/StructureDefinition-t-cabs-observation-af.json ==
-INFORMATION: StructureDefinition/t-cabs-observation-af: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-observation-af: StructureDefinition.snapshot.element[28].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: ImplementationGuide/t-cabs: ImplementationGuide.dependsOn[6].uri: Canonical URL 'http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4' kann nicht aufgelöst werden
+WARNING: ImplementationGuide/t-cabs: ImplementationGuide.dependsOn[6]: The canonical URL http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4 doesn't point to an actual ImplementationGuide resource
+== fsh-generated/resources/Observation-Example-AHI-BREAS.json ==
+INFORMATION: Observation/Example-AHI-BREAS: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-AHI-BREAS: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Observation/Example-AHI-BREAS: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-AMV-BREAS-gemessen.json ==
+INFORMATION: Observation/Example-AMV-BREAS-gemessen: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-AMV-BREAS-gemessen: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-ArterielleSPO2-Doccla.json ==
+WARNING: Observation/Example-ArterielleSPO2-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell' kann nicht aufgelöst werden
+INFORMATION: Observation/Example-ArterielleSPO2-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Observation/Example-ArterielleSPO2-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 überein.
+WARNING: Observation/Example-ArterielleSPO2-Doccla: Observation: Alle Observations sollten einen Performer haben
+WARNING: Observation/Example-ArterielleSPO2-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Observation-Example-ArteriellerBlutdruck-Doccla.json ==
+WARNING: Observation/Example-ArteriellerBlutdruck-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell' kann nicht aufgelöst werden
+INFORMATION: Observation/Example-ArteriellerBlutdruck-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Observation/Example-ArteriellerBlutdruck-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 überein.
+WARNING: Observation/Example-ArteriellerBlutdruck-Doccla: Observation: Alle Observations sollten einen Performer haben
+WARNING: Observation/Example-ArteriellerBlutdruck-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Observation-Example-Atemfrequenz-Doccla.json ==
+WARNING: Observation/Example-Atemfrequenz-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz' kann nicht aufgelöst werden
+INFORMATION: Observation/Example-Atemfrequenz-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Observation/Example-Atemfrequenz-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 überein.
+WARNING: Observation/Example-Atemfrequenz-Doccla: Observation: Alle Observations sollten einen Performer haben
+WARNING: Observation/Example-Atemfrequenz-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Observation-Example-Atemfrequenz-ResMed-gemessen.json ==
+INFORMATION: Observation/Example-Atemfrequenz-ResMed-gemessen: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-Atemfrequenz-ResMed-gemessen: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-Atemzeitverhaeltnis-ResMed.json ==
+INFORMATION: Observation/Example-Atemzeitverhaeltnis-ResMed: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-Atemzeitverhaeltnis-ResMed: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-BMI-Doccla.json ==
+INFORMATION: Observation/Example-BMI-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Observation/Example-BMI-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bmi|4.0.1 überein.
+WARNING: Observation/Example-BMI-Doccla: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-DruckMinMax-ResMed.json ==
+INFORMATION: Observation/Example-DruckMinMax-ResMed: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Observation/Example-DruckMinMax-ResMed: Observation.component[0].code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Observation/Example-DruckMinMax-ResMed: Observation.component[1].code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-DruckMinMax-ResMed: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-FEF25-75-Doccla.json ==
+INFORMATION: Observation/Example-FEF25-75-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-FEF25-75-Doccla: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-FEV1-Doccla.json ==
+INFORMATION: Observation/Example-FEV1-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-FEV1-Doccla: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-FEV1-FEV6-Doccla.json ==
+INFORMATION: Observation/Example-FEV1-FEV6-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-FEV1-FEV6-Doccla: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-FEV6-Doccla.json ==
+INFORMATION: Observation/Example-FEV6-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-FEV6-Doccla: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-Gehstrecke-Doccla.json ==
+INFORMATION: Observation/Example-Gehstrecke-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-Gehstrecke-Doccla: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {#} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Observation/Example-Gehstrecke-Doccla: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-Handgriffstaerke-Doccla.json ==
+INFORMATION: Observation/Example-Handgriffstaerke-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-Handgriffstaerke-Doccla: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-Herzfrequenz-Doccla.json ==
+WARNING: Observation/Example-Herzfrequenz-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz' kann nicht aufgelöst werden
+INFORMATION: Observation/Example-Herzfrequenz-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Observation/Example-Herzfrequenz-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1 überein.
+WARNING: Observation/Example-Herzfrequenz-Doccla: Observation: Alle Observations sollten einen Performer haben
+WARNING: Observation/Example-Herzfrequenz-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Observation-Example-IPAP-BREAS.json ==
+INFORMATION: Observation/Example-IPAP-BREAS: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-IPAP-BREAS: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-Koerpergewicht-Doccla.json ==
+WARNING: Observation/Example-Koerpergewicht-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht' kann nicht aufgelöst werden
+INFORMATION: Observation/Example-Koerpergewicht-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Observation/Example-Koerpergewicht-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 überein.
+WARNING: Observation/Example-Koerpergewicht-Doccla: Observation: Alle Observations sollten einen Performer haben
+WARNING: Observation/Example-Koerpergewicht-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Observation-Example-Koerpertemperatur-Doccla.json ==
+WARNING: Observation/Example-Koerpertemperatur-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur' kann nicht aufgelöst werden
+INFORMATION: Observation/Example-Koerpertemperatur-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Observation/Example-Koerpertemperatur-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 überein.
+WARNING: Observation/Example-Koerpertemperatur-Doccla: Observation: Alle Observations sollten einen Performer haben
+WARNING: Observation/Example-Koerpertemperatur-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Observation-Example-Leckage-ResMed.json ==
+INFORMATION: Observation/Example-Leckage-ResMed: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-Leckage-ResMed: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-PEEP-Loewenstein.json ==
+INFORMATION: Observation/Example-PEEP-Loewenstein: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-PEEP-Loewenstein: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-TI-Loewenstein.json ==
+INFORMATION: Observation/Example-TI-Loewenstein: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-TI-Loewenstein: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-TargetVolume-BREAS.json ==
+INFORMATION: Observation/Example-TargetVolume-BREAS: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-TargetVolume-BREAS: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Observation-Example-TriggeredBreaths-Loewenstein.json ==
+INFORMATION: Observation/Example-TriggeredBreaths-Loewenstein: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: Observation/Example-TriggeredBreaths-Loewenstein: Observation: Alle Observations sollten einen Performer haben
+== fsh-generated/resources/Organization-CABS.json ==
+WARNING: Organization/CABS: Organization.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden
+WARNING: Organization/CABS: Organization.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Organization-beispiel-provider-doccla.json ==
+WARNING: Organization/beispiel-provider-doccla: Organization.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden
+WARNING: Organization/beispiel-provider-doccla: Organization.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Organization-beispiel-provider-jochum.json ==
+WARNING: Organization/beispiel-provider-jochum: Organization.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden
+WARNING: Organization/beispiel-provider-jochum: Organization.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Organization-beispiel-provider-loewenstein.json ==
+WARNING: Organization/beispiel-provider-loewenstein: Organization.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden
+WARNING: Organization/beispiel-provider-loewenstein: Organization.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Organization-beispiel-provider-vivisol.json ==
+WARNING: Organization/beispiel-provider-vivisol: Organization.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden
+WARNING: Organization/beispiel-provider-vivisol: Organization.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/Patient-tcabs-patient-example.json ==
+== fsh-generated/resources/Practitioner-tcabs-practitioner-example.json ==
+WARNING: Practitioner/tcabs-practitioner-example: Practitioner.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf' kann nicht aufgelöst werden
+WARNING: Practitioner/tcabs-practitioner-example: Practitioner.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+== fsh-generated/resources/PractitionerRole-tcabs-practitioner-role-example.json ==
+WARNING: PractitionerRole/tcabs-practitioner-role-example: PractitionerRole.code[0].coding[1].system: A definition for CodeSystem 'urn:oid:1.2.276.0.76.5.514' could not be found, so the code cannot be validated
+== fsh-generated/resources/Procedure-beispiel-beatmung-breas.json ==
+INFORMATION: Procedure/beispiel-beatmung-breas: Procedure.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Procedure-beispiel-beatmung-loewenstein.json ==
+INFORMATION: Procedure/beispiel-beatmung-loewenstein: Procedure.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/Procedure-beispiel-beatmung-resmed.json ==
+INFORMATION: Procedure/beispiel-beatmung-resmed: Procedure.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: Procedure/beispiel-beatmung-resmed: Procedure.code.coding[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung|0.1.0 überein.
+== fsh-generated/resources/StructureDefinition-t-cabs-device-channel-beatmungsgeraet.json ==
+INFORMATION: StructureDefinition/t-cabs-device-channel-beatmungsgeraet: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-t-cabs-device-mds-beatmungsgeraet.json ==
+WARNING: StructureDefinition/t-cabs-device-mds-beatmungsgeraet: StructureDefinition.snapshot.element[49].pattern.ofType(CodeableConcept).coding[0]: Kodierung hat kein System - kann nicht validiert werden
+INFORMATION: StructureDefinition/t-cabs-device-mds-beatmungsgeraet: StructureDefinition.snapshot.element[93].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: StructureDefinition/t-cabs-device-mds-beatmungsgeraet: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]: Kodierung hat kein System - kann nicht validiert werden
+INFORMATION: StructureDefinition/t-cabs-device-mds-beatmungsgeraet: StructureDefinition.differential.element[10].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-device-mds-beatmungsgeraet: StructureDefinition.snapshot.element[93].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-device-mds-beatmungsgeraet: StructureDefinition.snapshot: The slice 'EUI-64' on path 'Device.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-device-phd.json ==
+== fsh-generated/resources/StructureDefinition-t-cabs-device-phg.json ==
+INFORMATION: StructureDefinition/t-cabs-device-phg: StructureDefinition.snapshot.element[118].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-device-phg: StructureDefinition.differential.element[7].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+== fsh-generated/resources/StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.json ==
+== fsh-generated/resources/StructureDefinition-t-cabs-devicemetric-numericmetric.json ==
+== fsh-generated/resources/StructureDefinition-t-cabs-diagnosticreport-visitenbefund.json ==
+== fsh-generated/resources/StructureDefinition-t-cabs-encounter-kontakt.json ==
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[59].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[67].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[74].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+WARNING: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[76].pattern.ofType(CodeableConcept).coding[0].code: No code provided for CodeSystem 'http://fhir.de/CodeSystem/Kontaktebene' version '1.5.4'
+WARNING: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[77].pattern.ofType(CodeableConcept).coding[0].code: No code provided for CodeSystem 'http://fhir.de/CodeSystem/kontaktart-de' version '1.5.4'
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[108].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[111].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[158].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[166].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[174].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[182].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[39].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[47].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[75].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[81].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[127].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-encounter-kontakt: StructureDefinition.snapshot.element[151].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-t-cabs-group-patientengruppe.json ==
+WARNING: StructureDefinition.where(url = 'http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-t-cabs-observation-ahi.json ==
-INFORMATION: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot.element[28].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot.element[29].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-INFORMATION: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot.element[37].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-INFORMATION: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot.element[45].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-WARNING: StructureDefinition.where(url = 'http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi'): The Implementation Guide contains no examples for this profile
+INFORMATION: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' has type 'dateTime  which is not consistent with the element that defines the slicing, which has the type(s) 'Period'
+WARNING: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' has type 'instant  which is not consistent with the element that defines the slicing, which has the type(s) 'Period'
+WARNING: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ahi: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 == fsh-generated/resources/StructureDefinition-t-cabs-observation-amv.json ==
-INFORMATION: StructureDefinition/t-cabs-observation-amv: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-observation-amv: StructureDefinition.snapshot.element[28].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-== fsh-generated/resources/StructureDefinition-t-cabs-observation-beatmungsstunden.json ==
-INFORMATION: StructureDefinition/t-cabs-observation-beatmungsstunden: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-observation-beatmungsstunden: StructureDefinition.snapshot.element[28].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-observation-beatmungsstunden: StructureDefinition.snapshot.element[29].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-INFORMATION: StructureDefinition/t-cabs-observation-beatmungsstunden: StructureDefinition.snapshot.element[37].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-INFORMATION: StructureDefinition/t-cabs-observation-beatmungsstunden: StructureDefinition.snapshot.element[45].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+INFORMATION: StructureDefinition/t-cabs-observation-amv: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-amv: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-amv: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-amv: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-amv: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-amv: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-amv: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-amv: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-arteriellerblutdruck.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot: The slice 'supplementalTypesComponent' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot: The slice 'relativeTimeComponent' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot: The slice 'hiresRelativeTimeComponent' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot: The slice 'compound' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot: The slice 'accuracyComponent' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot: The slice 'SystolicBP' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot: The slice 'DiastolicBP' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot: The slice 'meanBP' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-arteriellerblutdruck: StructureDefinition.snapshot: The slice 'valueCodeableConcept' on path 'Observation.component.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-arteriellespo2.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-arteriellespo2: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-arteriellespo2: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-arteriellespo2: StructureDefinition.snapshot.element[383].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+INFORMATION: StructureDefinition/t-cabs-observation-arteriellespo2: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-arteriellespo2: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+INFORMATION: StructureDefinition/t-cabs-observation-arteriellespo2: StructureDefinition.snapshot.element[138].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-atemfrequenz.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-atemfrequenz: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-atemfrequenz: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-atemfrequenz: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-atemfrequenz: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-atemfrequenz-beatmet: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-atemfrequenz-beatmet: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-atemfrequenz-beatmet: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-atemfrequenz-beatmet: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-atemfrequenz-beatmet: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-atemfrequenz-beatmet: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-atemfrequenz-beatmet: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-atemfrequenz-beatmet: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-atemzeitverhaeltnis: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-atemzeitverhaeltnis: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-atemzeitverhaeltnis: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-atemzeitverhaeltnis: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-atemzeitverhaeltnis: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-atemzeitverhaeltnis: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-atemzeitverhaeltnis: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-atemzeitverhaeltnis: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-beatmungsparameter.json ==
+WARNING: StructureDefinition/t-cabs-observation-beatmungsparameter: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-beatmungsparameter: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-beatmungsparameter: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-beatmungsparameter: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-beatmungsparameter: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition.where(url = 'http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.json ==
+WARNING: StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.component.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition.where(url = 'http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-bmi.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-bmi: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-bmi: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-bmi: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-bmi: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-druck-minmax.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.snapshot.element[121].pattern.ofType(CodeableConcept): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.snapshot.element[158].pattern.ofType(CodeableConcept): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' has type 'dateTime  which is not consistent with the element that defines the slicing, which has the type(s) 'Period'
+WARNING: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-druck-minmax: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.component.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-gehstrecke.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-gehstrecke: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-gehstrecke: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-gehstrecke: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-gehstrecke: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-herzfrequenz.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-herzfrequenz: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-herzfrequenz: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-herzfrequenz: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-herzfrequenz: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-ipap.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-ipap: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-ipap: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-ipap: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-ipap: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ipap: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ipap: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ipap: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ipap: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-koerpergewicht.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-koerpergewicht: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-koerpergewicht: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-koerpergewicht: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-koerpergewicht: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-koerpertemperatur.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-koerpertemperatur: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-koerpertemperatur: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-koerpertemperatur: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-koerpertemperatur: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
 == fsh-generated/resources/StructureDefinition-t-cabs-observation-leckage.json ==
-INFORMATION: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot.element[28].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot.element[29].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-INFORMATION: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot.element[37].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-INFORMATION: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot.element[45].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+INFORMATION: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' has type 'dateTime  which is not consistent with the element that defines the slicing, which has the type(s) 'Period'
+WARNING: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' has type 'instant  which is not consistent with the element that defines the slicing, which has the type(s) 'Period'
+WARNING: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-leckage: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-peep.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-peep: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-peep: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-peep: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-peep: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-peep: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-peep: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-peep: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-peep: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-targetvolume.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-targetvolume: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-targetvolume: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-targetvolume: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-targetvolume: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-targetvolume: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' has type 'dateTime  which is not consistent with the element that defines the slicing, which has the type(s) 'Period'
+WARNING: StructureDefinition/t-cabs-observation-targetvolume: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-targetvolume: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-targetvolume: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' has type 'instant  which is not consistent with the element that defines the slicing, which has the type(s) 'Period'
+WARNING: StructureDefinition/t-cabs-observation-targetvolume: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-targetvolume: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-ti.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-ti: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-ti: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-ti: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-ti: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ti: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ti: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ti: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-ti: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 == fsh-generated/resources/StructureDefinition-t-cabs-observation-triggeredbreaths.json ==
-INFORMATION: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot.element[28].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot.element[29].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-INFORMATION: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot.element[37].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
-INFORMATION: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot.element[45].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+INFORMATION: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot.element[25].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot: The slice 'effectiveDateTime' on path 'Observation.effective[x]' has type 'dateTime  which is not consistent with the element that defines the slicing, which has the type(s) 'Period'
+WARNING: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot: The slice 'effectivePeriod' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot: The slice 'effectiveInstant' on path 'Observation.effective[x]' has type 'instant  which is not consistent with the element that defines the slicing, which has the type(s) 'Period'
+WARNING: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot: The slice 'valueQuantity' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/t-cabs-observation-triggeredbreaths: StructureDefinition.snapshot: The slice 'valueRatio' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-vitalparameter.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-vitalparameter: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-vitalparameter: StructureDefinition.differential.element[5].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-vitalparameter: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition.where(url = 'http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.json ==
+INFORMATION: StructureDefinition/t-cabs-observation-vitalparametermitkomponenten: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-vitalparametermitkomponenten: StructureDefinition.differential.element[5].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observation-vitalparametermitkomponenten: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+WARNING: StructureDefinition.where(url = 'http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-t-cabs-observationfev1.json ==
+INFORMATION: StructureDefinition/t-cabs-observationfev1: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observationfev1: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observationfev1: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observationfev1: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-observationfev1fef25-75.json ==
+INFORMATION: StructureDefinition/t-cabs-observationfev1fef25-75: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observationfev1fef25-75: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observationfev1fef25-75: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observationfev1fef25-75: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-observationfev1fev6.json ==
+INFORMATION: StructureDefinition/t-cabs-observationfev1fev6: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observationfev1fev6: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observationfev1fev6: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observationfev1fev6: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-observationfev6.json ==
+INFORMATION: StructureDefinition/t-cabs-observationfev6: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observationfev6: StructureDefinition.snapshot.element[71].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observationfev6: StructureDefinition.differential.element[1].pattern.ofType(Coding): Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: StructureDefinition/t-cabs-observationfev6: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-observationhandgriffstaerke.json ==
+INFORMATION: StructureDefinition/t-cabs-observationhandgriffstaerke: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0
+INFORMATION: StructureDefinition/t-cabs-observationhandgriffstaerke: StructureDefinition.snapshot.element[46].pattern.ofType(Coding): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-organisation.json ==
+== fsh-generated/resources/StructureDefinition-t-cabs-patient.json ==
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[25].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[38].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[48].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[61].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[75].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-own-name'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-own-name' to 'http://hl7.org/fhir/StructureDefinition/humanname-own-name|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[76].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-own-prefix'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-own-prefix' to 'http://hl7.org/fhir/StructureDefinition/humanname-own-prefix|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[82].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier' to 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier|5.2.0'
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[85].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[95].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-own-name'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-own-name' to 'http://hl7.org/fhir/StructureDefinition/humanname-own-name|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[96].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-own-prefix'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-own-prefix' to 'http://hl7.org/fhir/StructureDefinition/humanname-own-prefix|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[102].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier' to 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier|5.2.0'
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[105].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[115].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' to 'http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[122].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[129].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[130].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[131].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[132].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox|5.2.0'
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[143].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[147].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[154].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[155].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[156].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator|5.2.0'
+WARNING: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[157].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox' to 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox|5.2.0'
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[168].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[182].mapping[2].map: Der String-Wert enthält Text, der wie eingebettete HTML-Tags aussieht. Wenn dieser Inhalt ohne entsprechende Nachbearbeitung in HTML gerendert wird, kann er ein Sicherheitsrisiko darstellen
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[17].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[41].pattern.ofType(Identifier): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[65].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[118].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[119].pattern.ofType(Address): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+INFORMATION: StructureDefinition/t-cabs-patient: StructureDefinition.snapshot.element[144].pattern.ofType(Address): Das sich wiederholende Element hat ein pattern. Die pattern gilt für alle Wiederholungen (dies war nicht allen Benutzern klar)
+== fsh-generated/resources/StructureDefinition-t-cabs-practitioner-funktion.json ==
+== fsh-generated/resources/StructureDefinition-t-cabs-practitioner-personmitfunktion.json ==
+WARNING: StructureDefinition/t-cabs-practitioner-personmitfunktion: StructureDefinition.snapshot.element[29].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-own-name'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-own-name' to 'http://hl7.org/fhir/StructureDefinition/humanname-own-name|5.2.0'
+WARNING: StructureDefinition/t-cabs-practitioner-personmitfunktion: StructureDefinition.snapshot.element[30].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/humanname-own-prefix'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/humanname-own-prefix' to 'http://hl7.org/fhir/StructureDefinition/humanname-own-prefix|5.2.0'
+WARNING: StructureDefinition/t-cabs-practitioner-personmitfunktion: StructureDefinition.snapshot.element[36].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier' to 'http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier|5.2.0'
+INFORMATION: StructureDefinition/t-cabs-practitioner-personmitfunktion: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-practitioner-personmitfunktion: StructureDefinition.snapshot.element[19].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-t-cabs-procedure-beatmung.json ==
-WARNING: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.snapshot.element[16].type[0].profile[0]: There are multiple different potential matches for the url 'http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '1.5.0', found versions: 1.4.0, 1.5.0, 1.5.1
-WARNING: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.snapshot.element[43].type[0].profile[0]: There are multiple different potential matches for the url 'http://fhir.de/StructureDefinition/CodingOPS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '1.5.0', found versions: 1.4.0, 1.5.0, 1.5.1
-WARNING: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.snapshot.element[43].binding.valueSet: There are multiple different potential matches for the url 'http://fhir.de/ValueSet/bfarm/ops'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '1.5.0', found versions: 1.4.0, 1.5.0, 1.5.1
-WARNING: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.snapshot.element[46].type[0].profile[0]: There are multiple different potential matches for the url 'http://fhir.de/StructureDefinition/seitenlokalisation'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '1.5.0', found versions: 1.4.0, 1.5.0, 1.5.1
-WARNING: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.snapshot.element[49].constraint[1].source: There are multiple different potential matches for the url 'http://fhir.de/StructureDefinition/CodingOPS'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '1.5.0', found versions: 1.4.0, 1.5.0, 1.5.1
-INFORMATION: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.snapshot.element[29].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.snapshot.element[42].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-WARNING: StructureDefinition.where(url = 'http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung'): The Implementation Guide contains no examples for this profile
+INFORMATION: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.differential.element[8].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.snapshot.element[19].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/t-cabs-procedure-beatmung: StructureDefinition.snapshot.element[32].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/ValueSet-t-cabs-valueset-Beatmungsform.json ==
+WARNING: ValueSet/t-cabs-valueset-Beatmungsform: ValueSet: Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen
 == fsh-generated/resources/ValueSet-t-cabs-valueset-Beatmungsmodus.json ==
-WARNING: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet: !!Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[0]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[1]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[2]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[3]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[4]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[5]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[6]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[7]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[8]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[9]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[10]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[11]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+WARNING: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet: Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen
+== fsh-generated/resources/ValueSet-t-cabs-valueset-beatmungsstelle.json ==
+WARNING: ValueSet/t-cabs-valueset-beatmungsstelle: ValueSet: Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen
+== fsh-generated/resources/ValueSet-t-cabs-valueset-phdtyp.json ==
+INFORMATION: ValueSet/t-cabs-valueset-phdtyp: ValueSet.compose.include[0].concept[0]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-phdtyp: ValueSet.compose.include[0].concept[1]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-phdtyp: ValueSet.compose.include[0].concept[2]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-phdtyp: ValueSet.compose.include[0].concept[3]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-phdtyp: ValueSet.compose.include[0].concept[4]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-phdtyp: ValueSet.compose.include[0].concept[5]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-phdtyp: ValueSet.compose.include[0].concept[6]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-phdtyp: ValueSet.compose.include[0].concept[6]: The display 'MDC_DEV_SPEC_PROFILE_BCA' is not valid in the Code system 'MDC_DEV_SPEC_PROFILE_BCA'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/t-cabs-valueset-phdtyp: ValueSet: Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen

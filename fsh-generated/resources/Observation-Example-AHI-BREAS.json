@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-AHI-BREAS",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "8410792",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_SABTE_AHI_TOTAL"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2024-01-15T22:00:00Z",
+    "end": "2024-01-16T06:00:00Z"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "{score}",
+    "value": 5.2,
+    "unit": "{score}"
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/beispiel-beatmung-breas"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  },
+  "device": {
+    "reference": "DeviceMetric/beispiel-devicemetric-breas-ahi"
+  }
+}

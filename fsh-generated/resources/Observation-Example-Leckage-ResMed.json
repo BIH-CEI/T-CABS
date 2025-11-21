@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-Leckage-ResMed",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "152432",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_VENT_VOL_LEAK"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2024-01-15T22:00:00Z",
+    "end": "2024-01-16T06:00:00Z"
+  },
+  "valueQuantity": {
+    "unit": "L/min",
+    "system": "http://unitsofmeasure.org",
+    "code": "L/min",
+    "value": 0.6
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/beispiel-beatmung-resmed"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  },
+  "device": {
+    "reference": "DeviceMetric/beispiel-devicemetric-resmed-leckage"
+  }
+}

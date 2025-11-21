@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-devicemetric-numericmetric",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric",
+  "name": "T_CABS_DeviceMetric_NumericMetric",
+  "title": "T-CABS DeviceMetric NumericMetric",
+  "status": "draft",
+  "description": "Profile representing a numeric measurement, calculation, or setting",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceMetric",
+  "baseDefinition": "http://hl7.org/fhir/uv/pocd/StructureDefinition/NumericDeviceMetric",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceMetric.type",
+        "path": "DeviceMetric.type",
+        "definition": "Coding to identify the parameter"
+      },
+      {
+        "id": "DeviceMetric.source",
+        "path": "DeviceMetric.source",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DeviceMetric.parent",
+        "path": "DeviceMetric.parent",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DeviceMetric.category",
+        "path": "DeviceMetric.category",
+        "short": "Measurement or setting"
+      }
+    ]
+  }
+}

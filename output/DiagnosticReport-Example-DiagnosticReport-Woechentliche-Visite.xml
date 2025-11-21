@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="Example-DiagnosticReport-Woechentliche-Visite"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport Example-DiagnosticReport-Woechentliche-Visite</b></p><a name="Example-DiagnosticReport-Woechentliche-Visite"> </a><a name="hcExample-DiagnosticReport-Woechentliche-Visite"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html">T-CABS DiagnosticReport Visit Finding</a></p></div><h2><span title="Codes:{http://loinc.org 34131-3}">Outpatient Progress note</span> </h2><table class="grid"><tr><td>Subject</td><td>Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</td></tr><tr><td>When For</td><td>2024-01-22 09:00:00+0000</td></tr><tr><td>Reported</td><td>2024-01-22 10:00:00+0000</td></tr><tr><td>Performer</td><td> <a href="Practitioner-tcabs-practitioner-example.html">Practitioner Anna Schmidt(official)</a></td></tr><tr><td>Identifier</td><td> <code>http://tcabs.example.org/diagnosticreports</code>/DR-TCABS-WEEKLY-001</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-Example-AMV-BREAS-gemessen.html"><span title="Codes:{urn:iso:std:iso:11073:10101 151996}">MDC_VENT_VOL_MINUTE</span></a></td><td>8.5 L/min<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/min = 'L/min')</span></td><td>Final</td><td>2024-01-15 23:30:00+0000</td></tr><tr><td><a href="Observation-Example-AHI-BREAS.html"><span title="Codes:{urn:iso:std:iso:11073:10101 8410792}">MDC_SABTE_AHI_TOTAL</span></a></td><td>5.2 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{score} = '{score}')</span></td><td>Final</td><td>2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</td></tr><tr><td><a href="Observation-Example-Atemfrequenz-ResMed-gemessen.html"><span title="Codes:{urn:iso:std:iso:11073:10101 151586}">MDC_VENT_RESP_RATE</span></a></td><td>14 /min<span style="background: LightGoldenRodYellow"> (Details: UCUM  code/min = '/min')</span></td><td>Final</td><td>2024-01-15 23:20:00+0000 --&gt; 2024-01-15 23:20:00+0000</td></tr><tr><td><a href="Observation-Example-Leckage-ResMed.html"><span title="Codes:{urn:iso:std:iso:11073:10101 152432}">MDC_VENT_VOL_LEAK</span></a></td><td>0.6 L/min<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/min = 'L/min')</span></td><td>Final</td><td>2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</td></tr><tr><td><a href="Observation-Example-PEEP-Loewenstein.html"><span title="Codes:{urn:iso:std:iso:11073:10101 152720}">MDC_VENT_PRESS_AWAY_DELTA</span></a></td><td>18 mbar<span style="background: LightGoldenRodYellow"> (Details: UCUM  codembar = 'mbar')</span></td><td>Final</td><td>2024-01-15 23:35:00+0000 --&gt; 2024-01-15 23:35:00+0000</td></tr><tr><td><a href="Observation-Example-TriggeredBreaths-Loewenstein.html"><span title="Codes:{urn:iso:std:iso:11073:10101 152498}">MDC_VENT_RESP_BTSD_P_RATE</span></a></td><td>92 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></td><td>Final</td><td>2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</td></tr><tr><td><a href="Observation-Example-BMI-Doccla.html"><span title="Codes:{http://loinc.org 39156-5}, {urn:iso:std:iso:11073:10101 188752}">Body mass index (BMI) [Ratio]</span></a></td><td>25.3 kg/m2<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg/m2 = 'kg/m2')</span></td><td>Final</td><td>2024-01-15 10:30:00+0000 --&gt; 2024-01-15 10:30:00+0000</td></tr><tr><td><a href="Observation-Example-ArterielleSPO2-Doccla.html"><span title="Codes:{http://loinc.org 2708-6}, {urn:iso:std:iso:11073:10101 160300}">Oxygen saturation in Arterial blood</span></a> (<span title="Codes:{http://snomed.info/sct 11527006}">Arterial system structure (body structure)</span>)</td><td>98 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></td><td>Final</td><td>2024-01-15 08:15:00+0000 --&gt; 2024-01-15 08:15:00+0000</td></tr></table><p>Patient shows stable ventilation parameters across all devices. BREAS: AMV in normal range at 8.5 L/min, AHI at 5.2 within therapeutic target. ResMed: Respiratory rate stable at 14/min, leakage minimal at 0.6 L/min. Löwenstein: Synchronization at 85%, TriggeredBreaths at 92% show very good patient-device interaction. Vital parameters also stable: BMI 25.3 kg/m², SpO2 98%.</p></div>
+  </text>
+  <identifier>
+    <system value="http://tcabs.example.org/diagnosticreports"/>
+    <value value="DR-TCABS-WEEKLY-001"/>
+  </identifier>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="34131-3"/>
+      <display value="Outpatient Progress note"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/tcabs-patient-example"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/Example-Encounter-Telemedizinische-Visite"/>
+  </encounter>
+  <effectiveDateTime value="2024-01-22T09:00:00Z"/>
+  <issued value="2024-01-22T10:00:00Z"/>
+  <performer>
+    <reference value="Practitioner/tcabs-practitioner-example"/>
+  </performer>
+  <result>
+    <reference value="Observation/Example-AMV-BREAS-gemessen"/>
+  </result>
+  <result>
+    <reference value="Observation/Example-AHI-BREAS"/>
+  </result>
+  <result>
+    <reference value="Observation/Example-Atemfrequenz-ResMed-gemessen"/>
+  </result>
+  <result>
+    <reference value="Observation/Example-Leckage-ResMed"/>
+  </result>
+  <result>
+    <reference value="Observation/Example-PEEP-Loewenstein"/>
+  </result>
+  <result>
+    <reference value="Observation/Example-TriggeredBreaths-Loewenstein"/>
+  </result>
+  <result>
+    <reference value="Observation/Example-BMI-Doccla"/>
+  </result>
+  <result>
+    <reference value="Observation/Example-ArterielleSPO2-Doccla"/>
+  </result>
+  <conclusion value="Patient shows stable ventilation parameters across all devices. BREAS: AMV in normal range at 8.5 L/min, AHI at 5.2 within therapeutic target. ResMed: Respiratory rate stable at 14/min, leakage minimal at 0.6 L/min. Löwenstein: Synchronization at 85%, TriggeredBreaths at 92% show very good patient-device interaction. Vital parameters also stable: BMI 25.3 kg/m², SpO2 98%."/>
+</DiagnosticReport>

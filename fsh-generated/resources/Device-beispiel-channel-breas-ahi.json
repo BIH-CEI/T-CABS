@@ -1,0 +1,33 @@
+{
+  "resourceType": "Device",
+  "id": "beispiel-channel-breas-ahi",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/device-channel",
+      "value": "CHAN-BREAS-AHI-001"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "69635",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_DEV_CHAN"
+      }
+    ]
+  },
+  "deviceName": [
+    {
+      "name": "AHI Measurement Channel",
+      "type": "user-friendly-name"
+    }
+  ],
+  "parent": {
+    "reference": "Device/beispiel-vmd-breas-ahi"
+  }
+}

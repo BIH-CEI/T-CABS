@@ -5,39 +5,26 @@
   "name": "T_CABS_Observation_AHI",
   "title": "T-CABS Observation AHI",
   "status": "draft",
-  "description": "Profil für den Apnoe-Hyponoe-Index (AHI) - Gesamtzahl der während des Schlafs aufgetretenen Apnoe- und Hypopnoe-Episoden, geteilt durch die Schlafdauer in Stunden",
+  "description": "Profile for the Apnea-Hypopnea Index (AHI) - Total number of apnea and hypopnea episodes that occurred during sleep, divided by sleep duration in hours",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.code.coding:sct",
+        "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "sliceName": "sct",
         "patternCoding": {
-          "code": "774099003",
-          "system": "http://snomed.info/sct",
-          "display": "Apnea Hypopnea Index (observable entity)"
-        }
-      },
-      {
-        "id": "Observation.code.coding:loinc",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "patternCoding": {
-          "code": "90564-6",
-          "system": "http://loinc.org",
-          "display": "Central apnea hypopnea index"
+          "code": "8410792",
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "min": 1,
         "type": [
           {
             "code": "Period"
@@ -45,88 +32,19 @@
         ]
       },
       {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
       },
       {
-        "id": "Observation.value[x].code",
+        "id": "Observation.value[x]:valueQuantity.code",
         "path": "Observation.value[x].code",
         "patternCode": "{score}"
-      },
-      {
-        "id": "Observation.referenceRange",
-        "path": "Observation.referenceRange",
-        "definition": "Grenzwerte, die bei Unter- oder Überschreitung einen Alarm auslösen.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.low",
-        "path": "Observation.referenceRange.low",
-        "short": "Untere Grenze des Parameters.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.low.value",
-        "path": "Observation.referenceRange.low.value",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.low.unit",
-        "path": "Observation.referenceRange.low.unit",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.low.system",
-        "path": "Observation.referenceRange.low.system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Observation.referenceRange.low.code",
-        "path": "Observation.referenceRange.low.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.high",
-        "path": "Observation.referenceRange.high",
-        "short": "Obere Grenze des Parameters.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.high.value",
-        "path": "Observation.referenceRange.high.value",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.high.unit",
-        "path": "Observation.referenceRange.high.unit",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.high.system",
-        "path": "Observation.referenceRange.high.system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Observation.referenceRange.high.code",
-        "path": "Observation.referenceRange.high.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange.type",
-        "path": "Observation.referenceRange.type",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "therapeutic",
-              "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
-            }
-          ]
-        }
       }
     ]
   }

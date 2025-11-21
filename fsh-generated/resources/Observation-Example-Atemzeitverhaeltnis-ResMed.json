@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-Atemzeitverhaeltnis-ResMed",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "153500",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_TIME_PD_INSP_NORMALIZED_HF"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2024-10-07T22:30:00+02:00",
+    "end": "2024-10-07T22:45:00+02:00"
+  },
+  "valueQuantity": {
+    "unit": "%",
+    "system": "http://unitsofmeasure.org",
+    "code": "%",
+    "value": 33
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/beispiel-beatmung-resmed"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  },
+  "device": {
+    "reference": "DeviceMetric/beispiel-devicemetric-resmed-atemzeit"
+  }
+}

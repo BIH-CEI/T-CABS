@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceMetric xmlns="http://hl7.org/fhir">
+  <id value="beispiel-devicemetric-loewenstein-ti"/>
+  <meta>
+    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DeviceMetric beispiel-devicemetric-loewenstein-ti</b></p><a name="beispiel-devicemetric-loewenstein-ti"> </a><a name="hcbeispiel-devicemetric-loewenstein-ti"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-t-cabs-devicemetric-numericmetric.html">T-CABS DeviceMetric NumericMetric</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-metric</code>/DM-LOEW-TI-001</p><p><b>type</b>: <span title="Codes:{urn:iso:std:iso:11073:10101 152416}">MDC_VENT_TIME_PD_INSP</span></p><p><b>unit</b>: <span title="Codes:{http://unitsofmeasure.org s}">s</span></p><p><b>source</b>: <a href="Device-beispiel-beatmungsgeraet-loewenstein.html">Device: extension = 12450; identifier = UDI; manufacturer = Löwenstein Medical; serialNumber = PRISMA30-SN-345678; type = MDC_DEV_SYS_PT_VENT_MDS</a></p><p><b>parent</b>: <a href="Device-beispiel-channel-loewenstein-ti.html">Device: identifier = http://tcabs.example.org/device-channel#CHAN-LOEW-TI-001; type = MDC_DEV_CHAN</a></p><p><b>operationalStatus</b>: On</p><p><b>color</b>: Color Yellow</p><p><b>category</b>: Measurement</p><p><b>measurementPeriod</b>: Once per 1 second</p><h3>Calibrations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>State</b></td></tr><tr><td style="display: none">*</td><td>Gain</td><td>Calibrated</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://tcabs.example.org/device-metric"/>
+    <value value="DM-LOEW-TI-001"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="152416"/>
+      <display value="MDC_VENT_TIME_PD_INSP"/>
+    </coding>
+  </type>
+  <unit>
+    <coding>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="s"/>
+      <display value="s"/>
+    </coding>
+  </unit>
+  <source>
+    <reference value="Device/beispiel-beatmungsgeraet-loewenstein"/>
+  </source>
+  <parent>
+    <reference value="Device/beispiel-channel-loewenstein-ti"/>
+  </parent>
+  <operationalStatus value="on"/>
+  <color value="yellow"/>
+  <category value="measurement"/>
+  <measurementPeriod>
+    <repeat>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="s"/>
+    </repeat>
+  </measurementPeriod>
+  <calibration>
+    <type value="gain"/>
+    <state value="calibrated"/>
+  </calibration>
+</DeviceMetric>

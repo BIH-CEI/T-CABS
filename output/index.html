@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home -  v0.1.0</title>
+    <title>Home - T-CABS Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -32,10 +32,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -50,16 +50,26 @@
 
         <!-- Placeholder for child template header declarations -->
 
-<div id="hl7-nav">
-    <a id="logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
         <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
     </a>            
 </div>
 
+<div id="family-nav">
+    <a id="family-logo" no-external="true" href="https://www.charite.de/">
+        <img alt="visit the website" height="60" src="Logo_Charite.png" />
+    </a>            
+</div>
+
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
 
 
             </span>
@@ -89,21 +99,59 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li>
+    <a href="Information-Model.html">Information Model</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spezifikation
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Profiles
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="logisches_modell.html">Logisches Modell</a>
+        <a href="Cross-Domain-Profiles.html">Cross-Domain</a>
       </li>
       <li>
-        <a href="profile.html">Profile</a>
+        <a href="Vital-Data-Profiles.html">Vital Data</a>
       </li>
       <li>
-        <a href="beispiele.html">Beispiele</a>
+        <a href="Ventilation-Data-Profiles.html">Ventilation Data</a>
       </li>
     </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Cross-Domain-Examples.html">Cross-Domain</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Examples.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Examples.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Cross-Domain-Implementation.html">Cross-Domain</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Implementation.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Implementation.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -121,6 +169,16 @@
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+          <span style="float:right;">
+
+            <a href="toc.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="Information-Model.html">next&gt;</a>
+
+          </span>
 
         </ul>
       </div>  <!-- /container -->
@@ -140,7 +198,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TCABS - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://t-cabs.org/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -171,7 +229,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2025-03-25
+            as of 2025-11-20
           
         
       </td>
@@ -195,39 +253,96 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#objective-of-the-implementation-guide" id="markdown-toc-objective-of-the-implementation-guide">Objective of the Implementation Guide</a></li>
+  <li><a href="#target-groups" id="markdown-toc-target-groups">Target Groups</a></li>
+  <li><a href="#structure-of-the-implementation-guide" id="markdown-toc-structure-of-the-implementation-guide">Structure of the Implementation Guide</a></li>
+  <li><a href="#t-cabs-project-context" id="markdown-toc-t-cabs-project-context">T-CABS Project Context</a></li>
+</ul>
+
 </div>
-<h1 id="t-cabs">T-CABS</h1>
-<h2 id="telemedizinisches-centrum-für-außerklinische-beatmung-und-sauerstofftherapie">Telemedizinisches Centrum für Außerklinische Beatmung und Sauerstofftherapie</h2>
+<p>The T-CABS (Telemedicine Center for Out-of-Hospital Ventilation and Oxygen Therapy) Implementation Guide defines FHIR R4 profiles and standards for the transmission and exchange of ventilation and vital parameters in home-based ventilation therapy.</p>
 
-<p>"Die Anzahl heimbeatmeter Patientinnen und Patienten steigt seit Jahren und führt zu einem Engpass in der Versorgung, die stationär oder in Spezialambulanzen erfolgt. Die Versorgungsqualität ist aufgrund aufwendiger Anfahrten und Wartezeiten unzureichend.</p>
+<h3 id="objective-of-the-implementation-guide">Objective of the Implementation Guide</h3>
 
-<p>Telemedizin soll helfen, die Versorgung außerklinisch Beatmeter deutlich zu verbessern.</p>
+<p>This IG enables standardized, interoperable transmission of health data from home-based ventilation therapy between different systems and manufacturers. The content selection was defined and specified within CABS. Uniform FHIR profiles are defined for:</p>
 
-<p>Methodisches Vorgehen: T-CABS verfolgt im Raum Berlin/Brandenburg als übergeordnetes Projektziel die Reduktion von ungeplanten Kontakten zum Gesundheitssystem, Krankenhaustagen, Ambulanzterminen, Krankentransporten und somit der Gesundheitskosten.</p>
+<ul>
+  <li>Ventilation parameters from ventilators</li>
+  <li>Vital parameters from Personal Health Devices (PHD)</li>
+  <li>Clinical workflows for telemedicine visits</li>
+</ul>
 
-<p>Dies soll mittels telemedizinischer Betreuung erreicht werden durch</p>
+<p>To ensure international interoperability, this guide builds upon existing work. This existing work consists largely of the implementation guides <a href="https://hl7.org/fhir/uv/pocd/2021Sep/index.html">Point-of-Care Devices (PoCD) FHIR Implementation Guide</a> version 0.3.0 and the <a href="https://hl7.org/fhir/uv/phd/STU1.1/index.html">Personal Health Device (PHD) FHIR Implementation Guide</a> version 1.1.0, from the <a href="https://confluence.hl7.org/spaces/HCD/overview">HL7 Working Group Devices</a>.</p>
+
+<p>The general profiles in this implementation guide are partially based on MII specifications and/or compatibility with these and other national specifications (ISiK) was aimed for.</p>
+
+<p>Another goal is to build a uniform and manufacturer-independent data basis that creates the prerequisites for interoperable evaluations and the development of predictive models.</p>
+
+<h3 id="target-groups">Target Groups</h3>
+
+<p><strong>Primary target groups:</strong></p>
+<ul>
+  <li>Manufacturers of ventilators</li>
+  <li>Manufacturers of vital parameter measurement devices</li>
+</ul>
+
+<p><strong>Secondary target groups:</strong></p>
+<ul>
+  <li>Software developers for healthcare platforms</li>
+  <li>System integrators for telemedicine solutions</li>
+</ul>
+
+<p>The example instances are always assigned to specific manufacturers, but this does not represent any content specification or limitation and serves only for exemplary representation.</p>
+
+<h3 id="structure-of-the-implementation-guide">Structure of the Implementation Guide</h3>
+<p>This Implementation Guide is divided into three domains that represent different aspects of telemedicine care in out-of-hospital ventilation:</p>
+
+<ul>
+  <li>
+    <p>Vital Data – Collection and transmission of physiological measurements</p>
+  </li>
+  <li>
+    <p>Ventilation Data – Description of device-specific ventilation settings and measurements</p>
+  </li>
+  <li>
+    <p>Cross-Domain Profiles – administrative, organizational, and documentation-relevant resources used across all domains</p>
+  </li>
+</ul>
+
+<p>The term "domain" refers to a thematic group of profiles that belong together functionally.</p>
+
+<p>The following sub-items can be accessed via the menu bar:</p>
 
 <ol>
-  <li>
-    <p>Steigerung der Therapieadhärenz gegenüber der Beatmungstherapie,</p>
-  </li>
-  <li>
-    <p>Stabilisierung der pulmonalen Funktion und Verbesserung der körperlichen Kondition,</p>
-  </li>
-  <li>
-    <p>Erhöhung der Lebensqualität, Selbstbestimmung und Anwendungssicherheit bei Patientinnen und Patienten,</p>
-  </li>
-  <li>
-    <p>Verbesserung der sektorenübergreifenden Zusammenarbeit und Kommunikation sowie</p>
-  </li>
-  <li>
-    <p>Entwicklung und Erprobung diagnostischer Signaturen mittels maschinellen Lernens zur Unterstützung zukünftiger Telemedizin.</p>
-  </li>
+  <li>Information Model: Contains a UML diagram of all created T-CABS profiles and their relationships (references) to each other</li>
+  <li>Profiles: Graphical representation of the profiles</li>
+  <li>Examples: Graphical representation of the examples</li>
+  <li>Implementation: Detailed description of the individual specifications within the profiles and their relationships to each other</li>
 </ol>
 
-<p>Die Interventions- und die Kontrollgruppe der prospektiven, longitudinalen Interventionsstudie werden mit qualitativer und quantitativer Prozessanalyse bezüglich primärem Endpunkt und sekundären Endpunkten verglichen. Umsetzungspotenzial: Alle relevanten Hürden zur Implementierung der Telemedizin in die Regelversorgung wurden bereits überwunden (z. B. bei Diabetes mellitus, Herzinsuffizienz)."</p>
+<h3 id="t-cabs-project-context">T-CABS Project Context</h3>
+
+<p><a href="https://t-cabs.charite.de/">Project Website</a></p>
+
+<p>The Telemedicine Center for Out-of-Hospital Ventilation and Oxygen Therapy pursues the overarching project goal of reducing unplanned contacts with the healthcare system, hospital days, ambulatory appointments, medical transports, and thus healthcare costs.</p>
+
+<p>This should be achieved through telemedicine care by:</p>
+
+<ol>
+  <li>Increasing therapy adherence to ventilation therapy</li>
+  <li>Stabilizing pulmonary function and improving physical condition</li>
+  <li>Increasing quality of life, self-determination, and safety of use in patients</li>
+  <li>Improving cross-sector collaboration and communication</li>
+  <li>Development and testing of diagnostic signatures using machine learning</li>
+</ol>
+
+<p><strong>Contact:</strong></p>
+<ul>
+  <li>Technical questions or comments: thimo-andre.hoelter[at]charite.de or <a href="https://github.com/BIH-CEI/T-CABS/issues">Github Issues</a></li>
+  <li>Organizational questions: t-cabs[at]charite.de</li>
+</ul>
 
 <!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
 
@@ -240,6 +355,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p></p>
     </div>
 
+<p>Funded within the framework of the T-CABS project (grant number: 01NVF23109) by the Innovation Fund of the Federal Joint Committee (G-BA)</p>
 
 
 
@@ -257,9 +373,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="toc.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="Information-Model.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 25, 2025 16:42+0100">2025-03-25</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 20, 2025 17:13+0100">2025-11-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/DiagnosticReport/Example-DiagnosticReport-Woechentliche-Visite> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Example-DiagnosticReport-Woechentliche-Visite"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"^^xsd:anyURI ;
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport Example-DiagnosticReport-Woechentliche-Visite</b></p><a name=\"Example-DiagnosticReport-Woechentliche-Visite\"> </a><a name=\"hcExample-DiagnosticReport-Woechentliche-Visite\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html\">T-CABS DiagnosticReport Visit Finding</a></p></div><h2><span title=\"Codes:{http://loinc.org 34131-3}\">Outpatient Progress note</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</td></tr><tr><td>When For</td><td>2024-01-22 09:00:00+0000</td></tr><tr><td>Reported</td><td>2024-01-22 10:00:00+0000</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-tcabs-practitioner-example.html\">Practitioner Anna Schmidt(official)</a></td></tr><tr><td>Identifier</td><td> <code>http://tcabs.example.org/diagnosticreports</code>/DR-TCABS-WEEKLY-001</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-Example-AMV-BREAS-gemessen.html\"><span title=\"Codes:{urn:iso:std:iso:11073:10101 151996}\">MDC_VENT_VOL_MINUTE</span></a></td><td>8.5 L/min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min = 'L/min')</span></td><td>Final</td><td>2024-01-15 23:30:00+0000</td></tr><tr><td><a href=\"Observation-Example-AHI-BREAS.html\"><span title=\"Codes:{urn:iso:std:iso:11073:10101 8410792}\">MDC_SABTE_AHI_TOTAL</span></a></td><td>5.2 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></td><td>Final</td><td>2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</td></tr><tr><td><a href=\"Observation-Example-Atemfrequenz-ResMed-gemessen.html\"><span title=\"Codes:{urn:iso:std:iso:11073:10101 151586}\">MDC_VENT_RESP_RATE</span></a></td><td>14 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td><td>Final</td><td>2024-01-15 23:20:00+0000 --&gt; 2024-01-15 23:20:00+0000</td></tr><tr><td><a href=\"Observation-Example-Leckage-ResMed.html\"><span title=\"Codes:{urn:iso:std:iso:11073:10101 152432}\">MDC_VENT_VOL_LEAK</span></a></td><td>0.6 L/min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min = 'L/min')</span></td><td>Final</td><td>2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</td></tr><tr><td><a href=\"Observation-Example-PEEP-Loewenstein.html\"><span title=\"Codes:{urn:iso:std:iso:11073:10101 152720}\">MDC_VENT_PRESS_AWAY_DELTA</span></a></td><td>18 mbar<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codembar = 'mbar')</span></td><td>Final</td><td>2024-01-15 23:35:00+0000 --&gt; 2024-01-15 23:35:00+0000</td></tr><tr><td><a href=\"Observation-Example-TriggeredBreaths-Loewenstein.html\"><span title=\"Codes:{urn:iso:std:iso:11073:10101 152498}\">MDC_VENT_RESP_BTSD_P_RATE</span></a></td><td>92 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>Final</td><td>2024-01-15 22:00:00+0000 --&gt; 2024-01-16 06:00:00+0000</td></tr><tr><td><a href=\"Observation-Example-BMI-Doccla.html\"><span title=\"Codes:{http://loinc.org 39156-5}, {urn:iso:std:iso:11073:10101 188752}\">Body mass index (BMI) [Ratio]</span></a></td><td>25.3 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg/m2 = 'kg/m2')</span></td><td>Final</td><td>2024-01-15 10:30:00+0000 --&gt; 2024-01-15 10:30:00+0000</td></tr><tr><td><a href=\"Observation-Example-ArterielleSPO2-Doccla.html\"><span title=\"Codes:{http://loinc.org 2708-6}, {urn:iso:std:iso:11073:10101 160300}\">Oxygen saturation in Arterial blood</span></a> (<span title=\"Codes:{http://snomed.info/sct 11527006}\">Arterial system structure (body structure)</span>)</td><td>98 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>Final</td><td>2024-01-15 08:15:00+0000 --&gt; 2024-01-15 08:15:00+0000</td></tr></table><p>Patient shows stable ventilation parameters across all devices. BREAS: AMV in normal range at 8.5 L/min, AHI at 5.2 within therapeutic target. ResMed: Respiratory rate stable at 14/min, leakage minimal at 0.6 L/min. Löwenstein: Synchronization at 85%, TriggeredBreaths at 92% show very good patient-device interaction. Vital parameters also stable: BMI 25.3 kg/m², SpO2 98%.</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://tcabs.example.org/diagnosticreports"^^xsd:anyURI ;
+       fhir:l <http://tcabs.example.org/diagnosticreports>
+     ] ;
+     fhir:value [ fhir:v "DR-TCABS-WEEKLY-001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:34131-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "34131-3" ] ;
+       fhir:display [ fhir:v "Outpatient Progress note" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <http://t-cabs.org/Encounter/Example-Encounter-Telemedizinische-Visite> ;
+     fhir:reference [ fhir:v "Encounter/Example-Encounter-Telemedizinische-Visite" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2024-01-22T09:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2024-01-22T10:00:00Z"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:l <http://t-cabs.org/Practitioner/tcabs-practitioner-example> ;
+     fhir:reference [ fhir:v "Practitioner/tcabs-practitioner-example" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:l <http://t-cabs.org/Observation/Example-AMV-BREAS-gemessen> ;
+     fhir:reference [ fhir:v "Observation/Example-AMV-BREAS-gemessen" ]
+  ] [
+     fhir:l <http://t-cabs.org/Observation/Example-AHI-BREAS> ;
+     fhir:reference [ fhir:v "Observation/Example-AHI-BREAS" ]
+  ] [
+     fhir:l <http://t-cabs.org/Observation/Example-Atemfrequenz-ResMed-gemessen> ;
+     fhir:reference [ fhir:v "Observation/Example-Atemfrequenz-ResMed-gemessen" ]
+  ] [
+     fhir:l <http://t-cabs.org/Observation/Example-Leckage-ResMed> ;
+     fhir:reference [ fhir:v "Observation/Example-Leckage-ResMed" ]
+  ] [
+     fhir:l <http://t-cabs.org/Observation/Example-PEEP-Loewenstein> ;
+     fhir:reference [ fhir:v "Observation/Example-PEEP-Loewenstein" ]
+  ] [
+     fhir:l <http://t-cabs.org/Observation/Example-TriggeredBreaths-Loewenstein> ;
+     fhir:reference [ fhir:v "Observation/Example-TriggeredBreaths-Loewenstein" ]
+  ] [
+     fhir:l <http://t-cabs.org/Observation/Example-BMI-Doccla> ;
+     fhir:reference [ fhir:v "Observation/Example-BMI-Doccla" ]
+  ] [
+     fhir:l <http://t-cabs.org/Observation/Example-ArterielleSPO2-Doccla> ;
+     fhir:reference [ fhir:v "Observation/Example-ArterielleSPO2-Doccla" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Patient shows stable ventilation parameters across all devices. BREAS: AMV in normal range at 8.5 L/min, AHI at 5.2 within therapeutic target. ResMed: Respiratory rate stable at 14/min, leakage minimal at 0.6 L/min. Löwenstein: Synchronization at 85%, TriggeredBreaths at 92% show very good patient-device interaction. Vital parameters also stable: BMI 25.3 kg/m², SpO2 98%."] . # 
+
+# -------------------------------------------------------------------------------------
+

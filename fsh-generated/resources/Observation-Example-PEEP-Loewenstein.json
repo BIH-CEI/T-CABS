@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-PEEP-Loewenstein",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "152720",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_VENT_PRESS_AWAY_DELTA"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2024-01-15T23:35:00Z",
+    "end": "2024-01-15T23:35:00Z"
+  },
+  "valueQuantity": {
+    "unit": "mbar",
+    "system": "http://unitsofmeasure.org",
+    "code": "mbar",
+    "value": 18
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/beispiel-beatmung-loewenstein"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  },
+  "device": {
+    "reference": "DeviceMetric/beispiel-devicemetric-loewenstein-peep"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-Atemfrequenz-ResMed-gemessen",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "151586",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_VENT_RESP_RATE"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2024-01-15T23:20:00Z",
+    "end": "2024-01-15T23:20:00Z"
+  },
+  "valueQuantity": {
+    "unit": "/min",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min",
+    "value": 14
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/beispiel-beatmung-resmed"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  },
+  "device": {
+    "reference": "DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz"
+  }
+}

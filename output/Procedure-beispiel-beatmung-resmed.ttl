@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/Procedure/beispiel-beatmung-resmed> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "beispiel-beatmung-resmed"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure beispiel-beatmung-resmed</b></p><a name=\"beispiel-beatmung-resmed\"> </a><a name=\"hcbeispiel-beatmung-resmed\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-procedure-beatmung.html\">T-CABS Procedure Ventilation</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 428311008}\">Non-invasive ventilation (regime/therapy)</span></p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 151796}\">MDC_PRESS_AWAY_CTS_POS</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>performed</b>: 2024-01-15 22:00:00+0000 --&gt; 2024-03-13 06:00:00+0000</p><p><b>usedReference</b>: <a href=\"Device-beispiel-beatmungsgeraet-resmed.html\">Device: extension = 6500; identifier = UDI; manufacturer = ResMed; serialNumber = STELLAR150-SN-901234; type = MDC_DEV_SYS_PT_VENT_MDS</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:428311008 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "428311008" ] ;
+       fhir:display [ fhir:v "Non-invasive ventilation (regime/therapy)" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
+       fhir:code [ fhir:v "151796" ] ;
+       fhir:display [ fhir:v "MDC_PRESS_AWAY_CTS_POS" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2024-01-15T22:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2024-03-13T06:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:usedReference ( [
+     fhir:l <http://t-cabs.org/Device/beispiel-beatmungsgeraet-resmed> ;
+     fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-resmed" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Device",
+  "id" : "beispiel-vmd-resmed-druck",
+  "meta" : {
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-vmd-resmed-druck</b></p><a name=\"beispiel-vmd-resmed-druck\"> </a><a name=\"hcbeispiel-vmd-resmed-druck\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html\">T-CABS Device VMD Ventilator</a></p></div><p><b>identifier</b>: <code>http://tcabs.example.org/device-vmd</code>/VMD-RESMED-DRUCK-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Stellar150 Druck Min/Max Module</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 69866}\">MDC_DEV_METER_PRESS_LUNG_VMD</span></p><p><b>parent</b>: <a href=\"Device-beispiel-beatmungsgeraet-resmed.html\">Device: extension = 6500; identifier = UDI; manufacturer = ResMed; serialNumber = STELLAR150-SN-901234; type = MDC_DEV_SYS_PT_VENT_MDS</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://tcabs.example.org/device-vmd",
+    "value" : "VMD-RESMED-DRUCK-001"
+  }],
+  "deviceName" : [{
+    "name" : "Stellar150 Druck Min/Max Module",
+    "type" : "user-friendly-name"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "69866",
+      "display" : "MDC_DEV_METER_PRESS_LUNG_VMD"
+    }]
+  },
+  "parent" : {
+    "reference" : "Device/beispiel-beatmungsgeraet-resmed"
+  }
+}

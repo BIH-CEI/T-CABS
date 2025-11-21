@@ -1,0 +1,32 @@
+{
+  "resourceType": "Practitioner",
+  "id": "tcabs-practitioner-example",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/practitioners",
+      "value": "TCABS-DOC-001"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Anna"
+      ],
+      "use": "official",
+      "family": "Schmidt",
+      "text": "Anna Schmidt"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "anna.schmidt@tcabs-clinic.de"
+    }
+  ]
+}

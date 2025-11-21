@@ -6,28 +6,31 @@
 id: t-cabs
 canonical: http://t-cabs.org
 name: T-CABS
-# title: Example Title
+title: T-CABS Implementation Guide
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
+# template: t-cabs-template #not supported anymore
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+language: en
+jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: BIH-CEI
-  url: http://example.org/example-publisher
+  url: https://www.bihealth.org/
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.icu: 2025.0.2
   de.medizininformatikinitiative.kerndatensatz.person: 2025.0.0
-  de.gematik.isik-basismodul: 4.0.1
-  de.gematik.isik-vitalparameter: 4.0.0
+  de.medizininformatikinitiative.kerndatensatz.fall: 2025.0.0
+  hl7.fhir.uv.phd: 1.1.0
+  hl7.fhir.uv.pocd: 0.3.0
+  de.basisprofil.r4: 1.5.4
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -48,12 +51,28 @@ dependencies:
 pages:
   index.md:
     title: Home
-  logisches_modell.md:
-    title: Logisches Modell
-  profile.md:
-    title: Profile
-  beispiele.md:
-    title: Beispiele
+  Information-Model.md:
+    title: Information Model
+  Cross-Domain-Profiles.md:
+    title: Cross-Domain Profiles
+  Vital-Data-Profiles.md:
+    title: Vital Data Profiles
+  Ventilation-Data-Profiles.md:
+    title: Ventilation Data Profiles
+  Cross-Domain-Examples.md:
+    title: Cross-Domain Examples
+  Vital-Data-Examples.md:
+    title: Vital Data Examples
+  Ventilation-Data-Examples.md:
+    title: Ventilation Data Examples
+  Cross-Domain-Implementation.md:
+    title: Cross-Domain Implementation
+  Vital-Data-Implementation.md:
+    title: Vital Data Implementation
+  Ventilation-Data-Implementation.md:
+    title: Ventilation Data Implementation
+  Terminologies.md:
+    title: Terminologies
 
 
 #   implementation.xml:
@@ -72,7 +91,8 @@ pages:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
+parameters:
+  shownav: true
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
@@ -84,12 +104,23 @@ pages:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
 menu:
   Home: index.html
-  Spezifikation:
-    Logisches Modell: logisches_modell.html
-    Profile: profile.html
-    Beispiele: beispiele.html
+  "Information Model": Information-Model.html
+  Profiles:
+    "Cross-Domain": Cross-Domain-Profiles.html
+    "Vital Data": Vital-Data-Profiles.html
+    "Ventilation Data": Ventilation-Data-Profiles.html
+  Examples:
+    "Cross-Domain": Cross-Domain-Examples.html
+    "Vital Data": Vital-Data-Examples.html
+    "Ventilation Data": Ventilation-Data-Examples.html
+  Implementation:
+    "Cross-Domain": Cross-Domain-Implementation.html
+    "Vital Data": Vital-Data-Implementation.html
+    "Ventilation Data": Ventilation-Data-Implementation.html
+  Terminologies: Terminologies.html
   Artifacts: artifacts.html
 
 

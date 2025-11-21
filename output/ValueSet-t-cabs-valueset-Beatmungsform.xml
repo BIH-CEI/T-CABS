@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="t-cabs-valueset-Beatmungsform"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet t-cabs-valueset-Beatmungsform</b></p><a name="t-cabs-valueset-Beatmungsform"> </a><a name="hct-cabs-valueset-Beatmungsform"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/428311008">428311008</a></td><td>Non-invasive ventilation (regime/therapy)</td></tr><tr><td><a href="http://snomed.info/id/1258985005">1258985005</a></td><td>Invasive mechanical ventilation (regime/therapy)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform"/>
+  <version value="0.1.0"/>
+  <name value="T_CABS_ValueSet_Beatmungsform"/>
+  <title value="T-CABS ValueSet Ventilation Type"/>
+  <status value="draft"/>
+  <date value="2025-11-20T17:13:04+01:00"/>
+  <publisher value="BIH-CEI"/>
+  <contact>
+    <name value="BIH-CEI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet contains codes to represent the different types of ventilation"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="428311008"/>
+        <display value="Non-invasive ventilation (regime/therapy)"/>
+      </concept>
+      <concept>
+        <code value="1258985005"/>
+        <display value="Invasive mechanical ventilation (regime/therapy)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

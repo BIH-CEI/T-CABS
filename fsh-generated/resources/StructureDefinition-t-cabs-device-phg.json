@@ -1,0 +1,76 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-device-phg",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-phg",
+  "name": "T_CABS_Device_PHG",
+  "title": "T-CABS Device PHG",
+  "status": "draft",
+  "description": "Profile for a tablet used as a gateway device",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/uv/phd/StructureDefinition/PhgDevice",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device.identifier:systemIdIdentifier",
+        "path": "Device.identifier",
+        "sliceName": "systemIdIdentifier"
+      },
+      {
+        "id": "Device.identifier:systemIdIdentifier.type.coding.system",
+        "path": "Device.identifier.type.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.identifier:systemIdIdentifier.type.coding.code",
+        "path": "Device.identifier.type.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.identifier:systemIdIdentifier.value",
+        "path": "Device.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.serialNumber",
+        "path": "Device.serialNumber",
+        "short": "Serial number of the device",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.specialization",
+        "path": "Device.specialization",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.specialization.systemType.coding:MDCType",
+        "path": "Device.specialization.systemType.coding",
+        "sliceName": "MDCType",
+        "patternCoding": {
+          "code": "8528192",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Device.patient",
+        "path": "Device.patient",
+        "short": "Reference to the patient",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

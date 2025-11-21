@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://t-cabs.org/Device/beispiel-beatmungsgeraet-breas> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "beispiel-beatmungsgeraet-breas"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
+       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device beispiel-beatmungsgeraet-breas</b></p><a name=\"beispiel-beatmungsgeraet-breas\"> </a><a name=\"hcbeispiel-beatmungsgeraet-breas\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html\">T-CABS Device MDS Home Ventilator</a></p></div><p><b>Operating hours extension</b>: 8760</p><p><b>identifier</b>: UDI/BREAS-VIVO45-12345</p><p><b>manufacturer</b>: BREAS Medical</p><p><b>serialNumber</b>: VIVO45-SN-789012</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Vivo45</td><td>Model name</td></tr></table><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 70001}\">MDC_DEV_SYS_PT_VENT_MDS</span></p><p><b>patient</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>owner</b>: <a href=\"Organization-beispiel-provider-jochum.html\">Organization Jochum GmbH</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours>
+     ] ;
+     fhir:value [
+       a fhir:UnsignedInt ;
+       fhir:v "8760"^^xsd:nonNegativeInteger
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "UDI" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "BREAS-VIVO45-12345" ]
+  ] ) ; # 
+  fhir:manufacturer [ fhir:v "BREAS Medical"] ; # 
+  fhir:serialNumber [ fhir:v "VIVO45-SN-789012"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Vivo45" ] ;
+     fhir:type [ fhir:v "model-name" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
+       fhir:code [ fhir:v "70001" ] ;
+       fhir:display [ fhir:v "MDC_DEV_SYS_PT_VENT_MDS" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
+  ] ; # 
+  fhir:owner [
+     fhir:l <http://t-cabs.org/Organization/beispiel-provider-jochum> ;
+     fhir:reference [ fhir:v "Organization/beispiel-provider-jochum" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

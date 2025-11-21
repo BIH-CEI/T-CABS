@@ -1,0 +1,17 @@
+{
+  "resourceType": "Organization",
+  "id": "beispiel-provider-loewenstein",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://tcabs.example.org/providers",
+      "value": "PROV-LOEW-001"
+    }
+  ],
+  "name": "Löwenstein Medical"
+}

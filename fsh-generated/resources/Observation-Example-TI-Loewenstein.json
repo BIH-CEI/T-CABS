@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-TI-Loewenstein",
+  "meta": {
+    "profile": [
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "152416",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_VENT_TIME_PD_INSP"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2024-10-07T20:30:00+02:00",
+    "end": "2024-10-07T20:45:00+02:00"
+  },
+  "valueQuantity": {
+    "unit": "s",
+    "system": "http://unitsofmeasure.org",
+    "code": "s",
+    "value": 1.2
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/beispiel-beatmung-loewenstein"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  },
+  "device": {
+    "reference": "DeviceMetric/beispiel-devicemetric-loewenstein-ti"
+  }
+}

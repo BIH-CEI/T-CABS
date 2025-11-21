@@ -1,0 +1,970 @@
+[
+  {
+    "outputFile": "Device-beispiel-beatmungsgeraet-breas.json",
+    "fshName": "beispiel-beatmungsgeraet-breas",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_Beatmungsgeraet.fsh",
+    "startLine": 66,
+    "endLine": 80
+  },
+  {
+    "outputFile": "Device-beispiel-beatmungsgeraet-loewenstein.json",
+    "fshName": "beispiel-beatmungsgeraet-loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_Beatmungsgeraet.fsh",
+    "startLine": 82,
+    "endLine": 96
+  },
+  {
+    "outputFile": "Device-beispiel-beatmungsgeraet-resmed.json",
+    "fshName": "beispiel-beatmungsgeraet-resmed",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_Beatmungsgeraet.fsh",
+    "startLine": 98,
+    "endLine": 112
+  },
+  {
+    "outputFile": "Device-beispiel-channel-breas-ahi.json",
+    "fshName": "beispiel-channel-breas-ahi",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 9,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Device-beispiel-channel-breas-amv.json",
+    "fshName": "beispiel-channel-breas-amv",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 21,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Device-beispiel-channel-breas-ipap.json",
+    "fshName": "beispiel-channel-breas-ipap",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 117,
+    "endLine": 127
+  },
+  {
+    "outputFile": "Device-beispiel-channel-breas-targetvolume.json",
+    "fshName": "beispiel-channel-breas-targetvolume",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 129,
+    "endLine": 139
+  },
+  {
+    "outputFile": "Device-beispiel-channel-loewenstein-peep.json",
+    "fshName": "beispiel-channel-loewenstein-peep",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 57,
+    "endLine": 67
+  },
+  {
+    "outputFile": "Device-beispiel-channel-loewenstein-ti.json",
+    "fshName": "beispiel-channel-loewenstein-ti",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 81,
+    "endLine": 91
+  },
+  {
+    "outputFile": "Device-beispiel-channel-loewenstein-triggeredbreaths.json",
+    "fshName": "beispiel-channel-loewenstein-triggeredbreaths",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 69,
+    "endLine": 79
+  },
+  {
+    "outputFile": "Device-beispiel-channel-resmed-atemfrequenz.json",
+    "fshName": "beispiel-channel-resmed-atemfrequenz",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 33,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Device-beispiel-channel-resmed-atemzeit.json",
+    "fshName": "beispiel-channel-resmed-atemzeit",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 93,
+    "endLine": 103
+  },
+  {
+    "outputFile": "Device-beispiel-channel-resmed-druck.json",
+    "fshName": "beispiel-channel-resmed-druck",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 105,
+    "endLine": 115
+  },
+  {
+    "outputFile": "Device-beispiel-channel-resmed-leckage.json",
+    "fshName": "beispiel-channel-resmed-leckage",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 45,
+    "endLine": 55
+  },
+  {
+    "outputFile": "Device-beispiel-phd-doccla.json",
+    "fshName": "beispiel-phd-doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHD.fsh",
+    "startLine": 20,
+    "endLine": 37
+  },
+  {
+    "outputFile": "Device-beispiel-phg-doccla.json",
+    "fshName": "beispiel-phg-doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHG.fsh",
+    "startLine": 22,
+    "endLine": 50
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-breas-ahi.json",
+    "fshName": "beispiel-vmd-breas-ahi",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 9,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-breas-amv.json",
+    "fshName": "beispiel-vmd-breas-amv",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 21,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-breas-ipap.json",
+    "fshName": "beispiel-vmd-breas-ipap",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 117,
+    "endLine": 127
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-breas-targetvolume.json",
+    "fshName": "beispiel-vmd-breas-targetvolume",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 129,
+    "endLine": 139
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-loewenstein-peep.json",
+    "fshName": "beispiel-vmd-loewenstein-peep",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 57,
+    "endLine": 67
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-loewenstein-ti.json",
+    "fshName": "beispiel-vmd-loewenstein-ti",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 81,
+    "endLine": 91
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-loewenstein-triggeredbreaths.json",
+    "fshName": "beispiel-vmd-loewenstein-triggeredbreaths",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 69,
+    "endLine": 79
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-resmed-atemfrequenz.json",
+    "fshName": "beispiel-vmd-resmed-atemfrequenz",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 33,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-resmed-atemzeit.json",
+    "fshName": "beispiel-vmd-resmed-atemzeit",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 93,
+    "endLine": 103
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-resmed-druck.json",
+    "fshName": "beispiel-vmd-resmed-druck",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 105,
+    "endLine": 115
+  },
+  {
+    "outputFile": "Device-beispiel-vmd-resmed-leckage.json",
+    "fshName": "beispiel-vmd-resmed-leckage",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 45,
+    "endLine": 55
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-breas-ahi.json",
+    "fshName": "beispiel-devicemetric-breas-ahi",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 11,
+    "endLine": 29
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-breas-amv.json",
+    "fshName": "beispiel-devicemetric-breas-amv",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 31,
+    "endLine": 49
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-breas-ipap.json",
+    "fshName": "beispiel-devicemetric-breas-ipap",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 191,
+    "endLine": 209
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-breas-targetvolume.json",
+    "fshName": "beispiel-devicemetric-breas-targetvolume",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 211,
+    "endLine": 229
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-loewenstein-peep.json",
+    "fshName": "beispiel-devicemetric-loewenstein-peep",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 91,
+    "endLine": 109
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-loewenstein-ti.json",
+    "fshName": "beispiel-devicemetric-loewenstein-ti",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 131,
+    "endLine": 149
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.json",
+    "fshName": "beispiel-devicemetric-loewenstein-triggeredbreaths",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 111,
+    "endLine": 129
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.json",
+    "fshName": "beispiel-devicemetric-resmed-atemfrequenz",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 51,
+    "endLine": 69
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-resmed-atemzeit.json",
+    "fshName": "beispiel-devicemetric-resmed-atemzeit",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 151,
+    "endLine": 169
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-resmed-druck.json",
+    "fshName": "beispiel-devicemetric-resmed-druck",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 171,
+    "endLine": 189
+  },
+  {
+    "outputFile": "DeviceMetric-beispiel-devicemetric-resmed-leckage.json",
+    "fshName": "beispiel-devicemetric-resmed-leckage",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 71,
+    "endLine": 89
+  },
+  {
+    "outputFile": "DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite.json",
+    "fshName": "Example-DiagnosticReport-Woechentliche-Visite",
+    "fshType": "Instance",
+    "fshFile": "Profile/Allgemein/T_CABS_DiagnosticReport_Visitenbefund.fsh",
+    "startLine": 24,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Encounter-Example-Encounter-Telemedizinische-Visite.json",
+    "fshName": "Example-Encounter-Telemedizinische-Visite",
+    "fshType": "Instance",
+    "fshFile": "Profile/Allgemein/T_CABS_Enounter_Kontakt.fsh",
+    "startLine": 19,
+    "endLine": 38
+  },
+  {
+    "outputFile": "Observation-Example-AHI-BREAS.json",
+    "fshName": "Example-AHI-BREAS",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_AHI.fsh",
+    "startLine": 13,
+    "endLine": 28
+  },
+  {
+    "outputFile": "Observation-Example-AMV-BREAS-gemessen.json",
+    "fshName": "Example-AMV-BREAS-gemessen",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_AMV.fsh",
+    "startLine": 13,
+    "endLine": 27
+  },
+  {
+    "outputFile": "Observation-Example-ArterielleSPO2-Doccla.json",
+    "fshName": "Example-ArterielleSPO2-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_ArterielleSPO2.fsh",
+    "startLine": 21,
+    "endLine": 41
+  },
+  {
+    "outputFile": "Observation-Example-ArteriellerBlutdruck-Doccla.json",
+    "fshName": "Example-ArteriellerBlutdruck-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_ArteriellerBlutdruck.fsh",
+    "startLine": 44,
+    "endLine": 69
+  },
+  {
+    "outputFile": "Observation-Example-Atemfrequenz-Doccla.json",
+    "fshName": "Example-Atemfrequenz-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Atemfrequenz.fsh",
+    "startLine": 16,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-Example-Atemfrequenz-ResMed-gemessen.json",
+    "fshName": "Example-Atemfrequenz-ResMed-gemessen",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_Atemfrequenz_beatmet.fsh",
+    "startLine": 12,
+    "endLine": 27
+  },
+  {
+    "outputFile": "Observation-Example-Atemzeitverhaeltnis-ResMed.json",
+    "fshName": "Example-Atemzeitverhaeltnis-ResMed",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_Atemzeitverhaeltnis.fsh",
+    "startLine": 16,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Observation-Example-BMI-Doccla.json",
+    "fshName": "Example-BMI-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_BMI.fsh",
+    "startLine": 13,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Observation-Example-DruckMinMax-ResMed.json",
+    "fshName": "Example-DruckMinMax-ResMed",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_DruckMinMax.fsh",
+    "startLine": 28,
+    "endLine": 49
+  },
+  {
+    "outputFile": "Observation-Example-FEF25-75-Doccla.json",
+    "fshName": "Example-FEF25-75-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_FEF25-75.fsh",
+    "startLine": 13,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Observation-Example-FEV1-Doccla.json",
+    "fshName": "Example-FEV1-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_FEV1.fsh",
+    "startLine": 13,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Observation-Example-FEV1-FEV6-Doccla.json",
+    "fshName": "Example-FEV1-FEV6-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_FEV1-FEV6.fsh",
+    "startLine": 13,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Observation-Example-FEV6-Doccla.json",
+    "fshName": "Example-FEV6-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_FEV6.fsh",
+    "startLine": 13,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Observation-Example-Gehstrecke-Doccla.json",
+    "fshName": "Example-Gehstrecke-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Gehstrecke.fsh",
+    "startLine": 14,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Observation-Example-Handgriffstaerke-Doccla.json",
+    "fshName": "Example-Handgriffstaerke-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Handgriffstaerke.fsh",
+    "startLine": 26,
+    "endLine": 45
+  },
+  {
+    "outputFile": "Observation-Example-Herzfrequenz-Doccla.json",
+    "fshName": "Example-Herzfrequenz-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Herzfrequenz.fsh",
+    "startLine": 17,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Observation-Example-IPAP-BREAS.json",
+    "fshName": "Example-IPAP-BREAS",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_IPAP.fsh",
+    "startLine": 13,
+    "endLine": 37
+  },
+  {
+    "outputFile": "Observation-Example-Koerpergewicht-Doccla.json",
+    "fshName": "Example-Koerpergewicht-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Koerpergewicht.fsh",
+    "startLine": 17,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Observation-Example-Koerpertemperatur-Doccla.json",
+    "fshName": "Example-Koerpertemperatur-Doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Koerpertemperatur.fsh",
+    "startLine": 19,
+    "endLine": 38
+  },
+  {
+    "outputFile": "Observation-Example-Leckage-ResMed.json",
+    "fshName": "Example-Leckage-ResMed",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T-CABS_Observation_Leckage.fsh",
+    "startLine": 14,
+    "endLine": 29
+  },
+  {
+    "outputFile": "Observation-Example-PEEP-Loewenstein.json",
+    "fshName": "Example-PEEP-Loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_PEEP.fsh",
+    "startLine": 13,
+    "endLine": 28
+  },
+  {
+    "outputFile": "Observation-Example-TI-Loewenstein.json",
+    "fshName": "Example-TI-Loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_TI.fsh",
+    "startLine": 13,
+    "endLine": 28
+  },
+  {
+    "outputFile": "Observation-Example-TargetVolume-BREAS.json",
+    "fshName": "Example-TargetVolume-BREAS",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_TargetVolume.fsh",
+    "startLine": 15,
+    "endLine": 39
+  },
+  {
+    "outputFile": "Observation-Example-TriggeredBreaths-Loewenstein.json",
+    "fshName": "Example-TriggeredBreaths-Loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_TriggeredBreaths.fsh",
+    "startLine": 16,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Organization-CABS.json",
+    "fshName": "CABS",
+    "fshType": "Instance",
+    "fshFile": "Profile/Allgemein/T_CABS_Organisation.fsh",
+    "startLine": 45,
+    "endLine": 76
+  },
+  {
+    "outputFile": "Organization-beispiel-provider-doccla.json",
+    "fshName": "beispiel-provider-doccla",
+    "fshType": "Instance",
+    "fshFile": "Profile/Allgemein/T_CABS_Organisation.fsh",
+    "startLine": 78,
+    "endLine": 86
+  },
+  {
+    "outputFile": "Organization-beispiel-provider-jochum.json",
+    "fshName": "beispiel-provider-jochum",
+    "fshType": "Instance",
+    "fshFile": "Profile/Allgemein/T_CABS_Organisation.fsh",
+    "startLine": 14,
+    "endLine": 22
+  },
+  {
+    "outputFile": "Organization-beispiel-provider-loewenstein.json",
+    "fshName": "beispiel-provider-loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Profile/Allgemein/T_CABS_Organisation.fsh",
+    "startLine": 24,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Organization-beispiel-provider-vivisol.json",
+    "fshName": "beispiel-provider-vivisol",
+    "fshType": "Instance",
+    "fshFile": "Profile/Allgemein/T_CABS_Organisation.fsh",
+    "startLine": 34,
+    "endLine": 42
+  },
+  {
+    "outputFile": "Patient-tcabs-patient-example.json",
+    "fshName": "tcabs-patient-example",
+    "fshType": "Instance",
+    "fshFile": "Profile/Allgemein/T_CABS_Patient.fsh",
+    "startLine": 13,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Practitioner-tcabs-practitioner-example.json",
+    "fshName": "tcabs-practitioner-example",
+    "fshType": "Instance",
+    "fshFile": "Profile/Allgemein/T_CABS_Practitioner_PersonMitFunktion.fsh",
+    "startLine": 28,
+    "endLine": 40
+  },
+  {
+    "outputFile": "PractitionerRole-tcabs-practitioner-role-example.json",
+    "fshName": "tcabs-practitioner-role-example",
+    "fshType": "Instance",
+    "fshFile": "Profile/Allgemein/T_CABS_PractitionerRole_Funktion.fsh",
+    "startLine": 10,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Procedure-beispiel-beatmung-breas.json",
+    "fshName": "beispiel-beatmung-breas",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Procedure_Beatmung.fsh",
+    "startLine": 41,
+    "endLine": 52
+  },
+  {
+    "outputFile": "Procedure-beispiel-beatmung-loewenstein.json",
+    "fshName": "beispiel-beatmung-loewenstein",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Procedure_Beatmung.fsh",
+    "startLine": 54,
+    "endLine": 65
+  },
+  {
+    "outputFile": "Procedure-beispiel-beatmung-resmed.json",
+    "fshName": "beispiel-beatmung-resmed",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Procedure_Beatmung.fsh",
+    "startLine": 67,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-device-channel-beatmungsgeraet.json",
+    "fshName": "T_CABS_Device_Channel_Beatmungsgeraet",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_BeatmungsgeraetChannel.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-device-mds-beatmungsgeraet.json",
+    "fshName": "T_CABS_Device_MDS_Beatmungsgeraet",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_Beatmungsgeraet.fsh",
+    "startLine": 1,
+    "endLine": 61
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-device-phd.json",
+    "fshName": "T_CABS_Device_PHD",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHD.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-device-phg.json",
+    "fshName": "T_CABS_Device_PHG",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHG.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.json",
+    "fshName": "T_CABS_Device_VMD_Beatmungsgeraet",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Device_VirtuellesBeatmungsgeraet.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-devicemetric-numericmetric.json",
+    "fshName": "T_CABS_DeviceMetric_NumericMetric",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_DeviceMetric_NumericMetric.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-diagnosticreport-visitenbefund.json",
+    "fshName": "T_CABS_DiagnosticReport_Visitenbefund",
+    "fshType": "Profile",
+    "fshFile": "Profile/Allgemein/T_CABS_DiagnosticReport_Visitenbefund.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-encounter-kontakt.json",
+    "fshName": "T_CABS_Encounter_Kontakt",
+    "fshType": "Profile",
+    "fshFile": "Profile/Allgemein/T_CABS_Enounter_Kontakt.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-group-patientengruppe.json",
+    "fshName": "T_CABS_Group_Patientengruppe",
+    "fshType": "Profile",
+    "fshFile": "Profile/Allgemein/T_CABS_Group_Patientengruppe.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-ahi.json",
+    "fshName": "T_CABS_Observation_AHI",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_AHI.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-amv.json",
+    "fshName": "T_CABS_Observation_AMV",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_AMV.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-arteriellerblutdruck.json",
+    "fshName": "T_CABS_Observation_ArteriellerBlutdruck",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_ArteriellerBlutdruck.fsh",
+    "startLine": 1,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-arteriellespo2.json",
+    "fshName": "T_CABS_Observation_ArterielleSPO2",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_ArterielleSPO2.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.json",
+    "fshName": "T_CABS_Observation_Atemfrequenz_beatmet",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_Atemfrequenz_beatmet.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-atemfrequenz.json",
+    "fshName": "T_CABS_Observation_Atemfrequenz",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Atemfrequenz.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.json",
+    "fshName": "T_CABS_Observation_Atemzeitverhaeltnis",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_Atemzeitverhaeltnis.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-beatmungsparameter.json",
+    "fshName": "T_CABS_Observation_Beatmungsparameter",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_Beatumgsparameter.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.json",
+    "fshName": "T_CABS_Observation_BeatmungsparameterMitKomponenten",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_BeatmungsparameterMitKomponenten.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-bmi.json",
+    "fshName": "T_CABS_Observation_BMI",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_BMI.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-druck-minmax.json",
+    "fshName": "T_CABS_Observation_DruckMinMax",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_DruckMinMax.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-gehstrecke.json",
+    "fshName": "T_CABS_Observation_Gehstrecke",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Gehstrecke.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-herzfrequenz.json",
+    "fshName": "T_CABS_Observation_Herzfrequenz",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Herzfrequenz.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-ipap.json",
+    "fshName": "T_CABS_Observation_IPAP",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_IPAP.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-koerpergewicht.json",
+    "fshName": "T_CABS_Observation_Koerpergewicht",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Koerpergewicht.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-koerpertemperatur.json",
+    "fshName": "T_CABS_Observation_Koerpertemperatur",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Koerpertemperatur.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-leckage.json",
+    "fshName": "T_CABS_Observation_Leckage",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T-CABS_Observation_Leckage.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-peep.json",
+    "fshName": "T_CABS_Observation_PEEP",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_PEEP.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-targetvolume.json",
+    "fshName": "T_CABS_Observation_TargetVolume",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_TargetVolume.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-ti.json",
+    "fshName": "T_CABS_Observation_TI",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_TI.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-triggeredbreaths.json",
+    "fshName": "T_CABS_Observation_TriggeredBreaths",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_TriggeredBreaths.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-vitalparameter.json",
+    "fshName": "T_CABS_Observation_Vitalparameter",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Vitalparameter.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.json",
+    "fshName": "T_CABS_Observation_VitalparameterMitKomponenten",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_VitalparameterMitKomponenten.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observationfev1.json",
+    "fshName": "T_CABS_Observation_FEV1",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_FEV1.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observationfev1fef25-75.json",
+    "fshName": "T_CABS_Observation_FEF25_75",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_FEF25-75.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observationfev1fev6.json",
+    "fshName": "T_CABS_Observation_FEV1_FEV6",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_FEV1-FEV6.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observationfev6.json",
+    "fshName": "T_CABS_Observation_FEV6",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_FEV6.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-observationhandgriffstaerke.json",
+    "fshName": "T_CABS_Observation_Handgriffstaerke",
+    "fshType": "Profile",
+    "fshFile": "Profile/Vitaldaten (Doccla)/Vitalparameter/T_CABS_Observation_Handgriffstaerke.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-organisation.json",
+    "fshName": "T_CABS_Organisation",
+    "fshType": "Profile",
+    "fshFile": "Profile/Allgemein/T_CABS_Organisation.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-patient.json",
+    "fshName": "T_CABS_Patient",
+    "fshType": "Profile",
+    "fshFile": "Profile/Allgemein/T_CABS_Patient.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-practitioner-funktion.json",
+    "fshName": "T_CABS_PractitionerRole_Funktion",
+    "fshType": "Profile",
+    "fshFile": "Profile/Allgemein/T_CABS_PractitionerRole_Funktion.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-practitioner-personmitfunktion.json",
+    "fshName": "T_CABS_Practitioner_PersonMitFunktion",
+    "fshType": "Profile",
+    "fshFile": "Profile/Allgemein/T_CABS_Practitioner_PersonMitFunktion.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-t-cabs-procedure-beatmung.json",
+    "fshName": "T_CABS_Procedure_Beatmung",
+    "fshType": "Profile",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Procedure_Beatmung.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "ValueSet-t-cabs-valueset-Beatmungsform.json",
+    "fshName": "T_CABS_ValueSet_Beatmungsform",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets/T_CABS_ValueSet_Beatmungsform.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-t-cabs-valueset-Beatmungsmodus.json",
+    "fshName": "T_CABS_ValueSet_Beatmungsmodus",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets/T_CABS_ValueSet_Beatmungsmodus.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "ValueSet-t-cabs-valueset-beatmungsstelle.json",
+    "fshName": "T_CABS_ValueSet_Beatmungsstelle",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets/T_CABS_ValueSet_Beatmungsstelle.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "ValueSet-t-cabs-valueset-phdtyp.json",
+    "fshName": "T_CABS_ValueSet_PHDTyp",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets/T_CABS_ValueSet_PHDTyp.fsh",
+    "startLine": 1,
+    "endLine": 25
+  }
+]

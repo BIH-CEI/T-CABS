@@ -7,53 +7,67 @@
     "name" : "TCABS"
   },
   {
-    "id" : "t-cabs-communication-alarm",
+    "id" : "t-cabs-device-channel-beatmungsgeraet",
     "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-communication-alarm",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
     "version" : "0.1.0",
-    "name" : "T_CABS_Communication_Alarm"
+    "name" : "T_CABS_Device_Channel_Beatmungsgeraet"
   },
   {
-    "id" : "t-cabs-communication-atemfrequenz-high-alarm",
+    "id" : "t-cabs-device-mds-beatmungsgeraet",
     "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-high-alarm",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
     "version" : "0.1.0",
-    "name" : "T_CABS_Communication_AtemfrequenzHighAlarm"
+    "name" : "T_CABS_Device_MDS_Beatmungsgeraet"
   },
   {
-    "id" : "t-cabs-communication-atemfrequenz-low-alarm",
+    "id" : "t-cabs-device-phd",
     "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-communication-atemfrequenz-low-alarm",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd",
     "version" : "0.1.0",
-    "name" : "T_CABS_Communication_AtemfrequenzLowAlarm"
+    "name" : "T_CABS_Device_PHD"
   },
   {
-    "id" : "t-cabs-communication-diskonnektion-alarm",
+    "id" : "t-cabs-device-phg",
     "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-communication-diskonnektion-alarm",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phg",
     "version" : "0.1.0",
-    "name" : "T_CABS_Communication_DiskonnektionAlarm"
+    "name" : "T_CABS_Device_PHG"
   },
   {
-    "id" : "t-cabs-device-beatmungsgeraet",
+    "id" : "t-cabs-device-vmd-beatmungsgeraet",
     "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-beatmungsgeraet",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
     "version" : "0.1.0",
-    "name" : "T_CABS_Device_Beatmungsgeraet"
+    "name" : "T_CABS_Device_VMD_Beatmungsgeraet"
   },
   {
-    "id" : "t-cabs-devicemetric-eingestellter-gemessener-parameter",
+    "id" : "t-cabs-devicemetric-numericmetric",
     "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-eingestellter-gemessener-parameter",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric",
     "version" : "0.1.0",
-    "name" : "T_CABS_DeviceMetric_Eingestellter_Gemessener_Parameter"
+    "name" : "T_CABS_DeviceMetric_NumericMetric"
   },
   {
-    "id" : "t-cabs-observation-af",
+    "id" : "t-cabs-diagnosticreport-visitenbefund",
     "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-af",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund",
     "version" : "0.1.0",
-    "name" : "T_CABS_Observation_AF"
+    "name" : "T_CABS_DiagnosticReport_Visitenbefund"
+  },
+  {
+    "id" : "t-cabs-encounter-kontakt",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Encounter_Kontakt"
+  },
+  {
+    "id" : "t-cabs-group-patientengruppe",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Group_Patientengruppe"
   },
   {
     "id" : "t-cabs-observation-ahi",
@@ -70,11 +84,102 @@
     "name" : "T_CABS_Observation_AMV"
   },
   {
-    "id" : "t-cabs-observation-beatmungsstunden",
+    "id" : "t-cabs-observation-arteriellerblutdruck",
     "type" : "StructureDefinition",
-    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsstunden",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
     "version" : "0.1.0",
-    "name" : "T_CABS_Observation_Beatmungsstunden"
+    "name" : "T_CABS_Observation_ArteriellerBlutdruck"
+  },
+  {
+    "id" : "t-cabs-observation-arteriellespo2",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_ArterielleSPO2"
+  },
+  {
+    "id" : "t-cabs-observation-atemfrequenz",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Atemfrequenz"
+  },
+  {
+    "id" : "t-cabs-observation-atemfrequenz-beatmet",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Atemfrequenz_beatmet"
+  },
+  {
+    "id" : "t-cabs-observation-atemzeitverhaeltnis",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Atemzeitverhaeltnis"
+  },
+  {
+    "id" : "t-cabs-observation-beatmungsparameter",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Beatmungsparameter"
+  },
+  {
+    "id" : "t-cabs-observation-beatmungsparametermitkomponenten",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_BeatmungsparameterMitKomponenten"
+  },
+  {
+    "id" : "t-cabs-observation-bmi",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_BMI"
+  },
+  {
+    "id" : "t-cabs-observation-druck-minmax",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_DruckMinMax"
+  },
+  {
+    "id" : "t-cabs-observation-gehstrecke",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Gehstrecke"
+  },
+  {
+    "id" : "t-cabs-observation-herzfrequenz",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Herzfrequenz"
+  },
+  {
+    "id" : "t-cabs-observation-ipap",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_IPAP"
+  },
+  {
+    "id" : "t-cabs-observation-koerpergewicht",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Koerpergewicht"
+  },
+  {
+    "id" : "t-cabs-observation-koerpertemperatur",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Koerpertemperatur"
   },
   {
     "id" : "t-cabs-observation-leckage",
@@ -84,11 +189,109 @@
     "name" : "T_CABS_Observation_Leckage"
   },
   {
+    "id" : "t-cabs-observation-peep",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_PEEP"
+  },
+  {
+    "id" : "t-cabs-observation-targetvolume",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_TargetVolume"
+  },
+  {
+    "id" : "t-cabs-observation-ti",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_TI"
+  },
+  {
     "id" : "t-cabs-observation-triggeredbreaths",
     "type" : "StructureDefinition",
     "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
     "version" : "0.1.0",
     "name" : "T_CABS_Observation_TriggeredBreaths"
+  },
+  {
+    "id" : "t-cabs-observation-vitalparameter",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Vitalparameter"
+  },
+  {
+    "id" : "t-cabs-observation-vitalparametermitkomponenten",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_VitalparameterMitKomponenten"
+  },
+  {
+    "id" : "t-cabs-observationfev1",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_FEV1"
+  },
+  {
+    "id" : "t-cabs-observationfev1fef25-75",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fef25-75",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_FEF25_75"
+  },
+  {
+    "id" : "t-cabs-observationfev1fev6",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_FEV1_FEV6"
+  },
+  {
+    "id" : "t-cabs-observationfev6",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev6",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_FEV6"
+  },
+  {
+    "id" : "t-cabs-observationhandgriffstaerke",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Observation_Handgriffstaerke"
+  },
+  {
+    "id" : "t-cabs-organisation",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Organisation"
+  },
+  {
+    "id" : "t-cabs-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-patient",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Patient"
+  },
+  {
+    "id" : "t-cabs-practitioner-funktion",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion",
+    "version" : "0.1.0",
+    "name" : "T_CABS_PractitionerRole_Funktion"
+  },
+  {
+    "id" : "t-cabs-practitioner-personmitfunktion",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
+    "version" : "0.1.0",
+    "name" : "T_CABS_Practitioner_PersonMitFunktion"
   },
   {
     "id" : "t-cabs-procedure-beatmung",
@@ -98,10 +301,31 @@
     "name" : "T_CABS_Procedure_Beatmung"
   },
   {
+    "id" : "t-cabs-valueset-Beatmungsform",
+    "type" : "ValueSet",
+    "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
+    "version" : "0.1.0",
+    "name" : "T_CABS_ValueSet_Beatmungsform"
+  },
+  {
     "id" : "t-cabs-valueset-Beatmungsmodus",
     "type" : "ValueSet",
     "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
     "version" : "0.1.0",
     "name" : "T_CABS_ValueSet_Beatmungsmodus"
+  },
+  {
+    "id" : "t-cabs-valueset-beatmungsstelle",
+    "type" : "ValueSet",
+    "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle",
+    "version" : "0.1.0",
+    "name" : "T_CABS_ValueSet_Beatmungsstelle"
+  },
+  {
+    "id" : "t-cabs-valueset-phdtyp",
+    "type" : "ValueSet",
+    "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+    "version" : "0.1.0",
+    "name" : "T_CABS_ValueSet_PHDTyp"
   }
 ]

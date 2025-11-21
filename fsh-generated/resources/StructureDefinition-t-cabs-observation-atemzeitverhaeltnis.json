@@ -1,0 +1,48 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observation-atemzeitverhaeltnis",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis",
+  "name": "T_CABS_Observation_Atemzeitverhaeltnis",
+  "title": "T-CABS Observation Respiratory Time Ratio",
+  "status": "draft",
+  "description": "Profile for respiratory time ratio",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "definition": "Duration of an inspiratory phase normalized by the smaller of the duration of the inspiratory phase and the duration of the expiratory phase, during high frequency ventilation.\nExample: if I:E = 1:3, I = 1 (T ≤ T)Example: if I:E = 1:0.33, I = 3 (T < T)\n",
+        "patternCoding": {
+          "code": "153500",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "%"
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "patternCode": "%"
+      }
+    ]
+  }
+}

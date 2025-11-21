@@ -1,0 +1,58 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Example-TargetVolume-BREAS",
+  "meta" : {
+    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Example-TargetVolume-BREAS</b></p><a name=\"Example-TargetVolume-BREAS\"> </a><a name=\"hcExample-TargetVolume-BREAS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-t-cabs-observation-targetvolume.html\">T-CABS Observation Target Volume</a></p></div><p><b>partOf</b>: <a href=\"Procedure-beispiel-beatmung-breas.html\">Procedure MDC_VENT_MODE_ISO_AC_PC_6ACAP</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 153212}\">MDC_VENT_VOL_TIDAL_TARGET_AUTO</span></p><p><b>subject</b>: <a href=\"Patient-tcabs-patient-example.html\">Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)</a></p><p><b>effective</b>: 2024-10-07 21:00:00+0200 --&gt; 2024-10-07 21:30:00+0200</p><p><b>value</b>: 450 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></p><p><b>device</b>: <a href=\"DeviceMetric-beispiel-devicemetric-breas-targetvolume.html\">DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-BREAS-TGTVOL-001; type = MDC_VENT_VOL_TIDAL_TARGET_AUTO; unit = mL; operationalStatus = on; color = magenta; category = setting; measurementPeriod = Once per 10 minutes</a></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>300 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></td><td>800 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning therapeutic}\">Therapeutic Desired Level</span></td></tr></table></div>"
+  },
+  "partOf" : [{
+    "reference" : "Procedure/beispiel-beatmung-breas"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "153212",
+      "display" : "MDC_VENT_VOL_TIDAL_TARGET_AUTO"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/tcabs-patient-example"
+  },
+  "effectivePeriod" : {
+    "start" : "2024-10-07T21:00:00+02:00",
+    "end" : "2024-10-07T21:30:00+02:00"
+  },
+  "valueQuantity" : {
+    "value" : 450,
+    "unit" : "mL",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mL"
+  },
+  "device" : {
+    "reference" : "DeviceMetric/beispiel-devicemetric-breas-targetvolume"
+  },
+  "referenceRange" : [{
+    "low" : {
+      "value" : 300,
+      "unit" : "mL",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mL"
+    },
+    "high" : {
+      "value" : 800,
+      "unit" : "mL",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mL"
+    },
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+        "code" : "therapeutic"
+      }]
+    }
+  }]
+}

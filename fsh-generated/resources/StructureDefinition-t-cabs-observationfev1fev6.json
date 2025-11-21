@@ -1,0 +1,47 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "t-cabs-observationfev1fev6",
+  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6",
+  "name": "T_CABS_Observation_FEV1_FEV6",
+  "title": "T-CABS Observation FEV1/FEV6",
+  "status": "draft",
+  "description": "Profile for FEV1/FEV6 ratio",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:MDCType",
+        "path": "Observation.code.coding",
+        "sliceName": "MDCType",
+        "patternCoding": {
+          "code": "188936",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
+      },
+      {
+        "id": "Observation.code.coding:LoincCoding",
+        "path": "Observation.code.coding",
+        "sliceName": "LoincCoding",
+        "patternCoding": {
+          "code": "65658-7",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "%"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "%"
+      }
+    ]
+  }
+}
