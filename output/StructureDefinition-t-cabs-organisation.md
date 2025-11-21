@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-organisation | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Organisation |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_Organisation |
 
  
 Profile for an organization associated with the T-CABS study. Compatibility: The T_CABS_Organisation profile aims for compatibility with the ISiKOrganisation version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Organisation are also valid against the[ISiKOrganisation](https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation) 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-organisation.
   "name" : "T_CABS_Organisation",
   "title" : "T-CABS Organization",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

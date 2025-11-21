@@ -1,6 +1,0 @@
-
-# A name associated with the organization.
-#: Organization.name
-msgid "Doccla Deutschland GmbH"
-msgstr ""
-

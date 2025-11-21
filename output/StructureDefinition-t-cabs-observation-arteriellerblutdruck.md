@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_ArteriellerBlutdruck |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_Observation_ArteriellerBlutdruck |
 
  
 Profile for arterial blood pressure. Compatibility: For the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the[ISiKBlutdruckArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "name" : "T_CABS_Observation_ArteriellerBlutdruck",
   "title" : "T-CABS Observation Arterial Blood Pressure",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

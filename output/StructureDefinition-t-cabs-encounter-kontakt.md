@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Encounter_Kontakt |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_Encounter_Kontakt |
 
  
 Profile for a contact with the patient. Compatibility: The T_CABS_Encounter_Kontakt profile aims for compatibility with the ISiKKontaktGesundheitseinrichtung, however it cannot be guaranteed that instances valid against T_CABS_Encounter_Kontakt are also valid against the[ISiKKontaktGesundheitseinrichtung](https://simplifier.net/isik-stufe-5/isikkontaktgesundheitseinrichtung) 
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-encounter-kon
   "name" : "T_CABS_Encounter_Kontakt",
   "title" : "T-CABS Encounter Contact",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

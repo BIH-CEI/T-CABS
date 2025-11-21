@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Beatmungsparameter |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_Observation_Beatmungsparameter |
 
  
 Abstract profile for ventilation parameters 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
   "name" : "T_CABS_Observation_Beatmungsparameter",
   "title" : "T-CABS Observation Ventilation Parameter (abstract)",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

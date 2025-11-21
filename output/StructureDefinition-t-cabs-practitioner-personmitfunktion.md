@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Practitioner_PersonMitFunktion |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_Practitioner_PersonMitFunktion |
 
  
 Profile for an involved person within the T-CABS study. Compatibility: The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with ISiK version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Practitioner_PersonMitFunktion are also valid against the[ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf) 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-practitioner-
   "name" : "T_CABS_Practitioner_PersonMitFunktion",
   "title" : "T-CABS Person with Function",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

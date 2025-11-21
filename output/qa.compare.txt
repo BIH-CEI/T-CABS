@@ -1,7 +1,7 @@
 TCABS : Validation Results
 =========================================
 
-err = 0, warn = 173, info = 249
+err = 0, warn = 173, info = 251
 $--
 Generated $--. FHIR version $-- for t-cabs#$-- (canonical = http://t-cabs.org)
  Build Errors : 0 / 4 / 0
@@ -124,7 +124,7 @@ Generated $--. FHIR version $-- for t-cabs#$-- (canonical = http://t-cabs.org)
  /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-practitioner-personmitfunktion : 0 / 3 / 3
  /Users/thimo/T-CABS/fsh-generated/resources/StructureDefinition-t-cabs-procedure-beatmung : 0 / 0 / 5
  /Users/thimo/T-CABS/fsh-generated/resources/ValueSet-t-cabs-valueset-Beatmungsform : 0 / 1 / 1
- /Users/thimo/T-CABS/fsh-generated/resources/ValueSet-t-cabs-valueset-Beatmungsmodus : 0 / 1 / 11
+ /Users/thimo/T-CABS/fsh-generated/resources/ValueSet-t-cabs-valueset-Beatmungsmodus : 0 / 1 / 13
  /Users/thimo/T-CABS/fsh-generated/resources/ValueSet-t-cabs-valueset-beatmungsstelle : 0 / 1 / 1
  /Users/thimo/T-CABS/fsh-generated/resources/ValueSet-t-cabs-valueset-phdtyp : 0 / 1 / 9
 </table>
@@ -660,6 +660,8 @@ INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0
 INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[7]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[8]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[9]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[10]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
+INFORMATION: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet.compose.include[0].concept[11]: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 WARNING: ValueSet/t-cabs-valueset-Beatmungsmodus: ValueSet: Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen
 == fsh-generated/resources/ValueSet-t-cabs-valueset-beatmungsstelle.json ==
 WARNING: ValueSet/t-cabs-valueset-beatmungsstelle: ValueSet: Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen

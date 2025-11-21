@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-peep | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_PEEP |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_Observation_PEEP |
 
  
 Profile for Positive End-Expiratory Pressure (PEEP) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-p
   "name" : "T_CABS_Observation_PEEP",
   "title" : "T-CABS Observation PEEP",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

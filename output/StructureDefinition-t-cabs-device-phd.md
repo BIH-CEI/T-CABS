@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-phd | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Device_PHD |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_Device_PHD |
 
  
 Profile for a personal health device measuring at the patient 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phd.cs
   "name" : "T_CABS_Device_PHD",
   "title" : "T-CABS Device PHD",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

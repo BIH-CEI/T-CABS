@@ -1,6 +1,0 @@
-
-# A name associated with the organization.
-#: Organization.name
-msgid "Vivisol Deutschland GmbH"
-msgstr ""
-

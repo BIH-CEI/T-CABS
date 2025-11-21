@@ -41,10 +41,12 @@ This page lists the created ValueSets of the T-CABS project:
 | `475154` | MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015 | Pressure Support Ventilation | PSV |
 | `475197` | MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP | BiLevel - Airway Pressure Ventilation | S/T |
 | `475201` | MDC_VENT_MODE_ISO_CMV_VC | Volume Control | VCV |
-| `151796` | MDC_PRESS_AWAY_CTS_POS | Continuous Positive Airway Pressure | CPAP |
+| `475161` | MDC_VENT_MODE_ISO_CSV_6ACAP | Continuous Positive Airway Pressure | CPAP |
 | `475140` | MDC_VENT_MODE_ISO_AC_VC_6ACAPL | Assist Control - Volume Control | VCV(A) |
 | `475136` | MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL | Volume Control - Synchronized Intermittent Mandatory Ventilation | VCV-SIMV |
 | `475190` | MDC_VENT_MODE_ISO_HIFLOW_3NIV | High flow therapy | HFT |
+| `475155` | MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015 | Pressure Support Ventilation with Target Volume | PSV(TgV) |
+| `475144` | MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP | Pressure Control - Synchronized Intermittent Mandatory Ventilation | PCV-SIMV |
 
 ***Note:** The mode designations are partially manufacturer-specific.
 

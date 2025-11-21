@@ -3,14 +3,14 @@
   "id" : "t-cabs-valueset-Beatmungsmodus",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet t-cabs-valueset-Beatmungsmodus</b></p><a name=\"t-cabs-valueset-Beatmungsmodus\"> </a><a name=\"hct-cabs-valueset-Beatmungsmodus\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-mdc.html\"><code>urn:iso:std:iso:11073:10101</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>475172</td><td>MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC</td></tr><tr><td>475147</td><td>MDC_VENT_MODE_ISO_AC_PC_6ACAP</td></tr><tr><td>475148</td><td>MDC_VENT_MODE_ISO_AC_vtPC_6ACAP</td></tr><tr><td>475154</td><td>MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</td></tr><tr><td>475197</td><td>MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP</td></tr><tr><td>475201</td><td>MDC_VENT_MODE_ISO_CMV_VC</td></tr><tr><td>475161</td><td>MDC_VENT_MODE_ISO_CSV_6ACAP</td></tr><tr><td>475140</td><td>MDC_VENT_MODE_ISO_AC_VC_6ACAPL</td></tr><tr><td>475136</td><td>MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL</td></tr><tr><td>475190</td><td>MDC_VENT_MODE_ISO_HIFLOW_3NIV</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet t-cabs-valueset-Beatmungsmodus</b></p><a name=\"t-cabs-valueset-Beatmungsmodus\"> </a><a name=\"hct-cabs-valueset-Beatmungsmodus\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-mdc.html\"><code>urn:iso:std:iso:11073:10101</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>475172</td><td>MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC</td></tr><tr><td>475147</td><td>MDC_VENT_MODE_ISO_AC_PC_6ACAP</td></tr><tr><td>475148</td><td>MDC_VENT_MODE_ISO_AC_vtPC_6ACAP</td></tr><tr><td>475154</td><td>MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015</td></tr><tr><td>475197</td><td>MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP</td></tr><tr><td>475201</td><td>MDC_VENT_MODE_ISO_CMV_VC</td></tr><tr><td>475161</td><td>MDC_VENT_MODE_ISO_CSV_6ACAP</td></tr><tr><td>475140</td><td>MDC_VENT_MODE_ISO_AC_VC_6ACAPL</td></tr><tr><td>475136</td><td>MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL</td></tr><tr><td>475190</td><td>MDC_VENT_MODE_ISO_HIFLOW_3NIV</td></tr><tr><td>475155</td><td>MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015</td></tr><tr><td>475144</td><td>MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP</td></tr></table></li></ul></div>"
   },
   "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
   "version" : "0.1.0",
   "name" : "T_CABS_ValueSet_Beatmungsmodus",
   "title" : "T-CABS ValueSet Ventilation Mode",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
@@ -69,6 +69,14 @@
       {
         "code" : "475190",
         "display" : "MDC_VENT_MODE_ISO_HIFLOW_3NIV"
+      },
+      {
+        "code" : "475155",
+        "display" : "MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015"
+      },
+      {
+        "code" : "475144",
+        "display" : "MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP"
       }]
     }]
   }

@@ -50,6 +50,14 @@
           {
             "code": "475190",
             "display": "MDC_VENT_MODE_ISO_HIFLOW_3NIV"
+          },
+          {
+            "code": "475155",
+            "display": "MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015"
+          },
+          {
+            "code": "475144",
+            "display": "MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP"
           }
         ]
       }

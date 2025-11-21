@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_DeviceMetric_NumericMetric |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_DeviceMetric_NumericMetric |
 
  
 Profile representing a numeric measurement, calculation, or setting 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-devicemetric-
   "name" : "T_CABS_DeviceMetric_NumericMetric",
   "title" : "T-CABS DeviceMetric NumericMetric",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

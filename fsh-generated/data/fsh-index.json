@@ -949,7 +949,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets/T_CABS_ValueSet_Beatmungsmodus.fsh",
     "startLine": 1,
-    "endLine": 34
+    "endLine": 40
   },
   {
     "outputFile": "ValueSet-t-cabs-valueset-beatmungsstelle.json",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6 | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_FEV1_FEV6 |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_Observation_FEV1_FEV6 |
 
  
 Profile for FEV1/FEV6 ratio 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observationfe
   "name" : "T_CABS_Observation_FEV1_FEV6",
   "title" : "T-CABS Observation FEV1/FEV6",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

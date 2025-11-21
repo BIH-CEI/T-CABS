@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ede3243b-cc8f-4945-a41e-b363bb9e8321"/>
+  <id value="7911f90f-92dd-4a66-923c-9aae9c4124f8"/>
   <meta>
-    <lastUpdated value="2025-11-19T11:55:29.932+01:00"/>
+    <lastUpdated value="2025-11-20T17:13:04.355+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -86,7 +86,7 @@
         <name value="T_CABS_ValueSet_Beatmungsform"/>
         <title value="T-CABS ValueSet Ventilation Type"/>
         <status value="draft"/>
-        <date value="2025-11-19T11:55:29+01:00"/>
+        <date value="2025-11-20T17:13:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -95,8 +95,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2958e25e-54af-4b48-b2e5-d59e3147b174"/>
-          <timestamp value="2025-11-19T11:56:54+01:00"/>
+          <identifier value="urn:uuid:903a8f45-fc39-4945-92bb-8a4da160f1b3"/>
+          <timestamp value="2025-11-20T17:14:23+01:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -150,7 +150,7 @@
                 <button data-clipboard-text="urn:iso:std:iso:11073:10101|2024-12-05" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 10 concepts</p>
+            <p>This value set contains 12 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -364,6 +364,44 @@
                   </span>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  <a name="x-urn:iso:std:iso:11073:10101-475155"> </a>
+                  <code>urn:iso:std:iso:11073:10101</code>
+                </td>
+                <td style="white-space:nowrap">  475155</td>
+                <td>MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015</td>
+                <td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475155&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475155&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-urn:iso:std:iso:11073:10101-475144"> </a>
+                  <code>urn:iso:std:iso:11073:10101</code>
+                </td>
+                <td style="white-space:nowrap">  475144</td>
+                <td>MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP</td>
+                <td>http://devices.fhir.org/CodeSystem/MDC-concept-status#published</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:iso:std:iso:11073:10101&quot;, &quot;version&quot;: &quot;2024-12-05&quot;, &quot;code&quot;: &quot;475144&quot;, &quot;display&quot;: &quot;MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:iso:std:iso:11073:10101&quot;&gt;&lt;version value=&quot;2024-12-05&quot;&gt;&lt;code value=&quot;475144&quot;&gt;&lt;display value=&quot;MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
             </table>
           </div>
         </text>
@@ -372,7 +410,7 @@
         <name value="T_CABS_ValueSet_Beatmungsmodus"/>
         <title value="T-CABS ValueSet Ventilation Mode"/>
         <status value="draft"/>
-        <date value="2025-11-19T11:55:29+01:00"/>
+        <date value="2025-11-20T17:13:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -381,9 +419,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:11da5abb-c035-4024-9a00-c077854c747b"/>
-          <timestamp value="2025-11-19T11:56:54+01:00"/>
-          <total value="10"/>
+          <identifier value="urn:uuid:40c1ce17-43a1-4f02-a2ce-758e335b6926"/>
+          <timestamp value="2025-11-20T17:14:23+01:00"/>
+          <total value="12"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -507,6 +545,24 @@
               <valueCode value="http://devices.fhir.org/CodeSystem/MDC-concept-status#published"/>
             </property>
           </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="475155"/>
+            <display value="MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="http://devices.fhir.org/CodeSystem/MDC-concept-status#published"/>
+            </property>
+          </contains>
+          <contains>
+            <system value="urn:iso:std:iso:11073:10101"/>
+            <code value="475144"/>
+            <display value="MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="http://devices.fhir.org/CodeSystem/MDC-concept-status#published"/>
+            </property>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -611,7 +667,7 @@
         <name value="T_CABS_ValueSet_Beatmungsstelle"/>
         <title value="T-CABS ValueSet Ventilation Site"/>
         <status value="draft"/>
-        <date value="2025-11-19T11:55:29+01:00"/>
+        <date value="2025-11-20T17:13:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -620,8 +676,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3eab3001-46b3-4dd4-8adf-acd3e6e82bdb"/>
-          <timestamp value="2025-11-19T11:56:54+01:00"/>
+          <identifier value="urn:uuid:1f1095e9-6d5f-4310-885e-b4f40829b09b"/>
+          <timestamp value="2025-11-20T17:14:23+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -845,7 +901,7 @@
         <name value="T_CABS_ValueSet_PHDTyp"/>
         <title value="T-CABS ValueSet PHD Type"/>
         <status value="draft"/>
-        <date value="2025-11-19T11:55:29+01:00"/>
+        <date value="2025-11-20T17:13:04+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -854,8 +910,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1f0b1e3f-525d-4540-a263-d252cd7841b2"/>
-          <timestamp value="2025-11-19T11:56:54+01:00"/>
+          <identifier value="urn:uuid:38672d4e-bd6e-476b-a2ea-98ae54299c92"/>
+          <timestamp value="2025-11-20T17:14:24+01:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>

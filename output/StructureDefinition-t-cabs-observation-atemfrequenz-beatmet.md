@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Observation_Atemfrequenz_beatmet |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_Observation_Atemfrequenz_beatmet |
 
  
 Profile for a respiratory rate of the ventilator 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "name" : "T_CABS_Observation_Atemfrequenz_beatmet",
   "title" : "T-CABS Observation Respiratory Rate Ventilated",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

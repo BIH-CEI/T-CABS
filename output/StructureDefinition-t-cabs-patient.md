@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-patient | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_Patient |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_Patient |
 
  
 Profile for a patient in the T-CABS study Compatibility: The T_CABS_Patient profile aims for compatibility with the ISiKPatient version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Patient are also valid against the[ISiKPatient](https://simplifier.net/isik-stufe-5/isikpatient) 
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-patient.csv),
   "name" : "T_CABS_Patient",
   "title" : "T-CABS Patient",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

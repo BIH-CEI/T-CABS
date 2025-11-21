@@ -61,3 +61,5 @@ Dies soll mittels telemedizinischer Betreuung erreicht werden durch:
 - Organisatorische Fragen: t-cabs[at]charite.de
 
 {% include img.html img="T-CABS_Logo.png" %}
+
+Gefördert im Rahmen des Projektes T-CABS (FKZ: 01NVF23109) durch den Innovationsfonds des G-BA

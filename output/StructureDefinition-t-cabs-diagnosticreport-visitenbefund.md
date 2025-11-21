@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_DiagnosticReport_Visitenbefund |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_DiagnosticReport_Visitenbefund |
 
  
 Profile for an assessment of the weekly telemedicine visit within the T-CABS study 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-diagnosticrep
   "name" : "T_CABS_DiagnosticReport_Visitenbefund",
   "title" : "T-CABS DiagnosticReport Visit Finding",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

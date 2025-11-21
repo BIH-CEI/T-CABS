@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "T_CABS_Observation_DruckMinMax"] ; # 
   fhir:title [ fhir:v "T-CABS Observation Pressure MIN/MAX"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-19T11:55:29+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-20T17:13:04+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH-CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH-CEI" ] ;

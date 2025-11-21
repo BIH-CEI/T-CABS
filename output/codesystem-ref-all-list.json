@@ -9,8 +9,8 @@
       "description" : "Rolle/Relevanz von Diagnosen",
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/Diagnosesubtyp" : "Diagnosesubtyp ValueSet",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/DiagnoseTyp" : "DiagnoseTyp ValueSet"
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/DiagnoseTyp" : "DiagnoseTyp ValueSet",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/Diagnosesubtyp" : "Diagnosesubtyp ValueSet"
     },
     {
       "url" : "http://fhir.de/CodeSystem/Kontaktebene",
@@ -466,26 +466,26 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
-      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
       "ValueSet-t-cabs-valueset-Beatmungsform.html" : "T-CABS ValueSet Ventilation Type",
       "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
       "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "ValueSet-t-cabs-valueset-beatmungsstelle.html" : "T-CABS ValueSet Ventilation Site",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
       "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-t-cabs-valueset-beatmungsstelle.html" : "T-CABS ValueSet Ventilation Site",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
       "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -605,8 +605,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1108"],
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.fall@2025.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/location-physical-type" : "MII VS Fall Location Physical Type",
-      "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
+      "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.fall@2025.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/location-physical-type" : "MII VS Fall Location Physical Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
@@ -727,8 +727,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.fall@2025.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/identifier-type-codes" : "MII VS Fall Identifier Type Codes",
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/identifier-type-de-basis" : "Identifier Type DeBasis ValueSet"
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/identifier-type-de-basis" : "Identifier Type DeBasis ValueSet",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.fall@2025.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/identifier-type-codes" : "MII VS Fall Identifier Type Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -740,8 +740,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/EncounterClassDE" : "EncounterClassDE",
-      "http://terminology.hl7.org/7.0.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
+      "http://terminology.hl7.org/7.0.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=http://fhir.de/ValueSet/EncounterClassDE" : "EncounterClassDE"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -801,8 +801,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -814,8 +814,8 @@
       "oids" : ["2.16.840.1.113883.5.83"],
       "uses" : {
       },
-      "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-observation-interpretation.html" : "Observation interpretation codes",
-      "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+      "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes",
+      "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-observation-interpretation.html" : "Observation interpretation codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
@@ -875,16 +875,16 @@
       "oids" : ["2.16.840.1.113883.6.24"],
       "uses" : {
       },
-      "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-11073MDC-dimension.html" : "MDC Unit of Measurement",
-      "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-11073MDC-object.html" : "MDC Object infrastructure and Device nomenclature",
-      "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-11073MDC-metric.html" : "MDC Metric nomenclature",
-      "ValueSet-t-cabs-valueset-phdtyp.html" : "T-CABS ValueSet PHD Type",
-      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-CodeableConcept11073MDC.html" : "CodeableConcept 11073 Attributes",
-      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-Range11073MDC.html" : "Range 11073 Attributes",
       "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-String11073MDC.html" : "String 11073 Attributes",
       "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-Quantity11073MDC.html" : "Quantity 11073 Attributes",
+      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-CodeableConcept11073MDC.html" : "CodeableConcept 11073 Attributes",
+      "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-Range11073MDC.html" : "Range 11073 Attributes",
+      "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-11073MDC-dimension.html" : "MDC Unit of Measurement",
+      "ValueSet-t-cabs-valueset-Beatmungsmodus.html" : "T-CABS ValueSet Ventilation Mode",
+      "ValueSet-t-cabs-valueset-phdtyp.html" : "T-CABS ValueSet PHD Type",
       "http://hl7.org/fhir/uv/phd/STU1.1/ValueSet-MDCnotObject.html" : "11073 MDC Non-Object codes",
-      "ValueSet-t-cabs-valueset-Beatmungsmodus.html" : "T-CABS ValueSet Ventilation Mode"
+      "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-11073MDC-object.html" : "MDC Object infrastructure and Device nomenclature",
+      "http://hl7.org/fhir/uv/pocd/2021Sep/ValueSet-11073MDC-metric.html" : "MDC Metric nomenclature"
     },
     {
       "url" : "urn:iso:std:iso:3166",

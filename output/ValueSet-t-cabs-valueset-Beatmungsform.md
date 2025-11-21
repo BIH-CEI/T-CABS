@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_ValueSet_Beatmungsform |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_ValueSet_Beatmungsform |
 
  
 This ValueSet contains codes to represent the different types of ventilation 
@@ -54,7 +54,7 @@ This value set contains 2 concepts
   "name" : "T_CABS_ValueSet_Beatmungsform",
   "title" : "T-CABS ValueSet Ventilation Type",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

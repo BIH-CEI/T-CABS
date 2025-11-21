@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:T_CABS_ValueSet_Beatmungsmodus |
+| Draft as of 2025-11-20 | *Computable Name*:T_CABS_ValueSet_Beatmungsmodus |
 
  
 This ValueSet contains codes to represent the different ventilation modes 
@@ -26,7 +26,7 @@ This ValueSet contains codes to represent the different ventilation modes
 
 Expansion from tx.fhir.org based on codesystem ISO 11073-10101 Health informatics - Point-of-care version 2024-12-05
 
-This value set contains 10 concepts
+This value set contains 12 concepts
 
 -------
 
@@ -54,7 +54,7 @@ This value set contains 10 concepts
   "name" : "T_CABS_ValueSet_Beatmungsmodus",
   "title" : "T-CABS ValueSet Ventilation Mode",
   "status" : "draft",
-  "date" : "2025-11-19T11:55:29+01:00",
+  "date" : "2025-11-20T17:13:04+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -123,6 +123,14 @@ This value set contains 10 concepts
           {
             "code" : "475190",
             "display" : "MDC_VENT_MODE_ISO_HIFLOW_3NIV"
+          },
+          {
+            "code" : "475155",
+            "display" : "MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015"
+          },
+          {
+            "code" : "475144",
+            "display" : "MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP"
           }
         ]
       }

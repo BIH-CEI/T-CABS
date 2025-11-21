@@ -63,3 +63,5 @@ This should be achieved through telemedicine care by:
 - Organizational questions: t-cabs[at]charite.de
 
 {% include img.html img="T-CABS_Logo.png" %}
+
+Funded within the framework of the T-CABS project (grant number: 01NVF23109) by the Innovation Fund of the Federal Joint Committee (G-BA) 
