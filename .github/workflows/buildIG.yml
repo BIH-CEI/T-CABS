@@ -2,7 +2,7 @@ name: Build IG after a push
 
 on: 
   push:
-    branches: [ dev-beatmungsdaten, development ]
+    branches: [ main, development ]
   workflow_dispatch:
 
 permissions:
