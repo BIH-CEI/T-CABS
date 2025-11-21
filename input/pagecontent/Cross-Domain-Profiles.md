@@ -14,4 +14,4 @@
 - [Practitioner PersonWithFunction](StructureDefinition-t-cabs-practitioner-personmitfunktion.html)
 - [PractitionerRole Function](StructureDefinition-t-cabs-practitioner-funktion.html)
 
-**Note**: For implementation of ventilation and vital data, only the **Patient** and **Organization** profiles are necessary. Additional study-related profiles have already been added but are still in development and are currently not to be implemented by manufacturers.
+**Note:** For implementation of ventilation and vital data, only the **Patient** and **Organization** profiles are necessary. Additional study-related profiles have already been added but are still in development and are currently not to be implemented by manufacturers.

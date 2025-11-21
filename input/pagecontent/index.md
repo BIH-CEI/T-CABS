@@ -2,7 +2,7 @@ The T-CABS (Telemedicine Center for Out-of-Hospital Ventilation and Oxygen Thera
 
 ### Objective of the Implementation Guide
 
-This IG enables standardized, interoperable transmission of health data from home-based ventilation therapy between different systems and manufacturers. The content selection was defined and specified within CABS. Uniform FHIR profiles are defined for:
+This IG enables standardized, interoperable transmission of health data from home-based ventilation therapy between different systems and manufacturers. The content selection was defined and specified within T-CABS. Uniform FHIR profiles are defined for:
 
 - Ventilation parameters from ventilators
 - Vital parameters from Personal Health Devices (PHD)  

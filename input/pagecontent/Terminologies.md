@@ -75,4 +75,4 @@ This page lists the created ValueSets of the T-CABS project:
 
 ---
 
-**Note:** The content is defined by the medical staff of CABS and coded by the Berlin Institute of Health (BIH). If codes are missing, please create a [Github Issue](https://github.com/BIH-CEI/T-CABS/issues).
+**Note:** The content is defined by the medical staff of T-CABS and coded by the Berlin Institute of Health (BIH). If codes are missing, please create a [Github Issue](https://github.com/BIH-CEI/T-CABS/issues).
