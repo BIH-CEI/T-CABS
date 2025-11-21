@@ -6,7 +6,7 @@
 
 ## Example Patient: T-CABS Patient Example
 
-Profile: [T-CABS Patient](StructureDefinition-t-cabs-patient.md)
+Profiles: [T-CABS Patient](StructureDefinition-t-cabs-patient.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0)
 
 Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)
 
@@ -29,7 +29,10 @@ Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)
   "resourceType" : "Patient",
   "id" : "tcabs-patient-example",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+    "profile" : [
+      "http://t-cabs.org/StructureDefinition/t-cabs-patient",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0"
+    ]
   },
   "identifier" : [
     {

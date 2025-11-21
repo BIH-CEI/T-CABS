@@ -46,7 +46,7 @@ InstanceOf: T_CABS_Observation_ArteriellerBlutdruck
 Usage: #example
 Title: "Example Arterial Blood Pressure Measurement"
 Description: "Example of an arterial blood pressure measurement via Doccla"
-* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell"
+* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0"
 * status = #final
 * category[VSCat].coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd-observation

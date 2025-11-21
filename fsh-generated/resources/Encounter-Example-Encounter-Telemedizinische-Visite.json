@@ -4,7 +4,7 @@
   "meta": {
     "profile": [
       "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0"
     ]
   },
   "identifier": [

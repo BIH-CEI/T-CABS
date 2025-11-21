@@ -6,7 +6,7 @@
 
 ## Example Observation: Example Heart Rate Measurement
 
-Profiles: [T-CABS Observation Heart Rate](StructureDefinition-t-cabs-observation-herzfrequenz.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz)
+Profiles: [T-CABS Observation Heart Rate](StructureDefinition-t-cabs-observation-herzfrequenz.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0)
 
 **Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
@@ -35,7 +35,7 @@ Profiles: [T-CABS Observation Heart Rate](StructureDefinition-t-cabs-observation
   "meta" : {
     "profile" : [
       "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0"
     ]
   },
   "extension" : [

@@ -23,7 +23,7 @@ InstanceOf: T_CABS_Observation_ArterielleSPO2
 Usage: #example
 Title: "Example Arterial SPO2 Measurement"
 Description: "Example of an arterial SPO2 measurement via Doccla"
-* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell"
+* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0"
 * status = #final
 * category[VSCat].coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd-observation

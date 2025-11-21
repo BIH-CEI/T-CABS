@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 173, info = 251-->
+<!-- broken links = 0, errors = 0, warn = 177, info = 250-->
 <head>
   <title>TCABS : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TCABS</h1>
- <p>Generated Thu Nov 20 17:16:17 CET 2025, FHIR version 4.0.1 for t-cabs#0.1.0 (canonical = <a href="http://t-cabs.org">http://t-cabs.org</a> (<a href="http://t-cabs.org/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Nov 21 13:47:36 CET 2025, FHIR version 4.0.1 for t-cabs#0.1.0 (canonical = <a href="http://t-cabs.org">http://t-cabs.org</a> (<a href="http://t-cabs.org/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.26</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = t-cabs, Canonical = http://t-cabs.org</td></tr>
@@ -219,7 +219,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 173, info = 251, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 177, info = 250, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -346,7 +346,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><a href="#_Users_thimo_T-CABS_fsh-generated_resources_DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite"><b>/Users/thimo/T-CABS/fsh-generated/resources/DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_thimo_T-CABS_fsh-generated_resources_Encounter-Example-Encounter-Telemedizinische-Visite"><b>/Users/thimo/T-CABS/fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
+     <td><a href="#_Users_thimo_T-CABS_fsh-generated_resources_Encounter-Example-Encounter-Telemedizinische-Visite"><b>/Users/thimo/T-CABS/fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_thimo_T-CABS_fsh-generated_resources_ImplementationGuide-t-cabs"><b>/Users/thimo/T-CABS/fsh-generated/resources/ImplementationGuide-t-cabs</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
@@ -439,7 +439,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><a href="#_Users_thimo_T-CABS_fsh-generated_resources_Organization-beispiel-provider-vivisol"><b>/Users/thimo/T-CABS/fsh-generated/resources/Organization-beispiel-provider-vivisol</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_thimo_T-CABS_fsh-generated_resources_Patient-tcabs-patient-example"><b>/Users/thimo/T-CABS/fsh-generated/resources/Patient-tcabs-patient-example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_Users_thimo_T-CABS_fsh-generated_resources_Patient-tcabs-patient-example"><b>/Users/thimo/T-CABS/fsh-generated/resources/Patient-tcabs-patient-example</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_thimo_T-CABS_fsh-generated_resources_Practitioner-tcabs-practitioner-example"><b>/Users/thimo/T-CABS/fsh-generated/resources/Practitioner-tcabs-practitioner-example</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
@@ -1180,11 +1180,14 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
    <tr style="background-color: #ffffe6">
      <td><b><a href="">Encounter.identifier[0] (l11/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt|0.1.0 überein.</b> <span id="sl59" class="flip" onclick="flip('l59')">Show Reasoning</span><div id="l59" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt|0.1.0 überein.<ul><li>Encounter.identifier[0]: discriminator = true and $this.where(type.coding.where((system = 'http://terminology.hl7.org/CodeSystem/v2-0203') and (code = 'VN')).exists()).exists()</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Encounter.meta.profile[1] (l7/c129)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Encounter.status (l57/c23)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/encounter-status|4.0.1</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Encounter.identifier[0] (l11/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2025.0.0 überein.</b> <span id="sl61" class="flip" onclick="flip('l61')">Show Reasoning</span><div id="l61" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2025.0.0 überein.<ul><li>Encounter.identifier[0]: discriminator = true and $this.where(type.coding.where((system = 'http://terminology.hl7.org/CodeSystem/v2-0203') and (code = 'VN')).exists()).exists()</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>Encounter.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
    </tr>
 </table>
 <hr/>
@@ -1248,10 +1251,10 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l7/c91)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>Observation.meta.profile[1] (l7/c97)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi71" onClick="document.getElementById('vmi71').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi71" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi72" onClick="document.getElementById('vmi72').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi72" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1263,13 +1266,13 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 überein.</b> <span id="sl71" class="flip" onclick="flip('l71')">Show Reasoning</span><div id="l71" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 überein.</b> <span id="sl72" class="flip" onclick="flip('l72')">Show Reasoning</span><div id="l72" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Alle Observations sollten einen Performer haben</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
    </tr>
 </table>
 <hr/>
@@ -1282,10 +1285,10 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l7/c90)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>Observation.meta.profile[1] (l7/c96)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi76" onClick="document.getElementById('vmi76').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi76" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi77" onClick="document.getElementById('vmi77').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi77" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1297,13 +1300,13 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 überein.</b> <span id="sl76" class="flip" onclick="flip('l76')">Show Reasoning</span><div id="l76" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/bp|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 überein.</b> <span id="sl77" class="flip" onclick="flip('l77')">Show Reasoning</span><div id="l77" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/bp|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Alle Observations sollten einen Performer haben</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
    </tr>
 </table>
 <hr/>
@@ -1316,10 +1319,10 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l7/c74)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>Observation.meta.profile[1] (l7/c80)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi81" onClick="document.getElementById('vmi81').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi81" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi82" onClick="document.getElementById('vmi82').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi82" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1331,13 +1334,13 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 überein.</b> <span id="sl81" class="flip" onclick="flip('l81')">Show Reasoning</span><div id="l81" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 überein.</b> <span id="sl82" class="flip" onclick="flip('l82')">Show Reasoning</span><div id="l82" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Alle Observations sollten einen Performer haben</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
    </tr>
 </table>
 <hr/>
@@ -1382,7 +1385,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi89" onClick="document.getElementById('vmi89').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi89" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi90" onClick="document.getElementById('vmi90').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi90" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1394,7 +1397,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation.category[1] (l18/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bmi|4.0.1 überein.</b> <span id="sl89" class="flip" onclick="flip('l89')">Show Reasoning</span><div id="l89" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/bmi|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Observation.category[1] (l18/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bmi|4.0.1 überein.</b> <span id="sl90" class="flip" onclick="flip('l90')">Show Reasoning</span><div id="l90" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/bmi|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Alle Observations sollten einen Performer haben</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
@@ -1432,7 +1435,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi96" onClick="document.getElementById('vmi96').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi96" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi97" onClick="document.getElementById('vmi97').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi97" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1457,7 +1460,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi98" onClick="document.getElementById('vmi98').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi98" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi99" onClick="document.getElementById('vmi99').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi99" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1482,7 +1485,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi100" onClick="document.getElementById('vmi100').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi100" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi101" onClick="document.getElementById('vmi101').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi101" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1507,7 +1510,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi102" onClick="document.getElementById('vmi102').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi102" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi103" onClick="document.getElementById('vmi103').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi103" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1532,7 +1535,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi104" onClick="document.getElementById('vmi104').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi104" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi105" onClick="document.getElementById('vmi105').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi105" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1560,7 +1563,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi107" onClick="document.getElementById('vmi107').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi107" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l27/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi108" onClick="document.getElementById('vmi108').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi108" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1585,10 +1588,10 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l7/c74)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>Observation.meta.profile[1] (l7/c80)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi110" onClick="document.getElementById('vmi110').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi110" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi111" onClick="document.getElementById('vmi111').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi111" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1600,13 +1603,13 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1 überein.</b> <span id="sl110" class="flip" onclick="flip('l110')">Show Reasoning</span><div id="l110" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1 überein.</b> <span id="sl111" class="flip" onclick="flip('l111')">Show Reasoning</span><div id="l111" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Alle Observations sollten einen Performer haben</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
    </tr>
 </table>
 <hr/>
@@ -1635,10 +1638,10 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l7/c76)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>Observation.meta.profile[1] (l7/c82)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht|5.1.0' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi117" onClick="document.getElementById('vmi117').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi117" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi118" onClick="document.getElementById('vmi118').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi118" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1650,13 +1653,13 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 überein.</b> <span id="sl117" class="flip" onclick="flip('l117')">Show Reasoning</span><div id="l117" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 überein.</b> <span id="sl118" class="flip" onclick="flip('l118')">Show Reasoning</span><div id="l118" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Alle Observations sollten einen Performer haben</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
    </tr>
 </table>
 <hr/>
@@ -1669,10 +1672,10 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l7/c79)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>Observation.meta.profile[1] (l7/c85)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi122" onClick="document.getElementById('vmi122').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi122" style="display:none"><br/><pre>0 0 : start
+     <td><b>Observation.code (l28/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi123" onClick="document.getElementById('vmi123').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi123" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1684,13 +1687,13 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 überein.</b> <span id="sl122" class="flip" onclick="flip('l122')">Show Reasoning</span><div id="l122" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Observation.category[1] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 überein.</b> <span id="sl123" class="flip" onclick="flip('l123')">Show Reasoning</span><div id="l123" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 überein.<ul><li>Observation.category[1]: discriminator = true and ('vital-signs' in coding.code) and ('http://terminology.hl7.org/CodeSystem/observation-category' in coding.system)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>Alle Observations sollten einen Performer haben</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+     <td><b>Observation.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
    </tr>
 </table>
 <hr/>
@@ -1815,10 +1818,10 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Organization.meta.profile[1] (l7/c74)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>Organization.meta.profile[1] (l7/c80)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation|5.1.0' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Organization.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+     <td><b>Organization.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
    </tr>
 </table>
 <hr/>
@@ -1860,7 +1863,13 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.meta.profile[1] (l7/c75)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
    </tr>
 </table>
 <hr/>
@@ -1873,10 +1882,10 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Practitioner.meta.profile[1] (l7/c86)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>Practitioner.meta.profile[1] (l7/c92)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0' kann nicht aufgelöst werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Practitioner.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
+     <td><b>Practitioner.meta.profile[1] (l1/c2)</b></td><td><b>warning</b></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</span></td>
    </tr>
 </table>
 <hr/>
@@ -1889,7 +1898,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>PractitionerRole&#8203;.code[0]&#8203;.coding[1]&#8203;.system (l10&#8203;/c6)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'urn:oid:1.2.276.0.76.5.514' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l2">log</a>, or see <a href="#vmi148" onClick="document.getElementById('vmi148').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi148" style="display:none"><br/><pre>0 0 : start
+     <td><b>PractitionerRole&#8203;.code[0]&#8203;.coding[1]&#8203;.system (l10&#8203;/c6)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'urn:oid:1.2.276.0.76.5.514' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l16">log</a>, or see <a href="#vmi151" onClick="document.getElementById('vmi151').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi151" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1940,7 +1949,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Procedure.code (l18/c4)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Procedure.code.coding[0] (l20/c8)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung|0.1.0 überein.</b> <span id="sl151" class="flip" onclick="flip('l151')">Show Reasoning</span><div id="l151" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung|0.1.0 überein.<ul><li>Procedure.code.coding[0]: discriminator = true and ($this memberOf 'http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus')</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Procedure.code.coding[0] (l20/c8)</a></b></td><td><b>Slicing Information</b></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung|0.1.0 überein.</b> <span id="sl154" class="flip" onclick="flip('l154')">Show Reasoning</span><div id="l154" style="display: none"><p>&nbsp;</p>Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung|0.1.0 überein.<ul><li>Procedure.code.coding[0]: discriminator = true and ($this memberOf 'http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus')</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
 </table>
 <hr/>
@@ -1969,7 +1978,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[49]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c96588)</b></td><td><b>warning</b></td><td><b>Kodierung hat kein System - kann nicht validiert werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Coding_has_no_system__cannot_validate</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[93]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c148911)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi155" onClick="document.getElementById('vmi155').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi155" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[93]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c148911)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi158" onClick="document.getElementById('vmi158').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi158" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -1982,7 +1991,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l1&#8203;/c243418)</b></td><td><b>warning</b></td><td><b>Kodierung hat kein System - kann nicht validiert werden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Coding_has_no_system__cannot_validate</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c244295)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi157" onClick="document.getElementById('vmi157').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi157" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c244295)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi160" onClick="document.getElementById('vmi160').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi160" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2018,7 +2027,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[118]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c183140)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi160" onClick="document.getElementById('vmi160').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi160" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[118]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c183140)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi163" onClick="document.getElementById('vmi163').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi163" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2028,7 +2037,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c327132)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi161" onClick="document.getElementById('vmi161').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi161" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c327132)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi164" onClick="document.getElementById('vmi164').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi164" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2155,7 +2164,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c58959)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi181" onClick="document.getElementById('vmi181').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi181" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c58959)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi184" onClick="document.getElementById('vmi184').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi184" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2165,7 +2174,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c193984)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi182" onClick="document.getElementById('vmi182').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi182" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c193984)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi185" onClick="document.getElementById('vmi185').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi185" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2209,7 +2218,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59153)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi191" onClick="document.getElementById('vmi191').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi191" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59153)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi194" onClick="document.getElementById('vmi194').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi194" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2219,7 +2228,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c194256)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi192" onClick="document.getElementById('vmi192').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi192" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c194256)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi195" onClick="document.getElementById('vmi195').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi195" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2260,7 +2269,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c253401)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c286078)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi200" onClick="document.getElementById('vmi200').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi200" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c286078)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi203" onClick="document.getElementById('vmi203').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi203" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2270,7 +2279,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c717071)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi201" onClick="document.getElementById('vmi201').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi201" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c717071)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi204" onClick="document.getElementById('vmi204').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi204" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2323,7 +2332,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c100006)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c132683)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi213" onClick="document.getElementById('vmi213').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi213" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c132683)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi216" onClick="document.getElementById('vmi216').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi216" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2336,7 +2345,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[383]&#8203;.type[0]&#8203;.extension[1] (l1&#8203;/c560559)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c650766)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi215" onClick="document.getElementById('vmi215').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi215" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c650766)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi218" onClick="document.getElementById('vmi218').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi218" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2365,7 +2374,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c90455)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c123132)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi219" onClick="document.getElementById('vmi219').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi219" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c123132)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi222" onClick="document.getElementById('vmi222').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi222" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2375,7 +2384,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c636044)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi220" onClick="document.getElementById('vmi220').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi220" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c636044)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi223" onClick="document.getElementById('vmi223').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi223" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2398,7 +2407,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59391)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi222" onClick="document.getElementById('vmi222').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi222" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59391)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi225" onClick="document.getElementById('vmi225').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi225" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2408,7 +2417,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c194492)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi223" onClick="document.getElementById('vmi223').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi223" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c194492)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi226" onClick="document.getElementById('vmi226').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi226" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2446,7 +2455,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59824)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi230" onClick="document.getElementById('vmi230').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi230" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59824)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi233" onClick="document.getElementById('vmi233').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi233" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2456,7 +2465,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c195190)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi231" onClick="document.getElementById('vmi231').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi231" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c195190)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi234" onClick="document.getElementById('vmi234').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi234" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2547,7 +2556,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c89965)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122642)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi249" onClick="document.getElementById('vmi249').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi249" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122642)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi252" onClick="document.getElementById('vmi252').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi252" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2557,7 +2566,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635557)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi250" onClick="document.getElementById('vmi250').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi250" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635557)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi253" onClick="document.getElementById('vmi253').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi253" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2580,7 +2589,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c96792)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi252" onClick="document.getElementById('vmi252').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi252" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c96792)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi255" onClick="document.getElementById('vmi255').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi255" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2596,7 +2605,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[158]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c279368)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c323707)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi255" onClick="document.getElementById('vmi255').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi255" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c323707)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi258" onClick="document.getElementById('vmi258').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi258" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2640,7 +2649,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c90093)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122770)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi264" onClick="document.getElementById('vmi264').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi264" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122770)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi267" onClick="document.getElementById('vmi267').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi267" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2650,7 +2659,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635695)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi265" onClick="document.getElementById('vmi265').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi265" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635695)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi268" onClick="document.getElementById('vmi268').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi268" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2676,7 +2685,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c90410)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c123087)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi268" onClick="document.getElementById('vmi268').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi268" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c123087)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi271" onClick="document.getElementById('vmi271').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi271" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2686,7 +2695,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635999)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi269" onClick="document.getElementById('vmi269').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi269" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635999)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi272" onClick="document.getElementById('vmi272').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi272" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2709,7 +2718,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59185)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi271" onClick="document.getElementById('vmi271').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi271" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59185)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi274" onClick="document.getElementById('vmi274').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi274" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2719,7 +2728,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c194287)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi272" onClick="document.getElementById('vmi272').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi272" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c194287)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi275" onClick="document.getElementById('vmi275').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi275" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2760,7 +2769,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c90443)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c123120)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi280" onClick="document.getElementById('vmi280').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi280" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c123120)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi283" onClick="document.getElementById('vmi283').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi283" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2770,7 +2779,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c636029)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi281" onClick="document.getElementById('vmi281').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi281" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c636029)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi284" onClick="document.getElementById('vmi284').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi284" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2796,7 +2805,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c92436)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c125113)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi284" onClick="document.getElementById('vmi284').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi284" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c125113)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi287" onClick="document.getElementById('vmi287').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi287" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2806,7 +2815,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c638041)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi285" onClick="document.getElementById('vmi285').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi285" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c638041)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi288" onClick="document.getElementById('vmi288').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi288" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2829,7 +2838,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c60998)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi287" onClick="document.getElementById('vmi287').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi287" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c60998)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi290" onClick="document.getElementById('vmi290').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi290" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2839,7 +2848,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c196044)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi288" onClick="document.getElementById('vmi288').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi288" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c196044)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi291" onClick="document.getElementById('vmi291').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi291" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2883,7 +2892,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59179)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi297" onClick="document.getElementById('vmi297').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi297" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59179)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi300" onClick="document.getElementById('vmi300').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi300" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2893,7 +2902,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c194280)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi298" onClick="document.getElementById('vmi298').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi298" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c194280)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi301" onClick="document.getElementById('vmi301').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi301" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2931,7 +2940,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c61049)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi305" onClick="document.getElementById('vmi305').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi305" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c61049)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi308" onClick="document.getElementById('vmi308').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi308" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2941,7 +2950,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c196089)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi306" onClick="document.getElementById('vmi306').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi306" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c196089)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi309" onClick="document.getElementById('vmi309').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi309" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2985,7 +2994,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59137)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi315" onClick="document.getElementById('vmi315').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi315" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c59137)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi318" onClick="document.getElementById('vmi318').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi318" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -2995,7 +3004,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c194232)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi316" onClick="document.getElementById('vmi316').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi316" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c194232)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi319" onClick="document.getElementById('vmi319').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi319" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3033,7 +3042,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c61156)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi323" onClick="document.getElementById('vmi323').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi323" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c61156)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi326" onClick="document.getElementById('vmi326').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi326" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3043,7 +3052,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c196194)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi324" onClick="document.getElementById('vmi324').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi324" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c196194)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi327" onClick="document.getElementById('vmi327').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi327" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3134,7 +3143,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c89981)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122658)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi342" onClick="document.getElementById('vmi342').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi342" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122658)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi345" onClick="document.getElementById('vmi345').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi345" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3144,7 +3153,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635565)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi343" onClick="document.getElementById('vmi343').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi343" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635565)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi346" onClick="document.getElementById('vmi346').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi346" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3170,7 +3179,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c90136)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122813)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi346" onClick="document.getElementById('vmi346').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi346" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122813)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi349" onClick="document.getElementById('vmi349').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi349" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3180,7 +3189,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635724)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi347" onClick="document.getElementById('vmi347').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi347" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635724)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi350" onClick="document.getElementById('vmi350').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi350" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3206,7 +3215,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c90011)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122688)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi350" onClick="document.getElementById('vmi350').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi350" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122688)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi353" onClick="document.getElementById('vmi353').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi353" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3216,7 +3225,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635595)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi351" onClick="document.getElementById('vmi351').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi351" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635595)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi354" onClick="document.getElementById('vmi354').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi354" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3242,7 +3251,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c89982)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories|1.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122659)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi354" onClick="document.getElementById('vmi354').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi354" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[71]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c122659)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi357" onClick="document.getElementById('vmi357').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi357" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3252,7 +3261,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 </pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635566)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi355" onClick="document.getElementById('vmi355').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi355" style="display:none"><br/><pre>0 0 : start
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(Coding) (l1&#8203;/c635566)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi358" onClick="document.getElementById('vmi358').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi358" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest
 0 0     : 0ms  : Prepare include: "()"
@@ -3480,7 +3489,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c2252)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi402" onClick="document.getElementById('vmi402').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi402" style="display:none"><br/><pre>0 0 : start
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c2252)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi405" onClick="document.getElementById('vmi405').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi405" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest, display-warning
 0 0     : 0ms  : Prepare include: "()"
@@ -3549,7 +3558,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c1801)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi416" onClick="document.getElementById('vmi416').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi416" style="display:none"><br/><pre>0 0 : start
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c1801)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> - see <a href="#vmi419" onClick="document.getElementById('vmi419').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span><div id="vmi419" style="display:none"><br/><pre>0 0 : start
 0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes
 0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest, display-warning
 0 0     : 0ms  : Prepare include: "()"
@@ -3699,9 +3708,6 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Encounter-Example-Encounter-Telemedizinische-Visite.html">fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite.json</a></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt|0.1.0 überein.</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Encounter-Example-Encounter-Telemedizinische-Visite.html">fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite.json</a></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2025.0.0 überein.</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Observation-Example-ArterielleSPO2-Doccla.html">fsh-generated/resources/Observation-Example-ArterielleSPO2-Doccla.json</a></td><td><b>Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 überein.</b></td>
@@ -4460,25 +4466,28 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 <h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
+     <td><a href="Encounter-Example-Encounter-Telemedizinische-Visite.html">fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite.json</a></td><td><b>Canonical URL 'https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0' kann nicht aufgelöst werden</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
      <td><a href="index.html">fsh-generated/resources/ImplementationGuide-t-cabs.json</a></td><td><b>Canonical URL 'http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4' kann nicht aufgelöst werden</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-ArterielleSPO2-Doccla.html">fsh-generated/resources/Observation-Example-ArterielleSPO2-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell' kann nicht aufgelöst werden</b></td>
+     <td><a href="Observation-Example-ArterielleSPO2-Doccla.html">fsh-generated/resources/Observation-Example-ArterielleSPO2-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0' kann nicht aufgelöst werden</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-ArteriellerBlutdruck-Doccla.html">fsh-generated/resources/Observation-Example-ArteriellerBlutdruck-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell' kann nicht aufgelöst werden</b></td>
+     <td><a href="Observation-Example-ArteriellerBlutdruck-Doccla.html">fsh-generated/resources/Observation-Example-ArteriellerBlutdruck-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0' kann nicht aufgelöst werden</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-Atemfrequenz-Doccla.html">fsh-generated/resources/Observation-Example-Atemfrequenz-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz' kann nicht aufgelöst werden</b></td>
+     <td><a href="Observation-Example-Atemfrequenz-Doccla.html">fsh-generated/resources/Observation-Example-Atemfrequenz-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0' kann nicht aufgelöst werden</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-Herzfrequenz-Doccla.html">fsh-generated/resources/Observation-Example-Herzfrequenz-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz' kann nicht aufgelöst werden</b></td>
+     <td><a href="Observation-Example-Herzfrequenz-Doccla.html">fsh-generated/resources/Observation-Example-Herzfrequenz-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0' kann nicht aufgelöst werden</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-Koerpergewicht-Doccla.html">fsh-generated/resources/Observation-Example-Koerpergewicht-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht' kann nicht aufgelöst werden</b></td>
+     <td><a href="Observation-Example-Koerpergewicht-Doccla.html">fsh-generated/resources/Observation-Example-Koerpergewicht-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht|5.1.0' kann nicht aufgelöst werden</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-Koerpertemperatur-Doccla.html">fsh-generated/resources/Observation-Example-Koerpertemperatur-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur' kann nicht aufgelöst werden</b></td>
+     <td><a href="Observation-Example-Koerpertemperatur-Doccla.html">fsh-generated/resources/Observation-Example-Koerpertemperatur-Doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0' kann nicht aufgelöst werden</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Organization-CABS.html">fsh-generated/resources/Organization-CABS.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden</b></td>
@@ -4487,7 +4496,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><a href="Organization-beispiel-provider-doccla.html">fsh-generated/resources/Organization-beispiel-provider-doccla.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Organization-beispiel-provider-jochum.html">fsh-generated/resources/Organization-beispiel-provider-jochum.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden</b></td>
+     <td><a href="Organization-beispiel-provider-jochum.html">fsh-generated/resources/Organization-beispiel-provider-jochum.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation|5.1.0' kann nicht aufgelöst werden</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Organization-beispiel-provider-loewenstein.html">fsh-generated/resources/Organization-beispiel-provider-loewenstein.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden</b></td>
@@ -4496,7 +4505,10 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><a href="Organization-beispiel-provider-vivisol.html">fsh-generated/resources/Organization-beispiel-provider-vivisol.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Practitioner-tcabs-practitioner-example.html">fsh-generated/resources/Practitioner-tcabs-practitioner-example.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf' kann nicht aufgelöst werden</b></td>
+     <td><a href="Patient-tcabs-patient-example.html">fsh-generated/resources/Patient-tcabs-patient-example.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0' kann nicht aufgelöst werden</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Practitioner-tcabs-practitioner-example.html">fsh-generated/resources/Practitioner-tcabs-practitioner-example.json</a></td><td><b>Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0' kann nicht aufgelöst werden</b></td>
    </tr>
 </table>
 <hr/>
@@ -4523,22 +4535,25 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
 <h2>VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-ArterielleSPO2-Doccla.html">fsh-generated/resources/Observation-Example-ArterielleSPO2-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
+     <td><a href="Encounter-Example-Encounter-Telemedizinische-Visite.html">fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite.json</a></td><td><b>Die Profilreferenz 'https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-ArteriellerBlutdruck-Doccla.html">fsh-generated/resources/Observation-Example-ArteriellerBlutdruck-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
+     <td><a href="Observation-Example-ArterielleSPO2-Doccla.html">fsh-generated/resources/Observation-Example-ArterielleSPO2-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-Atemfrequenz-Doccla.html">fsh-generated/resources/Observation-Example-Atemfrequenz-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
+     <td><a href="Observation-Example-ArteriellerBlutdruck-Doccla.html">fsh-generated/resources/Observation-Example-ArteriellerBlutdruck-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-Herzfrequenz-Doccla.html">fsh-generated/resources/Observation-Example-Herzfrequenz-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
+     <td><a href="Observation-Example-Atemfrequenz-Doccla.html">fsh-generated/resources/Observation-Example-Atemfrequenz-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-Koerpergewicht-Doccla.html">fsh-generated/resources/Observation-Example-Koerpergewicht-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
+     <td><a href="Observation-Example-Herzfrequenz-Doccla.html">fsh-generated/resources/Observation-Example-Herzfrequenz-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Observation-Example-Koerpertemperatur-Doccla.html">fsh-generated/resources/Observation-Example-Koerpertemperatur-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
+     <td><a href="Observation-Example-Koerpergewicht-Doccla.html">fsh-generated/resources/Observation-Example-Koerpergewicht-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-Example-Koerpertemperatur-Doccla.html">fsh-generated/resources/Observation-Example-Koerpertemperatur-Doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Organization-CABS.html">fsh-generated/resources/Organization-CABS.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
@@ -4547,7 +4562,7 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><a href="Organization-beispiel-provider-doccla.html">fsh-generated/resources/Organization-beispiel-provider-doccla.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Organization-beispiel-provider-jochum.html">fsh-generated/resources/Organization-beispiel-provider-jochum.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
+     <td><a href="Organization-beispiel-provider-jochum.html">fsh-generated/resources/Organization-beispiel-provider-jochum.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Organization-beispiel-provider-loewenstein.html">fsh-generated/resources/Organization-beispiel-provider-loewenstein.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
@@ -4556,7 +4571,10 @@ hl7.fhir.uv.pocd#0.3.0:     <a href="http://hl7.org/fhir/uv/pocd/2021Sep/Impleme
      <td><a href="Organization-beispiel-provider-vivisol.html">fsh-generated/resources/Organization-beispiel-provider-vivisol.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Practitioner-tcabs-practitioner-example.html">fsh-generated/resources/Practitioner-tcabs-practitioner-example.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
+     <td><a href="Patient-tcabs-patient-example.html">fsh-generated/resources/Patient-tcabs-patient-example.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Practitioner-tcabs-practitioner-example.html">fsh-generated/resources/Practitioner-tcabs-practitioner-example.json</a></td><td><b>Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.</b></td>
    </tr>
 </table>
 <hr/>

@@ -16,7 +16,7 @@ InstanceOf: T_CABS_Organisation
 Usage: #example
 Title: "Example Provider Jochum"
 Description: "Example for the ventilation equipment provider Jochum"
-* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation"
+* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation|5.1.0"
 * name = "Jochum GmbH"
 * identifier.system = "http://tcabs.example.org/providers"
 * identifier.value = "PROV-JOCHUM-001"

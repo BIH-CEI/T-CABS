@@ -15,6 +15,7 @@ InstanceOf: T_CABS_Patient
 Usage: #example
 Title: "T-CABS Patient Example"
 Description: "Example patient for the T-CABS project"
+* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0"
 * identifier[pid].system = "http://tcabs.example.org/patients"
 * identifier[pid].value = "TCABS-PAT-001"
 * name[name].family = "Mustermann"

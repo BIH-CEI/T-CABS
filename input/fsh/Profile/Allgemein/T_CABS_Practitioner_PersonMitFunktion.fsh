@@ -30,7 +30,7 @@ InstanceOf: T_CABS_Practitioner_PersonMitFunktion
 Usage: #example
 Title: "T-CABS Practitioner Example"
 Description: "Example physician for the T-CABS project"
-* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf"
+* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0"
 * identifier.system = "http://tcabs.example.org/practitioners"
 * identifier.value = "TCABS-DOC-001"
 * name[Name].family = "Schmidt"

@@ -6,7 +6,7 @@
 
 ## Example Observation: Example Arterial SPO2 Measurement
 
-Profiles: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)
+Profiles: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0)
 
 **Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
@@ -37,7 +37,7 @@ Profiles: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arter
   "meta" : {
     "profile" : [
       "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0"
     ]
   },
   "extension" : [

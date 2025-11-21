@@ -11,5 +11,8 @@ The T-CABS information model forms the conceptual foundation for all FHIR profil
 
 The following PlantUML diagram shows all T-CABS profiles with their inheritance hierarchies and references:
 
-The UML diagram is located in the repository in the "input/images" folder as PNG and SVG files
+**Download UML Diagram:**
+
+* [Download PNG format](T_CABS_UML.png)
+* [Download SVG format](T-CABS_UML.svg)
 

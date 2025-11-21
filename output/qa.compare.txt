@@ -1,7 +1,7 @@
 TCABS : Validation Results
 =========================================
 
-err = 0, warn = 173, info = 251
+err = 0, warn = 177, info = 250
 $--
 Generated $--. FHIR version $-- for t-cabs#$-- (canonical = http://t-cabs.org)
  Build Errors : 0 / 4 / 0
@@ -44,7 +44,7 @@ Generated $--. FHIR version $-- for t-cabs#$-- (canonical = http://t-cabs.org)
  /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-resmed-druck : 0 / 0 / 2
  /Users/thimo/T-CABS/fsh-generated/resources/DeviceMetric-beispiel-devicemetric-resmed-leckage : 0 / 0 / 2
  /Users/thimo/T-CABS/fsh-generated/resources/DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite : 0 / 0 / 1
- /Users/thimo/T-CABS/fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite : 0 / 0 / 7
+ /Users/thimo/T-CABS/fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite : 0 / 2 / 3
  /Users/thimo/T-CABS/fsh-generated/resources/ImplementationGuide-t-cabs : 0 / 2 / 1
  /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-AHI-BREAS : 0 / 2 / 2
  /Users/thimo/T-CABS/fsh-generated/resources/Observation-Example-AMV-BREAS-gemessen : 0 / 1 / 2
@@ -75,7 +75,7 @@ Generated $--. FHIR version $-- for t-cabs#$-- (canonical = http://t-cabs.org)
  /Users/thimo/T-CABS/fsh-generated/resources/Organization-beispiel-provider-jochum : 0 / 2 / 1
  /Users/thimo/T-CABS/fsh-generated/resources/Organization-beispiel-provider-loewenstein : 0 / 2 / 1
  /Users/thimo/T-CABS/fsh-generated/resources/Organization-beispiel-provider-vivisol : 0 / 2 / 1
- /Users/thimo/T-CABS/fsh-generated/resources/Patient-tcabs-patient-example : 0 / 0 / 1
+ /Users/thimo/T-CABS/fsh-generated/resources/Patient-tcabs-patient-example : 0 / 2 / 1
  /Users/thimo/T-CABS/fsh-generated/resources/Practitioner-tcabs-practitioner-example : 0 / 2 / 1
  /Users/thimo/T-CABS/fsh-generated/resources/PractitionerRole-tcabs-practitioner-role-example : 0 / 1 / 1
  /Users/thimo/T-CABS/fsh-generated/resources/Procedure-beispiel-beatmung-breas : 0 / 0 / 2
@@ -229,8 +229,9 @@ INFORMATION: DeviceMetric/beispiel-devicemetric-resmed-leckage: DeviceMetric.typ
 == fsh-generated/resources/DiagnosticReport-Example-DiagnosticReport-Woechentliche-Visite.json ==
 == fsh-generated/resources/Encounter-Example-Encounter-Telemedizinische-Visite.json ==
 INFORMATION: Encounter/Example-Encounter-Telemedizinische-Visite: Encounter.identifier[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt|0.1.0 überein.
+WARNING: Encounter/Example-Encounter-Telemedizinische-Visite: Encounter.meta.profile[1]: Canonical URL 'https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0' kann nicht aufgelöst werden
 INFORMATION: Encounter/Example-Encounter-Telemedizinische-Visite: Encounter.status: Reference to draft CodeSystem http://hl7.org/fhir/encounter-status|4.0.1
-INFORMATION: Encounter/Example-Encounter-Telemedizinische-Visite: Encounter.identifier[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2025.0.0 überein.
+WARNING: Encounter/Example-Encounter-Telemedizinische-Visite: Encounter.meta.profile[1]: Die Profilreferenz 'https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/ImplementationGuide-t-cabs.json ==
 WARNING: ImplementationGuide/t-cabs: ImplementationGuide.dependsOn[6].uri: Canonical URL 'http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4' kann nicht aufgelöst werden
 WARNING: ImplementationGuide/t-cabs: ImplementationGuide.dependsOn[6]: The canonical URL http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4 doesn't point to an actual ImplementationGuide resource
@@ -242,23 +243,23 @@ WARNING: Observation/Example-AHI-BREAS: Observation: Alle Observations sollten e
 INFORMATION: Observation/Example-AMV-BREAS-gemessen: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 WARNING: Observation/Example-AMV-BREAS-gemessen: Observation: Alle Observations sollten einen Performer haben
 == fsh-generated/resources/Observation-Example-ArterielleSPO2-Doccla.json ==
-WARNING: Observation/Example-ArterielleSPO2-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell' kann nicht aufgelöst werden
+WARNING: Observation/Example-ArterielleSPO2-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0' kann nicht aufgelöst werden
 INFORMATION: Observation/Example-ArterielleSPO2-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 INFORMATION: Observation/Example-ArterielleSPO2-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/oxygensat|4.0.1 überein.
 WARNING: Observation/Example-ArterielleSPO2-Doccla: Observation: Alle Observations sollten einen Performer haben
-WARNING: Observation/Example-ArterielleSPO2-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+WARNING: Observation/Example-ArterielleSPO2-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/Observation-Example-ArteriellerBlutdruck-Doccla.json ==
-WARNING: Observation/Example-ArteriellerBlutdruck-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell' kann nicht aufgelöst werden
+WARNING: Observation/Example-ArteriellerBlutdruck-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0' kann nicht aufgelöst werden
 INFORMATION: Observation/Example-ArteriellerBlutdruck-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 INFORMATION: Observation/Example-ArteriellerBlutdruck-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bp|4.0.1 überein.
 WARNING: Observation/Example-ArteriellerBlutdruck-Doccla: Observation: Alle Observations sollten einen Performer haben
-WARNING: Observation/Example-ArteriellerBlutdruck-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+WARNING: Observation/Example-ArteriellerBlutdruck-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/Observation-Example-Atemfrequenz-Doccla.json ==
-WARNING: Observation/Example-Atemfrequenz-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz' kann nicht aufgelöst werden
+WARNING: Observation/Example-Atemfrequenz-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0' kann nicht aufgelöst werden
 INFORMATION: Observation/Example-Atemfrequenz-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 INFORMATION: Observation/Example-Atemfrequenz-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/resprate|4.0.1 überein.
 WARNING: Observation/Example-Atemfrequenz-Doccla: Observation: Alle Observations sollten einen Performer haben
-WARNING: Observation/Example-Atemfrequenz-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+WARNING: Observation/Example-Atemfrequenz-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/Observation-Example-Atemfrequenz-ResMed-gemessen.json ==
 INFORMATION: Observation/Example-Atemfrequenz-ResMed-gemessen: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 WARNING: Observation/Example-Atemfrequenz-ResMed-gemessen: Observation: Alle Observations sollten einen Performer haben
@@ -294,26 +295,26 @@ WARNING: Observation/Example-Gehstrecke-Doccla: Observation: Alle Observations s
 INFORMATION: Observation/Example-Handgriffstaerke-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 WARNING: Observation/Example-Handgriffstaerke-Doccla: Observation: Alle Observations sollten einen Performer haben
 == fsh-generated/resources/Observation-Example-Herzfrequenz-Doccla.json ==
-WARNING: Observation/Example-Herzfrequenz-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz' kann nicht aufgelöst werden
+WARNING: Observation/Example-Herzfrequenz-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0' kann nicht aufgelöst werden
 INFORMATION: Observation/Example-Herzfrequenz-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 INFORMATION: Observation/Example-Herzfrequenz-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/heartrate|4.0.1 überein.
 WARNING: Observation/Example-Herzfrequenz-Doccla: Observation: Alle Observations sollten einen Performer haben
-WARNING: Observation/Example-Herzfrequenz-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+WARNING: Observation/Example-Herzfrequenz-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/Observation-Example-IPAP-BREAS.json ==
 INFORMATION: Observation/Example-IPAP-BREAS: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 WARNING: Observation/Example-IPAP-BREAS: Observation: Alle Observations sollten einen Performer haben
 == fsh-generated/resources/Observation-Example-Koerpergewicht-Doccla.json ==
-WARNING: Observation/Example-Koerpergewicht-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht' kann nicht aufgelöst werden
+WARNING: Observation/Example-Koerpergewicht-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht|5.1.0' kann nicht aufgelöst werden
 INFORMATION: Observation/Example-Koerpergewicht-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 INFORMATION: Observation/Example-Koerpergewicht-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1 überein.
 WARNING: Observation/Example-Koerpergewicht-Doccla: Observation: Alle Observations sollten einen Performer haben
-WARNING: Observation/Example-Koerpergewicht-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+WARNING: Observation/Example-Koerpergewicht-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/Observation-Example-Koerpertemperatur-Doccla.json ==
-WARNING: Observation/Example-Koerpertemperatur-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur' kann nicht aufgelöst werden
+WARNING: Observation/Example-Koerpertemperatur-Doccla: Observation.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0' kann nicht aufgelöst werden
 INFORMATION: Observation/Example-Koerpertemperatur-Doccla: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 INFORMATION: Observation/Example-Koerpertemperatur-Doccla: Observation.category[1]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 überein.
 WARNING: Observation/Example-Koerpertemperatur-Doccla: Observation: Alle Observations sollten einen Performer haben
-WARNING: Observation/Example-Koerpertemperatur-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+WARNING: Observation/Example-Koerpertemperatur-Doccla: Observation.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/Observation-Example-Leckage-ResMed.json ==
 INFORMATION: Observation/Example-Leckage-ResMed: Observation.code: Reference to draft CodeSystem urn:iso:std:iso:11073:10101|2024-12-05 from fhir.tx.support.r4#0.32.0
 WARNING: Observation/Example-Leckage-ResMed: Observation: Alle Observations sollten einen Performer haben
@@ -336,8 +337,8 @@ WARNING: Organization/CABS: Organization.meta.profile[1]: Die Profilreferenz 'ht
 WARNING: Organization/beispiel-provider-doccla: Organization.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden
 WARNING: Organization/beispiel-provider-doccla: Organization.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/Organization-beispiel-provider-jochum.json ==
-WARNING: Organization/beispiel-provider-jochum: Organization.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden
-WARNING: Organization/beispiel-provider-jochum: Organization.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+WARNING: Organization/beispiel-provider-jochum: Organization.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation|5.1.0' kann nicht aufgelöst werden
+WARNING: Organization/beispiel-provider-jochum: Organization.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/Organization-beispiel-provider-loewenstein.json ==
 WARNING: Organization/beispiel-provider-loewenstein: Organization.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden
 WARNING: Organization/beispiel-provider-loewenstein: Organization.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
@@ -345,9 +346,11 @@ WARNING: Organization/beispiel-provider-loewenstein: Organization.meta.profile[1
 WARNING: Organization/beispiel-provider-vivisol: Organization.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' kann nicht aufgelöst werden
 WARNING: Organization/beispiel-provider-vivisol: Organization.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/Patient-tcabs-patient-example.json ==
+WARNING: Patient/tcabs-patient-example: Patient.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0' kann nicht aufgelöst werden
+WARNING: Patient/tcabs-patient-example: Patient.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/Practitioner-tcabs-practitioner-example.json ==
-WARNING: Practitioner/tcabs-practitioner-example: Practitioner.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf' kann nicht aufgelöst werden
-WARNING: Practitioner/tcabs-practitioner-example: Practitioner.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+WARNING: Practitioner/tcabs-practitioner-example: Practitioner.meta.profile[1]: Canonical URL 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0' kann nicht aufgelöst werden
+WARNING: Practitioner/tcabs-practitioner-example: Practitioner.meta.profile[1]: Die Profilreferenz 'https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated/resources/PractitionerRole-tcabs-practitioner-role-example.json ==
 WARNING: PractitionerRole/tcabs-practitioner-role-example: PractitionerRole.code[0].coding[1].system: A definition for CodeSystem 'urn:oid:1.2.276.0.76.5.514' could not be found, so the code cannot be validated
 == fsh-generated/resources/Procedure-beispiel-beatmung-breas.json ==

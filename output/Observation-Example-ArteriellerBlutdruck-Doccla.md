@@ -6,7 +6,7 @@
 
 ## Example Observation: Example Arterial Blood Pressure Measurement
 
-Profiles: [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cabs-observation-arteriellerblutdruck.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell)
+Profiles: [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cabs-observation-arteriellerblutdruck.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0)
 
 **Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
@@ -37,7 +37,7 @@ Profiles: [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cab
   "meta" : {
     "profile" : [
       "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0"
     ]
   },
   "extension" : [

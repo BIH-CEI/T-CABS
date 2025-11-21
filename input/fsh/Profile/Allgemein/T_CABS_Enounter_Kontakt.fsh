@@ -21,7 +21,7 @@ InstanceOf: T_CABS_Encounter_Kontakt
 Usage: #example
 Title: "Example Telemedicine Visit"
 Description: "Example of a weekly telemedicine visit of a T-CABS patient"
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0"
 * identifier.system = "http://tcabs.example.org/encounters"
 * identifier.value = "ENC-TCABS-WEEKLY-001"
 * status = #finished

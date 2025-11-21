@@ -4,7 +4,7 @@
   "meta": {
     "profile": [
       "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation|5.1.0"
     ]
   },
   "identifier": [

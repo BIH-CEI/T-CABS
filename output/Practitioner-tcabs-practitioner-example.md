@@ -6,7 +6,7 @@
 
 ## Example Practitioner: T-CABS Practitioner Example
 
-Profiles: [T-CABS Person with Function](StructureDefinition-t-cabs-practitioner-personmitfunktion.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf)
+Profiles: [T-CABS Person with Function](StructureDefinition-t-cabs-practitioner-personmitfunktion.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0)
 
 **identifier**: `http://tcabs.example.org/practitioners`/TCABS-DOC-001
 
@@ -25,7 +25,7 @@ Profiles: [T-CABS Person with Function](StructureDefinition-t-cabs-practitioner-
   "meta" : {
     "profile" : [
       "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0"
     ]
   },
   "identifier" : [

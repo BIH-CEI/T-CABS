@@ -6,7 +6,7 @@
 
 ## Example Observation: Example Body Temperature Measurement
 
-Profiles: [T-CABS Observation Body Temperature](StructureDefinition-t-cabs-observation-koerpertemperatur.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur)
+Profiles: [T-CABS Observation Body Temperature](StructureDefinition-t-cabs-observation-koerpertemperatur.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0)
 
 **Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
@@ -35,7 +35,7 @@ Profiles: [T-CABS Observation Body Temperature](StructureDefinition-t-cabs-obser
   "meta" : {
     "profile" : [
       "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur",
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0"
     ]
   },
   "extension" : [

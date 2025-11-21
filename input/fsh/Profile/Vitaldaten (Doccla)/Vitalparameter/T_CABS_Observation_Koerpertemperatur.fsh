@@ -21,7 +21,7 @@ InstanceOf: T_CABS_Observation_Koerpertemperatur
 Usage: #example
 Title: "Example Body Temperature Measurement"
 Description: "Example of a body temperature measurement via Doccla"
-* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur"
+* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0"
 * status = #final
 * category[VSCat].coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd-observation

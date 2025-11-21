@@ -6,7 +6,7 @@
 
 ## Example Observation: Example Respiratory Rate Measurement
 
-Profiles: [T-CABS Observation Respiratory Rate](StructureDefinition-t-cabs-observation-atemfrequenz.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz)
+Profiles: [T-CABS Observation Respiratory Rate](StructureDefinition-t-cabs-observation-atemfrequenz.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0)
 
 **Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
@@ -35,7 +35,7 @@ Profiles: [T-CABS Observation Respiratory Rate](StructureDefinition-t-cabs-obser
   "meta" : {
     "profile" : [
       "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0"
     ]
   },
   "extension" : [

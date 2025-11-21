@@ -3,7 +3,8 @@
   "id": "tcabs-patient-example",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+      "http://t-cabs.org/StructureDefinition/t-cabs-patient",
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0"
     ]
   },
   "identifier": [

@@ -6,7 +6,7 @@
 
 ## Example Encounter: Example Telemedicine Visit
 
-Profiles: [T-CABS Encounter Contact](StructureDefinition-t-cabs-encounter-kontakt.md), [MII PR Fall Kontakt mit einer Gesundheitseinrichtung](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.fall@2025.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung)
+Profiles: [T-CABS Encounter Contact](StructureDefinition-t-cabs-encounter-kontakt.md), [https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0)
 
 **identifier**: `http://tcabs.example.org/encounters`/ENC-TCABS-WEEKLY-001
 
@@ -40,7 +40,7 @@ Profiles: [T-CABS Encounter Contact](StructureDefinition-t-cabs-encounter-kontak
   "meta" : {
     "profile" : [
       "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|5.1.0"
     ]
   },
   "identifier" : [

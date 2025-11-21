@@ -18,7 +18,7 @@ InstanceOf: T_CABS_Observation_Atemfrequenz
 Usage: #example
 Title: "Example Respiratory Rate Measurement"
 Description: "Example of a respiratory rate measurement via Doccla"
-* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz"
+* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0"
 * status = #final
 * category[VSCat].coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd-observation

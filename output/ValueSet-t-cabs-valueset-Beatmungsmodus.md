@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus | *Version*:0.1.0 |
-| Draft as of 2025-11-20 | *Computable Name*:T_CABS_ValueSet_Beatmungsmodus |
+| Draft as of 2025-11-21 | *Computable Name*:T_CABS_ValueSet_Beatmungsmodus |
 
  
 This ValueSet contains codes to represent the different ventilation modes 
@@ -54,7 +54,7 @@ This value set contains 12 concepts
   "name" : "T_CABS_ValueSet_Beatmungsmodus",
   "title" : "T-CABS ValueSet Ventilation Mode",
   "status" : "draft",
-  "date" : "2025-11-20T17:13:04+01:00",
+  "date" : "2025-11-21T13:42:11+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
