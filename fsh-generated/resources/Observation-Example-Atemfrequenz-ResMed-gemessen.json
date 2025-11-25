@@ -15,6 +15,16 @@
       }
     ]
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
   "effectivePeriod": {
     "start": "2024-01-15T23:20:00Z",
     "end": "2024-01-15T23:20:00Z"

@@ -12,6 +12,8 @@ Profile: [T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.m
 
 **status**: Final
 
+**category**: Procedure
+
 **code**: MDC_SABTE_PRESS_IPAP_SET
 
 **subject**: [Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)](Patient-tcabs-patient-example.md)
@@ -48,6 +50,16 @@ Profile: [T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.m
     }
   ],
   "status" : "final",
+  "category" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }
+      ]
+    }
+  ],
   "code" : {
     "coding" : [
       {

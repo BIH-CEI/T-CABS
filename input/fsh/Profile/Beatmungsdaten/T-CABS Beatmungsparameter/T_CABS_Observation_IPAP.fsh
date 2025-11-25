@@ -17,6 +17,7 @@ Title: "Example IPAP BREAS"
 Description: "Example of IPAP from a BREAS ventilator"
 * status = #final
 * code.coding = $IEEE-11073#8410976 "MDC_SABTE_PRESS_IPAP_SET"
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#procedure
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-10-07T22:00:00+02:00"
 * effectivePeriod.end = "2024-10-07T22:15:00+02:00"

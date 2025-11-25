@@ -12,6 +12,8 @@ Profile: [T-CABS Observation Target Volume](StructureDefinition-t-cabs-observati
 
 **status**: Final
 
+**category**: Procedure
+
 **code**: MDC_VENT_VOL_TIDAL_TARGET_AUTO
 
 **subject**: [Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)](Patient-tcabs-patient-example.md)
@@ -48,6 +50,16 @@ Profile: [T-CABS Observation Target Volume](StructureDefinition-t-cabs-observati
     }
   ],
   "status" : "final",
+  "category" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }
+      ]
+    }
+  ],
   "code" : {
     "coding" : [
       {

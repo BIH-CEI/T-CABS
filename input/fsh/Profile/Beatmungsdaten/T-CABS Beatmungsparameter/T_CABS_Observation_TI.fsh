@@ -17,6 +17,7 @@ Title: "Example TI Löwenstein"
 Description: "Example of inspiration time from a Löwenstein ventilator"
 * status = #final
 * code.coding = $IEEE-11073#152416 "MDC_VENT_TIME_PD_INSP"
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#procedure
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-10-07T20:30:00+02:00"
 * effectivePeriod.end = "2024-10-07T20:45:00+02:00"

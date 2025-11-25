@@ -17,6 +17,7 @@ Title: "Example PEEP Löwenstein"
 Description: "Example of PEEP from a Löwenstein ventilator"
 * status = #final
 * code.coding = $IEEE-11073#152720 "MDC_VENT_PRESS_AWAY_DELTA"
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#procedure
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-01-15T23:35:00Z"
 * effectivePeriod.end = "2024-01-15T23:35:00Z"

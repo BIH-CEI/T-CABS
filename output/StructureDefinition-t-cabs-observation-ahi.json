@@ -10,7 +10,7 @@
   "name" : "T_CABS_Observation_AHI",
   "title" : "T-CABS Observation AHI",
   "status" : "draft",
-  "date" : "2025-11-21T13:42:11+01:00",
+  "date" : "2025-11-25T10:29:35+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
@@ -910,11 +910,19 @@
     {
       "id" : "Observation.category",
       "path" : "Observation.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
       "short" : "Classification of  type of observation",
       "definition" : "A code that classifies the general type of observation being made.",
       "comment" : "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.",
       "requirements" : "Used for filtering what observations are retrieved and displayed.",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "base" : {
         "path" : "Observation.category",
@@ -924,6 +932,59 @@
       "type" : [{
         "code" : "CodeableConcept"
       }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ObservationCategory"
+        }],
+        "strength" : "preferred",
+        "description" : "Codes for high level observation categories.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-category"
+      },
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "FiveWs.class"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".outboundRelationship[typeCode=\"COMP].target[classCode=\"LIST\", moodCode=\"EVN\"].code"
+      }]
+    },
+    {
+      "id" : "Observation.category:VSCat",
+      "path" : "Observation.category",
+      "sliceName" : "VSCat",
+      "short" : "Classification of  type of observation",
+      "definition" : "A code that classifies the general type of observation being made.",
+      "comment" : "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.",
+      "requirements" : "Used for filtering what observations are retrieved and displayed.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Observation.category",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      },
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",

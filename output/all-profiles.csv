@@ -4789,8 +4789,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-ahi","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-ahi","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-ahi","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-ahi","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-ahi","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -5238,8 +5247,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-amv","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-amv","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-amv","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-amv","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-amv","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -8591,8 +8609,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-atemfrequenz-beatmet","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-atemfrequenz-beatmet","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-atemfrequenz-beatmet","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-atemfrequenz-beatmet","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-atemfrequenz-beatmet","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -10587,8 +10614,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-atemzeitverhaeltnis","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-atemzeitverhaeltnis","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-atemzeitverhaeltnis","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-atemzeitverhaeltnis","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-atemzeitverhaeltnis","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -11038,8 +11074,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-beatmungsparameter","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-beatmungsparameter","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-beatmungsparameter","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-beatmungsparameter","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-beatmungsparameter","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -11484,8 +11529,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-beatmungsparametermitkomponenten","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-beatmungsparametermitkomponenten","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-beatmungsparametermitkomponenten","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-beatmungsparametermitkomponenten","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-beatmungsparametermitkomponenten","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -13442,8 +13496,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-druck-minmax","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-druck-minmax","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-druck-minmax","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-druck-minmax","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-druck-minmax","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -17221,8 +17284,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-ipap","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-ipap","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-ipap","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-ipap","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-ipap","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -20764,8 +20836,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-leckage","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-leckage","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-leckage","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-leckage","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-leckage","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -21213,8 +21294,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-peep","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-peep","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-peep","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-peep","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-peep","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -21662,8 +21752,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-targetvolume","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-targetvolume","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-targetvolume","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-targetvolume","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-targetvolume","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -22111,8 +22210,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-ti","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-ti","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-ti","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-ti","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-ti","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
@@ -22560,8 +22668,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "t-cabs-observation-triggeredbreaths","Observation.status","Observation.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","registered | preliminary | final | amended +","The status of the result value.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","Need to track the status of individual results. Some results are finalized before the whole report is finalized.","","","","","","","",,"required","Codes providing the status of an observation.","http://hl7.org/fhir/ValueSet/observation-status|4.0.1","",,,,"Observation.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"t-cabs-observation-triggeredbreaths","Observation.category","Observation.category","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"t-cabs-observation-triggeredbreaths","Observation.category","Observation.category","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","","type:$this}
+","",,"open","Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"t-cabs-observation-triggeredbreaths","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
+    <code value=""procedure""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "t-cabs-observation-triggeredbreaths","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}

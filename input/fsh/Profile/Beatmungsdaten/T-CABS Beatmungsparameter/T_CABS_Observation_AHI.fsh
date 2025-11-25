@@ -17,6 +17,7 @@ Title: "Example AHI Measurement BREAS"
 Description: "Example of an AHI measurement from a BREAS ventilator"
 * status = #final
 * code.coding = $IEEE-11073#8410792 "MDC_SABTE_AHI_TOTAL"
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#procedure
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-01-15T22:00:00Z"
 * effectivePeriod.end = "2024-01-16T06:00:00Z"

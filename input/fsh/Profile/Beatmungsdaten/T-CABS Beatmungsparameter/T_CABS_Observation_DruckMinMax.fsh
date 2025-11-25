@@ -32,6 +32,7 @@ Title: "Example Pressure Min/Max ResMed"
 Description: "Example of minimal and maximal ventilation pressure from a ResMed device"
 * status = #final
 * code.coding = $IEEE-11073#151792 "MDC_PRESS_AWAY"
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#procedure
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-10-07T23:00:00+02:00"
 * effectivePeriod.end = "2024-10-07T23:30:00+02:00"

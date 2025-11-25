@@ -20,6 +20,7 @@ Title: "Example Triggered Breaths Löwenstein"
 Description: "Example of triggered breaths from a Löwenstein ventilator"
 * status = #final
 * code.coding = $IEEE-11073#152498 "MDC_VENT_RESP_BTSD_P_RATE"
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#procedure
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-01-15T22:00:00Z"
 * effectivePeriod.end = "2024-01-16T06:00:00Z"

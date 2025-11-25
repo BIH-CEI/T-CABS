@@ -325,7 +325,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_AHI.fsh",
     "startLine": 13,
-    "endLine": 28
+    "endLine": 29
   },
   {
     "outputFile": "Observation-Example-AMV-BREAS-gemessen.json",
@@ -333,7 +333,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_AMV.fsh",
     "startLine": 13,
-    "endLine": 27
+    "endLine": 28
   },
   {
     "outputFile": "Observation-Example-ArterielleSPO2-Doccla.json",
@@ -365,7 +365,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_Atemfrequenz_beatmet.fsh",
     "startLine": 12,
-    "endLine": 27
+    "endLine": 28
   },
   {
     "outputFile": "Observation-Example-Atemzeitverhaeltnis-ResMed.json",
@@ -373,7 +373,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_Atemzeitverhaeltnis.fsh",
     "startLine": 16,
-    "endLine": 31
+    "endLine": 32
   },
   {
     "outputFile": "Observation-Example-BMI-Doccla.json",
@@ -389,7 +389,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_DruckMinMax.fsh",
     "startLine": 28,
-    "endLine": 49
+    "endLine": 50
   },
   {
     "outputFile": "Observation-Example-FEF25-75-Doccla.json",
@@ -453,7 +453,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_IPAP.fsh",
     "startLine": 13,
-    "endLine": 37
+    "endLine": 38
   },
   {
     "outputFile": "Observation-Example-Koerpergewicht-Doccla.json",
@@ -477,7 +477,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T-CABS_Observation_Leckage.fsh",
     "startLine": 14,
-    "endLine": 29
+    "endLine": 30
   },
   {
     "outputFile": "Observation-Example-PEEP-Loewenstein.json",
@@ -485,7 +485,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_PEEP.fsh",
     "startLine": 13,
-    "endLine": 28
+    "endLine": 29
   },
   {
     "outputFile": "Observation-Example-TI-Loewenstein.json",
@@ -493,7 +493,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_TI.fsh",
     "startLine": 13,
-    "endLine": 28
+    "endLine": 29
   },
   {
     "outputFile": "Observation-Example-TargetVolume-BREAS.json",
@@ -501,7 +501,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_TargetVolume.fsh",
     "startLine": 15,
-    "endLine": 39
+    "endLine": 40
   },
   {
     "outputFile": "Observation-Example-TriggeredBreaths-Loewenstein.json",
@@ -509,7 +509,7 @@
     "fshType": "Instance",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_TriggeredBreaths.fsh",
     "startLine": 16,
-    "endLine": 31
+    "endLine": 32
   },
   {
     "outputFile": "Organization-CABS.json",
@@ -733,7 +733,7 @@
     "fshType": "Profile",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_Beatumgsparameter.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.json",
@@ -741,7 +741,7 @@
     "fshType": "Profile",
     "fshFile": "Profile/Beatmungsdaten/T-CABS Beatmungsparameter/T_CABS_Observation_BeatmungsparameterMitKomponenten.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-t-cabs-observation-bmi.json",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke | *Version*:0.1.0 |
-| Draft as of 2025-11-21 | *Computable Name*:T_CABS_Observation_Gehstrecke |
+| Draft as of 2025-11-25 | *Computable Name*:T_CABS_Observation_Gehstrecke |
 
  
 Profile for walking distance per day (24 hours) 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-g
   "name" : "T_CABS_Observation_Gehstrecke",
   "title" : "T-CABS Observation Walking Distance",
   "status" : "draft",
-  "date" : "2025-11-21T13:42:11+01:00",
+  "date" : "2025-11-25T10:29:35+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

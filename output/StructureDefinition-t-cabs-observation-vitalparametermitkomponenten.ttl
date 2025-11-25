@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "T_CABS_Observation_VitalparameterMitKomponenten"] ; # 
   fhir:title [ fhir:v "T-CABS Observation Vital Parameter with Components"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-21T13:42:11+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-25T10:29:35+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH-CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH-CEI" ] ;

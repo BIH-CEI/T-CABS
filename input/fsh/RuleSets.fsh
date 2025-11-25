@@ -15,14 +15,13 @@ RuleSet: ReferenceRangeDefinition
     * code 1..1 MS
   * type = $cs-referenceRangeMeaning#therapeutic
 
-
-RuleSet: VitalParameter
-* category.coding ^slicing.discriminator.type = #type   
-* category.coding ^slicing.discriminator.path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding ^slicing.ordered = false
-* category.coding contains VSCat 1..1 MS
-* category.coding[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+RuleSet: ProcedureParameter
+* category ^slicing.discriminator.type = #type   
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category ^slicing.ordered = false
+* category contains VSCat 1..1 MS
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#procedure
 
 RuleSet: VentilationProcedure
 * partOf 1..1 MS

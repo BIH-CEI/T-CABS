@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht | *Version*:0.1.0 |
-| Draft as of 2025-11-21 | *Computable Name*:T_CABS_Observation_Koerpergewicht |
+| Draft as of 2025-11-25 | *Computable Name*:T_CABS_Observation_Koerpergewicht |
 
  
 Profile for body weight. Compatibility: For the profile T_CABS_Observation_Koerpergewicht, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_Koerpergewicht are also valid against the[ISiKKoerpergewicht](https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-k
   "name" : "T_CABS_Observation_Koerpergewicht",
   "title" : "T-CABS Observation Body Weight",
   "status" : "draft",
-  "date" : "2025-11-21T13:42:11+01:00",
+  "date" : "2025-11-25T10:29:35+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

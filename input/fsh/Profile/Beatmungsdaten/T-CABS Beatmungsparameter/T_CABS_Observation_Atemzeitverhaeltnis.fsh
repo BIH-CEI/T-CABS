@@ -20,6 +20,7 @@ Title: "Example Respiratory Time Ratio ResMed"
 Description: "Example of respiratory time ratio from a ResMed ventilator"
 * status = #final
 * code.coding = $IEEE-11073#153500 "MDC_TIME_PD_INSP_NORMALIZED_HF"
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#procedure
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-10-07T22:30:00+02:00"
 * effectivePeriod.end = "2024-10-07T22:45:00+02:00"

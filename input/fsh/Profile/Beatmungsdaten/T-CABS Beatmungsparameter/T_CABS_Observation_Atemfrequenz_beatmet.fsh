@@ -16,6 +16,7 @@ Title: "Example Respiratory Rate Measurement ResMed"
 Description: "Example of a measured respiratory rate from a ResMed ventilator"
 * status = #final
 * code.coding = $IEEE-11073#151586 "MDC_VENT_RESP_RATE"
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#procedure
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-01-15T23:20:00Z"
 * effectivePeriod.end = "2024-01-15T23:20:00Z"

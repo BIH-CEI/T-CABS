@@ -8,13 +8,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/ImplementationGuide/t-cabs | *Version*:0.1.0 |
-| Draft as of 2025-11-21 | *Computable Name*:TCABS |
+| Draft as of 2025-11-25 | *Computable Name*:TCABS |
 
 The T-CABS (Telemedicine Center for Out-of-Hospital Ventilation and Oxygen Therapy) Implementation Guide defines FHIR R4 profiles and standards for the transmission and exchange of ventilation and vital parameters in home-based ventilation therapy.
 
 ### Objective of the Implementation Guide
 
-This IG enables standardized, interoperable transmission of health data from home-based ventilation therapy between different systems and manufacturers. The content selection was defined and specified within CABS. Uniform FHIR profiles are defined for:
+This IG enables standardized, interoperable transmission of health data from home-based ventilation therapy between different systems and manufacturers. The content selection was defined and specified within T-CABS. Uniform FHIR profiles are defined for:
 
 * Ventilation parameters from ventilators
 * Vital parameters from Personal Health Devices (PHD)
@@ -92,7 +92,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
   "name" : "TCABS",
   "title" : "T-CABS Implementation Guide",
   "status" : "draft",
-  "date" : "2025-11-21T13:42:11+01:00",
+  "date" : "2025-11-25T10:29:35+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet | *Version*:0.1.0 |
-| Draft as of 2025-11-21 | *Computable Name*:T_CABS_Device_Channel_Beatmungsgeraet |
+| Draft as of 2025-11-25 | *Computable Name*:T_CABS_Device_Channel_Beatmungsgeraet |
 
  
 Profile representing a channel for grouping DeviceMetrics 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-channe
   "name" : "T_CABS_Device_Channel_Beatmungsgeraet",
   "title" : "T-CABS Device Channel Ventilator",
   "status" : "draft",
-  "date" : "2025-11-21T13:42:11+01:00",
+  "date" : "2025-11-25T10:29:35+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

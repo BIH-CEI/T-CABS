@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-phg | *Version*:0.1.0 |
-| Draft as of 2025-11-21 | *Computable Name*:T_CABS_Device_PHG |
+| Draft as of 2025-11-25 | *Computable Name*:T_CABS_Device_PHG |
 
  
 Profile for a tablet used as a gateway device 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phg.cs
   "name" : "T_CABS_Device_PHG",
   "title" : "T-CABS Device PHG",
   "status" : "draft",
-  "date" : "2025-11-21T13:42:11+01:00",
+  "date" : "2025-11-25T10:29:35+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

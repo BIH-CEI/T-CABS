@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume | *Version*:0.1.0 |
-| Draft as of 2025-11-21 | *Computable Name*:T_CABS_Observation_TargetVolume |
+| Draft as of 2025-11-25 | *Computable Name*:T_CABS_Observation_TargetVolume |
 
  
 Profile for the target volume 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-t
   "name" : "T_CABS_Observation_TargetVolume",
   "title" : "T-CABS Observation Target Volume",
   "status" : "draft",
-  "date" : "2025-11-21T13:42:11+01:00",
+  "date" : "2025-11-25T10:29:35+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

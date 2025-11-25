@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter | *Version*:0.1.0 |
-| Draft as of 2025-11-21 | *Computable Name*:T_CABS_Observation_Beatmungsparameter |
+| Draft as of 2025-11-25 | *Computable Name*:T_CABS_Observation_Beatmungsparameter |
 
  
 Abstract profile for ventilation parameters 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
   "name" : "T_CABS_Observation_Beatmungsparameter",
   "title" : "T-CABS Observation Ventilation Parameter (abstract)",
   "status" : "draft",
-  "date" : "2025-11-21T13:42:11+01:00",
+  "date" : "2025-11-25T10:29:35+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -134,6 +134,37 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
             ]
           }
         ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.category",
+        "path" : "Observation.category",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1
+      },
+      {
+        "id" : "Observation.category:VSCat",
+        "path" : "Observation.category",
+        "sliceName" : "VSCat",
+        "min" : 1,
+        "max" : "1",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code" : "procedure"
+            }
+          ]
+        },
         "mustSupport" : true
       },
       {

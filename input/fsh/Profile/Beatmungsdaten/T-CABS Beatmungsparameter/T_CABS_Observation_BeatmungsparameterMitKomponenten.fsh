@@ -18,3 +18,4 @@ Description: "Abstract profile for ventilation parameters with multiple values"
 
 * insert ReferenceRangeDefinition
 * insert VentilationProcedure
+* insert ProcedureParameter

@@ -12,6 +12,8 @@ Profile: [T-CABS Observation Pressure MIN/MAX](StructureDefinition-t-cabs-observ
 
 **status**: Final
 
+**category**: Procedure
+
 **code**: MDC_PRESS_AWAY
 
 **subject**: [Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)](Patient-tcabs-patient-example.md)
@@ -43,6 +45,16 @@ Profile: [T-CABS Observation Pressure MIN/MAX](StructureDefinition-t-cabs-observ
     }
   ],
   "status" : "final",
+  "category" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }
+      ]
+    }
+  ],
   "code" : {
     "coding" : [
       {
