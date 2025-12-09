@@ -301,6 +301,13 @@
     "name" : "T_CABS_Procedure_Beatmung"
   },
   {
+    "id" : "tCabsLogicalModel",
+    "type" : "StructureDefinition",
+    "url" : "http://t-cabs.org/StructureDefinition/tCabsLogicalModel",
+    "version" : "0.1.0",
+    "name" : "T_CABS_LogicalModel"
+  },
+  {
     "id" : "t-cabs-valueset-Beatmungsform",
     "type" : "ValueSet",
     "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",

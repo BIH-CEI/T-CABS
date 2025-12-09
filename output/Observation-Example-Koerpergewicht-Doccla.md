@@ -22,7 +22,7 @@ Profiles: [T-CABS Observation Body Weight](StructureDefinition-t-cabs-observatio
 
 **value**: 75.8 kg(Details: UCUM codekg = 'kg')
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Beurer; serialNumber = BEURER-SC-789012; modelNumber = BF 700; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-waage.md)
 
 
 
@@ -92,7 +92,7 @@ Profiles: [T-CABS Observation Body Weight](StructureDefinition-t-cabs-observatio
     "code" : "kg"
   },
   "device" : {
-    "reference" : "Device/beispiel-phd-doccla"
+    "reference" : "Device/beispiel-phd-waage"
   }
 }
 

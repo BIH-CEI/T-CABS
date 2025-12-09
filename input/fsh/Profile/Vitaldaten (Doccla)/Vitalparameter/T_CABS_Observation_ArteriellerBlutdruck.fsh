@@ -65,5 +65,5 @@ Description: "Example of an arterial blood pressure measurement via Doccla"
 * component[DiastolicBP].valueQuantity.unit = "mm[Hg]"
 * component[DiastolicBP].valueQuantity.system = $UCUM
 * component[DiastolicBP].valueQuantity.code = #mm[Hg]
-* device = Reference(Device/beispiel-phd-doccla)
+* device = Reference(Device/beispiel-phd-blutdruckmessgeraet)
 * extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

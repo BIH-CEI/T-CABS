@@ -176,7 +176,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html">next&gt;</a>
+          | <a href="StructureDefinition-tCabsLogicalModel.html">next&gt;</a>
 
           </span>
 
@@ -210,13 +210,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#2">Terminology: Value Sets</a>
+         <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Example: Example Instances</a>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -225,6 +228,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Structures: Logical Models </h3>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tCabsLogicalModel.html"
+                  title="StructureDefinition/tCabsLogicalModel">T-CABS Logical Model</a>
+            </td>
+            <td>
+<p>Comprehensive logical model for the T-CABS project covering:</p>
+<ul>
+  <li>Cross-domain entities (Patient, Organization)</li>
+  <li>Ventilation data (Devices, DeviceMetric, Procedure, Parameters)</li>
+  <li>Vital data (PHD devices, Parameters)</li>
+</ul>
+
+<p>Mappings are provided to concrete T-CABS FHIR profiles for implementation guidance.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -630,7 +657,7 @@ The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with IS
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -674,7 +701,7 @@ The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with IS
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -1041,11 +1068,64 @@ The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with IS
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Device-beispiel-phd-doccla.html"
-                  title="Device/beispiel-phd-doccla">Example PHD Measurement Device</a>
+               <a href="Device-beispiel-phd-blutdruckmessgeraet.html"
+                  title="Device/beispiel-phd-blutdruckmessgeraet">Example PHD Blood Pressure Monitor</a>
             </td>
             <td>
-<p>Example of a Personal Health Device measurement device from Doccla</p>
+<p>Example of a Personal Health Device blood pressure monitor (sphygmomanometer)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-phd-dynamometer.html"
+                  title="Device/beispiel-phd-dynamometer">Example PHD Hand Dynamometer</a>
+            </td>
+            <td>
+<p>Example of a Personal Health Device dynamometer for hand grip strength measurement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-phd-peakflow.html"
+                  title="Device/beispiel-phd-peakflow">Example PHD Peak Flow Meter</a>
+            </td>
+            <td>
+<p>Example of a Personal Health Device peak flow meter for respiratory measurement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-phd-pulsoximeter.html"
+                  title="Device/beispiel-phd-pulsoximeter">Example PHD Pulse Oximeter</a>
+            </td>
+            <td>
+<p>Example of a Personal Health Device pulse oximeter from Doccla</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-phd-waage.html" title="Device/beispiel-phd-waage">Example PHD Scale</a>
+            </td>
+            <td>
+<p>Example of a Personal Health Device scale for weight measurement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-phd-spirometer.html"
+                  title="Device/beispiel-phd-spirometer">Example PHD Spirometer</a>
+            </td>
+            <td>
+<p>Example of a Personal Health Device spirometer for lung function measurement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-beispiel-phd-schrittzaehler.html"
+                  title="Device/beispiel-phd-schrittzaehler">Example PHD Step Counter</a>
+            </td>
+            <td>
+<p>Example of a Personal Health Device step counter for activity measurement</p>
 </td>
          </tr>
          <tr>
@@ -1386,7 +1466,7 @@ The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with IS
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html">next&gt;</a>
+                <a href="StructureDefinition-tCabsLogicalModel.html">next&gt;</a>
 
               </td>
             </tr>
@@ -1396,7 +1476,7 @@ The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with IS
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 10:29+0100">2025-11-25</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 9, 2025 09:55+0100">2025-12-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "TCABS"] ; # 
   fhir:title [ fhir:v "T-CABS Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-25T10:29:35+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-09T09:55:43+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH-CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH-CEI" ] ;
@@ -2272,11 +2272,143 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-phd-doccla> ;
-         fhir:reference [ fhir:v "Device/beispiel-phd-doccla" ]
+         fhir:l <http://t-cabs.org/Device/beispiel-phd-blutdruckmessgeraet> ;
+         fhir:reference [ fhir:v "Device/beispiel-phd-blutdruckmessgeraet" ]
        ] ;
-       fhir:name [ fhir:v "Example PHD Measurement Device" ] ;
-       fhir:description [ fhir:v "Example of a Personal Health Device measurement device from Doccla" ] ;
+       fhir:name [ fhir:v "Example PHD Blood Pressure Monitor" ] ;
+       fhir:description [ fhir:v "Example of a Personal Health Device blood pressure monitor (sphygmomanometer)" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://t-cabs.org/Device/beispiel-phd-dynamometer> ;
+         fhir:reference [ fhir:v "Device/beispiel-phd-dynamometer" ]
+       ] ;
+       fhir:name [ fhir:v "Example PHD Hand Dynamometer" ] ;
+       fhir:description [ fhir:v "Example of a Personal Health Device dynamometer for hand grip strength measurement" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://t-cabs.org/Device/beispiel-phd-peakflow> ;
+         fhir:reference [ fhir:v "Device/beispiel-phd-peakflow" ]
+       ] ;
+       fhir:name [ fhir:v "Example PHD Peak Flow Meter" ] ;
+       fhir:description [ fhir:v "Example of a Personal Health Device peak flow meter for respiratory measurement" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://t-cabs.org/Device/beispiel-phd-pulsoximeter> ;
+         fhir:reference [ fhir:v "Device/beispiel-phd-pulsoximeter" ]
+       ] ;
+       fhir:name [ fhir:v "Example PHD Pulse Oximeter" ] ;
+       fhir:description [ fhir:v "Example of a Personal Health Device pulse oximeter from Doccla" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://t-cabs.org/Device/beispiel-phd-waage> ;
+         fhir:reference [ fhir:v "Device/beispiel-phd-waage" ]
+       ] ;
+       fhir:name [ fhir:v "Example PHD Scale" ] ;
+       fhir:description [ fhir:v "Example of a Personal Health Device scale for weight measurement" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://t-cabs.org/Device/beispiel-phd-spirometer> ;
+         fhir:reference [ fhir:v "Device/beispiel-phd-spirometer" ]
+       ] ;
+       fhir:name [ fhir:v "Example PHD Spirometer" ] ;
+       fhir:description [ fhir:v "Example of a Personal Health Device spirometer for lung function measurement" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://t-cabs.org/Device/beispiel-phd-schrittzaehler> ;
+         fhir:reference [ fhir:v "Device/beispiel-phd-schrittzaehler" ]
+       ] ;
+       fhir:name [ fhir:v "Example PHD Step Counter" ] ;
+       fhir:description [ fhir:v "Example of a Personal Health Device step counter for activity measurement" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
@@ -3149,6 +3281,27 @@
        ] ;
        fhir:name [ fhir:v "T-CABS Function" ] ;
        fhir:description [ fhir:v "Profile for a function of a person within the T-CABS study" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://t-cabs.org/StructureDefinition/tCabsLogicalModel> ;
+         fhir:reference [ fhir:v "StructureDefinition/tCabsLogicalModel" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Logical Model" ] ;
+       fhir:description [ fhir:v "Comprehensive logical model for the T-CABS project covering:\n- Cross-domain entities (Patient, Organization)\n- Ventilation data (Devices, DeviceMetric, Procedure, Parameters)\n- Vital data (PHD devices, Parameters)\n\nMappings are provided to concrete T-CABS FHIR profiles for implementation guidance." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

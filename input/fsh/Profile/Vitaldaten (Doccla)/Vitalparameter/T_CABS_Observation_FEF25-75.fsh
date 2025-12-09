@@ -27,5 +27,5 @@ Description: "Example of a FEF25-75% measurement (Mean forced expiratory flow) v
 * valueQuantity.code = #L/s
 * valueQuantity.unit = "L/s"
 * valueQuantity.system = $UCUM
-* device = Reference(Device/beispiel-phd-doccla)
+* device = Reference(Device/beispiel-phd-spirometer)
 * extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

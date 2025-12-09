@@ -27,5 +27,5 @@ Description: "Example of a BMI measurement via Doccla"
 * valueQuantity.code = #kg/m2
 * valueQuantity.unit = "kg/m2"
 * valueQuantity.system = $UCUM
-* device = Reference(Device/beispiel-phd-doccla)
+* device = Reference(Device/beispiel-phd-waage)
 * extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

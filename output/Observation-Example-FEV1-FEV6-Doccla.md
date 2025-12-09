@@ -22,7 +22,7 @@ Profile: [T-CABS Observation FEV1/FEV6](StructureDefinition-t-cabs-observationfe
 
 **value**: 78 %(Details: UCUM code% = '%')
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = CareFusion; serialNumber = CAREFUS-SP-567890; modelNumber = SpiroUSB; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-spirometer.md)
 
 
 
@@ -91,7 +91,7 @@ Profile: [T-CABS Observation FEV1/FEV6](StructureDefinition-t-cabs-observationfe
     "code" : "%"
   },
   "device" : {
-    "reference" : "Device/beispiel-phd-doccla"
+    "reference" : "Device/beispiel-phd-spirometer"
   }
 }
 

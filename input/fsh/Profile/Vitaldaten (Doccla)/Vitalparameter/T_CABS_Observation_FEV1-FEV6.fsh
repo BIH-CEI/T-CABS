@@ -27,5 +27,5 @@ Description: "Example of a FEV1/FEV6 ratio measurement via Doccla"
 * valueQuantity.code = #%
 * valueQuantity.unit = "%"
 * valueQuantity.system = $UCUM
-* device = Reference(Device/beispiel-phd-doccla)
+* device = Reference(Device/beispiel-phd-spirometer)
 * extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

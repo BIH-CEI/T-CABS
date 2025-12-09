@@ -37,5 +37,5 @@ Description: "Example of an arterial SPO2 measurement via Doccla"
 * valueQuantity.unit = "%"
 * valueQuantity.system = $UCUM
 * bodySite.coding = $SCT#11527006 "Arterial system structure (body structure)"
-* device = Reference(Device/beispiel-phd-doccla)
+* device = Reference(Device/beispiel-phd-pulsoximeter)
 * extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

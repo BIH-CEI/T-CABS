@@ -41,5 +41,5 @@ Description: "Example of a hand grip strength measurement via Doccla"
 * valueQuantity.unit = "kg"
 * valueQuantity.system = $UCUM
 * bodySite = $SCT#85562004 "Hand structure (body structure)"
-* device = Reference(Device/beispiel-phd-doccla)
+* device = Reference(Device/beispiel-phd-dynamometer)
 * extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

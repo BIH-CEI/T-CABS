@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/ImplementationGuide/t-cabs | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:TCABS |
+| Draft as of 2025-12-09 | *Computable Name*:TCABS |
 
 The T-CABS (Telemedicine Center for Out-of-Hospital Ventilation and Oxygen Therapy) Implementation Guide defines FHIR R4 profiles and standards for the transmission and exchange of ventilation and vital parameters in home-based ventilation therapy.
 
@@ -92,7 +92,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
   "name" : "TCABS",
   "title" : "T-CABS Implementation Guide",
   "status" : "draft",
-  "date" : "2025-11-25T10:29:35+01:00",
+  "date" : "2025-12-09T09:55:43+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -1427,10 +1427,94 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
           }
         ],
         "reference" : {
-          "reference" : "Device/beispiel-phd-doccla"
+          "reference" : "Device/beispiel-phd-blutdruckmessgeraet"
         },
-        "name" : "Example PHD Measurement Device",
-        "description" : "Example of a Personal Health Device measurement device from Doccla",
+        "name" : "Example PHD Blood Pressure Monitor",
+        "description" : "Example of a Personal Health Device blood pressure monitor (sphygmomanometer)",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-phd-dynamometer"
+        },
+        "name" : "Example PHD Hand Dynamometer",
+        "description" : "Example of a Personal Health Device dynamometer for hand grip strength measurement",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-phd-peakflow"
+        },
+        "name" : "Example PHD Peak Flow Meter",
+        "description" : "Example of a Personal Health Device peak flow meter for respiratory measurement",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-phd-pulsoximeter"
+        },
+        "name" : "Example PHD Pulse Oximeter",
+        "description" : "Example of a Personal Health Device pulse oximeter from Doccla",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-phd-waage"
+        },
+        "name" : "Example PHD Scale",
+        "description" : "Example of a Personal Health Device scale for weight measurement",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-phd-spirometer"
+        },
+        "name" : "Example PHD Spirometer",
+        "description" : "Example of a Personal Health Device spirometer for lung function measurement",
+        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/beispiel-phd-schrittzaehler"
+        },
+        "name" : "Example PHD Step Counter",
+        "description" : "Example of a Personal Health Device step counter for activity measurement",
         "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
       },
       {
@@ -1991,6 +2075,20 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "T-CABS Function",
         "description" : "Profile for a function of a person within the T-CABS study",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/tCabsLogicalModel"
+        },
+        "name" : "T-CABS Logical Model",
+        "description" : "Comprehensive logical model for the T-CABS project covering:\n- Cross-domain entities (Patient, Organization)\n- Ventilation data (Devices, DeviceMetric, Procedure, Parameters)\n- Vital data (PHD devices, Parameters)\n\nMappings are provided to concrete T-CABS FHIR profiles for implementation guidance.",
         "exampleBoolean" : false
       },
       {

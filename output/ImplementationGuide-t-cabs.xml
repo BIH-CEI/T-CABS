@@ -11,7 +11,7 @@
   <name value="TCABS"/>
   <title value="T-CABS Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-11-25T10:29:35+01:00"/>
+  <date value="2025-12-09T09:55:43+01:00"/>
   <publisher value="BIH-CEI"/>
   <contact>
     <name value="BIH-CEI"/>
@@ -936,10 +936,76 @@
         <valueString value="Device"/>
       </extension>
       <reference>
-        <reference value="Device/beispiel-phd-doccla"/>
+        <reference value="Device/beispiel-phd-blutdruckmessgeraet"/>
       </reference>
-      <name value="Example PHD Measurement Device"/>
-      <description value="Example of a Personal Health Device measurement device from Doccla"/>
+      <name value="Example PHD Blood Pressure Monitor"/>
+      <description value="Example of a Personal Health Device blood pressure monitor (sphygmomanometer)"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-phd"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-phd-dynamometer"/>
+      </reference>
+      <name value="Example PHD Hand Dynamometer"/>
+      <description value="Example of a Personal Health Device dynamometer for hand grip strength measurement"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-phd"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-phd-peakflow"/>
+      </reference>
+      <name value="Example PHD Peak Flow Meter"/>
+      <description value="Example of a Personal Health Device peak flow meter for respiratory measurement"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-phd"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-phd-pulsoximeter"/>
+      </reference>
+      <name value="Example PHD Pulse Oximeter"/>
+      <description value="Example of a Personal Health Device pulse oximeter from Doccla"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-phd"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-phd-waage"/>
+      </reference>
+      <name value="Example PHD Scale"/>
+      <description value="Example of a Personal Health Device scale for weight measurement"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-phd"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-phd-spirometer"/>
+      </reference>
+      <name value="Example PHD Spirometer"/>
+      <description value="Example of a Personal Health Device spirometer for lung function measurement"/>
+      <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-phd"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/beispiel-phd-schrittzaehler"/>
+      </reference>
+      <name value="Example PHD Step Counter"/>
+      <description value="Example of a Personal Health Device step counter for activity measurement"/>
       <exampleCanonical value="http://t-cabs.org/StructureDefinition/t-cabs-device-phd"/>
     </resource>
     <resource>
@@ -1380,6 +1446,17 @@
       </reference>
       <name value="T-CABS Function"/>
       <description value="Profile for a function of a person within the T-CABS study"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tCabsLogicalModel"/>
+      </reference>
+      <name value="T-CABS Logical Model"/>
+      <description value="Comprehensive logical model for the T-CABS project covering:&#xA;- Cross-domain entities (Patient, Organization)&#xA;- Ventilation data (Devices, DeviceMetric, Procedure, Parameters)&#xA;- Vital data (PHD devices, Parameters)&#xA;&#xA;Mappings are provided to concrete T-CABS FHIR profiles for implementation guidance."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

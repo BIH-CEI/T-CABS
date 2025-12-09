@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:T_CABS_ValueSet_PHDTyp |
+| Draft as of 2025-12-09 | *Computable Name*:T_CABS_ValueSet_PHDTyp |
 
  
 This ValueSet contains codes to represent the different PHD measurement devices 
@@ -54,7 +54,7 @@ This value set contains 7 concepts
   "name" : "T_CABS_ValueSet_PHDTyp",
   "title" : "T-CABS ValueSet PHD Type",
   "status" : "draft",
-  "date" : "2025-11-25T10:29:35+01:00",
+  "date" : "2025-12-09T09:55:43+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

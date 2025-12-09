@@ -24,7 +24,7 @@ Profiles: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arter
 
 **bodySite**: Arterial system structure (body structure)
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = MASIMO-PO-345678; modelNumber = Radical-7; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-pulsoximeter.md)
 
 
 
@@ -102,7 +102,7 @@ Profiles: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arter
     ]
   },
   "device" : {
-    "reference" : "Device/beispiel-phd-doccla"
+    "reference" : "Device/beispiel-phd-pulsoximeter"
   }
 }
 

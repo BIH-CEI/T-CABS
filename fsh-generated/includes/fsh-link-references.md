@@ -38,7 +38,13 @@
 [Example-IPAP-BREAS]: Observation-Example-IPAP-BREAS.html
 [Example-Leckage-ResMed]: Observation-Example-Leckage-ResMed.html
 [Example-PEEP-Loewenstein]: Observation-Example-PEEP-Loewenstein.html
-[beispiel-phd-doccla]: Device-beispiel-phd-doccla.html
+[beispiel-phd-blutdruckmessgeraet]: Device-beispiel-phd-blutdruckmessgeraet.html
+[beispiel-phd-dynamometer]: Device-beispiel-phd-dynamometer.html
+[beispiel-phd-peakflow]: Device-beispiel-phd-peakflow.html
+[beispiel-phd-pulsoximeter]: Device-beispiel-phd-pulsoximeter.html
+[beispiel-phd-waage]: Device-beispiel-phd-waage.html
+[beispiel-phd-spirometer]: Device-beispiel-phd-spirometer.html
+[beispiel-phd-schrittzaehler]: Device-beispiel-phd-schrittzaehler.html
 [beispiel-phg-doccla]: Device-beispiel-phg-doccla.html
 [Example-DruckMinMax-ResMed]: Observation-Example-DruckMinMax-ResMed.html
 [beispiel-provider-doccla]: Organization-beispiel-provider-doccla.html
@@ -79,6 +85,7 @@
 [T_CABS_DiagnosticReport_Visitenbefund]: StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html
 [T_CABS_Encounter_Kontakt]: StructureDefinition-t-cabs-encounter-kontakt.html
 [T_CABS_PractitionerRole_Funktion]: StructureDefinition-t-cabs-practitioner-funktion.html
+[T_CABS_LogicalModel]: StructureDefinition-tCabsLogicalModel.html
 [T_CABS_Observation_AHI]: StructureDefinition-t-cabs-observation-ahi.html
 [T_CABS_Observation_AMV]: StructureDefinition-t-cabs-observation-amv.html
 [T_CABS_Observation_ArteriellerBlutdruck]: StructureDefinition-t-cabs-observation-arteriellerblutdruck.html

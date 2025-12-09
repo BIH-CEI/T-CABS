@@ -26,8 +26,7 @@
           "coding": [
             {
               "code": "34131-3",
-              "system": "http://loinc.org",
-              "display": "Outpatient Progress note"
+              "system": "http://loinc.org"
             }
           ]
         },

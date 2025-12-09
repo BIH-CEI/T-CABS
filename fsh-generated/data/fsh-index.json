@@ -112,12 +112,60 @@
     "endLine": 55
   },
   {
-    "outputFile": "Device-beispiel-phd-doccla.json",
-    "fshName": "beispiel-phd-doccla",
+    "outputFile": "Device-beispiel-phd-blutdruckmessgeraet.json",
+    "fshName": "beispiel-phd-blutdruckmessgeraet",
     "fshType": "Instance",
     "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHD.fsh",
-    "startLine": 20,
-    "endLine": 37
+    "startLine": 78,
+    "endLine": 95
+  },
+  {
+    "outputFile": "Device-beispiel-phd-dynamometer.json",
+    "fshName": "beispiel-phd-dynamometer",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHD.fsh",
+    "startLine": 59,
+    "endLine": 76
+  },
+  {
+    "outputFile": "Device-beispiel-phd-peakflow.json",
+    "fshName": "beispiel-phd-peakflow",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHD.fsh",
+    "startLine": 135,
+    "endLine": 152
+  },
+  {
+    "outputFile": "Device-beispiel-phd-pulsoximeter.json",
+    "fshName": "beispiel-phd-pulsoximeter",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHD.fsh",
+    "startLine": 21,
+    "endLine": 38
+  },
+  {
+    "outputFile": "Device-beispiel-phd-schrittzaehler.json",
+    "fshName": "beispiel-phd-schrittzaehler",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHD.fsh",
+    "startLine": 116,
+    "endLine": 133
+  },
+  {
+    "outputFile": "Device-beispiel-phd-spirometer.json",
+    "fshName": "beispiel-phd-spirometer",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHD.fsh",
+    "startLine": 97,
+    "endLine": 114
+  },
+  {
+    "outputFile": "Device-beispiel-phd-waage.json",
+    "fshName": "beispiel-phd-waage",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Device_PHD.fsh",
+    "startLine": 40,
+    "endLine": 57
   },
   {
     "outputFile": "Device-beispiel-phg-doccla.json",
@@ -934,6 +982,14 @@
     "fshFile": "Profile/Beatmungsdaten/T_CABS_Procedure_Beatmung.fsh",
     "startLine": 1,
     "endLine": 39
+  },
+  {
+    "outputFile": "StructureDefinition-tCabsLogicalModel.json",
+    "fshName": "T_CABS_LogicalModel",
+    "fshType": "Logical",
+    "fshFile": "LogicalModel/T_CABS_LogicalModel.fsh",
+    "startLine": 1,
+    "endLine": 244
   },
   {
     "outputFile": "ValueSet-t-cabs-valueset-Beatmungsform.json",

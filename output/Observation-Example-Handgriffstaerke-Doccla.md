@@ -24,7 +24,7 @@ Profile: [T-CABS Observation Hand Grip Strength](StructureDefinition-t-cabs-obse
 
 **bodySite**: Hand structure (body structure)
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = JAMAR; serialNumber = JAMAR-HG-456789; modelNumber = 5030J1; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-dynamometer.md)
 
 
 
@@ -102,7 +102,7 @@ Profile: [T-CABS Observation Hand Grip Strength](StructureDefinition-t-cabs-obse
     ]
   },
   "device" : {
-    "reference" : "Device/beispiel-phd-doccla"
+    "reference" : "Device/beispiel-phd-dynamometer"
   }
 }
 

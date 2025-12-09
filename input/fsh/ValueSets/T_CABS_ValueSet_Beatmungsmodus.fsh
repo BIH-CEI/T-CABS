@@ -40,19 +40,45 @@ Description: "This ValueSet contains codes to represent the different ventilatio
 * $IEEE-11073#475144 "MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP"
 
 /*
-PCV(TgV)	- 
-T		    - 
-aVCV	
-HFNT	
-iVAPS	
+PCV(TgV)	- 475150 "MDC_VENT_MODE_ISO_CMV_vtPC"
+T		    - 184353 "MDC_VENT_MODE_RESP_SPONT"
+
+aVCV	    - 
+Option 1 - Standard Volume Control mit Assist:
+
+475140 - MDC_VENT_MODE_ISO_AC_VC_6ACAPL (Assist Control Volume Control)
+475193 - MDC_VENT_MODE_ISO_AC_VC_3CC (Assist Control Volume Control mit Cycle Control)
+
+Option 2 - Volume Control mit adaptiven Eigenschaften (mit Cycle Control):
+
+475193 - MDC_VENT_MODE_ISO_AC_VC_3CC
+
+HFNT	- 1259025002 "Heated and humidified high flow oxygen therapy using nasal cannula"
+iVAPS	- 475198 "MDC_VENT_MODE_ISO_CSV_vtPS_3CC" Volume Support (volume-targeted Pressure Support with Cycle Control)
 S
-APCV		
-PCV-MPV
+APCV & aPCV	- 475172 "MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC" (adaptiv) oder 475147 "MDC_VENT_MODE_ISO_AC_PC_6ACAP"	(Standard AC-PC)
+PCV-MPV & MPVp - 475149 "MDC_VENT_MODE_ISO_CMV_PC_6ACAP" Continuous pressure-controlled ventilation allowing spontaneous breathing during the entire respiratory cycle
+
 VCV-MPV
+Option 1 - Basis:
+
+IEEE 11073-10101 Code: 475201
+Display: MDC_VENT_MODE_ISO_CMV_VC
+Definition: Volume Control Ventilation
+
+Option 2 - Mit Adjunkten:
+
+IEEE 11073-10101 Code: 475138
+Display: MDC_VENT_MODE_ISO_CMV_VC_6ACAPL
+Definition: Continuous volume-controlled ventilation with fixed inspiratory flow
+
 PCV(AE)		
+Möglichkeit 1: AE = Assist/Exhalation (Standard AC-PC)
+Möglichkeit 2: AE = Airway Pressure Release (APRV)
+Möglichkeit 3: Standard CMV-PC (ohne spezielle Features)
+
 MPVv
-aPCV		
-MPVp
+		
 PSV(AE)		
 autoST		
 */

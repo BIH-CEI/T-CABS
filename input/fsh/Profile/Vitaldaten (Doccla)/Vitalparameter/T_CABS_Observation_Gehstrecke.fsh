@@ -28,5 +28,5 @@ Description: "Example of a walking distance measurement via Doccla"
 * valueQuantity.code = #{#}/(24.h)
 * valueQuantity.unit = "{#}/(24.h)"
 * valueQuantity.system = $UCUM
-* device = Reference(Device/beispiel-phd-doccla)
+* device = Reference(Device/beispiel-phd-schrittzaehler)
 * extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

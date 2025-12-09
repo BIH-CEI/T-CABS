@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:T_CABS_Device_MDS_Beatmungsgeraet |
+| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Device_MDS_Beatmungsgeraet |
 
  
 Profile for a home ventilator device 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-mds-be
   "name" : "T_CABS_Device_MDS_Beatmungsgeraet",
   "title" : "T-CABS Device MDS Home Ventilator",
   "status" : "draft",
-  "date" : "2025-11-25T10:29:35+01:00",
+  "date" : "2025-12-09T09:55:43+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

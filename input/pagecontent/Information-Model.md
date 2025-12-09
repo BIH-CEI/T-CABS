@@ -9,3 +9,9 @@ The following PlantUML diagram shows all T-CABS profiles with their inheritance 
 **Download UML Diagram:**
 - [Download PNG format](T_CABS_UML.png)
 - [Download SVG format](T-CABS_UML.svg)
+
+### T-CABS Logical Model
+
+The following logical model provides an abstract representation of the T-CABS data structures, making them accessible to users who are not familiar with FHIR technical details. The model is organized into three main domains: Cross-Domain entities (Patient, Organization), Ventilation Data (devices and parameters), and Vital Data (personal health devices and parameters).
+
+{% include StructureDefinition-t-cabs-logical-model-snapshot.xhtml %}

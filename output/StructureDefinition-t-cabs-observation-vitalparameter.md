@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:T_CABS_Observation_Vitalparameter |
+| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_Vitalparameter |
 
  
 Abstract profile for measured vital parameters 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
   "name" : "T_CABS_Observation_Vitalparameter",
   "title" : "T-CABS Observation Vital Parameter",
   "status" : "draft",
-  "date" : "2025-11-25T10:29:35+01:00",
+  "date" : "2025-12-09T09:55:43+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

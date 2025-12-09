@@ -6,7 +6,7 @@ Description: "Profile for a contact with the patient.
 Compatibility:
 The T_CABS_Encounter_Kontakt profile aims for compatibility with the ISiKKontaktGesundheitseinrichtung, however it cannot be guaranteed that instances valid against T_CABS_Encounter_Kontakt are also valid against the [ISiKKontaktGesundheitseinrichtung](https://simplifier.net/isik-stufe-5/isikkontaktgesundheitseinrichtung)"
 
-// type  #konsil
+// type = #konsil #nachstationaer???
 // class = #VR "virtual" oder #HH "home health" oder ambulat/stationär?
 
 * subject 1..1 MS

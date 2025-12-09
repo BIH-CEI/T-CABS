@@ -32,5 +32,5 @@ Description: "Example of a body weight measurement via Doccla"
 * valueQuantity.code = #kg
 * valueQuantity.unit = "kg"
 * valueQuantity.system = $UCUM
-* device = Reference(Device/beispiel-phd-doccla)
+* device = Reference(Device/beispiel-phd-waage)
 * extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

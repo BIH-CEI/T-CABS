@@ -34,5 +34,5 @@ Description: "Example of a body temperature measurement via Doccla"
 * valueQuantity.code = #Cel
 * valueQuantity.unit = "°C"
 * valueQuantity.system = $UCUM
-* device = Reference(Device/beispiel-phd-doccla)
+* device = Reference(Device/beispiel-phd-pulsoximeter)
 * extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

@@ -25,6 +25,10 @@
 * [T-CABS ValueSet Ventilation Site](ValueSet-t-cabs-valueset-beatmungsstelle.md)
 * [T-CABS ValueSet PHD Type](ValueSet-t-cabs-valueset-phdtyp.md)
 
+### Logicals
+
+* [T-CABS Logical Model](StructureDefinition-tCabsLogicalModel.md)
+
 ### Resource Profiles
 
 * [T-CABS Device Channel Ventilator](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md)
@@ -90,7 +94,13 @@
 * [beispiel-channel-resmed-atemzeit (Device)](Device-beispiel-channel-resmed-atemzeit.md)
 * [beispiel-channel-resmed-druck (Device)](Device-beispiel-channel-resmed-druck.md)
 * [beispiel-channel-resmed-leckage (Device)](Device-beispiel-channel-resmed-leckage.md)
-* [beispiel-phd-doccla (Device)](Device-beispiel-phd-doccla.md)
+* [beispiel-phd-blutdruckmessgeraet (Device)](Device-beispiel-phd-blutdruckmessgeraet.md)
+* [beispiel-phd-dynamometer (Device)](Device-beispiel-phd-dynamometer.md)
+* [beispiel-phd-peakflow (Device)](Device-beispiel-phd-peakflow.md)
+* [beispiel-phd-pulsoximeter (Device)](Device-beispiel-phd-pulsoximeter.md)
+* [beispiel-phd-schrittzaehler (Device)](Device-beispiel-phd-schrittzaehler.md)
+* [beispiel-phd-spirometer (Device)](Device-beispiel-phd-spirometer.md)
+* [beispiel-phd-waage (Device)](Device-beispiel-phd-waage.md)
 * [beispiel-phg-doccla (Device)](Device-beispiel-phg-doccla.md)
 * [beispiel-vmd-breas-ahi (Device)](Device-beispiel-vmd-breas-ahi.md)
 * [beispiel-vmd-breas-amv (Device)](Device-beispiel-vmd-breas-amv.md)

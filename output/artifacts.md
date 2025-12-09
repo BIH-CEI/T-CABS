@@ -7,6 +7,17 @@
 
 This page provides a list of the FHIR artifacts defined as part of this implementation guide.
 
+### Structures: Logical Models 
+
+These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.
+
+| | |
+| :--- | :--- |
+| [T-CABS Logical Model](StructureDefinition-tCabsLogicalModel.md) | Comprehensive logical model for the T-CABS project covering:* Cross-domain entities (Patient, Organization)
+* Ventilation data (Devices, DeviceMetric, Procedure, Parameters)
+* Vital data (PHD devices, Parameters)
+Mappings are provided to concrete T-CABS FHIR profiles for implementation guidance. |
+
 ### Structures: Resource Profiles 
 
 These define constraints on FHIR resources for systems conforming to this implementation guide.
@@ -113,7 +124,13 @@ These are example instances that show what data produced and consumed by systems
 | [Example IPAP BREAS](Observation-Example-IPAP-BREAS.md) | Example of IPAP from a BREAS ventilator |
 | [Example Leakage ResMed](Observation-Example-Leckage-ResMed.md) | Example of leakage measurement from a ResMed ventilator |
 | [Example PEEP Löwenstein](Observation-Example-PEEP-Loewenstein.md) | Example of PEEP from a Löwenstein ventilator |
-| [Example PHD Measurement Device](Device-beispiel-phd-doccla.md) | Example of a Personal Health Device measurement device from Doccla |
+| [Example PHD Blood Pressure Monitor](Device-beispiel-phd-blutdruckmessgeraet.md) | Example of a Personal Health Device blood pressure monitor (sphygmomanometer) |
+| [Example PHD Hand Dynamometer](Device-beispiel-phd-dynamometer.md) | Example of a Personal Health Device dynamometer for hand grip strength measurement |
+| [Example PHD Peak Flow Meter](Device-beispiel-phd-peakflow.md) | Example of a Personal Health Device peak flow meter for respiratory measurement |
+| [Example PHD Pulse Oximeter](Device-beispiel-phd-pulsoximeter.md) | Example of a Personal Health Device pulse oximeter from Doccla |
+| [Example PHD Scale](Device-beispiel-phd-waage.md) | Example of a Personal Health Device scale for weight measurement |
+| [Example PHD Spirometer](Device-beispiel-phd-spirometer.md) | Example of a Personal Health Device spirometer for lung function measurement |
+| [Example PHD Step Counter](Device-beispiel-phd-schrittzaehler.md) | Example of a Personal Health Device step counter for activity measurement |
 | [Example PHG Tablet](Device-beispiel-phg-doccla.md) | Example of a Personal Health Gateway tablet from Doccla |
 | [Example Pressure Min/Max ResMed](Observation-Example-DruckMinMax-ResMed.md) | Example of minimal and maximal ventilation pressure from a ResMed device |
 | [Example Provider Doccla](Organization-beispiel-provider-doccla.md) | Example for the vital parameter provider Doccla |

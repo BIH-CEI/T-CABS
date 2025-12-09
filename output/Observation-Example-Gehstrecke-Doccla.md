@@ -22,7 +22,7 @@ Profile: [T-CABS Observation Walking Distance](StructureDefinition-t-cabs-observ
 
 **value**: 8520 {#}/(24.h)(Details: UCUM code{#}/(24.h) = '{#}/(24.h)')
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Fitbit; serialNumber = FITBIT-ST-678901; modelNumber = Charge 5; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-schrittzaehler.md)
 
 
 
@@ -91,7 +91,7 @@ Profile: [T-CABS Observation Walking Distance](StructureDefinition-t-cabs-observ
     "code" : "{#}/(24.h)"
   },
   "device" : {
-    "reference" : "Device/beispiel-phd-doccla"
+    "reference" : "Device/beispiel-phd-schrittzaehler"
   }
 }
 

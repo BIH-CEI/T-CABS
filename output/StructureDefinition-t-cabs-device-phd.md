@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-phd | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:T_CABS_Device_PHD |
+| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Device_PHD |
 
  
 Profile for a personal health device measuring at the patient 
@@ -17,7 +17,7 @@ Profile for a personal health device measuring at the patient
 **Usages:**
 
 * Refer to this Profile: [T-CABS Observation Vital Parameter](StructureDefinition-t-cabs-observation-vitalparameter.md) and [T-CABS Observation Vital Parameter with Components](StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.md)
-* Examples for this Profile: [Device/beispiel-phd-doccla](Device-beispiel-phd-doccla.md)
+* Examples for this Profile: [Device/beispiel-phd-blutdruckmessgeraet](Device-beispiel-phd-blutdruckmessgeraet.md), [Device/beispiel-phd-dynamometer](Device-beispiel-phd-dynamometer.md), [Device/beispiel-phd-peakflow](Device-beispiel-phd-peakflow.md), [Device/beispiel-phd-pulsoximeter](Device-beispiel-phd-pulsoximeter.md)...Show 3 more,[Device/beispiel-phd-schrittzaehler](Device-beispiel-phd-schrittzaehler.md),[Device/beispiel-phd-spirometer](Device-beispiel-phd-spirometer.md)and[Device/beispiel-phd-waage](Device-beispiel-phd-waage.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-device-phd)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phd.cs
   "name" : "T_CABS_Device_PHD",
   "title" : "T-CABS Device PHD",
   "status" : "draft",
-  "date" : "2025-11-25T10:29:35+01:00",
+  "date" : "2025-12-09T09:55:43+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

@@ -20,7 +20,7 @@ Profiles: [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cab
 
 **effective**: 2024-01-15 09:00:00+0000 --> 2024-01-15 09:00:00+0000
 
-**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = PHD-SN-345678; modelNumber = DPO-2024; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-doccla.md)
+**device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = OMRON; serialNumber = OMRON-BP-234567; modelNumber = M7 Intelli IT; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-blutdruckmessgeraet.md)
 
 > **component****code**:Systolic blood pressure**value**: 125 mm[Hg](Details: UCUM codemm[Hg] = 'mm[Hg]')
 
@@ -88,7 +88,7 @@ Profiles: [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cab
     "end" : "2024-01-15T09:00:00Z"
   },
   "device" : {
-    "reference" : "Device/beispiel-phd-doccla"
+    "reference" : "Device/beispiel-phd-blutdruckmessgeraet"
   },
   "component" : [
     {

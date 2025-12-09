@@ -27,5 +27,5 @@ Description: "Example of a FEV6 measurement (Forced Expiratory Volume in 6 Secon
 * valueQuantity.code = #L
 * valueQuantity.unit = "L"
 * valueQuantity.system = $UCUM
-* device = Reference(Device/beispiel-phd-doccla)
+* device = Reference(Device/beispiel-phd-spirometer)
 * extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

@@ -7,7 +7,7 @@ Description: "Profile for an assessment of the weekly telemedicine visit within 
 * status MS
 
 * code MS
-* code = $LOINC#34131-3 "Outpatient Progress note"
+* code = $LOINC#34131-3 //"Outpatient Progress note"
 
 * subject only Reference(T_CABS_Patient)
 

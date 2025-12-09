@@ -69,6 +69,6 @@
     "reference": "Patient/tcabs-patient-example"
   },
   "device": {
-    "reference": "Device/beispiel-phd-doccla"
+    "reference": "Device/beispiel-phd-pulsoximeter"
   }
 }
