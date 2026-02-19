@@ -1,6 +1,6 @@
-name: Build IG after a push
+name: Build IG and Deploy to GitHub Pages
 
-on: 
+on:
   push:
     branches: [ main, development ]
   workflow_dispatch:
@@ -10,8 +10,15 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,3 +28,12 @@ jobs:
         run: bash ./_updatePublisher.sh
       - name: Run genonce
         run: bash ./_genonce.sh
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './output'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

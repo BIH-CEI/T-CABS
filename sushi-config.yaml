@@ -73,8 +73,6 @@ pages:
     title: Ventilation Data Implementation
   Terminologies.md:
     title: Terminologies
-  Release-Notes.md:
-    title: Release Notes
 
 
 #   implementation.xml:
@@ -123,7 +121,6 @@ menu:
     "Vital Data": Vital-Data-Implementation.html
     "Ventilation Data": Ventilation-Data-Implementation.html
   Terminologies: Terminologies.html
-  Release Notes: Release-Notes.html
   Artifacts: artifacts.html
 
 
