@@ -5,6 +5,7 @@ Title: "T-CABS Observation Leakage"
 Description: "Profile for leakage rate during ventilation"
 
 * code.coding = $IEEE-11073#152432 //"MDC_VENT_VOL_LEAK"
+* code.coding ^definition = "Volume of gas lost per minute by leakage in ventilation system, tubing, connectors, etc."
 
 * effective[x] only Period
 

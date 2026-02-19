@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_ArteriellerBlutdruck |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Observation_ArteriellerBlutdruck |
 
  
-Profile for arterial blood pressure. Compatibility: For the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the[ISiKBlutdruckArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell) 
+Profile for arterial blood pressure. Compatibility: For the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the [ISiKBlutdruckArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell) 
 
 **Usages:**
 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-observation-arteriellerblutdruck",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_ArteriellerBlutdruck",
   "title" : "T-CABS Observation Arterial Blood Pressure",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
+  "baseDefinition" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -402,7 +402,8 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
           "coding" : [
             {
               "system" : "http://loinc.org",
-              "code" : "8480-6"
+              "code" : "8480-6",
+              "display" : "Systolic blood pressure"
             }
           ]
         }
@@ -444,7 +445,8 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
           "coding" : [
             {
               "system" : "http://loinc.org",
-              "code" : "8462-4"
+              "code" : "8462-4",
+              "display" : "Diastolic blood pressure"
             }
           ]
         }
@@ -486,7 +488,8 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
           "coding" : [
             {
               "system" : "http://loinc.org",
-              "code" : "8478-0"
+              "code" : "8478-0",
+              "display" : "Mean blood pressure"
             }
           ]
         }

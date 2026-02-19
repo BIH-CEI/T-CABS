@@ -5,6 +5,7 @@ Title: "T-CABS Observation Respiratory Rate Ventilated"
 Description: "Profile for a respiratory rate of the ventilator"
 
 * code.coding = $IEEE-11073#151586 //"MDC_VENT_RESP_RATE"
+* code.coding ^definition = "Rate of mechanical ventilation; method not specified."
 
 * valueQuantity.code = #/min
 * valueQuantity.unit = "/min"

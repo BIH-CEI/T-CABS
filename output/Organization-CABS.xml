@@ -3,7 +3,7 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="CABS"/>
   <meta>
-    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-organisation"/>
+    <profile value="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"/>
     <profile value="https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation"/>
   </meta>
   <text>

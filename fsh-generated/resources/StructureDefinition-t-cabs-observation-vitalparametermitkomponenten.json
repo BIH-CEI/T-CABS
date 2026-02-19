@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-vitalparametermitkomponenten",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
   "name": "T_CABS_Observation_VitalparameterMitKomponenten",
   "title": "T-CABS Observation Vital Parameter with Components",
   "status": "draft",
@@ -21,7 +21,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-phg"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg"
             ]
           }
         ]
@@ -91,7 +91,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
             ]
           }
         ],
@@ -114,7 +114,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"
             ]
           }
         ],

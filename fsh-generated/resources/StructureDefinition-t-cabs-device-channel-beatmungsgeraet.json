@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-device-channel-beatmungsgeraet",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
   "name": "T_CABS_Device_Channel_Beatmungsgeraet",
   "title": "T-CABS Device Channel Ventilator",
   "status": "draft",
@@ -21,7 +21,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
             ]
           }
         ]

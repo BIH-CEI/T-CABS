@@ -7,13 +7,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/Observation/Example-FEV6-Doccla> a fhir:Observation ;
+<https://bih-cei.github.io/T-CABS/Observation/Example-FEV6-Doccla> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "Example-FEV6-Doccla"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observationfev6"^^xsd:anyURI ;
-       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationfev6>
+       fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6"^^xsd:anyURI ;
+       fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6>
      ] )
   ] ; # 
   fhir:text [
@@ -27,7 +27,7 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <http://t-cabs.org/Device/beispiel-phg-doccla> ;
+       fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phg-doccla> ;
        fhir:reference [ fhir:v "Device/beispiel-phg-doccla" ]
      ]
   ] ) ; # 
@@ -67,7 +67,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Patient/tcabs-patient-example> ;
      fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
   ] ; # 
   fhir:effective [
@@ -86,7 +86,7 @@
      fhir:code [ fhir:v "L" ]
   ] ; # 
   fhir:device [
-     fhir:l <http://t-cabs.org/Device/beispiel-phd-spirometer> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phd-spirometer> ;
      fhir:reference [ fhir:v "Device/beispiel-phd-spirometer" ]
   ] . # 
 

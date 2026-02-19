@@ -3,7 +3,7 @@
   "id": "Example-AMV-BREAS-gemessen",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv"
     ]
   },
   "code": {

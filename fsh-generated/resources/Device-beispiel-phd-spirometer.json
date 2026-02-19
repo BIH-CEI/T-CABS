@@ -3,7 +3,7 @@
   "id": "beispiel-phd-spirometer",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"
     ]
   },
   "identifier": [

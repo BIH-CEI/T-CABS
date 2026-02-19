@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-device-phd",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-phd",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd",
   "name": "T_CABS_Device_PHD",
   "title": "T-CABS Device PHD",
   "status": "draft",
@@ -47,7 +47,7 @@
         "short": "Type of measurement device",
         "binding": {
           "strength": "required",
-          "valueSet": "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp"
+          "valueSet": "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-phdtyp"
         }
       },
       {
@@ -59,7 +59,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
             ]
           }
         ],

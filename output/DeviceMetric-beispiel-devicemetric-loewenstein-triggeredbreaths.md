@@ -43,7 +43,7 @@ Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-deviceme
   "id" : "beispiel-devicemetric-loewenstein-triggeredbreaths",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
     ]
   },
   "identifier" : [

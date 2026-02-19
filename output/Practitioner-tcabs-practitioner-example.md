@@ -24,7 +24,7 @@ Profiles: [T-CABS Person with Function](StructureDefinition-t-cabs-practitioner-
   "id" : "tcabs-practitioner-example",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0"
     ]
   },

@@ -2,7 +2,7 @@
   "resourceType" : "Procedure",
   "id" : "beispiel-beatmung-loewenstein",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"]
+    "profile" : ["https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"]
   },
   "text" : {
     "status" : "generated",

@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-phg | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Device_PHG |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Device_PHG |
 
  
 Profile for a tablet used as a gateway device 
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phg.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-device-phg",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phg",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg",
   "version" : "0.1.0",
   "name" : "T_CABS_Device_PHG",
   "title" : "T-CABS Device PHG",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -146,7 +146,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phg.cs
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
+            ]
           }
         ],
         "mustSupport" : true

@@ -1,18 +1,18 @@
-# T-CABS Observation SPO2 - T-CABS Implementation Guide v0.1.0
+# T-CABS Observation Arterielle SPO2 - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Observation SPO2**
+* **T-CABS Observation Arterielle SPO2**
 
-## Resource Profile: T-CABS Observation SPO2 
+## Resource Profile: T-CABS Observation Arterielle SPO2 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2 | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_ArterielleSPO2 |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2 | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Observation_ArterielleSPO2 |
 
  
-Profile for arterial oxygen saturation (SPO2) Compatibility: For the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the[ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell) 
+Profile for arterial oxygen saturation (SPO2) Compatibility: For the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell) 
 
 **Usages:**
 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-observation-arteriellespo2",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_ArterielleSPO2",
-  "title" : "T-CABS Observation SPO2",
+  "title" : "T-CABS Observation Arterielle SPO2",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "baseDefinition" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter",
   "derivation" : "constraint",
   "differential" : {
     "element" : [

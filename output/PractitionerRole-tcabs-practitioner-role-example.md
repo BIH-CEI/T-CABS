@@ -26,7 +26,7 @@ Profile: [T-CABS Function](StructureDefinition-t-cabs-practitioner-funktion.md)
   "id" : "tcabs-practitioner-role-example",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion"
     ]
   },
   "active" : true,

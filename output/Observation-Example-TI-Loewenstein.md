@@ -20,7 +20,7 @@ Profile: [T-CABS Observation TI](StructureDefinition-t-cabs-observation-ti.md)
 
 **effective**: 2024-10-07 20:30:00+0200 --> 2024-10-07 20:45:00+0200
 
-**value**: 1.2 s(Details: UCUM codes = 's')
+**value**: 1.2 s (Details: UCUM codes = 's')
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-LOEW-TI-001; type = MDC_VENT_TIME_PD_INSP; unit = s; operationalStatus = on; color = yellow; category = measurement; measurementPeriod = Once per 1 second](DeviceMetric-beispiel-devicemetric-loewenstein-ti.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation TI](StructureDefinition-t-cabs-observation-ti.md)
   "id" : "Example-TI-Loewenstein",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
     ]
   },
   "partOf" : [

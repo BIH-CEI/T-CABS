@@ -24,8 +24,6 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/hl7.css" rel="stylesheet"/>
-<link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -47,24 +45,28 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.9"}
-    h3,h4,h5,h6{--heading-prefix:"13.9"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.9"}
+    h3,h4,h5,h6{--heading-prefix:"14.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
-
+        <!-- T-CABS Header Logos -->
 <div id="project-nav">
-    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
-        <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
-    </a>            
+    <a id="project-logo" data-no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+        <img alt="T-CABS Project" height="50" src="T-CABS_Logo.png"/>
+    </a>
+</div>
+<div id="charite-nav">
+    <a id="charite-logo" data-no-external="true" href="https://www.charite.de/">
+        <img alt="Charité" height="50" src="Logo_Charite.png"/>
+    </a>
+</div>
+<div id="family-nav">
+    <a id="family-logo" data-no-external="true" href="https://www.bihealth.org/">
+        <img alt="BIH" height="50" src="BIH-Logo_neu.png"/>
+    </a>
 </div>
 
-<div id="family-nav">
-    <a id="family-logo" no-external="true" href="https://www.charite.de/">
-        <img alt="visit the website" height="60" src="Logo_Charite.png" />
-    </a>            
-</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
@@ -158,6 +160,9 @@
     <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
+    <a href="Release-Notes.html">Release Notes</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>
@@ -195,7 +200,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://bih-cei.github.io/T-CABS/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -282,10 +287,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt|0.1.0"/></span>
       </td>
     </tr>
 
@@ -301,7 +306,7 @@
         
           Draft
           
-            as of 2025-12-09
+            as of 2026-02-19
           
         
       </td>
@@ -1350,7 +1355,7 @@ oder ein Abteilungskontakt Teil eines Einrichtungskontaktes ist." data-no-extern
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Teil von Kontakt<br class="constraint"/><span title="null" class="constraint">Constraints: </span><span style="font-weight:bold" title="SHALL have a contained resource if a local reference is provided" class="constraint">ref-1</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-encounter-kontaktK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-encounter-kontaktK'), 'binding', document.getElementById('cbt-cabs-encounter-kontaktK-binding').checked, document.getElementById('ppt-cabs-encounter-kontaktK'));
 document.getElementById('cbt-cabs-encounter-kontaktK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1837,7 +1842,7 @@ filterDesc(document.getElementById('t-cabs-encounter-kontaktK'), 'obligation', d
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/organization.html">Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Leistungserbringer</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-encounter-kontaktD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-encounter-kontaktD'), 'binding', document.getElementById('cbt-cabs-encounter-kontaktD-binding').checked, document.getElementById('ppt-cabs-encounter-kontaktD'));
 document.getElementById('cbt-cabs-encounter-kontaktD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2423,7 +2428,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">inpatient | outpatient | ambulatory | emergency +<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.0/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Classification of the encounter.</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">inpatient | outpatient | ambulatory | emergency +<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Classification of the encounter.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a12.e" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-encounter-kontakt-definitions.html#Encounter.classHistory.period" title="The time that the episode was in the specified class." data-no-external="true">period</a><a name="s-Encounter.classHistory.period"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( per-1 )">C</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -2737,7 +2742,7 @@ Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassun
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indicates the urgency of the encounter<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.0/ValueSet-v3-ActPriority.html" title="http://terminology.hl7.org/ValueSet/v3-ActPriority" class="binding">ActPriority</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Indicates the urgency of the encounter.</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indicates the urgency of the encounter<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActPriority.html" title="http://terminology.hl7.org/ValueSet/v3-ActPriority" class="binding">ActPriority</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Indicates the urgency of the encounter.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a16." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-encounter-kontakt-definitions.html#Encounter.subject" title="VERPFLICHTEND, Referenz auf Patient:in." data-no-external="true">subject</a><a name="s-Encounter.subject"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ref-1 )">C</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -2956,7 +2961,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The type of hospital re-admission that has occurred (if any). If the value is absent, then this is not identified as a readmission<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.0/ValueSet-v2-0092.html" title="http://terminology.hl7.org/ValueSet/v2-0092" class="binding">hl7VS-re-admissionIndicator</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">The reason for re-admission of this hospitalization encounter.</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The type of hospital re-admission that has occurred (if any). If the value is absent, then this is not identified as a readmission<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v2-0092.html" title="http://terminology.hl7.org/ValueSet/v2-0092" class="binding">hl7VS-re-admissionIndicator</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">The reason for re-admission of this hospitalization encounter.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a27.h" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-encounter-kontakt-definitions.html#Encounter.hospitalization.dietPreference" title="Diet preferences reported by the patient." data-no-external="true">dietPreference</a><a name="s-Encounter.hospitalization.dietPreference"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -3358,7 +3363,7 @@ oder ein Abteilungskontakt Teil eines Einrichtungskontaktes ist." data-no-extern
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Teil von Kontakt<br class="constraint"/><span title="null" class="constraint">Constraints: </span><span style="font-weight:bold" title="SHALL have a contained resource if a local reference is provided" class="constraint">ref-1</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-encounter-kontaktS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-encounter-kontaktS'), 'binding', document.getElementById('cbt-cabs-encounter-kontaktS-binding').checked, document.getElementById('ppt-cabs-encounter-kontaktS'));
 document.getElementById('cbt-cabs-encounter-kontaktS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3549,12 +3554,12 @@ filterDesc(document.getElementById('t-cabs-encounter-kontaktS'), 'obligation', d
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
     <td title="Classification of the encounter.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.0">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
     </td>
   </tr>
   <tr>
@@ -3646,12 +3651,12 @@ filterDesc(document.getElementById('t-cabs-encounter-kontaktS'), 'obligation', d
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Indicates the urgency of the encounter.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.0/ValueSet-v3-ActPriority.html">ActPriority</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActPriority.html">ActPriority</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActPriority" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.0">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
     </td>
   </tr>
   <tr>
@@ -3743,12 +3748,12 @@ filterDesc(document.getElementById('t-cabs-encounter-kontaktS'), 'obligation', d
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="The reason for re-admission of this hospitalization encounter.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.0/ValueSet-v2-0092.html">hl7VS-re-admissionIndicator</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v2-0092.html">hl7VS-re-admissionIndicator</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0092" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is not explicitly stated, which means it is fixed to 2.0.0, the version found through the package references">&#x1F4E6;2.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.0">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
     </td>
   </tr>
   <tr>
@@ -4252,7 +4257,7 @@ Klassifizierung des Kontaktes in stationär, ambulant, teilstationär oder ander
       "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.serviceType.text" title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user" class="dict"><span style="text-decoration: underline">text</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Plain text representation of the concept</span>
     },
     "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.priority" title="Indicates the urgency of the encounter" class="dict"><span style="text-decoration: underline">priority</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Indicates the urgency of the encounter</a></span>
-    "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.subject" title="VERPFLICHTEND, Referenz auf Patient:in (this element must be supported)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ref-1: SHALL have a contained resource if a local reference is provided"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Patientenidentifikator</span>
+    "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.subject" title="VERPFLICHTEND, Referenz auf Patient:in (this element must be supported)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ref-1: SHALL have a contained resource if a local reference is provided"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Patientenidentifikator</span>
     "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.episodeOfCare" title="Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used. This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years)" class="dict"><span style="text-decoration: underline">episodeOfCare</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ref-1: SHALL have a contained resource if a local reference is provided"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Episode(s) of care that this encounter should be recorded against</span>
     "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.basedOn" title="The request this encounter satisfies (e.g. incoming referral or procedure request)" class="dict"><span style="text-decoration: underline">basedOn</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ref-1: SHALL have a contained resource if a local reference is provided"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The ServiceRequest that initiated this encounter</span>
     "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.participant" title="The list of people responsible for providing the service" class="dict"><span style="text-decoration: underline">participant</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">List of participants involved in the encounter</span>
@@ -4393,7 +4398,7 @@ Summary
 <p>Mandatory: 1 element<br/> Must-Support: 1 element</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-patient)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient)</span></a></li>
 
 </ul>
 
@@ -5378,7 +5383,7 @@ oder ein Abteilungskontakt Teil eines Einrichtungskontaktes ist." data-no-extern
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Teil von Kontakt<br class="constraint"/><span title="null" class="constraint">Constraints: </span><span style="font-weight:bold" title="SHALL have a contained resource if a local reference is provided" class="constraint">ref-1</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-encounter-kontaktKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-encounter-kontaktKA'), 'binding', document.getElementById('cbt-cabs-encounter-kontaktKA-binding').checked, document.getElementById('ppt-cabs-encounter-kontaktKA'));
 document.getElementById('cbt-cabs-encounter-kontaktKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -5865,7 +5870,7 @@ filterDesc(document.getElementById('t-cabs-encounter-kontaktKA'), 'obligation', 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/organization.html">Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Leistungserbringer</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-encounter-kontaktDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-encounter-kontaktDA'), 'binding', document.getElementById('cbt-cabs-encounter-kontaktDA-binding').checked, document.getElementById('ppt-cabs-encounter-kontaktDA'));
 document.getElementById('cbt-cabs-encounter-kontaktDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -6450,7 +6455,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">inpatient | outpatient | ambulatory | emergency +<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.0/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Classification of the encounter.</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">inpatient | outpatient | ambulatory | emergency +<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Classification of the encounter.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a12.e" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-encounter-kontakt-definitions.html#Encounter.classHistory.period" title="The time that the episode was in the specified class." data-no-external="true">period</a><a name="sa-Encounter.classHistory.period"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( per-1 )">C</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -6764,7 +6769,7 @@ Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassun
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indicates the urgency of the encounter<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.0/ValueSet-v3-ActPriority.html" title="http://terminology.hl7.org/ValueSet/v3-ActPriority" class="binding">ActPriority</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Indicates the urgency of the encounter.</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indicates the urgency of the encounter<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActPriority.html" title="http://terminology.hl7.org/ValueSet/v3-ActPriority" class="binding">ActPriority</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">Indicates the urgency of the encounter.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a16." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-encounter-kontakt-definitions.html#Encounter.subject" title="VERPFLICHTEND, Referenz auf Patient:in." data-no-external="true">subject</a><a name="sa-Encounter.subject"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ref-1 )">C</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
@@ -6983,7 +6988,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The type of hospital re-admission that has occurred (if any). If the value is absent, then this is not identified as a readmission<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.0/ValueSet-v2-0092.html" title="http://terminology.hl7.org/ValueSet/v2-0092" class="binding">hl7VS-re-admissionIndicator</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">The reason for re-admission of this hospitalization encounter.</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The type of hospital re-admission that has occurred (if any). If the value is absent, then this is not identified as a readmission<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v2-0092.html" title="http://terminology.hl7.org/ValueSet/v2-0092" class="binding">hl7VS-re-admissionIndicator</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><span title="null" class="binding">: </span><span title="null" class="binding">The reason for re-admission of this hospitalization encounter.</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a27.h" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-encounter-kontakt-definitions.html#Encounter.hospitalization.dietPreference" title="Diet preferences reported by the patient." data-no-external="true">dietPreference</a><a name="sa-Encounter.hospitalization.dietPreference"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -7385,7 +7390,7 @@ oder ein Abteilungskontakt Teil eines Einrichtungskontaktes ist." data-no-extern
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Teil von Kontakt<br class="constraint"/><span title="null" class="constraint">Constraints: </span><span style="font-weight:bold" title="SHALL have a contained resource if a local reference is provided" class="constraint">ref-1</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-encounter-kontaktSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-encounter-kontaktSA'), 'binding', document.getElementById('cbt-cabs-encounter-kontaktSA-binding').checked, document.getElementById('ppt-cabs-encounter-kontaktSA'));
 document.getElementById('cbt-cabs-encounter-kontaktSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -7576,12 +7581,12 @@ filterDesc(document.getElementById('t-cabs-encounter-kontaktSA'), 'obligation', 
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
     <td title="Classification of the encounter.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.0">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
     </td>
   </tr>
   <tr>
@@ -7673,12 +7678,12 @@ filterDesc(document.getElementById('t-cabs-encounter-kontaktSA'), 'obligation', 
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Indicates the urgency of the encounter.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.0/ValueSet-v3-ActPriority.html">ActPriority</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActPriority.html">ActPriority</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActPriority" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references">&#x1F4E6;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.0">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
     </td>
   </tr>
   <tr>
@@ -7770,12 +7775,12 @@ filterDesc(document.getElementById('t-cabs-encounter-kontaktSA'), 'obligation', 
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="The reason for re-admission of this hospitalization encounter.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.0/ValueSet-v2-0092.html">hl7VS-re-admissionIndicator</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v2-0092.html">hl7VS-re-admissionIndicator</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v2-0092" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is not explicitly stated, which means it is fixed to 2.0.0, the version found through the package references">&#x1F4E6;2.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.0">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
     </td>
   </tr>
   <tr>
@@ -8279,7 +8284,7 @@ Klassifizierung des Kontaktes in stationär, ambulant, teilstationär oder ander
       "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.serviceType.text" title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user" class="dict"><span style="text-decoration: underline">text</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Plain text representation of the concept</span>
     },
     "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.priority" title="Indicates the urgency of the encounter" class="dict"><span style="text-decoration: underline">priority</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Indicates the urgency of the encounter</a></span>
-    "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.subject" title="VERPFLICHTEND, Referenz auf Patient:in (this element must be supported)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ref-1: SHALL have a contained resource if a local reference is provided"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Patientenidentifikator</span>
+    "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.subject" title="VERPFLICHTEND, Referenz auf Patient:in (this element must be supported)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ref-1: SHALL have a contained resource if a local reference is provided"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Patientenidentifikator</span>
     "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.episodeOfCare" title="Where a specific encounter should be classified as a part of a specific episode(s) of care this field should be used. This association can facilitate grouping of related encounters together for a specific purpose, such as government reporting, issue tracking, association via a common problem.  The association is recorded on the encounter as these are typically created after the episode of care and grouped on entry rather than editing the episode of care to append another encounter to it (the episode of care could span years)" class="dict"><span style="text-decoration: underline">episodeOfCare</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ref-1: SHALL have a contained resource if a local reference is provided"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Episode(s) of care that this encounter should be recorded against</span>
     "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.basedOn" title="The request this encounter satisfies (e.g. incoming referral or procedure request)" class="dict"><span style="text-decoration: underline">basedOn</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ref-1: SHALL have a contained resource if a local reference is provided"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The ServiceRequest that initiated this encounter</span>
     "<a href="StructureDefinition-t-cabs-encounter-kontakt.html#Encounter.participant" title="The list of people responsible for providing the service" class="dict"><span style="text-decoration: underline">participant</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">List of participants involved in the encounter</span>
@@ -8416,7 +8421,7 @@ Summary
 <p>Mandatory: 1 element<br/> Must-Support: 1 element</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-patient)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient)</span></a></li>
 
 </ul>
 
@@ -8478,14 +8483,13 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 9, 2025 09:55+0100">2025-12-09</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 19, 2026 13:21+0100">2026-02-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

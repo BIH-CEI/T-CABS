@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_ValueSet_Beatmungsmodus |
+| *Official URL*:https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsmodus | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_ValueSet_Beatmungsmodus |
 
  
 This ValueSet contains codes to represent the different ventilation modes 
@@ -23,10 +23,6 @@ This ValueSet contains codes to represent the different ventilation modes
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on codesystem ISO 11073-10101 Health informatics - Point-of-care version 2024-12-05
-
-This value set contains 12 concepts
 
 -------
 
@@ -49,12 +45,12 @@ This value set contains 12 concepts
 {
   "resourceType" : "ValueSet",
   "id" : "t-cabs-valueset-Beatmungsmodus",
-  "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+  "url" : "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsmodus",
   "version" : "0.1.0",
   "name" : "T_CABS_ValueSet_Beatmungsmodus",
   "title" : "T-CABS ValueSet Ventilation Mode",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

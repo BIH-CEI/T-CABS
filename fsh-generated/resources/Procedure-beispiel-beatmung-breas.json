@@ -3,7 +3,7 @@
   "id": "beispiel-beatmung-breas",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"
     ]
   },
   "category": {

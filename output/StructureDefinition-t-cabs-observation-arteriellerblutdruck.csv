@@ -85,7 +85,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension.url","Observation.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","Url indicating this is the gateway device extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Observation.extension.value[x]","Observation.extension.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-device-phg]]}
+"Observation.extension.value[x]","Observation.extension.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg]]}
 ","Reference to the Personal Health Gateway (PHG) Device","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Observation.modifierExtension","Observation.modifierExtension","","extensions
@@ -298,7 +298,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.code.text","Observation.code.text","","","",0,1,"","","Y","string {[]} {[]}
 ","It is recommended to display at least the reference identifier for the MDC code","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
-"Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-patient]]}
+"Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient]]}
 ","Reference to the patient","The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation.","One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.","Observations have no value if you don't know who or what they're about.","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3","participation[typeCode=RTGT]","FiveWs.subject[x]","FiveWs.subject"
 "Observation.subject.id","Observation.subject.id","","","",0,1,"","","","string {[]} {[]}
@@ -450,7 +450,7 @@ If the use case requires BodySite to be handled as a separate resource (e.g. to 
 "Observation.specimen","Observation.specimen","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]}
 ","Specimen used for this observation","The specimen that was used when this observation was made.","Should only be used if not implicit in code found in `Observation.code`.  Observations are not made on specimens themselves; they are made on a subject, but in many cases by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report).","","","","","","","","",,,,,"",,,,"Observation.specimen",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 123038009 |Specimen|","SPM segment","participation[typeCode=SPC].specimen","704319004 |Inherent in|"
-"Observation.device","Observation.device","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-device-phd]]}
+"Observation.device","Observation.device","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd]]}
 ","(Measurement) Device","The device used to generate the observation data.","This field will reference the PHD Device.","","","","","","","","",,,,,"",,,,"Observation.device",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 49062001 |Device|","OBX-17 / PRT -10","participation[typeCode=DEV]","424226004 |Using device|"
 "Observation.device.id","Observation.device.id","","","",0,1,"","","","string {[]} {[]}
@@ -1221,6 +1221,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <coding>
     <system value=""http://loinc.org""/>
     <code value=""8480-6""/>
+    <display value=""Systolic blood pressure""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
@@ -1267,6 +1268,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <coding>
     <system value=""http://loinc.org""/>
     <code value=""8462-4""/>
+    <display value=""Diastolic blood pressure""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
@@ -1313,6 +1315,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <coding>
     <system value=""http://loinc.org""/>
     <code value=""8478-0""/>
+    <display value=""Mean blood pressure""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"

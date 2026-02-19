@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_ValueSet_PHDTyp |
+| *Official URL*:https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-phdtyp | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_ValueSet_PHDTyp |
 
  
 This ValueSet contains codes to represent the different PHD measurement devices 
@@ -23,10 +23,6 @@ This ValueSet contains codes to represent the different PHD measurement devices
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on codesystem ISO 11073-10101 Health informatics - Point-of-care version 2024-12-05
-
-This value set contains 7 concepts
 
 -------
 
@@ -49,12 +45,12 @@ This value set contains 7 concepts
 {
   "resourceType" : "ValueSet",
   "id" : "t-cabs-valueset-phdtyp",
-  "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+  "url" : "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-phdtyp",
   "version" : "0.1.0",
   "name" : "T_CABS_ValueSet_PHDTyp",
   "title" : "T-CABS ValueSet PHD Type",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-group-patientengruppe",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-group-patientengruppe",
   "name": "T_CABS_Group_Patientengruppe",
   "title": "T-CABS Patient Group",
   "status": "draft",
@@ -31,8 +31,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
-              "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion",
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"
             ]
           }
         ]
@@ -49,7 +49,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
             ]
           }
         ],

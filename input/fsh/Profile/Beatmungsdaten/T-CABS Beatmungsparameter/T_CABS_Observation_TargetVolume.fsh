@@ -5,6 +5,7 @@ Title: "T-CABS Observation Target Volume"
 Description: "Profile for the target volume"
 
 * code.coding = $IEEE-11073#153212 //"MDC_VENT_VOL_TIDAL_TARGET_AUTO"
+* code.coding ^definition = "The ventilator calculated target volume of gas delivered to the patient."
 
 * effective[x] only Period
 

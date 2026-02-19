@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observationfev6",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev6",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6",
   "name": "T_CABS_Observation_FEV6",
   "title": "T-CABS Observation FEV6",
   "status": "draft",
@@ -10,7 +10,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter",
   "derivation": "constraint",
   "differential": {
     "element": [

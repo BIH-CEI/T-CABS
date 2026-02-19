@@ -30,7 +30,7 @@ Profile: [T-CABS Procedure Ventilation](StructureDefinition-t-cabs-procedure-bea
   "id" : "beispiel-beatmung-breas",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"
     ]
   },
   "status" : "completed",

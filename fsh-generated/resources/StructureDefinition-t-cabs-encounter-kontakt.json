@@ -15,7 +15,7 @@
       }
     }
   ],
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt",
   "name": "T_CABS_Encounter_Kontakt",
   "title": "T-CABS Encounter Contact",
   "status": "draft",
@@ -35,7 +35,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
             ]
           }
         ]

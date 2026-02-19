@@ -5,6 +5,7 @@ Title: "T-CABS Observation PEEP"
 Description: "Profile for Positive End-Expiratory Pressure (PEEP)"
 
 * code.coding = $IEEE-11073#152720 //"MDC_VENT_PRESS_AWAY_DELTA"
+* code.coding ^definition = "Inspiratory airway pressure relative to PEEP or BAP."
 
 * valueQuantity.code = #mbar
 * valueQuantity.unit = "mbar"

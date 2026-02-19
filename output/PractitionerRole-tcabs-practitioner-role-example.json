@@ -2,7 +2,7 @@
   "resourceType" : "PractitionerRole",
   "id" : "tcabs-practitioner-role-example",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion"]
+    "profile" : ["https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion"]
   },
   "text" : {
     "status" : "generated",

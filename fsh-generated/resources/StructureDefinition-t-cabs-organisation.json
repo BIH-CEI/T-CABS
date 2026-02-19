@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-organisation",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation",
   "name": "T_CABS_Organisation",
   "title": "T-CABS Organization",
   "status": "draft",

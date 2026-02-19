@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_DruckMinMax |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Observation_DruckMinMax |
 
  
 Profile for minimal and maximal ventilation pressure 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-observation-druck-minmax",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_DruckMinMax",
   "title" : "T-CABS Observation Pressure MIN/MAX",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
+  "baseDefinition" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -118,6 +118,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
+        "definition" : "Pressure of gas in airway.",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "151792"
@@ -160,11 +161,15 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
           "coding" : [
             {
               "system" : "urn:iso:std:iso:11073:10101",
-              "code" : "151794",
-              "display" : "MDC_PRESS_AWAY_MIN"
+              "code" : "151794"
             }
           ]
         }
+      },
+      {
+        "id" : "Observation.component:MinPress.code.coding",
+        "path" : "Observation.component.code.coding",
+        "definition" : "Minimum pressure of gas in airway."
       },
       {
         "id" : "Observation.component:MinPress.value[x]:valueQuantity",
@@ -201,11 +206,15 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-d
           "coding" : [
             {
               "system" : "urn:iso:std:iso:11073:10101",
-              "code" : "151793",
-              "display" : "MDC_PRESS_AWAY_MAX"
+              "code" : "151793"
             }
           ]
         }
+      },
+      {
+        "id" : "Observation.component:MaxPress.code.coding",
+        "path" : "Observation.component.code.coding",
+        "definition" : "Peak pressure of gas in airway."
       },
       {
         "id" : "Observation.component:MaxPress.value[x]:valueQuantity",

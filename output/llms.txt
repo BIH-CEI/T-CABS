@@ -5,6 +5,7 @@
 * [Home](index.md)
 * [Artifacts Summary](artifacts.md)
 * [Ventilation Data Implementation](Ventilation-Data-Implementation.md)
+* [Release Notes](Release-Notes.md)
 * [Ventilation Data Profiles](Ventilation-Data-Profiles.md)
 * [Information Model](Information-Model.md)
 * [Ventilation Data Examples](Ventilation-Data-Examples.md)
@@ -27,12 +28,12 @@
 
 ### Logicals
 
-* [T-CABS Logical Model](StructureDefinition-tCabsLogicalModel.md)
+* [T-CABS Logical Model](StructureDefinition-t-cabs-logical-model.md)
 
 ### Resource Profiles
 
 * [T-CABS Device Channel Ventilator](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md)
-* [T-CABS Device MDS Home Ventilator](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md)
+* [T-CABS Device MDS Ventilator](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md)
 * [T-CABS Device PHD](StructureDefinition-t-cabs-device-phd.md)
 * [T-CABS Device PHG](StructureDefinition-t-cabs-device-phg.md)
 * [T-CABS Device VMD Ventilator](StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.md)
@@ -43,7 +44,7 @@
 * [T-CABS Observation AHI](StructureDefinition-t-cabs-observation-ahi.md)
 * [T-CABS Observation AMV](StructureDefinition-t-cabs-observation-amv.md)
 * [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cabs-observation-arteriellerblutdruck.md)
-* [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md)
+* [T-CABS Observation Arterielle SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md)
 * [T-CABS Observation Respiratory Rate Ventilated](StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.md)
 * [T-CABS Observation Respiratory Rate](StructureDefinition-t-cabs-observation-atemfrequenz.md)
 * [T-CABS Observation Respiratory Time Ratio](StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.md)

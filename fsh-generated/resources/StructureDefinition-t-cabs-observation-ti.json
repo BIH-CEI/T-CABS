@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-ti",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti",
   "name": "T_CABS_Observation_TI",
   "title": "T-CABS Observation TI",
   "status": "draft",
@@ -10,13 +10,14 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "definition": "Duration of the inflation phase if time-terminated.",
         "patternCoding": {
           "code": "152416",
           "system": "urn:iso:std:iso:11073:10101"

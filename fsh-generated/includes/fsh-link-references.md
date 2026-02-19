@@ -85,10 +85,11 @@
 [T_CABS_DiagnosticReport_Visitenbefund]: StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html
 [T_CABS_Encounter_Kontakt]: StructureDefinition-t-cabs-encounter-kontakt.html
 [T_CABS_PractitionerRole_Funktion]: StructureDefinition-t-cabs-practitioner-funktion.html
-[T_CABS_LogicalModel]: StructureDefinition-tCabsLogicalModel.html
+[T_CABS_LogicalModel]: StructureDefinition-t-cabs-logical-model.html
 [T_CABS_Observation_AHI]: StructureDefinition-t-cabs-observation-ahi.html
 [T_CABS_Observation_AMV]: StructureDefinition-t-cabs-observation-amv.html
 [T_CABS_Observation_ArteriellerBlutdruck]: StructureDefinition-t-cabs-observation-arteriellerblutdruck.html
+[T_CABS_Observation_ArterielleSPO2]: StructureDefinition-t-cabs-observation-arteriellespo2.html
 [T_CABS_Observation_BMI]: StructureDefinition-t-cabs-observation-bmi.html
 [T_CABS_Observation_Koerpertemperatur]: StructureDefinition-t-cabs-observation-koerpertemperatur.html
 [T_CABS_Observation_Koerpergewicht]: StructureDefinition-t-cabs-observation-koerpergewicht.html
@@ -105,7 +106,6 @@
 [T_CABS_Observation_Atemfrequenz]: StructureDefinition-t-cabs-observation-atemfrequenz.html
 [T_CABS_Observation_Atemfrequenz_beatmet]: StructureDefinition-t-cabs-observation-atemfrequenz-beatmet.html
 [T_CABS_Observation_Atemzeitverhaeltnis]: StructureDefinition-t-cabs-observation-atemzeitverhaeltnis.html
-[T_CABS_Observation_ArterielleSPO2]: StructureDefinition-t-cabs-observation-arteriellespo2.html
 [T_CABS_Observation_TargetVolume]: StructureDefinition-t-cabs-observation-targetvolume.html
 [T_CABS_Observation_TI]: StructureDefinition-t-cabs-observation-ti.html
 [T_CABS_Observation_TriggeredBreaths]: StructureDefinition-t-cabs-observation-triggeredbreaths.html

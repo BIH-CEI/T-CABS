@@ -24,8 +24,6 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/hl7.css" rel="stylesheet"/>
-<link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -47,24 +45,28 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.6"}
-    h3,h4,h5,h6{--heading-prefix:"13.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.6"}
+    h3,h4,h5,h6{--heading-prefix:"14.6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
-
+        <!-- T-CABS Header Logos -->
 <div id="project-nav">
-    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
-        <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
-    </a>            
+    <a id="project-logo" data-no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+        <img alt="T-CABS Project" height="50" src="T-CABS_Logo.png"/>
+    </a>
+</div>
+<div id="charite-nav">
+    <a id="charite-logo" data-no-external="true" href="https://www.charite.de/">
+        <img alt="Charité" height="50" src="Logo_Charite.png"/>
+    </a>
+</div>
+<div id="family-nav">
+    <a id="family-logo" data-no-external="true" href="https://www.bihealth.org/">
+        <img alt="BIH" height="50" src="BIH-Logo_neu.png"/>
+    </a>
 </div>
 
-<div id="family-nav">
-    <a id="family-logo" no-external="true" href="https://www.charite.de/">
-        <img alt="visit the website" height="60" src="Logo_Charite.png" />
-    </a>            
-</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
@@ -158,6 +160,9 @@
     <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
+    <a href="Release-Notes.html">Release Notes</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>
@@ -195,7 +200,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://bih-cei.github.io/T-CABS/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -282,10 +287,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet|0.1.0"/></span>
       </td>
     </tr>
 
@@ -301,7 +306,7 @@
         
           Draft
           
-            as of 2025-12-09
+            as of 2026-02-19
           
         
       </td>
@@ -636,9 +641,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ap" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet-definitions.html#Device.parent" title="The parent device." data-no-external="true">parent</a><a name="k-Device.parent"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Home Ventilator</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Ventilator</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The parent device</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-device-vmd-beatmungsgeraetK'), 'binding', document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetK-binding').checked, document.getElementById('ppt-cabs-device-vmd-beatmungsgeraetK'));
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -874,9 +879,9 @@ filterDesc(document.getElementById('t-cabs-device-vmd-beatmungsgeraetK'), 'oblig
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet-definitions.html#Device.parent" data-no-external="true">parent</a><a name="Device.parent"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Home Ventilator</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Ventilator</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The parent device</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-device-vmd-beatmungsgeraetD'), 'binding', document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetD-binding').checked, document.getElementById('ppt-cabs-device-vmd-beatmungsgeraetD'));
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2221,9 +2226,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a31." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet-definitions.html#Device.parent" title="The parent device." data-no-external="true">parent</a><a name="s-Device.parent"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Home Ventilator</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Ventilator</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The parent device</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-device-vmd-beatmungsgeraetS'), 'binding', document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetS-binding').checked, document.getElementById('ppt-cabs-device-vmd-beatmungsgeraetS'));
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2658,7 +2663,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
       }],
       "<a href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html#Device.safety.text" title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user" class="dict"><span style="text-decoration: underline">text</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Plain text representation of the concept</span>
     }],
-    "<a href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html#Device.parent" title="The parent device (this element must be supported)" class="dict"><span style="text-decoration: underline">parent</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The parent device</span>
+    "<a href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html#Device.parent" title="The parent device (this element must be supported)" class="dict"><span style="text-decoration: underline">parent</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The parent device</span>
   }
 
         </div>
@@ -2690,7 +2695,7 @@ Summary
 <p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Home Ventilator <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Ventilator <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet)</span></a></li>
 
 </ul>
 
@@ -2963,9 +2968,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ap" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet-definitions.html#Device.parent" title="The parent device." data-no-external="true">parent</a><a name="ka-Device.parent"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Home Ventilator</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Ventilator</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The parent device</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-device-vmd-beatmungsgeraetKA'), 'binding', document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetKA-binding').checked, document.getElementById('ppt-cabs-device-vmd-beatmungsgeraetKA'));
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3201,9 +3206,9 @@ filterDesc(document.getElementById('t-cabs-device-vmd-beatmungsgeraetKA'), 'obli
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet-definitions.html#Device.parent" data-no-external="true">parent</a><a name="a-Device.parent"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Home Ventilator</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Ventilator</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The parent device</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-device-vmd-beatmungsgeraetDA'), 'binding', document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetDA-binding').checked, document.getElementById('ppt-cabs-device-vmd-beatmungsgeraetDA'));
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4547,9 +4552,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a31." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet-definitions.html#Device.parent" title="The parent device." data-no-external="true">parent</a><a name="sa-Device.parent"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Home Ventilator</a>)</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Ventilator</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The parent device</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-device-vmd-beatmungsgeraetSA'), 'binding', document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetSA-binding').checked, document.getElementById('ppt-cabs-device-vmd-beatmungsgeraetSA'));
 document.getElementById('cbt-cabs-device-vmd-beatmungsgeraetSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4984,7 +4989,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
       }],
       "<a href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html#Device.safety.text" title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user" class="dict"><span style="text-decoration: underline">text</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Plain text representation of the concept</span>
     }],
-    "<a href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html#Device.parent" title="The parent device (this element must be supported)" class="dict"><span style="text-decoration: underline">parent</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The parent device</span>
+    "<a href="StructureDefinition-t-cabs-device-vmd-beatmungsgeraet.html#Device.parent" title="The parent device (this element must be supported)" class="dict"><span style="text-decoration: underline">parent</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The parent device</span>
   }
 
         </div>
@@ -5012,7 +5017,7 @@ Summary
 <p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Home Ventilator <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html">T-CABS Device MDS Ventilator <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet)</span></a></li>
 
 </ul>
 
@@ -5074,14 +5079,13 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 9, 2025 09:55+0100">2025-12-09</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 19, 2026 13:21+0100">2026-02-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

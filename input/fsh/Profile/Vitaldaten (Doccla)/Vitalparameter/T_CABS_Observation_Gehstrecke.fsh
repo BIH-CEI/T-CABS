@@ -5,7 +5,7 @@ Title: "T-CABS Observation Walking Distance"
 Description: "Profile for walking distance per day (24 hours)"
 
 * code.coding[LoincCoding] = $LOINC#41950-7 //"Number of steps in 24 hour Measured"
-* code.coding[MDCType] = $IEEE-11073#158033 
+* code.coding[MDCType] = $IEEE-11073#8454247 
 
 // Taegliche Schrittzahl
 * valueQuantity.code = #{#}/(24.h)
@@ -20,7 +20,7 @@ Description: "Example of a walking distance measurement via Doccla"
 * category[VSCat].coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd-observation
 * code.coding[LoincCoding] = $LOINC#41950-7 "Number of steps in 24 hour Measured"
-* code.coding[MDCType] = $IEEE-11073#158033
+* code.coding[MDCType] = $IEEE-11073#8454247
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-01-15T23:59:00Z"
 * effectivePeriod.end = "2024-01-15T23:59:00Z"

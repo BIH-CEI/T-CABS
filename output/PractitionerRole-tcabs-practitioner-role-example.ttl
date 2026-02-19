@@ -7,13 +7,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/PractitionerRole/tcabs-practitioner-role-example> a fhir:PractitionerRole ;
+<https://bih-cei.github.io/T-CABS/PractitionerRole/tcabs-practitioner-role-example> a fhir:PractitionerRole ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "tcabs-practitioner-role-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion"^^xsd:anyURI ;
-       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion>
+       fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion"^^xsd:anyURI ;
+       fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion>
      ] )
   ] ; # 
   fhir:text [
@@ -22,11 +22,11 @@
   ] ; # 
   fhir:active [ fhir:v true] ; # 
   fhir:practitioner [
-     fhir:l <http://t-cabs.org/Practitioner/tcabs-practitioner-example> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Practitioner/tcabs-practitioner-example> ;
      fhir:reference [ fhir:v "Practitioner/tcabs-practitioner-example" ]
   ] ; # 
   fhir:organization [
-     fhir:l <http://t-cabs.org/Organization/CABS> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Organization/CABS> ;
      fhir:reference [ fhir:v "Organization/CABS" ]
   ] ; # 
   fhir:code ( [

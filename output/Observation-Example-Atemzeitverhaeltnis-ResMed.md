@@ -20,7 +20,7 @@ Profile: [T-CABS Observation Respiratory Time Ratio](StructureDefinition-t-cabs-
 
 **effective**: 2024-10-07 22:30:00+0200 --> 2024-10-07 22:45:00+0200
 
-**value**: 33 %(Details: UCUM code% = '%')
+**value**: 33 % (Details: UCUM code% = '%')
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-ATEMZEIT-001; type = MDC_TIME_PD_INSP_NORMALIZED_HF; unit = %; operationalStatus = on; color = white; category = calculation; measurementPeriod = Once per 15 seconds](DeviceMetric-beispiel-devicemetric-resmed-atemzeit.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation Respiratory Time Ratio](StructureDefinition-t-cabs-
   "id" : "Example-Atemzeitverhaeltnis-ResMed",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"
     ]
   },
   "partOf" : [

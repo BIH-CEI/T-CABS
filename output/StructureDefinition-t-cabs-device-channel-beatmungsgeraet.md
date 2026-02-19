@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Device_Channel_Beatmungsgeraet |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Device_Channel_Beatmungsgeraet |
 
  
 Profile representing a channel for grouping DeviceMetrics 
@@ -17,7 +17,7 @@ Profile representing a channel for grouping DeviceMetrics
 **Usages:**
 
 * Refer to this Profile: [T-CABS DeviceMetric NumericMetric](StructureDefinition-t-cabs-devicemetric-numericmetric.md)
-* Examples for this Profile: [Device/beispiel-channel-breas-ahi](Device-beispiel-channel-breas-ahi.md), [Device/beispiel-channel-breas-amv](Device-beispiel-channel-breas-amv.md), [Device/beispiel-channel-breas-ipap](Device-beispiel-channel-breas-ipap.md), [Device/beispiel-channel-breas-targetvolume](Device-beispiel-channel-breas-targetvolume.md)...Show 7 more,[Device/beispiel-channel-loewenstein-peep](Device-beispiel-channel-loewenstein-peep.md),[Device/beispiel-channel-loewenstein-ti](Device-beispiel-channel-loewenstein-ti.md),[Device/beispiel-channel-loewenstein-triggeredbreaths](Device-beispiel-channel-loewenstein-triggeredbreaths.md),[Device/beispiel-channel-resmed-atemfrequenz](Device-beispiel-channel-resmed-atemfrequenz.md),[Device/beispiel-channel-resmed-atemzeit](Device-beispiel-channel-resmed-atemzeit.md),[Device/beispiel-channel-resmed-druck](Device-beispiel-channel-resmed-druck.md)and[Device/beispiel-channel-resmed-leckage](Device-beispiel-channel-resmed-leckage.md)
+* Examples for this Profile: [Device/beispiel-channel-breas-ahi](Device-beispiel-channel-breas-ahi.md), [Device/beispiel-channel-breas-amv](Device-beispiel-channel-breas-amv.md), [Device/beispiel-channel-breas-ipap](Device-beispiel-channel-breas-ipap.md), [Device/beispiel-channel-breas-targetvolume](Device-beispiel-channel-breas-targetvolume.md)... Show 7 more, [Device/beispiel-channel-loewenstein-peep](Device-beispiel-channel-loewenstein-peep.md), [Device/beispiel-channel-loewenstein-ti](Device-beispiel-channel-loewenstein-ti.md), [Device/beispiel-channel-loewenstein-triggeredbreaths](Device-beispiel-channel-loewenstein-triggeredbreaths.md), [Device/beispiel-channel-resmed-atemfrequenz](Device-beispiel-channel-resmed-atemfrequenz.md), [Device/beispiel-channel-resmed-atemzeit](Device-beispiel-channel-resmed-atemzeit.md), [Device/beispiel-channel-resmed-druck](Device-beispiel-channel-resmed-druck.md) and [Device/beispiel-channel-resmed-leckage](Device-beispiel-channel-resmed-leckage.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-device-channel-beatmungsgeraet)
 
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-channe
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-device-channel-beatmungsgeraet",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
   "version" : "0.1.0",
   "name" : "T_CABS_Device_Channel_Beatmungsgeraet",
   "title" : "T-CABS Device Channel Ventilator",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-channe
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
             ]
           }
         ]

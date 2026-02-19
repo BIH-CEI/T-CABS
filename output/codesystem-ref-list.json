@@ -10,8 +10,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-t-cabs-valueset-beatmungsstelle.html" : "T-CABS ValueSet Ventilation Site",
-      "ValueSet-t-cabs-valueset-Beatmungsform.html" : "T-CABS ValueSet Ventilation Type"
+      "ValueSet-t-cabs-valueset-Beatmungsform.html" : "T-CABS ValueSet Ventilation Type",
+      "ValueSet-t-cabs-valueset-beatmungsstelle.html" : "T-CABS ValueSet Ventilation Site"
     },
     {
       "url" : "urn:iso:std:iso:11073:10101",
@@ -23,8 +23,8 @@
       "oids" : ["2.16.840.1.113883.6.24"],
       "uses" : {
       },
-      "ValueSet-t-cabs-valueset-phdtyp.html" : "T-CABS ValueSet PHD Type",
-      "ValueSet-t-cabs-valueset-Beatmungsmodus.html" : "T-CABS ValueSet Ventilation Mode"
+      "ValueSet-t-cabs-valueset-Beatmungsmodus.html" : "T-CABS ValueSet Ventilation Mode",
+      "ValueSet-t-cabs-valueset-phdtyp.html" : "T-CABS ValueSet PHD Type"
     }
   ]
 }

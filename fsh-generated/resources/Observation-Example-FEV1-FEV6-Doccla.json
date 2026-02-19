@@ -3,7 +3,7 @@
   "id": "Example-FEV1-FEV6-Doccla",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fev6"
     ]
   },
   "category": [

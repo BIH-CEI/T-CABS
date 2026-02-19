@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observationfev1 | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_FEV1 |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1 | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Observation_FEV1 |
 
  
 Profile for Forced Expiratory Volume in 1 Second (FEV1) 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observationfe
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-observationfev1",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_FEV1",
   "title" : "T-CABS Observation FEV1",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observationfe
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "baseDefinition" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter",
   "derivation" : "constraint",
   "differential" : {
     "element" : [

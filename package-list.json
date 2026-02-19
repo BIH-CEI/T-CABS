@@ -1,0 +1,25 @@
+{
+  "package-id": "t-cabs",
+  "canonical": "https://bih-cei.github.io/T-CABS",
+  "title": "T-CABS Implementation Guide",
+  "introduction": "FHIR R4 profiles for telemedical monitoring of home-based ventilation therapy and vital parameters.",
+  "category": "Medical Devices",
+  "list": [
+    {
+      "version": "current",
+      "desc": "CI Build (latest)",
+      "path": "https://bih-cei.github.io/T-CABS/",
+      "status": "ci-build"
+    },
+    {
+      "version": "0.1.0",
+      "desc": "Initial Draft Release (planned)",
+      "path": "https://bih-cei.github.io/T-CABS/0.1.0",
+      "status": "draft",
+      "sequence": "Draft",
+      "fhirversion": "4.0.1",
+      "changes": "Release-Notes.html",
+      "language": ["en"]
+    }
+  ]
+}

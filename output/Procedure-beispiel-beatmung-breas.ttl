@@ -7,13 +7,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/Procedure/beispiel-beatmung-breas> a fhir:Procedure ;
+<https://bih-cei.github.io/T-CABS/Procedure/beispiel-beatmung-breas> a fhir:Procedure ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "beispiel-beatmung-breas"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
-       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung>
+       fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
+       fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung>
      ] )
   ] ; # 
   fhir:text [
@@ -43,7 +43,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Patient/tcabs-patient-example> ;
      fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
   ] ; # 
   fhir:performed [
@@ -52,7 +52,7 @@
      fhir:end [ fhir:v "2024-01-16T06:00:00Z"^^xsd:dateTime ]
   ] ; # 
   fhir:usedReference ( [
-     fhir:l <http://t-cabs.org/Device/beispiel-beatmungsgeraet-breas> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-beatmungsgeraet-breas> ;
      fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-breas" ]
   ] ) . # 
 

@@ -5,7 +5,7 @@
   "id": "t-cabs-valueset-Beatmungsmodus",
   "title": "T-CABS ValueSet Ventilation Mode",
   "description": "This ValueSet contains codes to represent the different ventilation modes",
-  "url": "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+  "url": "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsmodus",
   "compose": {
     "include": [
       {

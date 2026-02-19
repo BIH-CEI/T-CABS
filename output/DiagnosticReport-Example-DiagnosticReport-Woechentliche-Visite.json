@@ -2,7 +2,7 @@
   "resourceType" : "DiagnosticReport",
   "id" : "Example-DiagnosticReport-Woechentliche-Visite",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"]
+    "profile" : ["https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"]
   },
   "text" : {
     "status" : "generated",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-bmi",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-bmi",
   "name": "T_CABS_Observation_BMI",
   "title": "T-CABS Observation BMI",
   "status": "draft",
@@ -10,7 +10,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter",
   "derivation": "constraint",
   "differential": {
     "element": [

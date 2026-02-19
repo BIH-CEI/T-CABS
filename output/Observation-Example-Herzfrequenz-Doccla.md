@@ -20,7 +20,7 @@ Profiles: [T-CABS Observation Heart Rate](StructureDefinition-t-cabs-observation
 
 **effective**: 2024-01-15 08:45:00+0000 --> 2024-01-15 08:45:00+0000
 
-**value**: 72 /min(Details: UCUM code/min = '/min')
+**value**: 72 /min (Details: UCUM code/min = '/min')
 
 **device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = MASIMO-PO-345678; modelNumber = Radical-7; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-pulsoximeter.md)
 
@@ -34,7 +34,7 @@ Profiles: [T-CABS Observation Heart Rate](StructureDefinition-t-cabs-observation
   "id" : "Example-Herzfrequenz-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-herzfrequenz",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0"
     ]
   },

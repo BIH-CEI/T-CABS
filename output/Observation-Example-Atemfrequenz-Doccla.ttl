@@ -7,13 +7,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/Observation/Example-Atemfrequenz-Doccla> a fhir:Observation ;
+<https://bih-cei.github.io/T-CABS/Observation/Example-Atemfrequenz-Doccla> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "Example-Atemfrequenz-Doccla"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz"^^xsd:anyURI ;
-       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz>
+       fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz"^^xsd:anyURI ;
+       fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz>
      ] [
        fhir:v "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz|5.1.0"^^xsd:anyURI ;
        fhir:l <https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz?version=5.1.0>
@@ -30,7 +30,7 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <http://t-cabs.org/Device/beispiel-phg-doccla> ;
+       fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phg-doccla> ;
        fhir:reference [ fhir:v "Device/beispiel-phg-doccla" ]
      ]
   ] ) ; # 
@@ -70,7 +70,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Patient/tcabs-patient-example> ;
      fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
   ] ; # 
   fhir:effective [
@@ -89,7 +89,7 @@
      fhir:code [ fhir:v "/min" ]
   ] ; # 
   fhir:device [
-     fhir:l <http://t-cabs.org/Device/beispiel-phd-pulsoximeter> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phd-pulsoximeter> ;
      fhir:reference [ fhir:v "Device/beispiel-phd-pulsoximeter" ]
   ] . # 
 

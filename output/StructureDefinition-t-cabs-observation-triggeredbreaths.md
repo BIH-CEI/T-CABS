@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_TriggeredBreaths |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Observation_TriggeredBreaths |
 
  
 Profile for the percentage of spontaneously triggered breaths within a time period 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-t
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-observation-triggeredbreaths",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_TriggeredBreaths",
   "title" : "T-CABS Observation Triggered Breaths",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-t
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -123,6 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-t
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
+        "definition" : "Rate of breaths or inspiratory gas flow initiated and terminated by the patient where pressure and flow/volume delivery are determined by the patient without support or assistance by the ventilator. Includes unassisted breaths that are superimposed on the intermittently elevated baseline pressure with APRV, bilevel or spontaneous-only modes.",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "152498"

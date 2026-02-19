@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Procedure_Beatmung |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Procedure_Beatmung |
 
  
 Profile for the ventilation procedure 
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-procedure-bea
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-procedure-beatmung",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung",
   "version" : "0.1.0",
   "name" : "T_CABS_Procedure_Beatmung",
   "title" : "T-CABS Procedure Ventilation",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -136,7 +136,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-procedure-bea
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform"
+          "valueSet" : "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsform"
         }
       },
       {
@@ -180,7 +180,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-procedure-bea
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus"
+          "valueSet" : "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsmodus"
         }
       },
       {
@@ -201,7 +201,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-procedure-bea
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
+            ]
           }
         ],
         "mustSupport" : true
@@ -223,7 +225,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-procedure-bea
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle"
+          "valueSet" : "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-beatmungsstelle"
         }
       },
       {
@@ -235,7 +237,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-procedure-bea
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
             ]
           }
         ],

@@ -6,7 +6,7 @@
 
 ## Example Device: Example Ventilator Löwenstein
 
-Profile: [T-CABS Device MDS Home Ventilator](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md)
+Profile: [T-CABS Device MDS Ventilator](StructureDefinition-t-cabs-device-mds-beatmungsgeraet.md)
 
 **Operating hours extension**: 12450
 
@@ -39,7 +39,7 @@ Profile: [T-CABS Device MDS Home Ventilator](StructureDefinition-t-cabs-device-m
   "id" : "beispiel-beatmungsgeraet-loewenstein",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
     ]
   },
   "extension" : [

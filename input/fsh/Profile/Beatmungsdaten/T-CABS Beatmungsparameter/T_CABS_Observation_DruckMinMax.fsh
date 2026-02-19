@@ -5,6 +5,7 @@ Title: "T-CABS Observation Pressure MIN/MAX"
 Description: "Profile for minimal and maximal ventilation pressure"
 
 * code.coding = $IEEE-11073#151792 //"MDC_PRESS_AWAY"
+* code.coding ^definition = "Pressure of gas in airway."
 
 * effective[x] only Period
 
@@ -15,12 +16,14 @@ Description: "Profile for minimal and maximal ventilation pressure"
     MinPress 0..1 MS and
     MaxPress 0..1 MS
 * component[MinPress].code MS
-* component[MinPress].code = $IEEE-11073#151794 "MDC_PRESS_AWAY_MIN"
+* component[MinPress].code = $IEEE-11073#151794 //"MDC_PRESS_AWAY_MIN"
+* component[MinPress].code.coding ^definition = "Minimum pressure of gas in airway."
 * component[MinPress].value[x] only Quantity
 * component[MinPress].valueQuantity.unit = "mbar"
 * component[MinPress].valueQuantity.code = #mbar
 * component[MaxPress].code MS
-* component[MaxPress].code = $IEEE-11073#151793 "MDC_PRESS_AWAY_MAX"
+* component[MaxPress].code = $IEEE-11073#151793 //"MDC_PRESS_AWAY_MAX"
+* component[MaxPress].code.coding ^definition = "Peak pressure of gas in airway."
 * component[MaxPress].value[x] only Quantity
 * component[MaxPress].valueQuantity.unit = "mbar"
 * component[MaxPress].valueQuantity.code = #mbar

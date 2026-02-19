@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/Device/beispiel-channel-breas-targetvolume> a fhir:Device ;
+<https://bih-cei.github.io/T-CABS/Device/beispiel-channel-breas-targetvolume> a fhir:Device ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "beispiel-channel-breas-targetvolume"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+       fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+       fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
      ] )
   ] ; # 
   fhir:text [
@@ -41,7 +41,7 @@
      ] )
   ] ; # 
   fhir:parent [
-     fhir:l <http://t-cabs.org/Device/beispiel-vmd-breas-targetvolume> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-breas-targetvolume> ;
      fhir:reference [ fhir:v "Device/beispiel-vmd-breas-targetvolume" ]
   ] . # 
 

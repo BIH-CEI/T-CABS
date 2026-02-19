@@ -20,7 +20,7 @@ Profiles: [T-CABS Observation Body Temperature](StructureDefinition-t-cabs-obser
 
 **effective**: 2024-01-15 07:00:00+0000 --> 2024-01-15 07:00:00+0000
 
-**value**: 36.7 °C(Details: UCUM codeCel = 'Cel')
+**value**: 36.7 °C (Details: UCUM codeCel = 'Cel')
 
 **device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Masimo; serialNumber = MASIMO-PO-345678; modelNumber = Radical-7; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-pulsoximeter.md)
 
@@ -34,7 +34,7 @@ Profiles: [T-CABS Observation Body Temperature](StructureDefinition-t-cabs-obser
   "id" : "Example-Koerpertemperatur-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpertemperatur",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0"
     ]
   },

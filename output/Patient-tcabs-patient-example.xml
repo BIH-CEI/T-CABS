@@ -3,7 +3,7 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="tcabs-patient-example"/>
   <meta>
-    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-patient"/>
+    <profile value="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"/>
     <profile value="https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0"/>
   </meta>
   <text>

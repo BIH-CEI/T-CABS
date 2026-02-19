@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-practitioner-funktion",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion",
   "name": "T_CABS_PractitionerRole_Funktion",
   "title": "T-CABS Function",
   "status": "draft",

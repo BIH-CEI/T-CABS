@@ -27,15 +27,17 @@ Diese Seite listet die erstellten ValueSets des T-CABS Projekts auf:
 | Code | Displayname | Beschreibung | *Bezeichnung | 
 |------|---------|--------------|
 | `475172` | MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC | Pressure Control | PCV | 
-| `475147` | MDC_VENT_MODE_ISO_AC_PC_6ACAP | Pressure Control - Assist Control| PCV(A) | 
-| `475148` | MDC_VENT_MODE_ISO_AC_vtPC_6ACAP | Pressure Control - Assist Control mit Zielvolumen |PCV(A+TgV) | 
-| `475154` | MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015 | Druckunterstützung (Pressure Support Ventilation) | PSV | 
-| `475197` | MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP | BiLevel - Airway Pressure Ventilation Ventilation | S/T | 
-| `475201` | MDC_VENT_MODE_ISO_CMV_VC | Volume Control | VCV | 
-| `151796` | MDC_PRESS_AWAY_CTS_POS | Continuous Positive Airway Pressure | CPAP | 
-| `475140` | MDC_VENT_MODE_ISO_AC_VC_6ACAPL | Assist Control - Volume Control | VCV(A) | 
-| `475136` | MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL | Volume Control - Synchronized Intermittent Mandatory Ventilation | VCV-SIMV | 
-| `475190` | MDC_VENT_MODE_ISO_HIFLOW_3NIV | High flow therapy | HFT | 
+| `475147` | MDC_VENT_MODE_ISO_AC_PC_6ACAP | PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts. | PCV(A) | 
+| `475148` | MDC_VENT_MODE_ISO_AC_vtPC_6ACAP | PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, with tidal volume target and pressure regulation, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts. |PCV(A+TgV) | 
+| `475154` | MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015 | PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts. | PSV | 
+| `475197` | MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP | BiLevel Airway Pressure Ventilation | S/T | 
+| `475201` | MDC_VENT_MODE_ISO_CMV_VC | Volume Control Ventilation | VCV | 
+| `475161` | MDC_VENT_MODE_ISO_CSV_6ACAP | SPN: Spontaneous, CPAP: Continuous Positive Airway Pressure — Spontaneous breathing with continuous positive pressure level. May include selectable adjuncts. | CPAP | 
+| `475140` | MDC_VENT_MODE_ISO_AC_VC_6ACAPL | VC: Volume Control, AC: Assist Control — Assisted-controlled, volume-controlled ventilation with fixed inspiratory flow and backup respiratory rate. May include selectable adjuncts. | VCV(A) | 
+| `475136` | MDC_VENT_MODE_ISO_SIMV_VC_8PS_6ACAPL | VC: Volume Control, SIMV: Synchronized Intermittent Mandatory Ventilation — Intermittent, triggered, volume-controlled ventilation with a fixed inspiratory flow, allowing spontaneous breathing during the expiratory phase. May include selectable adjuncts. | VCV-SIMV | 
+| `475190` | MDC_VENT_MODE_ISO_HIFLOW_3NIV | High flow therapy | HFT |
+| `475155` | MDC_VENT_MODE_ISO_CSV_vtPS_6ACAP_012_015 | PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate, with tidal volume target and pressure regulation. May include selectable adjuncts. | PSV(TgV) |
+| `475144` | MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP | PC: Pressure Control, SIMV: Synchronized Intermittent Mandatory Ventilation — Intermittent, triggered, pressure-controlled ventilation allowing spontaneous breathing (open system) during the entire respiratory cycle. May include selectable adjuncts. | PCV-SIMV | 
 
 ***Hinweis:** Die Bezeichnungen der Modi sind teilweise herstellerspezifisch.
 

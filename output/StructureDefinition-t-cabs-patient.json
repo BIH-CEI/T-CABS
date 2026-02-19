@@ -15,12 +15,12 @@
       }]
     }
   }],
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-patient",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient",
   "version" : "0.1.0",
   "name" : "T_CABS_Patient",
   "title" : "T-CABS Patient",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",

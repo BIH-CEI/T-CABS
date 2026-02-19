@@ -5,7 +5,7 @@
   "id": "t-cabs-valueset-Beatmungsform",
   "title": "T-CABS ValueSet Ventilation Type",
   "description": "This ValueSet contains codes to represent the different types of ventilation",
-  "url": "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
+  "url": "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsform",
   "compose": {
     "include": [
       {

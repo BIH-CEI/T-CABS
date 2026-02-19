@@ -20,8 +20,6 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/hl7.css" rel="stylesheet"/>
-<link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -43,24 +41,28 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13"}
-    h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"14"}
+    h3,h4,h5,h6{--heading-prefix:"14.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
-
+        <!-- T-CABS Header Logos -->
 <div id="project-nav">
-    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
-        <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
-    </a>            
+    <a id="project-logo" data-no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+        <img alt="T-CABS Project" height="50" src="T-CABS_Logo.png"/>
+    </a>
+</div>
+<div id="charite-nav">
+    <a id="charite-logo" data-no-external="true" href="https://www.charite.de/">
+        <img alt="Charité" height="50" src="Logo_Charite.png"/>
+    </a>
+</div>
+<div id="family-nav">
+    <a id="family-logo" data-no-external="true" href="https://www.bihealth.org/">
+        <img alt="BIH" height="50" src="BIH-Logo_neu.png"/>
+    </a>
 </div>
 
-<div id="family-nav">
-    <a id="family-logo" no-external="true" href="https://www.charite.de/">
-        <img alt="visit the website" height="60" src="Logo_Charite.png" />
-    </a>            
-</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
@@ -154,6 +156,9 @@
     <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
+    <a href="Release-Notes.html">Release Notes</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>
@@ -172,11 +177,11 @@
 
           <span style="float:right;">
 
-            <a href="Terminologies.html">&lt;prev</a> | 
+            <a href="Release-Notes.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-tCabsLogicalModel.html">next&gt;</a>
+          | <a href="StructureDefinition-t-cabs-logical-model.html">next&gt;</a>
 
           </span>
 
@@ -198,7 +203,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://bih-cei.github.io/T-CABS/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -235,8 +240,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-tCabsLogicalModel.html"
-                  title="StructureDefinition/tCabsLogicalModel">T-CABS Logical Model</a>
+               <a href="StructureDefinition-t-cabs-logical-model.html"
+                  title="StructureDefinition/t-cabs-logical-model">T-CABS Logical Model</a>
             </td>
             <td>
 <p>Comprehensive logical model for the T-CABS project covering:</p>
@@ -269,10 +274,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html"
-                  title="StructureDefinition/t-cabs-device-mds-beatmungsgeraet">T-CABS Device MDS Home Ventilator</a>
+                  title="StructureDefinition/t-cabs-device-mds-beatmungsgeraet">T-CABS Device MDS Ventilator</a>
             </td>
             <td>
-<p>Profile for a home ventilator device</p>
+<p>Profile for a ventilator device</p>
 </td>
          </tr>
          <tr>
@@ -367,6 +372,17 @@ The T_CABS_Encounter_Kontakt profile aims for compatibility with the ISiKKontakt
 <p>Profile for arterial blood pressure.
 Compatibility:
 For the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the <a href="https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell">ISiKBlutdruckArteriell</a></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-t-cabs-observation-arteriellespo2.html"
+                  title="StructureDefinition/t-cabs-observation-arteriellespo2">T-CABS Observation Arterielle SPO2</a>
+            </td>
+            <td>
+<p>Profile for arterial oxygen saturation (SPO2)
+Compatibility:
+For the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the <a href="https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell">ISiKSauerstoffsaettigungArteriell</a></p>
 </td>
          </tr>
          <tr>
@@ -519,17 +535,6 @@ For the profile T_CABS_Observation_Atemfrequenz, compatibility with ISiK version
             </td>
             <td>
 <p>Profile for respiratory time ratio</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-t-cabs-observation-arteriellespo2.html"
-                  title="StructureDefinition/t-cabs-observation-arteriellespo2">T-CABS Observation SPO2</a>
-            </td>
-            <td>
-<p>Profile for arterial oxygen saturation (SPO2)
-Compatibility:
-For the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the <a href="https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell">ISiKSauerstoffsaettigungArteriell</a></p>
 </td>
          </tr>
          <tr>
@@ -1458,7 +1463,7 @@ The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with IS
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="Terminologies.html">&lt;prev</a>
+                <a href="Release-Notes.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -1466,7 +1471,7 @@ The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with IS
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-tCabsLogicalModel.html">next&gt;</a>
+                <a href="StructureDefinition-t-cabs-logical-model.html">next&gt;</a>
 
               </td>
             </tr>
@@ -1476,14 +1481,13 @@ The T_CABS_Practitioner_PersonMitFunktion profile aims for compatibility with IS
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 9, 2025 09:55+0100">2025-12-09</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 19, 2026 13:21+0100">2026-02-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

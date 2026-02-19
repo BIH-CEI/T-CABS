@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-ipap",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap",
   "name": "T_CABS_Observation_IPAP",
   "title": "T-CABS Observation IPAP",
   "status": "draft",
@@ -10,13 +10,14 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "definition": "Setting of target inspiration therapy pressure in BiLevel PAP mode during a breath cycle",
         "patternCoding": {
           "code": "8410976",
           "system": "urn:iso:std:iso:11073:10101"

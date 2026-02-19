@@ -15,12 +15,12 @@
       }]
     }
   }],
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt",
   "version" : "0.1.0",
   "name" : "T_CABS_Encounter_Kontakt",
   "title" : "T-CABS Encounter Contact",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [{
     "name" : "BIH-CEI",
@@ -5754,7 +5754,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+        "targetProfile" : ["https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -10471,7 +10471,7 @@
       "path" : "Encounter.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+        "targetProfile" : ["https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"]
       }]
     },
     {

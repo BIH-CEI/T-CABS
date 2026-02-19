@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-device-phg",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-phg",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg",
   "name": "T_CABS_Device_PHG",
   "title": "T-CABS Device PHG",
   "status": "draft",
@@ -65,7 +65,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
             ]
           }
         ],

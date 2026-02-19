@@ -3,7 +3,7 @@
   "id": "Example-ArteriellerBlutdruck-Doccla",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0"
     ]
   },
@@ -44,35 +44,45 @@
   },
   "component": [
     {
+      "code": {
+        "coding": [
+          {
+            "code": "8480-6",
+            "system": "http://loinc.org",
+            "display": "Systolic blood pressure"
+          },
+          {
+            "code": "150017",
+            "system": "urn:iso:std:iso:11073:10101"
+          }
+        ]
+      },
       "valueQuantity": {
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]",
         "value": 125
-      },
-      "code": {
-        "coding": [
-          {
-            "code": "8480-6",
-            "system": "http://loinc.org"
-          }
-        ]
       }
     },
     {
+      "code": {
+        "coding": [
+          {
+            "code": "8462-4",
+            "system": "http://loinc.org",
+            "display": "Diastolic blood pressure"
+          },
+          {
+            "code": "150018",
+            "system": "urn:iso:std:iso:11073:10101"
+          }
+        ]
+      },
       "valueQuantity": {
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]",
         "value": 80
-      },
-      "code": {
-        "coding": [
-          {
-            "code": "8462-4",
-            "system": "http://loinc.org"
-          }
-        ]
       }
     }
   ],

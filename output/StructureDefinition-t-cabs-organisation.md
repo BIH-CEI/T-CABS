@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-organisation | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Organisation |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Organisation |
 
  
-Profile for an organization associated with the T-CABS study. Compatibility: The T_CABS_Organisation profile aims for compatibility with the ISiKOrganisation version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Organisation are also valid against the[ISiKOrganisation](https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation) 
+Profile for an organization associated with the T-CABS study. Compatibility: The T_CABS_Organisation profile aims for compatibility with the ISiKOrganisation version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Organisation are also valid against the [ISiKOrganisation](https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation) 
 
 **Usages:**
 
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-organisation.
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-organisation",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation",
   "version" : "0.1.0",
   "name" : "T_CABS_Organisation",
   "title" : "T-CABS Organization",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-ahi",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi",
   "name": "T_CABS_Observation_AHI",
   "title": "T-CABS Observation AHI",
   "status": "draft",
@@ -10,26 +10,18 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "definition": "Total number of all apnoea and hypopnoea events occurring during a usage session divided by the hours of sleep\n* effective[x] only Period",
         "patternCoding": {
           "code": "8410792",
           "system": "urn:iso:std:iso:11073:10101"
         }
-      },
-      {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "type": [
-          {
-            "code": "Period"
-          }
-        ]
       },
       {
         "id": "Observation.value[x]:valueQuantity",

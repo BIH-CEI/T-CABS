@@ -20,7 +20,7 @@ Profiles: [T-CABS Observation Body Weight](StructureDefinition-t-cabs-observatio
 
 **effective**: 2024-01-15 07:30:00+0000 --> 2024-01-15 07:30:00+0000
 
-**value**: 75.8 kg(Details: UCUM codekg = 'kg')
+**value**: 75.8 kg (Details: UCUM codekg = 'kg')
 
 **device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Beurer; serialNumber = BEURER-SC-789012; modelNumber = BF 700; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-waage.md)
 
@@ -34,7 +34,7 @@ Profiles: [T-CABS Observation Body Weight](StructureDefinition-t-cabs-observatio
   "id" : "Example-Koerpergewicht-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpergewicht",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht|5.1.0"
     ]
   },
@@ -74,7 +74,7 @@ Profiles: [T-CABS Observation Body Weight](StructureDefinition-t-cabs-observatio
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "188800"
+        "code" : "188736"
       }
     ]
   },

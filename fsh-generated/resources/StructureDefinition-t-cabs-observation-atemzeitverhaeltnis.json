@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-atemzeitverhaeltnis",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis",
   "name": "T_CABS_Observation_Atemzeitverhaeltnis",
   "title": "T-CABS Observation Respiratory Time Ratio",
   "status": "draft",
@@ -10,7 +10,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation": "constraint",
   "differential": {
     "element": [

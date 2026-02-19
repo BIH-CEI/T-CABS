@@ -3,7 +3,7 @@
   "id": "beispiel-devicemetric-breas-ahi",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
     ]
   },
   "identifier": [

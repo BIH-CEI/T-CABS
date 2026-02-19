@@ -3,7 +3,7 @@
   "id": "beispiel-beatmungsgeraet-breas",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
     ]
   },
   "extension": [

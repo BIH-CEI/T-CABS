@@ -5,7 +5,7 @@
   "id": "t-cabs-valueset-phdtyp",
   "title": "T-CABS ValueSet PHD Type",
   "description": "This ValueSet contains codes to represent the different PHD measurement devices",
-  "url": "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+  "url": "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-phdtyp",
   "compose": {
     "include": [
       {

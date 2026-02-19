@@ -3,7 +3,7 @@
   "id": "Example-Gehstrecke-Doccla",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke"
     ]
   },
   "category": [
@@ -33,7 +33,7 @@
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "158033"
+        "code": "8454247"
       }
     ]
   },

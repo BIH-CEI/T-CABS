@@ -5,6 +5,7 @@ Title: "T-CABS Observation IPAP"
 Description: "Profile for Inspiratory Positive Airway Pressure (IPAP)"
 
 * code.coding = $IEEE-11073#8410976 //"MDC_SABTE_PRESS_IPAP_SET"
+* code.coding ^definition = "Setting of target inspiration therapy pressure in BiLevel PAP mode during a breath cycle"
 
 * valueQuantity.code = #mbar
 * valueQuantity.unit = "mbar"

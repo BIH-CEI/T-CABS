@@ -22,7 +22,7 @@ Profiles: [T-CABS Organization](StructureDefinition-t-cabs-organisation.md), [ht
   "id" : "beispiel-provider-jochum",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation|5.1.0"
     ]
   },

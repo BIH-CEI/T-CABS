@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-gehstrecke",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke",
   "name": "T_CABS_Observation_Gehstrecke",
   "title": "T-CABS Observation Walking Distance",
   "status": "draft",
@@ -10,7 +10,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -19,7 +19,7 @@
         "path": "Observation.code.coding",
         "sliceName": "MDCType",
         "patternCoding": {
-          "code": "158033",
+          "code": "8454247",
           "system": "urn:iso:std:iso:11073:10101"
         }
       },

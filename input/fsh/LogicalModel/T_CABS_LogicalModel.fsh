@@ -1,5 +1,5 @@
 Logical: T_CABS_LogicalModel
-Id: tCabsLogicalModel
+Id: t-cabs-logical-model
 Title: "T-CABS Logical Model"
 Description: """
 Comprehensive logical model for the T-CABS project covering:
@@ -93,7 +93,7 @@ Mappings are provided to concrete T-CABS FHIR profiles for implementation guidan
 
   * ventilationParameter 0..* BackboneElement "Ventilation Parameters" "Simple ventilation parameters without components"
     
-    * abstractParameter 0..* BackboneElement "Abstract Ventilation Parameter" "Common structure for all simple ventilation measurements"
+    * abstractVentilationParameter 0..* BackboneElement "Abstract Ventilation Parameter" "Common structure for all simple ventilation measurements"
       * parameterType 1..1 code "Parameter Type" "IEEE 11073 MDC code identifying the parameter"
       * parameterName 1..1 string "Parameter Name" "Human-readable parameter name"
       * value 0..1 decimal "Measured Value" "Numeric measurement value"
@@ -129,7 +129,7 @@ Mappings are provided to concrete T-CABS FHIR profiles for implementation guidan
 
   * ventilationParameterComponents 0..* BackboneElement "Component-Based Ventilation Parameters" "Parameters with multiple measurement components"
     
-    * abstractComponentParam 0..* BackboneElement "Abstract Component-Based Parameter" "Common structure for compound ventilation parameters"
+    * abstractComponentParameter 0..* BackboneElement "Abstract Component-Based Parameter" "Common structure for compound ventilation parameters"
       * parameterType 1..1 code "Parameter Type" "IEEE 11073 MDC code for compound parameter"
       * parameterName 1..1 string "Parameter Name" "Human-readable compound parameter name"
       * components 2..* BackboneElement "Parameter Components" "Individual components of compound measurement"
@@ -184,7 +184,7 @@ Mappings are provided to concrete T-CABS FHIR profiles for implementation guidan
 
   * vitalParameter 0..* BackboneElement "Vital Parameters" "Simple vital parameters without components"
     
-    * abstractVitalParam 0..* BackboneElement "Abstract Vital Parameter" "Common structure for all simple vital sign measurements"
+    * abstractVitalParameter 0..* BackboneElement "Abstract Vital Parameter" "Common structure for all simple vital sign measurements"
       * parameterType 1..1 code "Parameter Type" "LOINC code identifying the vital parameter"
       * parameterTypeMDC 1..1 code "Parameter Type (MDC)" "IEEE 11073 MDC code for device compatibility"
       * parameterName 1..1 string "Parameter Name" "Human-readable parameter name"
@@ -220,7 +220,7 @@ Mappings are provided to concrete T-CABS FHIR profiles for implementation guidan
       // Mapping: T_CABS_Observation_FEV1
     * fev6 0..* Quantity "FEV6 (Forced Expiratory Volume 6s)" "Forced expiratory volume in 6 seconds [L]"
       // Mapping: T_CABS_Observation_FEV6
-    * fefTwentyFiveToSeventyFive 0..* Quantity "FEF25-75 (Forced Expiratory Flow)" "Mean forced expiratory flow 25-75% [L/s]"
+    * fef2575 0..* Quantity "FEF25-75 (Forced Expiratory Flow)" "Mean forced expiratory flow 25-75% [L/s]"
       // Mapping: T_CABS_Observation_FEF25_75
 
   * vitalParameterComponents 0..* BackboneElement "Component-Based Vital Parameters" "Vital parameters with multiple measurement components"
@@ -241,5 +241,5 @@ Mappings are provided to concrete T-CABS FHIR profiles for implementation guidan
     // Component-Based Vital Parameters (2 total)
     * bloodPressure 0..* Quantity "Arterial Blood Pressure" "Blood pressure (components: systolic, diastolic, mean) [mmHg]"
       // Mapping: T_CABS_Observation_ArteriellerBlutdruck
-    * fevOneToSixRatio 0..* Quantity "FEV1/FEV6 Ratio" "Pulmonary function ratio (components: FEV1, FEV6)"
+    * fev1fev6Ratio 0..* Quantity "FEV1/FEV6 Ratio" "Pulmonary function ratio (components: FEV1, FEV6)"
       // Mapping: T_CABS_Observation_FEV1_FEV6

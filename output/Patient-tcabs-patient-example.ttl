@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/Patient/tcabs-patient-example> a fhir:Patient ;
+<https://bih-cei.github.io/T-CABS/Patient/tcabs-patient-example> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "tcabs-patient-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-patient"^^xsd:anyURI ;
-       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-patient>
+       fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"^^xsd:anyURI ;
+       fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient>
      ] [
        fhir:v "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0"^^xsd:anyURI ;
        fhir:l <https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient?version=5.1.0>
@@ -58,11 +58,11 @@
      fhir:country [ fhir:v "DE" ]
   ] ) ; # 
   fhir:generalPractitioner ( [
-     fhir:l <http://t-cabs.org/Practitioner/tcabs-practitioner-example> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Practitioner/tcabs-practitioner-example> ;
      fhir:reference [ fhir:v "Practitioner/tcabs-practitioner-example" ]
   ] ) ; # 
   fhir:managingOrganization [
-     fhir:l <http://t-cabs.org/Organization/CABS> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Organization/CABS> ;
      fhir:reference [ fhir:v "Organization/CABS" ]
   ] . # 
 

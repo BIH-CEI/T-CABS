@@ -5,8 +5,8 @@ Title: "T-CABS Observation AHI"
 Description: "Profile for the Apnea-Hypopnea Index (AHI) - Total number of apnea and hypopnea episodes that occurred during sleep, divided by sleep duration in hours"
 
 * code.coding = $IEEE-11073#8410792 //"MDC_SABTE_AHI_TOTAL"
-
-* effective[x] only Period
+* code.coding ^definition = "Total number of all apnoea and hypopnoea events occurring during a usage session divided by the hours of sleep
+* effective[x] only Period"
 
 * valueQuantity.code = #{score}
 

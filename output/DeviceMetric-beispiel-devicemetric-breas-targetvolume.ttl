@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-targetvolume> a fhir:DeviceMetric ;
+<https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-breas-targetvolume> a fhir:DeviceMetric ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "beispiel-devicemetric-breas-targetvolume"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+       fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+       fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
      ] )
   ] ; # 
   fhir:text [
@@ -47,11 +47,11 @@
      ] )
   ] ; # 
   fhir:source [
-     fhir:l <http://t-cabs.org/Device/beispiel-beatmungsgeraet-breas> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-beatmungsgeraet-breas> ;
      fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-breas" ]
   ] ; # 
   fhir:parent [
-     fhir:l <http://t-cabs.org/Device/beispiel-channel-breas-targetvolume> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-breas-targetvolume> ;
      fhir:reference [ fhir:v "Device/beispiel-channel-breas-targetvolume" ]
   ] ; # 
   fhir:operationalStatus [ fhir:v "on"] ; # 

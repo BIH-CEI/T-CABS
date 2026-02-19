@@ -20,7 +20,7 @@ Profile: [T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.m
 
 **effective**: 2024-10-07 22:00:00+0200 --> 2024-10-07 22:15:00+0200
 
-**value**: 15 mbar(Details: UCUM codembar = 'mbar')
+**value**: 15 mbar (Details: UCUM codembar = 'mbar')
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-BREAS-IPAP-001; type = MDC_SABTE_PRESS_IPAP_SET; unit = mbar; operationalStatus = on; color = cyan; category = setting; measurementPeriod = Once per 5 minutes](DeviceMetric-beispiel-devicemetric-breas-ipap.md)
 
@@ -29,7 +29,7 @@ Profile: [T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.m
 | | | | |
 | :--- | :--- | :--- | :--- |
 | - | **Low** | **High** | **Type** |
-| * | 5 mbar(Details: UCUM codembar = 'mbar') | 25 mbar(Details: UCUM codembar = 'mbar') | Therapeutic Desired Level |
+| * | 5 mbar (Details: UCUM codembar = 'mbar') | 25 mbar (Details: UCUM codembar = 'mbar') | Therapeutic Desired Level |
 
 
 
@@ -41,7 +41,7 @@ Profile: [T-CABS Observation IPAP](StructureDefinition-t-cabs-observation-ipap.m
   "id" : "Example-IPAP-BREAS",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap"
     ]
   },
   "partOf" : [

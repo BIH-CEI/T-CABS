@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Device_VMD_Beatmungsgeraet |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Device_VMD_Beatmungsgeraet |
 
  
 Profile representing a virtual subsystem or module 
@@ -17,7 +17,7 @@ Profile representing a virtual subsystem or module
 **Usages:**
 
 * Refer to this Profile: [T-CABS Device Channel Ventilator](StructureDefinition-t-cabs-device-channel-beatmungsgeraet.md)
-* Examples for this Profile: [Device/beispiel-vmd-breas-ahi](Device-beispiel-vmd-breas-ahi.md), [Device/beispiel-vmd-breas-amv](Device-beispiel-vmd-breas-amv.md), [Device/beispiel-vmd-breas-ipap](Device-beispiel-vmd-breas-ipap.md), [Device/beispiel-vmd-breas-targetvolume](Device-beispiel-vmd-breas-targetvolume.md)...Show 7 more,[Device/beispiel-vmd-loewenstein-peep](Device-beispiel-vmd-loewenstein-peep.md),[Device/beispiel-vmd-loewenstein-ti](Device-beispiel-vmd-loewenstein-ti.md),[Device/beispiel-vmd-loewenstein-triggeredbreaths](Device-beispiel-vmd-loewenstein-triggeredbreaths.md),[Device/beispiel-vmd-resmed-atemfrequenz](Device-beispiel-vmd-resmed-atemfrequenz.md),[Device/beispiel-vmd-resmed-atemzeit](Device-beispiel-vmd-resmed-atemzeit.md),[Device/beispiel-vmd-resmed-druck](Device-beispiel-vmd-resmed-druck.md)and[Device/beispiel-vmd-resmed-leckage](Device-beispiel-vmd-resmed-leckage.md)
+* Examples for this Profile: [Device/beispiel-vmd-breas-ahi](Device-beispiel-vmd-breas-ahi.md), [Device/beispiel-vmd-breas-amv](Device-beispiel-vmd-breas-amv.md), [Device/beispiel-vmd-breas-ipap](Device-beispiel-vmd-breas-ipap.md), [Device/beispiel-vmd-breas-targetvolume](Device-beispiel-vmd-breas-targetvolume.md)... Show 7 more, [Device/beispiel-vmd-loewenstein-peep](Device-beispiel-vmd-loewenstein-peep.md), [Device/beispiel-vmd-loewenstein-ti](Device-beispiel-vmd-loewenstein-ti.md), [Device/beispiel-vmd-loewenstein-triggeredbreaths](Device-beispiel-vmd-loewenstein-triggeredbreaths.md), [Device/beispiel-vmd-resmed-atemfrequenz](Device-beispiel-vmd-resmed-atemfrequenz.md), [Device/beispiel-vmd-resmed-atemzeit](Device-beispiel-vmd-resmed-atemzeit.md), [Device/beispiel-vmd-resmed-druck](Device-beispiel-vmd-resmed-druck.md) and [Device/beispiel-vmd-resmed-leckage](Device-beispiel-vmd-resmed-leckage.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet)
 
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-vmd-be
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-device-vmd-beatmungsgeraet",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
   "version" : "0.1.0",
   "name" : "T_CABS_Device_VMD_Beatmungsgeraet",
   "title" : "T-CABS Device VMD Ventilator",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-vmd-be
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
             ]
           }
         ]

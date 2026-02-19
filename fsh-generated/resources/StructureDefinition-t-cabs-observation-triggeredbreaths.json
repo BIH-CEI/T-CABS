@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-triggeredbreaths",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths",
   "name": "T_CABS_Observation_TriggeredBreaths",
   "title": "T-CABS Observation Triggered Breaths",
   "status": "draft",
@@ -10,13 +10,14 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "definition": "Rate of breaths or inspiratory gas flow initiated and terminated by the patient where pressure and flow/volume delivery are determined by the patient without support or assistance by the ventilator. Includes unassisted breaths that are superimposed on the intermittently elevated baseline pressure with APRV, bilevel or spontaneous-only modes.",
         "patternCoding": {
           "code": "152498",
           "system": "urn:iso:std:iso:11073:10101"

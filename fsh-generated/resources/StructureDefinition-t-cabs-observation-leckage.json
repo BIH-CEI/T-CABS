@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-leckage",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage",
   "name": "T_CABS_Observation_Leckage",
   "title": "T-CABS Observation Leakage",
   "status": "draft",
@@ -10,13 +10,14 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "definition": "Volume of gas lost per minute by leakage in ventilation system, tubing, connectors, etc.",
         "patternCoding": {
           "code": "152432",
           "system": "urn:iso:std:iso:11073:10101"

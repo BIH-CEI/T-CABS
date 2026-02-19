@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_DiagnosticReport_Visitenbefund |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-diagnosticreport-visitenbefund | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_DiagnosticReport_Visitenbefund |
 
  
 Profile for an assessment of the weekly telemedicine visit within the T-CABS study 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-diagnosticrep
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-diagnosticreport-visitenbefund",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-diagnosticreport-visitenbefund",
   "version" : "0.1.0",
   "name" : "T_CABS_DiagnosticReport_Visitenbefund",
   "title" : "T-CABS DiagnosticReport Visit Finding",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -124,7 +124,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-diagnosticrep
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
+            ]
           }
         ]
       },
@@ -135,7 +137,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-diagnosticrep
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt"
             ]
           }
         ]
@@ -153,8 +155,8 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-diagnosticrep
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
-              "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter"
             ]
           }
         ]

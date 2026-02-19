@@ -22,9 +22,9 @@ Profile: [T-CABS Observation Pressure MIN/MAX](StructureDefinition-t-cabs-observ
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-DRUCK-001; type = MDC_PRESS_AWAY; unit = mbar; operationalStatus = on; color = black; category = measurement; measurementPeriod = Once per 30 seconds](DeviceMetric-beispiel-devicemetric-resmed-druck.md)
 
-> **component****code**:MDC_PRESS_AWAY_MIN**value**: 4 mbar(Details: UCUM codembar = 'mbar')
+> **component****code**: MDC_PRESS_AWAY_MIN**value**: 4 mbar (Details: UCUM codembar = 'mbar')
 
-> **component****code**:MDC_PRESS_AWAY_MAX**value**: 20 mbar(Details: UCUM codembar = 'mbar')
+> **component****code**: MDC_PRESS_AWAY_MAX**value**: 20 mbar (Details: UCUM codembar = 'mbar')
 
 
 
@@ -36,7 +36,7 @@ Profile: [T-CABS Observation Pressure MIN/MAX](StructureDefinition-t-cabs-observ
   "id" : "Example-DruckMinMax-ResMed",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax"
     ]
   },
   "partOf" : [

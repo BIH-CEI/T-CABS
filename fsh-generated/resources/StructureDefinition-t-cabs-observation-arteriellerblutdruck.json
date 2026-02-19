@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-arteriellerblutdruck",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
   "name": "T_CABS_Observation_ArteriellerBlutdruck",
   "title": "T-CABS Observation Arterial Blood Pressure",
   "status": "draft",
@@ -10,7 +10,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -306,7 +306,8 @@
           "coding": [
             {
               "code": "8480-6",
-              "system": "http://loinc.org"
+              "system": "http://loinc.org",
+              "display": "Systolic blood pressure"
             }
           ]
         }
@@ -348,7 +349,8 @@
           "coding": [
             {
               "code": "8462-4",
-              "system": "http://loinc.org"
+              "system": "http://loinc.org",
+              "display": "Diastolic blood pressure"
             }
           ]
         }
@@ -390,7 +392,8 @@
           "coding": [
             {
               "code": "8478-0",
-              "system": "http://loinc.org"
+              "system": "http://loinc.org",
+              "display": "Mean blood pressure"
             }
           ]
         }

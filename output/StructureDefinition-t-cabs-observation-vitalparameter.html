@@ -24,8 +24,6 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/hl7.css" rel="stylesheet"/>
-<link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -47,24 +45,28 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.36"}
-    h3,h4,h5,h6{--heading-prefix:"13.36"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.36"}
+    h3,h4,h5,h6{--heading-prefix:"14.36"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
-
+        <!-- T-CABS Header Logos -->
 <div id="project-nav">
-    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
-        <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
-    </a>            
+    <a id="project-logo" data-no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+        <img alt="T-CABS Project" height="50" src="T-CABS_Logo.png"/>
+    </a>
+</div>
+<div id="charite-nav">
+    <a id="charite-logo" data-no-external="true" href="https://www.charite.de/">
+        <img alt="Charité" height="50" src="Logo_Charite.png"/>
+    </a>
+</div>
+<div id="family-nav">
+    <a id="family-logo" data-no-external="true" href="https://www.bihealth.org/">
+        <img alt="BIH" height="50" src="BIH-Logo_neu.png"/>
+    </a>
 </div>
 
-<div id="family-nav">
-    <a id="family-logo" no-external="true" href="https://www.charite.de/">
-        <img alt="visit the website" height="60" src="Logo_Charite.png" />
-    </a>            
-</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
@@ -158,6 +160,9 @@
     <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
+    <a href="Release-Notes.html">Release Notes</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>
@@ -195,7 +200,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://bih-cei.github.io/T-CABS/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -272,10 +277,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter|0.1.0"/></span>
       </td>
     </tr>
 
@@ -291,7 +296,7 @@
         
           Draft
           
-            as of 2025-12-09
+            as of 2026-02-19
           
         
       </td>
@@ -320,7 +325,7 @@
 
 <p><b>Usages:</b></p>
 <ul>
- <li>Derived from this Profile: <a href="StructureDefinition-t-cabs-observation-arteriellespo2.html">T-CABS Observation SPO2</a>, <a href="StructureDefinition-t-cabs-observation-atemfrequenz.html">T-CABS Observation Respiratory Rate</a>, <a href="StructureDefinition-t-cabs-observation-bmi.html">T-CABS Observation BMI</a>, <a href="StructureDefinition-t-cabs-observation-gehstrecke.html">T-CABS Observation Walking Distance</a><span id="rr_base" onClick="document.getElementById('rr_base').innerHTML = document.getElementById('rr2_base').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 8 more</span></span><span id="rr2_base" style="display: none">, <a href="StructureDefinition-t-cabs-observation-herzfrequenz.html">T-CABS Observation Heart Rate</a>, <a href="StructureDefinition-t-cabs-observation-koerpergewicht.html">T-CABS Observation Body Weight</a>, <a href="StructureDefinition-t-cabs-observation-koerpertemperatur.html">T-CABS Observation Body Temperature</a>, <a href="StructureDefinition-t-cabs-observationfev1.html">T-CABS Observation FEV1</a>, <a href="StructureDefinition-t-cabs-observationfev1fef25-75.html">T-CABS Observation FEF25-75</a>, <a href="StructureDefinition-t-cabs-observationfev1fev6.html">T-CABS Observation FEV1/FEV6</a>, <a href="StructureDefinition-t-cabs-observationfev6.html">T-CABS Observation FEV6</a> and <a href="StructureDefinition-t-cabs-observationhandgriffstaerke.html">T-CABS Observation Hand Grip Strength</a></span></li>
+ <li>Derived from this Profile: <a href="StructureDefinition-t-cabs-observation-arteriellespo2.html">T-CABS Observation Arterielle SPO2</a>, <a href="StructureDefinition-t-cabs-observation-atemfrequenz.html">T-CABS Observation Respiratory Rate</a>, <a href="StructureDefinition-t-cabs-observation-bmi.html">T-CABS Observation BMI</a>, <a href="StructureDefinition-t-cabs-observation-gehstrecke.html">T-CABS Observation Walking Distance</a><span id="rr_base" onClick="document.getElementById('rr_base').innerHTML = document.getElementById('rr2_base').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 8 more</span></span><span id="rr2_base" style="display: none">, <a href="StructureDefinition-t-cabs-observation-herzfrequenz.html">T-CABS Observation Heart Rate</a>, <a href="StructureDefinition-t-cabs-observation-koerpergewicht.html">T-CABS Observation Body Weight</a>, <a href="StructureDefinition-t-cabs-observation-koerpertemperatur.html">T-CABS Observation Body Temperature</a>, <a href="StructureDefinition-t-cabs-observationfev1.html">T-CABS Observation FEV1</a>, <a href="StructureDefinition-t-cabs-observationfev1fef25-75.html">T-CABS Observation FEF25-75</a>, <a href="StructureDefinition-t-cabs-observationfev1fev6.html">T-CABS Observation FEV1/FEV6</a>, <a href="StructureDefinition-t-cabs-observationfev6.html">T-CABS Observation FEV6</a> and <a href="StructureDefinition-t-cabs-observationhandgriffstaerke.html">T-CABS Observation Hand Grip Strength</a></span></li>
  <li>Refer to this Profile: <a href="StructureDefinition-t-cabs-diagnosticreport-visitenbefund.html">T-CABS DiagnosticReport Visit Finding</a></li>
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-observation-vitalparameter">usages in the FHIR IG Statistics</a></p>
@@ -1223,7 +1228,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primitive value for string<br/><span style="font-weight:bold">Max Length:</span><span style="color: darkgreen">1048576</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-observation-vitalparameterK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-observation-vitalparameterK'), 'binding', document.getElementById('cbt-cabs-observation-vitalparameterK-binding').checked, document.getElementById('ppt-cabs-observation-vitalparameterK'));
 document.getElementById('cbt-cabs-observation-vitalparameterK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1804,7 +1809,7 @@ filterDesc(document.getElementById('t-cabs-observation-vitalparameterK'), 'oblig
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-phd.html">T-CABS Device PHD</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reference to the PHD measurement device</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-observation-vitalparameterD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-observation-vitalparameterD'), 'binding', document.getElementById('cbt-cabs-observation-vitalparameterD-binding').checked, document.getElementById('ppt-cabs-observation-vitalparameterD'));
 document.getElementById('cbt-cabs-observation-vitalparameterD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4163,7 +4168,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-observation-vitalparameterS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-observation-vitalparameterS'), 'binding', document.getElementById('cbt-cabs-observation-vitalparameterS-binding').checked, document.getElementById('ppt-cabs-observation-vitalparameterS'));
 document.getElementById('cbt-cabs-observation-vitalparameterS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -5526,9 +5531,9 @@ Summary
 <p>Mandatory: 1 element<br/> Must-Support: 10 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-t-cabs-device-phg.html">T-CABS Device PHG <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-device-phg)</span></a></li>
-<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-patient)</span></a></li>
-<li><a href="StructureDefinition-t-cabs-device-phd.html">T-CABS Device PHD <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-device-phd)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-device-phg.html">T-CABS Device PHG <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-device-phd.html">T-CABS Device PHD <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd)</span></a></li>
 
 </ul>
 
@@ -6398,7 +6403,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primitive value for string<br/><span style="font-weight:bold">Max Length:</span><span style="color: darkgreen">1048576</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-observation-vitalparameterKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-observation-vitalparameterKA'), 'binding', document.getElementById('cbt-cabs-observation-vitalparameterKA-binding').checked, document.getElementById('ppt-cabs-observation-vitalparameterKA'));
 document.getElementById('cbt-cabs-observation-vitalparameterKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -6979,7 +6984,7 @@ filterDesc(document.getElementById('t-cabs-observation-vitalparameterKA'), 'obli
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-device-phd.html">T-CABS Device PHD</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reference to the PHD measurement device</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-observation-vitalparameterDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-observation-vitalparameterDA'), 'binding', document.getElementById('cbt-cabs-observation-vitalparameterDA-binding').checked, document.getElementById('ppt-cabs-observation-vitalparameterDA'));
 document.getElementById('cbt-cabs-observation-vitalparameterDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -9337,7 +9342,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-observation-vitalparameterSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-observation-vitalparameterSA'), 'binding', document.getElementById('cbt-cabs-observation-vitalparameterSA-binding').checked, document.getElementById('ppt-cabs-observation-vitalparameterSA'));
 document.getElementById('cbt-cabs-observation-vitalparameterSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -10696,9 +10701,9 @@ Summary
 <p>Mandatory: 1 element<br/> Must-Support: 10 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-t-cabs-device-phg.html">T-CABS Device PHG <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-device-phg)</span></a></li>
-<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-patient)</span></a></li>
-<li><a href="StructureDefinition-t-cabs-device-phd.html">T-CABS Device PHD <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-device-phd)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-device-phg.html">T-CABS Device PHG <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-device-phd.html">T-CABS Device PHD <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd)</span></a></li>
 
 </ul>
 
@@ -10760,14 +10765,13 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 9, 2025 09:55+0100">2025-12-09</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 19, 2026 13:21+0100">2026-02-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

@@ -22,6 +22,13 @@ The data elements of the Patient profile are predominantly optional to facilitat
 
 #### Implementation
 
+Mandatory specifications for a T-CABS Patient:
+
+* Patient.identifier - Identifier of the patient
+* Patient.name - Name of the patient
+
+**Note:** The repeatability of elements is not specified at this point; it is indicated in the profile representations in the "Card." column.
+
 Example instance of a patient in the T-CABS study:
 
 ```
@@ -103,6 +110,12 @@ The Patient profile is a central reference for:
 The Organization profile serves to represent healthcare providers involved in the T-CABS study, particularly homecare providers. To simplify implementation, only the `Organization.name` element is mandatory, all other elements are optional. The assignment is mapped through a reference within the devices via the `Device.owner` element.
 
 #### Implementation
+
+Mandatory specifications for a T-CABS Organization:
+
+* Organization.name - Name of the Organization
+
+**Note:** The repeatability of elements is not specified at this point; it is indicated in the profile representations in the "Card." column.
 
 Example instance of the Jochum provider:
 

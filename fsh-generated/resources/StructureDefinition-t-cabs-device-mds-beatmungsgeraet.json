@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-device-mds-beatmungsgeraet",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
   "name": "T_CABS_Device_MDS_Beatmungsgeraet",
-  "title": "T-CABS Device MDS Home Ventilator",
+  "title": "T-CABS Device MDS Ventilator",
   "status": "draft",
-  "description": "Profile for a home ventilator device",
+  "description": "Profile for a ventilator device",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -88,7 +88,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
             ]
           }
         ]

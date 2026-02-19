@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_IPAP |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Observation_IPAP |
 
  
 Profile for Inspiratory Positive Airway Pressure (IPAP) 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-i
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-observation-ipap",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_IPAP",
   "title" : "T-CABS Observation IPAP",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-i
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -123,6 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-i
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
+        "definition" : "Setting of target inspiration therapy pressure in BiLevel PAP mode during a breath cycle",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "8410976"

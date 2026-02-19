@@ -6,23 +6,23 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/ImplementationGuide/t-cabs> a fhir:ImplementationGuide ;
+<https://bih-cei.github.io/T-CABS/ImplementationGuide/t-cabs> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "t-cabs"] ; # 
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide t-cabs</b></p><a name=\"t-cabs\"> </a><a name=\"hct-cabs\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>TCABS</h2><p>The official URL for this implementation guide is: </p><pre>http://t-cabs.org/ImplementationGuide/t-cabs</pre></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide t-cabs</b></p><a name=\"t-cabs\"> </a><a name=\"hct-cabs\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>TCABS</h2><p>The official URL for this implementation guide is: </p><pre>https://bih-cei.github.io/T-CABS/ImplementationGuide/t-cabs</pre></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "http://t-cabs.org/ImplementationGuide/t-cabs"^^xsd:anyURI ;
-     fhir:l <http://t-cabs.org/ImplementationGuide/t-cabs>
+     fhir:v "https://bih-cei.github.io/T-CABS/ImplementationGuide/t-cabs"^^xsd:anyURI ;
+     fhir:l <https://bih-cei.github.io/T-CABS/ImplementationGuide/t-cabs>
   ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TCABS"] ; # 
   fhir:title [ fhir:v "T-CABS Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-09T09:55:43+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-19T13:21:58+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH-CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH-CEI" ] ;
@@ -42,7 +42,7 @@
      ] )
   ] ) ; # 
   fhir:packageId [ fhir:v "t-cabs"] ; # 
-  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:license [ fhir:v "CC-BY-4.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
   fhir:dependsOn ( [
      fhir:id [ fhir:v "hl7tx" ] ;
@@ -61,7 +61,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.0.0" ]
+     fhir:version [ fhir:v "7.0.1" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -379,7 +379,7 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "http://t-cabs.org/history.html"
+           fhir:v "https://bih-cei.github.io/T-CABS/history.html"
          ]
        ] ) ;
        fhir:url [
@@ -753,7 +753,7 @@
        ] ;
        fhir:value [
          a fhir:Code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.9.0"
        ]
      ] [
        fhir:extension ( [
@@ -1012,7 +1012,7 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "http://t-cabs.org/history.html"
+           fhir:v "https://bih-cei.github.io/T-CABS/history.html"
          ]
        ] ) ;
        fhir:url [
@@ -1392,15 +1392,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Organization/CABS> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Organization/CABS> ;
          fhir:reference [ fhir:v "Organization/CABS" ]
        ] ;
        fhir:name [ fhir:v "Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS)" ] ;
        fhir:description [ fhir:v "The Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS) of the clinic cares for patients with diseases of the lungs, muscles or nervous system who are temporarily or permanently dependent on respiratory support and is part of the clinic's certified weaning center." ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-organisation>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation>
        ]
      ] [
        fhir:extension ( [
@@ -1414,15 +1414,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-AHI-BREAS> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-AHI-BREAS> ;
          fhir:reference [ fhir:v "Observation/Example-AHI-BREAS" ]
        ] ;
        fhir:name [ fhir:v "Example AHI Measurement BREAS" ] ;
        fhir:description [ fhir:v "Example of an AHI measurement from a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi>
        ]
      ] [
        fhir:extension ( [
@@ -1436,15 +1436,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-AMV-BREAS-gemessen> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-AMV-BREAS-gemessen> ;
          fhir:reference [ fhir:v "Observation/Example-AMV-BREAS-gemessen" ]
        ] ;
        fhir:name [ fhir:v "Example AMV Measurement BREAS" ] ;
        fhir:description [ fhir:v "Example of a measured AMV measurement from a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-amv>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv>
        ]
      ] [
        fhir:extension ( [
@@ -1458,15 +1458,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-ArteriellerBlutdruck-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-ArteriellerBlutdruck-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-ArteriellerBlutdruck-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example Arterial Blood Pressure Measurement" ] ;
        fhir:description [ fhir:v "Example of an arterial blood pressure measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck>
        ]
      ] [
        fhir:extension ( [
@@ -1480,15 +1480,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-ArterielleSPO2-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-ArterielleSPO2-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-ArterielleSPO2-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example Arterial SPO2 Measurement" ] ;
        fhir:description [ fhir:v "Example of an arterial SPO2 measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2>
        ]
      ] [
        fhir:extension ( [
@@ -1502,15 +1502,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-BMI-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-BMI-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-BMI-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example BMI Measurement" ] ;
        fhir:description [ fhir:v "Example of a BMI measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-bmi"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-bmi>
        ]
      ] [
        fhir:extension ( [
@@ -1524,15 +1524,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-Koerpertemperatur-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-Koerpertemperatur-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-Koerpertemperatur-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example Body Temperature Measurement" ] ;
        fhir:description [ fhir:v "Example of a body temperature measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpertemperatur"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpertemperatur>
        ]
      ] [
        fhir:extension ( [
@@ -1546,15 +1546,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-Koerpergewicht-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-Koerpergewicht-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-Koerpergewicht-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example Body Weight Measurement" ] ;
        fhir:description [ fhir:v "Example of a body weight measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpergewicht"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpergewicht>
        ]
      ] [
        fhir:extension ( [
@@ -1568,15 +1568,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-breas-ahi> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-breas-ahi> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-breas-ahi" ]
        ] ;
        fhir:name [ fhir:v "Example Channel BREAS AHI" ] ;
        fhir:description [ fhir:v "Example of an AHI channel for grouping AHI measurements" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1590,15 +1590,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-breas-amv> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-breas-amv> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-breas-amv" ]
        ] ;
        fhir:name [ fhir:v "Example Channel BREAS AMV" ] ;
        fhir:description [ fhir:v "Example of an AMV channel for grouping AMV measurements" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1612,15 +1612,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-breas-ipap> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-breas-ipap> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-breas-ipap" ]
        ] ;
        fhir:name [ fhir:v "Example Channel BREAS IPAP" ] ;
        fhir:description [ fhir:v "Example of an IPAP channel for grouping IPAP settings" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1634,15 +1634,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-breas-targetvolume> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-breas-targetvolume> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-breas-targetvolume" ]
        ] ;
        fhir:name [ fhir:v "Example Channel BREAS Target Volume" ] ;
        fhir:description [ fhir:v "Example of a target volume channel for grouping target volume settings" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1656,15 +1656,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-loewenstein-peep> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-loewenstein-peep> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-loewenstein-peep" ]
        ] ;
        fhir:name [ fhir:v "Example Channel Löwenstein PEEP" ] ;
        fhir:description [ fhir:v "Example of a PEEP channel for grouping PEEP measurements" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1678,15 +1678,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-loewenstein-ti> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-loewenstein-ti> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-loewenstein-ti" ]
        ] ;
        fhir:name [ fhir:v "Example Channel Löwenstein TI" ] ;
        fhir:description [ fhir:v "Example of a TI channel for grouping TI measurements" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1700,15 +1700,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-loewenstein-triggeredbreaths> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-loewenstein-triggeredbreaths> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-loewenstein-triggeredbreaths" ]
        ] ;
        fhir:name [ fhir:v "Example Channel Löwenstein TriggeredBreaths" ] ;
        fhir:description [ fhir:v "Example of a TriggeredBreaths channel for grouping TriggeredBreaths measurements" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1722,15 +1722,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-resmed-leckage> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-resmed-leckage> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-resmed-leckage" ]
        ] ;
        fhir:name [ fhir:v "Example Channel ResMed Leakage" ] ;
        fhir:description [ fhir:v "Example of a leakage channel for grouping leakage measurements" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1744,15 +1744,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-resmed-druck> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-resmed-druck> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-resmed-druck" ]
        ] ;
        fhir:name [ fhir:v "Example Channel ResMed Pressure Min/Max" ] ;
        fhir:description [ fhir:v "Example of a pressure min/max channel for grouping pressure measurements" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1766,15 +1766,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-resmed-atemfrequenz> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-resmed-atemfrequenz> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-resmed-atemfrequenz" ]
        ] ;
        fhir:name [ fhir:v "Example Channel ResMed Respiratory Rate" ] ;
        fhir:description [ fhir:v "Example of a respiratory rate channel for grouping respiratory rate measurements" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1788,15 +1788,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-channel-resmed-atemzeit> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-channel-resmed-atemzeit> ;
          fhir:reference [ fhir:v "Device/beispiel-channel-resmed-atemzeit" ]
        ] ;
        fhir:name [ fhir:v "Example Channel ResMed Respiratory Time Ratio" ] ;
        fhir:description [ fhir:v "Example of a respiratory time ratio channel for grouping respiratory time ratio calculations" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -1810,15 +1810,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-ahi> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-breas-ahi> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-breas-ahi" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric BREAS AHI" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for AHI calculation of a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -1832,15 +1832,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-amv> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-breas-amv> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-breas-amv" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric BREAS AMV" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for AMV measurement of a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -1854,15 +1854,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-ipap> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-breas-ipap> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-breas-ipap" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric BREAS IPAP" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for IPAP setting of a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -1876,15 +1876,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-breas-targetvolume> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-breas-targetvolume> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-breas-targetvolume" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric BREAS Target Volume" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for target volume setting of a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -1898,15 +1898,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-loewenstein-peep> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-loewenstein-peep> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-loewenstein-peep" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric Löwenstein PEEP" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for PEEP measurement of a Löwenstein ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -1920,15 +1920,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-loewenstein-ti> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-loewenstein-ti> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-loewenstein-ti" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric Löwenstein TI" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for TI measurement (inspiration time) of a Löwenstein ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -1942,15 +1942,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric Löwenstein TriggeredBreaths" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for TriggeredBreaths measurement of a Löwenstein ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -1964,15 +1964,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-leckage> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-resmed-leckage> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-leckage" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric ResMed Leakage" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for leakage measurement of a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -1986,15 +1986,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-druck> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-resmed-druck> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-druck" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric ResMed Pressure Min/Max" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for pressure min/max measurement of a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -2008,15 +2008,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric ResMed Respiratory Rate" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for respiratory rate measurement of a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -2030,15 +2030,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DeviceMetric/beispiel-devicemetric-resmed-atemzeit> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DeviceMetric/beispiel-devicemetric-resmed-atemzeit> ;
          fhir:reference [ fhir:v "DeviceMetric/beispiel-devicemetric-resmed-atemzeit" ]
        ] ;
        fhir:name [ fhir:v "Example DeviceMetric ResMed Respiratory Time Ratio" ] ;
        fhir:description [ fhir:v "Example of a DeviceMetric for respiratory time ratio calculation of a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric>
        ]
      ] [
        fhir:extension ( [
@@ -2052,15 +2052,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/DiagnosticReport/Example-DiagnosticReport-Woechentliche-Visite> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/DiagnosticReport/Example-DiagnosticReport-Woechentliche-Visite> ;
          fhir:reference [ fhir:v "DiagnosticReport/Example-DiagnosticReport-Woechentliche-Visite" ]
        ] ;
        fhir:name [ fhir:v "Example DiagnosticReport Weekly Visit" ] ;
        fhir:description [ fhir:v "Example of a visit finding of a weekly telemedicine visit" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-diagnosticreport-visitenbefund>
        ]
      ] [
        fhir:extension ( [
@@ -2074,15 +2074,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-FEF25-75-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-FEF25-75-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-FEF25-75-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example FEF25-75% Measurement" ] ;
        fhir:description [ fhir:v "Example of a FEF25-75% measurement (Mean forced expiratory flow) via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fef25-75"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fef25-75>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fef25-75"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fef25-75>
        ]
      ] [
        fhir:extension ( [
@@ -2096,15 +2096,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-FEV1-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-FEV1-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-FEV1-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example FEV1 Measurement" ] ;
        fhir:description [ fhir:v "Example of a FEV1 measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationfev1>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1>
        ]
      ] [
        fhir:extension ( [
@@ -2118,15 +2118,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-FEV1-FEV6-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-FEV1-FEV6-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-FEV1-FEV6-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example FEV1/FEV6 Ratio Measurement" ] ;
        fhir:description [ fhir:v "Example of a FEV1/FEV6 ratio measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fev6"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fev6>
        ]
      ] [
        fhir:extension ( [
@@ -2140,15 +2140,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-FEV6-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-FEV6-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-FEV6-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example FEV6 Measurement" ] ;
        fhir:description [ fhir:v "Example of a FEV6 measurement (Forced Expiratory Volume in 6 Seconds) via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observationfev6"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationfev6>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6>
        ]
      ] [
        fhir:extension ( [
@@ -2162,15 +2162,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-Handgriffstaerke-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-Handgriffstaerke-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-Handgriffstaerke-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example Hand Grip Strength Measurement" ] ;
        fhir:description [ fhir:v "Example of a hand grip strength measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke>
        ]
      ] [
        fhir:extension ( [
@@ -2184,15 +2184,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-Herzfrequenz-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-Herzfrequenz-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-Herzfrequenz-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example Heart Rate Measurement" ] ;
        fhir:description [ fhir:v "Example of a heart rate measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-herzfrequenz"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-herzfrequenz>
        ]
      ] [
        fhir:extension ( [
@@ -2206,15 +2206,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-IPAP-BREAS> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-IPAP-BREAS> ;
          fhir:reference [ fhir:v "Observation/Example-IPAP-BREAS" ]
        ] ;
        fhir:name [ fhir:v "Example IPAP BREAS" ] ;
        fhir:description [ fhir:v "Example of IPAP from a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap>
        ]
      ] [
        fhir:extension ( [
@@ -2228,15 +2228,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-Leckage-ResMed> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-Leckage-ResMed> ;
          fhir:reference [ fhir:v "Observation/Example-Leckage-ResMed" ]
        ] ;
        fhir:name [ fhir:v "Example Leakage ResMed" ] ;
        fhir:description [ fhir:v "Example of leakage measurement from a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage>
        ]
      ] [
        fhir:extension ( [
@@ -2250,15 +2250,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-PEEP-Loewenstein> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-PEEP-Loewenstein> ;
          fhir:reference [ fhir:v "Observation/Example-PEEP-Loewenstein" ]
        ] ;
        fhir:name [ fhir:v "Example PEEP Löwenstein" ] ;
        fhir:description [ fhir:v "Example of PEEP from a Löwenstein ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-peep>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep>
        ]
      ] [
        fhir:extension ( [
@@ -2272,15 +2272,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-phd-blutdruckmessgeraet> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phd-blutdruckmessgeraet> ;
          fhir:reference [ fhir:v "Device/beispiel-phd-blutdruckmessgeraet" ]
        ] ;
        fhir:name [ fhir:v "Example PHD Blood Pressure Monitor" ] ;
        fhir:description [ fhir:v "Example of a Personal Health Device blood pressure monitor (sphygmomanometer)" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd>
        ]
      ] [
        fhir:extension ( [
@@ -2294,15 +2294,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-phd-dynamometer> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phd-dynamometer> ;
          fhir:reference [ fhir:v "Device/beispiel-phd-dynamometer" ]
        ] ;
        fhir:name [ fhir:v "Example PHD Hand Dynamometer" ] ;
        fhir:description [ fhir:v "Example of a Personal Health Device dynamometer for hand grip strength measurement" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd>
        ]
      ] [
        fhir:extension ( [
@@ -2316,15 +2316,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-phd-peakflow> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phd-peakflow> ;
          fhir:reference [ fhir:v "Device/beispiel-phd-peakflow" ]
        ] ;
        fhir:name [ fhir:v "Example PHD Peak Flow Meter" ] ;
        fhir:description [ fhir:v "Example of a Personal Health Device peak flow meter for respiratory measurement" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd>
        ]
      ] [
        fhir:extension ( [
@@ -2338,15 +2338,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-phd-pulsoximeter> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phd-pulsoximeter> ;
          fhir:reference [ fhir:v "Device/beispiel-phd-pulsoximeter" ]
        ] ;
        fhir:name [ fhir:v "Example PHD Pulse Oximeter" ] ;
        fhir:description [ fhir:v "Example of a Personal Health Device pulse oximeter from Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd>
        ]
      ] [
        fhir:extension ( [
@@ -2360,15 +2360,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-phd-waage> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phd-waage> ;
          fhir:reference [ fhir:v "Device/beispiel-phd-waage" ]
        ] ;
        fhir:name [ fhir:v "Example PHD Scale" ] ;
        fhir:description [ fhir:v "Example of a Personal Health Device scale for weight measurement" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd>
        ]
      ] [
        fhir:extension ( [
@@ -2382,15 +2382,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-phd-spirometer> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phd-spirometer> ;
          fhir:reference [ fhir:v "Device/beispiel-phd-spirometer" ]
        ] ;
        fhir:name [ fhir:v "Example PHD Spirometer" ] ;
        fhir:description [ fhir:v "Example of a Personal Health Device spirometer for lung function measurement" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd>
        ]
      ] [
        fhir:extension ( [
@@ -2404,15 +2404,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-phd-schrittzaehler> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phd-schrittzaehler> ;
          fhir:reference [ fhir:v "Device/beispiel-phd-schrittzaehler" ]
        ] ;
        fhir:name [ fhir:v "Example PHD Step Counter" ] ;
        fhir:description [ fhir:v "Example of a Personal Health Device step counter for activity measurement" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd>
        ]
      ] [
        fhir:extension ( [
@@ -2426,15 +2426,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-phg-doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-phg-doccla> ;
          fhir:reference [ fhir:v "Device/beispiel-phg-doccla" ]
        ] ;
        fhir:name [ fhir:v "Example PHG Tablet" ] ;
        fhir:description [ fhir:v "Example of a Personal Health Gateway tablet from Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phg"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phg>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg>
        ]
      ] [
        fhir:extension ( [
@@ -2448,15 +2448,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-DruckMinMax-ResMed> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-DruckMinMax-ResMed> ;
          fhir:reference [ fhir:v "Observation/Example-DruckMinMax-ResMed" ]
        ] ;
        fhir:name [ fhir:v "Example Pressure Min/Max ResMed" ] ;
        fhir:description [ fhir:v "Example of minimal and maximal ventilation pressure from a ResMed device" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax>
        ]
      ] [
        fhir:extension ( [
@@ -2470,15 +2470,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Organization/beispiel-provider-doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Organization/beispiel-provider-doccla> ;
          fhir:reference [ fhir:v "Organization/beispiel-provider-doccla" ]
        ] ;
        fhir:name [ fhir:v "Example Provider Doccla" ] ;
        fhir:description [ fhir:v "Example for the vital parameter provider Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-organisation>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation>
        ]
      ] [
        fhir:extension ( [
@@ -2492,15 +2492,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Organization/beispiel-provider-jochum> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Organization/beispiel-provider-jochum> ;
          fhir:reference [ fhir:v "Organization/beispiel-provider-jochum" ]
        ] ;
        fhir:name [ fhir:v "Example Provider Jochum" ] ;
        fhir:description [ fhir:v "Example for the ventilation equipment provider Jochum" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-organisation>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation>
        ]
      ] [
        fhir:extension ( [
@@ -2514,15 +2514,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Organization/beispiel-provider-loewenstein> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Organization/beispiel-provider-loewenstein> ;
          fhir:reference [ fhir:v "Organization/beispiel-provider-loewenstein" ]
        ] ;
        fhir:name [ fhir:v "Example Provider Löwenstein" ] ;
        fhir:description [ fhir:v "Example for the ventilation equipment provider Löwenstein" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-organisation>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation>
        ]
      ] [
        fhir:extension ( [
@@ -2536,15 +2536,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Organization/beispiel-provider-vivisol> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Organization/beispiel-provider-vivisol> ;
          fhir:reference [ fhir:v "Organization/beispiel-provider-vivisol" ]
        ] ;
        fhir:name [ fhir:v "Example Provider Vivisol" ] ;
        fhir:description [ fhir:v "Example for the ventilation equipment provider Vivisol" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-organisation>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation>
        ]
      ] [
        fhir:extension ( [
@@ -2558,15 +2558,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-Atemfrequenz-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-Atemfrequenz-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-Atemfrequenz-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example Respiratory Rate Measurement" ] ;
        fhir:description [ fhir:v "Example of a respiratory rate measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz>
        ]
      ] [
        fhir:extension ( [
@@ -2580,15 +2580,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-Atemfrequenz-ResMed-gemessen> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-Atemfrequenz-ResMed-gemessen> ;
          fhir:reference [ fhir:v "Observation/Example-Atemfrequenz-ResMed-gemessen" ]
        ] ;
        fhir:name [ fhir:v "Example Respiratory Rate Measurement ResMed" ] ;
        fhir:description [ fhir:v "Example of a measured respiratory rate from a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet>
        ]
      ] [
        fhir:extension ( [
@@ -2602,15 +2602,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-Atemzeitverhaeltnis-ResMed> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-Atemzeitverhaeltnis-ResMed> ;
          fhir:reference [ fhir:v "Observation/Example-Atemzeitverhaeltnis-ResMed" ]
        ] ;
        fhir:name [ fhir:v "Example Respiratory Time Ratio ResMed" ] ;
        fhir:description [ fhir:v "Example of respiratory time ratio from a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis>
        ]
      ] [
        fhir:extension ( [
@@ -2624,15 +2624,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-TargetVolume-BREAS> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-TargetVolume-BREAS> ;
          fhir:reference [ fhir:v "Observation/Example-TargetVolume-BREAS" ]
        ] ;
        fhir:name [ fhir:v "Example Target Volume BREAS" ] ;
        fhir:description [ fhir:v "Example of target volume from a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume>
        ]
      ] [
        fhir:extension ( [
@@ -2646,15 +2646,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Encounter/Example-Encounter-Telemedizinische-Visite> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Encounter/Example-Encounter-Telemedizinische-Visite> ;
          fhir:reference [ fhir:v "Encounter/Example-Encounter-Telemedizinische-Visite" ]
        ] ;
        fhir:name [ fhir:v "Example Telemedicine Visit" ] ;
        fhir:description [ fhir:v "Example of a weekly telemedicine visit of a T-CABS patient" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt>
        ]
      ] [
        fhir:extension ( [
@@ -2668,15 +2668,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-TI-Loewenstein> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-TI-Loewenstein> ;
          fhir:reference [ fhir:v "Observation/Example-TI-Loewenstein" ]
        ] ;
        fhir:name [ fhir:v "Example TI Löwenstein" ] ;
        fhir:description [ fhir:v "Example of inspiration time from a Löwenstein ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-ti>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti>
        ]
      ] [
        fhir:extension ( [
@@ -2690,15 +2690,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-TriggeredBreaths-Loewenstein> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-TriggeredBreaths-Loewenstein> ;
          fhir:reference [ fhir:v "Observation/Example-TriggeredBreaths-Loewenstein" ]
        ] ;
        fhir:name [ fhir:v "Example Triggered Breaths Löwenstein" ] ;
        fhir:description [ fhir:v "Example of triggered breaths from a Löwenstein ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths>
        ]
      ] [
        fhir:extension ( [
@@ -2712,15 +2712,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Procedure/beispiel-beatmung-breas> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Procedure/beispiel-beatmung-breas> ;
          fhir:reference [ fhir:v "Procedure/beispiel-beatmung-breas" ]
        ] ;
        fhir:name [ fhir:v "Example Ventilation BREAS" ] ;
        fhir:description [ fhir:v "Example of a ventilation procedure with BREAS device (PCV mode)" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung>
        ]
      ] [
        fhir:extension ( [
@@ -2734,15 +2734,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Procedure/beispiel-beatmung-loewenstein> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Procedure/beispiel-beatmung-loewenstein> ;
          fhir:reference [ fhir:v "Procedure/beispiel-beatmung-loewenstein" ]
        ] ;
        fhir:name [ fhir:v "Example Ventilation Löwenstein" ] ;
        fhir:description [ fhir:v "Example of a ventilation procedure with Löwenstein device (PSV mode)" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung>
        ]
      ] [
        fhir:extension ( [
@@ -2756,15 +2756,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Procedure/beispiel-beatmung-resmed> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Procedure/beispiel-beatmung-resmed> ;
          fhir:reference [ fhir:v "Procedure/beispiel-beatmung-resmed" ]
        ] ;
        fhir:name [ fhir:v "Example Ventilation ResMed" ] ;
        fhir:description [ fhir:v "Example of a ventilation procedure with ResMed device (CPAP mode)" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung>
        ]
      ] [
        fhir:extension ( [
@@ -2778,15 +2778,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-beatmungsgeraet-breas> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-beatmungsgeraet-breas> ;
          fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-breas" ]
        ] ;
        fhir:name [ fhir:v "Example Ventilator BREAS" ] ;
        fhir:description [ fhir:v "Example of a BREAS home ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -2800,15 +2800,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-beatmungsgeraet-loewenstein> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-beatmungsgeraet-loewenstein> ;
          fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-loewenstein" ]
        ] ;
        fhir:name [ fhir:v "Example Ventilator Löwenstein" ] ;
        fhir:description [ fhir:v "Example of a Löwenstein home ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -2822,15 +2822,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-beatmungsgeraet-resmed> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-beatmungsgeraet-resmed> ;
          fhir:reference [ fhir:v "Device/beispiel-beatmungsgeraet-resmed" ]
        ] ;
        fhir:name [ fhir:v "Example Ventilator ResMed" ] ;
        fhir:description [ fhir:v "Example of a ResMed home ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -2844,15 +2844,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-breas-ahi> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-breas-ahi> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-breas-ahi" ]
        ] ;
        fhir:name [ fhir:v "Example VMD BREAS AHI Module" ] ;
        fhir:description [ fhir:v "Example of a virtual AHI module of a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -2866,15 +2866,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-breas-amv> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-breas-amv> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-breas-amv" ]
        ] ;
        fhir:name [ fhir:v "Example VMD BREAS AMV Module" ] ;
        fhir:description [ fhir:v "Example of a virtual AMV module of a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -2888,15 +2888,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-breas-ipap> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-breas-ipap> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-breas-ipap" ]
        ] ;
        fhir:name [ fhir:v "Example VMD BREAS IPAP Module" ] ;
        fhir:description [ fhir:v "Example of a virtual IPAP module of a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -2910,15 +2910,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-breas-targetvolume> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-breas-targetvolume> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-breas-targetvolume" ]
        ] ;
        fhir:name [ fhir:v "Example VMD BREAS Target Volume Module" ] ;
        fhir:description [ fhir:v "Example of a virtual target volume module of a BREAS ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -2932,15 +2932,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-loewenstein-peep> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-loewenstein-peep> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-loewenstein-peep" ]
        ] ;
        fhir:name [ fhir:v "Example VMD Löwenstein PEEP Module" ] ;
        fhir:description [ fhir:v "Example of a virtual PEEP module of a Löwenstein ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -2954,15 +2954,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-loewenstein-ti> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-loewenstein-ti> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-loewenstein-ti" ]
        ] ;
        fhir:name [ fhir:v "Example VMD Löwenstein TI Module" ] ;
        fhir:description [ fhir:v "Example of a virtual TI module of a Löwenstein ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -2976,15 +2976,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-loewenstein-triggeredbreaths> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-loewenstein-triggeredbreaths> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-loewenstein-triggeredbreaths" ]
        ] ;
        fhir:name [ fhir:v "Example VMD Löwenstein TriggeredBreaths Module" ] ;
        fhir:description [ fhir:v "Example of a virtual TriggeredBreaths module of a Löwenstein ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -2998,15 +2998,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-resmed-leckage> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-resmed-leckage> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-resmed-leckage" ]
        ] ;
        fhir:name [ fhir:v "Example VMD ResMed Leakage Module" ] ;
        fhir:description [ fhir:v "Example of a virtual leakage module of a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -3020,15 +3020,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-resmed-druck> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-resmed-druck> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-resmed-druck" ]
        ] ;
        fhir:name [ fhir:v "Example VMD ResMed Pressure Min/Max Module" ] ;
        fhir:description [ fhir:v "Example of a virtual pressure min/max module of a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -3042,15 +3042,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-resmed-atemfrequenz> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-resmed-atemfrequenz> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-resmed-atemfrequenz" ]
        ] ;
        fhir:name [ fhir:v "Example VMD ResMed Respiratory Rate Module" ] ;
        fhir:description [ fhir:v "Example of a virtual respiratory rate module of a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -3064,15 +3064,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Device/beispiel-vmd-resmed-atemzeit> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Device/beispiel-vmd-resmed-atemzeit> ;
          fhir:reference [ fhir:v "Device/beispiel-vmd-resmed-atemzeit" ]
        ] ;
        fhir:name [ fhir:v "Example VMD ResMed Respiratory Time Ratio Module" ] ;
        fhir:description [ fhir:v "Example of a virtual respiratory time ratio module of a ResMed ventilator" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet>
        ]
      ] [
        fhir:extension ( [
@@ -3086,15 +3086,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Observation/Example-Gehstrecke-Doccla> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Observation/Example-Gehstrecke-Doccla> ;
          fhir:reference [ fhir:v "Observation/Example-Gehstrecke-Doccla" ]
        ] ;
        fhir:name [ fhir:v "Example Walking Distance Measurement" ] ;
        fhir:description [ fhir:v "Example of a walking distance measurement via Doccla" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke>
        ]
      ] [
        fhir:extension ( [
@@ -3108,7 +3108,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-channel-beatmungsgeraet" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Device Channel Ventilator" ] ;
@@ -3129,11 +3129,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-mds-beatmungsgeraet" ]
        ] ;
-       fhir:name [ fhir:v "T-CABS Device MDS Home Ventilator" ] ;
-       fhir:description [ fhir:v "Profile for a home ventilator device" ] ;
+       fhir:name [ fhir:v "T-CABS Device MDS Ventilator" ] ;
+       fhir:description [ fhir:v "Profile for a ventilator device" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3150,7 +3150,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phd> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-phd" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Device PHD" ] ;
@@ -3171,7 +3171,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phg> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-phg" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Device PHG" ] ;
@@ -3192,7 +3192,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-device-vmd-beatmungsgeraet" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Device VMD Ventilator" ] ;
@@ -3213,7 +3213,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-devicemetric-numericmetric" ]
        ] ;
        fhir:name [ fhir:v "T-CABS DeviceMetric NumericMetric" ] ;
@@ -3234,7 +3234,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-diagnosticreport-visitenbefund> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-diagnosticreport-visitenbefund" ]
        ] ;
        fhir:name [ fhir:v "T-CABS DiagnosticReport Visit Finding" ] ;
@@ -3255,7 +3255,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-encounter-kontakt" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Encounter Contact" ] ;
@@ -3276,7 +3276,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-practitioner-funktion" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Function" ] ;
@@ -3297,8 +3297,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/tCabsLogicalModel> ;
-         fhir:reference [ fhir:v "StructureDefinition/tCabsLogicalModel" ]
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-logical-model> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-logical-model" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Logical Model" ] ;
        fhir:description [ fhir:v "Comprehensive logical model for the T-CABS project covering:\n- Cross-domain entities (Patient, Organization)\n- Ventilation data (Devices, DeviceMetric, Procedure, Parameters)\n- Vital data (PHD devices, Parameters)\n\nMappings are provided to concrete T-CABS FHIR profiles for implementation guidance." ] ;
@@ -3318,7 +3318,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-ahi" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation AHI" ] ;
@@ -3339,7 +3339,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-amv> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-amv" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation AMV" ] ;
@@ -3360,7 +3360,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-arteriellerblutdruck" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Arterial Blood Pressure" ] ;
@@ -3381,7 +3381,28 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2> ;
+         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-arteriellespo2" ]
+       ] ;
+       fhir:name [ fhir:v "T-CABS Observation Arterielle SPO2" ] ;
+       fhir:description [ fhir:v "Profile for arterial oxygen saturation (SPO2)\nCompatibility:\nFor the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-bmi> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-bmi" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation BMI" ] ;
@@ -3402,7 +3423,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpertemperatur> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-koerpertemperatur" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Body Temperature" ] ;
@@ -3423,7 +3444,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpergewicht> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-koerpergewicht" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Body Weight" ] ;
@@ -3444,7 +3465,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fef25-75> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fef25-75> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observationfev1fef25-75" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation FEF25-75" ] ;
@@ -3465,7 +3486,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationfev1> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observationfev1" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation FEV1" ] ;
@@ -3486,7 +3507,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fev6> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observationfev1fev6" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation FEV1/FEV6" ] ;
@@ -3507,7 +3528,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationfev6> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observationfev6" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation FEV6" ] ;
@@ -3528,7 +3549,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observationhandgriffstaerke" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Hand Grip Strength" ] ;
@@ -3549,7 +3570,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-herzfrequenz> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-herzfrequenz" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Heart Rate" ] ;
@@ -3570,7 +3591,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-ipap" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation IPAP" ] ;
@@ -3591,7 +3612,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-leckage" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Leakage" ] ;
@@ -3612,7 +3633,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-peep> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-peep" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation PEEP" ] ;
@@ -3633,7 +3654,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-druck-minmax" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Pressure MIN/MAX" ] ;
@@ -3654,7 +3675,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-atemfrequenz" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Respiratory Rate" ] ;
@@ -3675,7 +3696,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-atemfrequenz-beatmet" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Respiratory Rate Ventilated" ] ;
@@ -3696,7 +3717,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-atemzeitverhaeltnis" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Respiratory Time Ratio" ] ;
@@ -3717,28 +3738,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2> ;
-         fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-arteriellespo2" ]
-       ] ;
-       fhir:name [ fhir:v "T-CABS Observation SPO2" ] ;
-       fhir:description [ fhir:v "Profile for arterial oxygen saturation (SPO2)\nCompatibility:\nFor the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-targetvolume" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Target Volume" ] ;
@@ -3759,7 +3759,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-ti> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-ti" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation TI" ] ;
@@ -3780,7 +3780,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-triggeredbreaths" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Triggered Breaths" ] ;
@@ -3801,7 +3801,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-beatmungsparameter" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Ventilation Parameter (abstract)" ] ;
@@ -3822,7 +3822,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Ventilation Parameter with Components (abstract)" ] ;
@@ -3843,7 +3843,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-vitalparameter" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Vital Parameter" ] ;
@@ -3864,7 +3864,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-vitalparametermitkomponenten" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Vital Parameter with Components" ] ;
@@ -3885,7 +3885,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-observation-gehstrecke" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Observation Walking Distance" ] ;
@@ -3906,7 +3906,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-organisation> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-organisation" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Organization" ] ;
@@ -3927,7 +3927,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-patient> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-patient" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Patient" ] ;
@@ -3948,15 +3948,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Patient/tcabs-patient-example> ;
          fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Patient Example" ] ;
        fhir:description [ fhir:v "Example patient for the T-CABS project" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-patient"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-patient>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient>
        ]
      ] [
        fhir:extension ( [
@@ -3970,7 +3970,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-group-patientengruppe> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-group-patientengruppe" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Patient Group" ] ;
@@ -3991,7 +3991,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-practitioner-personmitfunktion" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Person with Function" ] ;
@@ -4012,15 +4012,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/Practitioner/tcabs-practitioner-example> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/Practitioner/tcabs-practitioner-example> ;
          fhir:reference [ fhir:v "Practitioner/tcabs-practitioner-example" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Practitioner Example" ] ;
        fhir:description [ fhir:v "Example physician for the T-CABS project" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion>
        ]
      ] [
        fhir:extension ( [
@@ -4034,15 +4034,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/PractitionerRole/tcabs-practitioner-role-example> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/PractitionerRole/tcabs-practitioner-role-example> ;
          fhir:reference [ fhir:v "PractitionerRole/tcabs-practitioner-role-example" ]
        ] ;
        fhir:name [ fhir:v "T-CABS PractitionerRole Function Example" ] ;
        fhir:description [ fhir:v "Example of a PractitionerRole for a pulmonologist in the T-CABS study" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion"^^xsd:anyURI ;
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion>
+         fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion"^^xsd:anyURI ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion>
        ]
      ] [
        fhir:extension ( [
@@ -4056,7 +4056,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung> ;
          fhir:reference [ fhir:v "StructureDefinition/t-cabs-procedure-beatmung" ]
        ] ;
        fhir:name [ fhir:v "T-CABS Procedure Ventilation" ] ;
@@ -4077,7 +4077,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-phdtyp> ;
          fhir:reference [ fhir:v "ValueSet/t-cabs-valueset-phdtyp" ]
        ] ;
        fhir:name [ fhir:v "T-CABS ValueSet PHD Type" ] ;
@@ -4098,7 +4098,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsmodus> ;
          fhir:reference [ fhir:v "ValueSet/t-cabs-valueset-Beatmungsmodus" ]
        ] ;
        fhir:name [ fhir:v "T-CABS ValueSet Ventilation Mode" ] ;
@@ -4119,7 +4119,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-beatmungsstelle> ;
          fhir:reference [ fhir:v "ValueSet/t-cabs-valueset-beatmungsstelle" ]
        ] ;
        fhir:name [ fhir:v "T-CABS ValueSet Ventilation Site" ] ;
@@ -4140,7 +4140,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform> ;
+         fhir:l <https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsform> ;
          fhir:reference [ fhir:v "ValueSet/t-cabs-valueset-Beatmungsform" ]
        ] ;
        fhir:name [ fhir:v "T-CABS ValueSet Ventilation Type" ] ;
@@ -4396,6 +4396,25 @@
            fhir:l fhir:Terminologies.html
          ] ;
          fhir:title [ fhir:v "Terminologies" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "Release-Notes.html"^^xsd:anyURI ;
+             fhir:l fhir:Release-Notes.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "Release-Notes.html"^^xsd:anyURI ;
+           fhir:l fhir:Release-Notes.html
+         ] ;
+         fhir:title [ fhir:v "Release Notes" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

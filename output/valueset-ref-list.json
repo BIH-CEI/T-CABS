@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform",
+      "url" : "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsform",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "T_CABS_ValueSet_Beatmungsform",
@@ -13,7 +13,7 @@
       "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
-      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus",
+      "url" : "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsmodus",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "T_CABS_ValueSet_Beatmungsmodus",
@@ -25,7 +25,7 @@
       "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
-      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle",
+      "url" : "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-beatmungsstelle",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "T_CABS_ValueSet_Beatmungsstelle",
@@ -37,7 +37,7 @@
       "StructureDefinition-t-cabs-procedure-beatmung.html" : "T-CABS Procedure Ventilation"
     },
     {
-      "url" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp",
+      "url" : "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-phdtyp",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "T_CABS_ValueSet_PHDTyp",

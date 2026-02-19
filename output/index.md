@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/ImplementationGuide/t-cabs | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:TCABS |
+| *Official URL*:https://bih-cei.github.io/T-CABS/ImplementationGuide/t-cabs | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:TCABS |
 
 The T-CABS (Telemedicine Center for Out-of-Hospital Ventilation and Oxygen Therapy) Implementation Guide defines FHIR R4 profiles and standards for the transmission and exchange of ventilation and vital parameters in home-based ventilation therapy.
 
@@ -87,12 +87,12 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
   "resourceType" : "ImplementationGuide",
   "id" : "t-cabs",
   "language" : "en",
-  "url" : "http://t-cabs.org/ImplementationGuide/t-cabs",
+  "url" : "https://bih-cei.github.io/T-CABS/ImplementationGuide/t-cabs",
   "version" : "0.1.0",
   "name" : "TCABS",
   "title" : "T-CABS Implementation Guide",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -117,7 +117,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
     }
   ],
   "packageId" : "t-cabs",
-  "license" : "CC0-1.0",
+  "license" : "CC-BY-4.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [
     {
@@ -130,7 +130,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "7.0.0"
+      "version" : "7.0.1"
     },
     {
       "id" : "hl7ext",
@@ -315,7 +315,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
           },
           {
             "url" : "value",
-            "valueString" : "http://t-cabs.org/history.html"
+            "valueString" : "https://bih-cei.github.io/T-CABS/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -517,7 +517,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
       },
       {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-        "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+        "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
       },
       {
         "extension" : [
@@ -657,7 +657,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
           },
           {
             "url" : "value",
-            "valueString" : "http://t-cabs.org/history.html"
+            "valueString" : "https://bih-cei.github.io/T-CABS/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -871,7 +871,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS)",
         "description" : "The Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS) of the clinic cares for patients with diseases of the lungs, muscles or nervous system who are temporarily or permanently dependent on respiratory support and is part of the clinic's certified weaning center.",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"
       },
       {
         "extension" : [
@@ -885,7 +885,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example AHI Measurement BREAS",
         "description" : "Example of an AHI measurement from a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi"
       },
       {
         "extension" : [
@@ -899,7 +899,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example AMV Measurement BREAS",
         "description" : "Example of a measured AMV measurement from a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv"
       },
       {
         "extension" : [
@@ -913,7 +913,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Arterial Blood Pressure Measurement",
         "description" : "Example of an arterial blood pressure measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
       },
       {
         "extension" : [
@@ -927,7 +927,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Arterial SPO2 Measurement",
         "description" : "Example of an arterial SPO2 measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2"
       },
       {
         "extension" : [
@@ -941,7 +941,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example BMI Measurement",
         "description" : "Example of a BMI measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-bmi"
       },
       {
         "extension" : [
@@ -955,7 +955,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Body Temperature Measurement",
         "description" : "Example of a body temperature measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpertemperatur"
       },
       {
         "extension" : [
@@ -969,7 +969,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Body Weight Measurement",
         "description" : "Example of a body weight measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpergewicht"
       },
       {
         "extension" : [
@@ -983,7 +983,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel BREAS AHI",
         "description" : "Example of an AHI channel for grouping AHI measurements",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -997,7 +997,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel BREAS AMV",
         "description" : "Example of an AMV channel for grouping AMV measurements",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1011,7 +1011,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel BREAS IPAP",
         "description" : "Example of an IPAP channel for grouping IPAP settings",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1025,7 +1025,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel BREAS Target Volume",
         "description" : "Example of a target volume channel for grouping target volume settings",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1039,7 +1039,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel Löwenstein PEEP",
         "description" : "Example of a PEEP channel for grouping PEEP measurements",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1053,7 +1053,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel Löwenstein TI",
         "description" : "Example of a TI channel for grouping TI measurements",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1067,7 +1067,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel Löwenstein TriggeredBreaths",
         "description" : "Example of a TriggeredBreaths channel for grouping TriggeredBreaths measurements",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1081,7 +1081,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel ResMed Leakage",
         "description" : "Example of a leakage channel for grouping leakage measurements",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1095,7 +1095,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel ResMed Pressure Min/Max",
         "description" : "Example of a pressure min/max channel for grouping pressure measurements",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1109,7 +1109,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel ResMed Respiratory Rate",
         "description" : "Example of a respiratory rate channel for grouping respiratory rate measurements",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1123,7 +1123,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Channel ResMed Respiratory Time Ratio",
         "description" : "Example of a respiratory time ratio channel for grouping respiratory time ratio calculations",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1137,7 +1137,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric BREAS AHI",
         "description" : "Example of a DeviceMetric for AHI calculation of a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1151,7 +1151,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric BREAS AMV",
         "description" : "Example of a DeviceMetric for AMV measurement of a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1165,7 +1165,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric BREAS IPAP",
         "description" : "Example of a DeviceMetric for IPAP setting of a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1179,7 +1179,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric BREAS Target Volume",
         "description" : "Example of a DeviceMetric for target volume setting of a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1193,7 +1193,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric Löwenstein PEEP",
         "description" : "Example of a DeviceMetric for PEEP measurement of a Löwenstein ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1207,7 +1207,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric Löwenstein TI",
         "description" : "Example of a DeviceMetric for TI measurement (inspiration time) of a Löwenstein ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1221,7 +1221,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric Löwenstein TriggeredBreaths",
         "description" : "Example of a DeviceMetric for TriggeredBreaths measurement of a Löwenstein ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1235,7 +1235,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric ResMed Leakage",
         "description" : "Example of a DeviceMetric for leakage measurement of a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1249,7 +1249,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric ResMed Pressure Min/Max",
         "description" : "Example of a DeviceMetric for pressure min/max measurement of a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1263,7 +1263,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric ResMed Respiratory Rate",
         "description" : "Example of a DeviceMetric for respiratory rate measurement of a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1277,7 +1277,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DeviceMetric ResMed Respiratory Time Ratio",
         "description" : "Example of a DeviceMetric for respiratory time ratio calculation of a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
       },
       {
         "extension" : [
@@ -1291,7 +1291,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example DiagnosticReport Weekly Visit",
         "description" : "Example of a visit finding of a weekly telemedicine visit",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"
       },
       {
         "extension" : [
@@ -1305,7 +1305,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example FEF25-75% Measurement",
         "description" : "Example of a FEF25-75% measurement (Mean forced expiratory flow) via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fef25-75"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fef25-75"
       },
       {
         "extension" : [
@@ -1319,7 +1319,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example FEV1 Measurement",
         "description" : "Example of a FEV1 measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1"
       },
       {
         "extension" : [
@@ -1333,7 +1333,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example FEV1/FEV6 Ratio Measurement",
         "description" : "Example of a FEV1/FEV6 ratio measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fev6"
       },
       {
         "extension" : [
@@ -1347,7 +1347,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example FEV6 Measurement",
         "description" : "Example of a FEV6 measurement (Forced Expiratory Volume in 6 Seconds) via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observationfev6"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6"
       },
       {
         "extension" : [
@@ -1361,7 +1361,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Hand Grip Strength Measurement",
         "description" : "Example of a hand grip strength measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke"
       },
       {
         "extension" : [
@@ -1375,7 +1375,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Heart Rate Measurement",
         "description" : "Example of a heart rate measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-herzfrequenz"
       },
       {
         "extension" : [
@@ -1389,7 +1389,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example IPAP BREAS",
         "description" : "Example of IPAP from a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap"
       },
       {
         "extension" : [
@@ -1403,7 +1403,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Leakage ResMed",
         "description" : "Example of leakage measurement from a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage"
       },
       {
         "extension" : [
@@ -1417,7 +1417,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example PEEP Löwenstein",
         "description" : "Example of PEEP from a Löwenstein ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep"
       },
       {
         "extension" : [
@@ -1431,7 +1431,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example PHD Blood Pressure Monitor",
         "description" : "Example of a Personal Health Device blood pressure monitor (sphygmomanometer)",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"
       },
       {
         "extension" : [
@@ -1445,7 +1445,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example PHD Hand Dynamometer",
         "description" : "Example of a Personal Health Device dynamometer for hand grip strength measurement",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"
       },
       {
         "extension" : [
@@ -1459,7 +1459,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example PHD Peak Flow Meter",
         "description" : "Example of a Personal Health Device peak flow meter for respiratory measurement",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"
       },
       {
         "extension" : [
@@ -1473,7 +1473,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example PHD Pulse Oximeter",
         "description" : "Example of a Personal Health Device pulse oximeter from Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"
       },
       {
         "extension" : [
@@ -1487,7 +1487,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example PHD Scale",
         "description" : "Example of a Personal Health Device scale for weight measurement",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"
       },
       {
         "extension" : [
@@ -1501,7 +1501,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example PHD Spirometer",
         "description" : "Example of a Personal Health Device spirometer for lung function measurement",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"
       },
       {
         "extension" : [
@@ -1515,7 +1515,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example PHD Step Counter",
         "description" : "Example of a Personal Health Device step counter for activity measurement",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"
       },
       {
         "extension" : [
@@ -1529,7 +1529,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example PHG Tablet",
         "description" : "Example of a Personal Health Gateway tablet from Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phg"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg"
       },
       {
         "extension" : [
@@ -1543,7 +1543,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Pressure Min/Max ResMed",
         "description" : "Example of minimal and maximal ventilation pressure from a ResMed device",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax"
       },
       {
         "extension" : [
@@ -1557,7 +1557,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Provider Doccla",
         "description" : "Example for the vital parameter provider Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"
       },
       {
         "extension" : [
@@ -1571,7 +1571,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Provider Jochum",
         "description" : "Example for the ventilation equipment provider Jochum",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"
       },
       {
         "extension" : [
@@ -1585,7 +1585,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Provider Löwenstein",
         "description" : "Example for the ventilation equipment provider Löwenstein",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"
       },
       {
         "extension" : [
@@ -1599,7 +1599,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Provider Vivisol",
         "description" : "Example for the ventilation equipment provider Vivisol",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"
       },
       {
         "extension" : [
@@ -1613,7 +1613,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Respiratory Rate Measurement",
         "description" : "Example of a respiratory rate measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz"
       },
       {
         "extension" : [
@@ -1627,7 +1627,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Respiratory Rate Measurement ResMed",
         "description" : "Example of a measured respiratory rate from a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
       },
       {
         "extension" : [
@@ -1641,7 +1641,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Respiratory Time Ratio ResMed",
         "description" : "Example of respiratory time ratio from a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"
       },
       {
         "extension" : [
@@ -1655,7 +1655,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Target Volume BREAS",
         "description" : "Example of target volume from a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume"
       },
       {
         "extension" : [
@@ -1669,7 +1669,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Telemedicine Visit",
         "description" : "Example of a weekly telemedicine visit of a T-CABS patient",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt"
       },
       {
         "extension" : [
@@ -1683,7 +1683,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example TI Löwenstein",
         "description" : "Example of inspiration time from a Löwenstein ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
       },
       {
         "extension" : [
@@ -1697,7 +1697,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Triggered Breaths Löwenstein",
         "description" : "Example of triggered breaths from a Löwenstein ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths"
       },
       {
         "extension" : [
@@ -1711,7 +1711,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Ventilation BREAS",
         "description" : "Example of a ventilation procedure with BREAS device (PCV mode)",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"
       },
       {
         "extension" : [
@@ -1725,7 +1725,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Ventilation Löwenstein",
         "description" : "Example of a ventilation procedure with Löwenstein device (PSV mode)",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"
       },
       {
         "extension" : [
@@ -1739,7 +1739,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Ventilation ResMed",
         "description" : "Example of a ventilation procedure with ResMed device (CPAP mode)",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"
       },
       {
         "extension" : [
@@ -1753,7 +1753,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Ventilator BREAS",
         "description" : "Example of a BREAS home ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1767,7 +1767,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Ventilator Löwenstein",
         "description" : "Example of a Löwenstein home ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1781,7 +1781,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Ventilator ResMed",
         "description" : "Example of a ResMed home ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1795,7 +1795,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD BREAS AHI Module",
         "description" : "Example of a virtual AHI module of a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1809,7 +1809,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD BREAS AMV Module",
         "description" : "Example of a virtual AMV module of a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1823,7 +1823,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD BREAS IPAP Module",
         "description" : "Example of a virtual IPAP module of a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1837,7 +1837,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD BREAS Target Volume Module",
         "description" : "Example of a virtual target volume module of a BREAS ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1851,7 +1851,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD Löwenstein PEEP Module",
         "description" : "Example of a virtual PEEP module of a Löwenstein ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1865,7 +1865,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD Löwenstein TI Module",
         "description" : "Example of a virtual TI module of a Löwenstein ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1879,7 +1879,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD Löwenstein TriggeredBreaths Module",
         "description" : "Example of a virtual TriggeredBreaths module of a Löwenstein ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1893,7 +1893,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD ResMed Leakage Module",
         "description" : "Example of a virtual leakage module of a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1907,7 +1907,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD ResMed Pressure Min/Max Module",
         "description" : "Example of a virtual pressure min/max module of a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1921,7 +1921,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD ResMed Respiratory Rate Module",
         "description" : "Example of a virtual respiratory rate module of a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1935,7 +1935,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example VMD ResMed Respiratory Time Ratio Module",
         "description" : "Example of a virtual respiratory time ratio module of a ResMed ventilator",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
       },
       {
         "extension" : [
@@ -1949,7 +1949,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "Example Walking Distance Measurement",
         "description" : "Example of a walking distance measurement via Doccla",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke"
       },
       {
         "extension" : [
@@ -1975,8 +1975,8 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         "reference" : {
           "reference" : "StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
         },
-        "name" : "T-CABS Device MDS Home Ventilator",
-        "description" : "Profile for a home ventilator device",
+        "name" : "T-CABS Device MDS Ventilator",
+        "description" : "Profile for a ventilator device",
         "exampleBoolean" : false
       },
       {
@@ -2085,7 +2085,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/tCabsLogicalModel"
+          "reference" : "StructureDefinition/t-cabs-logical-model"
         },
         "name" : "T-CABS Logical Model",
         "description" : "Comprehensive logical model for the T-CABS project covering:\n- Cross-domain entities (Patient, Organization)\n- Ventilation data (Devices, DeviceMetric, Procedure, Parameters)\n- Vital data (PHD devices, Parameters)\n\nMappings are provided to concrete T-CABS FHIR profiles for implementation guidance.",
@@ -2131,6 +2131,20 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "T-CABS Observation Arterial Blood Pressure",
         "description" : "Profile for arterial blood pressure.\nCompatibility:\nFor the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArteriellerBlutdruck are also valid against the [ISiKBlutdruckArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/t-cabs-observation-arteriellespo2"
+        },
+        "name" : "T-CABS Observation Arterielle SPO2",
+        "description" : "Profile for arterial oxygen saturation (SPO2)\nCompatibility:\nFor the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)",
         "exampleBoolean" : false
       },
       {
@@ -2365,20 +2379,6 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/t-cabs-observation-arteriellespo2"
-        },
-        "name" : "T-CABS Observation SPO2",
-        "description" : "Profile for arterial oxygen saturation (SPO2)\nCompatibility:\nFor the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
           "reference" : "StructureDefinition/t-cabs-observation-targetvolume"
         },
         "name" : "T-CABS Observation Target Volume",
@@ -2523,7 +2523,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "T-CABS Patient Example",
         "description" : "Example patient for the T-CABS project",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
       },
       {
         "extension" : [
@@ -2565,7 +2565,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "T-CABS Practitioner Example",
         "description" : "Example physician for the T-CABS project",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion"
       },
       {
         "extension" : [
@@ -2579,7 +2579,7 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
         },
         "name" : "T-CABS PractitionerRole Function Example",
         "description" : "Example of a PractitionerRole for a pulmonologist in the T-CABS study",
-        "exampleCanonical" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion"
+        "exampleCanonical" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion"
       },
       {
         "extension" : [
@@ -2793,6 +2793,17 @@ Funded within the framework of the T-CABS project (grant number: 01NVF23109) by 
           ],
           "nameUrl" : "Terminologies.html",
           "title" : "Terminologies",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "Release-Notes.html"
+            }
+          ],
+          "nameUrl" : "Release-Notes.html",
+          "title" : "Release Notes",
           "generation" : "markdown"
         }
       ]

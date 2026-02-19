@@ -6,7 +6,7 @@
 
 ## Example Observation: Example Arterial SPO2 Measurement
 
-Profiles: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0)
+Profiles: [T-CABS Observation Arterielle SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md), [https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.person@2025.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0)
 
 **Observation Gateway Device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Doccla GmbH; serialNumber = PHG-SN-789012; modelNumber = DHT-2024; type = MDC_MOC_VMS_MDS_AHD](Device-beispiel-phg-doccla.md)
 
@@ -20,7 +20,7 @@ Profiles: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arter
 
 **effective**: 2024-01-15 08:15:00+0000 --> 2024-01-15 08:15:00+0000
 
-**value**: 98 %(Details: UCUM code% = '%')
+**value**: 98 % (Details: UCUM code% = '%')
 
 **bodySite**: Arterial system structure (body structure)
 
@@ -36,7 +36,7 @@ Profiles: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arter
   "id" : "Example-ArterielleSPO2-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0"
     ]
   },

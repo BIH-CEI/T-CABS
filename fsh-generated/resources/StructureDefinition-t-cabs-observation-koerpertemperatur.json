@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-koerpertemperatur",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpertemperatur",
   "name": "T_CABS_Observation_Koerpertemperatur",
   "title": "T-CABS Observation Body Temperature",
   "status": "draft",
@@ -10,7 +10,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "baseDefinition": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter",
   "derivation": "constraint",
   "differential": {
     "element": [

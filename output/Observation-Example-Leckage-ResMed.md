@@ -20,7 +20,7 @@ Profile: [T-CABS Observation Leakage](StructureDefinition-t-cabs-observation-lec
 
 **effective**: 2024-01-15 22:00:00+0000 --> 2024-01-16 06:00:00+0000
 
-**value**: 0.6 L/min(Details: UCUM codeL/min = 'L/min')
+**value**: 0.6 L/min (Details: UCUM codeL/min = 'L/min')
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-LECKAGE-001; type = MDC_VENT_VOL_LEAK; unit = L/min; operationalStatus = on; color = red; category = measurement; measurementPeriod = Once per 5 seconds](DeviceMetric-beispiel-devicemetric-resmed-leckage.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation Leakage](StructureDefinition-t-cabs-observation-lec
   "id" : "Example-Leckage-ResMed",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage"
     ]
   },
   "partOf" : [

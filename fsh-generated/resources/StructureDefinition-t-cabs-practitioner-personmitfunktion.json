@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-practitioner-personmitfunktion",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion",
   "name": "T_CABS_Practitioner_PersonMitFunktion",
   "title": "T-CABS Person with Function",
   "status": "draft",

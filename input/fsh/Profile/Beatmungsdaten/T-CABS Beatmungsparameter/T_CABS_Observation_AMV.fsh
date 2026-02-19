@@ -5,6 +5,7 @@ Title: "T-CABS Observation AMV"
 Description: "Profile for a alveolar minute volume"
 
 * code.coding = $IEEE-11073#151996 //"MDC_VENT_VOL_MINUTE"
+* code.coding ^definition = "Volume of gas per minute passing in to or out of the patient's airway during inspiratory or expiratory phases, respectively."
 
 * valueQuantity.code = #L/min
 * valueQuantity.unit = "L/min"

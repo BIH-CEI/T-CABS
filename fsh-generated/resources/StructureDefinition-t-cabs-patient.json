@@ -15,7 +15,7 @@
       }
     }
   ],
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-patient",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient",
   "name": "T_CABS_Patient",
   "title": "T-CABS Patient",
   "status": "draft",

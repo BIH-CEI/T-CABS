@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-peep | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_PEEP |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Observation_PEEP |
 
  
 Profile for Positive End-Expiratory Pressure (PEEP) 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-p
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-observation-peep",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_PEEP",
   "title" : "T-CABS Observation PEEP",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-p
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -123,6 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-p
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
+        "definition" : "Inspiratory airway pressure relative to PEEP or BAP.",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "152720"

@@ -456,7 +456,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Encounter.subject","Encounter.subject","","patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-patient]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient]]}
 ","Patientenidentifikator","VERPFLICHTEND, Referenz auf Patient:in.","While the encounter is always about the patient, the patient might not actually be known in all contexts of use, and there may be a group of patients that could be anonymous (such as in a group therapy for Alcoholics Anonymous - where the recording of the encounter could be used for billing on the number of people/staff and not important to the context of the specific patients) or alternately in veterinary care a herd of sheep receiving treatment (where the animals are not individually tracked).","","","","","","","","",,,,,"",,,,"Encounter.subject",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"

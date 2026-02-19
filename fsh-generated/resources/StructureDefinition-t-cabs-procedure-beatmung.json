@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-procedure-beatmung",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung",
   "name": "T_CABS_Procedure_Beatmung",
   "title": "T-CABS Procedure Ventilation",
   "status": "draft",
@@ -49,7 +49,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsform"
+          "valueSet": "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsform"
         }
       },
       {
@@ -93,7 +93,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://t-cabs.org/ValueSet/t-cabs-valueset-Beatmungsmodus"
+          "valueSet": "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-Beatmungsmodus"
         }
       },
       {
@@ -115,7 +115,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
             ]
           }
         ],
@@ -138,7 +138,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle"
+          "valueSet": "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-beatmungsstelle"
         }
       },
       {
@@ -150,7 +150,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
             ]
           }
         ],

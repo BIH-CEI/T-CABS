@@ -1,7 +1,7 @@
 Profile: T_CABS_Observation_ArterielleSPO2
 Parent: t-cabs-observation-vitalparameter
 Id: t-cabs-observation-arteriellespo2
-Title: "T-CABS Observation SPO2"
+Title: "T-CABS Observation Arterielle SPO2"
 Description: "Profile for arterial oxygen saturation (SPO2)
 Compatibility:
 For the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)"

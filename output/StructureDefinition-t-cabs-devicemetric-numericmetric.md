@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_DeviceMetric_NumericMetric |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_DeviceMetric_NumericMetric |
 
  
 Profile representing a numeric measurement, calculation, or setting 
@@ -17,7 +17,7 @@ Profile representing a numeric measurement, calculation, or setting
 **Usages:**
 
 * Refer to this Profile: [T-CABS Observation Ventilation Parameter (abstract)](StructureDefinition-t-cabs-observation-beatmungsparameter.md) and [T-CABS Observation Ventilation Parameter with Components (abstract)](StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.md)
-* Examples for this Profile: [DeviceMetric/beispiel-devicemetric-breas-ahi](DeviceMetric-beispiel-devicemetric-breas-ahi.md), [DeviceMetric/beispiel-devicemetric-breas-amv](DeviceMetric-beispiel-devicemetric-breas-amv.md), [DeviceMetric/beispiel-devicemetric-breas-ipap](DeviceMetric-beispiel-devicemetric-breas-ipap.md), [DeviceMetric/beispiel-devicemetric-breas-targetvolume](DeviceMetric-beispiel-devicemetric-breas-targetvolume.md)...Show 7 more,[DeviceMetric/beispiel-devicemetric-loewenstein-peep](DeviceMetric-beispiel-devicemetric-loewenstein-peep.md),[DeviceMetric/beispiel-devicemetric-loewenstein-ti](DeviceMetric-beispiel-devicemetric-loewenstein-ti.md),[DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths](DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.md),[DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz](DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.md),[DeviceMetric/beispiel-devicemetric-resmed-atemzeit](DeviceMetric-beispiel-devicemetric-resmed-atemzeit.md),[DeviceMetric/beispiel-devicemetric-resmed-druck](DeviceMetric-beispiel-devicemetric-resmed-druck.md)and[DeviceMetric/beispiel-devicemetric-resmed-leckage](DeviceMetric-beispiel-devicemetric-resmed-leckage.md)
+* Examples for this Profile: [DeviceMetric/beispiel-devicemetric-breas-ahi](DeviceMetric-beispiel-devicemetric-breas-ahi.md), [DeviceMetric/beispiel-devicemetric-breas-amv](DeviceMetric-beispiel-devicemetric-breas-amv.md), [DeviceMetric/beispiel-devicemetric-breas-ipap](DeviceMetric-beispiel-devicemetric-breas-ipap.md), [DeviceMetric/beispiel-devicemetric-breas-targetvolume](DeviceMetric-beispiel-devicemetric-breas-targetvolume.md)... Show 7 more, [DeviceMetric/beispiel-devicemetric-loewenstein-peep](DeviceMetric-beispiel-devicemetric-loewenstein-peep.md), [DeviceMetric/beispiel-devicemetric-loewenstein-ti](DeviceMetric-beispiel-devicemetric-loewenstein-ti.md), [DeviceMetric/beispiel-devicemetric-loewenstein-triggeredbreaths](DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.md), [DeviceMetric/beispiel-devicemetric-resmed-atemfrequenz](DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.md), [DeviceMetric/beispiel-devicemetric-resmed-atemzeit](DeviceMetric-beispiel-devicemetric-resmed-atemzeit.md), [DeviceMetric/beispiel-devicemetric-resmed-druck](DeviceMetric-beispiel-devicemetric-resmed-druck.md) and [DeviceMetric/beispiel-devicemetric-resmed-leckage](DeviceMetric-beispiel-devicemetric-resmed-leckage.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-devicemetric-numericmetric)
 
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-devicemetric-
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-devicemetric-numericmetric",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric",
   "version" : "0.1.0",
   "name" : "T_CABS_DeviceMetric_NumericMetric",
   "title" : "T-CABS DeviceMetric NumericMetric",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-devicemetric-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
             ]
           }
         ]
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-devicemetric-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
             ]
           }
         ]

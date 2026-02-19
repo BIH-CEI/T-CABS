@@ -3,7 +3,7 @@
   "id": "Example-PEEP-Loewenstein",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep"
     ]
   },
   "code": {

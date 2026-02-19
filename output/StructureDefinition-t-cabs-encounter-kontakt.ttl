@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt> a fhir:StructureDefinition ;
+<https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "t-cabs-encounter-kontakt"] ; # 
   fhir:text [
@@ -31,14 +31,14 @@
      ]
   ] ) ; # 
   fhir:url [
-     fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt"^^xsd:anyURI ;
-     fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt>
+     fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt"^^xsd:anyURI ;
+     fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt>
   ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "T_CABS_Encounter_Kontakt"] ; # 
   fhir:title [ fhir:v "T-CABS Encounter Contact"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-09T09:55:43+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-19T13:21:58+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "BIH-CEI"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "BIH-CEI" ] ;
@@ -7729,8 +7729,8 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-patient"^^xsd:anyURI ;
-           fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-patient>
+           fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"^^xsd:anyURI ;
+           fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient>
          ] )
        ] ) ;
        fhir:condition ( [ fhir:v "ele-1" ] ) ;
@@ -13696,8 +13696,8 @@
            fhir:l fhir:Reference
          ] ;
          fhir:targetProfile ( [
-           fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-patient"^^xsd:anyURI ;
-           fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-patient>
+           fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"^^xsd:anyURI ;
+           fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient>
          ] )
        ] )
      ] [

@@ -20,7 +20,7 @@ Profile: [T-CABS Observation Hand Grip Strength](StructureDefinition-t-cabs-obse
 
 **effective**: 2024-01-15 09:30:00+0000 --> 2024-01-15 09:30:00+0000
 
-**value**: 42 kg(Details: UCUM codekg = 'kg')
+**value**: 42 kg (Details: UCUM codekg = 'kg')
 
 **bodySite**: Hand structure (body structure)
 
@@ -36,7 +36,7 @@ Profile: [T-CABS Observation Hand Grip Strength](StructureDefinition-t-cabs-obse
   "id" : "Example-Handgriffstaerke-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke"
     ]
   },
   "extension" : [

@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "Example-FEV1-Doccla",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-observationfev1"]
+    "profile" : ["https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1"]
   },
   "text" : {
     "status" : "extensions",

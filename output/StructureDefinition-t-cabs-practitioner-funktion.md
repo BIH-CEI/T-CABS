@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_PractitionerRole_Funktion |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_PractitionerRole_Funktion |
 
  
 Profile for a function of a person within the T-CABS study 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-practitioner-
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-practitioner-funktion",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion",
   "version" : "0.1.0",
   "name" : "T_CABS_PractitionerRole_Funktion",
   "title" : "T-CABS Function",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {

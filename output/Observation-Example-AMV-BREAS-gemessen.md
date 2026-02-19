@@ -20,7 +20,7 @@ Profile: [T-CABS Observation AMV](StructureDefinition-t-cabs-observation-amv.md)
 
 **effective**: 2024-01-15 23:30:00+0000
 
-**value**: 8.5 L/min(Details: UCUM codeL/min = 'L/min')
+**value**: 8.5 L/min (Details: UCUM codeL/min = 'L/min')
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-BREAS-AMV-001; type = MDC_VENT_VOL_MINUTE; unit = L/min; operationalStatus = on; color = blue; category = measurement; measurementPeriod = Once per 10 seconds](DeviceMetric-beispiel-devicemetric-breas-amv.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation AMV](StructureDefinition-t-cabs-observation-amv.md)
   "id" : "Example-AMV-BREAS-gemessen",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv"
     ]
   },
   "partOf" : [

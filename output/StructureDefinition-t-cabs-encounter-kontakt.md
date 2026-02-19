@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Encounter_Kontakt |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Encounter_Kontakt |
 
  
-Profile for a contact with the patient. Compatibility: The T_CABS_Encounter_Kontakt profile aims for compatibility with the ISiKKontaktGesundheitseinrichtung, however it cannot be guaranteed that instances valid against T_CABS_Encounter_Kontakt are also valid against the[ISiKKontaktGesundheitseinrichtung](https://simplifier.net/isik-stufe-5/isikkontaktgesundheitseinrichtung) 
+Profile for a contact with the patient. Compatibility: The T_CABS_Encounter_Kontakt profile aims for compatibility with the ISiKKontaktGesundheitseinrichtung, however it cannot be guaranteed that instances valid against T_CABS_Encounter_Kontakt are also valid against the [ISiKKontaktGesundheitseinrichtung](https://simplifier.net/isik-stufe-5/isikkontaktgesundheitseinrichtung) 
 
 **Usages:**
 
@@ -51,12 +51,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-encounter-kon
       }
     }
   ],
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt",
   "version" : "0.1.0",
   "name" : "T_CABS_Encounter_Kontakt",
   "title" : "T-CABS Encounter Contact",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -99,7 +99,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-encounter-kon
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
+            ]
           }
         ]
       },

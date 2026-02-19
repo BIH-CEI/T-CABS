@@ -1,8 +1,8 @@
 Profile: T_CABS_Device_MDS_Beatmungsgeraet
 Parent: http://hl7.org/fhir/uv/pocd/StructureDefinition/MdsDevice
 Id: t-cabs-device-mds-beatmungsgeraet
-Title: "T-CABS Device MDS Home Ventilator"
-Description: "Profile for a home ventilator device"
+Title: "T-CABS Device MDS Ventilator"
+Description: "Profile for a ventilator device"
 
 // Beatmungsstunden
 * extension[operatingHours] 1..1

@@ -20,7 +20,7 @@ Profile: [T-CABS Observation Walking Distance](StructureDefinition-t-cabs-observ
 
 **effective**: 2024-01-15 23:59:00+0000 --> 2024-01-15 23:59:00+0000
 
-**value**: 8520 {#}/(24.h)(Details: UCUM code{#}/(24.h) = '{#}/(24.h)')
+**value**: 8520 {#}/(24.h) (Details: UCUM code{#}/(24.h) = '{#}/(24.h)')
 
 **device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Fitbit; serialNumber = FITBIT-ST-678901; modelNumber = Charge 5; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-schrittzaehler.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation Walking Distance](StructureDefinition-t-cabs-observ
   "id" : "Example-Gehstrecke-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke"
     ]
   },
   "extension" : [
@@ -73,7 +73,7 @@ Profile: [T-CABS Observation Walking Distance](StructureDefinition-t-cabs-observ
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "158033"
+        "code" : "8454247"
       }
     ]
   },

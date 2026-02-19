@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-observation-beatmungsparameter",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "name": "T_CABS_Observation_Beatmungsparameter",
   "title": "T-CABS Observation Ventilation Parameter (abstract)",
   "status": "draft",
@@ -23,7 +23,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"
             ]
           }
         ],
@@ -73,7 +73,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
             ]
           }
         ]
@@ -90,7 +90,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
             ]
           }
         ]

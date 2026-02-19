@@ -39,7 +39,7 @@ Profile: [T-CABS Device PHG](StructureDefinition-t-cabs-device-phg.md)
 | - | **Type** | **Value** |
 | * | MDC_REG_CERT_DATA_CONTINUA_VERSION | 2.1.0 |
 
-> **property****type**:MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST**valueCode**:MDC_DEV_SPEC_PROFILE_PULS_OXIM,MDC_DEV_SPEC_PROFILE_SCALE,MDC_DEV_METER_STRENGTH_MUSCL,MDC_DEV_SPEC_PROFILE_BP,MDC_DEV_ANALY_AWAY_MULTI_PARAM,MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER,MDC_DEV_SPEC_PROFILE_PEFM
+> **property****type**: MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST**valueCode**: MDC_DEV_SPEC_PROFILE_PULS_OXIM, MDC_DEV_SPEC_PROFILE_SCALE, MDC_DEV_METER_STRENGTH_MUSCL, MDC_DEV_SPEC_PROFILE_BP, MDC_DEV_ANALY_AWAY_MULTI_PARAM, MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER, MDC_DEV_SPEC_PROFILE_PEFM
 
 **patient**: [Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)](Patient-tcabs-patient-example.md)
 
@@ -52,7 +52,9 @@ Profile: [T-CABS Device PHG](StructureDefinition-t-cabs-device-phg.md)
   "resourceType" : "Device",
   "id" : "beispiel-phg-doccla",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-device-phg"]
+    "profile" : [
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg"
+    ]
   },
   "identifier" : [
     {

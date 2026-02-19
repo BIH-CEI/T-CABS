@@ -24,8 +24,6 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/hl7.css" rel="stylesheet"/>
-<link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -47,24 +45,28 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.41"}
-    h3,h4,h5,h6{--heading-prefix:"13.41"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.41"}
+    h3,h4,h5,h6{--heading-prefix:"14.41"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
-
+        <!-- T-CABS Header Logos -->
 <div id="project-nav">
-    <a id="project-logo" no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
-        <img alt="visit the website" height="60" src="T-CABS_Logo.png" />
-    </a>            
+    <a id="project-logo" data-no-external="true" href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/t-cabs.633">
+        <img alt="T-CABS Project" height="50" src="T-CABS_Logo.png"/>
+    </a>
+</div>
+<div id="charite-nav">
+    <a id="charite-logo" data-no-external="true" href="https://www.charite.de/">
+        <img alt="Charité" height="50" src="Logo_Charite.png"/>
+    </a>
+</div>
+<div id="family-nav">
+    <a id="family-logo" data-no-external="true" href="https://www.bihealth.org/">
+        <img alt="BIH" height="50" src="BIH-Logo_neu.png"/>
+    </a>
 </div>
 
-<div id="family-nav">
-    <a id="family-logo" no-external="true" href="https://www.charite.de/">
-        <img alt="visit the website" height="60" src="Logo_Charite.png" />
-    </a>            
-</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">T-CABS Implementation Guide</span>
@@ -158,6 +160,9 @@
     <a href="Terminologies.html">Terminologies</a>
   </li>
   <li>
+    <a href="Release-Notes.html">Release Notes</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>
@@ -195,7 +200,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://t-cabs.org/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">T-CABS Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://bih-cei.github.io/T-CABS/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -272,10 +277,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-group-patientengruppe<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-group-patientengruppe"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-group-patientengruppe|0.1.0"/></span>
       </td>
     </tr>
 
@@ -291,7 +296,7 @@
         
           Draft
           
-            as of 2025-12-09
+            as of 2026-02-19
           
         
       </td>
@@ -417,7 +422,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reference to the group member</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-group-patientengruppeK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeK'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeK-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeK'));
 document.getElementById('cbt-cabs-group-patientengruppeK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -609,7 +614,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeK'), 'obligation
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Reference to the group member</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-group-patientengruppeD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeD'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeD-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeD'));
 document.getElementById('cbt-cabs-group-patientengruppeD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -826,7 +831,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If member is no longer in group</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-group-patientengruppeS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeS-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeS'));
 document.getElementById('cbt-cabs-group-patientengruppeS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -894,7 +899,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'obligation
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Kind of particular resource; e.g. cow, syringe, lake, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
+    <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -904,7 +909,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'obligation
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="List of characteristics used to describe group members; e.g. gender, age, owner, location, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
+    <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -914,7 +919,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'obligation
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Value of descriptive member characteristic; e.g. red, male, pneumonia, Caucasian, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
+    <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
 </table>
@@ -1060,7 +1065,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'obligation
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.code" title="Provides a specific type of resource the group includes; e.g. &quot;cow&quot;, &quot;syringe&quot;, etc" class="dict"><span style="text-decoration: underline">code</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Kind of Group members</span>
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.name" title="A label assigned to the group for human identification and communication" class="dict"><span style="text-decoration: underline">name</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Label for Group</span>
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.quantity" title="A count of the number of resource instances that are part of the group" class="dict"><span style="text-decoration: underline">quantity</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Number of members</span>
-    "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.managingEntity" title="Entity responsible for defining and maintaining Group characteristics and/or registered members" class="dict"><span style="text-decoration: underline">managingEntity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion], CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-organisation]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Entity that is the custodian of the Group's definition</span>
+    "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.managingEntity" title="Entity responsible for defining and maintaining Group characteristics and/or registered members" class="dict"><span style="text-decoration: underline">managingEntity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion], CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Entity that is the custodian of the Group's definition</span>
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.characteristic" title="Identifies traits whose presence r absence is shared by members of the group" class="dict"><span style="text-decoration: underline">characteristic</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Include / Exclude group members by Trait</span>
       "extension": [
       ],
@@ -1077,7 +1082,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeS'), 'obligation
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.member" title="Identifies the resource instances that are members of the group (this element must be supported)" class="dict"><span style="text-decoration: underline">member</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who or what is in group</span>
       "extension": [
       ],
-      "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.member.entity" title="A reference to the entity that is a member of the group. Must be consistent with Group.type. If the entity is another group, then the type must be the same (this element must be supported)" class="dict"><span style="text-decoration: underline">entity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Reference to the group member</span>
+      "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.member.entity" title="A reference to the entity that is a member of the group. Must be consistent with Group.type. If the entity is another group, then the type must be the same (this element must be supported)" class="dict"><span style="text-decoration: underline">entity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Reference to the group member</span>
       "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.member.period" title="The period that the member was in the group, if known" class="dict"><span style="text-decoration: underline">period</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Period member belonged to the group</span>
       "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.member.inactive" title="A flag to indicate that the member is no longer in the group, but previously may have been a member" class="dict"><span style="text-decoration: underline">inactive</span></a>" : &lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>&gt;, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">If member is no longer in group</span>
     }],
@@ -1112,9 +1117,9 @@ Summary
 <p>Must-Support: 2 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion)</span></a></li>
-<li><a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-organisation)</span></a></li>
-<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-patient)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient)</span></a></li>
 
 </ul>
 
@@ -1179,7 +1184,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reference to the group member</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-group-patientengruppeKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeKA'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeKA-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeKA'));
 document.getElementById('cbt-cabs-group-patientengruppeKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1371,7 +1376,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeKA'), 'obligatio
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Reference to the group member</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-group-patientengruppeDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeDA'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeDA-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeDA'));
 document.getElementById('cbt-cabs-group-patientengruppeDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1587,7 +1592,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If member is no longer in group</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 4f2e6a9b-9953-4e0b-a34d-2077b2b150a9
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33722a7f-e9b2-4962-b7a3-3ebba97a3e58
 document.getElementById('cbt-cabs-group-patientengruppeSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'binding', document.getElementById('cbt-cabs-group-patientengruppeSA-binding').checked, document.getElementById('ppt-cabs-group-patientengruppeSA'));
 document.getElementById('cbt-cabs-group-patientengruppeSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1655,7 +1660,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'obligatio
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Kind of particular resource; e.g. cow, syringe, lake, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
+    <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1665,7 +1670,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'obligatio
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="List of characteristics used to describe group members; e.g. gender, age, owner, location, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
+    <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1675,7 +1680,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'obligatio
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td title="Value of descriptive member characteristic; e.g. red, male, pneumonia, Caucasian, etc."></td>
-    <td title="Version is not explicity stated. No matching Value Set found">Not State</td>
+    <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
   </tr>
 </table>
@@ -1821,7 +1826,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'obligatio
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.code" title="Provides a specific type of resource the group includes; e.g. &quot;cow&quot;, &quot;syringe&quot;, etc" class="dict"><span style="text-decoration: underline">code</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Kind of Group members</span>
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.name" title="A label assigned to the group for human identification and communication" class="dict"><span style="text-decoration: underline">name</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Label for Group</span>
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.quantity" title="A count of the number of resource instances that are part of the group" class="dict"><span style="text-decoration: underline">quantity</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Number of members</span>
-    "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.managingEntity" title="Entity responsible for defining and maintaining Group characteristics and/or registered members" class="dict"><span style="text-decoration: underline">managingEntity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion], CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-organisation]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Entity that is the custodian of the Group's definition</span>
+    "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.managingEntity" title="Entity responsible for defining and maintaining Group characteristics and/or registered members" class="dict"><span style="text-decoration: underline">managingEntity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion], CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Entity that is the custodian of the Group's definition</span>
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.characteristic" title="Identifies traits whose presence r absence is shared by members of the group" class="dict"><span style="text-decoration: underline">characteristic</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Include / Exclude group members by Trait</span>
       "extension": [
       ],
@@ -1838,7 +1843,7 @@ filterDesc(document.getElementById('t-cabs-group-patientengruppeSA'), 'obligatio
     "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.member" title="Identifies the resource instances that are members of the group (this element must be supported)" class="dict"><span style="text-decoration: underline">member</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who or what is in group</span>
       "extension": [
       ],
-      "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.member.entity" title="A reference to the entity that is a member of the group. Must be consistent with Group.type. If the entity is another group, then the type must be the same (this element must be supported)" class="dict"><span style="text-decoration: underline">entity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://t-cabs.org/StructureDefinition/t-cabs-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Reference to the group member</span>
+      "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.member.entity" title="A reference to the entity that is a member of the group. Must be consistent with Group.type. If the entity is another group, then the type must be the same (this element must be supported)" class="dict"><span style="text-decoration: underline">entity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Reference to the group member</span>
       "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.member.period" title="The period that the member was in the group, if known" class="dict"><span style="text-decoration: underline">period</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Period member belonged to the group</span>
       "<a href="StructureDefinition-t-cabs-group-patientengruppe.html#Group.member.inactive" title="A flag to indicate that the member is no longer in the group, but previously may have been a member" class="dict"><span style="text-decoration: underline">inactive</span></a>" : &lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>&gt;, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">If member is no longer in group</span>
     }],
@@ -1869,9 +1874,9 @@ Summary
 <p>Must-Support: 2 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion)</span></a></li>
-<li><a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-organisation)</span></a></li>
-<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(http://t-cabs.org/StructureDefinition/t-cabs-patient)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-practitioner-personmitfunktion.html">T-CABS Person with Function <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-organisation.html">T-CABS Organization <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation)</span></a></li>
+<li><a href="StructureDefinition-t-cabs-patient.html">T-CABS Patient <span style="font-size: 8px">(https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient)</span></a></li>
 
 </ul>
 
@@ -1933,14 +1938,13 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 9, 2025 09:55+0100">2025-12-09</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">BIH-CEI</a>.  Package t-cabs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 19, 2026 13:21+0100">2026-02-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

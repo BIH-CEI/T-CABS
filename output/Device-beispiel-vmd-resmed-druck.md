@@ -31,7 +31,7 @@ Profile: [T-CABS Device VMD Ventilator](StructureDefinition-t-cabs-device-vmd-be
   "id" : "beispiel-vmd-resmed-druck",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"
     ]
   },
   "identifier" : [

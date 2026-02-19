@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/Practitioner/tcabs-practitioner-example> a fhir:Practitioner ;
+<https://bih-cei.github.io/T-CABS/Practitioner/tcabs-practitioner-example> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "tcabs-practitioner-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion"^^xsd:anyURI ;
-       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion>
+       fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion"^^xsd:anyURI ;
+       fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion>
      ] [
        fhir:v "https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf|5.1.0"^^xsd:anyURI ;
        fhir:l <https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf?version=5.1.0>

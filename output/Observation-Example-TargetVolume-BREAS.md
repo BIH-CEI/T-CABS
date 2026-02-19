@@ -20,7 +20,7 @@ Profile: [T-CABS Observation Target Volume](StructureDefinition-t-cabs-observati
 
 **effective**: 2024-10-07 21:00:00+0200 --> 2024-10-07 21:30:00+0200
 
-**value**: 450 mL(Details: UCUM codemL = 'mL')
+**value**: 450 mL (Details: UCUM codemL = 'mL')
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-BREAS-TGTVOL-001; type = MDC_VENT_VOL_TIDAL_TARGET_AUTO; unit = mL; operationalStatus = on; color = magenta; category = setting; measurementPeriod = Once per 10 minutes](DeviceMetric-beispiel-devicemetric-breas-targetvolume.md)
 
@@ -29,7 +29,7 @@ Profile: [T-CABS Observation Target Volume](StructureDefinition-t-cabs-observati
 | | | | |
 | :--- | :--- | :--- | :--- |
 | - | **Low** | **High** | **Type** |
-| * | 300 mL(Details: UCUM codemL = 'mL') | 800 mL(Details: UCUM codemL = 'mL') | Therapeutic Desired Level |
+| * | 300 mL (Details: UCUM codemL = 'mL') | 800 mL (Details: UCUM codemL = 'mL') | Therapeutic Desired Level |
 
 
 
@@ -41,7 +41,7 @@ Profile: [T-CABS Observation Target Volume](StructureDefinition-t-cabs-observati
   "id" : "Example-TargetVolume-BREAS",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume"
     ]
   },
   "partOf" : [

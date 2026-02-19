@@ -5,6 +5,7 @@ Title: "T-CABS Observation TI"
 Description: "Profile for duration of inspiratory phase"
 
 * code.coding = $IEEE-11073#152416 //"MDC_VENT_TIME_PD_INSP"
+* code.coding ^definition = "Duration of the inflation phase if time-terminated."
 
 * valueQuantity.code = #s
 * valueQuantity.unit = "s"

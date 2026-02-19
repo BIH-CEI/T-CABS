@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "t-cabs-devicemetric-numericmetric",
-  "url": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric",
+  "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric",
   "name": "T_CABS_DeviceMetric_NumericMetric",
   "title": "T-CABS DeviceMetric NumericMetric",
   "status": "draft",
@@ -26,7 +26,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
             ]
           }
         ]
@@ -38,7 +38,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
             ]
           }
         ]

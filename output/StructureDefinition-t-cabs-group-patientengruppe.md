@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Group_Patientengruppe |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-group-patientengruppe | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Group_Patientengruppe |
 
  
 Profile to group patients within the T-CABS study. 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-group-patient
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-group-patientengruppe",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-group-patientengruppe",
   "version" : "0.1.0",
   "name" : "T_CABS_Group_Patientengruppe",
   "title" : "T-CABS Patient Group",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -107,8 +107,8 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-group-patient
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
-              "http://t-cabs.org/StructureDefinition/t-cabs-organisation"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion",
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"
             ]
           }
         ]
@@ -124,7 +124,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-group-patient
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
+            ]
           }
         ],
         "mustSupport" : true

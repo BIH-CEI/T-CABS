@@ -5,7 +5,7 @@
   "id": "t-cabs-valueset-beatmungsstelle",
   "title": "T-CABS ValueSet Ventilation Site",
   "description": "This ValueSet contains codes to represent the body sites where ventilation is applied",
-  "url": "http://t-cabs.org/ValueSet/t-cabs-valueset-beatmungsstelle",
+  "url": "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-beatmungsstelle",
   "compose": {
     "include": [
       {

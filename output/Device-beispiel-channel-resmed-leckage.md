@@ -31,7 +31,7 @@ Profile: [T-CABS Device Channel Ventilator](StructureDefinition-t-cabs-device-ch
   "id" : "beispiel-channel-resmed-leckage",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
     ]
   },
   "identifier" : [

@@ -20,7 +20,7 @@ Profile: [T-CABS Observation PEEP](StructureDefinition-t-cabs-observation-peep.m
 
 **effective**: 2024-01-15 23:35:00+0000 --> 2024-01-15 23:35:00+0000
 
-**value**: 18 mbar(Details: UCUM codembar = 'mbar')
+**value**: 18 mbar (Details: UCUM codembar = 'mbar')
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-LOEW-PEEP-001; type = MDC_VENT_PRESS_AWAY_DELTA; unit = mbar; operationalStatus = on; color = magenta; category = calculation; measurementPeriod = Once per 1 minute](DeviceMetric-beispiel-devicemetric-loewenstein-peep.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation PEEP](StructureDefinition-t-cabs-observation-peep.m
   "id" : "Example-PEEP-Loewenstein",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep"
     ]
   },
   "partOf" : [

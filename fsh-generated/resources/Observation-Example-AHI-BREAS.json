@@ -3,7 +3,7 @@
   "id": "Example-AHI-BREAS",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi"
     ]
   },
   "code": {

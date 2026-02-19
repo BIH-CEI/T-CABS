@@ -3,7 +3,7 @@
   "id": "Example-Encounter-Telemedizinische-Visite",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt",
       "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2025.0.1"
     ]
   },

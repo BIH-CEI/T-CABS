@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "Example-IPAP-BREAS",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap"]
+    "profile" : ["https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap"]
   },
   "text" : {
     "status" : "generated",

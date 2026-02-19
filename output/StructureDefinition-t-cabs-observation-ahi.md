@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_AHI |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Observation_AHI |
 
  
 Profile for the Apnea-Hypopnea Index (AHI) - Total number of apnea and hypopnea episodes that occurred during sleep, divided by sleep duration in hours 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-observation-ahi",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_AHI",
   "title" : "T-CABS Observation AHI",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+  "baseDefinition" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -123,19 +123,11 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-a
       {
         "id" : "Observation.code.coding",
         "path" : "Observation.code.coding",
+        "definition" : "Total number of all apnoea and hypopnoea events occurring during a usage session divided by the hours of sleep\n* effective[x] only Period",
         "patternCoding" : {
           "system" : "urn:iso:std:iso:11073:10101",
           "code" : "8410792"
         }
-      },
-      {
-        "id" : "Observation.effective[x]",
-        "path" : "Observation.effective[x]",
-        "type" : [
-          {
-            "code" : "Period"
-          }
-        ]
       },
       {
         "id" : "Observation.value[x]:valueQuantity",

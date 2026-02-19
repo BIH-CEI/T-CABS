@@ -1,18 +1,18 @@
-# T-CABS Device MDS Home Ventilator - T-CABS Implementation Guide v0.1.0
+# T-CABS Device MDS Ventilator - T-CABS Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **T-CABS Device MDS Home Ventilator**
+* **T-CABS Device MDS Ventilator**
 
-## Resource Profile: T-CABS Device MDS Home Ventilator 
+## Resource Profile: T-CABS Device MDS Ventilator 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Device_MDS_Beatmungsgeraet |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Device_MDS_Beatmungsgeraet |
 
  
-Profile for a home ventilator device 
+Profile for a ventilator device 
 
 **Usages:**
 
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-mds-be
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-device-mds-beatmungsgeraet",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
   "version" : "0.1.0",
   "name" : "T_CABS_Device_MDS_Beatmungsgeraet",
-  "title" : "T-CABS Device MDS Home Ventilator",
+  "title" : "T-CABS Device MDS Ventilator",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-mds-be
       ]
     }
   ],
-  "description" : "Profile for a home ventilator device",
+  "description" : "Profile for a ventilator device",
   "jurisdiction" : [
     {
       "coding" : [
@@ -179,7 +179,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-mds-be
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
+            ]
           }
         ]
       },

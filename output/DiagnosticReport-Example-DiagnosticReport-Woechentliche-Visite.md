@@ -21,35 +21,35 @@ Profile: [T-CABS DiagnosticReport Visit Finding](StructureDefinition-t-cabs-diag
 **Report Details**
 
 * **Code**: [MDC_VENT_VOL_MINUTE](Observation-Example-AMV-BREAS-gemessen.md)
-  * **Value**: 8.5 L/min(Details: UCUM codeL/min = 'L/min')
+  * **Value**: 8.5 L/min (Details: UCUM codeL/min = 'L/min')
   * **Flags**: Final
   * **When For**: 2024-01-15 23:30:00+0000
 * **Code**: [MDC_SABTE_AHI_TOTAL](Observation-Example-AHI-BREAS.md)
-  * **Value**: 5.2 {score}(Details: UCUM code{score} = '{score}')
+  * **Value**: 5.2 {score} (Details: UCUM code{score} = '{score}')
   * **Flags**: Final
   * **When For**: 2024-01-15 22:00:00+0000 --> 2024-01-16 06:00:00+0000
 * **Code**: [MDC_VENT_RESP_RATE](Observation-Example-Atemfrequenz-ResMed-gemessen.md)
-  * **Value**: 14 /min(Details: UCUM code/min = '/min')
+  * **Value**: 14 /min (Details: UCUM code/min = '/min')
   * **Flags**: Final
   * **When For**: 2024-01-15 23:20:00+0000 --> 2024-01-15 23:20:00+0000
 * **Code**: [MDC_VENT_VOL_LEAK](Observation-Example-Leckage-ResMed.md)
-  * **Value**: 0.6 L/min(Details: UCUM codeL/min = 'L/min')
+  * **Value**: 0.6 L/min (Details: UCUM codeL/min = 'L/min')
   * **Flags**: Final
   * **When For**: 2024-01-15 22:00:00+0000 --> 2024-01-16 06:00:00+0000
 * **Code**: [MDC_VENT_PRESS_AWAY_DELTA](Observation-Example-PEEP-Loewenstein.md)
-  * **Value**: 18 mbar(Details: UCUM codembar = 'mbar')
+  * **Value**: 18 mbar (Details: UCUM codembar = 'mbar')
   * **Flags**: Final
   * **When For**: 2024-01-15 23:35:00+0000 --> 2024-01-15 23:35:00+0000
 * **Code**: [MDC_VENT_RESP_BTSD_P_RATE](Observation-Example-TriggeredBreaths-Loewenstein.md)
-  * **Value**: 92 %(Details: UCUM code% = '%')
+  * **Value**: 92 % (Details: UCUM code% = '%')
   * **Flags**: Final
   * **When For**: 2024-01-15 22:00:00+0000 --> 2024-01-16 06:00:00+0000
 * **Code**: [Body mass index (BMI) [Ratio]](Observation-Example-BMI-Doccla.md)
-  * **Value**: 25.3 kg/m2(Details: UCUM codekg/m2 = 'kg/m2')
+  * **Value**: 25.3 kg/m2 (Details: UCUM codekg/m2 = 'kg/m2')
   * **Flags**: Final
   * **When For**: 2024-01-15 10:30:00+0000 --> 2024-01-15 10:30:00+0000
 * **Code**: [Oxygen saturation in Arterial blood](Observation-Example-ArterielleSPO2-Doccla.md)(Arterial system structure (body structure))
-  * **Value**: 98 %(Details: UCUM code% = '%')
+  * **Value**: 98 % (Details: UCUM code% = '%')
   * **Flags**: Final
   * **When For**: 2024-01-15 08:15:00+0000 --> 2024-01-15 08:15:00+0000
 
@@ -65,7 +65,7 @@ Patient shows stable ventilation parameters across all devices. BREAS: AMV in no
   "id" : "Example-DiagnosticReport-Woechentliche-Visite",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"
     ]
   },
   "identifier" : [

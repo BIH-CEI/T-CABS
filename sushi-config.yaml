@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: t-cabs
-canonical: http://t-cabs.org
+canonical: https://bih-cei.github.io/T-CABS
 name: T-CABS
 title: T-CABS Implementation Guide
 # description: Example Implementation Guide for getting started with SUSHI
@@ -14,7 +14,7 @@ fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
 # template: t-cabs-template #not supported anymore
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 language: en
 jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -73,6 +73,8 @@ pages:
     title: Ventilation Data Implementation
   Terminologies.md:
     title: Terminologies
+  Release-Notes.md:
+    title: Release Notes
 
 
 #   implementation.xml:
@@ -121,6 +123,7 @@ menu:
     "Vital Data": Vital-Data-Implementation.html
     "Ventilation Data": Ventilation-Data-Implementation.html
   Terminologies: Terminologies.html
+  Release Notes: Release-Notes.html
   Artifacts: artifacts.html
 
 

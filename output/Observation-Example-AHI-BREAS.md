@@ -20,7 +20,7 @@ Profile: [T-CABS Observation AHI](StructureDefinition-t-cabs-observation-ahi.md)
 
 **effective**: 2024-01-15 22:00:00+0000 --> 2024-01-16 06:00:00+0000
 
-**value**: 5.2 {score}(Details: UCUM code{score} = '{score}')
+**value**: 5.2 {score} (Details: UCUM code{score} = '{score}')
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-BREAS-AHI-001; type = MDC_SABTE_AHI_TOTAL; unit = {score}; operationalStatus = on; color = green; category = calculation; measurementPeriod = Once per 1 hour](DeviceMetric-beispiel-devicemetric-breas-ahi.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation AHI](StructureDefinition-t-cabs-observation-ahi.md)
   "id" : "Example-AHI-BREAS",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi"
     ]
   },
   "partOf" : [

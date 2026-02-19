@@ -3,7 +3,7 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="Example-Koerpertemperatur-Doccla"/>
   <meta>
-    <profile value="http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur"/>
+    <profile value="https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpertemperatur"/>
     <profile value="https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur|5.1.0"/>
   </meta>
   <text>

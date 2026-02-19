@@ -3,7 +3,7 @@
   "id": "beispiel-channel-breas-targetvolume",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet"
     ]
   },
   "identifier": [

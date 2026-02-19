@@ -22,9 +22,9 @@ Profiles: [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cab
 
 **device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = OMRON; serialNumber = OMRON-BP-234567; modelNumber = M7 Intelli IT; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-blutdruckmessgeraet.md)
 
-> **component****code**:Systolic blood pressure**value**: 125 mm[Hg](Details: UCUM codemm[Hg] = 'mm[Hg]')
+> **component****code**: Systolic blood pressure**value**: 125 mm[Hg] (Details: UCUM codemm[Hg] = 'mm[Hg]')
 
-> **component****code**:Diastolic blood pressure**value**: 80 mm[Hg](Details: UCUM codemm[Hg] = 'mm[Hg]')
+> **component****code**: Diastolic blood pressure**value**: 80 mm[Hg] (Details: UCUM codemm[Hg] = 'mm[Hg]')
 
 
 
@@ -36,7 +36,7 @@ Profiles: [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cab
   "id" : "Example-ArteriellerBlutdruck-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell|5.1.0"
     ]
   },
@@ -96,7 +96,12 @@ Profiles: [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cab
         "coding" : [
           {
             "system" : "http://loinc.org",
-            "code" : "8480-6"
+            "code" : "8480-6",
+            "display" : "Systolic blood pressure"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150017"
           }
         ]
       },
@@ -112,7 +117,12 @@ Profiles: [T-CABS Observation Arterial Blood Pressure](StructureDefinition-t-cab
         "coding" : [
           {
             "system" : "http://loinc.org",
-            "code" : "8462-4"
+            "code" : "8462-4",
+            "display" : "Diastolic blood pressure"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150018"
           }
         ]
       },

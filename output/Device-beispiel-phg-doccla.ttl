@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://t-cabs.org/Device/beispiel-phg-doccla> a fhir:Device ;
+<https://bih-cei.github.io/T-CABS/Device/beispiel-phg-doccla> a fhir:Device ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "beispiel-phg-doccla"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://t-cabs.org/StructureDefinition/t-cabs-device-phg"^^xsd:anyURI ;
-       fhir:l <http://t-cabs.org/StructureDefinition/t-cabs-device-phg>
+       fhir:v "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg"^^xsd:anyURI ;
+       fhir:l <https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg>
      ] )
   ] ; # 
   fhir:text [
@@ -145,7 +145,7 @@
      ] )
   ] ) ; # 
   fhir:patient [
-     fhir:l <http://t-cabs.org/Patient/tcabs-patient-example> ;
+     fhir:l <https://bih-cei.github.io/T-CABS/Patient/tcabs-patient-example> ;
      fhir:reference [ fhir:v "Patient/tcabs-patient-example" ]
   ] . # 
 

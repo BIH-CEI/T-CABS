@@ -7,191 +7,191 @@
   "profiles": {
     "Device": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
         "title": "T-CABS Device Channel Ventilator"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
-        "title": "T-CABS Device MDS Home Ventilator"
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
+        "title": "T-CABS Device MDS Ventilator"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-phd",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd",
         "title": "T-CABS Device PHD"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-phg",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg",
         "title": "T-CABS Device PHG"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
         "title": "T-CABS Device VMD Ventilator"
       }
     ],
     "DeviceMetric": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric",
         "title": "T-CABS DeviceMetric NumericMetric"
       }
     ],
     "DiagnosticReport": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-diagnosticreport-visitenbefund",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-diagnosticreport-visitenbefund",
         "title": "T-CABS DiagnosticReport Visit Finding"
       }
     ],
     "Encounter": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt",
         "title": "T-CABS Encounter Contact"
       }
     ],
     "Group": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-group-patientengruppe",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-group-patientengruppe",
         "title": "T-CABS Patient Group"
       }
     ],
     "Observation": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ahi",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi",
         "title": "T-CABS Observation AHI"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-amv",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv",
         "title": "T-CABS Observation AMV"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
         "title": "T-CABS Observation Arterial Blood Pressure"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
-        "title": "T-CABS Observation SPO2"
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2",
+        "title": "T-CABS Observation Arterielle SPO2"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz",
         "title": "T-CABS Observation Respiratory Rate"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet",
         "title": "T-CABS Observation Respiratory Rate Ventilated"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis",
         "title": "T-CABS Observation Respiratory Time Ratio"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparameter",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparameter",
         "title": "T-CABS Observation Ventilation Parameter (abstract)"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
         "title": "T-CABS Observation Ventilation Parameter with Components (abstract)"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-bmi",
         "title": "T-CABS Observation BMI"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-druck-minmax",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax",
         "title": "T-CABS Observation Pressure MIN/MAX"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-gehstrecke",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke",
         "title": "T-CABS Observation Walking Distance"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-herzfrequenz",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-herzfrequenz",
         "title": "T-CABS Observation Heart Rate"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ipap",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap",
         "title": "T-CABS Observation IPAP"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpergewicht",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpergewicht",
         "title": "T-CABS Observation Body Weight"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-koerpertemperatur",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpertemperatur",
         "title": "T-CABS Observation Body Temperature"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-leckage",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage",
         "title": "T-CABS Observation Leakage"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-peep",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep",
         "title": "T-CABS Observation PEEP"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume",
         "title": "T-CABS Observation Target Volume"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti",
         "title": "T-CABS Observation TI"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths",
         "title": "T-CABS Observation Triggered Breaths"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter",
         "title": "T-CABS Observation Vital Parameter"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparametermitkomponenten",
         "title": "T-CABS Observation Vital Parameter with Components"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1",
         "title": "T-CABS Observation FEV1"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fef25-75",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fef25-75",
         "title": "T-CABS Observation FEF25-75"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev1fev6",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fev6",
         "title": "T-CABS Observation FEV1/FEV6"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationfev6",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6",
         "title": "T-CABS Observation FEV6"
       },
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-observationhandgriffstaerke",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke",
         "title": "T-CABS Observation Hand Grip Strength"
       }
     ],
     "Organization": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-organisation",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation",
         "title": "T-CABS Organization"
       }
     ],
     "Patient": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-patient",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient",
         "title": "T-CABS Patient"
       }
     ],
     "PractitionerRole": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-funktion",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion",
         "title": "T-CABS Function"
       }
     ],
     "Practitioner": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-practitioner-personmitfunktion",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion",
         "title": "T-CABS Person with Function"
       }
     ],
     "Procedure": [
       {
-        "url": "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung",
+        "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung",
         "title": "T-CABS Procedure Ventilation"
       }
     ]

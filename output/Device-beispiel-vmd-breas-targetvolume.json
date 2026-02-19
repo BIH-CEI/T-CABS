@@ -2,7 +2,7 @@
   "resourceType" : "Device",
   "id" : "beispiel-vmd-breas-targetvolume",
   "meta" : {
-    "profile" : ["http://t-cabs.org/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"]
+    "profile" : ["https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet"]
   },
   "text" : {
     "status" : "generated",

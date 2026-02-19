@@ -20,7 +20,7 @@ Profile: [T-CABS Observation Respiratory Rate Ventilated](StructureDefinition-t-
 
 **effective**: 2024-01-15 23:20:00+0000 --> 2024-01-15 23:20:00+0000
 
-**value**: 14 /min(Details: UCUM code/min = '/min')
+**value**: 14 /min (Details: UCUM code/min = '/min')
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-RESMED-ATEMFREQ-001; type = MDC_VENT_RESP_RATE; unit = /min; operationalStatus = on; color = cyan; category = measurement; measurementPeriod = Once per 1 minute](DeviceMetric-beispiel-devicemetric-resmed-atemfrequenz.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation Respiratory Rate Ventilated](StructureDefinition-t-
   "id" : "Example-Atemfrequenz-ResMed-gemessen",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
     ]
   },
   "partOf" : [

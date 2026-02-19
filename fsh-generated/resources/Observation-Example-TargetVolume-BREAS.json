@@ -3,7 +3,7 @@
   "id": "Example-TargetVolume-BREAS",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-targetvolume"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume"
     ]
   },
   "code": {

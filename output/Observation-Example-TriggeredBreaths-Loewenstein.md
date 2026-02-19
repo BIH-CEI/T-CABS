@@ -20,7 +20,7 @@ Profile: [T-CABS Observation Triggered Breaths](StructureDefinition-t-cabs-obser
 
 **effective**: 2024-01-15 22:00:00+0000 --> 2024-01-16 06:00:00+0000
 
-**value**: 92 %(Details: UCUM code% = '%')
+**value**: 92 % (Details: UCUM code% = '%')
 
 **device**: [DeviceMetric: identifier = http://tcabs.example.org/device-metric#DM-LOEW-TRIG-001; type = MDC_VENT_RESP_BTSD_P_RATE; unit = %; operationalStatus = on; color = yellow; category = measurement; measurementPeriod = Once per 1 minute](DeviceMetric-beispiel-devicemetric-loewenstein-triggeredbreaths.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation Triggered Breaths](StructureDefinition-t-cabs-obser
   "id" : "Example-TriggeredBreaths-Loewenstein",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-triggeredbreaths"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths"
     ]
   },
   "partOf" : [

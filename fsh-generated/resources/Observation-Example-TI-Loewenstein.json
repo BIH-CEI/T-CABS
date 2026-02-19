@@ -3,7 +3,7 @@
   "id": "Example-TI-Loewenstein",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-ti"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
     ]
   },
   "code": {

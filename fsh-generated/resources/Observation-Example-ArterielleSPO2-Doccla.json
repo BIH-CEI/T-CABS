@@ -3,7 +3,7 @@
   "id": "Example-ArterielleSPO2-Doccla",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0"
     ]
   },

@@ -20,7 +20,7 @@ Profile: [T-CABS Observation FEV6](StructureDefinition-t-cabs-observationfev6.md
 
 **effective**: 2024-01-15 09:15:00+0000 --> 2024-01-15 09:15:00+0000
 
-**value**: 3.2 L(Details: UCUM codeL = 'L')
+**value**: 3.2 L (Details: UCUM codeL = 'L')
 
 **device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = CareFusion; serialNumber = CAREFUS-SP-567890; modelNumber = SpiroUSB; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-spirometer.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation FEV6](StructureDefinition-t-cabs-observationfev6.md
   "id" : "Example-FEV6-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observationfev6"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6"
     ]
   },
   "extension" : [

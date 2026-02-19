@@ -20,7 +20,7 @@ Profile: [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md)
 
 **effective**: 2024-01-15 10:30:00+0000 --> 2024-01-15 10:30:00+0000
 
-**value**: 25.3 kg/m2(Details: UCUM codekg/m2 = 'kg/m2')
+**value**: 25.3 kg/m2 (Details: UCUM codekg/m2 = 'kg/m2')
 
 **device**: [Device: identifier = IEEE 11073 System Identifier; manufacturer = Beurer; serialNumber = BEURER-SC-789012; modelNumber = BF 700; type = MDC_MOC_VMS_MDS_SIMP](Device-beispiel-phd-waage.md)
 
@@ -34,7 +34,7 @@ Profile: [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md)
   "id" : "Example-BMI-Doccla",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-bmi"
     ]
   },
   "extension" : [

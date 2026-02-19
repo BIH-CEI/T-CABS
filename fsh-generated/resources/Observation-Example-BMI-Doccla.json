@@ -3,7 +3,7 @@
   "id": "Example-BMI-Doccla",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-bmi"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-bmi"
     ]
   },
   "category": [

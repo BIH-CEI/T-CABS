@@ -12,7 +12,7 @@ Profiles: [T-CABS Encounter Contact](StructureDefinition-t-cabs-encounter-kontak
 
 **status**: Finished
 
-**class**: [ActCode: VR](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR) (virtual)
+**class**: [ActCode: VR](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-VR) (virtual)
 
 **type**: Konsil
 
@@ -39,7 +39,7 @@ Profiles: [T-CABS Encounter Contact](StructureDefinition-t-cabs-encounter-kontak
   "id" : "Example-Encounter-Telemedizinische-Visite",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-encounter-kontakt",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt",
       "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2025.0.1"
     ]
   },

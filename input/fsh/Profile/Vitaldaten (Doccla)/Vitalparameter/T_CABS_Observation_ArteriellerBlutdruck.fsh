@@ -31,13 +31,13 @@ For the profile T_CABS_Observation_ArteriellerBlutdruck, compatibility with ISiK
     SystolicBP 1..1 and
     DiastolicBP 1..1 and
     meanBP 0..1
-* component[SystolicBP].code = $LOINC#8480-6
+* component[SystolicBP].code = $LOINC#8480-6 "Systolic blood pressure"
 * component[SystolicBP].value[x] only Quantity
 * component[SystolicBP].valueQuantity = $UCUM#mm[Hg]
-* component[DiastolicBP].code = $LOINC#8462-4
+* component[DiastolicBP].code = $LOINC#8462-4 "Diastolic blood pressure"
 * component[DiastolicBP].value[x] only Quantity
 * component[DiastolicBP].valueQuantity = $UCUM#mm[Hg]
-* component[meanBP].code = $LOINC#8478-0
+* component[meanBP].code = $LOINC#8478-0 "Mean blood pressure"
 * component[meanBP].value[x] only Quantity
 * component[meanBP].valueQuantity = $UCUM#mm[Hg]
 
@@ -55,12 +55,14 @@ Description: "Example of an arterial blood pressure measurement via Doccla"
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-01-15T09:00:00Z"
 * effectivePeriod.end = "2024-01-15T09:00:00Z"
-* component[SystolicBP].code = $LOINC#8480-6
+* component[SystolicBP].code.coding[0] = $LOINC#8480-6 "Systolic blood pressure"
+* component[SystolicBP].code.coding[1] = $IEEE-11073#150017
 * component[SystolicBP].valueQuantity.value = 125
 * component[SystolicBP].valueQuantity.unit = "mm[Hg]"
 * component[SystolicBP].valueQuantity.system = $UCUM
 * component[SystolicBP].valueQuantity.code = #mm[Hg]
-* component[DiastolicBP].code = $LOINC#8462-4
+* component[DiastolicBP].code.coding[0] = $LOINC#8462-4 "Diastolic blood pressure"
+* component[DiastolicBP].code.coding[1] = $IEEE-11073#150018
 * component[DiastolicBP].valueQuantity.value = 80
 * component[DiastolicBP].valueQuantity.unit = "mm[Hg]"
 * component[DiastolicBP].valueQuantity.system = $UCUM

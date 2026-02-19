@@ -30,7 +30,7 @@ Max Mustermann (official) Male, DoB: 1980-01-15 ( Medical record number)
   "id" : "tcabs-patient-example",
   "meta" : {
     "profile" : [
-      "http://t-cabs.org/StructureDefinition/t-cabs-patient",
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0"
     ]
   },

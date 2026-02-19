@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_BeatmungsparameterMitKomponenten |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Observation_BeatmungsparameterMitKomponenten |
 
  
 Abstract profile for ventilation parameters with multiple values 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-observation-beatmungsparametermitkomponenten",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-beatmungsparametermitkomponenten",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_BeatmungsparameterMitKomponenten",
   "title" : "T-CABS Observation Ventilation Parameter with Components (abstract)",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -124,7 +124,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://t-cabs.org/StructureDefinition/t-cabs-procedure-beatmung"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"
             ]
           }
         ],
@@ -173,7 +173,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
+            ]
           }
         ]
       },
@@ -189,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-b
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://t-cabs.org/StructureDefinition/t-cabs-devicemetric-numericmetric"
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
             ]
           }
         ]

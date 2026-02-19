@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-device-phd | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Device_PHD |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Device_PHD |
 
  
 Profile for a personal health device measuring at the patient 
@@ -17,7 +17,7 @@ Profile for a personal health device measuring at the patient
 **Usages:**
 
 * Refer to this Profile: [T-CABS Observation Vital Parameter](StructureDefinition-t-cabs-observation-vitalparameter.md) and [T-CABS Observation Vital Parameter with Components](StructureDefinition-t-cabs-observation-vitalparametermitkomponenten.md)
-* Examples for this Profile: [Device/beispiel-phd-blutdruckmessgeraet](Device-beispiel-phd-blutdruckmessgeraet.md), [Device/beispiel-phd-dynamometer](Device-beispiel-phd-dynamometer.md), [Device/beispiel-phd-peakflow](Device-beispiel-phd-peakflow.md), [Device/beispiel-phd-pulsoximeter](Device-beispiel-phd-pulsoximeter.md)...Show 3 more,[Device/beispiel-phd-schrittzaehler](Device-beispiel-phd-schrittzaehler.md),[Device/beispiel-phd-spirometer](Device-beispiel-phd-spirometer.md)and[Device/beispiel-phd-waage](Device-beispiel-phd-waage.md)
+* Examples for this Profile: [Device/beispiel-phd-blutdruckmessgeraet](Device-beispiel-phd-blutdruckmessgeraet.md), [Device/beispiel-phd-dynamometer](Device-beispiel-phd-dynamometer.md), [Device/beispiel-phd-peakflow](Device-beispiel-phd-peakflow.md), [Device/beispiel-phd-pulsoximeter](Device-beispiel-phd-pulsoximeter.md)... Show 3 more, [Device/beispiel-phd-schrittzaehler](Device-beispiel-phd-schrittzaehler.md), [Device/beispiel-phd-spirometer](Device-beispiel-phd-spirometer.md) and [Device/beispiel-phd-waage](Device-beispiel-phd-waage.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-device-phd)
 
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phd.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-device-phd",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-device-phd",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd",
   "version" : "0.1.0",
   "name" : "T_CABS_Device_PHD",
   "title" : "T-CABS Device PHD",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -129,7 +129,7 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phd.cs
         "short" : "Type of measurement device",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://t-cabs.org/ValueSet/t-cabs-valueset-phdtyp"
+          "valueSet" : "https://bih-cei.github.io/T-CABS/ValueSet/t-cabs-valueset-phdtyp"
         }
       },
       {
@@ -140,7 +140,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-device-phd.cs
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
+            ]
           }
         ],
         "mustSupport" : true

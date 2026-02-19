@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:T_CABS_Observation_Vitalparameter |
+| *Official URL*:https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter | *Version*:0.1.0 |
+| Draft as of 2026-02-19 | *Computable Name*:T_CABS_Observation_Vitalparameter |
 
  
 Abstract profile for measured vital parameters 
 
 **Usages:**
 
-* Derived from this Profile: [T-CABS Observation SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md), [T-CABS Observation Respiratory Rate](StructureDefinition-t-cabs-observation-atemfrequenz.md), [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md), [T-CABS Observation Walking Distance](StructureDefinition-t-cabs-observation-gehstrecke.md)...Show 8 more,[T-CABS Observation Heart Rate](StructureDefinition-t-cabs-observation-herzfrequenz.md),[T-CABS Observation Body Weight](StructureDefinition-t-cabs-observation-koerpergewicht.md),[T-CABS Observation Body Temperature](StructureDefinition-t-cabs-observation-koerpertemperatur.md),[T-CABS Observation FEV1](StructureDefinition-t-cabs-observationfev1.md),[T-CABS Observation FEF25-75](StructureDefinition-t-cabs-observationfev1fef25-75.md),[T-CABS Observation FEV1/FEV6](StructureDefinition-t-cabs-observationfev1fev6.md),[T-CABS Observation FEV6](StructureDefinition-t-cabs-observationfev6.md)and[T-CABS Observation Hand Grip Strength](StructureDefinition-t-cabs-observationhandgriffstaerke.md)
+* Derived from this Profile: [T-CABS Observation Arterielle SPO2](StructureDefinition-t-cabs-observation-arteriellespo2.md), [T-CABS Observation Respiratory Rate](StructureDefinition-t-cabs-observation-atemfrequenz.md), [T-CABS Observation BMI](StructureDefinition-t-cabs-observation-bmi.md), [T-CABS Observation Walking Distance](StructureDefinition-t-cabs-observation-gehstrecke.md)... Show 8 more, [T-CABS Observation Heart Rate](StructureDefinition-t-cabs-observation-herzfrequenz.md), [T-CABS Observation Body Weight](StructureDefinition-t-cabs-observation-koerpergewicht.md), [T-CABS Observation Body Temperature](StructureDefinition-t-cabs-observation-koerpertemperatur.md), [T-CABS Observation FEV1](StructureDefinition-t-cabs-observationfev1.md), [T-CABS Observation FEF25-75](StructureDefinition-t-cabs-observationfev1fef25-75.md), [T-CABS Observation FEV1/FEV6](StructureDefinition-t-cabs-observationfev1fev6.md), [T-CABS Observation FEV6](StructureDefinition-t-cabs-observationfev6.md) and [T-CABS Observation Hand Grip Strength](StructureDefinition-t-cabs-observationhandgriffstaerke.md)
 * Refer to this Profile: [T-CABS DiagnosticReport Visit Finding](StructureDefinition-t-cabs-diagnosticreport-visitenbefund.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/t-cabs|current/StructureDefinition/t-cabs-observation-vitalparameter)
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
 {
   "resourceType" : "StructureDefinition",
   "id" : "t-cabs-observation-vitalparameter",
-  "url" : "http://t-cabs.org/StructureDefinition/t-cabs-observation-vitalparameter",
+  "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-vitalparameter",
   "version" : "0.1.0",
   "name" : "T_CABS_Observation_Vitalparameter",
   "title" : "T-CABS Observation Vital Parameter",
   "status" : "draft",
-  "date" : "2025-12-09T09:55:43+01:00",
+  "date" : "2026-02-19T13:21:58+01:00",
   "publisher" : "BIH-CEI",
   "contact" : [
     {
@@ -118,7 +118,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-device-phg"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg"
+            ]
           }
         ]
       },
@@ -186,7 +188,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
+            ]
           }
         ],
         "mustSupport" : true
@@ -209,7 +213,9 @@ Other representations of profile: [CSV](StructureDefinition-t-cabs-observation-v
         "type" : [
           {
             "code" : "Reference",
-            "targetProfile" : ["http://t-cabs.org/StructureDefinition/t-cabs-device-phd"]
+            "targetProfile" : [
+              "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd"
+            ]
           }
         ],
         "mustSupport" : true
