@@ -11,36 +11,72 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
         with:
-          fetch-depth: 0
-      - name: Setup Java
-        uses: actions/setup-java@v4
+          distribution: temurin
+          java-version: '17'
+
+      - uses: actions/setup-node@v4
         with:
-          distribution: 'temurin'
-          java-version: '21'
+          node-version: '20'
+
       - name: Install SUSHI
         run: npm install -g fsh-sushi
-      - name: Run updatePublisher
-        run: bash ./_updatePublisher.sh -y
-      - name: Run genonce
-        run: bash ./_genonce.sh
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install Jekyll
+        run: gem install jekyll
+
+      - name: Cache FHIR packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.fhir/packages
+          key: fhir-packages-${{ hashFiles('sushi-config.yaml') }}
+          restore-keys: fhir-packages-
+
+      - name: Cache IG Publisher JAR
+        id: cache-publisher
+        uses: actions/cache@v4
+        with:
+          path: input-cache/publisher.jar
+          key: ig-publisher-latest
+
+      - name: Download IG Publisher
+        if: steps.cache-publisher.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p input-cache
+          curl -L -o input-cache/publisher.jar \
+            https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+
+      - name: Build IG
+        run: |
+          chmod +x _genonce.sh
+          ./_genonce.sh
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './output'
+          path: output
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
