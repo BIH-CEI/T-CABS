@@ -122,6 +122,7 @@
 [tcabs-practitioner-example]: Practitioner-tcabs-practitioner-example.html
 [tcabs-practitioner-role-example]: PractitionerRole-tcabs-practitioner-role-example.html
 [T_CABS_Procedure_Beatmung]: StructureDefinition-t-cabs-procedure-beatmung.html
+[T-CABS-ServerCapabilityStatement]: CapabilityStatement-T-CABS-ServerCapabilityStatement.html
 [T_CABS_ValueSet_PHDTyp]: ValueSet-t-cabs-valueset-phdtyp.html
 [T_CABS_ValueSet_Beatmungsmodus]: ValueSet-t-cabs-valueset-Beatmungsmodus.html
 [T_CABS_ValueSet_Beatmungsstelle]: ValueSet-t-cabs-valueset-beatmungsstelle.html

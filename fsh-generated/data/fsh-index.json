@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "CapabilityStatement-T-CABS-ServerCapabilityStatement.json",
+    "fshName": "T-CABS-ServerCapabilityStatement",
+    "fshType": "Instance",
+    "fshFile": "Conformance/T_CABS_CapabilityStatement.fsh",
+    "startLine": 1,
+    "endLine": 145
+  },
+  {
     "outputFile": "Device-beispiel-beatmungsgeraet-breas.json",
     "fshName": "beispiel-beatmungsgeraet-breas",
     "fshType": "Instance",

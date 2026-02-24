@@ -1,0 +1,289 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "T-CABS-ServerCapabilityStatement",
+  "url": "https://bih-cei.github.io/T-CABS/CapabilityStatement/T-CABS-ServerCapabilityStatement",
+  "format": [
+    "json",
+    "xml"
+  ],
+  "implementationGuide": [
+    "https://bih-cei.github.io/T-CABS/ImplementationGuide/t-cabs"
+  ],
+  "rest": [
+    {
+      "security": {
+        "service": [
+          {
+            "coding": [
+              {
+                "code": "OAuth",
+                "system": "http://terminology.hl7.org/CodeSystem/restful-security-service"
+              }
+            ]
+          }
+        ],
+        "description": "Server should support OAuth2 for authorization. Specific security requirements are implementation-dependent."
+      },
+      "interaction": [
+        {
+          "code": "transaction"
+        }
+      ],
+      "resource": [
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "Patient"
+        },
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-encounter-kontakt"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "Encounter"
+        },
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-organisation"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "Organization"
+        },
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-personmitfunktion"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "Practitioner"
+        },
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-practitioner-funktion"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "PractitionerRole"
+        },
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-group-patientengruppe"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "Group"
+        },
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-diagnosticreport-visitenbefund"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "DiagnosticReport"
+        },
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "Procedure"
+        },
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-vmd-beatmungsgeraet",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-channel-beatmungsgeraet",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phd",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-phg"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "Device",
+          "versioning": "versioned"
+        },
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-devicemetric-numericmetric"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "DeviceMetric",
+          "versioning": "versioned"
+        },
+        {
+          "supportedProfile": [
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-herzfrequenz",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpertemperatur",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpergewicht",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-bmi",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fev6",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1fef25-75",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti",
+            "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths"
+          ],
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "type": "Observation",
+          "versioning": "versioned"
+        }
+      ],
+      "mode": "server",
+      "documentation": "A FHIR server conforming to T-CABS shall support all profiles defined in this IG and accept transaction Bundles for data upload from ventilation devices and vital sign monitors."
+    }
+  ],
+  "version": "0.2.0",
+  "name": "TCabsServerCapabilityStatement",
+  "title": "T-CABS Server Capability Statement",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-02-24",
+  "publisher": "BIH-CEI",
+  "description": "CapabilityStatement describing the expected capabilities of a server processing telemedical ventilation monitoring data according to the T-CABS Implementation Guide.",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1"
+}

@@ -3,7 +3,7 @@
   "id": "t-cabs",
   "language": "en",
   "url": "https://bih-cei.github.io/T-CABS/ImplementationGuide/t-cabs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "TCABS",
   "title": "T-CABS Implementation Guide",
   "status": "draft",
@@ -1063,6 +1063,14 @@
       },
       {
         "reference": {
+          "reference": "CapabilityStatement/T-CABS-ServerCapabilityStatement"
+        },
+        "name": "T-CABS Server Capability Statement",
+        "description": "CapabilityStatement describing the expected capabilities of a server processing telemedical ventilation monitoring data according to the T-CABS Implementation Guide.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/t-cabs-valueset-phdtyp"
         },
         "name": "T-CABS ValueSet PHD Type",
@@ -1173,7 +1181,7 @@
       },
       {
         "code": "releaselabel",
-        "value": "ci-build"
+        "value": "draft"
       },
       {
         "code": "shownav",
