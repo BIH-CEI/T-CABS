@@ -38,3 +38,10 @@ This page contains examples for vital parameter measurements and measurement dev
 #### Physical Activity & Strength
 - [Walking Distance Doccla](Observation-Example-Gehstrecke-Doccla.html)
 - [Hand Grip Strength Doccla](Observation-Example-Handgriffstaerke-Doccla.html)
+
+### Transaction Bundle Examples
+
+These bundles demonstrate how vital data is submitted to a FHIR server as a transaction:
+
+- [Vital Data Initial](Bundle-Example-Bundle-VitalData-Initial.html) — Initial submission: Patient, Organization, PHG, PHD devices (pulse oximeter, scale), and first measurements (all POST)
+- [Vital Data Follow-up](Bundle-Example-Bundle-VitalData-FollowUp.html) — Follow-up submission: Patient and devices are updated (PUT), new measurements are created (POST)

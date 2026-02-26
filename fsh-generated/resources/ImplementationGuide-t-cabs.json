@@ -543,6 +543,38 @@
       },
       {
         "reference": {
+          "reference": "Bundle/Example-Bundle-Ventilation-FollowUp"
+        },
+        "name": "Example Transaction Bundle — Ventilation Follow-up",
+        "description": "Follow-up submission of ventilation data: Patient and devices are updated (PUT), new measurements (AHI, AMV) and ventilation procedure are created (POST).",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/Example-Bundle-Ventilation-Initial"
+        },
+        "name": "Example Transaction Bundle — Ventilation Initial",
+        "description": "Initial submission of ventilation data: Patient, Organization, complete IEEE 11073 device hierarchy (MDS → VMD → Channel → DeviceMetric), ventilation procedure, and first measurements (AHI, AMV).",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/Example-Bundle-VitalData-FollowUp"
+        },
+        "name": "Example Transaction Bundle — Vital Data Follow-up",
+        "description": "Follow-up submission of vital data: Patient and devices are updated (PUT), new measurements (SpO2, heart rate, body weight, BMI) are created (POST).",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/Example-Bundle-VitalData-Initial"
+        },
+        "name": "Example Transaction Bundle — Vital Data Initial",
+        "description": "Initial submission of vital data: Patient, Organization, PHG tablet, PHD devices (pulse oximeter, scale), and first measurements (SpO2, heart rate, body weight, BMI).",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/Example-TriggeredBreaths-Loewenstein"
         },
         "name": "Example Triggered Breaths Löwenstein",

@@ -1,5 +1,37 @@
 [
   {
+    "outputFile": "Bundle-Example-Bundle-Ventilation-FollowUp.json",
+    "fshName": "Example-Bundle-Ventilation-FollowUp",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Bundle_Ventilation.fsh",
+    "startLine": 95,
+    "endLine": 142
+  },
+  {
+    "outputFile": "Bundle-Example-Bundle-Ventilation-Initial.json",
+    "fshName": "Example-Bundle-Ventilation-Initial",
+    "fshType": "Instance",
+    "fshFile": "Profile/Beatmungsdaten/T_CABS_Bundle_Ventilation.fsh",
+    "startLine": 11,
+    "endLine": 88
+  },
+  {
+    "outputFile": "Bundle-Example-Bundle-VitalData-FollowUp.json",
+    "fshName": "Example-Bundle-VitalData-FollowUp",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Bundle_VitalData.fsh",
+    "startLine": 76,
+    "endLine": 129
+  },
+  {
+    "outputFile": "Bundle-Example-Bundle-VitalData-Initial.json",
+    "fshName": "Example-Bundle-VitalData-Initial",
+    "fshType": "Instance",
+    "fshFile": "Profile/Vitaldaten (Doccla)/T_CABS_Bundle_VitalData.fsh",
+    "startLine": 10,
+    "endLine": 69
+  },
+  {
     "outputFile": "CapabilityStatement-T-CABS-ServerCapabilityStatement.json",
     "fshName": "T-CABS-ServerCapabilityStatement",
     "fshType": "Instance",

@@ -68,3 +68,10 @@ This page contains examples for ventilation parameters and devices from differen
 - [Ventilation BREAS](Procedure-beispiel-beatmung-breas.html)
 - [Ventilation Löwenstein](Procedure-beispiel-beatmung-loewenstein.html)
 - [Ventilation ResMed](Procedure-beispiel-beatmung-resmed.html)
+
+### Transaction Bundle Examples
+
+These bundles demonstrate how ventilation data is submitted to a FHIR server as a transaction:
+
+- [Ventilation Initial](Bundle-Example-Bundle-Ventilation-Initial.html) — Initial submission: Patient, Organization, full IEEE 11073 device hierarchy (MDS → VMD → Channel → DeviceMetric), procedure, and first measurements (all POST)
+- [Ventilation Follow-up](Bundle-Example-Bundle-Ventilation-FollowUp.html) — Follow-up submission: Patient and devices are updated (PUT), new measurements and procedure are created (POST)

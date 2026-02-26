@@ -57,6 +57,10 @@
 [Example-TargetVolume-BREAS]: Observation-Example-TargetVolume-BREAS.html
 [Example-Encounter-Telemedizinische-Visite]: Encounter-Example-Encounter-Telemedizinische-Visite.html
 [Example-TI-Loewenstein]: Observation-Example-TI-Loewenstein.html
+[Example-Bundle-Ventilation-FollowUp]: Bundle-Example-Bundle-Ventilation-FollowUp.html
+[Example-Bundle-Ventilation-Initial]: Bundle-Example-Bundle-Ventilation-Initial.html
+[Example-Bundle-VitalData-FollowUp]: Bundle-Example-Bundle-VitalData-FollowUp.html
+[Example-Bundle-VitalData-Initial]: Bundle-Example-Bundle-VitalData-Initial.html
 [Example-TriggeredBreaths-Loewenstein]: Observation-Example-TriggeredBreaths-Loewenstein.html
 [beispiel-beatmung-breas]: Procedure-beispiel-beatmung-breas.html
 [beispiel-beatmung-loewenstein]: Procedure-beispiel-beatmung-loewenstein.html
