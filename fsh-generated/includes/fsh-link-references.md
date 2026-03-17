@@ -1,3 +1,4 @@
+[t-cabs-cm-breas-to-ieee11073]: ConceptMap-t-cabs-cm-breas-to-ieee11073.html
 [CABS]: Organization-CABS.html
 [Example-AHI-BREAS]: Observation-Example-AHI-BREAS.html
 [Example-AMV-BREAS-gemessen]: Observation-Example-AMV-BREAS-gemessen.html
@@ -80,6 +81,8 @@
 [beispiel-vmd-resmed-atemfrequenz]: Device-beispiel-vmd-resmed-atemfrequenz.html
 [beispiel-vmd-resmed-atemzeit]: Device-beispiel-vmd-resmed-atemzeit.html
 [Example-Gehstrecke-Doccla]: Observation-Example-Gehstrecke-Doccla.html
+[t-cabs-cm-loewenstein-to-ieee11073]: ConceptMap-t-cabs-cm-loewenstein-to-ieee11073.html
+[t-cabs-cm-resmed-to-ieee11073]: ConceptMap-t-cabs-cm-resmed-to-ieee11073.html
 [T_CABS_Device_Channel_Beatmungsgeraet]: StructureDefinition-t-cabs-device-channel-beatmungsgeraet.html
 [T_CABS_Device_MDS_Beatmungsgeraet]: StructureDefinition-t-cabs-device-mds-beatmungsgeraet.html
 [T_CABS_Device_PHD]: StructureDefinition-t-cabs-device-phd.html

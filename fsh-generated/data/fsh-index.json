@@ -40,6 +40,30 @@
     "endLine": 145
   },
   {
+    "outputFile": "ConceptMap-t-cabs-cm-breas-to-ieee11073.json",
+    "fshName": "t-cabs-cm-breas-to-ieee11073",
+    "fshType": "Instance",
+    "fshFile": "Mappings/T_CABS_CM_BREAS.fsh",
+    "startLine": 5,
+    "endLine": 126
+  },
+  {
+    "outputFile": "ConceptMap-t-cabs-cm-loewenstein-to-ieee11073.json",
+    "fshName": "t-cabs-cm-loewenstein-to-ieee11073",
+    "fshType": "Instance",
+    "fshFile": "Mappings/T_CABS_CM_Loewenstein.fsh",
+    "startLine": 6,
+    "endLine": 118
+  },
+  {
+    "outputFile": "ConceptMap-t-cabs-cm-resmed-to-ieee11073.json",
+    "fshName": "t-cabs-cm-resmed-to-ieee11073",
+    "fshType": "Instance",
+    "fshFile": "Mappings/T_CABS_CM_ResMed.fsh",
+    "startLine": 5,
+    "endLine": 140
+  },
+  {
     "outputFile": "Device-beispiel-beatmungsgeraet-breas.json",
     "fshName": "beispiel-beatmungsgeraet-breas",
     "fshType": "Instance",

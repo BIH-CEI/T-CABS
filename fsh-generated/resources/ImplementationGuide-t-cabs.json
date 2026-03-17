@@ -71,6 +71,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "ConceptMap/t-cabs-cm-breas-to-ieee11073"
+        },
+        "name": "BREAS EveryWare API to IEEE 11073 Mapping",
+        "description": "Maps BREAS Medical EveryWare REST API v1 parameter codes (Vivo 45/50/65 series) to IEEE 11073-10101 nomenclature codes used in T-CABS ventilation profiles. Source parameters come from TreatmentDataDetailDto and RemoteDeviceSettingItemDetailDto schemas.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Organization/CABS"
         },
         "name": "Center for Out-of-Hospital Ventilation and Oxygen Therapy (CABS)",
@@ -724,6 +732,22 @@
         "name": "Example Walking Distance Measurement",
         "description": "Example of a walking distance measurement via Doccla",
         "exampleCanonical": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/t-cabs-cm-loewenstein-to-ieee11073"
+        },
+        "name": "Löwenstein Prismacloud API to IEEE 11073 Mapping",
+        "description": "Maps Löwenstein Medical prisma CLOUD API parameter codes (Prisma VENT series) to IEEE 11073-10101 nomenclature codes used in T-CABS ventilation profiles. Parameters from Datensatztabelle and prisma CLOUD Night Overview report documentation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/t-cabs-cm-resmed-to-ieee11073"
+        },
+        "name": "ResMed AirView Exchange (AVX) API to IEEE 11073 Mapping",
+        "description": "Maps ResMed AirView Exchange (AVX) REST API v4.38 parameter codes (Stellar/Astral/AirCurve 10 ST-A series) to IEEE 11073-10101 nomenclature codes used in T-CABS ventilation profiles. Source parameters come from clinicalMetrics, set (device settings), usage, and respEvents objects.",
+        "exampleBoolean": false
       },
       {
         "reference": {
