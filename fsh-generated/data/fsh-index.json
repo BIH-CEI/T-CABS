@@ -48,6 +48,14 @@
     "endLine": 126
   },
   {
+    "outputFile": "ConceptMap-t-cabs-cm-doccla-to-ieee11073.json",
+    "fshName": "t-cabs-cm-doccla-to-ieee11073",
+    "fshType": "Instance",
+    "fshFile": "Mappings/T_CABS_CM_Doccla.fsh",
+    "startLine": 6,
+    "endLine": 48
+  },
+  {
     "outputFile": "ConceptMap-t-cabs-cm-loewenstein-to-ieee11073.json",
     "fshName": "t-cabs-cm-loewenstein-to-ieee11073",
     "fshType": "Instance",

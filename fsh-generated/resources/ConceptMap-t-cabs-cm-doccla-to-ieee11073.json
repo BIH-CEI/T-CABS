@@ -1,0 +1,66 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "t-cabs-cm-doccla-to-ieee11073",
+  "url": "https://bih-cei.github.io/T-CABS/ConceptMap/t-cabs-cm-doccla-to-ieee11073",
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "150016",
+              "display": "MDC_PRESS_BLD_NONINV",
+              "equivalence": "equivalent",
+              "comment": "Doccla UniFHIR v2 verified. Panel code. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+            }
+          ],
+          "code": "163020007",
+          "display": "O/E - blood pressure reading (finding)"
+        },
+        {
+          "target": [
+            {
+              "code": "150017",
+              "display": "MDC_PRESS_BLD_NONINV_SYS",
+              "equivalence": "equivalent",
+              "comment": "Doccla UniFHIR v2 verified. Component, unit: mm[Hg]. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+            }
+          ],
+          "code": "72313002",
+          "display": "Systolic arterial pressure (observable entity)"
+        },
+        {
+          "target": [
+            {
+              "code": "150018",
+              "display": "MDC_PRESS_BLD_NONINV_DIA",
+              "equivalence": "equivalent",
+              "comment": "Doccla UniFHIR v2 verified. SNOMED CT UK Extension. Component, unit: mm[Hg]. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+            }
+          ],
+          "code": "1091811000000102",
+          "display": "Diastolic arterial pressure (observable entity)"
+        },
+        {
+          "target": [
+            {
+              "code": "8455547",
+              "display": "MDC_HF_GRIP_CLOSE",
+              "equivalence": "equivalent",
+              "comment": "Unit: kg. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke"
+            }
+          ],
+          "code": "251433001",
+          "display": "Grip strength (observable entity)"
+        }
+      ],
+      "source": "http://snomed.info/sct",
+      "target": "urn:iso:std:iso:11073:10101"
+    }
+  ],
+  "name": "DocclaToIEEE11073",
+  "title": "Doccla Vital Signs to IEEE 11073 Mapping",
+  "description": "Maps SNOMED CT codes used by Doccla UniFHIR v2 Trust Integration Engine to IEEE 11073-10101 nomenclature codes used in T-CABS vital data profiles. Doccla uses SNOMED CT as default coding, but code maps are configurable per trust integration. Blood pressure codes are verified from the Doccla UniFHIR v2 example Bundle (Appendix). LOINC → IEEE 11073 mappings are not included here as they are already defined in the T-CABS observation profiles themselves.",
+  "status": "draft",
+  "experimental": false
+}

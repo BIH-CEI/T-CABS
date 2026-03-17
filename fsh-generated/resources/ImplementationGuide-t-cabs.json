@@ -87,6 +87,14 @@
       },
       {
         "reference": {
+          "reference": "ConceptMap/t-cabs-cm-doccla-to-ieee11073"
+        },
+        "name": "Doccla Vital Signs to IEEE 11073 Mapping",
+        "description": "Maps SNOMED CT codes used by Doccla UniFHIR v2 Trust Integration Engine to IEEE 11073-10101 nomenclature codes used in T-CABS vital data profiles. Doccla uses SNOMED CT as default coding, but code maps are configurable per trust integration. Blood pressure codes are verified from the Doccla UniFHIR v2 example Bundle (Appendix). LOINC → IEEE 11073 mappings are not included here as they are already defined in the T-CABS observation profiles themselves.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/Example-AHI-BREAS"
         },
         "name": "Example AHI Measurement BREAS",
