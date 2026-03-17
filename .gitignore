@@ -4,8 +4,12 @@ Thumbs.db
 /temp
 /template
 /t_cabs_template
-/.claude
+.claude
 CLAUDE.md
 /output
 /out
 /Publikation
+/fsh-generated
+plantuml.jar
+/AVX-Specs
+Requirements-fromNarrative.json
