@@ -143,3 +143,19 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].versioning = #versioned
+
+// --- Basic (DeviceAlert R6 Backport) ---
+* rest.resource[+].type = #Basic
+* rest.resource[=].documentation = "Used for DeviceAlert backport from FHIR R6. Basic resources with code 'device-alert' represent ventilation device alarms."
+* rest.resource[=].supportedProfile[0] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert"
+* rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck"
+* rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-tidalvolumen"
+* rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-minutenvolumen"
+* rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-atemfrequenz"
+* rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-apnoe"
+* rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-disconnection"
+* rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-rebreathing"
+* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[+].code = #create
+* rest.resource[=].interaction[+].code = #update
+* rest.resource[=].interaction[+].code = #search-type

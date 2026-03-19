@@ -398,6 +398,31 @@ Example instance of a PCV(A) ventilation procedure:
 }
 ```
 
+### Device Alerts (R6 Backport)
+
+FHIR R6 introduces [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) as a dedicated resource for device-generated alarms. Since T-CABS targets FHIR R4, this IG backports the R6 DeviceAlert concept using `Basic` as the carrier resource following [FHIR guidance on Basic](http://hl7.org/fhir/R4/basic.html):
+
+- **`Basic.code`** is fixed to `device-alert`, identifying the resource as a DeviceAlert
+- **`Basic.subject`** references the patient
+- All R6 DeviceAlert elements are represented as **extensions**
+
+#### Extension Mapping to R6 DeviceAlert
+
+| Extension | R6 Element | Type | Card. |
+|-----------|------------|------|-------|
+| `alertStatus` | `status` | code | 1..1 |
+| `alertCode` | `condition.code` | CodeableConcept | 1..1 |
+| `alertPresence` | `condition.presence` | boolean | 1..1 |
+| `alertOccurrence` | `condition.timing` | Period | 0..1 |
+| `alertLimit` | `condition.limit` | Range | 0..1 |
+| `alertType` | `type` | CodeableConcept | 0..1 |
+| `alertPriority` | `priority` | CodeableConcept | 0..1 |
+| `alertDevice` | `source` | Reference(Device) | 0..1 |
+| `alertDerivedFrom` | `derivedFrom` | Reference(Observation) | 0..* |
+| `alertLabel` | `label` | string | 0..1 |
+| `alertSignal` | `signal` | complex | 0..* |
+
+
 ### Implementation Notes
 
 #### Device Setup Sequence

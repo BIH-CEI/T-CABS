@@ -9,3 +9,7 @@ Alias: $cs-referenceRangeMeaning  = http://terminology.hl7.org/CodeSystem/refere
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $EMDN = urn:oid:1.2.250.1.213.2.68
+
+// DeviceAlert CodeSystems
+Alias: $cs-device-alert = https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert
+Alias: $cs-ventilation-alarm = https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-ventilation-alarm

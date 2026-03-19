@@ -24,6 +24,19 @@
 - [Observation Ventilation Parameters](StructureDefinition-t-cabs-observation-beatmungsparameter.html)
 - [Observation Ventilation Parameters with Components](StructureDefinition-t-cabs-observation-beatmungsparametermitkomponenten.html)
 
+### Ventilation Alarm Profiles (DeviceAlert R6 Backport)
+
+FHIR R6 introduces [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) as a dedicated resource. See [Implementation](Ventilation-Data-Implementation.html#device-alerts-r6-backport) for details.
+
+- [DeviceAlert Base (abstract)](StructureDefinition-t-cabs-device-alert.html)
+- [Pressure Alarm](StructureDefinition-t-cabs-device-alert-druck.html)
+- [Tidal Volume Alarm](StructureDefinition-t-cabs-device-alert-tidalvolumen.html)
+- [Minute Volume Alarm](StructureDefinition-t-cabs-device-alert-minutenvolumen.html)
+- [Respiratory Rate Alarm](StructureDefinition-t-cabs-device-alert-atemfrequenz.html)
+- [Apnea Alarm](StructureDefinition-t-cabs-device-alert-apnoe.html)
+- [Disconnection Alarm](StructureDefinition-t-cabs-device-alert-disconnection.html)
+- [Rebreathing Alarm](StructureDefinition-t-cabs-device-alert-rebreathing.html)
+
 ### Ventilation Procedure Profiles
 
 - [Procedure Ventilation](StructureDefinition-t-cabs-procedure-beatmung.html)
