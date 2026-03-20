@@ -75,4 +75,53 @@ This page lists the created ValueSets of the T-CABS project:
 
 ---
 
+### T-CABS ValueSet Ventilation Alarm Code
+
+**Link**: [ValueSet Ventilation Alarm Code](ValueSet-t-cabs-valueset-ventilation-alarm-code.html)
+
+**Description**: This ValueSet contains alarm codes for home ventilation device alerts from IEEE 11073-10101, SNOMED CT, and one T-CABS custom code (rebreathing).
+
+#### IEEE 11073 — Alarm Limit Codes
+
+| Code | Display Name | Description |
+|------|---------|--------------|
+| `151793` | MDC_PRESS_AWAY_MAX | Airway pressure high alarm limit |
+| `151794` | MDC_PRESS_AWAY_MIN | Airway pressure low alarm limit |
+| `151869` | MDC_VOL_AWAY_TIDAL_MAX | Tidal volume high alarm limit |
+| `151870` | MDC_VOL_AWAY_TIDAL_MIN | Tidal volume low alarm limit |
+| `151881` | MDC_VOL_MINUTE_AWAY_MAX | Minute volume high alarm limit |
+| `151882` | MDC_VOL_MINUTE_AWAY_MIN | Minute volume low alarm limit |
+| `151571` | MDC_AWAY_RESP_RATE_MAX | Respiratory rate high alarm limit |
+| `151572` | MDC_AWAY_RESP_RATE_MIN | Respiratory rate low alarm limit |
+
+#### IEEE 11073 — Event Codes (ventilator-specific)
+
+| Code | Display Name | Description |
+|------|---------|--------------|
+| `198172` | MDC_EVT_VENT_PRESS_AWAY_HIGH_CONTINUOUS | Continuous high airway pressure event |
+| `199996` | MDC_EVT_VENT_VOL_INSP_HI | Inspiratory tidal volume high event |
+| `198134` | MDC_EVT_VENT_APNEA | Apnea event (ventilator-specific) |
+| `197172` | MDC_EVT_VENT_DISCONN | Disconnection event (ventilator-specific) |
+
+#### SNOMED CT
+
+| Code | Display Name | Description |
+|------|---------|--------------|
+| `405495005` | High airway pressure (finding) | Used with pressure high alarms |
+| `468881006` | Airway pressure alarm (situation) | Used with pressure low alarms |
+| `13621006` | Tidal volume (observable entity) | Used with tidal volume alarms |
+| `698823007` | Inspiratory tidal volume (observable entity) | Used with inspiratory volume high event |
+| `250811004` | Minute volume (observable entity) | Used with minute volume alarms |
+| `86290005` | Respiratory rate (observable entity) | Used with respiratory rate alarms |
+| `59127000` | Apnea alarm (situation) | Used with apnea alarms |
+| `416260008` | Ventilator disconnection alarm (situation) | Used with disconnection alarms |
+
+#### T-CABS Custom
+
+| Code | Display Name | Description |
+|------|---------|--------------|
+| `rebreathing` | Rebreathing Alarm | Rebreathing of exhaled gas detected (elevated CO2). No IEEE 11073 or SNOMED CT code available. |
+
+---
+
 **Note:** The content is defined by the medical staff of T-CABS and coded by the Berlin Institute of Health (BIH). If codes are missing, please create a [Github Issue](https://github.com/BIH-CEI/T-CABS/issues).

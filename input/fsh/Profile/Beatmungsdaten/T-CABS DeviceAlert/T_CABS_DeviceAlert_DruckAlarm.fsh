@@ -15,7 +15,8 @@ Usage: #example
 Title: "Example Pressure High Alert BREAS"
 Description: "Airway pressure exceeded upper alarm limit on BREAS ventilator"
 * extension[alertStatus].valueCode = #in-progress
-* extension[alertCode].valueCodeableConcept = $cs-ventilation-alarm#pressure-high "Pressure High"
+* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#151793 "MDC_PRESS_AWAY_MAX"
+* extension[alertCode].valueCodeableConcept.coding[+] = $SCT#405495005 "High airway pressure (finding)"
 * extension[alertPresence].valueBoolean = true
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T03:22:00+01:00"
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological "Physiological"

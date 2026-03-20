@@ -422,7 +422,120 @@ FHIR R6 introduces [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealer
 | `alertLabel` | `label` | string | 0..1 |
 | `alertSignal` | `signal` | complex | 0..* |
 
+Example instance of a Diconnection alarm:
+```json
+{
+  "resourceType": "Basic",
+  "id": "Example-DeviceAlert-Disconnection-Loewenstein",
+  "meta": {
+    "profile": [
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-disconnection"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-status",
+      "valueCode": "completed"
+    },
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "197172",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "MDC_EVT_VENT_DISCONN"
+          },
+          {
+            "code": "416260008",
+            "system": "http://snomed.info/sct",
+            "display": "Ventilator disconnection alarm (situation)"
+          }
+        ]
+      },
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-code"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-presence",
+      "valueBoolean": false
+    },
+    {
+      "valuePeriod": {
+        "start": "2024-01-15T02:00:00+01:00",
+        "end": "2024-01-15T02:00:45+01:00"
+      },
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-occurrence"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "technical",
+            "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+            "display": "Technical"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-priority",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "high",
+            "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+            "display": "High"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-device",
+      "valueReference": {
+        "reference": "Device/beispiel-beatmungsgeraet-loewenstein"
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-label",
+      "valueString": "DISCONNECT"
+    },
+    {
+      "extension": [
+        {
+          "url": "activationState",
+          "valueCode": "off"
+        },
+        {
+          "url": "manifestation",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "audible",
+                "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+                "display": "Audible"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-signal"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "device-alert",
+        "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+        "display": "Device Alert"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}
 
+```
 ### Implementation Notes
 
 #### Device Setup Sequence
