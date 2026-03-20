@@ -16,7 +16,7 @@ Title: "Example Disconnection Alert Löwenstein"
 Description: "Patient circuit disconnection detected on Löwenstein ventilator"
 * extension[alertStatus].valueCode = #completed
 * extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#197172 "MDC_EVT_VENT_DISCONN"
-* extension[alertCode].valueCodeableConcept.coding[+] = $SCT#416260008 "Ventilator disconnection alarm (situation)"
+* extension[alertCode].valueCodeableConcept.coding[+] = $SCT#416260008 "Ventilator disconnection alarm"
 * extension[alertPresence].valueBoolean = false
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T02:00:00+01:00"
 * extension[alertOccurrence].valuePeriod.end = "2024-01-15T02:00:45+01:00"

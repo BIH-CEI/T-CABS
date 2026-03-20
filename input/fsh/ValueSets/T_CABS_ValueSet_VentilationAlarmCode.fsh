@@ -27,8 +27,8 @@ Description: "Alarm codes for home ventilation device alerts from IEEE 11073, SN
 * $SCT#698823007 "Inspiratory tidal volume (observable entity)"
 * $SCT#250811004 "Minute volume (observable entity)"
 * $SCT#86290005 "Respiratory rate (observable entity)"
-* $SCT#59127000 "Apnea alarm (situation)"
-* $SCT#416260008 "Ventilator disconnection alarm (situation)"
+* $SCT#59127000 "Apnea alarm"
+* $SCT#416260008 "Ventilator disconnection alarm"
 
 // T-CABS custom (no IEEE/SNOMED available)
 * T_CABS_CodeSystem_VentilationAlarm#rebreathing "Rebreathing Alarm"

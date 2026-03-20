@@ -113,8 +113,8 @@ This page lists the created ValueSets of the T-CABS project:
 | `698823007` | Inspiratory tidal volume (observable entity) | Used with inspiratory volume high event |
 | `250811004` | Minute volume (observable entity) | Used with minute volume alarms |
 | `86290005` | Respiratory rate (observable entity) | Used with respiratory rate alarms |
-| `59127000` | Apnea alarm (situation) | Used with apnea alarms |
-| `416260008` | Ventilator disconnection alarm (situation) | Used with disconnection alarms |
+| `59127000` | Apnea alarm | Used with apnea alarms |
+| `416260008` | Ventilator disconnection alarm | Used with disconnection alarms |
 
 #### T-CABS Custom
 
