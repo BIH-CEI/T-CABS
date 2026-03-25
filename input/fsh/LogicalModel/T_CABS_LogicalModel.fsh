@@ -120,9 +120,9 @@ Mappings are provided to concrete T-CABS FHIR profiles for implementation guidan
       // Mapping: T_CABS_Observation_AMV
     * targetVolume 0..* Quantity "Target Volume" "Targeted tidal volume [mL]"
       // Mapping: T_CABS_Observation_TargetVolume
-    * ipap 0..* Quantity "IPAP (Inspiratory Positive Airway Pressure)" "Inspiratory pressure [mbar]"
+    * ipap 0..* Quantity "IPAP (Inspiratory Positive Airway Pressure)" "Inspiratory pressure [cmH2O]"
       // Mapping: T_CABS_Observation_IPAP
-    * peep 0..* Quantity "PEEP (Positive End-Expiratory Pressure)" "End-expiratory pressure [mbar]"
+    * peep 0..* Quantity "PEEP (Positive End-Expiratory Pressure)" "End-expiratory pressure [cmH2O]"
       // Mapping: T_CABS_Observation_PEEP
     * inspiratoryTime 0..* Quantity "Inspiratory Time (TI)" "Duration of inspiration phase [s]"
       // Mapping: T_CABS_Observation_TI
@@ -147,7 +147,7 @@ Mappings are provided to concrete T-CABS FHIR profiles for implementation guidan
     // Component-Based Ventilation Parameters (2 total)
     * respiratoryTimeRatio 0..* Quantity "Respiratory Time Ratio" "I:E ratio (components: inspiratory time, expiratory time)"
       // Mapping: T_CABS_Observation_Atemzeitverhaeltnis
-    * pressureMinMax 0..* Quantity "Pressure Min/Max" "Pressure range (components: MinPress, MaxPress) [mbar]"
+    * pressureMinMax 0..* Quantity "Pressure Min/Max" "Pressure range (components: MinPress, MaxPress) [cmH2O]"
       // Mapping: T_CABS_Observation_DruckMinMax
 
 // ===============================================

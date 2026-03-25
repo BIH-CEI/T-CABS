@@ -1,0 +1,31 @@
+{
+  "resourceType": "Device",
+  "id": "test-fail-device-missing-operating-hours",
+  "meta": {
+    "profile": [
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+    ]
+  },
+  "identifier": [
+    {
+      "type": { "coding": [{ "code": "UDI" }] },
+      "value": "TEST-004"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "70001",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_DEV_SYS_PT_VENT_MDS"
+      }
+    ]
+  },
+  "deviceName": [
+    { "type": "model-name", "name": "TestDevice" }
+  ],
+  "manufacturer": "Test Manufacturer",
+  "serialNumber": "SN-TEST-004",
+  "owner": { "reference": "Organization/beispiel-provider-jochum" },
+  "patient": { "reference": "Patient/tcabs-patient-example" }
+}

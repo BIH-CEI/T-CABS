@@ -7,8 +7,8 @@ Description: "Profile for Positive End-Expiratory Pressure (PEEP)"
 * code.coding = $IEEE-11073#152720 //"MDC_VENT_PRESS_AWAY_DELTA"
 * code.coding ^definition = "Inspiratory airway pressure relative to PEEP or BAP."
 
-* valueQuantity.code = #mbar
-* valueQuantity.unit = "mbar"
+* valueQuantity.code = #cm[H2O]
+* valueQuantity.unit = "cm[H2O]"
 
 
 Instance: Example-PEEP-Loewenstein
@@ -23,8 +23,8 @@ Description: "Example of PEEP from a Löwenstein ventilator"
 * effectivePeriod.start = "2024-01-15T23:35:00Z"
 * effectivePeriod.end = "2024-01-15T23:35:00Z"
 * valueQuantity.value = 18
-* valueQuantity.code = #mbar
-* valueQuantity.unit = "mbar"
+* valueQuantity.code = #cm[H2O]
+* valueQuantity.unit = "cm[H2O]"
 * valueQuantity.system = $UCUM
 * device = Reference(DeviceMetric/beispiel-devicemetric-loewenstein-peep)
 * partOf = Reference(Procedure/beispiel-beatmung-loewenstein)

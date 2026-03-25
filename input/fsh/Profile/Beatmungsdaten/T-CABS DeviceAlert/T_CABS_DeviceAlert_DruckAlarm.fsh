@@ -24,9 +24,9 @@ Description: "Airway pressure exceeded upper alarm limit on BREAS ventilator"
 * extension[alertDevice].valueReference = Reference(Device/beispiel-beatmungsgeraet-breas)
 * extension[alertDerivedFrom].valueReference = Reference(Observation/Example-DruckMinMax-ResMed)
 * extension[alertLimit].valueRange.high.value = 30
-* extension[alertLimit].valueRange.high.unit = "mbar"
+* extension[alertLimit].valueRange.high.unit = "cm[H2O]"
 * extension[alertLimit].valueRange.high.system = $UCUM
-* extension[alertLimit].valueRange.high.code = #mbar
+* extension[alertLimit].valueRange.high.code = #cm[H2O]
 * extension[alertLabel].valueString = "Pdruck HOCH"
 * extension[alertSignal][0].extension[activationState].valueCode = #on
 * extension[alertSignal][0].extension[presence].valueCode = #present

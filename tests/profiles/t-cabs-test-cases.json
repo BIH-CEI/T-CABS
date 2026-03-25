@@ -1,0 +1,64 @@
+{
+  "profiles": [
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet",
+      "tests": [
+        {
+          "source": "test-01-device-missing-manufacturer.json",
+          "description": "Cardinality: Missing required manufacturer (1..1)",
+          "valid": false
+        },
+        {
+          "source": "test-02-device-missing-patient.json",
+          "description": "Cardinality: Missing required patient (1..1)",
+          "valid": false
+        },
+        {
+          "source": "test-03-device-wrong-type-code.json",
+          "description": "Fixed Value: Device.type is IEEE 69634 (VMD) instead of fixed 70001 (MDS ventilator)",
+          "valid": false
+        },
+        {
+          "source": "test-04-device-missing-operating-hours.json",
+          "description": "Cardinality: Missing required extension operatingHours (1..1)",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv",
+      "tests": [
+        {
+          "source": "test-05-obs-amv-missing-effective.json",
+          "description": "Cardinality: Missing required effective[x] (1..1)",
+          "valid": false
+        },
+        {
+          "source": "test-06-obs-amv-wrong-code.json",
+          "description": "Fixed Value: code.coding is IEEE 151586 (resp rate) instead of required 151996 (AMV)",
+          "valid": false
+        },
+        {
+          "source": "test-07-obs-amv-missing-partof.json",
+          "description": "Cardinality: Missing required partOf (1..1) reference to ventilation procedure",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax",
+      "tests": [
+        {
+          "source": "test-08-obs-druck-wrong-effective-type.json",
+          "description": "Type Constraint: effective[x] is dateTime but profile requires Period only",
+          "valid": false
+        },
+        {
+          "source": "test-09-obs-druck-min-greater-max.json",
+          "description": "Invariant tcabs-druck-1: MinPress (25 mbar) is greater than MaxPress (10 mbar)",
+          "valid": false
+        }
+      ]
+    }
+  ]
+}
