@@ -10,6 +10,7 @@ Description: "Profile for a personal health device measuring at the patient"
 
 * serialNumber MS
 * serialNumber ^short = "Serial number of the device"
+
 * specialization.systemType.coding[MDCType] ^short = "Type of measurement device"
 * specialization.systemType.coding[MDCType] from t-cabs-valueset-phdtyp (required)
 

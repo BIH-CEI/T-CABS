@@ -39,10 +39,23 @@ Description: "This ValueSet contains codes to represent the different ventilatio
 // PCV-SIMV
 * $IEEE-11073#475144 "MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP"
 
-/*
-PCV(TgV)	- 475150 "MDC_VENT_MODE_ISO_CMV_vtPC"
-T		    - 184353 "MDC_VENT_MODE_RESP_SPONT"
+// S - Spontanatmung (reiner Spontanmodus ohne maschinelle Unterstützung)
+* $IEEE-11073#184353 "MDC_VENT_MODE_RESP_SPONT"
 
+// PSV(AE) / autoST / iVAPS - Adaptive volume-targeted Pressure Support with Cycle Control
+* $IEEE-11073#475198 "MDC_VENT_MODE_ISO_CSV_vtPS_3CC"
+
+// PCV(AE) - Continuous pressure-controlled ventilation with adjuncts
+* $IEEE-11073#475149 "MDC_VENT_MODE_ISO_CMV_PC_6ACAP"
+
+// VCV-MPV / MPVv - fallback auf CMV_VC (MPV nicht in IEEE 11073 definiert)
+// Hersteller-spezifische Kennzeichnung via translation erforderlich
+* $IEEE-11073#475138 "MDC_VENT_MODE_ISO_CMV_VC_6ACAPL"
+
+// PCV(TgV) - optional, falls benötigt
+* $IEEE-11073#475150 "MDC_VENT_MODE_ISO_CMV_vtPC"
+
+/*
 aVCV	    - 
 Option 1 - Standard Volume Control mit Assist:
 

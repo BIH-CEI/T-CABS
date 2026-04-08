@@ -21,12 +21,12 @@ Description: "Alarm codes for home ventilation device alerts from IEEE 11073, SN
 * $IEEE-11073#197172 "MDC_EVT_VENT_DISCONN"
 
 // SNOMED CT
-* $SCT#405495005 "High airway pressure (finding)"
-* $SCT#468881006 "Airway pressure alarm (situation)"
-* $SCT#13621006 "Tidal volume (observable entity)"
-* $SCT#698823007 "Inspiratory tidal volume (observable entity)"
-* $SCT#250811004 "Minute volume (observable entity)"
-* $SCT#86290005 "Respiratory rate (observable entity)"
+* $SCT#405495005 "High airway pressure"
+* $SCT#468881006 "Airway pressure alarm"
+* $SCT#13621006 "Tidal volume"
+* $SCT#698823007 "Inspiratory tidal volume"
+* $SCT#250811004 "Minute volume"
+* $SCT#86290005 "Respiratory rate"
 * $SCT#59127000 "Apnea alarm"
 * $SCT#416260008 "Ventilator disconnection alarm"
 

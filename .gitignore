@@ -9,9 +9,11 @@ CLAUDE.md
 /output
 /out
 /Publikation
+/Unterlagen
 /fsh-generated
 plantuml.jar
 /AVX-Specs
 Requirements-fromNarrative.json
-/20260220
 /ETL
+/input/maps
+/input/fsh/LogicalModel/ResMed_*

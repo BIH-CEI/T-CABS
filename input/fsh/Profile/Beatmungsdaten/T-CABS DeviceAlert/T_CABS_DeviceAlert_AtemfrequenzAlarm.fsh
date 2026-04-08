@@ -16,7 +16,7 @@ Title: "Example Respiratory Rate High Alert BREAS"
 Description: "Respiratory rate exceeded upper alarm limit on BREAS ventilator"
 * extension[alertStatus].valueCode = #completed
 * extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#151571 "MDC_AWAY_RESP_RATE_MAX"
-* extension[alertCode].valueCodeableConcept.coding[+] = $SCT#86290005 "Respiratory rate (observable entity)"
+* extension[alertCode].valueCodeableConcept.coding[+] = $SCT#86290005 "Respiratory rate"
 * extension[alertPresence].valueBoolean = false
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T01:30:00+01:00"
 * extension[alertOccurrence].valuePeriod.end = "2024-01-15T01:31:15+01:00"

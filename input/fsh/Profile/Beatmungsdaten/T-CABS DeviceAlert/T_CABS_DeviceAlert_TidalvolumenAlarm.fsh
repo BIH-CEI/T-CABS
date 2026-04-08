@@ -16,7 +16,7 @@ Title: "Example Tidal Volume High Alert ResMed"
 Description: "Tidal volume exceeded upper alarm limit on ResMed ventilator"
 * extension[alertStatus].valueCode = #completed
 * extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#151869 "MDC_VOL_AWAY_TIDAL_MAX"
-* extension[alertCode].valueCodeableConcept.coding[+] = $SCT#13621006 "Tidal volume (observable entity)"
+* extension[alertCode].valueCodeableConcept.coding[+] = $SCT#13621006 "Tidal volume"
 * extension[alertPresence].valueBoolean = false
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T02:10:00+01:00"
 * extension[alertOccurrence].valuePeriod.end = "2024-01-15T02:12:30+01:00"
