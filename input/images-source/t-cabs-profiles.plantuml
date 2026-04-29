@@ -111,10 +111,10 @@ package "Vitaldaten (Vital Data) - Doccla" {
         +{abstract}
     }
     
-    class T_CABS_Observation_ArterielleSPO2 <<Observation>> {
+    class T_CABS_Observation_SPO2 <<Observation>> {
         +Parent: t-cabs-observation-vitalparameter
-        +ID: t-cabs-observation-arteriellespo2
-        +Example: Example-ArterielleSPO2-Doccla
+        +ID: t-cabs-observation-spo2
+        +Example: Example-SPO2-Doccla
     }
     
     class T_CABS_Observation_ArteriellerBlutdruck <<Observation>> {
@@ -141,10 +141,10 @@ package "Vitaldaten (Vital Data) - Doccla" {
         +Example: Example-FEV1-Doccla
     }
     
-    class T_CABS_Observation_Gehstrecke <<Observation>> {
+    class T_CABS_Observation_TaeglicheSchrittzahl <<Observation>> {
         +Parent: t-cabs-observation-vitalparameter
-        +ID: t-cabs-observation-gehstrecke
-        +Example: Example-Gehstrecke-Doccla
+        +ID: t-cabs-observation-taegliche-schrittzahl
+        +Example: Example-TaeglicheSchrittzahl-Doccla
     }
     
     class T_CABS_Observation_Herzfrequenz <<Observation>> {
@@ -381,12 +381,12 @@ T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_TargetVolume
 T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_PEEP
 
 ' Vital Parameter Inheritance (with Code Slices)
-T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_ArterielleSPO2
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_SPO2
 T_CABS_Observation_VitalparameterMitKomponenten <|-- T_CABS_Observation_ArteriellerBlutdruck
 T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Atemfrequenz
 T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_BMI
 T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_FEV1
-T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Gehstrecke
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_TaeglicheSchrittzahl
 T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Herzfrequenz
 T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Koerpergewicht
 T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Koerpertemperatur
@@ -400,10 +400,10 @@ T_CABS_Observation_BeatmungsparameterMitKomponenten <|-- T_CABS_Observation_Druc
 
 ' === LAYOUT CONSTRAINTS FOR COMPACTNESS ===
 ' Horizontal grouping of similar elements
-T_CABS_Observation_ArterielleSPO2 -[hidden]right- T_CABS_Observation_ArteriellerBlutdruck
+T_CABS_Observation_SPO2 -[hidden]right- T_CABS_Observation_ArteriellerBlutdruck
 T_CABS_Observation_ArteriellerBlutdruck -[hidden]right- T_CABS_Observation_Atemfrequenz
 T_CABS_Observation_BMI -[hidden]right- T_CABS_Observation_FEV1
-T_CABS_Observation_FEV1 -[hidden]right- T_CABS_Observation_Gehstrecke
+T_CABS_Observation_FEV1 -[hidden]right- T_CABS_Observation_TaeglicheSchrittzahl
 T_CABS_Observation_Herzfrequenz -[hidden]right- T_CABS_Observation_Koerpergewicht
 T_CABS_Observation_Koerpergewicht -[hidden]right- T_CABS_Observation_Koerpertemperatur
 T_CABS_Observation_FEV6 -[hidden]right- T_CABS_Observation_FEF25_75

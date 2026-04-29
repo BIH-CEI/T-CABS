@@ -22,21 +22,21 @@ Usage: #definition
 * group[=].element[=].target[0].code = #150016
 * group[=].element[=].target[=].display = "MDC_PRESS_BLD_NONINV"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. Doccla UniFHIR v2 verified. Panel code. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Doccla UniFHIR v2 verified. Panel code. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
 
 * group[=].element[+].code = #72313002
 * group[=].element[=].display = "Systolic arterial pressure (observable entity)"
 * group[=].element[=].target[0].code = #150017
 * group[=].element[=].target[=].display = "MDC_PRESS_BLD_NONINV_SYS"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. Doccla UniFHIR v2 verified. Component, unit: mm[Hg]. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Doccla UniFHIR v2 verified. Component, unit: mm[Hg]. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
 
 * group[=].element[+].code = #1091811000000102
 * group[=].element[=].display = "Diastolic arterial pressure (observable entity)"
 * group[=].element[=].target[0].code = #150018
 * group[=].element[=].target[=].display = "MDC_PRESS_BLD_NONINV_DIA"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. Doccla UniFHIR v2 verified. SNOMED CT UK Extension. Component, unit: mm[Hg]. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Doccla UniFHIR v2 verified. SNOMED CT UK Extension. Component, unit: mm[Hg]. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
 
 // ---- Grip Strength (SNOMED in T-CABS profile, no LOINC code available) ----
 
@@ -44,5 +44,5 @@ Usage: #definition
 * group[=].element[=].display = "Grip strength (observable entity)"
 * group[=].element[=].target[0].code = #8455547
 * group[=].element[=].target[=].display = "MDC_HF_GRIP_CLOSE"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. Unit: kg. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reviewed. IEEE code removed from profile — MDC_HF_GRIP_CLOSE describes 'close-handed grip', not general grip strength. Profile uses SNOMED 251433001 only. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke"

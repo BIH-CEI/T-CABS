@@ -21,56 +21,56 @@ Usage: #definition
 * group[=].element[=].target[0].code = #151586
 * group[=].element[=].target[=].display = "MDC_VENT_RESP_RATE"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. AggregateDto (min/avg/max), unit: BPM. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. AggregateDto (min/avg/max), unit: BPM. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
 
 * group[=].element[+].code = #minuteVolume
 * group[=].element[=].display = "Minute Volume"
 * group[=].element[=].target[0].code = #151996
 * group[=].element[=].target[=].display = "MDC_VENT_VOL_MINUTE"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. AggregateDto (min/avg/max), unit: l. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. AggregateDto (min/avg/max), unit: l. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv"
 
 * group[=].element[+].code = #leakage
 * group[=].element[=].display = "Leakage"
 * group[=].element[=].target[0].code = #152432
 * group[=].element[=].target[=].display = "MDC_VENT_VOL_LEAK"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. AggregateDto (min/avg/max), unit: l/m. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. AggregateDto (min/avg/max), unit: l/m. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage"
 
 * group[=].element[+].code = #triggeredBreaths
 * group[=].element[=].display = "Triggered Breaths"
-* group[=].element[=].target[0].code = #152498
-* group[=].element[=].target[=].display = "MDC_VENT_RESP_BTSD_P_RATE"
+* group[=].element[=].target[0].code = #152538
+* group[=].element[=].target[=].display = "MDC_VENT_RESP_BTSD_PS_RATE"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. AggregateDto (min/avg/max), unit: %. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths"
+* group[=].element[=].target[=].comment = "Reviewed (2/4 consensus). Code corrected: 152498→152538. AggregateDto (min/avg/max), unit: %. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths"
 
 * group[=].element[+].code = #inspiratoryPeakAirwayPressure
 * group[=].element[=].display = "IPAP"
 * group[=].element[=].target[0].code = #8410976
 * group[=].element[=].target[=].display = "MDC_SABTE_PRESS_IPAP_SET"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. AggregateDto (min/avg/max), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. AggregateDto (min/avg/max), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap"
 
 * group[=].element[+].code = #endExpiratoryPositiveAirwayPressure
 * group[=].element[=].display = "EPAP"
-* group[=].element[=].target[0].code = #152720
-* group[=].element[=].target[=].display = "MDC_VENT_PRESS_AWAY_DELTA"
+* group[=].element[=].target[0].code = #151976
+* group[=].element[=].target[=].display = "MDC_VENT_PRESS_AWAY_END_EXP_POS"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. AggregateDto (min/avg/max), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep"
+* group[=].element[=].target[=].comment = "Reviewed (3/4 consensus). Code corrected: 152720→151976. AggregateDto (min/avg/max), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep"
 
 * group[=].element[+].code = #tiOverTtot
 * group[=].element[=].display = "TiOverTtot"
-* group[=].element[=].target[0].code = #153500
-* group[=].element[=].target[=].display = "MDC_TIME_PD_INSP_NORMALIZED_HF"
+* group[=].element[=].target[0].code = #151832
+* group[=].element[=].target[=].display = "MDC_RATIO_IE"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. AggregateDto (min/avg/max), unit: %. Ti/Ttot ratio. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"
+* group[=].element[=].target[=].comment = "Reviewed (3/4 consensus). Code corrected: 153500→151832. AggregateDto (min/avg/max), unit: %. Ti/Ttot ratio. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"
 
 * group[=].element[+].code = #tidalVolume
 * group[=].element[=].display = "Tidal Volume"
 * group[=].element[=].target[0].code = #153212
 * group[=].element[=].target[=].display = "MDC_VENT_VOL_TIDAL_TARGET_AUTO"
 * group[=].element[=].target[=].equivalence = #wider
-* group[=].element[=].target[=].comment = "Unbewertet. AggregateDto (min/avg/max), unit: ml. BREAS reports measured tidal volume; IEEE target code is for target/auto tidal volume. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. AggregateDto (min/avg/max), unit: ml. BREAS reports measured tidal volume; IEEE target code is for target/auto tidal volume. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume"
 
 // ---- Device Settings (RemoteDeviceSettingItemDetailDto) ----
 
@@ -79,42 +79,42 @@ Usage: #definition
 * group[=].element[=].target[0].code = #8410976
 * group[=].element[=].target[=].display = "MDC_SABTE_PRESS_IPAP_SET"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. Device setting (ID 0), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Device setting (ID 0), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap"
 
 * group[=].element[+].code = #Peep
 * group[=].element[=].display = "PEEP"
-* group[=].element[=].target[0].code = #152720
-* group[=].element[=].target[=].display = "MDC_VENT_PRESS_AWAY_DELTA"
+* group[=].element[=].target[0].code = #151976
+* group[=].element[=].target[=].display = "MDC_VENT_PRESS_AWAY_END_EXP_POS"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. Device setting (ID 1), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep"
+* group[=].element[=].target[=].comment = "Reviewed (3/4 consensus). Code corrected: 152720→151976. Device setting (ID 1), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep"
 
 * group[=].element[+].code = #TargetVolume
 * group[=].element[=].display = "Target Volume"
 * group[=].element[=].target[0].code = #153212
 * group[=].element[=].target[=].display = "MDC_VENT_VOL_TIDAL_TARGET_AUTO"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. Device setting (ID 7), unit: ml. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Device setting (ID 7), unit: ml. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-targetvolume"
 
 * group[=].element[+].code = #SetInspiratoryTime
 * group[=].element[=].display = "Insp. Time"
 * group[=].element[=].target[0].code = #152416
 * group[=].element[=].target[=].display = "MDC_VENT_TIME_PD_INSP"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. Device setting (ID 14), unit: s. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Device setting (ID 14), unit: s. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
 
 * group[=].element[+].code = #MaxInspiratoryPressure
 * group[=].element[=].display = "Max Pressure"
 * group[=].element[=].target[0].code = #151793
 * group[=].element[=].target[=].display = "MDC_PRESS_AWAY_MAX"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. Device setting (ID 8), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MaxPress component)"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Container code accepted. Device setting (ID 8), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MaxPress component)"
 
 * group[=].element[+].code = #MinInspiratoryPressure
 * group[=].element[=].display = "Min Pressure"
 * group[=].element[=].target[0].code = #151794
 * group[=].element[=].target[=].display = "MDC_PRESS_AWAY_MIN"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Unbewertet. Device setting (ID 9), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MinPress component)"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Container code accepted. Device setting (ID 9), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MinPress component)"
 
 // ---- Usage Data (PatientAverageSummary) ----
 
@@ -123,4 +123,4 @@ Usage: #definition
 * group[=].element[=].target[0].code = #68232
 * group[=].element[=].target[=].display = "MDC_ATTR_TIME_HI_RES"
 * group[=].element[=].target[=].equivalence = #relatedto
-* group[=].element[=].target[=].comment = "Unbewertet. PatientAverageSummary.cumulativeUsage. Also: averageUsageForAllDays, averageUsageForDaysUsed. Maps to PoCD operating-hours Device extension."
+* group[=].element[=].target[=].comment = "Not reviewed. PatientAverageSummary.cumulativeUsage. Also: averageUsageForAllDays, averageUsageForDaysUsed. Maps to PoCD operating-hours Device extension."

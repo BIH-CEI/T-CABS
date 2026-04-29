@@ -4,8 +4,8 @@ Id: t-cabs-observation-peep
 Title: "T-CABS Observation PEEP"
 Description: "Profile for Positive End-Expiratory Pressure (PEEP)"
 
-* code.coding = $IEEE-11073#152720 //"MDC_VENT_PRESS_AWAY_DELTA"
-* code.coding ^definition = "Inspiratory airway pressure relative to PEEP or BAP."
+* code.coding = $IEEE-11073#151976 //"MDC_VENT_PRESS_AWAY_END_EXP_POS"
+* code.coding ^definition = "Positive end-expiratory pressure (PEEP)."
 
 * valueQuantity.code = #cm[H2O]
 * valueQuantity.unit = "cm[H2O]"
@@ -17,7 +17,7 @@ Usage: #example
 Title: "Example PEEP Löwenstein"
 Description: "Example of PEEP from a Löwenstein ventilator"
 * status = #final
-* code.coding = $IEEE-11073#152720 "MDC_VENT_PRESS_AWAY_DELTA"
+* code.coding = $IEEE-11073#151976 "MDC_VENT_PRESS_AWAY_END_EXP_POS"
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#procedure
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-01-15T23:35:00Z"

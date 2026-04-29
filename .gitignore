@@ -17,3 +17,5 @@ Requirements-fromNarrative.json
 /ETL
 /input/maps
 /input/fsh/LogicalModel/ResMed_*
+# ResMed LogicalModels (vertrauliche API-Struktur, lebt in T-CABS-ETL)
+/input/fsh/LogicalModel/ResMed/

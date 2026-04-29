@@ -42,5 +42,5 @@ Description: "Example of a visit finding of a weekly telemedicine visit"
 * result[+] = Reference(Observation/Example-PEEP-Loewenstein)
 * result[+] = Reference(Observation/Example-TriggeredBreaths-Loewenstein)
 * result[+] = Reference(Observation/Example-BMI-Doccla)
-* result[+] = Reference(Observation/Example-ArterielleSPO2-Doccla)
+* result[+] = Reference(Observation/Example-SPO2-Doccla)
 * conclusion = "Patient shows stable ventilation parameters across all devices. BREAS: AMV in normal range at 8.5 L/min, AHI at 5.2 within therapeutic target. ResMed: Respiratory rate stable at 14/min, leakage minimal at 0.6 L/min. Löwenstein: Synchronization at 85%, TriggeredBreaths at 92% show very good patient-device interaction. Vital parameters also stable: BMI 25.3 kg/m², SpO2 98%."

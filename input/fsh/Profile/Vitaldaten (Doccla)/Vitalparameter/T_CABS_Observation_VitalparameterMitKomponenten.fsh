@@ -6,13 +6,14 @@ Description: "Abstract profile for measured vital parameters with multiple value
 
 * status MS
 
-* category[VSCat] 1..1 MS
-* category[VSCat].coding 1..1 MS
-* category[VSCat].coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd-observation
+// Use existing discriminator from PhdBaseObservation (value:coding.code + value:coding.system)
+* category contains VSCat 1..1 MS
+* category[VSCat].coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
+* category[VSCat].coding.code = #vital-signs
+// PHD-Observation category is already fixed to #phd by PhdBaseObservation
 
 * code MS
-* code.coding[LoincCoding] 1..1 MS
+* code.coding 1..* MS
 
 // Wer hat die Messung vorgenommen? Patient / Practinioner?
 * performer MS

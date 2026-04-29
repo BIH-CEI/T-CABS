@@ -3,49 +3,50 @@ Diese Seite behandelt die Implementierung der grundlegenden Profile für Organis
 ### Patient
 
 **Profil-ID:** `t-cabs-patient`  
-**Basis:** `MII PR Person Patient` (MII - Basismodul Person (2024+))
+**Basis:** `MII PR Person Patient (Pseudonymisiert)` (MII - Basismodul (2026.0.0))
 
 #### MII-Compliance
 
-Das T-CABS Patient-Profil erweitert das MII PR Person Patient Profil.
-Außerdem basiert das Profil auf den Vorarbeiten der [International Patient Summary (IPS)](https://hl7.org/fhir/uv/ips/history.html) und strebt Kompatibilität zu den Spezifikationen der KBV und gematik an.
+Das T-CABS Patient-Profil erweitert das pseudonymisierte MII-Patientenprofil. Patientendaten werden pseudonymisiert gespeichert — es werden keine Namen, Adressen oder Geburtsdaten erfasst. Patienten werden ausschließlich über einen pseudonymisierten Identifikator identifiziert.
+
 #### Verwendungszweck
 
-Die Datenelemente des Patient-Profil sind überwiegend optional, um eine Implementierung zu erleichtern. Verpflichtend sind lediglich `Patient.identifier` und `Patient.name`. 
+Das Profil gewährleistet eine datenschutzkonforme Patientenidentifikation im telemedizinischen Monitoring. Verpflichtend ist lediglich `Patient.identifier[PseudonymisierterIdentifier]`.
 
 #### Implementierung
 
-Beispielinstanz eines Patienten in der T-CABS Studie:
+Beispielinstanz eines pseudonymisierten Patienten in der T-CABS Studie:
 ```json
 {
   "resourceType": "Patient",
   "id": "tcabs-patient-example",
   "meta": {
-    "profile": ["http://t-cabs.org/StructureDefinition/t-cabs-patient"]
+    "profile": ["https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"]
   },
   "identifier": [
     {
       "type": {
         "coding": [
           {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MR"
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+            "code": "PSEUDED"
           }
         ]
       },
-      "system": "http://tcabs.example.org/patient-id",
-      "value": "T-CABS-PAT-001"
-    }
-  ],
-  "name": [
-    {
-      "use": "official",
-      "family": "Mustermann",
-      "given": ["Max"]
+      "system": "http://tcabs.example.org/patients",
+      "value": "TCABS-PAT-001"
     }
   ],
   "gender": "male",
-  "birthDate": "1965-03-15"
+  "deceasedBoolean": false,
+  "managingOrganization": {
+    "reference": "Organization/CABS"
+  },
+  "generalPractitioner": [
+    {
+      "reference": "Practitioner/tcabs-practitioner-example"
+    }
+  ]
 }
 ```
 

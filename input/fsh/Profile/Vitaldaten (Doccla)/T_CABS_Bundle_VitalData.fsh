@@ -46,7 +46,7 @@ Description: "Initial submission of vital data: Patient, Organization, PHG table
 
 // 6 — Observation SpO2
 * entry[+].fullUrl = "urn:uuid:d56e7f80-7890-4123-4567-8a9b0c1d2e3f"
-* entry[=].resource = Example-ArterielleSPO2-Doccla
+* entry[=].resource = Example-SPO2-Doccla
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 
@@ -106,7 +106,7 @@ Description: "Follow-up submission of vital data: Patient and devices are update
 
 // 5 — Observation SpO2 (Neu)
 * entry[+].fullUrl = "urn:uuid:5de6f708-5678-4901-2345-6a7b8c9d0e1f"
-* entry[=].resource = Example-ArterielleSPO2-Doccla
+* entry[=].resource = Example-SPO2-Doccla
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 

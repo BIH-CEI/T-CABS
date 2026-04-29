@@ -195,7 +195,7 @@ Mappings are provided to concrete T-CABS FHIR profiles for implementation guidan
       * gatewayReference 0..1 Reference(Device) "Gateway Reference" "Reference to PHG gateway device"
       * patientReference 1..1 Reference(Patient) "Patient Reference" "Reference to patient"
       * performer 0..* Reference(Practitioner or Patient or RelatedPerson) "Measurement Performer" "Who performed the measurement"
-      * category 1..* code "Parameter Categories" "vital-signs + phd-observation (PHD standard)"
+      * category 1..* code "Parameter Categories" "vital-signs + phd (PHD standard)"
       * referenceRange 0..1 string "Reference Range" "Normal range for this parameter"
       // Mapping: T_CABS_Observation_Vitalparameter (Parent: PhdNumericObservation)
     
@@ -204,8 +204,8 @@ Mappings are provided to concrete T-CABS FHIR profiles for implementation guidan
       // Mapping: T_CABS_Observation_Herzfrequenz
     * respiratoryRate 0..* Quantity "Respiratory Rate" "Spontaneous breathing rate [/min]"
       // Mapping: T_CABS_Observation_Atemfrequenz
-    * oxygenSaturation 0..* Quantity "Oxygen Saturation (SpO2)" "Arterial oxygen saturation [%]"
-      // Mapping: T_CABS_Observation_ArterielleSPO2
+    * oxygenSaturation 0..* Quantity "Oxygen Saturation (SpO2)" "Peripheral oxygen saturation by pulse oximetry [%]"
+      // Mapping: T_CABS_Observation_SPO2
     * bodyTemperature 0..* Quantity "Body Temperature" "Core body temperature [°C]"
       // Mapping: T_CABS_Observation_Koerpertemperatur
     * bodyWeight 0..* Quantity "Body Weight" "Patient weight [kg]"
@@ -213,7 +213,7 @@ Mappings are provided to concrete T-CABS FHIR profiles for implementation guidan
     * bmi 0..* Quantity "Body Mass Index (BMI)" "Weight-to-height ratio [kg/m²]"
       // Mapping: T_CABS_Observation_BMI
     * walkingDistance 0..* Quantity "6-Minute Walk Distance" "Distance walked in 6 minutes [m]"
-      // Mapping: T_CABS_Observation_Gehstrecke
+      // Mapping: T_CABS_Observation_TaeglicheSchrittzahl
     * handGripStrength 0..* Quantity "Hand Grip Strength" "Maximum grip strength [kg]"
       // Mapping: T_CABS_Observation_Handgriffstaerke
     * fev1 0..* Quantity "FEV1 (Forced Expiratory Volume 1s)" "Forced expiratory volume in 1 second [L]"

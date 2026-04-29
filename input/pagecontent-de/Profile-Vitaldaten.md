@@ -5,7 +5,7 @@
 
 ### Vitalparameter-Profile
 
-- [Arterielle Sauerstoffsättigung](StructureDefinition-t-cabs-observation-arteriellespo2.html)
+- [Periphere Sauerstoffsättigung (Pulsoximetrie)](StructureDefinition-t-cabs-observation-spo2.html)
 - [Arterieller Blutdruck](StructureDefinition-t-cabs-observation-arteriellerblutdruck.html)
 - [Atemfrequenz](StructureDefinition-t-cabs-observation-atemfrequenz.html)
 - [BMI](StructureDefinition-t-cabs-observation-bmi.html)
@@ -13,7 +13,7 @@
 - [FEV6](StructureDefinition-t-cabs-observationfev6.html)
 - [FEF25-75%](StructureDefinition-t-cabs-observationfev1fef25-75.html)
 - [FEV1/FEV6](StructureDefinition-t-cabs-observationfev1fev6.html)
-- [Gehstrecke](StructureDefinition-t-cabs-observation-gehstrecke.html)
+- [Tägliche Schrittzahl](StructureDefinition-t-cabs-observation-taegliche-schrittzahl.html)
 - [Handgriffstärke](StructureDefinition-t-cabs-observationhandgriffstaerke.html)
 - [Herzfrequenz](StructureDefinition-t-cabs-observation-herzfrequenz.html)
 - [Körpergewicht](StructureDefinition-t-cabs-observation-koerpergewicht.html)

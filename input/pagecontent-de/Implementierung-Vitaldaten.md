@@ -1,4 +1,4 @@
-Diese Seite beschreibt die Implementierung der Vitalparameter-Profile. Die Profile basieren auf der FHIR-Spezifikation [Personal Health Device (PHD)](https://hl7.org/fhir/uv/phd/STU1.1/) und ermöglichen standardkonforme Übertragungen von Vitalparametern.
+Diese Seite beschreibt die Implementierung der Vitalparameter-Profile. Die Profile basieren auf der FHIR-Spezifikation [Personal Health Device (PHD)](https://hl7.org/fhir/uv/phd/STU2/) und ermöglichen standardkonforme Übertragungen von Vitalparametern.
 Im Folgenden wird die Struktur der gerätebezogenen Informationen erklärt und durch Beispiele im JSON-format dargestellt. Im Anschluss wird auf die Struktur der Vitalparameter in gleicher Weise eingegangen.
 
 ### Device-Struktur
@@ -13,18 +13,18 @@ Im Folgenden werden die Profile und die verpflichtenden Elemente, also die Minde
 
 #### PHD Device
 Verpflichtende Angaben für ein T-CABS PHD-Device:
-- Device.identifier[systemIdIdentifier].type - Festgelegt auf den Code #SYSID des CodeSystems [ContinuaDeviceIdentifiers](http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers)
-- Device.identifier[systemIdIdentifier].system - Festegelegt auf das EUI-64 Identifier System
-- Device.identifier[systemIdIdentifier].value - Identifikator
-- Device.modelNumer - Modellnummer
+- Device.type - Festgelegte Kodierung als PHD-Gerät des IEEE 11073-10101 CodeSystem
 - Device.manufacturer - Herstellername
-- Device.serialNumber - Seriennummer
-- Device.type - Festgelegte Kodierung als PHD Gerät des IEEE 11073-10101 CodeSystem
-- Device.specialization.systemType.coding[MDCType] - Kodierung festgelegt auf das CodeSystem IEEE 11073-10101
-- Device.specialization.systemType.version - Version des Specialization Standard
-- Device.patient - Referenz zum Patient
+- Device.modelNumber - Modellnummer
+- Device.serialNumber - Seriennummer (T-CABS Anforderung)
+- Device.specialization[MDCType].systemType - Geräte-Spezialisierung kodiert in IEEE 11073-10101
+- Device.specialization[MDCType].version - Version des Spezialisierungsstandards
+- Device.version[MDCType] - Firmware-, Software- und/oder Hardwareversion (siehe unten)
+- Device.patient - Referenz zum Patient (T-CABS Anforderung)
 
-**Hinweis:** Die Wiederholbarkeit der Elemente ist das dieser Stelle nicht angegeben, diese ist in den Profildarstellungen in der Spalte "Card." angegeben. Bei Sliceangabe (mit [] Klammern) ist das geslicte Element stets wiederholbar.
+**Device.version[MDCType]** ist seit PHD 2.0.0 verpflichtend und enthält die Firmware-, Software- und/oder Hardwareversion des Geräts. Jede Versionsart wird als separater Eintrag angelegt. Der `type` identifiziert die Art der Version über einen IEEE 11073-10101 Code: `531976` (MDC_ID_PROD_SPEC_FW) für die Firmwareversion, `531975` (MDC_ID_PROD_SPEC_SW) für die Softwareversion oder `531974` (MDC_ID_PROD_SPEC_HW) für die Hardwareversion. Der `value` enthält die jeweilige Versionsnummer als String (z.B. "1.0.0"). Mindestens ein Eintrag ist Pflicht.
+
+**Hinweis:** Die Wiederholbarkeit der Elemente ist an dieser Stelle nicht angegeben, diese ist in den Profildarstellungen in der Spalte "Card." angegeben. Bei Sliceangabe (mit [] Klammern) ist das geslicte Element stets wiederholbar.
 
 Beispielinstanz eines Pulsoximeter des Herstellers Doccla:
 
@@ -40,7 +40,7 @@ Beispielinstanz eines Pulsoximeter des Herstellers Doccla:
       "type": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers",
+            "system": "http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers",
             "code": "SYSID"
           }
         ]
@@ -78,6 +78,20 @@ Beispielinstanz eines Pulsoximeter des Herstellers Doccla:
       }
     ]
   },
+  "version": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "531976",
+            "display": "MDC_ID_PROD_SPEC_FW"
+          }
+        ]
+      },
+      "value": "1.0.0"
+    }
+  ],
   "serialNumber": "PHD-SN-345678",
   "manufacturer": "Doccla GmbH",
   "modelNumber": "DPO-2024",
@@ -90,15 +104,14 @@ Beispielinstanz eines Pulsoximeter des Herstellers Doccla:
 #### PHG Gateway
 
 Verpflichtende Angaben für ein T-CABS PHG-Device:
-- Device.identifier[systemIdIdentifier].type - Festgelegt auf den Code #SYSID des CodeSystems [ContinuaDeviceIdentifiers](http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers)
-- Device.identifier[systemIdIdentifier].system - Festegelegt auf das EUI-64 Identifier System
-- Device.identifier[systemIdIdentifier].value - Identifikator
-- Device.type - Festgelegte Kodierung als PHD Gerät des IEEE 11073-10101 CodeSystem
-- Device.specialization.systemType.coding[MDCType] - Festgelegte Kodierung auf 8528192 "MDC_AI_APPLIANCE_TABLETPC" des CodeSystems IEEE 11073-10101
-- Device.specialization.systemType.version - Version des Specialization Standard
-- Device.patient - Referenz zum Patient
-- Device.version - Version der Software, Hardware, Firmware oder eines verwendeten Internetprotokolls
-- Device.property - Konfigurationen des Gerätes (z.B. Kodierungen für PHD-Geräte mit denen kommuniziert wird)
+- Device.type - Festgelegte Kodierung als PHG-Gerät des IEEE 11073-10101 CodeSystem
+- Device.specialization[MDCType].systemType - Gateway-Typ kodiert in IEEE 11073-10101 (z.B. 8528192 "MDC_AI_APPLIANCE_TABLETPC")
+- Device.version[MDCType] - Version der Software, Hardware, Firmware oder eines verwendeten Internetprotokolls
+- Device.patient - Referenz zum Patient (T-CABS Anforderung)
+- Device.property[continuaCertPHGProperty] - Unterstützte PHD-Gerätetypen (ein Property-Eintrag pro unterstütztem Gerät)
+
+Optional aber empfohlen:
+- Device.identifier[systemIdIdentifier] - System-ID-Identifikator (EUI-64)
 
 **Hinweis:** Die Wiederholbarkeit der Elemente ist das dieser Stelle nicht angegeben, diese ist in den Profildarstellungen in der Spalte "Card." angegeben. Bei Sliceangabe (mit [] Klammern) ist das geslicte Element stets wiederholbar.
 Beispielinstanz eines Tablets, welches als Gatewaydevice fungiert:
@@ -115,7 +128,7 @@ Beispielinstanz eines Tablets, welches als Gatewaydevice fungiert:
       "type": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers",
+            "system": "http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers",
             "code": "SYSID"
           }
         ]
@@ -150,8 +163,19 @@ Beispielinstanz eines Tablets, welches als Gatewaydevice fungiert:
         "coding": [
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "8528192",
-            "display": "MDC_AI_APPLIANCE_TABLETPC"
+            "code": "528388",
+            "display": "MDC_DEV_SPEC_PROFILE_PULS_OXIM"
+          }
+        ]
+      }
+    },
+    {
+      "systemType": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "528399",
+            "display": "MDC_DEV_SPEC_PROFILE_SCALE"
           }
         ]
       }
@@ -163,7 +187,7 @@ Beispielinstanz eines Tablets, welches als Gatewaydevice fungiert:
         "coding": [
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "532353"
+            "code": "532355"
           }
         ]
       },
@@ -175,7 +199,19 @@ Beispielinstanz eines Tablets, welches als Gatewaydevice fungiert:
               "system": "urn:iso:std:iso:11073:10101"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "532355"
+          }
+        ]
+      },
+      "valueCode": [
         {
           "coding": [
             {
@@ -183,15 +219,19 @@ Beispielinstanz eines Tablets, welches als Gatewaydevice fungiert:
               "system": "urn:iso:std:iso:11073:10101"
             }
           ]
-        },
-        {
-          "coding": [
-            {
-              "code": "528426",
-              "system": "urn:iso:std:iso:11073:10101"
-            }
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "532355"
+          }
+        ]
+      },
+      "valueCode": [
         {
           "coding": [
             {
@@ -199,7 +239,19 @@ Beispielinstanz eines Tablets, welches als Gatewaydevice fungiert:
               "system": "urn:iso:std:iso:11073:10101"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "532355"
+          }
+        ]
+      },
+      "valueCode": [
         {
           "coding": [
             {
@@ -207,7 +259,19 @@ Beispielinstanz eines Tablets, welches als Gatewaydevice fungiert:
               "system": "urn:iso:std:iso:11073:10101"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "532355"
+          }
+        ]
+      },
+      "valueCode": [
         {
           "coding": [
             {
@@ -215,7 +279,19 @@ Beispielinstanz eines Tablets, welches als Gatewaydevice fungiert:
               "system": "urn:iso:std:iso:11073:10101"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "532355"
+          }
+        ]
+      },
+      "valueCode": [
         {
           "coding": [
             {
@@ -253,26 +329,25 @@ An dieser Stelle sind nur die verpflichteten Elemente aller Vitalparameter-Obser
 
 Verpflichtende Angaben einer T-CABS Vitalparameter-Observation:
 - Observation.status - Kodierung des Status
-- Observation.code.coding[LoincCoding] - Festgelegte LOINC-Kodierung des Parameters 
-- Observation.code.coding[MDCType] - Festgelegte IEEE-Kodierung des Parameters 
+- Observation.code.coding - LOINC- und/oder IEEE-Kodierung des Parameters 
 - Observation.category[PHD-Observation] - Kodierung als PHD-Parameter
 - Observation.category[VSCat] - Kodierung als Vitalparameter
 - Observation.subject - Referenz auf den Patient
 - Observation.effective - Zeitpunkt oder Periode der Messung
 - Observation.device - Referenz zum PHD
-- Observation.extension[gatewayDevice] - Referenz zum PHG
+- Observation.extension[GatewayDevice] - Referenz zum PHG
 
 **Hinweis:** Die Wiederholbarkeit der Elemente ist das dieser Stelle nicht angegeben, diese ist in den Profildarstellungen in der Spalte "Card." angegeben. Bei Sliceangabe (mit [] Klammern) ist das geslicte Element stets wiederholbar.
 
 
-Beispielinstanz einer Arteriellen Sauerstoffsättigung (SpO2):
+Beispielinstanz einer peripheren Sauerstoffsättigung (Pulsoximetrie) (SpO2):
 ```json
 {
   "resourceType": "Observation",
-  "id": "Example-ArterielleSPO2-Doccla",
+  "id": "Example-SPO2-Doccla",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-observation-arteriellespo2",
+      "http://t-cabs.org/StructureDefinition/t-cabs-observation-spo2",
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell"
     ]
   },
@@ -297,7 +372,7 @@ Beispielinstanz einer Arteriellen Sauerstoffsättigung (SpO2):
       "coding": [
         {
           "system": "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories",
-          "code": "phd-observation"
+          "code": "phd"
         }
       ]
     }
@@ -306,11 +381,11 @@ Beispielinstanz einer Arteriellen Sauerstoffsättigung (SpO2):
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "2708-6"
+        "code": "59408-5"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "160300"
+        "code": "150456"
       }
     ]
   },
@@ -323,15 +398,6 @@ Beispielinstanz einer Arteriellen Sauerstoffsättigung (SpO2):
     "system": "http://unitsofmeasure.org",
     "code": "%",
     "value": 98
-  },
-  "bodySite": {
-    "coding": [
-      {
-        "code": "11527006",
-        "system": "http://snomed.info/sct",
-        "display": "Arterial system structure (body structure)"
-      }
-    ]
   },
   "status": "final",
   "subject": {
@@ -375,7 +441,7 @@ Beispielinstanz eines arteriellen Blutdruckes:
       "coding": [
         {
           "system": "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories",
-          "code": "phd-observation"
+          "code": "phd"
         }
       ]
     }

@@ -112,14 +112,14 @@ Usage: #definition
 // --- Observation (alle Vitalparameter + Beatmungsparameter) ---
 * rest.resource[+].type = #Observation
 // Vitalparameter
-* rest.resource[=].supportedProfile[0] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellespo2"
+* rest.resource[=].supportedProfile[0] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-spo2"
 * rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
 * rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz"
 * rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-herzfrequenz"
 * rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpertemperatur"
 * rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-koerpergewicht"
 * rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-bmi"
-* rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-gehstrecke"
+* rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-taegliche-schrittzahl"
 * rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationhandgriffstaerke"
 * rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev1"
 * rest.resource[=].supportedProfile[+] = "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observationfev6"

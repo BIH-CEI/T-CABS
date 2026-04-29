@@ -1,33 +1,20 @@
 Profile: T_CABS_Patient
-Parent: mii-pr-person-patient
+Parent: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert
 Id: t-cabs-patient
-Title: "T-CABS Patient"
-Description: "Profile for a patient in the T-CABS study
-Compatibility:
-The T_CABS_Patient profile aims for compatibility with the ISiKPatient version 5.1.0, however it cannot be guaranteed that instances valid against T_CABS_Patient are also valid against the [ISiKPatient](https://simplifier.net/isik-stufe-5/isikpatient)"
+Title: "T-CABS Patient (Pseudonymisiert)"
+Description: "Profile for a pseudonymized patient in the T-CABS study, based on the MII pseudonymized patient profile."
 
-* identifier 1.. 
-* name 1..
+* deceased[x] MS
 
-// Beispielinstanz
+// Beispielinstanz (pseudonymisiert)
 Instance: tcabs-patient-example
 InstanceOf: T_CABS_Patient
 Usage: #example
-Title: "T-CABS Patient Example"
-Description: "Example patient for the T-CABS project"
-* meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient|5.1.0"
-* identifier[pid].system = "http://tcabs.example.org/patients"
-* identifier[pid].value = "TCABS-PAT-001"
-* name[name].family = "Mustermann"
-* name[name].given = "Max"
+Title: "T-CABS Patient Example (pseudonymized)"
+Description: "Pseudonymized example patient for the T-CABS project"
+* identifier[PseudonymisierterIdentifier].system = "http://tcabs.example.org/patients"
+* identifier[PseudonymisierterIdentifier].value = "TCABS-PAT-001"
 * gender = #male
-* birthDate = "1980-01-15"
-* address[Strassenanschrift].line = "Musterstraße 123"
-* address[Strassenanschrift].city = "Berlin"
-* address[Strassenanschrift].postalCode = "10115"
-* address[Strassenanschrift].country = "DE"
-* address[Strassenanschrift].use = #home
-* address[Strassenanschrift].type = #both
 * deceasedBoolean = false
 * managingOrganization = Reference(Organization/CABS)
 * generalPractitioner = Reference(Practitioner/tcabs-practitioner-example)

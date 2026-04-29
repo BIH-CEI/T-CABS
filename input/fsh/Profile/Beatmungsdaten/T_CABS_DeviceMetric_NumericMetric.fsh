@@ -95,7 +95,7 @@ Title: "Example DeviceMetric Löwenstein PEEP"
 Description: "Example of a DeviceMetric for PEEP measurement of a Löwenstein ventilator"
 * identifier.system = "http://tcabs.example.org/device-metric"
 * identifier.value = "DM-LOEW-PEEP-001"
-* type = $IEEE-11073#152720 "MDC_VENT_PRESS_AWAY_DELTA"
+* type = $IEEE-11073#151976 "MDC_VENT_PRESS_AWAY_END_EXP_POS"
 * unit = $UCUM#cm[H2O] "cm[H2O]"
 * operationalStatus = #on
 * color = #magenta
@@ -115,7 +115,7 @@ Title: "Example DeviceMetric Löwenstein TriggeredBreaths"
 Description: "Example of a DeviceMetric for TriggeredBreaths measurement of a Löwenstein ventilator"
 * identifier.system = "http://tcabs.example.org/device-metric"
 * identifier.value = "DM-LOEW-TRIG-001"
-* type = $IEEE-11073#152498 "MDC_VENT_RESP_BTSD_P_RATE"
+* type = $IEEE-11073#152538 "MDC_VENT_RESP_BTSD_PS_RATE"
 * unit = $UCUM#% "%"
 * operationalStatus = #on
 * color = #yellow
@@ -155,7 +155,7 @@ Title: "Example DeviceMetric ResMed Respiratory Time Ratio"
 Description: "Example of a DeviceMetric for respiratory time ratio calculation of a ResMed ventilator"
 * identifier.system = "http://tcabs.example.org/device-metric"
 * identifier.value = "DM-RESMED-ATEMZEIT-001"
-* type = $IEEE-11073#153500 "MDC_TIME_PD_INSP_NORMALIZED_HF"
+* type = $IEEE-11073#151832 "MDC_RATIO_IE"
 * unit = $UCUM#% "%"
 * operationalStatus = #on
 * color = #white

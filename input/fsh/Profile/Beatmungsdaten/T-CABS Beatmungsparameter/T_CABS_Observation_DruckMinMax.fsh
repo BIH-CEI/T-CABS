@@ -1,15 +1,8 @@
-Invariant:   tcabs-druck-1
-Description: "If both MinPress and MaxPress are present, MinPress must be less than MaxPress"
-Severity:    #error
-Expression:  "component.where(code.coding.code='151794').value.ofType(Quantity).value.empty() or component.where(code.coding.code='151793').value.ofType(Quantity).value.empty() or (component.where(code.coding.code='151794').value.ofType(Quantity).value.first() < component.where(code.coding.code='151793').value.ofType(Quantity).value.first())"
-
 Profile: T_CABS_Observation_DruckMinMax
 Parent: T_CABS_Observation_BeatmungsparameterMitKomponenten
 Id: t-cabs-observation-druck-minmax
 Title: "T-CABS Observation Pressure MIN/MAX"
 Description: "Profile for minimal and maximal ventilation pressure"
-
-* obeys tcabs-druck-1
 
 * code.coding = $IEEE-11073#151792 //"MDC_PRESS_AWAY"
 * code.coding ^definition = "Pressure of gas in airway."
