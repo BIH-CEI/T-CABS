@@ -1,6 +1,4 @@
-### Release Notes
-
-#### Versioning
+### Versioning
 
 This IG follows [Semantic Versioning 2.0.0](https://semver.org/):
 
@@ -19,7 +17,7 @@ Each change is tagged with one of the following categories:
 
 ---
 
-#### v0.2.0 (in development) — Draft
+### v0.2.0 (2026-04-30) — Draft
 
 **`improve`** Changed **Patient profile** parent from `MII PR Person Patient` to **`MII PR Person Patient (Pseudonymisiert)`** — no names, addresses, or dates of birth; patients identified by pseudonymized identifier only
 
@@ -64,6 +62,10 @@ Each change is tagged with one of the following categories:
 **`feature`** Added **CapabilityStatement** with OAuth security and support for all resource types
 
 **`improve`** Simplified Procedure profile: removed complex slicing on `category.coding` and `code.coding`, replaced with direct required ValueSet bindings
+
+**`documentation`** Split monolithic UML diagram into **two domain-specific diagrams**: [Vital Data Information Model](Vital-Data-Model.html) and [Ventilation Data Information Model](Ventilation-Data-Model.html). The original combined diagram is replaced by a hub page ([Information Model](Information-Model.html)) that links to both detail diagrams plus the Logical Model
+
+**`feature`** Added **multi-language support** (English default, German translation) — language switcher in page header, translated pagecontent under `input/translations/de/pagecontent/`
 
 ---
 
