@@ -52,6 +52,11 @@ jobs:
           path: input-cache/publisher.jar
           key: ig-publisher-latest
 
+      - name: Update IG Publisher (download if cache miss)
+        run: |
+          chmod +x _updatePublisher.sh
+          ./_updatePublisher.sh -y
+
       - name: Build IG
         run: |
           chmod +x _build.sh
