@@ -8,6 +8,8 @@ Thumbs.db
 CLAUDE.md
 /output
 /out
+# IG Publisher i18n build artifacts (auto-generated; source lives under input/translations/)
+/translations
 /Publikation
 /Unterlagen
 /fsh-generated
