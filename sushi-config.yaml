@@ -52,6 +52,10 @@ pages:
     title: Home
   Information-Model.md:
     title: Information Model
+  Vital-Data-Model.md:
+    title: Vital Data Information Model
+  Ventilation-Data-Model.md:
+    title: Ventilation Data Information Model
   Cross-Domain-Profiles.md:
     title: Cross-Domain Profiles
   Vital-Data-Profiles.md:
@@ -74,6 +78,8 @@ pages:
     title: Terminologies
   Release-Notes.md:
     title: Release Notes
+  translationinfo.md:
+    title: Translation Information
 
 
 #   implementation.xml:
@@ -94,7 +100,12 @@ pages:
 #
 parameters:
   shownav: true
-#   excludettl: true
+  i18n-default-lang: en           # Default language
+  i18n-lang:
+    - de                          # Additional languages
+  translation-sources:
+    - input/translations/de       # Path to German translations
+  excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
@@ -108,7 +119,10 @@ parameters:
 
 menu:
   Home: index.html
-  "Information Model": Information-Model.html
+  "Information Model":
+    "Overview": Information-Model.html
+    "Vital Data": Vital-Data-Model.html
+    "Ventilation Data": Ventilation-Data-Model.html
   Profiles:
     "Cross-Domain": Cross-Domain-Profiles.html
     "Vital Data": Vital-Data-Profiles.html
