@@ -19,7 +19,7 @@ Jede Änderung wird mit einer der folgenden Kategorien versehen:
 
 ### v0.2.0 (2026-04-30) — Draft
 
-**`improve`** Parent des **Patient-Profils** geändert von `MII PR Person Patient` zu **`MII PR Person Patient (Pseudonymisiert)`** — keine Namen, Adressen oder Geburtsdaten; Patienten werden ausschließlich über pseudonymisierte Identifier referenziert
+**`improve`** Parent des **Patient-Profils** geändert von `MII PR Person Patient` zu **`MII PR Person Patient (Pseudonymisiert)`** — keine Namen oder Adressen; Patienten werden ausschließlich über pseudonymisierte Identifier referenziert
 
 **`fix`** Korrektur von **7 IEEE 11073 Codes**:
   - **PEEP**: 152720 → **151976**
