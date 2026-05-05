@@ -4,8 +4,20 @@ Thumbs.db
 /temp
 /template
 /t_cabs_template
-/.claude
+.claude
 CLAUDE.md
 /output
 /out
+# IG Publisher i18n build artifacts (auto-generated; source lives under input/translations/)
+/translations
 /Publikation
+/Unterlagen
+/fsh-generated
+plantuml.jar
+/AVX-Specs
+Requirements-fromNarrative.json
+/ETL
+/input/maps
+/input/fsh/LogicalModel/ResMed_*
+# ResMed LogicalModels (vertrauliche API-Struktur, lebt in T-CABS-ETL)
+/input/fsh/LogicalModel/ResMed/

@@ -3,25 +3,23 @@ This page covers the implementation of the fundamental profiles for organization
 ### Patient
 
 **Profile ID:** `t-cabs-patient`  
-**Base:** `MII PR Person Patient` (MII - Person Base Module (2024+))
+**Base:** `MII PR Person Patient (Pseudonymisiert)` (MII - Base Module (2026.0.0))
 
 #### MII Compliance
 
-The T-CABS Patient profile extends the MII PR Person Patient Profile.
-Additionally, the profile is based on the preparatory work of the [International Patient Summary (IPS)](https://hl7.org/fhir/uv/ips/history.html) and aims for compatibility with the specifications of KBV and gematik.
+The T-CABS Patient profile extends the MII pseudonymized patient profile. Patient data is pseudonymized — no names, addresses, or dates of birth are stored. Patients are identified solely through a pseudonymized identifier.
 
 #### Purpose
 
-The data elements of the Patient profile are predominantly optional to facilitate implementation. Only `Patient.identifier` and `Patient.name` are mandatory.
+The profile ensures privacy-compliant patient identification in telemedical monitoring. Only `Patient.identifier[PseudonymisierterIdentifier]` is mandatory.
 
 #### Implementation
 Mandatory specifications for a T-CABS Patient:
-- Patient.identifier - Identifier of the patient
-- Patient.name - Name of the patient
+- Patient.identifier[PseudonymisierterIdentifier] - Pseudonymized identifier
 
 **Note:** The repeatability of elements is not specified at this point; it is indicated in the profile representations in the "Card." column.
 
-Example instance of a patient in the T-CABS study:
+Example instance of a pseudonymized patient in the T-CABS study:
 
 ```json
 {
@@ -29,7 +27,7 @@ Example instance of a patient in the T-CABS study:
   "id": "tcabs-patient-example",
   "meta": {
     "profile": [
-      "http://t-cabs.org/StructureDefinition/t-cabs-patient"
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient"
     ]
   },
   "identifier": [
@@ -37,8 +35,8 @@ Example instance of a patient in the T-CABS study:
       "type": {
         "coding": [
           {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MR"
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+            "code": "PSEUDED"
           }
         ]
       },
@@ -46,38 +44,16 @@ Example instance of a patient in the T-CABS study:
       "value": "TCABS-PAT-001"
     }
   ],
-  "name": [
-    {
-      "given": [
-        "Max"
-      ],
-      "use": "official",
-      "family": "Mustermann"
-    }
-  ],
-  "address": [
-    {
-      "line": [
-        "Musterstraße 123"
-      ],
-      "type": "both",
-      "city": "Berlin",
-      "postalCode": "10115",
-      "country": "DE",
-      "use": "home"
-    }
-  ],
+  "gender": "male",
+  "deceasedBoolean": false,
+  "managingOrganization": {
+    "reference": "Organization/CABS"
+  },
   "generalPractitioner": [
     {
       "reference": "Practitioner/tcabs-practitioner-example"
     }
-  ],
-  "gender": "male",
-  "birthDate": "1980-01-15",
-  "deceasedBoolean": false,
-  "managingOrganization": {
-    "reference": "Organization/CABS"
-  }
+  ]
 }
 ```
 

@@ -8,7 +8,7 @@ This IG enables standardized, interoperable transmission of health data from hom
 - Vital parameters from Personal Health Devices (PHD)  
 - Clinical workflows for telemedicine visits
 
-To ensure international interoperability, this guide builds upon existing work. This existing work consists largely of the implementation guides [Point-of-Care Devices (PoCD) FHIR Implementation Guide](https://hl7.org/fhir/uv/pocd/2021Sep/index.html) version 0.3.0 and the [Personal Health Device (PHD) FHIR Implementation Guide](https://hl7.org/fhir/uv/phd/STU1.1/index.html) version 1.1.0, from the [HL7 Working Group Devices](https://confluence.hl7.org/spaces/HCD/overview).
+To ensure international interoperability, this guide builds upon existing work. This existing work consists largely of the implementation guides [Point-of-Care Devices (PoCD) FHIR Implementation Guide](https://hl7.org/fhir/uv/pocd/2021Sep/index.html) version 0.3.0 and the [Personal Health Device (PHD) FHIR Implementation Guide](https://hl7.org/fhir/uv/phd/STU2/index.html) version 2.0.0, from the [HL7 Working Group Devices](https://confluence.hl7.org/spaces/HCD/overview).
 
 The general profiles in this implementation guide are partially based on MII specifications and/or compatibility with these and other national specifications (ISiK) was aimed for.
 

@@ -1,0 +1,37 @@
+{
+  "resourceType": "Device",
+  "id": "test-fail-device-wrong-type-code",
+  "meta": {
+    "profile": [
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-mds-beatmungsgeraet"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/pocd/StructureDefinition/operating-hours",
+      "valueUnsignedInt": 5000
+    }
+  ],
+  "identifier": [
+    {
+      "type": { "coding": [{ "code": "UDI" }] },
+      "value": "TEST-003"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "69634",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_DEV_VMD"
+      }
+    ]
+  },
+  "deviceName": [
+    { "type": "model-name", "name": "TestDevice" }
+  ],
+  "manufacturer": "Test Manufacturer",
+  "serialNumber": "SN-TEST-003",
+  "owner": { "reference": "Organization/beispiel-provider-jochum" },
+  "patient": { "reference": "Patient/tcabs-patient-example" }
+}

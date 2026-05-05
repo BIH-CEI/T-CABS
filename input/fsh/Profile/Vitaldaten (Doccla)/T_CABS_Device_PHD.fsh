@@ -10,8 +10,9 @@ Description: "Profile for a personal health device measuring at the patient"
 
 * serialNumber MS
 * serialNumber ^short = "Serial number of the device"
-* specialization.systemType.coding[MDCType] ^short = "Type of measurement device"
-* specialization.systemType.coding[MDCType] from t-cabs-valueset-phdtyp (required)
+
+* specialization[MDCType].systemType ^short = "Type of measurement device"
+* specialization[MDCType].systemType from t-cabs-valueset-phdtyp (required)
 
 * patient 1..1 MS
 * patient ^short = "Reference to the patient"
@@ -31,9 +32,11 @@ Description: "Example of a Personal Health Device pulse oximeter from Doccla"
 * deviceName.name = "Pulsoximeter"
 * deviceName.type = #user-friendly-name
 * manufacturer = "Masimo"
-* modelNumber = "Radical-7" 
-* specialization.systemType.coding[MDCType] = $IEEE-11073#528388 "MDC_DEV_SPEC_PROFILE_PULS_OXIM"
-* specialization.version = "1.0"
+* modelNumber = "Radical-7"
+* specialization[MDCType].systemType = $IEEE-11073#528388 "MDC_DEV_SPEC_PROFILE_PULS_OXIM"
+* specialization[MDCType].version = "1.0"
+* version[MDCType].type = $IEEE-11073#531976 "MDC_ID_PROD_SPEC_FW"
+* version[MDCType].value = "1.0.0"
 * patient = Reference(Patient/tcabs-patient-example)
 * owner = Reference(Organization/beispiel-provider-doccla)
 
@@ -50,9 +53,11 @@ Description: "Example of a Personal Health Device scale for weight measurement"
 * deviceName.name = "Körperwaage"
 * deviceName.type = #user-friendly-name
 * manufacturer = "Beurer"
-* modelNumber = "BF 700" 
-* specialization.systemType.coding[MDCType] = $IEEE-11073#528399 "MDC_DEV_SPEC_PROFILE_SCALE"
-* specialization.version = "1.0"
+* modelNumber = "BF 700"
+* specialization[MDCType].systemType = $IEEE-11073#528399 "MDC_DEV_SPEC_PROFILE_SCALE"
+* specialization[MDCType].version = "1.0"
+* version[MDCType].type = $IEEE-11073#531976 "MDC_ID_PROD_SPEC_FW"
+* version[MDCType].value = "1.0.0"
 * patient = Reference(Patient/tcabs-patient-example)
 * owner = Reference(Organization/beispiel-provider-doccla)
 
@@ -69,9 +74,11 @@ Description: "Example of a Personal Health Device dynamometer for hand grip stre
 * deviceName.name = "Handdynamometer"
 * deviceName.type = #user-friendly-name
 * manufacturer = "JAMAR"
-* modelNumber = "5030J1" 
-* specialization.systemType.coding[MDCType] = $IEEE-11073#69876 "MDC_DEV_METER_STRENGTH_MUSCL"
-* specialization.version = "1.0"
+* modelNumber = "5030J1"
+* specialization[MDCType].systemType = $IEEE-11073#528426 "MDC_DEV_SPEC_PROFILE_HF_STRENGTH"
+* specialization[MDCType].version = "1.0"
+* version[MDCType].type = $IEEE-11073#531976 "MDC_ID_PROD_SPEC_FW"
+* version[MDCType].value = "1.0.0"
 * patient = Reference(Patient/tcabs-patient-example)
 * owner = Reference(Organization/beispiel-provider-doccla)
 
@@ -88,9 +95,11 @@ Description: "Example of a Personal Health Device blood pressure monitor (sphygm
 * deviceName.name = "Blutdruckmessgerät"
 * deviceName.type = #user-friendly-name
 * manufacturer = "OMRON"
-* modelNumber = "M7 Intelli IT" 
-* specialization.systemType.coding[MDCType] = $IEEE-11073#528391 "MDC_DEV_SPEC_PROFILE_BP"
-* specialization.version = "1.0"
+* modelNumber = "M7 Intelli IT"
+* specialization[MDCType].systemType = $IEEE-11073#528391 "MDC_DEV_SPEC_PROFILE_BP"
+* specialization[MDCType].version = "1.0"
+* version[MDCType].type = $IEEE-11073#531976 "MDC_ID_PROD_SPEC_FW"
+* version[MDCType].value = "1.0.0"
 * patient = Reference(Patient/tcabs-patient-example)
 * owner = Reference(Organization/beispiel-provider-doccla)
 
@@ -107,9 +116,11 @@ Description: "Example of a Personal Health Device spirometer for lung function m
 * deviceName.name = "Spirometer"
 * deviceName.type = #user-friendly-name
 * manufacturer = "CareFusion"
-* modelNumber = "SpiroUSB" 
-* specialization.systemType.coding[MDCType] = $IEEE-11073#69680 "MDC_DEV_ANALY_AWAY_MULTI_PARAM"
-* specialization.version = "1.0"
+* modelNumber = "SpiroUSB"
+* specialization[MDCType].systemType = http://hl7.org/fhir/uv/phd/CodeSystem/MissingMDCCodes#528413 "MDC_DEV_SPEC_PROFILE_SPIROMETER"
+* specialization[MDCType].version = "1.0"
+* version[MDCType].type = $IEEE-11073#531976 "MDC_ID_PROD_SPEC_FW"
+* version[MDCType].value = "1.0.0"
 * patient = Reference(Patient/tcabs-patient-example)
 * owner = Reference(Organization/beispiel-provider-doccla)
 
@@ -126,9 +137,11 @@ Description: "Example of a Personal Health Device step counter for activity meas
 * deviceName.name = "Schrittzähler"
 * deviceName.type = #user-friendly-name
 * manufacturer = "Fitbit"
-* modelNumber = "Charge 5" 
-* specialization.systemType.coding[MDCType] = $IEEE-11073#528484 "MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER"
-* specialization.version = "1.0"
+* modelNumber = "Charge 5"
+* specialization[MDCType].systemType = $IEEE-11073#528484 "MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER"
+* specialization[MDCType].version = "1.0"
+* version[MDCType].type = $IEEE-11073#531976 "MDC_ID_PROD_SPEC_FW"
+* version[MDCType].value = "1.0.0"
 * patient = Reference(Patient/tcabs-patient-example)
 * owner = Reference(Organization/beispiel-provider-doccla)
 
@@ -145,8 +158,10 @@ Description: "Example of a Personal Health Device peak flow meter for respirator
 * deviceName.name = "Peak Flow Meter"
 * deviceName.type = #user-friendly-name
 * manufacturer = "Clement Clarke"
-* modelNumber = "Mini-Wright" 
-* specialization.systemType.coding[MDCType] = $IEEE-11073#528405 "MDC_DEV_SPEC_PROFILE_PEFM"
-* specialization.version = "1.0"
+* modelNumber = "Mini-Wright"
+* specialization[MDCType].systemType = $IEEE-11073#528405 "MDC_DEV_SPEC_PROFILE_PEFM"
+* specialization[MDCType].version = "1.0"
+* version[MDCType].type = $IEEE-11073#531976 "MDC_ID_PROD_SPEC_FW"
+* version[MDCType].value = "1.0.0"
 * patient = Reference(Patient/tcabs-patient-example)
 * owner = Reference(Organization/beispiel-provider-doccla)

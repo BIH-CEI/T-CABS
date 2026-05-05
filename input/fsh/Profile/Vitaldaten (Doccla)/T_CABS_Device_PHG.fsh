@@ -8,10 +8,6 @@ Description: "Profile for a tablet used as a gateway device"
 * identifier[systemIdIdentifier].type.coding.code MS
 * identifier[systemIdIdentifier].value MS
 
-// Tablet
-* specialization 1..1 MS
-* specialization.systemType.coding[MDCType] = $IEEE-11073#8528192 //"MDC_AI_APPLIANCE_TABLETPC"
-
 * serialNumber MS
 * serialNumber ^short = "Serial number of the device"
 
@@ -33,18 +29,14 @@ Description: "Example of a Personal Health Gateway tablet from Doccla"
 * deviceName.type = #user-friendly-name
 * manufacturer = "Doccla GmbH"
 * modelNumber = "DHT-2024"
-* version.type.coding[MDCType] = $IEEE-11073#532352 "MDC_REG_CERT_DATA_CONTINUA_VERSION"
-* version.value = "2.1.0"
-* specialization.systemType.coding[MDCType] = $IEEE-11073#8528192 "MDC_AI_APPLIANCE_TABLETPC"
+* version[MDCType].type = $IEEE-11073#532352 "MDC_REG_CERT_DATA_CONTINUA_VERSION"
+* version[MDCType].value = "2.1.0"
+// Supported PHD specializations
+* specialization[MDCType][0].systemType = $IEEE-11073#528388 "MDC_DEV_SPEC_PROFILE_PULS_OXIM"
+* specialization[MDCType][+].systemType = $IEEE-11073#528399 "MDC_DEV_SPEC_PROFILE_SCALE"
+* specialization[MDCType][+].systemType = $IEEE-11073#528426 "MDC_DEV_SPEC_PROFILE_HF_STRENGTH"
+* specialization[MDCType][+].systemType = $IEEE-11073#528391 "MDC_DEV_SPEC_PROFILE_BP"
+* specialization[MDCType][+].systemType = http://hl7.org/fhir/uv/phd/CodeSystem/MissingMDCCodes#528413 "MDC_DEV_SPEC_PROFILE_SPIROMETER"
+* specialization[MDCType][+].systemType = $IEEE-11073#528484 "MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER"
+* specialization[MDCType][+].systemType = $IEEE-11073#528405 "MDC_DEV_SPEC_PROFILE_PEFM"
 * patient = Reference(Patient/tcabs-patient-example)
-
-* property[codedListProperties].type.coding = $IEEE-11073#532353
-// Pulsoximeter
-* property[codedListProperties].valueCode[+].coding = $IEEE-11073#528388
-// ....
-* property[codedListProperties].valueCode[+].coding = $IEEE-11073#528399
-* property[codedListProperties].valueCode[+].coding = $IEEE-11073#69876
-* property[codedListProperties].valueCode[+].coding = $IEEE-11073#528391
-* property[codedListProperties].valueCode[+].coding = $IEEE-11073#69680
-* property[codedListProperties].valueCode[+].coding = $IEEE-11073#528484
-* property[codedListProperties].valueCode[+].coding = $IEEE-11073#528405

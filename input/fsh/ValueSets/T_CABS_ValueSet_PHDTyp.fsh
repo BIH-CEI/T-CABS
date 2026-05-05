@@ -10,13 +10,13 @@ Description: "This ValueSet contains codes to represent the different PHD measur
 * $IEEE-11073#528399 "MDC_DEV_SPEC_PROFILE_SCALE"
 
 // Handstärkemesser
-* $IEEE-11073#69876 "MDC_DEV_METER_STRENGTH_MUSCL"
+* $IEEE-11073#528426 "MDC_DEV_SPEC_PROFILE_HF_STRENGTH"
 
 // Sphygmomanometer
 * $IEEE-11073#528391 "MDC_DEV_SPEC_PROFILE_BP"
 
 // Spirometer
-* $IEEE-11073#69680 "MDC_DEV_ANALY_AWAY_MULTI_PARAM"
+* http://hl7.org/fhir/uv/phd/CodeSystem/MissingMDCCodes#528413 "MDC_DEV_SPEC_PROFILE_SPIROMETER"
 
 // Schrittzähler
 * $IEEE-11073#528484 "MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER"

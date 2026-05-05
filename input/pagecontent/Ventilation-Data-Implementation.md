@@ -398,6 +398,266 @@ Example instance of a PCV(A) ventilation procedure:
 }
 ```
 
+### Device Alerts (R6 Backport)
+
+FHIR R6 introduces [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) as a dedicated resource for device-generated alarms. Since T-CABS targets FHIR R4, this IG backports the R6 DeviceAlert concept using `Basic` as the carrier resource following [FHIR guidance on Basic](http://hl7.org/fhir/R4/basic.html):
+
+- **`Basic.code`** is fixed to `device-alert`, identifying the resource as a DeviceAlert
+- **`Basic.subject`** references the patient
+- All R6 DeviceAlert elements are represented as **extensions**
+
+#### Extension Mapping to R6 DeviceAlert
+
+| Extension | R6 Element | Type | Card. |
+|-----------|------------|------|-------|
+| `alertStatus` | `status` | code | 1..1 |
+| `alertCode` | `condition.code` | CodeableConcept | 1..1 |
+| `alertPresence` | `condition.presence` | boolean | 1..1 |
+| `alertOccurrence` | `condition.timing` | Period | 0..1 |
+| `alertLimit` | `condition.limit` | Range | 0..1 |
+| `alertType` | `type` | CodeableConcept | 0..1 |
+| `alertPriority` | `priority` | CodeableConcept | 0..1 |
+| `alertDevice` | `source` | Reference(Device) | 0..1 |
+| `alertDerivedFrom` | `derivedFrom` | Reference(Observation) | 0..* |
+| `alertLabel` | `label` | string | 0..1 |
+| `alertSignal` | `signal` | complex | 0..* |
+
+Example instance of a Diconnection alarm:
+```json
+{
+  "resourceType": "Basic",
+  "id": "Example-DeviceAlert-Disconnection-Loewenstein",
+  "meta": {
+    "profile": [
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-disconnection"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-status",
+      "valueCode": "completed"
+    },
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "197172",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "MDC_EVT_VENT_DISCONN"
+          },
+          {
+            "code": "416260008",
+            "system": "http://snomed.info/sct",
+            "display": "Ventilator disconnection alarm (situation)"
+          }
+        ]
+      },
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-code"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-presence",
+      "valueBoolean": false
+    },
+    {
+      "valuePeriod": {
+        "start": "2024-01-15T02:00:00+01:00",
+        "end": "2024-01-15T02:00:45+01:00"
+      },
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-occurrence"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "technical",
+            "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+            "display": "Technical"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-priority",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "high",
+            "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+            "display": "High"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-device",
+      "valueReference": {
+        "reference": "Device/beispiel-beatmungsgeraet-loewenstein"
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-label",
+      "valueString": "DISCONNECT"
+    },
+    {
+      "extension": [
+        {
+          "url": "activationState",
+          "valueCode": "off"
+        },
+        {
+          "url": "manifestation",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "audible",
+                "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+                "display": "Audible"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-signal"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "device-alert",
+        "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+        "display": "Device Alert"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}
+
+```
+
+#### Alarm Categories
+
+T-CABS distinguishes two categories of device alerts:
+
+**Event-based alarms** (e.g., apnea, disconnection) use specific IEEE 11073 event codes that identify the alarm condition directly:
+- `199680` MDC_EVT_APNEA — apnea detected
+- `197172` MDC_EVT_VENT_DISCONN — patient disconnected from ventilator
+
+**Limit exceedance alarms** (e.g., pressure too high, tidal volume too low) use generic event codes combined with a mandatory reference to the observation that triggered the alarm:
+- `196648` MDC_EVT_HI — measurement exceeded upper limit
+- `196670` MDC_EVT_LO — measurement fell below lower limit
+
+For limit alarms, `alertDerivedFrom` is mandatory (1..*) and must reference the observation whose limit was exceeded. This reference identifies which parameter triggered the alarm.
+
+Example instance of a pressure high limit alarm:
+```json
+{
+  "resourceType": "Basic",
+  "id": "Example-DeviceAlert-DruckHoch-BREAS",
+  "meta": {
+    "profile": [
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-status",
+      "valueCode": "in-progress"
+    },
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "196648",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "MDC_EVT_HI"
+          },
+          {
+            "code": "405495005",
+            "system": "http://snomed.info/sct",
+            "display": "High airway pressure"
+          }
+        ]
+      },
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-code"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-presence",
+      "valueBoolean": true
+    },
+    {
+      "valuePeriod": {
+        "start": "2024-01-15T03:22:00+01:00"
+      },
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-occurrence"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "physiological",
+            "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-priority",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "high",
+            "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-device",
+      "valueReference": {
+        "reference": "Device/beispiel-beatmungsgeraet-breas"
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derivedFrom",
+      "valueReference": {
+        "reference": "Observation/Example-DruckMinMax-ResMed"
+      }
+    },
+    {
+      "valueRange": {
+        "high": {
+          "value": 30,
+          "unit": "cm[H2O]",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]"
+        }
+      },
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-limit"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-label",
+      "valueString": "Pdruck HOCH"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "device-alert",
+        "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+        "display": "Device Alert"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}
+```
+
 ### Implementation Notes
 
 #### Device Setup Sequence

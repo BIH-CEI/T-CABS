@@ -1,0 +1,189 @@
+@startuml T-CABS Vital Data Profile Relationships
+!theme plain
+skinparam backgroundColor white
+skinparam class {
+    BackgroundColor<<VitalData>> LightYellow
+    BackgroundColor<<Device>> LightCoral
+    BackgroundColor<<Observation>> Wheat
+    BackgroundColor<<Patient>> LightCyan
+    BackgroundColor<<Organization>> Khaki
+    BorderColor Black
+}
+
+skinparam maxMessageSize 80
+skinparam wrapWidth 200
+skinparam minClassWidth 50
+skinparam packageStyle rectangle
+
+hide circle
+hide empty methods
+hide empty attributes
+
+top to bottom direction
+
+' ── Cross-Domain anchors ──
+package "Cross-Domain (Anchors)" {
+    class T_CABS_Patient <<Patient>> {
+        +Base: MII PR Person Patient (Pseudonymisiert)
+        +ID: t-cabs-patient
+        +Example: tcabs-patient-example
+    }
+
+    class T_CABS_Organisation <<Organization>> {
+        +Base: Organization
+        +ID: t-cabs-organisation
+        +Examples: beispiel-provider-doccla, CABS
+    }
+}
+
+' ── Vital Data ──
+package "Vitaldaten (Vital Data)" {
+    class T_CABS_Device_PHD <<Device>> {
+        +Base: PHD PhdDevice
+        +ID: t-cabs-device-phd
+        +Example: beispiel-phd-doccla
+    }
+
+    class T_CABS_Device_PHG <<Device>> {
+        +Base: PHD PhgDevice
+        +ID: t-cabs-device-phg
+        +Example: beispiel-phg-doccla
+    }
+
+    class T_CABS_Observation_Vitalparameter <<Observation>> {
+        +Base: PHD PhdNumericObservation
+        +ID: t-cabs-observation-vitalparameter
+        +{abstract}
+    }
+
+    class T_CABS_Observation_VitalparameterMitKomponenten <<Observation>> {
+        +Base: PHD PhdCompoundNumericObservation
+        +ID: t-cabs-observation-vitalparametermitkomponenten
+        +{abstract}
+    }
+
+    class T_CABS_Observation_SPO2 <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observation-spo2
+        +Example: Example-SPO2-Doccla
+    }
+
+    class T_CABS_Observation_ArteriellerBlutdruck <<Observation>> {
+        +Parent: T_CABS_Observation_VitalparameterMitKomponenten
+        +ID: t-cabs-observation-arteriellerblutdruck
+        +Example: Example-ArteriellerBlutdruck-Doccla
+    }
+
+    class T_CABS_Observation_Atemfrequenz <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observation-atemfrequenz
+        +Example: Example-Atemfrequenz-Doccla
+    }
+
+    class T_CABS_Observation_BMI <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observation-bmi
+        +Example: Example-BMI-Doccla
+    }
+
+    class T_CABS_Observation_FEV1 <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observationfev1
+        +Example: Example-FEV1-Doccla
+    }
+
+    class T_CABS_Observation_TaeglicheSchrittzahl <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observation-taegliche-schrittzahl
+        +Example: Example-TaeglicheSchrittzahl-Doccla
+    }
+
+    class T_CABS_Observation_Herzfrequenz <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observation-herzfrequenz
+        +Example: Example-Herzfrequenz-Doccla
+    }
+
+    class T_CABS_Observation_Koerpergewicht <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observation-koerpergewicht
+        +Example: Example-Koerpergewicht-Doccla
+    }
+
+    class T_CABS_Observation_Koerpertemperatur <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observation-koerpertemperatur
+        +Example: Example-Koerpertemperatur-Doccla
+    }
+
+    class T_CABS_Observation_FEV6 <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observationfev6
+        +Example: Example-FEV6-Doccla
+    }
+
+    class T_CABS_Observation_FEF25_75 <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observationfev1fef25-75
+        +Example: Example-FEF25-75-Doccla
+    }
+
+    class T_CABS_Observation_FEV1_FEV6 <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observationfev1fev6
+        +Example: Example-FEV1-FEV6-Doccla
+    }
+
+    class T_CABS_Observation_Handgriffstaerke <<Observation>> {
+        +Parent: T_CABS_Observation_Vitalparameter
+        +ID: t-cabs-observationhandgriffstaerke
+        +Example: Example-Handgriffstaerke-Doccla
+    }
+}
+
+' === RELATIONSHIPS ===
+
+' Cross-Domain anchors
+T_CABS_Patient }o--|| T_CABS_Organisation : managingOrganization
+T_CABS_Device_PHD }o--|| T_CABS_Organisation : owner
+T_CABS_Device_PHG }o--|| T_CABS_Organisation : owner
+
+' Device-Patient
+T_CABS_Device_PHD }o--|| T_CABS_Patient : patient
+T_CABS_Device_PHG }o--|| T_CABS_Patient : patient
+
+' Observation references (on both abstract bases, vererbt sich auf alle Children)
+T_CABS_Observation_Vitalparameter }o--|| T_CABS_Patient : subject
+T_CABS_Observation_Vitalparameter }o--|| T_CABS_Device_PHD : device
+T_CABS_Observation_Vitalparameter }o--|| T_CABS_Device_PHG : gatewayDevice
+T_CABS_Observation_VitalparameterMitKomponenten }o--|| T_CABS_Patient : subject
+T_CABS_Observation_VitalparameterMitKomponenten }o--|| T_CABS_Device_PHD : device
+T_CABS_Observation_VitalparameterMitKomponenten }o--|| T_CABS_Device_PHG : gatewayDevice
+
+' === INHERITANCE ===
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_SPO2
+T_CABS_Observation_VitalparameterMitKomponenten <|-- T_CABS_Observation_ArteriellerBlutdruck
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Atemfrequenz
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_BMI
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_FEV1
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_TaeglicheSchrittzahl
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Herzfrequenz
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Koerpergewicht
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Koerpertemperatur
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_FEV6
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_FEF25_75
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_FEV1_FEV6
+T_CABS_Observation_Vitalparameter <|-- T_CABS_Observation_Handgriffstaerke
+
+' === LAYOUT CONSTRAINTS ===
+T_CABS_Observation_SPO2 -[hidden]right- T_CABS_Observation_ArteriellerBlutdruck
+T_CABS_Observation_ArteriellerBlutdruck -[hidden]right- T_CABS_Observation_Atemfrequenz
+T_CABS_Observation_BMI -[hidden]right- T_CABS_Observation_FEV1
+T_CABS_Observation_FEV1 -[hidden]right- T_CABS_Observation_TaeglicheSchrittzahl
+T_CABS_Observation_Herzfrequenz -[hidden]right- T_CABS_Observation_Koerpergewicht
+T_CABS_Observation_Koerpergewicht -[hidden]right- T_CABS_Observation_Koerpertemperatur
+T_CABS_Observation_FEV6 -[hidden]right- T_CABS_Observation_FEF25_75
+T_CABS_Observation_FEF25_75 -[hidden]right- T_CABS_Observation_FEV1_FEV6
+T_CABS_Observation_FEV1_FEV6 -[hidden]right- T_CABS_Observation_Handgriffstaerke
+
+@enduml

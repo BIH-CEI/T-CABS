@@ -5,7 +5,7 @@
 
 ### Vital Parameter Profiles
 
-- [Arterial Oxygen Saturation](StructureDefinition-t-cabs-observation-arteriellespo2.html)
+- [Peripheral Oxygen Saturation (Pulse Oximetry)](StructureDefinition-t-cabs-observation-spo2.html)
 - [Arterial Blood Pressure](StructureDefinition-t-cabs-observation-arteriellerblutdruck.html)
 - [Respiratory Rate](StructureDefinition-t-cabs-observation-atemfrequenz.html)
 - [BMI](StructureDefinition-t-cabs-observation-bmi.html)
@@ -13,7 +13,7 @@
 - [FEV6](StructureDefinition-t-cabs-observationfev6.html)
 - [FEF25-75%](StructureDefinition-t-cabs-observationfev1fef25-75.html)
 - [FEV1/FEV6](StructureDefinition-t-cabs-observationfev1fev6.html)
-- [Walking Distance](StructureDefinition-t-cabs-observation-gehstrecke.html)
+- [Daily Step Count](StructureDefinition-t-cabs-observation-taegliche-schrittzahl.html)
 - [Hand Grip Strength](StructureDefinition-t-cabs-observationhandgriffstaerke.html)
 - [Heart Rate](StructureDefinition-t-cabs-observation-herzfrequenz.html)
 - [Body Weight](StructureDefinition-t-cabs-observation-koerpergewicht.html)

@@ -19,7 +19,7 @@ This page contains examples for vital parameter measurements and measurement dev
 ### Vital Parameter Observation Examples
 
 #### Basic Vital Signs
-- [Arterial SpO2 Doccla](Observation-Example-ArterielleSPO2-Doccla.html)
+- [Peripheral SpO2 Doccla (Pulse Oximetry)](Observation-Example-SPO2-Doccla.html)
 - [Arterial Blood Pressure Doccla](Observation-Example-ArteriellerBlutdruck-Doccla.html)
 - [Respiratory Rate Doccla](Observation-Example-Atemfrequenz-Doccla.html)
 - [Heart Rate Doccla](Observation-Example-Herzfrequenz-Doccla.html)
@@ -36,5 +36,12 @@ This page contains examples for vital parameter measurements and measurement dev
 - [FEF25-75 Doccla](Observation-Example-FEF25-75-Doccla.html)
 
 #### Physical Activity & Strength
-- [Walking Distance Doccla](Observation-Example-Gehstrecke-Doccla.html)
+- [Daily Step Count Doccla](Observation-Example-TaeglicheSchrittzahl-Doccla.html)
 - [Hand Grip Strength Doccla](Observation-Example-Handgriffstaerke-Doccla.html)
+
+### Transaction Bundle Examples
+
+These bundles demonstrate how vital data is submitted to a FHIR server as a transaction:
+
+- [Vital Data Initial](Bundle-Example-Bundle-VitalData-Initial.html) — Initial submission: Patient, Organization, PHG, PHD devices (pulse oximeter, scale), and first measurements (all POST)
+- [Vital Data Follow-up](Bundle-Example-Bundle-VitalData-FollowUp.html) — Follow-up submission: Patient and devices are updated (PUT), new measurements are created (POST)

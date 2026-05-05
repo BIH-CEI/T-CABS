@@ -1,34 +1,36 @@
-Profile: T_CABS_Observation_ArterielleSPO2
+Profile: T_CABS_Observation_SPO2
 Parent: t-cabs-observation-vitalparameter
-Id: t-cabs-observation-arteriellespo2
-Title: "T-CABS Observation Arterielle SPO2"
-Description: "Profile for arterial oxygen saturation (SPO2)
+Id: t-cabs-observation-spo2
+Title: "T-CABS Observation SPO2 (Pulsoximetrie)"
+Description: "Profile for oxygen saturation (SpO2) measured by pulse oximetry.
+Note: This profile uses LOINC 2708-6 (FHIR Core oxygensat magic code) for interoperability
+and distinguishes pulse oximetry via Observation.method (SNOMED 252465000).
 Compatibility:
-For the profile T_CABS_Observation_ArterielleSPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_ArterielleSPO2 are also valid against the [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)"
+For the profile T_CABS_Observation_SPO2, compatibility with ISiK version 5.1.0 is aimed for, however it cannot be guaranteed that instances that are valid against T_CABS_Observation_SPO2 are also valid against the [ISiKSauerstoffsaettigungArteriell](https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell)"
 
 // Kompatibel zu "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell"
 
-* code.coding[LoincCoding] = $LOINC#2708-6
-* code.coding[MDCType] = $IEEE-11073#160300
+// FHIR Core oxygensat magic code
+* code.coding = $LOINC#2708-6 //"Oxygen saturation in Arterial blood"
+
+// Measurement method: Pulse oximetry
+* method 1..1 MS
+* method = $SCT#252465000 "Pulse oximetry"
 
 * valueQuantity.code = #%
 * valueQuantity.unit = "%"
 
-* bodySite 1..1 MS
-* bodySite.coding 1..* MS
-* bodySite.coding = $SCT#11527006 "Arterial system structure (body structure)"
-
-Instance: Example-ArterielleSPO2-Doccla
-InstanceOf: T_CABS_Observation_ArterielleSPO2
+Instance: Example-SPO2-Doccla
+InstanceOf: T_CABS_Observation_SPO2
 Usage: #example
-Title: "Example Arterial SPO2 Measurement"
-Description: "Example of an arterial SPO2 measurement via Doccla"
+Title: "Example Peripheral SPO2 Measurement (Pulse Oximetry)"
+Description: "Example of a peripheral SpO2 measurement via Doccla pulse oximeter"
 * meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell|5.1.0"
 * status = #final
-* category[VSCat].coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd-observation
-* code.coding[LoincCoding] = $LOINC#2708-6 
-* code.coding[MDCType] = $IEEE-11073#160300
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd
+* code.coding = $LOINC#2708-6 "Oxygen saturation in Arterial blood"
+* method = $SCT#252465000 "Pulse oximetry"
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-01-15T08:15:00Z"
 * effectivePeriod.end = "2024-01-15T08:15:00Z"
@@ -36,6 +38,5 @@ Description: "Example of an arterial SPO2 measurement via Doccla"
 * valueQuantity.code = #%
 * valueQuantity.unit = "%"
 * valueQuantity.system = $UCUM
-* bodySite.coding = $SCT#11527006 "Arterial system structure (body structure)"
 * device = Reference(Device/beispiel-phd-pulsoximeter)
-* extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)
+* extension[GatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)

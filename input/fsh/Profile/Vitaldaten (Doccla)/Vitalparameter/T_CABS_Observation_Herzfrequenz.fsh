@@ -8,8 +8,7 @@ For the profile T_CABS_Observation_Herzfrequenz, compatibility with ISiK version
 
 // Kompatibel zu "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz"
 
-* code.coding[LoincCoding] = $LOINC#8867-4 //"Heart rate"
-* code.coding[MDCType] = $IEEE-11073#147842 
+* code.coding = $LOINC#8867-4 //"Heart rate"
 
 * valueQuantity.code = #/min
 * valueQuantity.unit = "/min"
@@ -21,10 +20,9 @@ Title: "Example Heart Rate Measurement"
 Description: "Example of a heart rate measurement via Doccla"
 * meta.profile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz|5.1.0"
 * status = #final
-* category[VSCat].coding = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
-* category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd-observation
-* code.coding[LoincCoding] = $LOINC#8867-4 "Heart rate"
-* code.coding[MDCType] = $IEEE-11073#147842
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* category[PHD-Observation].coding = http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories#phd
+* code.coding = $LOINC#8867-4 "Heart rate"
 * subject = Reference(Patient/tcabs-patient-example)
 * effectivePeriod.start = "2024-01-15T08:45:00Z"
 * effectivePeriod.end = "2024-01-15T08:45:00Z"
@@ -33,4 +31,4 @@ Description: "Example of a heart rate measurement via Doccla"
 * valueQuantity.unit = "/min"
 * valueQuantity.system = $UCUM
 * device = Reference(Device/beispiel-phd-pulsoximeter)
-* extension[gatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)
+* extension[GatewayDevice].valueReference = Reference(Device/beispiel-phg-doccla)
