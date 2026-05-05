@@ -8,6 +8,7 @@ Description: "Alert for respiratory rate exceeding alarm limits (high or low)."
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#medium
 * extension[alertDevice].valueReference only Reference(T_CABS_Device_MDS_Beatmungsgeraet)
+* extension[alertDerivedFrom] 1..* MS
 
 Instance: Example-DeviceAlert-AtemfrequenzHoch-BREAS
 InstanceOf: T_CABS_DeviceAlert_AtemfrequenzAlarm
@@ -15,7 +16,7 @@ Usage: #example
 Title: "Example Respiratory Rate High Alert BREAS"
 Description: "Respiratory rate exceeded upper alarm limit on BREAS ventilator"
 * extension[alertStatus].valueCode = #completed
-* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#151571 "MDC_AWAY_RESP_RATE_MAX"
+* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#196648 "MDC_EVT_HI"
 * extension[alertCode].valueCodeableConcept.coding[+] = $SCT#86290005 "Respiratory rate"
 * extension[alertPresence].valueBoolean = false
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T01:30:00+01:00"

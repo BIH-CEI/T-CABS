@@ -8,6 +8,7 @@ Description: "Alert for ventilation airway pressure exceeding alarm limits (high
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#high
 * extension[alertDevice].valueReference only Reference(T_CABS_Device_MDS_Beatmungsgeraet)
+* extension[alertDerivedFrom] 1..* MS
 
 Instance: Example-DeviceAlert-DruckHoch-BREAS
 InstanceOf: T_CABS_DeviceAlert_DruckAlarm
@@ -15,7 +16,7 @@ Usage: #example
 Title: "Example Pressure High Alert BREAS"
 Description: "Airway pressure exceeded upper alarm limit on BREAS ventilator"
 * extension[alertStatus].valueCode = #in-progress
-* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#151793 "MDC_PRESS_AWAY_MAX"
+* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#196648 "MDC_EVT_HI"
 * extension[alertCode].valueCodeableConcept.coding[+] = $SCT#405495005 "High airway pressure"
 * extension[alertPresence].valueBoolean = true
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T03:22:00+01:00"

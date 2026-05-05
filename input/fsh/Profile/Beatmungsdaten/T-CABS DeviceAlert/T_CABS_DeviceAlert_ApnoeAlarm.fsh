@@ -15,7 +15,7 @@ Usage: #example
 Title: "Example Apnea Alert ResMed"
 Description: "Apnea detected on ResMed ventilator - no respiratory effort for 20 seconds"
 * extension[alertStatus].valueCode = #in-progress
-* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#198134 "MDC_EVT_VENT_APNEA"
+* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#199680 "MDC_EVT_APNEA"
 * extension[alertCode].valueCodeableConcept.coding[+] = $SCT#59127000 "Apnea alarm"
 * extension[alertPresence].valueBoolean = true
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T03:45:00+01:00"

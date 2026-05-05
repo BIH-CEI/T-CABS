@@ -8,6 +8,7 @@ Description: "Alert for minute volume exceeding alarm limits (high or low)."
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#medium
 * extension[alertDevice].valueReference only Reference(T_CABS_Device_MDS_Beatmungsgeraet)
+* extension[alertDerivedFrom] 1..* MS
 
 Instance: Example-DeviceAlert-MinutenvolumenNiedrig-Loewenstein
 InstanceOf: T_CABS_DeviceAlert_MinutenvolumenAlarm
@@ -15,7 +16,7 @@ Usage: #example
 Title: "Example Minute Volume Low Alert Löwenstein"
 Description: "Minute volume fell below lower alarm limit on Löwenstein ventilator"
 * extension[alertStatus].valueCode = #in-progress
-* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#151882 "MDC_VOL_MINUTE_AWAY_MIN"
+* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#196670 "MDC_EVT_LO"
 * extension[alertCode].valueCodeableConcept.coding[+] = $SCT#250811004 "Minute volume"
 * extension[alertPresence].valueBoolean = true
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T04:45:00+01:00"

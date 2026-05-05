@@ -1,32 +1,19 @@
 ValueSet: T_CABS_ValueSet_VentilationAlarmCode
 Id: t-cabs-valueset-ventilation-alarm-code
 Title: "T-CABS Ventilation Alarm Code ValueSet"
-Description: "Alarm codes for home ventilation device alerts from IEEE 11073, SNOMED CT, and T-CABS (rebreathing only)."
+Description: "Alarm condition codes for home ventilation device alerts. Uses IEEE 11073 Partition 3 event codes from the FHIR R6 DeviceAlert condition ValueSet. Limit exceedance alarms use generic MDC_EVT_HI/MDC_EVT_LO codes — the specific parameter is identified through the alert's derivedFrom reference."
 * ^status = #draft
 
-// IEEE 11073 - Alarm limit codes
-* $IEEE-11073#151793 "MDC_PRESS_AWAY_MAX"
-* $IEEE-11073#151794 "MDC_PRESS_AWAY_MIN"
-* $IEEE-11073#151869 "MDC_VOL_AWAY_TIDAL_MAX"
-* $IEEE-11073#151870 "MDC_VOL_AWAY_TIDAL_MIN"
-* $IEEE-11073#151881 "MDC_VOL_MINUTE_AWAY_MAX"
-* $IEEE-11073#151882 "MDC_VOL_MINUTE_AWAY_MIN"
-* $IEEE-11073#151571 "MDC_AWAY_RESP_RATE_MAX"
-* $IEEE-11073#151572 "MDC_AWAY_RESP_RATE_MIN"
+// IEEE 11073 - Generic limit exceedance events (Partition 3)
+* $IEEE-11073#196648 "MDC_EVT_HI"
+* $IEEE-11073#196670 "MDC_EVT_LO"
 
-// IEEE 11073 - Event codes
-* $IEEE-11073#198172 "MDC_EVT_VENT_PRESS_AWAY_HIGH_CONTINUOUS"
-* $IEEE-11073#199996 "MDC_EVT_VENT_VOL_INSP_HI"
-* $IEEE-11073#198134 "MDC_EVT_VENT_APNEA"
+// IEEE 11073 - Specific event codes (Partition 3)
+* $IEEE-11073#199680 "MDC_EVT_APNEA"
 * $IEEE-11073#197172 "MDC_EVT_VENT_DISCONN"
 
 // SNOMED CT
 * $SCT#405495005 "High airway pressure"
-* $SCT#468881006 "Airway pressure alarm"
-* $SCT#13621006 "Tidal volume"
-* $SCT#698823007 "Inspiratory tidal volume"
-* $SCT#250811004 "Minute volume"
-* $SCT#86290005 "Respiratory rate"
 * $SCT#59127000 "Apnea alarm"
 * $SCT#416260008 "Ventilator disconnection alarm"
 
