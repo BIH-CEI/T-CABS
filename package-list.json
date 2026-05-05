@@ -13,8 +13,8 @@
     },
     {
       "version": "0.2.0",
-      "date": "2026-02-24",
-      "desc": "CapabilityStatement, Release Notes, FAIR improvements",
+      "date": "2026-05-05",
+      "desc": "DeviceAlert R6 backport (8 profiles), alarm code refactoring, multi-language support (en+de), UML diagram split, IEEE code corrections, PHD 2.0.0 upgrade",
       "path": "https://bih-cei.github.io/T-CABS/0.2.0",
       "status": "draft",
       "sequence": "Draft",
