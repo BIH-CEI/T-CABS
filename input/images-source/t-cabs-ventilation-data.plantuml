@@ -1,0 +1,282 @@
+@startuml T-CABS Ventilation Data Profile Relationships
+!theme plain
+skinparam backgroundColor white
+skinparam class {
+    BackgroundColor<<Ventilation>> LightGreen
+    BackgroundColor<<Device>> LightCoral
+    BackgroundColor<<DeviceMetric>> Orange
+    BackgroundColor<<Procedure>> LightSalmon
+    BackgroundColor<<Observation>> Wheat
+    BackgroundColor<<Patient>> LightCyan
+    BackgroundColor<<Organization>> Khaki
+    BackgroundColor<<DeviceAlert>> #FFD3A5
+    BorderColor Black
+}
+
+skinparam maxMessageSize 80
+skinparam wrapWidth 200
+skinparam minClassWidth 50
+skinparam packageStyle rectangle
+
+hide circle
+hide empty methods
+hide empty attributes
+
+top to bottom direction
+
+' ── Cross-Domain anchors ──
+package "Cross-Domain (Anchors)" {
+    class T_CABS_Patient <<Patient>> {
+        +Base: MII PR Person Patient (Pseudonymisiert)
+        +ID: t-cabs-patient
+        +Example: tcabs-patient-example
+    }
+
+    class T_CABS_Organisation <<Organization>> {
+        +Base: Organization
+        +ID: t-cabs-organisation
+        +Examples: beispiel-provider-jochum,
+        beispiel-provider-loewenstein,
+        beispiel-provider-vivisol, CABS
+    }
+}
+
+' ── Ventilation Data ──
+package "Beatmungsdaten (Ventilation)" {
+    class T_CABS_Device_MDS_Beatmungsgeraet <<Device>> {
+        +Base: PoCD MdsDevice
+        +ID: t-cabs-device-mds-beatmungsgeraet
+        +Examples: beispiel-beatmungsgeraet-breas,
+        beispiel-beatmungsgeraet-loewenstein,
+        beispiel-beatmungsgeraet-resmed
+    }
+
+    class T_CABS_Device_VMD_Beatmungsgeraet <<Device>> {
+        +Base: PoCD VmdDevice
+        +ID: t-cabs-device-vmd-beatmungsgeraet
+    }
+
+    class T_CABS_Device_Channel_Beatmungsgeraet <<Device>> {
+        +Base: PoCD ChannelDevice
+        +ID: t-cabs-device-channel-beatmungsgeraet
+    }
+
+    class T_CABS_DeviceMetric_NumericMetric <<DeviceMetric>> {
+        +Base: PoCD NumericDeviceMetric
+        +ID: t-cabs-devicemetric-numericmetric
+    }
+
+    class T_CABS_Procedure_Beatmung <<Procedure>> {
+        +Base: Procedure
+        +ID: t-cabs-procedure-beatmung
+        +Examples: beispiel-beatmung-breas,
+        beispiel-beatmung-loewenstein,
+        beispiel-beatmung-resmed
+    }
+
+    class T_CABS_Observation_Beatmungsparameter <<Observation>> {
+        +Base: PoCD NumericObservation
+        +ID: t-cabs-observation-beatmungsparameter
+        +{abstract}
+    }
+
+    class T_CABS_Observation_BeatmungsparameterMitKomponenten <<Observation>> {
+        +Base: PoCD CompoundNumericObservation
+        +ID: t-cabs-observation-beatmungsparametermitkomponenten
+        +{abstract}
+    }
+
+    class T_CABS_Observation_AHI <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-ahi
+        +Example: Example-AHI-BREAS
+    }
+
+    class T_CABS_Observation_AMV <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-amv
+        +Example: Example-AMV-BREAS-gemessen
+    }
+
+    class T_CABS_Observation_Atemfrequenz_beatmet <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-atemfrequenz-beatmet
+        +Example: Example-Atemfrequenz-ResMed-gemessen
+    }
+
+    class T_CABS_Observation_Leckage <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-leckage
+        +Example: Example-Leckage-ResMed
+    }
+
+    class T_CABS_Observation_TriggeredBreaths <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-triggeredbreaths
+        +Example: Example-TriggeredBreaths-Loewenstein
+    }
+
+    class T_CABS_Observation_TI <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-ti
+        +Example: Example-TI-Loewenstein
+    }
+
+    class T_CABS_Observation_Atemzeitverhaeltnis <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-atemzeitverhaeltnis
+        +Example: Example-Atemzeitverhaeltnis-ResMed
+    }
+
+    class T_CABS_Observation_DruckMinMax <<Observation>> {
+        +Parent: T_CABS_Observation_BeatmungsparameterMitKomponenten
+        +ID: t-cabs-observation-druck-minmax
+        +Example: Example-DruckMinMax-ResMed
+    }
+
+    class T_CABS_Observation_IPAP <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-ipap
+        +Example: Example-IPAP-BREAS
+    }
+
+    class T_CABS_Observation_TargetVolume <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-targetvolume
+        +Example: Example-TargetVolume-BREAS
+    }
+
+    class T_CABS_Observation_PEEP <<Observation>> {
+        +Parent: T_CABS_Observation_Beatmungsparameter
+        +ID: t-cabs-observation-peep
+        +Example: Example-PEEP-Loewenstein
+    }
+}
+
+' ── DeviceAlerts (R6 Backport via Basic + Extensions) ──
+package "DeviceAlerts (R6 Backport)" {
+    note as DeviceAlertNote
+        Backports FHIR R6 DeviceAlert to R4
+        using Basic as carrier resource
+        with 11 dedicated extensions.
+    end note
+
+    class T_CABS_DeviceAlert <<DeviceAlert>> {
+        +Base: Basic
+        +ID: t-cabs-device-alert
+        +{abstract}
+    }
+
+    class T_CABS_DeviceAlert_ApnoeAlarm <<DeviceAlert>> {
+        +Parent: T_CABS_DeviceAlert
+        +ID: t-cabs-device-alert-apnoe
+        +Example: Example-DeviceAlert-Apnoe-ResMed
+    }
+
+    class T_CABS_DeviceAlert_DisconnectionAlarm <<DeviceAlert>> {
+        +Parent: T_CABS_DeviceAlert
+        +ID: t-cabs-device-alert-disconnection
+        +Example: Example-DeviceAlert-Disconnection-Loewenstein
+    }
+
+    class T_CABS_DeviceAlert_RebreathingAlarm <<DeviceAlert>> {
+        +Parent: T_CABS_DeviceAlert
+        +ID: t-cabs-device-alert-rebreathing
+        +Example: Example-DeviceAlert-Rebreathing-BREAS
+    }
+
+    class T_CABS_DeviceAlert_DruckAlarm <<DeviceAlert>> {
+        +Parent: T_CABS_DeviceAlert
+        +ID: t-cabs-device-alert-druck
+        +Example: Example-DeviceAlert-DruckHoch-BREAS
+    }
+
+    class T_CABS_DeviceAlert_AtemfrequenzAlarm <<DeviceAlert>> {
+        +Parent: T_CABS_DeviceAlert
+        +ID: t-cabs-device-alert-atemfrequenz
+        +Example: Example-DeviceAlert-AtemfrequenzHoch-BREAS
+    }
+
+    class T_CABS_DeviceAlert_TidalvolumenAlarm <<DeviceAlert>> {
+        +Parent: T_CABS_DeviceAlert
+        +ID: t-cabs-device-alert-tidalvolumen
+        +Example: Example-DeviceAlert-TidalvolumenHoch-ResMed
+    }
+
+    class T_CABS_DeviceAlert_MinutenvolumenAlarm <<DeviceAlert>> {
+        +Parent: T_CABS_DeviceAlert
+        +ID: t-cabs-device-alert-minutenvolumen
+        +Example: Example-DeviceAlert-MinutenvolumenNiedrig-Loewenstein
+    }
+}
+
+' === RELATIONSHIPS ===
+
+' Cross-Domain anchors
+T_CABS_Patient }o--|| T_CABS_Organisation : managingOrganization
+T_CABS_Device_MDS_Beatmungsgeraet }o--|| T_CABS_Organisation : owner
+T_CABS_Device_MDS_Beatmungsgeraet }o--|| T_CABS_Patient : patient
+
+' Procedure
+T_CABS_Procedure_Beatmung }o--|| T_CABS_Patient : subject
+T_CABS_Procedure_Beatmung }o--|| T_CABS_Device_MDS_Beatmungsgeraet : usedReference
+
+' Device Hierarchy (Ventilation)
+T_CABS_Device_VMD_Beatmungsgeraet }o--|| T_CABS_Device_MDS_Beatmungsgeraet : parent
+T_CABS_Device_Channel_Beatmungsgeraet }o--|| T_CABS_Device_VMD_Beatmungsgeraet : parent
+T_CABS_DeviceMetric_NumericMetric }o--|| T_CABS_Device_Channel_Beatmungsgeraet : parent
+T_CABS_DeviceMetric_NumericMetric }o--|| T_CABS_Device_MDS_Beatmungsgeraet : source
+
+' Observation references (vererbt sich auf alle Children)
+T_CABS_Observation_Beatmungsparameter }o--|| T_CABS_Patient : subject
+T_CABS_Observation_Beatmungsparameter }o--|| T_CABS_DeviceMetric_NumericMetric : device
+T_CABS_Observation_Beatmungsparameter }o--|| T_CABS_Procedure_Beatmung : partOf
+T_CABS_Observation_BeatmungsparameterMitKomponenten }o--|| T_CABS_Patient : subject
+T_CABS_Observation_BeatmungsparameterMitKomponenten }o--|| T_CABS_DeviceMetric_NumericMetric : device
+T_CABS_Observation_BeatmungsparameterMitKomponenten }o--|| T_CABS_Procedure_Beatmung : partOf
+
+' DeviceAlert references
+T_CABS_DeviceAlert }o--|| T_CABS_Device_MDS_Beatmungsgeraet : alertDevice
+T_CABS_DeviceAlert }o--|| T_CABS_Patient : subject
+
+' Limit alarms reference the observation that triggered the alarm
+T_CABS_DeviceAlert_DruckAlarm }o--|| T_CABS_Observation_DruckMinMax : alertDerivedFrom
+T_CABS_DeviceAlert_AtemfrequenzAlarm }o--|| T_CABS_Observation_Atemfrequenz_beatmet : alertDerivedFrom
+T_CABS_DeviceAlert_TidalvolumenAlarm }o--|| T_CABS_Observation_TargetVolume : alertDerivedFrom
+T_CABS_DeviceAlert_MinutenvolumenAlarm }o--|| T_CABS_Observation_AMV : alertDerivedFrom
+
+' === INHERITANCE ===
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_AHI
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_AMV
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_Atemfrequenz_beatmet
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_Leckage
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_TriggeredBreaths
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_TI
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_Atemzeitverhaeltnis
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_IPAP
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_TargetVolume
+T_CABS_Observation_Beatmungsparameter <|-- T_CABS_Observation_PEEP
+T_CABS_Observation_BeatmungsparameterMitKomponenten <|-- T_CABS_Observation_DruckMinMax
+
+T_CABS_DeviceAlert <|-- T_CABS_DeviceAlert_ApnoeAlarm
+T_CABS_DeviceAlert <|-- T_CABS_DeviceAlert_DisconnectionAlarm
+T_CABS_DeviceAlert <|-- T_CABS_DeviceAlert_RebreathingAlarm
+T_CABS_DeviceAlert <|-- T_CABS_DeviceAlert_DruckAlarm
+T_CABS_DeviceAlert <|-- T_CABS_DeviceAlert_AtemfrequenzAlarm
+T_CABS_DeviceAlert <|-- T_CABS_DeviceAlert_TidalvolumenAlarm
+T_CABS_DeviceAlert <|-- T_CABS_DeviceAlert_MinutenvolumenAlarm
+
+' === LAYOUT CONSTRAINTS ===
+T_CABS_Observation_AHI -[hidden]right- T_CABS_Observation_AMV
+T_CABS_Observation_AMV -[hidden]right- T_CABS_Observation_Atemfrequenz_beatmet
+T_CABS_Observation_Leckage -[hidden]right- T_CABS_Observation_TriggeredBreaths
+T_CABS_Observation_TI -[hidden]right- T_CABS_Observation_Atemzeitverhaeltnis
+T_CABS_Observation_IPAP -[hidden]right- T_CABS_Observation_TargetVolume
+
+T_CABS_DeviceAlert_ApnoeAlarm -[hidden]right- T_CABS_DeviceAlert_DisconnectionAlarm
+T_CABS_DeviceAlert_DisconnectionAlarm -[hidden]right- T_CABS_DeviceAlert_RebreathingAlarm
+T_CABS_DeviceAlert_DruckAlarm -[hidden]right- T_CABS_DeviceAlert_AtemfrequenzAlarm
+T_CABS_DeviceAlert_AtemfrequenzAlarm -[hidden]right- T_CABS_DeviceAlert_TidalvolumenAlarm
+T_CABS_DeviceAlert_TidalvolumenAlarm -[hidden]right- T_CABS_DeviceAlert_MinutenvolumenAlarm
+
+@enduml
