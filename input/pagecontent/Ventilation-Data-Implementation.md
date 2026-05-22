@@ -408,19 +408,23 @@ FHIR R6 introduces [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealer
 
 #### Extension Mapping to R6 DeviceAlert
 
+Element paths refer to the R6 DeviceAlert resource as of ballot4 (May 2026). Note that some elements (e.g. `derivedFrom`) are BackboneElements in R6; the backport flattens these to simple typed extensions.
+
 | Extension | R6 Element | Type | Card. |
 |-----------|------------|------|-------|
 | `alertStatus` | `status` | code | 1..1 |
-| `alertCode` | `condition.code` | CodeableConcept | 1..1 |
-| `alertPresence` | `condition.presence` | boolean | 1..1 |
-| `alertOccurrence` | `condition.timing` | Period | 0..1 |
-| `alertLimit` | `condition.limit` | Range | 0..1 |
+| `alertCode` | `code` | CodeableConcept | 1..1 |
+| `alertPresence` | `presence` | boolean | 1..1 |
+| `alertOccurrence` | `occurrence[x]` | Period (R6 also allows dateTime) | 0..1 |
+| `alertLimit` | `derivedFrom.limit` (flattened to resource level) | Range | 0..1 |
 | `alertType` | `type` | CodeableConcept | 0..1 |
 | `alertPriority` | `priority` | CodeableConcept | 0..1 |
-| `alertDevice` | `source` | Reference(Device) | 0..1 |
-| `alertDerivedFrom` | `derivedFrom` | Reference(Observation) | 0..* |
+| `alertDevice` | `device` | Reference(Device \| DeviceMetric) | 0..1 |
+| `alertDerivedFrom` | `derivedFrom.observation` (flattened, BackboneElement substructure not preserved) | Reference(Observation) | 0..* |
 | `alertLabel` | `label` | string | 0..1 |
-| `alertSignal` | `signal` | complex | 0..* |
+| `alertSignal` | `signal` (with `activationState`, `presence`, `manifestation`, `indication` sub-extensions) | complex | 0..* |
+
+Elements from R6 DeviceAlert that are **not yet backported** in T-CABS 0.2.x: `identifier`, `procedure`, `category`, `encounter`, `acknowledged`, `acknowledgedBy`, `location`, `derivedFrom.component`, `signal.annunciator`, `signal.type`. Signal codes for `presence` (T-CABS: `present`/`absent`) and `manifestation` (`audible`/`vibration`) diverge from R6 (`on`/`latched`/`off`/`ack`; `auditory`/`vibratory`) — full alignment is planned for v0.3.0.
 
 Example instance of a Diconnection alarm:
 ```json
@@ -537,19 +541,21 @@ Example instance of a Diconnection alarm:
 
 ```
 
-#### Alarm Categories
+#### Alarm Detection Patterns
 
-T-CABS distinguishes two categories of device alerts:
+T-CABS distinguishes two patterns by which device alerts are coded and detected:
 
-**Event-based alarms** (e.g., apnea, disconnection) use specific IEEE 11073 event codes that identify the alarm condition directly:
+**Specific-event alarms** (e.g., apnea, disconnection) use specific IEEE 11073 event codes that identify the alarm condition directly:
 - `199680` MDC_EVT_APNEA — apnea detected
 - `197172` MDC_EVT_VENT_DISCONN — patient disconnected from ventilator
 
-**Limit exceedance alarms** (e.g., pressure too high, tidal volume too low) use generic event codes combined with a mandatory reference to the observation that triggered the alarm:
+**Limit-event alarms** (e.g., pressure too high, tidal volume too low) use generic event codes combined with a mandatory reference to the observation that triggered the alarm:
 - `196648` MDC_EVT_HI — measurement exceeded upper limit
 - `196670` MDC_EVT_LO — measurement fell below lower limit
 
-For limit alarms, `alertDerivedFrom` is mandatory (1..*) and must reference the observation whose limit was exceeded. This reference identifies which parameter triggered the alarm.
+For limit-event alarms, `alertDerivedFrom` is mandatory (1..*) and must reference the observation whose limit was exceeded. This reference identifies which parameter triggered the alarm.
+
+This classification is independent of `alertType` (physiological vs. technical). A disconnection alarm uses the specific-event pattern and has `alertType = technical`; an apnea alarm uses the specific-event pattern and has `alertType = physiological`.
 
 Example instance of a pressure high limit alarm:
 ```json
@@ -622,7 +628,7 @@ Example instance of a pressure high limit alarm:
       }
     },
     {
-      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derivedFrom",
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derived-from",
       "valueReference": {
         "reference": "Observation/Example-DruckMinMax-ResMed"
       }

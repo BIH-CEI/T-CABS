@@ -12,6 +12,17 @@
       "status": "ci-build"
     },
     {
+      "version": "0.2.1",
+      "date": "2026-05-22",
+      "desc": "ValueSet split (Limit Exceedance), code patterns in event-based alerts, R6 alignment fixes (unknown status, mapping table), DeviceAlerts in transaction bundles, German pagecontent additions",
+      "path": "https://bih-cei.github.io/T-CABS/0.2.1",
+      "status": "draft",
+      "sequence": "Draft",
+      "fhirversion": "4.0.1",
+      "changes": "Release-Notes.html",
+      "current": true
+    },
+    {
       "version": "0.2.0",
       "date": "2026-05-05",
       "desc": "DeviceAlert R6 backport (8 profiles), alarm code refactoring, multi-language support (en+de), UML diagram split, IEEE code corrections, PHD 2.0.0 upgrade",
@@ -19,8 +30,7 @@
       "status": "draft",
       "sequence": "Draft",
       "fhirversion": "4.0.1",
-      "changes": "Release-Notes.html",
-      "current": true
+      "changes": "Release-Notes.html"
     },
     {
       "version": "0.1.0",

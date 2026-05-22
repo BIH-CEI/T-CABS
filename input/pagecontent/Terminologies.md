@@ -79,48 +79,50 @@ This page lists the created ValueSets of the T-CABS project:
 
 **Link**: [ValueSet Ventilation Alarm Code](ValueSet-t-cabs-valueset-ventilation-alarm-code.html)
 
-**Description**: This ValueSet contains alarm codes for home ventilation device alerts from IEEE 11073-10101, SNOMED CT, and one T-CABS custom code (rebreathing).
+**Description**: Umbrella catalogue of alarm codes used in T-CABS DeviceAlert profiles. Aligned with FHIR R6 DeviceAlert: limit-exceedance alarms use the generic Partition 3 event codes `MDC_EVT_HI`/`MDC_EVT_LO`, the specific parameter is identified through the alert's `alertDerivedFrom` reference. Informational overview only — DeviceAlert profiles either fix their code directly (Apnea/Disconnection/Rebreathing) or bind to the narrower [Ventilation Limit Exceedance Code ValueSet](ValueSet-t-cabs-valueset-ventilation-limit-exceedance-code.html) (limit alarms).
 
-#### IEEE 11073 — Alarm Limit Codes
+#### IEEE 11073 — Generic Limit Exceedance Events (Partition 3)
 
-| Code | Display Name | Description |
+| Code | Display Name | Used when |
 |------|---------|--------------|
-| `151793` | MDC_PRESS_AWAY_MAX | Airway pressure high alarm limit |
-| `151794` | MDC_PRESS_AWAY_MIN | Airway pressure low alarm limit |
-| `151869` | MDC_VOL_AWAY_TIDAL_MAX | Tidal volume high alarm limit |
-| `151870` | MDC_VOL_AWAY_TIDAL_MIN | Tidal volume low alarm limit |
-| `151881` | MDC_VOL_MINUTE_AWAY_MAX | Minute volume high alarm limit |
-| `151882` | MDC_VOL_MINUTE_AWAY_MIN | Minute volume low alarm limit |
-| `151571` | MDC_AWAY_RESP_RATE_MAX | Respiratory rate high alarm limit |
-| `151572` | MDC_AWAY_RESP_RATE_MIN | Respiratory rate low alarm limit |
+| `196648` | MDC_EVT_HI | Measurement exceeds upper alarm limit |
+| `196670` | MDC_EVT_LO | Measurement falls below lower alarm limit |
 
-#### IEEE 11073 — Event Codes (ventilator-specific)
+#### IEEE 11073 — Specific Event Codes (Partition 3)
 
-| Code | Display Name | Description |
+| Code | Display Name | Used by |
 |------|---------|--------------|
-| `198172` | MDC_EVT_VENT_PRESS_AWAY_HIGH_CONTINUOUS | Continuous high airway pressure event |
-| `199996` | MDC_EVT_VENT_VOL_INSP_HI | Inspiratory tidal volume high event |
-| `198134` | MDC_EVT_VENT_APNEA | Apnea event (ventilator-specific) |
-| `197172` | MDC_EVT_VENT_DISCONN | Disconnection event (ventilator-specific) |
+| `199680` | MDC_EVT_APNEA | ApnoeAlarm profile |
+| `197172` | MDC_EVT_VENT_DISCONN | DisconnectionAlarm profile |
 
 #### SNOMED CT
 
-| Code | Display Name | Description |
+| Code | Display Name | Used by |
 |------|---------|--------------|
-| `405495005` | High airway pressure (finding) | Used with pressure high alarms |
-| `468881006` | Airway pressure alarm (situation) | Used with pressure low alarms |
-| `13621006` | Tidal volume (observable entity) | Used with tidal volume alarms |
-| `698823007` | Inspiratory tidal volume (observable entity) | Used with inspiratory volume high event |
-| `250811004` | Minute volume (observable entity) | Used with minute volume alarms |
-| `86290005` | Respiratory rate (observable entity) | Used with respiratory rate alarms |
-| `59127000` | Apnea alarm | Used with apnea alarms |
-| `416260008` | Ventilator disconnection alarm | Used with disconnection alarms |
+| `405495005` | High airway pressure | DruckAlarm examples (high-pressure case; not pattern-fixed in the profile, as direction-specific) |
+| `59127000` | Apnea alarm | ApnoeAlarm profile (alongside MDC_EVT_APNEA) |
+| `416260008` | Ventilator disconnection alarm | DisconnectionAlarm profile (alongside MDC_EVT_VENT_DISCONN) |
 
 #### T-CABS Custom
 
 | Code | Display Name | Description |
 |------|---------|--------------|
-| `rebreathing` | Rebreathing Alarm | Rebreathing of exhaled gas detected (elevated CO2). No IEEE 11073 or SNOMED CT code available. |
+| `rebreathing` | Rebreathing Alarm | Rebreathing of exhaled gas detected (elevated CO2). No IEEE 11073 or SNOMED CT code available. Used by RebreathingAlarm profile. |
+
+---
+
+### T-CABS ValueSet Ventilation Limit Exceedance Code
+
+**Link**: [ValueSet Ventilation Limit Exceedance Code](ValueSet-t-cabs-valueset-ventilation-limit-exceedance-code.html)
+
+**Description**: Restricted set of generic IEEE 11073 Partition 3 limit exceedance event codes. Bound (required) by the four limit-alarm DeviceAlert profiles (Pressure, Respiratory Rate, Tidal Volume, Minute Volume). The monitored parameter is identified by the binding profile and the alert's `alertDerivedFrom` reference to the triggering Observation — not by the IEEE code itself.
+
+#### IEEE 11073 — Generic Limit Exceedance Events (Partition 3)
+
+| Code | Display Name | Used when |
+|------|---------|--------------|
+| `196648` | MDC_EVT_HI | Measurement exceeds upper alarm limit |
+| `196670` | MDC_EVT_LO | Measurement falls below lower alarm limit |
 
 ---
 

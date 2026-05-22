@@ -6,3 +6,4 @@ Description: "Status codes for DeviceAlert resources"
 * T_CABS_CodeSystem_DeviceAlert#in-progress
 * T_CABS_CodeSystem_DeviceAlert#completed
 * T_CABS_CodeSystem_DeviceAlert#entered-in-error
+* T_CABS_CodeSystem_DeviceAlert#unknown

@@ -4,7 +4,7 @@ Id: t-cabs-device-alert-disconnection
 Title: "T-CABS DeviceAlert Disconnection Alarm"
 Description: "Alert for patient circuit disconnection detected by the ventilator."
 
-* extension[alertCode].valueCodeableConcept from T_CABS_ValueSet_VentilationAlarmCode (required)
+* extension[alertCode].valueCodeableConcept = $IEEE-11073#197172 "MDC_EVT_VENT_DISCONN"
 * extension[alertType].valueCodeableConcept = $cs-device-alert#technical
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#high
 * extension[alertDevice].valueReference only Reference(T_CABS_Device_MDS_Beatmungsgeraet)

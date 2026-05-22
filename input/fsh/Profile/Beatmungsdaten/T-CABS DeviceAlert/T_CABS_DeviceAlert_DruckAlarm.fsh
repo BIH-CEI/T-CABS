@@ -4,7 +4,7 @@ Id: t-cabs-device-alert-druck
 Title: "T-CABS DeviceAlert Pressure Alarm"
 Description: "Alert for ventilation airway pressure exceeding alarm limits (high or low)."
 
-* extension[alertCode].valueCodeableConcept from T_CABS_ValueSet_VentilationAlarmCode (required)
+* extension[alertCode].valueCodeableConcept from T_CABS_ValueSet_VentilationLimitExceedanceCode (required)
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#high
 * extension[alertDevice].valueReference only Reference(T_CABS_Device_MDS_Beatmungsgeraet)

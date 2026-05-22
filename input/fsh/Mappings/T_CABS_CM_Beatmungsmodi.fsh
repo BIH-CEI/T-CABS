@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 Usage: #definition
 * name = "TCABSBeatmungsmodi"
 * title = "T-CABS ConceptMap Ventilation Modes"
-* description = "Maps manufacturer-specific ventilation mode names to IEEE 11073-10101 ventilation mode codes. Based on Studienarzt-Zuarbeit (Modi_Heimbeatmungsgeräte). Covers BREAS (Vivo 55/45/3), Löwenstein (Luisa, prismaVent 50c), ResMed (Astral, Lumis, Stellar)."
+* description = "Maps manufacturer-specific ventilation mode names to IEEE 11073-10101 ventilation mode codes. Based on Studienarzt-Zuarbeit (Modi_Heimbeatmungsgeräte) plus systematic datasheet analysis (2026-05). Covers BREAS (Vivo 50/55/60/65, Vivo 45/3), Löwenstein (LUISA LM150TD, prismaVENT 30/30-C/40/50, prismaVent 50c, sleep-therapy prisma 25ST/30ST), ResMed (Astral 100/150, Stellar 100/150, Lumis)."
 * status = #draft
 * experimental = false
 
@@ -167,6 +167,13 @@ Usage: #definition
 * group[=].element[=].target[=].display = "MDC_VENT_MODE_ISO_AC_PC_6ACAP"
 * group[=].element[=].target[=].equivalence = #wider
 * group[=].element[=].target[=].comment = "Not reviewed. Adaptive PCV — closest standard AC-PC mode"
+
+* group[=].element[+].code = #"aPCV(TgV)"
+* group[=].element[=].display = "Adaptive Pressure Control with Target Volume"
+* group[=].element[=].target[+].code = #475148
+* group[=].element[=].target[=].display = "MDC_VENT_MODE_ISO_AC_vtPC_6ACAP"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Not reviewed. Adaptive PCV with target volume — closest standard match is assist-controlled PC with volume target."
 
 * group[=].element[+].code = #"P-SIMV"
 * group[=].element[=].display = "Pressure SIMV"

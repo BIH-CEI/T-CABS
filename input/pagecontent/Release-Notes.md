@@ -17,6 +17,20 @@ Each change is tagged with one of the following categories:
 
 ---
 
+### v0.2.1 (2026-05-22) — Draft Patch
+
+**`fix`** Restricted limit-alarm bindings to a new narrower ValueSet (`VentilationLimitExceedanceCode`) — the previous umbrella binding allowed semantically invalid combinations
+
+**`fix`** Pinned identifying codes as profile patterns in the three event-based DeviceAlert profiles (Apnea, Disconnection, Rebreathing)
+
+**`fix`** Misc. example & code corrections: TidalvolumenAlarm HI/LO mismatch, Extension URL typo (`derivedFrom` → `derived-from`), missing `unknown` status code
+
+**`improve`** Added DeviceAlerts to both Ventilation Transaction Bundles (Rebreathing in Initial, Respiratory Rate HIGH in Follow-up)
+
+**`documentation`** Renamed *Alarm Categories* → *Alarm Detection Patterns* (sub-terms *Specific-event* / *Limit-event*); corrected outdated R6 element mapping table; added *Ventilation Limit Exceedance Code* section in Terminologies; added DeviceAlert section to German pagecontent
+
+---
+
 ### v0.2.0 (2026-04-30) — Draft
 
 **`improve`** Changed **Patient profile** parent from `MII PR Person Patient` to **`MII PR Person Patient (Pseudonymisiert)`** — no names or addresses; patients identified by pseudonymized identifier only

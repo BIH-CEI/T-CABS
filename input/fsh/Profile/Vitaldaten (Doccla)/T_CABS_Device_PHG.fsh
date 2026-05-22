@@ -11,9 +11,13 @@ Description: "Profile for a tablet used as a gateway device"
 * serialNumber MS
 * serialNumber ^short = "Serial number of the device"
 
+* specialization MS
+
 * patient 1..1 MS
 * patient ^short = "Reference to the patient"
 * patient only Reference(T_CABS_Patient)
+
+
 
 Instance: beispiel-phg-doccla
 InstanceOf: T_CABS_Device_PHG

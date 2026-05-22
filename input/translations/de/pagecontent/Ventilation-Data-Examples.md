@@ -75,10 +75,27 @@
 - [TI Löwenstein](Observation-Example-TI-Loewenstein.html)
 - [Triggered Breaths Löwenstein](Observation-Example-TriggeredBreaths-Loewenstein.html)
 
+### Beatmungsalarm-Beispiele (DeviceAlert)
+
+- [Hoher Druckalarm BREAS](Basic-Example-DeviceAlert-DruckHoch-BREAS.html)
+- [Hoher Tidalvolumenalarm ResMed](Basic-Example-DeviceAlert-TidalvolumenHoch-ResMed.html)
+- [Niedriger Minutenvolumenalarm Löwenstein](Basic-Example-DeviceAlert-MinutenvolumenNiedrig-Loewenstein.html)
+- [Hoher Atemfrequenzalarm BREAS](Basic-Example-DeviceAlert-AtemfrequenzHoch-BREAS.html)
+- [Apnoealarm ResMed](Basic-Example-DeviceAlert-Apnoe-ResMed.html)
+- [Diskonnektionsalarm Löwenstein](Basic-Example-DeviceAlert-Disconnection-Loewenstein.html)
+- [Rückatmungsalarm BREAS](Basic-Example-DeviceAlert-Rebreathing-BREAS.html)
+
 ### Beatmungsprozeduren
 
 - [Beatmung BREAS](Procedure-beispiel-beatmung-breas.html)
 - [Beatmung Löwenstein](Procedure-beispiel-beatmung-loewenstein.html)
 - [Beatmung ResMed](Procedure-beispiel-beatmung-resmed.html)
+
+### Transaction Bundles
+
+Diese Bundles zeigen, wie Beatmungsdaten als Transaction-Bundle an einen FHIR-Server übermittelt werden:
+
+- [Beatmung Initial](Bundle-Example-Bundle-Ventilation-Initial.html) — Initiale Übermittlung: Patient, Organization, vollständige IEEE-11073-Device-Hierarchie (MDS → VMD → Channel → DeviceMetric), Procedure und erste Messungen (alle POST)
+- [Beatmung Follow-up](Bundle-Example-Bundle-Ventilation-FollowUp.html) — Folge-Übermittlung: Patient und Geräte werden aktualisiert (PUT), neue Messungen und Procedure werden erstellt (POST)
 
 **Hinweis:** Die Beispielinstanzen sind stets einem Hersteller (BREAS, Löwenstein oder ResMed) zugehöhrig, dies stellt jedoch keine inhaltliche Vorgabe oder Einschränkung dar sondern dient nur der exemplarischen Darstellung.

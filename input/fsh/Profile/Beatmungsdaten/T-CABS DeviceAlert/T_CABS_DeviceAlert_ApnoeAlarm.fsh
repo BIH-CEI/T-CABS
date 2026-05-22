@@ -4,7 +4,7 @@ Id: t-cabs-device-alert-apnoe
 Title: "T-CABS DeviceAlert Apnea Alarm"
 Description: "Alert for detected apnea (no respiratory effort within the apnea alarm time)."
 
-* extension[alertCode].valueCodeableConcept from T_CABS_ValueSet_VentilationAlarmCode (required)
+* extension[alertCode].valueCodeableConcept = $IEEE-11073#199680 "MDC_EVT_APNEA"
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#high
 * extension[alertDevice].valueReference only Reference(T_CABS_Device_MDS_Beatmungsgeraet)

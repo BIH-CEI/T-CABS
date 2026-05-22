@@ -11,9 +11,10 @@ Description: "CodeSystem for DeviceAlert resource type, status, type, priority, 
 * #device-alert "Device Alert" "Identifies a Basic resource as a DeviceAlert backport"
 
 // Status codes (R6 DeviceAlert.status)
-* #in-progress "In Progress" "The alert condition is currently active"
-* #completed "Completed" "The alert condition has resolved"
-* #entered-in-error "Entered in Error" "The alert was recorded in error"
+* #in-progress "In Progress" "The alert condition is present, or any signal from a previously present condition is not off"
+* #completed "Completed" "The alert condition is not present, and all signals are off"
+* #entered-in-error "Entered in Error" "This alert record was created in error and is not valid"
+* #unknown "Unknown" "The status of the alert is not known"
 
 // Type codes (R6 DeviceAlert.type)
 * #physiological "Physiological" "Alert related to a physiological measurement exceeding thresholds"

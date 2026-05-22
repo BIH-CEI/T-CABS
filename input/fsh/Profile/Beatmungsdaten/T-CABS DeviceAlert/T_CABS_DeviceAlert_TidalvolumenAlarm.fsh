@@ -4,7 +4,7 @@ Id: t-cabs-device-alert-tidalvolumen
 Title: "T-CABS DeviceAlert Tidal Volume Alarm"
 Description: "Alert for tidal volume exceeding alarm limits (high or low)."
 
-* extension[alertCode].valueCodeableConcept from T_CABS_ValueSet_VentilationAlarmCode (required)
+* extension[alertCode].valueCodeableConcept from T_CABS_ValueSet_VentilationLimitExceedanceCode (required)
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#medium
 * extension[alertDevice].valueReference only Reference(T_CABS_Device_MDS_Beatmungsgeraet)
@@ -16,8 +16,7 @@ Usage: #example
 Title: "Example Tidal Volume High Alert ResMed"
 Description: "Tidal volume exceeded upper alarm limit on ResMed ventilator"
 * extension[alertStatus].valueCode = #completed
-* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#196670 "MDC_EVT_LO"
-* extension[alertCode].valueCodeableConcept.coding[+] = $SCT#13621006 "Tidal volume"
+* extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#196648 "MDC_EVT_HI"
 * extension[alertPresence].valueBoolean = false
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T02:10:00+01:00"
 * extension[alertOccurrence].valuePeriod.end = "2024-01-15T02:12:30+01:00"

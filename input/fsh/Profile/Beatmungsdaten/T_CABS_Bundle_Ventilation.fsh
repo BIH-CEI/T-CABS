@@ -12,7 +12,7 @@ Instance: Example-Bundle-Ventilation-Initial
 InstanceOf: Bundle
 Usage: #example
 Title: "Example Transaction Bundle — Ventilation Initial"
-Description: "Initial submission of ventilation data: Patient, Organization, complete IEEE 11073 device hierarchy (MDS → VMD → Channel → DeviceMetric), ventilation procedure, and first measurements (AHI, AMV)."
+Description: "Initial submission of ventilation data: Patient, Organization, complete IEEE 11073 device hierarchy (MDS → VMD → Channel → DeviceMetric), ventilation procedure, first measurements (AHI, AMV), and an event-based DeviceAlert (Rebreathing)."
 * type = #transaction
 
 // 1 — Patient
@@ -87,6 +87,12 @@ Description: "Initial submission of ventilation data: Patient, Organization, com
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
 
+// 13 — DeviceAlert (Rebreathing, event-based)
+* entry[+].fullUrl = "urn:uuid:a3b4c5d6-e7f8-4091-a2b3-c4d5e6f70819"
+* entry[=].resource = Example-DeviceAlert-Rebreathing-BREAS
+* entry[=].request.method = #POST
+* entry[=].request.url = "Basic"
+
 
 // ── Bundle 1b: Follow-up — Folgeübermittlung ─────────────────────────────────
 // Patient und Geräte existieren bereits (PUT = Update).
@@ -96,7 +102,7 @@ Instance: Example-Bundle-Ventilation-FollowUp
 InstanceOf: Bundle
 Usage: #example
 Title: "Example Transaction Bundle — Ventilation Follow-up"
-Description: "Follow-up submission of ventilation data: Patient and devices are updated (PUT), new measurements (AHI, AMV) and ventilation procedure are created (POST)."
+Description: "Follow-up submission of ventilation data: Patient and devices are updated (PUT), new measurements (AHI, AMV), ventilation procedure, and a limit-exceedance DeviceAlert (Respiratory Rate HIGH) are created (POST). The alert's `alertDerivedFrom` Observation is expected to exist on the server from a previous transaction."
 * type = #transaction
 
 // 1 — Patient (Update)
@@ -140,3 +146,9 @@ Description: "Follow-up submission of ventilation data: Patient and devices are 
 * entry[=].resource = Example-AMV-BREAS-gemessen
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation"
+
+// 8 — DeviceAlert (AtemfrequenzHoch, limit-based)
+* entry[+].fullUrl = "urn:uuid:80192a3b-1234-4567-8901-3a4b5c6d7e90"
+* entry[=].resource = Example-DeviceAlert-AtemfrequenzHoch-BREAS
+* entry[=].request.method = #POST
+* entry[=].request.url = "Basic"
