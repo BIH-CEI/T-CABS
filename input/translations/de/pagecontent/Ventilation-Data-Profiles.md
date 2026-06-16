@@ -28,14 +28,18 @@
 
 FHIR R6 führt [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) als eigenständige Ressource ein. Da T-CABS auf FHIR R4 basiert, werden die R6-DeviceAlert-Konzepte als Backport über `Basic` + Extensions modelliert. Details siehe [Implementation](Ventilation-Data-Implementation.html).
 
+Die Alarmprofile folgen einer dreistufigen Hierarchie. Die abstrakte Basis backportet die R6-Ressource; darunter trennen zwei abstrakte Profile die beiden Alarm-Erkennungsmuster — **ereignisbasierte** Alarme (ein diskretes Ereignis mit spezifischem Code) und **Grenzwert-Alarme** (ein Messwert überschreitet eine Grenze, mit Referenz auf die auslösende Observation). Die konkreten, herstellerseitigen Profile erben vom jeweils passenden Muster.
+
 - [DeviceAlert Basis (abstrakt)](StructureDefinition-t-cabs-device-alert.html)
-- [Druckalarm](StructureDefinition-t-cabs-device-alert-druck.html)
-- [Tidalvolumenalarm](StructureDefinition-t-cabs-device-alert-tidalvolumen.html)
-- [Minutenvolumenalarm](StructureDefinition-t-cabs-device-alert-minutenvolumen.html)
-- [Atemfrequenzalarm](StructureDefinition-t-cabs-device-alert-atemfrequenz.html)
-- [Apnoealarm](StructureDefinition-t-cabs-device-alert-apnoe.html)
-- [Diskonnektionsalarm](StructureDefinition-t-cabs-device-alert-disconnection.html)
-- [Rückatmungsalarm](StructureDefinition-t-cabs-device-alert-rebreathing.html)
+  - [DeviceAlert Ereignis-Alarm (abstrakt)](StructureDefinition-t-cabs-device-alert-event.html) — *Specific-event-Muster*
+    - [Apnoealarm](StructureDefinition-t-cabs-device-alert-apnoe.html)
+    - [Diskonnektionsalarm](StructureDefinition-t-cabs-device-alert-disconnection.html)
+    - [Rückatmungsalarm](StructureDefinition-t-cabs-device-alert-rebreathing.html)
+  - [DeviceAlert Grenzwert-Alarm (abstrakt)](StructureDefinition-t-cabs-device-alert-limit.html) — *Limit-event-Muster*
+    - [Druckalarm](StructureDefinition-t-cabs-device-alert-druck.html)
+    - [Tidalvolumenalarm](StructureDefinition-t-cabs-device-alert-tidalvolumen.html)
+    - [Minutenvolumenalarm](StructureDefinition-t-cabs-device-alert-minutenvolumen.html)
+    - [Atemfrequenzalarm](StructureDefinition-t-cabs-device-alert-atemfrequenz.html)
 
 ### Beatmungsprozedur-Profile
 

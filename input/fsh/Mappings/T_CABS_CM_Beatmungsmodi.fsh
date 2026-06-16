@@ -168,13 +168,6 @@ Usage: #definition
 * group[=].element[=].target[=].equivalence = #wider
 * group[=].element[=].target[=].comment = "Not reviewed. Adaptive PCV — closest standard AC-PC mode"
 
-* group[=].element[+].code = #"aPCV(TgV)"
-* group[=].element[=].display = "Adaptive Pressure Control with Target Volume"
-* group[=].element[=].target[+].code = #475148
-* group[=].element[=].target[=].display = "MDC_VENT_MODE_ISO_AC_vtPC_6ACAP"
-* group[=].element[=].target[=].equivalence = #wider
-* group[=].element[=].target[=].comment = "Not reviewed. Adaptive PCV with target volume — closest standard match is assist-controlled PC with volume target."
-
 * group[=].element[+].code = #"P-SIMV"
 * group[=].element[=].display = "Pressure SIMV"
 * group[=].element[=].target[+].code = #475144
@@ -328,17 +321,3 @@ Usage: #definition
 * group[=].element[=].target[=].display = "MDC_VENT_MODE_RESP_SPONT"
 * group[=].element[=].target[=].equivalence = #equivalent
 * group[=].element[=].target[=].comment = "Not reviewed."
-
-* group[=].element[+].code = #AutoSet
-* group[=].element[=].display = "AutoSet (S9/AirSense)"
-* group[=].element[=].target[+].code = #475161
-* group[=].element[=].target[=].display = "MDC_VENT_MODE_ISO_CSV_6ACAP"
-* group[=].element[=].target[=].equivalence = #wider
-* group[=].element[=].target[=].comment = "Not reviewed. AutoSet is auto-titrating CPAP — closest IEEE match is CPAP"
-
-* group[=].element[+].code = #ASV
-* group[=].element[=].display = "Adaptive Servo-Ventilation"
-* group[=].element[=].target[+].code = #475198
-* group[=].element[=].target[=].display = "MDC_VENT_MODE_ISO_CSV_vtPS_3CC"
-* group[=].element[=].target[=].equivalence = #wider
-* group[=].element[=].target[=].comment = "Not reviewed. ASV is adaptive — closest IEEE match is volume-targeted PS with Cycle Control"

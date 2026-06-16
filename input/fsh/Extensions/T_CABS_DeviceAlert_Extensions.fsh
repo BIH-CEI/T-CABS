@@ -16,7 +16,7 @@ Description: "Status of the device alert (R6 DeviceAlert.status backport)"
 Extension: T_CABS_Ext_DeviceAlertCode
 Id: t-cabs-ext-device-alert-code
 Title: "T-CABS DeviceAlert Code"
-Description: "Code identifying the alert condition (R6 DeviceAlert.condition.code backport)"
+Description: "Code identifying the alert condition (R6 DeviceAlert.code backport)"
 * ^context[0].type = #element
 * ^context[0].expression = "Basic"
 * value[x] only CodeableConcept
@@ -25,7 +25,7 @@ Description: "Code identifying the alert condition (R6 DeviceAlert.condition.cod
 Extension: T_CABS_Ext_DeviceAlertPresence
 Id: t-cabs-ext-device-alert-presence
 Title: "T-CABS DeviceAlert Presence"
-Description: "Whether the alert condition is currently present (R6 DeviceAlert.condition.presence backport)"
+Description: "Whether the alert condition is currently present (R6 DeviceAlert.presence backport)"
 * ^context[0].type = #element
 * ^context[0].expression = "Basic"
 * value[x] only boolean
@@ -34,20 +34,11 @@ Description: "Whether the alert condition is currently present (R6 DeviceAlert.c
 Extension: T_CABS_Ext_DeviceAlertOccurrence
 Id: t-cabs-ext-device-alert-occurrence
 Title: "T-CABS DeviceAlert Occurrence"
-Description: "Time period during which the alert condition was active (R6 DeviceAlert.condition.timing backport)"
+Description: "Time period during which the alert condition was active (R6 DeviceAlert.occurrence[x] backport)"
 * ^context[0].type = #element
 * ^context[0].expression = "Basic"
 * value[x] only Period
 * valuePeriod 1..1
-
-Extension: T_CABS_Ext_DeviceAlertLimit
-Id: t-cabs-ext-device-alert-limit
-Title: "T-CABS DeviceAlert Limit"
-Description: "The alarm limit range that was exceeded (R6 DeviceAlert.condition.limit backport)"
-* ^context[0].type = #element
-* ^context[0].expression = "Basic"
-* value[x] only Range
-* valueRange 1..1
 
 Extension: T_CABS_Ext_DeviceAlertType
 Id: t-cabs-ext-device-alert-type
@@ -81,11 +72,19 @@ Description: "The device or device metric that is the source of the alert (R6 De
 Extension: T_CABS_Ext_DeviceAlertDerivedFrom
 Id: t-cabs-ext-device-alert-derived-from
 Title: "T-CABS DeviceAlert DerivedFrom"
-Description: "Observation(s) from which this alert was derived (R6 DeviceAlert.derivedFrom backport)"
+Description: "The value (Observation) that caused the alert condition, optionally with the triggering component and the exceeded limit (R6 DeviceAlert.derivedFrom BackboneElement backport)"
 * ^context[0].type = #element
 * ^context[0].expression = "Basic"
-* value[x] only Reference(Observation)
-* valueReference 1..1
+* extension contains
+    observation 1..1 and
+    component 0..1 and
+    limit 0..1
+* extension[observation].value[x] only Reference(Observation)
+* extension[observation].valueReference 1..1
+* extension[component].value[x] only Coding
+* extension[component].valueCoding 1..1
+* extension[limit].value[x] only Range
+* extension[limit].valueRange 1..1
 
 Extension: T_CABS_Ext_DeviceAlertLabel
 Id: t-cabs-ext-device-alert-label

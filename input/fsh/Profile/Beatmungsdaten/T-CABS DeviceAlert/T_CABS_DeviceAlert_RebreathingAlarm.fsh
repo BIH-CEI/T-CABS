@@ -1,5 +1,5 @@
 Profile: T_CABS_DeviceAlert_RebreathingAlarm
-Parent: T_CABS_DeviceAlert
+Parent: T_CABS_DeviceAlert_Event
 Id: t-cabs-device-alert-rebreathing
 Title: "T-CABS DeviceAlert Rebreathing Alarm"
 Description: "Alert for rebreathing of exhaled gas detected (elevated CO2 in inspired gas). No IEEE 11073 or SNOMED CT code available — uses T-CABS custom code."

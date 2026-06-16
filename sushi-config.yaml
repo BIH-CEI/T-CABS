@@ -9,10 +9,10 @@ name: T-CABS
 title: T-CABS Implementation Guide
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 0.2.1
+version: 0.3.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
-releaseLabel: draft
+releaseLabel: ci-build
 # template: t-cabs-template #not supported anymore
 license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 language: en

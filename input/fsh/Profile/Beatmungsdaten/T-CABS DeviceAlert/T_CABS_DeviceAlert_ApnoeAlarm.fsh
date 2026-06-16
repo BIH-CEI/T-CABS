@@ -1,5 +1,5 @@
 Profile: T_CABS_DeviceAlert_ApnoeAlarm
-Parent: T_CABS_DeviceAlert
+Parent: T_CABS_DeviceAlert_Event
 Id: t-cabs-device-alert-apnoe
 Title: "T-CABS DeviceAlert Apnea Alarm"
 Description: "Alert for detected apnea (no respiratory effort within the apnea alarm time)."

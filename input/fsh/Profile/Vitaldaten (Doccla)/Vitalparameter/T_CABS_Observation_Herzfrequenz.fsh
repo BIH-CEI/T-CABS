@@ -9,7 +9,6 @@ For the profile T_CABS_Observation_Herzfrequenz, compatibility with ISiK version
 // Kompatibel zu "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz"
 
 * code.coding = $LOINC#8867-4 //"Heart rate"
-
 * valueQuantity.code = #/min
 * valueQuantity.unit = "/min"
 

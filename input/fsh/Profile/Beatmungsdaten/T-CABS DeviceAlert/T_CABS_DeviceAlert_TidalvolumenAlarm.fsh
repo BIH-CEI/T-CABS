@@ -1,14 +1,11 @@
 Profile: T_CABS_DeviceAlert_TidalvolumenAlarm
-Parent: T_CABS_DeviceAlert
+Parent: T_CABS_DeviceAlert_Limit
 Id: t-cabs-device-alert-tidalvolumen
 Title: "T-CABS DeviceAlert Tidal Volume Alarm"
 Description: "Alert for tidal volume exceeding alarm limits (high or low)."
 
-* extension[alertCode].valueCodeableConcept from T_CABS_ValueSet_VentilationLimitExceedanceCode (required)
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological
-* extension[alertPriority].valueCodeableConcept = $cs-device-alert#medium
 * extension[alertDevice].valueReference only Reference(T_CABS_Device_MDS_Beatmungsgeraet)
-* extension[alertDerivedFrom] 1..* MS
 
 Instance: Example-DeviceAlert-TidalvolumenHoch-ResMed
 InstanceOf: T_CABS_DeviceAlert_TidalvolumenAlarm
@@ -23,11 +20,11 @@ Description: "Tidal volume exceeded upper alarm limit on ResMed ventilator"
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological "Physiological"
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#medium "Medium"
 * extension[alertDevice].valueReference = Reference(Device/beispiel-beatmungsgeraet-resmed)
-* extension[alertDerivedFrom].valueReference = Reference(Observation/Example-TargetVolume-BREAS)
-* extension[alertLimit].valueRange.high.value = 800
-* extension[alertLimit].valueRange.high.unit = "mL"
-* extension[alertLimit].valueRange.high.system = $UCUM
-* extension[alertLimit].valueRange.high.code = #mL
+* extension[alertDerivedFrom].extension[observation].valueReference = Reference(Observation/Example-TargetVolume-BREAS)
+* extension[alertDerivedFrom].extension[limit].valueRange.high.value = 800
+* extension[alertDerivedFrom].extension[limit].valueRange.high.unit = "mL"
+* extension[alertDerivedFrom].extension[limit].valueRange.high.system = $UCUM
+* extension[alertDerivedFrom].extension[limit].valueRange.high.code = #mL
 * extension[alertLabel].valueString = "Vt HIGH"
 * extension[alertSignal][0].extension[activationState].valueCode = #off
 * extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#audible "Audible"

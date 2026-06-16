@@ -52,9 +52,6 @@ Description: "This ValueSet contains codes to represent the different ventilatio
 // Hersteller-spezifische Kennzeichnung via translation erforderlich
 * $IEEE-11073#475138 "MDC_VENT_MODE_ISO_CMV_VC_6ACAPL"
 
-// PCV(TgV) - optional, falls benötigt
-* $IEEE-11073#475150 "MDC_VENT_MODE_ISO_CMV_vtPC"
-
 /*
 aVCV	    - 
 Option 1 - Standard Volume Control mit Assist:

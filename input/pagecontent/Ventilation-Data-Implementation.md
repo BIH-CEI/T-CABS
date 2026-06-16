@@ -553,7 +553,9 @@ T-CABS distinguishes two patterns by which device alerts are coded and detected:
 - `196648` MDC_EVT_HI — measurement exceeded upper limit
 - `196670` MDC_EVT_LO — measurement fell below lower limit
 
-For limit-event alarms, `alertDerivedFrom` is mandatory (1..*) and must reference the observation whose limit was exceeded. This reference identifies which parameter triggered the alarm.
+For limit-event alarms, `alertDerivedFrom` is mandatory (1..*) and must reference the observation whose limit was exceeded. This reference identifies which parameter triggered the alarm. Their **priority is not fixed** at the profile level: the device assigns it per occurrence according to the severity of the exceedance (R6 keeps `priority` as an instance-level element). Event alarms keep a fixed priority, since the event itself determines urgency.
+
+These two patterns are reflected in the profile hierarchy: concrete profiles derive from the abstract [Event Alarm](StructureDefinition-t-cabs-device-alert-event.html) or [Limit Alarm](StructureDefinition-t-cabs-device-alert-limit.html) profile, which in turn derive from the [DeviceAlert Base](StructureDefinition-t-cabs-device-alert.html).
 
 This classification is independent of `alertType` (physiological vs. technical). A disconnection alarm uses the specific-event pattern and has `alertType = technical`; an apnea alarm uses the specific-event pattern and has `alertType = physiological`.
 
@@ -629,20 +631,25 @@ Example instance of a pressure high limit alarm:
     },
     {
       "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derived-from",
-      "valueReference": {
-        "reference": "Observation/Example-DruckMinMax-ResMed"
-      }
-    },
-    {
-      "valueRange": {
-        "high": {
-          "value": 30,
-          "unit": "cm[H2O]",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm[H2O]"
+      "extension": [
+        {
+          "url": "observation",
+          "valueReference": {
+            "reference": "Observation/Example-DruckMinMax-ResMed"
+          }
+        },
+        {
+          "url": "limit",
+          "valueRange": {
+            "high": {
+              "value": 30,
+              "unit": "cm[H2O]",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm[H2O]"
+            }
+          }
         }
-      },
-      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-limit"
+      ]
     },
     {
       "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-label",

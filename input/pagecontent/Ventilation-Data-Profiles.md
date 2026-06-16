@@ -28,14 +28,18 @@
 
 FHIR R6 introduces [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) as a dedicated resource. See [Implementation](Ventilation-Data-Implementation.html#device-alerts-r6-backport) for details.
 
+The alarm profiles follow a three-level hierarchy. The abstract base backports the R6 resource; below it, two abstract profiles separate the two alarm detection patterns — **event-based** alarms (a discrete event with a specific code) and **limit-exceedance** alarms (a measured value crossing a threshold, referencing the triggering Observation). The concrete, manufacturer-facing profiles derive from the matching pattern.
+
 - [DeviceAlert Base (abstract)](StructureDefinition-t-cabs-device-alert.html)
-- [Pressure Alarm](StructureDefinition-t-cabs-device-alert-druck.html)
-- [Tidal Volume Alarm](StructureDefinition-t-cabs-device-alert-tidalvolumen.html)
-- [Minute Volume Alarm](StructureDefinition-t-cabs-device-alert-minutenvolumen.html)
-- [Respiratory Rate Alarm](StructureDefinition-t-cabs-device-alert-atemfrequenz.html)
-- [Apnea Alarm](StructureDefinition-t-cabs-device-alert-apnoe.html)
-- [Disconnection Alarm](StructureDefinition-t-cabs-device-alert-disconnection.html)
-- [Rebreathing Alarm](StructureDefinition-t-cabs-device-alert-rebreathing.html)
+  - [DeviceAlert Event Alarm (abstract)](StructureDefinition-t-cabs-device-alert-event.html) — *Specific-event pattern*
+    - [Apnea Alarm](StructureDefinition-t-cabs-device-alert-apnoe.html)
+    - [Disconnection Alarm](StructureDefinition-t-cabs-device-alert-disconnection.html)
+    - [Rebreathing Alarm](StructureDefinition-t-cabs-device-alert-rebreathing.html)
+  - [DeviceAlert Limit Alarm (abstract)](StructureDefinition-t-cabs-device-alert-limit.html) — *Limit-event pattern*
+    - [Pressure Alarm](StructureDefinition-t-cabs-device-alert-druck.html)
+    - [Tidal Volume Alarm](StructureDefinition-t-cabs-device-alert-tidalvolumen.html)
+    - [Minute Volume Alarm](StructureDefinition-t-cabs-device-alert-minutenvolumen.html)
+    - [Respiratory Rate Alarm](StructureDefinition-t-cabs-device-alert-atemfrequenz.html)
 
 ### Ventilation Procedure Profiles
 

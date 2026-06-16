@@ -6,6 +6,7 @@ Description: "Profile for a pseudonymized patient in the T-CABS study, based on 
 
 * deceased[x] MS
 
+
 // Beispielinstanz (pseudonymisiert)
 Instance: tcabs-patient-example
 InstanceOf: T_CABS_Patient

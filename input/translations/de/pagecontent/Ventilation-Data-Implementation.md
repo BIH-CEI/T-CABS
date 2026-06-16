@@ -402,6 +402,132 @@ Beispielinstanz einer PCV(A)-Beatmungsprozedur:
 ```
 
 
+### DeviceAlerts (R6-Backport)
+
+FHIR R6 führt [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) als eigenständige Ressource für gerätegenerierte Alarme ein. Da T-CABS auf FHIR R4 basiert, wird das Konzept über `Basic` + Extensions backportet. Die vollständige Element-zu-R6-Zuordnung steht auf der [englischen Implementierungsseite](Ventilation-Data-Implementation.html#device-alerts-r6-backport); die Profilübersicht findet sich unter [Profile](Ventilation-Data-Profiles.html).
+
+#### Alarm-Erkennungsmuster
+
+T-CABS unterscheidet zwei Muster, nach denen Gerätealarme kodiert und erkannt werden:
+
+**Ereignis-Alarme** (z.B. Apnoe, Diskonnektion) tragen einen spezifischen IEEE-11073-Ereigniscode, der die Alarmbedingung direkt identifiziert:
+- `199680` MDC_EVT_APNEA — Apnoe erkannt
+- `197172` MDC_EVT_VENT_DISCONN — Patient vom Beatmungsgerät getrennt
+
+**Grenzwert-Alarme** (z.B. Druck zu hoch, Tidalvolumen zu niedrig) tragen einen generischen Richtungscode zusammen mit einer Pflicht-Referenz auf die auslösende Observation:
+- `196648` MDC_EVT_HI — Messwert überschreitet obere Grenze
+- `196670` MDC_EVT_LO — Messwert unterschreitet untere Grenze
+
+Bei Grenzwert-Alarmen ist `alertDerivedFrom` verpflichtend (1..*) und referenziert die Observation, deren Grenze überschritten wurde — diese Referenz identifiziert den auslösenden Parameter. Die **Priorität** ist bei Grenzwert-Alarmen nicht am Profil fixiert: Das Gerät vergibt sie pro Vorkommen nach Schweregrad der Überschreitung (R6 hält `priority` als instanzbezogenes Element). Ereignis-Alarme behalten eine feste Priorität, da das Ereignis selbst die Dringlichkeit bestimmt.
+
+Diese Einordnung ist unabhängig vom `alertType` (physiologisch vs. technisch): Ein Diskonnektionsalarm nutzt das Ereignis-Muster und hat `alertType = technical`; ein Apnoealarm nutzt das Ereignis-Muster und hat `alertType = physiological`.
+
+Die beiden Muster spiegeln sich in der Profilhierarchie: Konkrete Profile erben vom abstrakten [Ereignis-Alarm](StructureDefinition-t-cabs-device-alert-event.html) oder [Grenzwert-Alarm](StructureDefinition-t-cabs-device-alert-limit.html), die wiederum von der [DeviceAlert-Basis](StructureDefinition-t-cabs-device-alert.html) abgeleitet sind.
+
+Beispiel eines Druck-Hoch-Grenzwertalarms (gekürzt; vollständige Instanz siehe [Example-DeviceAlert-DruckHoch-BREAS](Basic-Example-DeviceAlert-DruckHoch-BREAS.html)):
+```json
+{
+  "resourceType": "Basic",
+  "id": "Example-DeviceAlert-DruckHoch-BREAS",
+  "meta": {
+    "profile": [
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-status",
+      "valueCode": "in-progress"
+    },
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "196648",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "MDC_EVT_HI"
+          },
+          {
+            "code": "405495005",
+            "system": "http://snomed.info/sct",
+            "display": "High airway pressure"
+          }
+        ]
+      },
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-code"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-presence",
+      "valueBoolean": true
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "physiological",
+            "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+            "display": "Physiological"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-priority",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "high",
+            "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+            "display": "High"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-device",
+      "valueReference": {
+        "reference": "Device/beispiel-beatmungsgeraet-breas"
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derived-from",
+      "extension": [
+        {
+          "url": "observation",
+          "valueReference": {
+            "reference": "Observation/Example-DruckMinMax-ResMed"
+          }
+        },
+        {
+          "url": "limit",
+          "valueRange": {
+            "high": {
+              "value": 30,
+              "unit": "cm[H2O]",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm[H2O]"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "device-alert",
+        "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+        "display": "Device Alert"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}
+```
+
 ### Implementierungs-Hinweise
 
 #### Device-Setup Reihenfolge

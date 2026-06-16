@@ -1,5 +1,5 @@
 Profile: T_CABS_DeviceAlert_DisconnectionAlarm
-Parent: T_CABS_DeviceAlert
+Parent: T_CABS_DeviceAlert_Event
 Id: t-cabs-device-alert-disconnection
 Title: "T-CABS DeviceAlert Disconnection Alarm"
 Description: "Alert for patient circuit disconnection detected by the ventilator."
