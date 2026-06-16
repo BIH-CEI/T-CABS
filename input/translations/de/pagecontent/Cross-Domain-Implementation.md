@@ -7,13 +7,18 @@ Diese Seite behandelt die Implementierung der grundlegenden Profile für Organis
 
 #### MII-Compliance
 
-Das T-CABS Patient-Profil erweitert das pseudonymisierte MII-Patientenprofil. Patientendaten werden pseudonymisiert gespeichert — es werden keine Namen, Adressen oder Geburtsdaten erfasst. Patienten werden ausschließlich über einen pseudonymisierten Identifikator identifiziert.
+Das T-CABS Patient-Profil erweitert das pseudonymisierte MII-Patientenprofil. Patienten werden über einen pseudonymisierten Identifikator identifiziert. Zur Anonymisierung wird das Geburtsdatum auf das **Geburtsjahr (JJJJ)** reduziert — Monat und Tag dürfen nicht angegeben werden. Dies wird durch die Invariante `tcabs-pat-birthyear` erzwungen.
 
 #### Verwendungszweck
 
-Das Profil gewährleistet eine datenschutzkonforme Patientenidentifikation im telemedizinischen Monitoring. Verpflichtend ist lediglich `Patient.identifier[PseudonymisierterIdentifier]`.
+Das Profil gewährleistet eine datenschutzkonforme Patientenidentifikation im telemedizinischen Monitoring. Verpflichtend sind `Patient.identifier[PseudonymisierterIdentifier]`, `Patient.gender` und `Patient.birthDate` (nur Geburtsjahr).
 
 #### Implementierung
+
+Verpflichtende Angaben für einen T-CABS Patienten:
+- `Patient.identifier[PseudonymisierterIdentifier]` — pseudonymisierter Identifikator
+- `Patient.gender` — administratives Geschlecht
+- `Patient.birthDate` — **nur Geburtsjahr (JJJJ)**; die Invariante `tcabs-pat-birthyear` weist Werte mit Monat oder Tag zurück
 
 Beispielinstanz eines pseudonymisierten Patienten in der T-CABS Studie:
 ```json
@@ -38,6 +43,7 @@ Beispielinstanz eines pseudonymisierten Patienten in der T-CABS Studie:
     }
   ],
   "gender": "male",
+  "birthDate": "1985",
   "deceasedBoolean": false,
   "managingOrganization": {
     "reference": "Organization/CABS"

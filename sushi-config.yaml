@@ -104,6 +104,7 @@ parameters:
   translation-sources:
     - input/translations/de       # Path to German translations
   excludettl: true
+  profile-test-cases: tests/profiles.json   # Negative tests for invariants (expected failures, not QA errors)
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

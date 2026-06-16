@@ -1,0 +1,97 @@
+{
+  "profiles" : [{
+    "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient",
+    "tests" : [{
+      "source" : "patient-birthyear-invalid.json",
+      "description" : "Negative test for invariant tcabs-pat-birthyear: a full birth date (YYYY-MM-DD) must fail validation, since anonymization permits the birth year (YYYY) only.",
+      "valid" : false,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 24
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 28
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient#tcabs-pat-birthyear"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.0"
+          }],
+          "severity" : "error",
+          "code" : "invariant",
+          "details" : {
+            "text" : "Constraint failed: tcabs-pat-birthyear: 'For anonymization, only the birth year (YYYY) may be provided; month and day are not permitted. ($this.toString().matches('^[0-9]{4}$'))' (defined in https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient)"
+          },
+          "expression" : ["Patient.birthDate"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung|0.3.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Ressource gegen Profil https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.0 validieren"
+          },
+          "expression" : ["Patient"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.0"
+          }],
+          "severity" : "warning",
+          "code" : "invariant",
+          "details" : {
+            "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+          },
+          "expression" : ["Patient"]
+        }]
+      }
+    }]
+  }]
+}

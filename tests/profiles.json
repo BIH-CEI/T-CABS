@@ -1,0 +1,14 @@
+{
+  "profiles": [
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient",
+      "tests": [
+        {
+          "source": "patient-birthyear-invalid.json",
+          "description": "Negative test for invariant tcabs-pat-birthyear: a full birth date (YYYY-MM-DD) must fail validation, since anonymization permits the birth year (YYYY) only.",
+          "valid": false
+        }
+      ]
+    }
+  ]
+}

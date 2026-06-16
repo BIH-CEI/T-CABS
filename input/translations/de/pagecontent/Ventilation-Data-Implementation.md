@@ -404,7 +404,7 @@ Beispielinstanz einer PCV(A)-Beatmungsprozedur:
 
 ### DeviceAlerts (R6-Backport)
 
-FHIR R6 führt [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) als eigenständige Ressource für gerätegenerierte Alarme ein. Da T-CABS auf FHIR R4 basiert, wird das Konzept über `Basic` + Extensions backportet. Die vollständige Element-zu-R6-Zuordnung steht auf der [englischen Implementierungsseite](Ventilation-Data-Implementation.html#device-alerts-r6-backport); die Profilübersicht findet sich unter [Profile](Ventilation-Data-Profiles.html).
+FHIR R6 führt [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) als eigenständige Ressource für gerätegenerierte Alarme ein. Da T-CABS auf FHIR R4 basiert, wird das Konzept über `Basic` + Extensions backportet. Die vollständige Element-zu-R6-Zuordnung steht auf der [englischen Implementierungsseite](../Ventilation-Data-Implementation.html#device-alerts-r6-backport); die Profilübersicht findet sich unter [Profile](Ventilation-Data-Profiles.html).
 
 #### Alarm-Erkennungsmuster
 

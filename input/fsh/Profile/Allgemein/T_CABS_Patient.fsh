@@ -6,6 +6,18 @@ Description: "Profile for a pseudonymized patient in the T-CABS study, based on 
 
 * deceased[x] MS
 
+// Pflicht-Demographie
+* gender 1..1 MS
+
+// Anonymisierung: nur das Geburtsjahr (YYYY) — Monat und Tag sind nicht zulässig
+* birthDate 1..1 MS
+* birthDate obeys tcabs-pat-birthyear
+
+Invariant: tcabs-pat-birthyear
+Description: "For anonymization, only the birth year (YYYY) may be provided; month and day are not permitted."
+Severity: #error
+Expression: "$this.toString().matches('^[0-9]{4}$')"
+
 
 // Beispielinstanz (pseudonymisiert)
 Instance: tcabs-patient-example
@@ -16,6 +28,7 @@ Description: "Pseudonymized example patient for the T-CABS project"
 * identifier[PseudonymisierterIdentifier].system = "http://tcabs.example.org/patients"
 * identifier[PseudonymisierterIdentifier].value = "TCABS-PAT-001"
 * gender = #male
+* birthDate = "1985"
 * deceasedBoolean = false
 * managingOrganization = Reference(Organization/CABS)
 * generalPractitioner = Reference(Practitioner/tcabs-practitioner-example)
