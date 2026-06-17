@@ -7,7 +7,7 @@ This page covers the implementation of the fundamental profiles for organization
 
 #### MII Compliance
 
-The T-CABS Patient profile extends the MII pseudonymized patient profile. Patients are identified through a pseudonymized identifier. For anonymization, the date of birth is reduced to the **birth year (YYYY)** only — month and day must not be given. This is enforced by the invariant `tcabs-pat-birthyear`.
+The T-CABS Patient profile extends the MII pseudonymized patient profile. Patients are identified through a pseudonymized identifier. For anonymization, no address data is stored (`Patient.address` is prohibited, `0..0`), and the date of birth is reduced to the **birth year (YYYY)** only — month and day must not be given (enforced by the invariant `tcabs-pat-birthyear`).
 
 #### Purpose
 
@@ -18,6 +18,9 @@ Mandatory specifications for a T-CABS Patient:
 - `Patient.identifier[PseudonymisierterIdentifier]` — pseudonymized identifier
 - `Patient.gender` — administrative gender
 - `Patient.birthDate` — **birth year only (YYYY)**; the invariant `tcabs-pat-birthyear` rejects any value carrying a month or day
+
+Prohibited (anonymization):
+- `Patient.address` — not stored (`0..0`)
 
 **Note:** The repeatability of elements is not specified at this point; it is indicated in the profile representations in the "Card." column.
 

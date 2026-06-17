@@ -9,7 +9,10 @@ Description: "Profile for a pseudonymized patient in the T-CABS study, based on 
 // Pflicht-Demographie
 * gender 1..1 MS
 
-// Anonymisierung: nur das Geburtsjahr (YYYY) — Monat und Tag sind nicht zulässig
+// Anonymisierung
+* address[Strassenanschrift] 0..0   // geerbte MII-Slice zuerst schließen
+* address 0..0   // keine Adressdaten in der Studie
+// nur das Geburtsjahr (YYYY) — Monat und Tag sind nicht zulässig
 * birthDate 1..1 MS
 * birthDate obeys tcabs-pat-birthyear
 
