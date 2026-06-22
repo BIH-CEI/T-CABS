@@ -26,6 +26,6 @@ Description: "Minute volume fell below lower alarm limit on Löwenstein ventilat
 * extension[alertDerivedFrom].extension[limit].valueRange.low.code = #L/min
 * extension[alertLabel].valueString = "MV LOW"
 * extension[alertSignal][0].extension[activationState].valueCode = #on
-* extension[alertSignal][0].extension[presence].valueCode = #present
-* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#audible "Audible"
+* extension[alertSignal][0].extension[presence].valueCode = #on
+* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#auditory "Auditory"
 * subject = Reference(Patient/tcabs-patient-example)

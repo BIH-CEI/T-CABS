@@ -27,5 +27,5 @@ Description: "Tidal volume exceeded upper alarm limit on ResMed ventilator"
 * extension[alertDerivedFrom].extension[limit].valueRange.high.code = #mL
 * extension[alertLabel].valueString = "Vt HIGH"
 * extension[alertSignal][0].extension[activationState].valueCode = #off
-* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#audible "Audible"
+* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#auditory "Auditory"
 * subject = Reference(Patient/tcabs-patient-example)

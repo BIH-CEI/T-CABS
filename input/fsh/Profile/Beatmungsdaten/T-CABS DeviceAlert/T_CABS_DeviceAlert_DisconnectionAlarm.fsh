@@ -25,5 +25,5 @@ Description: "Patient circuit disconnection detected on Löwenstein ventilator"
 * extension[alertDevice].valueReference = Reference(Device/beispiel-beatmungsgeraet-loewenstein)
 * extension[alertLabel].valueString = "DISCONNECT"
 * extension[alertSignal][0].extension[activationState].valueCode = #off
-* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#audible "Audible"
+* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#auditory "Auditory"
 * subject = Reference(Patient/tcabs-patient-example)

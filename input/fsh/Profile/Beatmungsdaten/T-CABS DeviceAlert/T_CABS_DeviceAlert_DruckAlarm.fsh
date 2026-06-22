@@ -27,9 +27,9 @@ Description: "Airway pressure exceeded upper alarm limit on BREAS ventilator"
 * extension[alertDerivedFrom].extension[limit].valueRange.high.code = #cm[H2O]
 * extension[alertLabel].valueString = "Pdruck HOCH"
 * extension[alertSignal][0].extension[activationState].valueCode = #on
-* extension[alertSignal][0].extension[presence].valueCode = #present
-* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#audible "Audible"
+* extension[alertSignal][0].extension[presence].valueCode = #on
+* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#auditory "Auditory"
 * extension[alertSignal][+].extension[activationState].valueCode = #on
-* extension[alertSignal][=].extension[presence].valueCode = #present
+* extension[alertSignal][=].extension[presence].valueCode = #on
 * extension[alertSignal][=].extension[manifestation].valueCodeableConcept = $cs-device-alert#visual "Visual"
 * subject = Reference(Patient/tcabs-patient-example)

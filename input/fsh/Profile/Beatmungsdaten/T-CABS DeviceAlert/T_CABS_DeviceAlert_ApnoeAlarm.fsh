@@ -24,9 +24,9 @@ Description: "Apnea detected on ResMed ventilator - no respiratory effort for 20
 * extension[alertDevice].valueReference = Reference(Device/beispiel-beatmungsgeraet-resmed)
 * extension[alertLabel].valueString = "APNEA"
 * extension[alertSignal][0].extension[activationState].valueCode = #on
-* extension[alertSignal][0].extension[presence].valueCode = #present
-* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#audible "Audible"
+* extension[alertSignal][0].extension[presence].valueCode = #on
+* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#auditory "Auditory"
 * extension[alertSignal][+].extension[activationState].valueCode = #on
-* extension[alertSignal][=].extension[presence].valueCode = #present
+* extension[alertSignal][=].extension[presence].valueCode = #on
 * extension[alertSignal][=].extension[manifestation].valueCodeableConcept = $cs-device-alert#visual "Visual"
 * subject = Reference(Patient/tcabs-patient-example)

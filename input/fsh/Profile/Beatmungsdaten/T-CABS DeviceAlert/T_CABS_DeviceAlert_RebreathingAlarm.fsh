@@ -22,9 +22,9 @@ Description: "Rebreathing detected on BREAS ventilator - elevated CO2 in inspire
 * extension[alertDevice].valueReference = Reference(Device/beispiel-beatmungsgeraet-breas)
 * extension[alertLabel].valueString = "REBREATHING"
 * extension[alertSignal][0].extension[activationState].valueCode = #on
-* extension[alertSignal][0].extension[presence].valueCode = #present
-* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#audible "Audible"
+* extension[alertSignal][0].extension[presence].valueCode = #on
+* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#auditory "Auditory"
 * extension[alertSignal][+].extension[activationState].valueCode = #on
-* extension[alertSignal][=].extension[presence].valueCode = #present
+* extension[alertSignal][=].extension[presence].valueCode = #on
 * extension[alertSignal][=].extension[manifestation].valueCodeableConcept = $cs-device-alert#visual "Visual"
 * subject = Reference(Patient/tcabs-patient-example)

@@ -28,5 +28,5 @@ Description: "Respiratory rate exceeded upper alarm limit on BREAS ventilator"
 * extension[alertDerivedFrom].extension[limit].valueRange.high.code = #/min
 * extension[alertLabel].valueString = "RR HIGH"
 * extension[alertSignal][0].extension[activationState].valueCode = #off
-* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#audible "Audible"
+* extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#auditory "Auditory"
 * subject = Reference(Patient/tcabs-patient-example)

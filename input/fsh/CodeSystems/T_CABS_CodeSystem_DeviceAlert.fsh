@@ -31,11 +31,11 @@ Description: "CodeSystem for DeviceAlert resource type, status, type, priority, 
 * #off "Off" "The signal is currently inactive"
 * #paused "Paused" "The signal is temporarily paused"
 
-// Signal presence codes (R6 DeviceAlert.signal.presence)
-* #present "Present" "The signal is present"
-* #absent "Absent" "The signal is absent"
+// Signal presence codes (R6 DeviceAlert.signal.presence: on | latched | off | ack; on/off shared with activationState)
+* #latched "Latched" "The signal persists although the condition is no longer present, until manually reset"
+* #ack "Acknowledged" "The signal was manually ended while the condition is still present"
 
-// Signal manifestation codes
-* #audible "Audible" "An audible signal (e.g., alarm tone)"
+// Signal manifestation codes (R6 DeviceAlert.signal.manifestation: auditory | visual | vibratory)
+* #auditory "Auditory" "An auditory signal (e.g., alarm tone)"
 * #visual "Visual" "A visual signal (e.g., flashing LED)"
-* #vibration "Vibration" "A tactile vibration signal"
+* #vibratory "Vibratory" "A tactile vibration signal"

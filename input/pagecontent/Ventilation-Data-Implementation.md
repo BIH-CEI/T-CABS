@@ -408,7 +408,7 @@ FHIR R6 introduces [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealer
 
 #### Extension Mapping to R6 DeviceAlert
 
-Element paths refer to the R6 DeviceAlert resource as of ballot4 (May 2026). Note that some elements (e.g. `derivedFrom`) are BackboneElements in R6; the backport flattens these to simple typed extensions.
+Element paths refer to the R6 DeviceAlert resource as of ballot4 (May 2026). BackboneElements in R6 (e.g. `derivedFrom`, `signal`) are backported as complex extensions whose sub-extensions mirror the R6 sub-elements.
 
 | Extension | R6 Element | Type | Card. |
 |-----------|------------|------|-------|
@@ -416,15 +416,16 @@ Element paths refer to the R6 DeviceAlert resource as of ballot4 (May 2026). Not
 | `alertCode` | `code` | CodeableConcept | 1..1 |
 | `alertPresence` | `presence` | boolean | 1..1 |
 | `alertOccurrence` | `occurrence[x]` | Period (R6 also allows dateTime) | 0..1 |
-| `alertLimit` | `derivedFrom.limit` (flattened to resource level) | Range | 0..1 |
 | `alertType` | `type` | CodeableConcept | 0..1 |
 | `alertPriority` | `priority` | CodeableConcept | 0..1 |
 | `alertDevice` | `device` | Reference(Device \| DeviceMetric) | 0..1 |
-| `alertDerivedFrom` | `derivedFrom.observation` (flattened, BackboneElement substructure not preserved) | Reference(Observation) | 0..* |
+| `alertDerivedFrom` | `derivedFrom` (complex: `observation` 1..1, `component` 0..1, `limit` 0..1 sub-extensions) | complex | 0..* |
 | `alertLabel` | `label` | string | 0..1 |
 | `alertSignal` | `signal` (with `activationState`, `presence`, `manifestation`, `indication` sub-extensions) | complex | 0..* |
 
-Elements from R6 DeviceAlert that are **not yet backported** in T-CABS 0.2.x: `identifier`, `procedure`, `category`, `encounter`, `acknowledged`, `acknowledgedBy`, `location`, `derivedFrom.component`, `signal.annunciator`, `signal.type`. Signal codes for `presence` (T-CABS: `present`/`absent`) and `manifestation` (`audible`/`vibration`) diverge from R6 (`on`/`latched`/`off`/`ack`; `auditory`/`vibratory`) — full alignment is planned for v0.3.0.
+Signal codes follow R6 ballot4: `signal.presence` uses `on | latched | off | ack` and `signal.manifestation` uses `auditory | visual | vibratory` (`signal.activationState`: `on | off | paused`).
+
+Optional R6 DeviceAlert elements that are **intentionally not backported** (not required by the resource and not needed for the T-CABS use case): `identifier`, `procedure`, `category`, `encounter`, `acknowledged`, `acknowledgedBy`, `location`, `signal.annunciator`, `signal.type`.
 
 Example instance of a Diconnection alarm:
 ```json
@@ -514,9 +515,9 @@ Example instance of a Diconnection alarm:
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "audible",
+                "code": "auditory",
                 "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
-                "display": "Audible"
+                "display": "Auditory"
               }
             ]
           }
