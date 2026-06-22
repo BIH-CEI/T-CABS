@@ -10,6 +10,7 @@ Description: "Profile for a pseudonymized patient in the T-CABS study, based on 
 * gender 1..1 MS
 
 // Anonymisierung
+* name 0..0   // keine Namen in der Studie
 * address[Strassenanschrift] 0..0   // geerbte MII-Slice zuerst schließen
 * address 0..0   // keine Adressdaten in der Studie
 // nur das Geburtsjahr (YYYY) — Monat und Tag sind nicht zulässig
