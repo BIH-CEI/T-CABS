@@ -408,6 +408,10 @@ FHIR R6 führt [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.ht
 
 #### Alarm-Erkennungsmuster
 
+Die Alarmprofile bilden eine dreistufige Hierarchie, die diese beiden Muster abbildet:
+
+{% include img.html img="T-CABS_DeviceAlert_UML.svg" %}
+
 T-CABS unterscheidet zwei Muster, nach denen Gerätealarme kodiert und erkannt werden:
 
 **Ereignis-Alarme** (z.B. Apnoe, Diskonnektion) tragen einen spezifischen IEEE-11073-Ereigniscode, der die Alarmbedingung direkt identifiziert:

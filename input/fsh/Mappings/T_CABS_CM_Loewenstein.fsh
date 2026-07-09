@@ -22,7 +22,7 @@ Usage: #definition
 * group[=].element[=].target[0].code = #151586
 * group[=].element[=].target[=].display = "MDC_VENT_RESP_RATE"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Median respiratory frequency, unit: breaths/min. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — the measured rate also includes patient-triggered breaths, not only the set minimum). Code kept. Median respiratory frequency, unit: breaths/min. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
 
 * group[=].element[+].code = #minuteVolumeMedian_l_min
 * group[=].element[=].display = "Minute Volume (median)"
@@ -108,11 +108,11 @@ Usage: #definition
 * group[=].element[=].target[0].code = #151586
 * group[=].element[=].target[=].display = "MDC_VENT_RESP_RATE"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Setting, unit: /min. Range: 0-60. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — the measured rate also includes patient-triggered breaths, not only the set minimum). Code kept. Setting, unit: /min. Range: 0-60. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
 
 * group[=].element[+].code = #Ti
 * group[=].element[=].display = "Inspiratory Time (Ti)"
 * group[=].element[=].target[0].code = #152416
 * group[=].element[=].target[=].display = "MDC_VENT_TIME_PD_INSP"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Setting, unit: s. Range: 0.5-4.0, increment: 0.1 s. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — IEEE code is restricted to time-cycled ventilation (partial overlap)). Code kept. Setting, unit: s. Range: 0.5-4.0, increment: 0.1 s. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"

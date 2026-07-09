@@ -9,6 +9,16 @@
           "valid": false
         }
       ]
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck",
+      "tests": [
+        {
+          "source": "devicealert-limit-direction-invalid.json",
+          "description": "Negative test for invariant tcabs-limit-direction: a high-limit alarm (MDC_EVT_HI) that only sets derivedFrom.limit.low (no high) must fail validation.",
+          "valid": false
+        }
+      ]
     }
   ]
 }

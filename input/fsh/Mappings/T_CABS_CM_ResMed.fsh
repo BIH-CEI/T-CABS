@@ -21,7 +21,7 @@ Usage: #definition
 * group[=].element[=].target[0].code = #151586
 * group[=].element[=].target[=].display = "MDC_VENT_RESP_RATE"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. clinicalMetrics.respRate.50, unit: breaths/min. Percentiles available: .5, .50, .95, .max. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — the measured rate also includes patient-triggered breaths, not only the set minimum). Code kept. clinicalMetrics.respRate.50, unit: breaths/min. Percentiles available: .5, .50, .95, .max. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
 
 * group[=].element[+].code = #minuteVent.50
 * group[=].element[=].display = "Median minute ventilation"
@@ -100,14 +100,14 @@ Usage: #definition
 * group[=].element[=].target[0].code = #151586
 * group[=].element[=].target[=].display = "MDC_VENT_RESP_RATE"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. set.respRate, unit: breaths/min. Stellar/Astral devices. Also: set.backupRate. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — the measured rate also includes patient-triggered breaths, not only the set minimum). Code kept. set.respRate, unit: breaths/min. Stellar/Astral devices. Also: set.backupRate. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
 
 * group[=].element[+].code = #set.Ti
 * group[=].element[=].display = "Ti setting"
 * group[=].element[=].target[0].code = #152416
 * group[=].element[=].target[=].display = "MDC_VENT_TIME_PD_INSP"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. set.Ti, unit: seconds. Stellar/Astral only. Also: set.tiMin, set.tiMax. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — IEEE code is restricted to time-cycled ventilation (partial overlap)). Code kept. set.Ti, unit: seconds. Stellar/Astral only. Also: set.tiMin, set.tiMax. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
 
 * group[=].element[+].code = #set.tidalVolume
 * group[=].element[=].display = "Tidal Volume setting"
@@ -121,14 +121,14 @@ Usage: #definition
 * group[=].element[=].target[0].code = #151793
 * group[=].element[=].target[=].display = "MDC_PRESS_AWAY_MAX"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Container code accepted. set.maxPress, unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MaxPress component)"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 3, another confirmed it as exact — code denotes general airway pressure rather than an explicit max concept). Code kept. set.maxPress, unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MaxPress component)"
 
 * group[=].element[+].code = #set.minPress
 * group[=].element[=].display = "Minimum pressure"
 * group[=].element[=].target[0].code = #151794
 * group[=].element[=].target[=].display = "MDC_PRESS_AWAY_MIN"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Container code accepted. set.minPress, unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MinPress component)"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 3, another confirmed it as exact — code denotes general airway pressure rather than an explicit min concept). Code kept. set.minPress, unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MinPress component)"
 
 // ---- Usage Data ----
 

@@ -22,7 +22,7 @@ Usage: #definition
 * group[=].element[=].target[0].code = #150016
 * group[=].element[=].target[=].display = "MDC_PRESS_BLD_NONINV"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Doccla UniFHIR v2 verified. Panel code. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — the LOINC second code may include paediatric blood pressure). Code kept. Doccla UniFHIR v2 verified. Panel code. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-arteriellerblutdruck"
 
 * group[=].element[+].code = #72313002
 * group[=].element[=].display = "Systolic arterial pressure (observable entity)"

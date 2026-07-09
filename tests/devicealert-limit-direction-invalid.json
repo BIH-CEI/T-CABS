@@ -1,0 +1,81 @@
+{
+  "resourceType": "Basic",
+  "id": "devicealert-limit-direction-invalid",
+  "meta": {
+    "profile": [
+      "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-status",
+      "valueCode": "in-progress"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-code",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "196648",
+            "display": "MDC_EVT_HI"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "405495005",
+            "display": "High airway pressure"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-presence",
+      "valueBoolean": true
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+            "code": "physiological"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derived-from",
+      "extension": [
+        {
+          "url": "observation",
+          "valueReference": {
+            "reference": "Observation/Example-DruckMinMax-ResMed"
+          }
+        },
+        {
+          "url": "limit",
+          "valueRange": {
+            "low": {
+              "value": 5,
+              "unit": "cm[H2O]",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm[H2O]"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+        "code": "device-alert",
+        "display": "Device Alert"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/tcabs-patient-example"
+  }
+}

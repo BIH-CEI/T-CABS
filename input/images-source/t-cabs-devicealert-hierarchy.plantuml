@@ -1,0 +1,45 @@
+@startuml t-cabs-devicealert-hierarchy
+title T-CABS DeviceAlert Profile Hierarchy (R6 Backport)
+hide empty members
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+
+abstract class "DeviceAlert\n(Basic backport)" as Base
+abstract class "Event Alarm" as Event
+abstract class "Limit Alarm" as Limit
+
+class "Apnea" as Apnea
+class "Disconnection" as Disconnection
+class "Rebreathing" as Rebreathing
+
+class "Pressure" as Druck
+class "Respiratory Rate" as Atemfrequenz
+class "Tidal Volume" as Tidalvolumen
+class "Minute Volume" as Minutenvolumen
+
+Base <|-- Event
+Base <|-- Limit
+
+Event <|-- Apnea
+Event <|-- Disconnection
+Event <|-- Rebreathing
+
+Limit <|-- Druck
+Limit <|-- Atemfrequenz
+Limit <|-- Tidalvolumen
+Limit <|-- Minutenvolumen
+
+note right of Event
+  Specific-event pattern:
+  specific IEEE 11073 code,
+  no limit reference
+end note
+
+note right of Limit
+  Limit-event pattern:
+  MDC_EVT_HI / MDC_EVT_LO
+  + derivedFrom -> Observation
+  priority assigned per occurrence
+end note
+
+@enduml

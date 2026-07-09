@@ -93,5 +93,156 @@
         }]
       }
     }]
+  },
+  {
+    "url" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck",
+    "tests" : [{
+      "source" : "devicealert-limit-direction-invalid.json",
+      "description" : "Negative test for invariant tcabs-limit-direction: a high-limit alarm (MDC_EVT_HI) that only sets derivedFrom.limit.low (no high) must fail validation.",
+      "valid" : false,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-limit#tcabs-limit-direction"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.0"
+          }],
+          "severity" : "error",
+          "code" : "invariant",
+          "details" : {
+            "text" : "Constraint failed: tcabs-limit-direction: 'A high-limit alarm (MDC_EVT_HI) must carry an upper limit (derivedFrom.limit.high); a low-limit alarm (MDC_EVT_LO) must carry a lower limit (derivedFrom.limit.low). ((extension('https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-code').value.ofType(CodeableConcept).coding.where(code='196648').exists() implies extension('https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derived-from').extension('limit').value.ofType(Range).high.exists()) and (extension('https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-code').value.ofType(CodeableConcept).coding.where(code='196670').exists() implies extension('https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derived-from').extension('limit').value.ofType(Range).low.exists()))' (defined in https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-limit)"
+          },
+          "expression" : ["Basic"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 69
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 4
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "TerminologyEngine"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "MSG_DRAFT"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.0"
+          }],
+          "severity" : "information",
+          "code" : "business-rule",
+          "details" : {
+            "text" : "Reference to draft CodeSystem https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert|0.3.0"
+          },
+          "expression" : ["Basic.code"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 37
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 8
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "TerminologyEngine"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "MSG_DRAFT"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.0"
+          }],
+          "severity" : "information",
+          "code" : "business-rule",
+          "details" : {
+            "text" : "Reference to draft CodeSystem https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert|0.3.0"
+          },
+          "expression" : ["Basic.extension[3].value.ofType(CodeableConcept)"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Ressource gegen Profil https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.0 validieren"
+          },
+          "expression" : ["Basic"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.0"
+          }],
+          "severity" : "warning",
+          "code" : "invariant",
+          "details" : {
+            "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+          },
+          "expression" : ["Basic"]
+        }]
+      }
+    }]
   }]
 }

@@ -544,6 +544,10 @@ Example instance of a Diconnection alarm:
 
 #### Alarm Detection Patterns
 
+The alarm profiles form a three-level hierarchy that mirrors these two patterns:
+
+{% include img.html img="T-CABS_DeviceAlert_UML.svg" %}
+
 T-CABS distinguishes two patterns by which device alerts are coded and detected:
 
 **Specific-event alarms** (e.g., apnea, disconnection) use specific IEEE 11073 event codes that identify the alarm condition directly:

@@ -14,7 +14,6 @@ This page contains examples for the cross-domain profiles that are used across a
 ### Practitioner Examples
 
 - [T-CABS Practitioner Example](Practitioner-tcabs-practitioner-example.html)
-- [T-CABS PractitionerRole Example](PractitionerRole-tcabs-practitioner-role-example.html)
 
 ### Clinical Workflow Examples
 

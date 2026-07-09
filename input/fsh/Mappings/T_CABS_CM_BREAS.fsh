@@ -21,7 +21,7 @@ Usage: #definition
 * group[=].element[=].target[0].code = #151586
 * group[=].element[=].target[=].display = "MDC_VENT_RESP_RATE"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. AggregateDto (min/avg/max), unit: BPM. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — the measured rate also includes patient-triggered breaths, not only the set minimum). Code kept. AggregateDto (min/avg/max), unit: BPM. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
 
 * group[=].element[+].code = #minuteVolume
 * group[=].element[=].display = "Minute Volume"
@@ -100,21 +100,21 @@ Usage: #definition
 * group[=].element[=].target[0].code = #152416
 * group[=].element[=].target[=].display = "MDC_VENT_TIME_PD_INSP"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Device setting (ID 14), unit: s. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — IEEE code is restricted to time-cycled ventilation (partial overlap)). Code kept. Device setting (ID 14), unit: s. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
 
 * group[=].element[+].code = #MaxInspiratoryPressure
 * group[=].element[=].display = "Max Pressure"
 * group[=].element[=].target[0].code = #151793
 * group[=].element[=].target[=].display = "MDC_PRESS_AWAY_MAX"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Container code accepted. Device setting (ID 8), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MaxPress component)"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 3, another confirmed it as exact — code denotes general airway pressure rather than an explicit max concept). Code kept. Device setting (ID 8), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MaxPress component)"
 
 * group[=].element[+].code = #MinInspiratoryPressure
 * group[=].element[=].display = "Min Pressure"
 * group[=].element[=].target[0].code = #151794
 * group[=].element[=].target[=].display = "MDC_PRESS_AWAY_MIN"
 * group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Container code accepted. Device setting (ID 9), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MinPress component)"
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 3, another confirmed it as exact — code denotes general airway pressure rather than an explicit min concept). Code kept. Device setting (ID 9), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MinPress component)"
 
 // ---- Usage Data (PatientAverageSummary) ----
 

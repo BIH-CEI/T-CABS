@@ -12,7 +12,6 @@
 ### Rollen und Funktionen*
 
 - [Practitioner](Practitioner-tcabs-practitioner-example.html)
-- [PractitionerRole](PractitionerRole-tcabs-practitioner-role-example.html)
 
 ### Studienbezogene Profile*
 
