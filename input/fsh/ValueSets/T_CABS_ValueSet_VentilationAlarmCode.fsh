@@ -11,6 +11,8 @@ Description: "Alarm condition codes for home ventilation device alerts. Uses IEE
 // IEEE 11073 - Specific event codes (Partition 3)
 * $IEEE-11073#199680 "MDC_EVT_APNEA"
 * $IEEE-11073#197172 "MDC_EVT_VENT_DISCONN"
+* $IEEE-11073#197184 "MDC_EVT_FLOW_OBSTRUC"
+* $IEEE-11073#198322 "MDC_EVT_LEAK_EXCESSIVE"
 
 // SNOMED CT
 * $SCT#405495005 "High airway pressure"

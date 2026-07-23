@@ -94,6 +94,8 @@ Diese Seite listet die erstellten ValueSets des T-CABS Projekts auf:
 |------|---------|--------------|
 | `199680` | MDC_EVT_APNEA | ApnoeAlarm-Profil |
 | `197172` | MDC_EVT_VENT_DISCONN | DisconnectionAlarm-Profil |
+| `197184` | MDC_EVT_FLOW_OBSTRUC | ObstruktionAlarm-Profil |
+| `198322` | MDC_EVT_LEAK_EXCESSIVE | LeckageAlarm-Profil |
 
 #### SNOMED CT
 
