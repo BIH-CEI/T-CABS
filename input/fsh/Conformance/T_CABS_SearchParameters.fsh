@@ -84,3 +84,75 @@ Description: "Search for DeviceAlerts by their alarm code (IEEE 11073 or SNOMED 
 * type = #token
 * expression = "Basic.extension.where(url='https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-code').value.as(CodeableConcept)"
 * multipleOr = true
+
+Instance: t-cabs-sp-alert-patient
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "T-CABS SearchParameter: DeviceAlert by Patient"
+Description: "Search for DeviceAlerts by the patient they concern"
+* url = "https://bih-cei.github.io/T-CABS/SearchParameter/t-cabs-sp-alert-patient"
+* status = #active
+* code = #patient
+* name = "TCABSAlertPatient"
+* base = #Basic
+* type = #reference
+* expression = "Basic.subject"
+* target = #Patient
+* multipleOr = true
+
+Instance: t-cabs-sp-alert-status
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "T-CABS SearchParameter: DeviceAlert by Status"
+Description: "Search for DeviceAlerts by their status (in-progress, completed, entered-in-error, unknown)"
+* url = "https://bih-cei.github.io/T-CABS/SearchParameter/t-cabs-sp-alert-status"
+* status = #active
+* code = #alert-status
+* name = "TCABSAlertStatus"
+* base = #Basic
+* type = #token
+* expression = "Basic.extension.where(url='https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-status').value.as(code)"
+* multipleOr = true
+
+Instance: t-cabs-sp-alert-occurrence
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "T-CABS SearchParameter: DeviceAlert by Occurrence"
+Description: "Search for DeviceAlerts by the time the alarm occurred"
+* url = "https://bih-cei.github.io/T-CABS/SearchParameter/t-cabs-sp-alert-occurrence"
+* status = #active
+* code = #alert-occurrence
+* name = "TCABSAlertOccurrence"
+* base = #Basic
+* type = #date
+* expression = "Basic.extension.where(url='https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-occurrence').value"
+
+Instance: t-cabs-sp-alert-derived-from
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "T-CABS SearchParameter: DeviceAlert by Triggering Observation"
+Description: "Search for limit-exceedance DeviceAlerts by the Observation whose limit was exceeded (alertDerivedFrom)"
+* url = "https://bih-cei.github.io/T-CABS/SearchParameter/t-cabs-sp-alert-derived-from"
+* status = #active
+* code = #alert-derived-from
+* name = "TCABSAlertDerivedFrom"
+* base = #Basic
+* type = #reference
+* expression = "Basic.extension.where(url='https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derived-from').extension.where(url='observation').value.as(Reference)"
+* target = #Observation
+* multipleOr = true
+
+Instance: t-cabs-sp-alert-device
+InstanceOf: SearchParameter
+Usage: #definition
+Title: "T-CABS SearchParameter: DeviceAlert by Detecting Device"
+Description: "Search for DeviceAlerts by the device that raised the alarm (alertDevice)"
+* url = "https://bih-cei.github.io/T-CABS/SearchParameter/t-cabs-sp-alert-device"
+* status = #active
+* code = #alert-device
+* name = "TCABSAlertDevice"
+* base = #Basic
+* type = #reference
+* expression = "Basic.extension.where(url='https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-device').value.as(Reference)"
+* target = #Device
+* multipleOr = true

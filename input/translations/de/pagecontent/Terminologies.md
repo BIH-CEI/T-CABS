@@ -75,4 +75,55 @@ Diese Seite listet die erstellten ValueSets des T-CABS Projekts auf:
 
 ---
 
+### T-CABS ValueSet Beatmungs-Alarmcode
+
+**Link**: [ValueSet Ventilation Alarm Code](ValueSet-t-cabs-valueset-ventilation-alarm-code.html)
+
+**Beschreibung**: Übergreifender Katalog der Alarmcodes, die in den T-CABS-DeviceAlert-Profilen verwendet werden. An FHIR R6 DeviceAlert angeglichen: Grenzwert-Alarme nutzen die generischen Partition-3-Ereigniscodes `MDC_EVT_HI`/`MDC_EVT_LO`; der konkrete Parameter wird über die `alertDerivedFrom`-Referenz des Alarms identifiziert. Nur informativer Überblick — die DeviceAlert-Profile fixieren ihren Code entweder direkt (Apnoe/Diskonnektion/Rebreathing) oder binden an den enger gefassten [ValueSet Ventilation Limit Exceedance Code](ValueSet-t-cabs-valueset-ventilation-limit-exceedance-code.html) (Grenzwert-Alarme).
+
+#### IEEE 11073 — Generische Grenzwert-Ereignisse (Partition 3)
+
+| Code | Displayname | Verwendet wenn |
+|------|---------|--------------|
+| `196648` | MDC_EVT_HI | Messwert überschreitet obere Alarmgrenze |
+| `196670` | MDC_EVT_LO | Messwert unterschreitet untere Alarmgrenze |
+
+#### IEEE 11073 — Spezifische Ereigniscodes (Partition 3)
+
+| Code | Displayname | Verwendet von |
+|------|---------|--------------|
+| `199680` | MDC_EVT_APNEA | ApnoeAlarm-Profil |
+| `197172` | MDC_EVT_VENT_DISCONN | DisconnectionAlarm-Profil |
+
+#### SNOMED CT
+
+| Code | Displayname | Verwendet von |
+|------|---------|--------------|
+| `405495005` | High airway pressure | DruckAlarm-Beispiele (Hochdruck-Fall; im Profil nicht als Pattern fixiert, da richtungsspezifisch) |
+| `59127000` | Apnea alarm | ApnoeAlarm-Profil (neben MDC_EVT_APNEA) |
+| `416260008` | Ventilator disconnection alarm | DisconnectionAlarm-Profil (neben MDC_EVT_VENT_DISCONN) |
+
+#### T-CABS Custom
+
+| Code | Displayname | Beschreibung |
+|------|---------|--------------|
+| `rebreathing` | Rebreathing Alarm | Rückatmung ausgeatmeten Gases erkannt (erhöhtes CO2). Kein IEEE-11073- oder SNOMED-CT-Code verfügbar. Verwendet vom RebreathingAlarm-Profil. |
+
+---
+
+### T-CABS ValueSet Ventilation Limit Exceedance Code
+
+**Link**: [ValueSet Ventilation Limit Exceedance Code](ValueSet-t-cabs-valueset-ventilation-limit-exceedance-code.html)
+
+**Beschreibung**: Eingeschränkter Satz generischer IEEE-11073-Partition-3-Grenzwert-Ereigniscodes. Wird (required) von den vier Grenzwert-Alarm-DeviceAlert-Profilen gebunden (Druck, Atemfrequenz, Tidalvolumen, Minutenvolumen). Der überwachte Parameter wird durch das bindende Profil und die `alertDerivedFrom`-Referenz des Alarms auf die auslösende Observation identifiziert — nicht durch den IEEE-Code selbst.
+
+#### IEEE 11073 — Generische Grenzwert-Ereignisse (Partition 3)
+
+| Code | Displayname | Verwendet wenn |
+|------|---------|--------------|
+| `196648` | MDC_EVT_HI | Messwert überschreitet obere Alarmgrenze |
+| `196670` | MDC_EVT_LO | Messwert unterschreitet untere Alarmgrenze |
+
+---
+
 **Hinweis:**Die Inhalte wurden von der Ärzteschaft des CABS definiert und vom Berlin Institute of Health (BIH) kodiert. Wenn Kodierungen fehlen bitte ein [Github Issues](https://github.com/BIH-CEI/T-CABS/issues) anlegen.

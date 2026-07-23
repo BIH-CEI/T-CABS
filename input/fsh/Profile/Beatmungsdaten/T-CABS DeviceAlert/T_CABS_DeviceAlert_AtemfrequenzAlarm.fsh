@@ -13,11 +13,10 @@ InstanceOf: T_CABS_DeviceAlert_AtemfrequenzAlarm
 Usage: #example
 Title: "Example Respiratory Rate High Alert BREAS"
 Description: "Respiratory rate exceeded upper alarm limit on BREAS ventilator"
-* extension[alertStatus].valueCode = #completed
+* extension[alertStatus].valueCode = #in-progress
 * extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#196648 "MDC_EVT_HI"
-* extension[alertPresence].valueBoolean = false
+* extension[alertPresence].valueBoolean = true
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T01:30:00+01:00"
-* extension[alertOccurrence].valuePeriod.end = "2024-01-15T01:31:15+01:00"
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological "Physiological"
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#medium "Medium"
 * extension[alertDevice].valueReference = Reference(Device/beispiel-beatmungsgeraet-breas)
@@ -27,6 +26,7 @@ Description: "Respiratory rate exceeded upper alarm limit on BREAS ventilator"
 * extension[alertDerivedFrom].extension[limit].valueRange.high.system = $UCUM
 * extension[alertDerivedFrom].extension[limit].valueRange.high.code = #/min
 * extension[alertLabel].valueString = "RR HIGH"
-* extension[alertSignal][0].extension[activationState].valueCode = #off
+* extension[alertSignal][0].extension[activationState].valueCode = #on
+* extension[alertSignal][0].extension[presence].valueCode = #on
 * extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#auditory "Auditory"
 * subject = Reference(Patient/tcabs-patient-example)
