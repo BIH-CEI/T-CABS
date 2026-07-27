@@ -35,6 +35,8 @@ The alarm profiles follow a three-level hierarchy. The abstract base backports t
     - [Apnea Alarm](StructureDefinition-t-cabs-device-alert-apnoe.html)
     - [Disconnection Alarm](StructureDefinition-t-cabs-device-alert-disconnection.html)
     - [Rebreathing Alarm](StructureDefinition-t-cabs-device-alert-rebreathing.html)
+    - [Obstruction Alarm](StructureDefinition-t-cabs-device-alert-obstruction.html)
+    - [Leakage Alarm](StructureDefinition-t-cabs-device-alert-leakage.html)
   - [DeviceAlert Limit Alarm (abstract)](StructureDefinition-t-cabs-device-alert-limit.html) — *Limit-event pattern*
     - [Pressure Alarm](StructureDefinition-t-cabs-device-alert-druck.html)
     - [Tidal Volume Alarm](StructureDefinition-t-cabs-device-alert-tidalvolumen.html)

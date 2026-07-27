@@ -35,6 +35,8 @@ Die Alarmprofile folgen einer dreistufigen Hierarchie. Die abstrakte Basis backp
     - [Apnoealarm](StructureDefinition-t-cabs-device-alert-apnoe.html)
     - [Diskonnektionsalarm](StructureDefinition-t-cabs-device-alert-disconnection.html)
     - [Rückatmungsalarm](StructureDefinition-t-cabs-device-alert-rebreathing.html)
+    - [Obstruktionsalarm](StructureDefinition-t-cabs-device-alert-obstruction.html)
+    - [Leckagealarm](StructureDefinition-t-cabs-device-alert-leakage.html)
   - [DeviceAlert Grenzwert-Alarm (abstrakt)](StructureDefinition-t-cabs-device-alert-limit.html) — *Limit-event-Muster*
     - [Druckalarm](StructureDefinition-t-cabs-device-alert-druck.html)
     - [Tidalvolumenalarm](StructureDefinition-t-cabs-device-alert-tidalvolumen.html)

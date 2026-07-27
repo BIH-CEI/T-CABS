@@ -11,6 +11,8 @@ abstract class "Limit Alarm" as Limit
 class "Apnea" as Apnea
 class "Disconnection" as Disconnection
 class "Rebreathing" as Rebreathing
+class "Obstruction" as Obstruction
+class "Leakage" as Leakage
 
 class "Pressure" as Druck
 class "Respiratory Rate" as Atemfrequenz
@@ -23,6 +25,8 @@ Base <|-- Limit
 Event <|-- Apnea
 Event <|-- Disconnection
 Event <|-- Rebreathing
+Event <|-- Obstruction
+Event <|-- Leakage
 
 Limit <|-- Druck
 Limit <|-- Atemfrequenz
