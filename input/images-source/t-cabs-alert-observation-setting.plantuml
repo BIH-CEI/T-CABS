@@ -1,0 +1,83 @@
+@startuml t-cabs-alert-observation-setting
+' T-CABS — Reference chain: DeviceAlert -> measured Observation -> setting,
+' linked on the DeviceMetric level via the PoCD relation extension (kind = PS).
+' Object diagram of the coherent BREAS respiratory-rate example.
+
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam defaultFontName Verdana
+skinparam defaultFontSize 12
+skinparam ArrowColor #003754
+skinparam ArrowFontColor #003754
+
+skinparam object {
+  BorderColor #003754
+  BackgroundColor #E0FFFF
+  AttributeFontColor #333333
+}
+
+title DeviceAlert → measured Observation → setting
+
+object "Example-DeviceAlert-AtemfrequenzHoch-BREAS\n«DeviceAlert»" as alert #FFE0E0 {
+  alertCode = MDC_EVT_HI 196648
+  alertType = physiological
+  limit.high = 30 /min
+}
+
+object "Example-Atemfrequenz-BREAS-gemessen\n«Observation» measured" as measObs {
+  code = MDC_VENT_RESP_RATE 151586
+  value = 32 /min
+  status = final
+}
+
+object "Example-Atemfrequenz-BREAS-Setting\n«Observation» setting = backup rate" as setObs #FFF6D5 {
+  code = MDC_VENT_RESP_RATE 151586
+  value = 12 /min
+  referenceRange.low = 8 /min
+  referenceRange.high = 30 /min
+  referenceRange.type = therapeutic
+}
+
+object "beispiel-devicemetric-breas-atemfrequenz\n«DeviceMetric»" as measDM {
+  category = measurement
+  type = MDC_VENT_RESP_RATE 151586
+  unit = /min
+}
+
+object "beispiel-devicemetric-breas-atemfrequenz-set\n«DeviceMetric»" as setDM #FFF6D5 {
+  category = setting
+  relation.kind = PS
+}
+
+object "beispiel-channel-breas-atemfrequenz\n«Channel» shared" as chan #F0F0F0 {
+  type = MDC_DEV_ANALY_RESP_RATE_CHAN 69723
+}
+object "beispiel-vmd-breas-atemfrequenz\n«VMD»" as vmd #F0F0F0 {
+  type = MDC_DEV_SYS_PT_VENT_VMD 70002
+}
+object "beispiel-beatmungsgeraet-breas\n«MDS» Ventilator" as mds #F0F0F0 {
+  manufacturer = BREAS Medical
+  deviceName = Vivo45
+}
+object "beispiel-beatmung-breas\n«Procedure»" as proc #F0F0F0 {
+  category = invasive mech. ventilation
+  mode = 475147
+}
+
+alert --> measObs : alertDerivedFrom.observation
+alert ..> mds : alertDevice
+
+measObs --> measDM : device
+setObs  --> setDM  : device
+
+setDM --> measDM : relation kind=PS presets
+
+measDM --> chan : parent
+setDM  --> chan : parent
+chan --> vmd : parent
+vmd --> mds : parent
+
+measObs ..> proc : partOf
+setObs  ..> proc : partOf
+
+@enduml

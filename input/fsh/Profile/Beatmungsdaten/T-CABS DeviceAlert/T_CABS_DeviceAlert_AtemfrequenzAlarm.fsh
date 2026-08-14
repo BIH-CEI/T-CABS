@@ -16,11 +16,11 @@ Description: "Respiratory rate exceeded upper alarm limit on BREAS ventilator"
 * extension[alertStatus].valueCode = #in-progress
 * extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#196648 "MDC_EVT_HI"
 * extension[alertPresence].valueBoolean = true
-* extension[alertOccurrence].valuePeriod.start = "2024-01-15T01:30:00+01:00"
+* extension[alertOccurrence].valuePeriod.start = "2024-01-15T23:20:00+01:00"
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological "Physiological"
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#medium "Medium"
 * extension[alertDevice].valueReference = Reference(Device/beispiel-beatmungsgeraet-breas)
-* extension[alertDerivedFrom].extension[observation].valueReference = Reference(Observation/Example-Atemfrequenz-ResMed-gemessen)
+* extension[alertDerivedFrom].extension[observation].valueReference = Reference(Observation/Example-Atemfrequenz-BREAS-gemessen)
 * extension[alertDerivedFrom].extension[limit].valueRange.high.value = 30
 * extension[alertDerivedFrom].extension[limit].valueRange.high.unit = "/min"
 * extension[alertDerivedFrom].extension[limit].valueRange.high.system = $UCUM

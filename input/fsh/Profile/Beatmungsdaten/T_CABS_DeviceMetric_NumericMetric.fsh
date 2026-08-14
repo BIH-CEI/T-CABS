@@ -227,3 +227,51 @@ Description: "Example of a DeviceMetric for target volume setting of a BREAS ven
 * calibration.state = #calibrated
 * source = Reference(Device/beispiel-beatmungsgeraet-breas)
 * parent = Reference(Device/beispiel-channel-breas-targetvolume)
+
+// -----------------------------------------------------------------------------
+// Respiratory rate: measured value + set (backup) value of the SAME parameter.
+// Both metrics share VMD + Channel (PoCD-conform). The measurement metric is
+// linked to its setting via the PoCD relation extension (kind = PS, Presetting)
+// carried on the SETTING metric — this is the model-true "measurement <-> setting"
+// edge, NOT an Observation-to-Observation reference.
+// -----------------------------------------------------------------------------
+Instance: beispiel-devicemetric-breas-atemfrequenz
+InstanceOf: T_CABS_DeviceMetric_NumericMetric
+Usage: #example
+Title: "Example DeviceMetric BREAS Respiratory Rate (measured)"
+Description: "Example of a DeviceMetric for the measured respiratory rate of a BREAS ventilator."
+* identifier.system = "http://tcabs.example.org/device-metric"
+* identifier.value = "DM-BREAS-ATEMFREQ-001"
+* type = $IEEE-11073#151586 "MDC_VENT_RESP_RATE"
+* unit = $UCUM#/min "/min"
+* operationalStatus = #on
+* color = #cyan
+* category = #measurement
+* measurementPeriod.repeat.frequency = 1
+* measurementPeriod.repeat.period = 1
+* measurementPeriod.repeat.periodUnit = #min
+* calibration.type = #gain
+* calibration.state = #calibrated
+* source = Reference(Device/beispiel-beatmungsgeraet-breas)
+* parent = Reference(Device/beispiel-channel-breas-atemfrequenz)
+
+Instance: beispiel-devicemetric-breas-atemfrequenz-set
+InstanceOf: T_CABS_DeviceMetric_NumericMetric
+Usage: #example
+Title: "Example DeviceMetric BREAS Respiratory Rate (setting)"
+Description: "Example of a DeviceMetric for the SET (backup) respiratory rate of a BREAS ventilator. Linked to the corresponding measurement DeviceMetric via the PoCD relation extension (kind = PS, Presetting): this setting is a presetting for the measured respiratory rate metric."
+* identifier.system = "http://tcabs.example.org/device-metric"
+* identifier.value = "DM-BREAS-ATEMFREQ-001-set"
+* type = $IEEE-11073#151586 "MDC_VENT_RESP_RATE"
+* unit = $UCUM#/min "/min"
+* operationalStatus = #on
+* color = #magenta
+* category = #setting
+* source = Reference(Device/beispiel-beatmungsgeraet-breas)
+* parent = Reference(Device/beispiel-channel-breas-atemfrequenz)
+// PoCD relation: this SETTING metric is a presetting (PS) for the MEASUREMENT metric
+* extension[0].url = "http://hl7.org/fhir/uv/pocd/StructureDefinition/relation"
+* extension[0].extension[0].url = "kind"
+* extension[0].extension[0].valueCode = #PS
+* extension[0].extension[1].url = "entries"
+* extension[0].extension[1].valueReference = Reference(DeviceMetric/beispiel-devicemetric-breas-atemfrequenz)

@@ -137,3 +137,15 @@ Description: "Example of a target volume channel for grouping target volume sett
 * deviceName.name = "Target Volume Setting Channel"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-vmd-breas-targetvolume)
+
+Instance: beispiel-channel-breas-atemfrequenz
+InstanceOf: T_CABS_Device_Channel_Beatmungsgeraet
+Usage: #example
+Title: "Example Channel BREAS Respiratory Rate"
+Description: "Example of a respiratory rate channel that groups both the measured and the set (backup) respiratory rate DeviceMetrics of a BREAS ventilator (shared hardware subsystem, independent of metric category)."
+* identifier.system = "http://tcabs.example.org/device-channel"
+* identifier.value = "CHAN-BREAS-ATEMFREQ-001"
+* type.coding = $IEEE-11073#69723 "MDC_DEV_ANALY_RESP_RATE_CHAN"
+* deviceName.name = "Respiratory Rate Channel"
+* deviceName.type = #user-friendly-name
+* parent = Reference(Device/beispiel-vmd-breas-atemfrequenz)

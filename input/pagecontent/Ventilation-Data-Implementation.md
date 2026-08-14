@@ -564,6 +564,18 @@ These two patterns are reflected in the profile hierarchy: concrete profiles der
 
 This classification is independent of `alertType` (physiological vs. technical). A disconnection alarm uses the specific-event pattern and has `alertType = technical`; an apnea alarm uses the specific-event pattern and has `alertType = physiological`.
 
+#### From alarm to measured value to setting
+
+A limit-event alarm references the **measured** value that crossed the threshold. The corresponding **setting** (e.g. the configured backup respiratory rate) is a separate `Observation` — and, importantly, the measurement is **not** linked to the setting through an `Observation`-to-`Observation` reference. Following the PoCD model, both observations only reference their `DeviceMetric` (`Observation.device`), and the measurement/setting relationship is expressed **on the DeviceMetric level** via the PoCD [`relation`](https://build.fhir.org/ig/HL7/uv-pocd/StructureDefinition-relation.html) extension — carried on the **setting** `DeviceMetric` (`kind = PS`, *Presetting*) and pointing to the measured metric. Measurement and setting of the same parameter therefore share the same VMD and Channel, while their metric role is distinguished solely by `DeviceMetric.category` (`measurement` vs. `setting`).
+
+The configured alarm limits are stored on the setting `Observation` as `referenceRange` (`low`/`high`, `type = therapeutic`). In the coherent BREAS respiratory-rate example below, the measured value (32/min) exceeds the upper limit `referenceRange.high` (30/min) → high alarm; the ventilator's set backup rate is 12/min:
+
+{% include img.html img="T-CABS_Alert_Observation_Setting.svg" %}
+
+[Download SVG format](T-CABS_Alert_Observation_Setting.svg)
+
+The only direct reference the alarm carries is `alertDerivedFrom.observation` → the measured `Observation`; it also mirrors the crossed limit in `alertDerivedFrom.limit`, matching the setting's `referenceRange.high`. From there, the setting is reached via the device metrics: the measured `Observation.device` points to the measured `DeviceMetric`, which the setting `DeviceMetric` links back to through its `relation` extension (`kind = PS`); that setting `DeviceMetric` is in turn referenced by the setting `Observation.device`. All of these resources belong to the same physical ventilator (`DeviceMetric.source` → the MDS Device).
+
 Example instance of a pressure high limit alarm:
 ```json
 {

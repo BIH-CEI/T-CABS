@@ -137,3 +137,15 @@ Description: "Example of a virtual target volume module of a BREAS ventilator"
 * deviceName.name = "Vivo45 Target Volume Module"
 * deviceName.type = #user-friendly-name
 * parent = Reference(Device/beispiel-beatmungsgeraet-breas)
+
+Instance: beispiel-vmd-breas-atemfrequenz
+InstanceOf: T_CABS_Device_VMD_Beatmungsgeraet
+Usage: #example
+Title: "Example VMD BREAS Respiratory Rate Module"
+Description: "Example of a virtual respiratory rate module of a BREAS ventilator. Groups the measured and the set (backup) respiratory rate of the same parameter (PoCD-conform: measurement and setting share VMD and Channel)."
+* identifier.system = "http://tcabs.example.org/device-vmd"
+* identifier.value = "VMD-BREAS-ATEMFREQ-001"
+* type.coding = $IEEE-11073#70002 "MDC_DEV_SYS_PT_VENT_VMD"
+* deviceName.name = "Vivo65 Respiratory Rate Module"
+* deviceName.type = #user-friendly-name
+* parent = Reference(Device/beispiel-beatmungsgeraet-breas)

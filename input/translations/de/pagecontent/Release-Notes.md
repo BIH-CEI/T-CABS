@@ -19,19 +19,21 @@ Jede Änderung wird mit einer der folgenden Kategorien versehen:
 
 ### v0.3.0 (in Entwicklung) — Draft
 
-**`feature`** **Dreistufige DeviceAlert-Hierarchie** eingeführt: abstrakte Basisprofile `T_CABS_DeviceAlert_Event` und `T_CABS_DeviceAlert_Limit`, von denen die sieben konkreten Alarm-Profile je nach Muster abgeleitet sind
+**`feature`** **DeviceAlert-Profile** in eine dreistufige Hierarchie überführt (Event- / Limit-Basisprofile) und zwei Ereignis-Alarme ergänzt: **Obstruktion** (`197184`) und **Leckage** (`198322`)
 
-**`improve`** **Limit-Alarme tragen nur den generischen Richtungsmarker** (`MDC_EVT_HI`/`MDC_EVT_LO`); parameter-spezifische IEEE-/SNOMED-Codes wurden entfernt, da spezifische Codes nicht symmetrisch für beide Richtungen existieren — der Parameter wird allein über `alertDerivedFrom` identifiziert
+**`improve`** Limit-Alarme tragen nur den generischen `MDC_EVT_HI`/`MDC_EVT_LO`-Marker — der Parameter wird über `alertDerivedFrom` identifiziert
 
-**`improve`** **DeviceAlert-Signal-Codes** an R6 ballot4 angeglichen: `signal.presence` (`on`/`latched`/`off`/`ack`), `signal.manifestation` (`auditory`/`visual`/`vibratory`); `alertDerivedFrom` als komplexe Extension (`observation`/`component`/`limit`) modelliert
+**`improve`** DeviceAlert-**Signal-Codes an R6 angeglichen** und `alertDerivedFrom` als komplexe Extension modelliert (`observation`/`component`/`limit`)
 
-**`fix`** Invariante **`tcabs-limit-direction`** ergänzt (ein High-Limit-Alarm muss `limit.high` tragen, ein Low-Limit-Alarm `limit.low`) mit Negativtest
+**`fix`** Invariante **`tcabs-limit-direction`** ergänzt (HI ⇒ `limit.high`, LO ⇒ `limit.low`) mit Negativtest
 
-**`improve`** **Patient-Profil** weiter minimiert: `gender` und `birthDate` verpflichtend, `birthDate` auf das Jahr beschränkt (Invariante `tcabs-pat-birthyear`, Negativtest), `name 0..0`, `address 0..0`
+**`feature`** Durchgängiges **Atemfrequenz-Beispiel** ergänzt — DeviceAlert → gemessene Observation → Geräte-Einstellung, verknüpft über die PoCD-Extension `relation` auf DeviceMetric-Ebene, mit Objektdiagramm
 
-**`feature`** Seite **Metadata & FAIR** ergänzt (Englisch + Deutsch): RDA- / FHIR-for-FAIR-Selbstbewertung, Lizenzierung und package-list-Provenance
+**`feature`** **5 weitere DeviceAlert-SearchParameters** ergänzt (11 gesamt)
 
-**`documentation`** ConceptMap-Review-Provenance explizit gemacht (anonyme Minderheits-Voten bei trotz Einwand beibehaltenen Mappings)
+**`improve`** **Patient-Profil** weiter minimiert — nur Geschlecht und Geburtsjahr verpflichtend, kein Name/keine Adresse
+
+**`feature`** Seite **Metadata & FAIR** ergänzt (RDA- / FHIR-for-FAIR-Selbstbewertung)
 
 ---
 

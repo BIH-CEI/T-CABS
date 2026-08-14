@@ -93,6 +93,52 @@ Description: "Initial submission of ventilation data: Patient, Organization, com
 * entry[=].request.method = #POST
 * entry[=].request.url = "Basic"
 
+// ── Coherent respiratory-rate chain: Alert → measured Observation → setting ──
+// Device tree (VMD/Channel), both DeviceMetrics (measured + set, relation-linked),
+// both Observations and the high-limit alarm derived from the measured value.
+
+// 14 — VMD respiratory rate
+* entry[+].fullUrl = "urn:uuid:b4c5d6e7-f809-41a2-b3c4-d5e6f70819a2"
+* entry[=].resource = beispiel-vmd-breas-atemfrequenz
+* entry[=].request.method = #POST
+* entry[=].request.url = "Device"
+
+// 15 — Channel respiratory rate
+* entry[+].fullUrl = "urn:uuid:c5d6e7f8-091a-42b3-c4d5-e6f70819a2b3"
+* entry[=].resource = beispiel-channel-breas-atemfrequenz
+* entry[=].request.method = #POST
+* entry[=].request.url = "Device"
+
+// 16 — DeviceMetric respiratory rate (measured)
+* entry[+].fullUrl = "urn:uuid:d6e7f809-1a2b-43c4-d5e6-f70819a2b3c4"
+* entry[=].resource = beispiel-devicemetric-breas-atemfrequenz
+* entry[=].request.method = #POST
+* entry[=].request.url = "DeviceMetric"
+
+// 17 — DeviceMetric respiratory rate (setting, relation → measured)
+* entry[+].fullUrl = "urn:uuid:e7f8091a-2b3c-44d5-e6f7-0819a2b3c4d5"
+* entry[=].resource = beispiel-devicemetric-breas-atemfrequenz-set
+* entry[=].request.method = #POST
+* entry[=].request.url = "DeviceMetric"
+
+// 18 — Observation respiratory rate (measured, 32/min — triggers the alarm)
+* entry[+].fullUrl = "urn:uuid:f8091a2b-3c4d-45e6-f708-19a2b3c4d5e6"
+* entry[=].resource = Example-Atemfrequenz-BREAS-gemessen
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+
+// 19 — Observation respiratory rate (set backup rate, 12/min)
+* entry[+].fullUrl = "urn:uuid:091a2b3c-4d5e-46f7-0819-a2b3c4d5e6f7"
+* entry[=].resource = Example-Atemfrequenz-BREAS-Setting
+* entry[=].request.method = #POST
+* entry[=].request.url = "Observation"
+
+// 20 — DeviceAlert (respiratory rate high, limit-based, derivedFrom measured)
+* entry[+].fullUrl = "urn:uuid:1a2b3c4d-5e6f-4708-19a2-b3c4d5e6f708"
+* entry[=].resource = Example-DeviceAlert-AtemfrequenzHoch-BREAS
+* entry[=].request.method = #POST
+* entry[=].request.url = "Basic"
+
 
 // ── Bundle 1b: Follow-up — Folgeübermittlung ─────────────────────────────────
 // Patient und Geräte existieren bereits (PUT = Update).

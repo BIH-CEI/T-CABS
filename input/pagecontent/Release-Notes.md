@@ -19,19 +19,21 @@ Each change is tagged with one of the following categories:
 
 ### v0.3.0 (in development) — Draft
 
-**`feature`** Introduced a **three-level DeviceAlert hierarchy**: abstract `T_CABS_DeviceAlert_Event` and `T_CABS_DeviceAlert_Limit` base profiles, with the seven concrete alarm profiles derived from the matching pattern
+**`feature`** Reworked the **DeviceAlert profiles** into a three-level hierarchy (Event / Limit base profiles) and added two event alarms: **Obstruction** (`197184`) and **Leakage** (`198322`)
 
-**`improve`** **Limit alarms carry only the generic direction marker** (`MDC_EVT_HI`/`MDC_EVT_LO`); parameter-specific IEEE/SNOMED codes were dropped, since specific codes do not exist symmetrically for both directions — the parameter is identified solely via `alertDerivedFrom`
+**`improve`** Limit alarms carry only the generic `MDC_EVT_HI`/`MDC_EVT_LO` marker — the parameter is identified via `alertDerivedFrom`
 
-**`improve`** Aligned **DeviceAlert signal codes** to R6 ballot4: `signal.presence` (`on`/`latched`/`off`/`ack`), `signal.manifestation` (`auditory`/`visual`/`vibratory`); `alertDerivedFrom` modelled as a complex extension (`observation`/`component`/`limit`)
+**`improve`** Aligned DeviceAlert **signal codes to R6** and modelled `alertDerivedFrom` as a complex extension (`observation`/`component`/`limit`)
 
-**`fix`** Added invariant **`tcabs-limit-direction`** (a high-limit alarm must carry `limit.high`, a low-limit alarm `limit.low`) with a negative test case
+**`fix`** Added invariant **`tcabs-limit-direction`** (HI ⇒ `limit.high`, LO ⇒ `limit.low`) with a negative test
 
-**`improve`** **Patient profile** further minimised: `gender` and `birthDate` mandatory, `birthDate` constrained to year only (invariant `tcabs-pat-birthyear`, negative test), `name 0..0`, `address 0..0`
+**`feature`** Added a worked **respiratory-rate example** — DeviceAlert → measured Observation → device setting, linked via the PoCD `relation` extension on the DeviceMetric level, with an object diagram
 
-**`feature`** Added **Metadata & FAIR** page (English + German): RDA / FHIR-for-FAIR self-assessment, licensing and package-list provenance
+**`feature`** Added **5 further DeviceAlert SearchParameters** (11 in total)
 
-**`documentation`** Made ConceptMap review provenance explicit (anonymous minority votes on mappings kept despite objection)
+**`improve`** Further minimised the **Patient profile** — mandatory gender and birth-year only, no name or address
+
+**`feature`** Added the **Metadata & FAIR** self-assessment page (RDA / FHIR-for-FAIR)
 
 ---
 

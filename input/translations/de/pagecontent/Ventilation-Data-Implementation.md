@@ -404,7 +404,34 @@ Beispielinstanz einer PCV(A)-Beatmungsprozedur:
 
 ### DeviceAlerts (R6-Backport)
 
-FHIR R6 führt [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) als eigenständige Ressource für gerätegenerierte Alarme ein. Da T-CABS auf FHIR R4 basiert, wird das Konzept über `Basic` + Extensions backportet. Die vollständige Element-zu-R6-Zuordnung steht auf der [englischen Implementierungsseite](../Ventilation-Data-Implementation.html#device-alerts-r6-backport); die Profilübersicht findet sich unter [Profile](Ventilation-Data-Profiles.html).
+FHIR R6 führt [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) als eigenständige Ressource für gerätegenerierte Alarme ein. Da T-CABS auf FHIR R4 basiert, wird das R6-DeviceAlert-Konzept über `Basic` als Trägerressource backportet (gemäß der [FHIR-Anleitung zu Basic](http://hl7.org/fhir/R4/basic.html)):
+
+- **`Basic.code`** ist fest auf `device-alert` gesetzt und kennzeichnet die Ressource als DeviceAlert
+- **`Basic.subject`** referenziert den Patienten
+- Alle R6-DeviceAlert-Elemente werden als **Extensions** abgebildet
+
+Die Profilübersicht findet sich unter [Profile](Ventilation-Data-Profiles.html).
+
+#### Extension-Mapping auf R6 DeviceAlert
+
+Die Elementpfade beziehen sich auf die R6-DeviceAlert-Ressource (Stand ballot4, Mai 2026). BackboneElements in R6 (z.B. `derivedFrom`, `signal`) werden als komplexe Extensions backportet, deren Sub-Extensions die R6-Unterelemente spiegeln.
+
+| Extension | R6-Element | Typ | Kard. |
+|-----------|------------|-----|-------|
+| `alertStatus` | `status` | code | 1..1 |
+| `alertCode` | `code` | CodeableConcept | 1..1 |
+| `alertPresence` | `presence` | boolean | 1..1 |
+| `alertOccurrence` | `occurrence[x]` | Period (R6 erlaubt auch dateTime) | 0..1 |
+| `alertType` | `type` | CodeableConcept | 0..1 |
+| `alertPriority` | `priority` | CodeableConcept | 0..1 |
+| `alertDevice` | `device` | Reference(Device \| DeviceMetric) | 0..1 |
+| `alertDerivedFrom` | `derivedFrom` (komplex: `observation` 1..1, `component` 0..1, `limit` 0..1 Sub-Extensions) | komplex | 0..* |
+| `alertLabel` | `label` | string | 0..1 |
+| `alertSignal` | `signal` (mit Sub-Extensions `activationState`, `presence`, `manifestation`, `indication`) | komplex | 0..* |
+
+Signal-Codes folgen R6 ballot4: `signal.presence` nutzt `on | latched | off | ack` und `signal.manifestation` nutzt `auditory | visual | vibratory` (`signal.activationState`: `on | off | paused`).
+
+Optionale R6-DeviceAlert-Elemente, die **bewusst nicht gebackportet** werden (von der Ressource nicht verlangt und für den T-CABS-Use-Case nicht benötigt): `identifier`, `procedure`, `category`, `encounter`, `acknowledged`, `acknowledgedBy`, `location`, `signal.annunciator`, `signal.type`.
 
 #### Alarm-Erkennungsmuster
 
@@ -425,6 +452,18 @@ T-CABS unterscheidet zwei Muster, nach denen Gerätealarme kodiert und erkannt w
 Bei Grenzwert-Alarmen ist `alertDerivedFrom` verpflichtend (1..*) und referenziert die Observation, deren Grenze überschritten wurde — diese Referenz identifiziert den auslösenden Parameter. Grenzwert-Alarme tragen **ausschließlich** den generischen Richtungsmarker (`MDC_EVT_HI`/`MDC_EVT_LO`); es wird kein parameter-spezifischer IEEE- oder SNOMED-Code ergänzt, der Parameter wird allein über `alertDerivedFrom` identifiziert. Das ist bewusst so gewählt: Spezifische Ereigniscodes existieren über die Beatmungsparameter hinweg nicht symmetrisch für Hoch- und Niedrig-Richtung, sodass ein einheitliches Modell aus „generischer Marker plus Observations-Referenz" alle Grenzwert-Alarme konsistent hält und keine Spezifität vortäuscht, die die Terminologie nicht hergibt. Die **Priorität** ist bei Grenzwert-Alarmen nicht am Profil fixiert: Das Gerät vergibt sie pro Vorkommen nach Schweregrad der Überschreitung (R6 hält `priority` als instanzbezogenes Element). Ereignis-Alarme behalten eine feste Priorität, da das Ereignis selbst die Dringlichkeit bestimmt.
 
 Diese Einordnung ist unabhängig vom `alertType` (physiologisch vs. technisch): Ein Diskonnektionsalarm nutzt das Ereignis-Muster und hat `alertType = technical`; ein Apnoealarm nutzt das Ereignis-Muster und hat `alertType = physiological`.
+
+#### Vom Alarm über den Messwert zur Einstellung
+
+Ein Grenzwert-Alarm referenziert den **gemessenen** Wert, der die Schwelle überschritten hat. Die zugehörige **Einstellung** (z. B. die konfigurierte Backup-Atemfrequenz) ist eine eigene `Observation` — und wichtig: Die Messung ist **nicht** über eine `Observation`-zu-`Observation`-Referenz mit der Einstellung verknüpft. Dem PoCD-Modell folgend referenzieren beide Observations nur ihre `DeviceMetric` (`Observation.device`); die Mess-/Einstellungs-Beziehung wird **auf DeviceMetric-Ebene** über die PoCD-Extension [`relation`](https://build.fhir.org/ig/HL7/uv-pocd/StructureDefinition-relation.html) ausgedrückt — getragen von der **Einstellungs**-`DeviceMetric` (`kind = PS`, *Presetting*) und auf die Mess-Metric zeigend. Messung und Einstellung desselben Parameters teilen sich daher dieselbe VMD und denselben Channel, während ihre Metrik-Rolle allein über `DeviceMetric.category` (`measurement` vs. `setting`) unterschieden wird.
+
+Die konfigurierten Alarmgrenzen liegen an der Einstellungs-`Observation` als `referenceRange` (`low`/`high`, `type = therapeutic`). Im zusammenhängenden BREAS-Atemfrequenz-Beispiel unten überschreitet der Messwert (32/min) die obere Grenze `referenceRange.high` (30/min) → Hochalarm; die eingestellte Backup-Rate des Geräts beträgt 12/min:
+
+{% include img.html img="T-CABS_Alert_Observation_Setting.svg" %}
+
+[SVG-Format herunterladen](T-CABS_Alert_Observation_Setting.svg)
+
+Die einzige direkte Referenz des Alarms ist `alertDerivedFrom.observation` → die gemessene `Observation`; zusätzlich spiegelt er die überschrittene Grenze in `alertDerivedFrom.limit`, passend zur `referenceRange.high` der Einstellung. Von dort wird die Einstellung über die DeviceMetrics erreicht: Die `Observation.device` der Messung zeigt auf die Mess-`DeviceMetric`, auf die die Einstellungs-`DeviceMetric` über ihre `relation`-Extension (`kind = PS`) zurückverweist; diese Einstellungs-`DeviceMetric` wird ihrerseits von der `Observation.device` der Einstellung referenziert. Alle diese Ressourcen gehören zum selben physischen Beatmungsgerät (`DeviceMetric.source` → das MDS-Device).
 
 Die beiden Muster spiegeln sich in der Profilhierarchie: Konkrete Profile erben vom abstrakten [Ereignis-Alarm](StructureDefinition-t-cabs-device-alert-event.html) oder [Grenzwert-Alarm](StructureDefinition-t-cabs-device-alert-limit.html), die wiederum von der [DeviceAlert-Basis](StructureDefinition-t-cabs-device-alert.html) abgeleitet sind.
 
