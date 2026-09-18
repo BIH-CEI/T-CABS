@@ -26,7 +26,11 @@ This page lists the created ValueSets of the T-CABS project:
 
 | Code | Display Name | Description | *Designation | 
 |------|---------|--------------|
-| `475172` | MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC | Pressure Control | PCV | 
+| `475149` | MDC_VENT_MODE_ISO_CMV_PC_6ACAP | PC: Pressure Control, CMV: Controlled Mandatory Ventilation — Continuous pressure-controlled ventilation allowing spontaneous breathing (open system) during the entire respiratory cycle. May include selectable adjuncts. | PCV, T |
+| `475151` | MDC_VENT_MODE_ISO_CMV_vtPC_6ACAP | Continuous pressure-controlled ventilation with target volume. May include selectable adjuncts. | PCV(TgV) |
+| `475138` | MDC_VENT_MODE_ISO_CMV_VC_6ACAPL | VC: Volume Control, CMV: Controlled Mandatory Ventilation — Continuous volume-controlled ventilation with fixed inspiratory flow. May include selectable adjuncts. | VCV-MPV, MPVv |
+| `475162` | MDC_VENT_MODE_ISO_CSV_PS_6ACAP | SPN: Spontaneous, CPAP: Continuous Positive Airway Pressure, PS: Pressure Support — Spontaneous breathing with continuous positive pressure level with or without pressure support. May include selectable adjuncts. | S, PSV without mandatory backup rate |
+| `475198` | MDC_VENT_MODE_ISO_CSV_vtPS_3CC | Volume Support | iVAPS |
 | `475147` | MDC_VENT_MODE_ISO_AC_PC_6ACAP | PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts. | PCV(A) | 
 | `475148` | MDC_VENT_MODE_ISO_AC_vtPC_6ACAP | PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, with tidal volume target and pressure regulation, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts. |PCV(A+TgV) | 
 | `475154` | MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015 | PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts. | PSV | 
@@ -61,17 +65,17 @@ This page lists the created ValueSets of the T-CABS project:
 
 **Link**: [ValueSet PHD Type](ValueSet-t-cabs-valueset-phdtyp.html)
 
-**Description**: This ValueSet contains IEEE 11073 codes to represent PHD measurement devices.
+**Description**: This ValueSet contains IEEE 11073 codes to represent PHD measurement devices. The spirometer entry is taken from the PHD MissingMDCCodes code system, as no MDC code has been published for it.
 
 | Code | Display Name | Description |
 |------|---------|--------------|
 | `528388` | MDC_DEV_SPEC_PROFILE_PULS_OXIM | Pulse oximeter |
 | `528399` | MDC_DEV_SPEC_PROFILE_SCALE | Scale |
-| `69876` | MDC_DEV_METER_STRENGTH_MUSCL | Hand strength meter (dynamometer) |
+| `528426` | MDC_DEV_SPEC_PROFILE_HF_STRENGTH | Hand strength meter (dynamometer) |
 | `528391` | MDC_DEV_SPEC_PROFILE_BP | Sphygmomanometer |
-| `69680` | MDC_DEV_ANALY_AWAY_MULTI_PARAM | Spirometer |
+| `528413` | MDC_DEV_SPEC_PROFILE_SPIROMETER | Spirometer (from the PHD MissingMDCCodes code system — not yet published in MDC) |
 | `528484` | MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER | Step counter |
-| `528405` | MDC_DEV_SPEC_PROFILE_BCA | Peak flow meter |
+| `528405` | MDC_DEV_SPEC_PROFILE_PEFM | Peak flow meter |
 
 ---
 
@@ -79,7 +83,7 @@ This page lists the created ValueSets of the T-CABS project:
 
 **Link**: [ValueSet Ventilation Alarm Code](ValueSet-t-cabs-valueset-ventilation-alarm-code.html)
 
-**Description**: Umbrella catalogue of alarm codes used in T-CABS DeviceAlert profiles. Aligned with FHIR R6 DeviceAlert: limit-exceedance alarms use the generic Partition 3 event codes `MDC_EVT_HI`/`MDC_EVT_LO`, the specific parameter is identified through the alert's `alertDerivedFrom` reference. Informational overview only — DeviceAlert profiles either fix their code directly (Apnea/Disconnection/Rebreathing) or bind to the narrower [Ventilation Limit Exceedance Code ValueSet](ValueSet-t-cabs-valueset-ventilation-limit-exceedance-code.html) (limit alarms).
+**Description**: Umbrella catalogue of alarm codes used in T-CABS DeviceAlert profiles. Aligned with FHIR R6 DeviceAlert: limit-exceedance alarms use the generic Partition 3 event codes `MDC_EVT_HI`/`MDC_EVT_LO`, the specific parameter is identified through the alert's `alertDerivedFrom` reference. Informational overview only — DeviceAlert profiles either fix their code directly (Apnea/Disconnection/Leakage/Rebreathing/Obstructive Apnea) or bind to the narrower [Ventilation Limit Exceedance Code ValueSet](ValueSet-t-cabs-valueset-ventilation-limit-exceedance-code.html) (limit alarms).
 
 #### IEEE 11073 — Generic Limit Exceedance Events (Partition 3)
 
@@ -94,8 +98,7 @@ This page lists the created ValueSets of the T-CABS project:
 |------|---------|--------------|
 | `199680` | MDC_EVT_APNEA | ApnoeAlarm profile |
 | `197172` | MDC_EVT_VENT_DISCONN | DisconnectionAlarm profile |
-| `197184` | MDC_EVT_FLOW_OBSTRUC | ObstruktionAlarm profile |
-| `198322` | MDC_EVT_LEAK_EXCESSIVE | LeckageAlarm profile |
+| `198168` | MDC_EVT_VENT_PAT_CIRCUIT_LEAK | LeckageAlarm profile |
 
 #### SNOMED CT
 
@@ -110,6 +113,7 @@ This page lists the created ValueSets of the T-CABS project:
 | Code | Display Name | Description |
 |------|---------|--------------|
 | `rebreathing` | Rebreathing Alarm | Rebreathing of exhaled gas detected (elevated CO2). No IEEE 11073 or SNOMED CT code available. Used by RebreathingAlarm profile. |
+| `obstructive-apnea` | Obstructive Apnea Alarm | Obstructive apnea of the patient detected. IEEE 11073 carries the *duration* of obstructive apnea as a measurement (`MDC_TIME_PD_APNEA_OBSTRUC`, Partition 2) but has no matching Partition 3 event; `MDC_EVT_VENT_ENDOTRACH_TUBE_OBSTRUC` applies to the endotracheal tube only. Used by ObstruktionAlarm profile. |
 
 ---
 
@@ -119,12 +123,51 @@ This page lists the created ValueSets of the T-CABS project:
 
 **Description**: Restricted set of generic IEEE 11073 Partition 3 limit exceedance event codes. Bound (required) by the four limit-alarm DeviceAlert profiles (Pressure, Respiratory Rate, Tidal Volume, Minute Volume). The monitored parameter is identified by the binding profile and the alert's `alertDerivedFrom` reference to the triggering Observation — not by the IEEE code itself.
 
-#### IEEE 11073 — Generic Limit Exceedance Events (Partition 3)
-
 | Code | Display Name | Used when |
 |------|---------|--------------|
 | `196648` | MDC_EVT_HI | Measurement exceeds upper alarm limit |
 | `196670` | MDC_EVT_LO | Measurement falls below lower alarm limit |
+
+---
+
+### Mapping Attributes
+
+Some vendor mode names map to different IEEE 11073 codes depending on how the device is configured.
+The [Ventilation Modes ConceptMap](ConceptMap-t-cabs-cm-beatmungsmodi.html) expresses this with
+`dependsOn` on the individual mapping target: one source code, several targets, each qualified by a
+condition. This section defines those conditions.
+
+**Attribute `backup-rate-mandatory`** {#backup-rate-mandatory}
+
+**Property URI:** `https://bih-cei.github.io/T-CABS/Terminologies.html#backup-rate-mandatory`
+
+Indicates whether the ventilator, in the mode being mapped, always applies a backup respiratory rate,
+or whether that rate can be switched off or set to zero.
+
+| Value | Meaning | Target code |
+|-------|---------|-------------|
+| `true` | The backup rate is always active and cannot be disabled | `475154` MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015 |
+| `false` | The backup rate can be switched off, set to 0/min, or is absent | `475162` MDC_VENT_MODE_ISO_CSV_PS_6ACAP |
+
+**Why the distinction matters.** Both codes carry the same systematic ISO 19223 name, `CSV-PS`. They
+differ only in the footnotes attached to `475154`, whose definition reads *"Pressure-controlled,
+triggered ventilation with expiratory synchronization and backup respiratory rate"*, while `475162`
+reads *"Spontaneous breathing with continuous positive pressure level with or without pressure
+support"*. The mandatory backup rate is therefore part of what `475154` asserts. Applying it to a
+device whose backup rate is switched off would state something the device does not do.
+
+**How to determine the value.** From the ventilator's configuration, not from the mode name. The mode
+label is identical across devices; only the setting range differs. Where the rate can be set to 0/min
+or to "off", the value is `false`. Among the devices in scope this affects the BREAS Vivo 3, the
+Löwenstein prismaVENT 50-C and the ResMed Astral 150 in PS; the BREAS Vivo 55/60 and Vivo 45 LS, the
+Löwenstein LUISA and the ResMed Stellar in ST always apply a backup rate.
+
+**Note for implementers.** A consumer that takes the first target it finds, without evaluating
+`dependsOn`, will produce the wrong code for part of the device population. Support for `dependsOn`
+in the `$translate` operation is inconsistent across terminology servers, and the FHIR Mapping
+Language `translate()` function cannot pass a dependency at all. Where mappings are executed
+automatically, the condition should be implemented in the transformation logic, using this ConceptMap
+as the specification rather than as an executable artefact.
 
 ---
 

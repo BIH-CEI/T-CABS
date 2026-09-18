@@ -133,7 +133,7 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-            "valueInteger" : 69
+            "valueInteger" : 72
           },
           {
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
@@ -161,7 +161,7 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-            "valueInteger" : 37
+            "valueInteger" : 40
           },
           {
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",

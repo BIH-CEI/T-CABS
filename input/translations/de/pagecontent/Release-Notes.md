@@ -17,9 +17,27 @@ Jede Änderung wird mit einer der folgenden Kategorien versehen:
 
 ---
 
-### v0.3.0 (in Entwicklung) — Draft
+### v0.3.0 (2026-09-17) — Draft
 
-**`feature`** **DeviceAlert-Profile** in eine dreistufige Hierarchie überführt (Event- / Limit-Basisprofile) und zwei Ereignis-Alarme ergänzt: **Obstruktion** (`197184`) und **Leckage** (`198322`)
+**`feature`** **DeviceAlert-Profile** in eine dreistufige Hierarchie überführt (Event- / Limit-Basisprofile) und zwei Ereignis-Alarme ergänzt: **Obstruktive Apnoe** (T-CABS-Custom-Code — IEEE 11073 hat dafür kein Partition-3-Ereignis) und **Leckage** (`198168 MDC_EVT_VENT_PAT_CIRCUIT_LEAK`)
+
+**`feature`** Der DeviceAlert-Backport deckt den vollständigen R6-Elementsatz ab: `identifier`, `procedure`, `category`, `encounter`, `acknowledged`, `acknowledgedBy` und `location` auf Wurzelebene, `identifier`, `annunciator`, `type` und `period` innerhalb von `signal`
+
+**`improve`** `alertIdentifier` und `alertProcedure` sind Must Support und in allen Alarm-Beispielen befüllt
+
+**`improve`** `alertOccurrence` ist verpflichtend (1..1, Period)
+
+**`fix`** Spontan-Modi (S) von `184353` auf `475162` gewechselt
+
+**`fix`** PCV und Timed-Modi (T) von `475172` auf `475149` gewechselt; `475172` entfällt
+
+**`fix`** PSV(AE) und autoST von `475198` auf `475154` bzw. `475197` gewechselt (`wider`)
+
+**`feature`** Druckunterstützungsmodi bilden bedingt ab via `dependsOn` — `475154` bei zwingender Backup-Frequenz, `475162` bei abschaltbarer
+
+**`feature`** BREAS `PCV(TgV)` und Löwenstein `PV-SIMV` ergänzt; insgesamt 44 Modus-Mappings
+
+**`documentation`** Neuer Terminologies-Abschnitt zum Mapping-Attribut `backup-rate-mandatory`
 
 **`improve`** Limit-Alarme tragen nur den generischen `MDC_EVT_HI`/`MDC_EVT_LO`-Marker — der Parameter wird über `alertDerivedFrom` identifiziert
 

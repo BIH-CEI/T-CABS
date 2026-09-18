@@ -34,11 +34,18 @@ RuleSet: DeviceAlertBase
 * extension contains
     T_CABS_Ext_DeviceAlertStatus named alertStatus 1..1 MS and
     T_CABS_Ext_DeviceAlertCode named alertCode 1..1 MS and
-    T_CABS_Ext_DeviceAlertPresence named alertPresence 1..1 MS and
-    T_CABS_Ext_DeviceAlertOccurrence named alertOccurrence 0..1 MS and
+    T_CABS_Ext_DeviceAlertOccurrence named alertOccurrence 1..1 MS and
+    T_CABS_Ext_DeviceAlertIdentifier named alertIdentifier 0..* MS and
+    T_CABS_Ext_DeviceAlertProcedure named alertProcedure 0..* MS and
+    T_CABS_Ext_DeviceAlertCategory named alertCategory 0..* and
     T_CABS_Ext_DeviceAlertType named alertType 0..1 MS and
     T_CABS_Ext_DeviceAlertPriority named alertPriority 0..1 MS and
     T_CABS_Ext_DeviceAlertDevice named alertDevice 0..1 MS and
+    T_CABS_Ext_DeviceAlertEncounter named alertEncounter 0..1 and
+    T_CABS_Ext_DeviceAlertAcknowledged named alertAcknowledged 0..1 and
+    T_CABS_Ext_DeviceAlertAcknowledgedBy named alertAcknowledgedBy 0..1 and
+    T_CABS_Ext_DeviceAlertLocation named alertLocation 0..1 and
     T_CABS_Ext_DeviceAlertDerivedFrom named alertDerivedFrom 0..* and
     T_CABS_Ext_DeviceAlertLabel named alertLabel 0..1 and
     T_CABS_Ext_DeviceAlertSignal named alertSignal 0..*
+* extension[alertProcedure].valueReference only Reference(T_CABS_Procedure_Beatmung)

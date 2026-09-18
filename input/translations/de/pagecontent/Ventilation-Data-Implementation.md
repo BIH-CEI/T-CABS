@@ -404,7 +404,7 @@ Beispielinstanz einer PCV(A)-Beatmungsprozedur:
 
 ### DeviceAlerts (R6-Backport)
 
-FHIR R6 führt [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) als eigenständige Ressource für gerätegenerierte Alarme ein. Da T-CABS auf FHIR R4 basiert, wird das R6-DeviceAlert-Konzept über `Basic` als Trägerressource backportet (gemäß der [FHIR-Anleitung zu Basic](http://hl7.org/fhir/R4/basic.html)):
+FHIR R6 führt [`DeviceAlert`](https://build.fhir.org/devicealert.html) als eigenständige Ressource für gerätegenerierte Alarme ein. Da T-CABS auf FHIR R4 basiert, wird das R6-DeviceAlert-Konzept über `Basic` als Trägerressource backportet (gemäß der [FHIR-Anleitung zu Basic](http://hl7.org/fhir/R4/basic.html)):
 
 - **`Basic.code`** ist fest auf `device-alert` gesetzt und kennzeichnet die Ressource als DeviceAlert
 - **`Basic.subject`** referenziert den Patienten
@@ -414,24 +414,30 @@ Die Profilübersicht findet sich unter [Profile](Ventilation-Data-Profiles.html)
 
 #### Extension-Mapping auf R6 DeviceAlert
 
-Die Elementpfade beziehen sich auf die R6-DeviceAlert-Ressource (Stand ballot4, Mai 2026). BackboneElements in R6 (z.B. `derivedFrom`, `signal`) werden als komplexe Extensions backportet, deren Sub-Extensions die R6-Unterelemente spiegeln.
+Die Elementpfade beziehen sich auf die R6-DeviceAlert-Ressource (Stand FHIR v6.0.0-snapshot1). BackboneElements in R6 (z.B. `derivedFrom`, `signal`) werden als komplexe Extensions backportet, deren Sub-Extensions die R6-Unterelemente spiegeln.
 
 | Extension | R6-Element | Typ | Kard. |
-|-----------|------------|-----|-------|
+|-----------|------------|------|-------|
 | `alertStatus` | `status` | code | 1..1 |
 | `alertCode` | `code` | CodeableConcept | 1..1 |
-| `alertPresence` | `presence` | boolean | 1..1 |
-| `alertOccurrence` | `occurrence[x]` | Period (R6 erlaubt auch dateTime) | 0..1 |
+| `alertOccurrence` | `occurrence` | Period | 1..1 |
+| `alertIdentifier` | `identifier` | Identifier | 0..* |
+| `alertProcedure` | `procedure` | Reference(Procedure) | 0..* |
+| `alertCategory` | `category` | CodeableConcept | 0..* |
 | `alertType` | `type` | CodeableConcept | 0..1 |
 | `alertPriority` | `priority` | CodeableConcept | 0..1 |
 | `alertDevice` | `device` | Reference(Device \| DeviceMetric) | 0..1 |
-| `alertDerivedFrom` | `derivedFrom` (komplex: `observation` 1..1, `component` 0..1, `limit` 0..1 Sub-Extensions) | komplex | 0..* |
+| `alertEncounter` | `encounter` | Reference(Encounter) | 0..1 |
+| `alertAcknowledged` | `acknowledged` | boolean | 0..1 |
+| `alertAcknowledgedBy` | `acknowledgedBy` | Reference(Patient \| Device \| Practitioner \| PractitionerRole \| RelatedPerson) | 0..1 |
+| `alertLocation` | `location` | Reference(Location) | 0..1 |
+| `alertDerivedFrom` | `derivedFrom` (complex: `observation` 1..1, `component` 0..1, `limit` 0..1 Sub-Extensions) | complex | 0..* |
 | `alertLabel` | `label` | string | 0..1 |
-| `alertSignal` | `signal` (mit Sub-Extensions `activationState`, `presence`, `manifestation`, `indication`) | komplex | 0..* |
+| `alertSignal` | `signal` (complex: `identifier` 0..*, `activationState` 1..1, `presence` 0..1, `annunciatorConcept`/`annunciatorReference` 0..1, `manifestation` 0..1, `type` 0..*, `period` 0..1 Sub-Extensions) | complex | 0..* |
 
-Signal-Codes folgen R6 ballot4: `signal.presence` nutzt `on | latched | off | ack` und `signal.manifestation` nutzt `auditory | visual | vibratory` (`signal.activationState`: `on | off | paused`).
+Signal-Codes folgen R6: `signal.presence` nutzt `on | latched | off | ack` und `signal.manifestation` nutzt `auditory | visual | vibratory` (`signal.activationState`: `on | off | paused`).
 
-Optionale R6-DeviceAlert-Elemente, die **bewusst nicht gebackportet** werden (von der Ressource nicht verlangt und für den T-CABS-Use-Case nicht benötigt): `identifier`, `procedure`, `category`, `encounter`, `acknowledged`, `acknowledgedBy`, `location`, `signal.annunciator`, `signal.type`.
+`DeviceAlert.subject` ist auf `Reference(Patient)` eingeschränkt. R6 `signal.annunciator` ist ein `CodeableReference` — ein Datentyp, den es in R4 nicht gibt; er wird über die beiden Sub-Extensions `annunciatorConcept` und `annunciatorReference` abgebildet.
 
 #### Alarm-Erkennungsmuster
 
@@ -480,7 +486,7 @@ Beispiel eines Druck-Hoch-Grenzwertalarms (gekürzt; vollständige Instanz siehe
   "extension": [
     {
       "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-status",
-      "valueCode": "in-progress"
+      "valueCode": "completed"
     },
     {
       "valueCodeableConcept": {
@@ -489,19 +495,30 @@ Beispiel eines Druck-Hoch-Grenzwertalarms (gekürzt; vollständige Instanz siehe
             "code": "196648",
             "system": "urn:iso:std:iso:11073:10101",
             "display": "MDC_EVT_HI"
-          },
-          {
-            "code": "405495005",
-            "system": "http://snomed.info/sct",
-            "display": "High airway pressure"
           }
         ]
       },
       "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-code"
     },
     {
-      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-presence",
-      "valueBoolean": true
+      "valuePeriod": {
+        "start": "2024-01-15T03:22:00+01:00",
+        "end": "2024-01-15T03:22:40+01:00"
+      },
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-occurrence"
+    },
+    {
+      "valueIdentifier": {
+        "system": "https://bih-cei.github.io/T-CABS/sid/device-alert-id",
+        "value": "druck-001"
+      },
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-identifier"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-procedure",
+      "valueReference": {
+        "reference": "Procedure/beispiel-beatmung-breas"
+      }
     },
     {
       "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-type",
@@ -534,7 +551,6 @@ Beispiel eines Druck-Hoch-Grenzwertalarms (gekürzt; vollständige Instanz siehe
       }
     },
     {
-      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derived-from",
       "extension": [
         {
           "url": "observation",
@@ -543,7 +559,6 @@ Beispiel eines Druck-Hoch-Grenzwertalarms (gekürzt; vollständige Instanz siehe
           }
         },
         {
-          "url": "limit",
           "valueRange": {
             "high": {
               "value": 30,
@@ -551,9 +566,57 @@ Beispiel eines Druck-Hoch-Grenzwertalarms (gekürzt; vollständige Instanz siehe
               "system": "http://unitsofmeasure.org",
               "code": "cm[H2O]"
             }
+          },
+          "url": "limit"
+        }
+      ],
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-derived-from"
+    },
+    {
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-label",
+      "valueString": "Pdruck HOCH"
+    },
+    {
+      "extension": [
+        {
+          "url": "activationState",
+          "valueCode": "off"
+        },
+        {
+          "url": "manifestation",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "auditory",
+                "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+                "display": "Auditory"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-signal"
+    },
+    {
+      "extension": [
+        {
+          "url": "activationState",
+          "valueCode": "off"
+        },
+        {
+          "url": "manifestation",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "visual",
+                "system": "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert",
+                "display": "Visual"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-signal"
     }
   ],
   "code": {

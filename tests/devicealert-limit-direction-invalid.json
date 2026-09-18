@@ -29,8 +29,11 @@
       }
     },
     {
-      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-presence",
-      "valueBoolean": true
+      "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-occurrence",
+      "valuePeriod": {
+        "start": "2024-01-15T23:20:00+01:00",
+        "end": "2024-01-15T23:23:00+01:00"
+      }
     },
     {
       "url": "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-ext-device-alert-type",

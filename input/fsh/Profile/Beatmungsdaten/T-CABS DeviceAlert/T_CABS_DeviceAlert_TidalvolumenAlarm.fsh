@@ -14,8 +14,10 @@ Title: "Example Tidal Volume High Alert ResMed"
 Description: "Tidal volume exceeded upper alarm limit on ResMed ventilator"
 * extension[alertStatus].valueCode = #completed
 * extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#196648 "MDC_EVT_HI"
-* extension[alertPresence].valueBoolean = false
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T02:10:00+01:00"
+* extension[alertIdentifier].valueIdentifier.system = "https://bih-cei.github.io/T-CABS/sid/device-alert-id"
+* extension[alertIdentifier].valueIdentifier.value = "tidalvolumen-001"
+* extension[alertProcedure].valueReference = Reference(Procedure/beispiel-beatmung-resmed)
 * extension[alertOccurrence].valuePeriod.end = "2024-01-15T02:12:30+01:00"
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological "Physiological"
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#medium "Medium"

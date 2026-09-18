@@ -26,7 +26,7 @@
 
 ### Ventilation Alarm Profiles (DeviceAlert R6 Backport)
 
-FHIR R6 introduces [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) as a dedicated resource. See [Implementation](Ventilation-Data-Implementation.html#device-alerts-r6-backport) for details.
+FHIR R6 introduces [`DeviceAlert`](https://build.fhir.org/devicealert.html) as a dedicated resource. See [Implementation](Ventilation-Data-Implementation.html#device-alerts-r6-backport) for details.
 
 The alarm profiles follow a three-level hierarchy. The abstract base backports the R6 resource; below it, two abstract profiles separate the two alarm detection patterns — **event-based** alarms (a discrete event with a specific code) and **limit-exceedance** alarms (a measured value crossing a threshold, referencing the triggering Observation). The concrete, manufacturer-facing profiles derive from the matching pattern.
 

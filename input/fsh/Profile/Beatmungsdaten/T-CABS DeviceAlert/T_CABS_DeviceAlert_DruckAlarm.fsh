@@ -12,10 +12,13 @@ InstanceOf: T_CABS_DeviceAlert_DruckAlarm
 Usage: #example
 Title: "Example Pressure High Alert BREAS"
 Description: "Airway pressure exceeded upper alarm limit on BREAS ventilator"
-* extension[alertStatus].valueCode = #in-progress
+* extension[alertStatus].valueCode = #completed
 * extension[alertCode].valueCodeableConcept.coding[0] = $IEEE-11073#196648 "MDC_EVT_HI"
-* extension[alertPresence].valueBoolean = true
 * extension[alertOccurrence].valuePeriod.start = "2024-01-15T03:22:00+01:00"
+* extension[alertOccurrence].valuePeriod.end = "2024-01-15T03:22:40+01:00"
+* extension[alertIdentifier].valueIdentifier.system = "https://bih-cei.github.io/T-CABS/sid/device-alert-id"
+* extension[alertIdentifier].valueIdentifier.value = "druck-001"
+* extension[alertProcedure].valueReference = Reference(Procedure/beispiel-beatmung-breas)
 * extension[alertType].valueCodeableConcept = $cs-device-alert#physiological "Physiological"
 * extension[alertPriority].valueCodeableConcept = $cs-device-alert#high "High"
 * extension[alertDevice].valueReference = Reference(Device/beispiel-beatmungsgeraet-breas)
@@ -25,10 +28,8 @@ Description: "Airway pressure exceeded upper alarm limit on BREAS ventilator"
 * extension[alertDerivedFrom].extension[limit].valueRange.high.system = $UCUM
 * extension[alertDerivedFrom].extension[limit].valueRange.high.code = #cm[H2O]
 * extension[alertLabel].valueString = "Pdruck HOCH"
-* extension[alertSignal][0].extension[activationState].valueCode = #on
-* extension[alertSignal][0].extension[presence].valueCode = #on
+* extension[alertSignal][0].extension[activationState].valueCode = #off
 * extension[alertSignal][0].extension[manifestation].valueCodeableConcept = $cs-device-alert#auditory "Auditory"
-* extension[alertSignal][+].extension[activationState].valueCode = #on
-* extension[alertSignal][=].extension[presence].valueCode = #on
+* extension[alertSignal][+].extension[activationState].valueCode = #off
 * extension[alertSignal][=].extension[manifestation].valueCodeableConcept = $cs-device-alert#visual "Visual"
 * subject = Reference(Patient/tcabs-patient-example)

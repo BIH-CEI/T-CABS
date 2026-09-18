@@ -12,6 +12,17 @@
       "status": "ci-build"
     },
     {
+      "version": "0.3.0",
+      "date": "2026-09-17",
+      "desc": "DeviceAlert profile hierarchy with event and limit base profiles, full R6 element set, obstructive apnea and leakage alarms, conditional mode mappings via dependsOn, mode code corrections, metadata and FAIR page",
+      "path": "https://bih-cei.github.io/T-CABS/0.3.0",
+      "status": "draft",
+      "sequence": "Draft",
+      "fhirversion": "4.0.1",
+      "changes": "Release-Notes.html",
+      "current": true
+    },
+    {
       "version": "0.2.1",
       "date": "2026-05-22",
       "desc": "ValueSet split (Limit Exceedance), code patterns in event-based alerts, R6 alignment fixes (unknown status, mapping table), DeviceAlerts in transaction bundles, German pagecontent additions",
@@ -19,8 +30,7 @@
       "status": "draft",
       "sequence": "Draft",
       "fhirversion": "4.0.1",
-      "changes": "Release-Notes.html",
-      "current": true
+      "changes": "Release-Notes.html"
     },
     {
       "version": "0.2.0",

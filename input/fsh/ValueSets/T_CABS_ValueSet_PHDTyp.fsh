@@ -22,4 +22,4 @@ Description: "This ValueSet contains codes to represent the different PHD measur
 * $IEEE-11073#528484 "MDC_DEV_SUB_SPEC_PROFILE_STEP_COUNTER"
 
 // Peak Flow Meter
-* $IEEE-11073#528405 "MDC_DEV_SPEC_PROFILE_BCA"
+* $IEEE-11073#528405 "MDC_DEV_SPEC_PROFILE_PEFM"

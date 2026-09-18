@@ -26,7 +26,7 @@
 
 ### Beatmungsalarm-Profile (DeviceAlert R6 Backport)
 
-FHIR R6 führt [`DeviceAlert`](https://hl7.org/fhir/6.0.0-ballot4/devicealert.html) als eigenständige Ressource ein. Da T-CABS auf FHIR R4 basiert, werden die R6-DeviceAlert-Konzepte als Backport über `Basic` + Extensions modelliert. Details siehe [Implementation](Ventilation-Data-Implementation.html).
+FHIR R6 führt [`DeviceAlert`](https://build.fhir.org/devicealert.html) als eigenständige Ressource ein. Da T-CABS auf FHIR R4 basiert, werden die R6-DeviceAlert-Konzepte als Backport über `Basic` + Extensions modelliert. Details siehe [Implementation](Ventilation-Data-Implementation.html).
 
 Die Alarmprofile folgen einer dreistufigen Hierarchie. Die abstrakte Basis backportet die R6-Ressource; darunter trennen zwei abstrakte Profile die beiden Alarm-Erkennungsmuster — **ereignisbasierte** Alarme (ein diskretes Ereignis mit spezifischem Code) und **Grenzwert-Alarme** (ein Messwert überschreitet eine Grenze, mit Referenz auf die auslösende Observation). Die konkreten, herstellerseitigen Profile erben vom jeweils passenden Muster.
 

@@ -22,15 +22,6 @@ Description: "Code identifying the alert condition (R6 DeviceAlert.code backport
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
 
-Extension: T_CABS_Ext_DeviceAlertPresence
-Id: t-cabs-ext-device-alert-presence
-Title: "T-CABS DeviceAlert Presence"
-Description: "Whether the alert condition is currently present (R6 DeviceAlert.presence backport)"
-* ^context[0].type = #element
-* ^context[0].expression = "Basic"
-* value[x] only boolean
-* valueBoolean 1..1
-
 Extension: T_CABS_Ext_DeviceAlertOccurrence
 Id: t-cabs-ext-device-alert-occurrence
 Title: "T-CABS DeviceAlert Occurrence"
@@ -102,14 +93,88 @@ Description: "Signal associated with the alert (audible, visual, etc.) (R6 Devic
 * ^context[0].type = #element
 * ^context[0].expression = "Basic"
 * extension contains
+    identifier 0..* and
     activationState 1..1 and
     presence 0..1 and
+    annunciatorConcept 0..1 and
+    annunciatorReference 0..1 and
     manifestation 0..1 and
-    indication 0..1
+    type 0..* and
+    period 0..1
+* extension[identifier].value[x] only Identifier
 * extension[activationState].value[x] only code
 * extension[activationState].valueCode from T_CABS_ValueSet_DeviceAlertSignalActivation (required)
 * extension[presence].value[x] only code
 * extension[presence].valueCode from T_CABS_ValueSet_DeviceAlertSignalPresence (required)
+* extension[annunciatorConcept] ^short = "Where the signal is annunciated, as a code (R6 signal.annunciator.concept)"
+* extension[annunciatorConcept].value[x] only CodeableConcept
+* extension[annunciatorReference] ^short = "Where the signal is annunciated, as a device reference (R6 signal.annunciator.reference)"
+* extension[annunciatorReference].value[x] only Reference(Device)
 * extension[manifestation].value[x] only CodeableConcept
 * extension[manifestation].valueCodeableConcept from T_CABS_ValueSet_DeviceAlertSignalManifestation (required)
-* extension[indication].value[x] only Period
+* extension[type].value[x] only CodeableConcept
+* extension[period].value[x] only Period
+
+
+Extension: T_CABS_Ext_DeviceAlertIdentifier
+Id: t-cabs-ext-device-alert-identifier
+Title: "T-CABS DeviceAlert Identifier"
+Description: "Business identifier assigned to the alert by the source device, gateway or manufacturer (R6 DeviceAlert.identifier backport)"
+* ^context[0].type = #element
+* ^context[0].expression = "Basic"
+* value[x] only Identifier
+* valueIdentifier 1..1
+
+Extension: T_CABS_Ext_DeviceAlertProcedure
+Id: t-cabs-ext-device-alert-procedure
+Title: "T-CABS DeviceAlert Procedure"
+Description: "The procedure during which the alert occurred (R6 DeviceAlert.procedure backport)"
+* ^context[0].type = #element
+* ^context[0].expression = "Basic"
+* value[x] only Reference(Procedure)
+* valueReference 1..1
+
+Extension: T_CABS_Ext_DeviceAlertCategory
+Id: t-cabs-ext-device-alert-category
+Title: "T-CABS DeviceAlert Category"
+Description: "High-level categorisation of the alert, for filtering and access control (R6 DeviceAlert.category backport)"
+* ^context[0].type = #element
+* ^context[0].expression = "Basic"
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1
+
+Extension: T_CABS_Ext_DeviceAlertEncounter
+Id: t-cabs-ext-device-alert-encounter
+Title: "T-CABS DeviceAlert Encounter"
+Description: "The encounter during which the alert occurred (R6 DeviceAlert.encounter backport)"
+* ^context[0].type = #element
+* ^context[0].expression = "Basic"
+* value[x] only Reference(Encounter)
+* valueReference 1..1
+
+Extension: T_CABS_Ext_DeviceAlertAcknowledged
+Id: t-cabs-ext-device-alert-acknowledged
+Title: "T-CABS DeviceAlert Acknowledged"
+Description: "Whether the alert has been acknowledged (R6 DeviceAlert.acknowledged backport)"
+* ^context[0].type = #element
+* ^context[0].expression = "Basic"
+* value[x] only boolean
+* valueBoolean 1..1
+
+Extension: T_CABS_Ext_DeviceAlertAcknowledgedBy
+Id: t-cabs-ext-device-alert-acknowledged-by
+Title: "T-CABS DeviceAlert AcknowledgedBy"
+Description: "Who or what acknowledged the alert (R6 DeviceAlert.acknowledgedBy backport)"
+* ^context[0].type = #element
+* ^context[0].expression = "Basic"
+* value[x] only Reference(Patient or Device or Practitioner or PractitionerRole or RelatedPerson)
+* valueReference 1..1
+
+Extension: T_CABS_Ext_DeviceAlertLocation
+Id: t-cabs-ext-device-alert-location
+Title: "T-CABS DeviceAlert Location"
+Description: "The location of the alert subject (R6 DeviceAlert.location backport)"
+* ^context[0].type = #element
+* ^context[0].expression = "Basic"
+* value[x] only Reference(Location)
+* valueReference 1..1

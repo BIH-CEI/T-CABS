@@ -3,8 +3,6 @@ Id: t-cabs-valueset-Beatmungsmodus
 Title: "T-CABS ValueSet Ventilation Mode"
 Description: "This ValueSet contains codes to represent the different ventilation modes"
 
-// PCV - Pressure Control
-* $IEEE-11073#475172 "MDC_VENT_MODE_ISO_AC_PC5vLim_6ACAPH_3LC_3TRGC"
 
 // PCV(A) - PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts.
 * $IEEE-11073#475147 "MDC_VENT_MODE_ISO_AC_PC_6ACAP" 
@@ -39,10 +37,16 @@ Description: "This ValueSet contains codes to represent the different ventilatio
 // PCV-SIMV
 * $IEEE-11073#475144 "MDC_VENT_MODE_ISO_SIMV_PC_8PS_6ACAP"
 
-// S - Spontanatmung (reiner Spontanmodus ohne maschinelle Unterstützung)
-* $IEEE-11073#184353 "MDC_VENT_MODE_RESP_SPONT"
+// S / PSV ohne verpflichtende Backup-Frequenz - Spontanatmung mit Druckunterstuetzung
+// Ersetzt 184353 MDC_VENT_MODE_RESP_SPONT (2026-09-09): dessen Definition "spontaneous respiration
+// without mechanical help" widerspricht dem druckunterstuetzten S-Modus.
+* $IEEE-11073#475162 "MDC_VENT_MODE_ISO_CSV_PS_6ACAP"
 
-// PSV(AE) / autoST / iVAPS - Adaptive volume-targeted Pressure Support with Cycle Control
+// PCV(TgV) - Druckkontrolliert mit Zielvolumen, ohne Assist-Qualifier
+* $IEEE-11073#475151 "MDC_VENT_MODE_ISO_CMV_vtPC_6ACAP"
+
+// iVAPS - Adaptive volume-targeted Pressure Support with Cycle Control
+// Nur noch von #40 iVAPS genutzt; #38 PSV(AE) und #39 autoST wurden 2026-09-09 umgebunden.
 * $IEEE-11073#475198 "MDC_VENT_MODE_ISO_CSV_vtPS_3CC"
 
 // PCV(AE) - Continuous pressure-controlled ventilation with adjuncts

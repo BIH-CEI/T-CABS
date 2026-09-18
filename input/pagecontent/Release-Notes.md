@@ -17,9 +17,27 @@ Each change is tagged with one of the following categories:
 
 ---
 
-### v0.3.0 (in development) — Draft
+### v0.3.0 (2026-09-17) — Draft
 
-**`feature`** Reworked the **DeviceAlert profiles** into a three-level hierarchy (Event / Limit base profiles) and added two event alarms: **Obstruction** (`197184`) and **Leakage** (`198322`)
+**`feature`** Reworked the **DeviceAlert profiles** into a three-level hierarchy (Event / Limit base profiles) and added two event alarms: **Obstructive Apnea** (T-CABS custom code — IEEE 11073 has no Partition 3 event for it) and **Leakage** (`198168 MDC_EVT_VENT_PAT_CIRCUIT_LEAK`)
+
+**`feature`** The DeviceAlert backport now covers the full R6 element set: `identifier`, `procedure`, `category`, `encounter`, `acknowledged`, `acknowledgedBy` and `location` at the root, `identifier`, `annunciator`, `type` and `period` within `signal`
+
+**`improve`** `alertIdentifier` and `alertProcedure` are Must Support and populated in all alarm examples
+
+**`improve`** `alertOccurrence` is mandatory (1..1, Period)
+
+**`fix`** Spontaneous (S) modes remapped from `184353` to `475162`
+
+**`fix`** PCV and Timed (T) modes remapped from `475172` to `475149`; `475172` no longer used
+
+**`fix`** PSV(AE) and autoST remapped from `475198` to `475154` and `475197` (`wider`)
+
+**`feature`** Pressure-support modes map conditionally via `dependsOn` — `475154` where the backup rate is mandatory, `475162` where it can be switched off
+
+**`feature`** Added BREAS `PCV(TgV)` and Löwenstein `PV-SIMV`; 44 mode mappings in total
+
+**`documentation`** New Terminologies section defining the `backup-rate-mandatory` mapping attribute
 
 **`improve`** Limit alarms carry only the generic `MDC_EVT_HI`/`MDC_EVT_LO` marker — the parameter is identified via `alertDerivedFrom`
 

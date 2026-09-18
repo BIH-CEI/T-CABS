@@ -94,4 +94,4 @@ Die Tabellen bilden ausgewählte RDA-FAIR-Data-Maturity-Indikatoren darauf ab, w
 
 - **Zitieren/Referenzieren** des IG über seinen Canonical `https://bih-cei.github.io/T-CABS` und eine konkrete `version`.
 - **Nachnutzung** ist durch **CC-BY-4.0** geregelt (Namensnennung erforderlich).
-- **Installation** des FHIR-Packages über die Package-ID `t-cabs`, sobald in einem Registry veröffentlicht; bis dahin die `.tgz` aus dem IG-Output beziehen.
+- **Installation** des FHIR-Packages über die Package-ID `t-cabs`, sobald in einem Registry veröffentlicht; bis dahin die `package.tgz` aus dem [GitHub-Release](https://github.com/BIH-CEI/T-CABS/releases) der jeweiligen Version herunterladen.
