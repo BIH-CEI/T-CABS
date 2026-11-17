@@ -26,7 +26,7 @@
           },
           {
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
-            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.0"
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.1"
           }],
           "severity" : "error",
           "code" : "invariant",
@@ -54,12 +54,12 @@
           },
           {
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
-            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung|0.3.0"
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-procedure-beatmung|0.3.1"
           }],
           "severity" : "information",
           "code" : "informational",
           "details" : {
-            "text" : "Ressource gegen Profil https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.0 validieren"
+            "text" : "Ressource gegen Profil https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.1 validieren"
           },
           "expression" : ["Patient"]
         },
@@ -82,7 +82,7 @@
           },
           {
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
-            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.0"
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.1"
           }],
           "severity" : "warning",
           "code" : "invariant",
@@ -121,7 +121,7 @@
           },
           {
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
-            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.0"
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.1"
           }],
           "severity" : "error",
           "code" : "invariant",
@@ -149,12 +149,12 @@
           },
           {
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
-            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.0"
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.1"
           }],
           "severity" : "information",
           "code" : "business-rule",
           "details" : {
-            "text" : "Reference to draft CodeSystem https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert|0.3.0"
+            "text" : "Reference to draft CodeSystem https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert|0.3.1"
           },
           "expression" : ["Basic.code"]
         },
@@ -177,12 +177,12 @@
           },
           {
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
-            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.0"
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.1"
           }],
           "severity" : "information",
           "code" : "business-rule",
           "details" : {
-            "text" : "Reference to draft CodeSystem https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert|0.3.0"
+            "text" : "Reference to draft CodeSystem https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert|0.3.1"
           },
           "expression" : ["Basic.extension[3].value.ofType(CodeableConcept)"]
         },
@@ -205,12 +205,12 @@
           },
           {
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
-            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.0"
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.1"
           }],
           "severity" : "information",
           "code" : "informational",
           "details" : {
-            "text" : "Ressource gegen Profil https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.0 validieren"
+            "text" : "Ressource gegen Profil https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.1 validieren"
           },
           "expression" : ["Basic"]
         },
@@ -233,7 +233,7 @@
           },
           {
             "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
-            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.0"
+            "valueString" : "https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.1"
           }],
           "severity" : "warning",
           "code" : "invariant",

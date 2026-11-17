@@ -2,10 +2,11 @@ Profile: T_CABS_Observation_TargetVolume
 Parent: T_CABS_Observation_Beatmungsparameter
 Id: t-cabs-observation-targetvolume
 Title: "T-CABS Observation Target Volume"
-Description: "Profile for the target volume"
+Description: "Profile for the target volume. The bound code denotes a ventilator-calculated target, which matches devices that derive the target themselves (e.g. ResMed iVAPS). Where the target is set by the clinician (e.g. BREAS PSV(TgV)), the same code is used as the closest available concept: IEEE 11073 provides no code for a set target volume."
 
 * code.coding = $IEEE-11073#153212 //"MDC_VENT_VOL_TIDAL_TARGET_AUTO"
 * code.coding ^definition = "The ventilator calculated target volume of gas delivered to the patient."
+* code.coding ^comment = "Also used for operator-set target volumes; see the profile description."
 
 * effective[x] only Period
 

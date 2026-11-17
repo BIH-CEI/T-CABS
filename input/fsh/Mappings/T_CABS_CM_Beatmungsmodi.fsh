@@ -184,7 +184,7 @@ Usage: #definition
 * group[=].element[=].target[+].code = #475149
 * group[=].element[=].target[=].display = "MDC_VENT_MODE_ISO_CMV_PC_6ACAP"
 * group[=].element[=].target[=].equivalence = #wider
-* group[=].element[=].target[=].comment = "Reassigned 2026-09-09 from 475172 (A/C-PC[vLim] (LC) (TRGC)) for the same reason as PCV: a timed mode is purely mandatory, so an assist-control code misstates it. Mapped to CMV-PC as the closest mandatory pressure-controlled mode; the fixed timing is not separately coded."
+* group[=].element[=].target[=].comment = "Reassigned 2026-09-09 from 475172 (A/C-PC[vLim] (LC) (TRGC)) for the same reason as PCV: a timed mode is purely mandatory, so an assist-control code misstates it. A bi-level AV code was also considered, since the devices deliver two pressure levels, but every bi-level AV code builds on an IMV or SIMV base, both of which admit spontaneous breaths between mandatory ones; a timed mode does not. CMV-PC is therefore the systematic match. The fixed timing is not separately coded."
 
 * group[=].element[+].code = #PCV
 * group[=].element[=].display = "Pressure Control Ventilation"
@@ -334,7 +334,7 @@ Usage: #definition
 * group[=].element[=].target[+].code = #475149
 * group[=].element[=].target[=].display = "MDC_VENT_MODE_ISO_CMV_PC_6ACAP"
 * group[=].element[=].target[=].equivalence = #wider
-* group[=].element[=].target[=].comment = "Reassigned 2026-09-09 from 475172 (A/C-PC[vLim] (LC) (TRGC)) for the same reason as PCV: a timed mode is purely mandatory, so an assist-control code misstates it. Mapped to CMV-PC as the closest mandatory pressure-controlled mode; the fixed timing is not separately coded."
+* group[=].element[=].target[=].comment = "Reassigned 2026-09-09 from 475172 (A/C-PC[vLim] (LC) (TRGC)) for the same reason as PCV: a timed mode is purely mandatory, so an assist-control code misstates it. A bi-level AV code was also considered, since the devices deliver two pressure levels, but every bi-level AV code builds on an IMV or SIMV base, both of which admit spontaneous breaths between mandatory ones; a timed mode does not. CMV-PC is therefore the systematic match. The fixed timing is not separately coded."
 
 * group[=].element[+].code = #"V(A)C"
 * group[=].element[=].display = "Volume Assist Control (Astral)"
@@ -359,10 +359,10 @@ Usage: #definition
 
 * group[=].element[+].code = #iVAPS
 * group[=].element[=].display = "intelligent Volume Assured Pressure Support"
-* group[=].element[=].target[+].code = #475198
-* group[=].element[=].target[=].display = "MDC_VENT_MODE_ISO_CSV_vtPS_3CC"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Not reviewed. Volume-targeted Pressure Support with Cycle Control"
+* group[=].element[=].target[+].code = #475154
+* group[=].element[=].target[=].display = "MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reassigned 2026-10-07 from 475198 (v0.3.0); an interim assignment to 475155 was never released. The volume-targeted (vt) prescript denotes a tidal volume target for each inflation. iVAPS instead targets alveolar minute ventilation, set as Target Va in L/min and derived from patient height, so vtPS does not describe it. Mapped to its base mode, pressure support with a backup respiratory rate, which iVAPS always provides as its intelligent Backup Rate; the adaptive layer stays unclassified."
 
 * group[=].element[+].code = #S
 * group[=].element[=].display = "Spontaneous (Lumis/Stellar)"

@@ -30,10 +30,9 @@ This page lists the created ValueSets of the T-CABS project:
 | `475151` | MDC_VENT_MODE_ISO_CMV_vtPC_6ACAP | Continuous pressure-controlled ventilation with target volume. May include selectable adjuncts. | PCV(TgV) |
 | `475138` | MDC_VENT_MODE_ISO_CMV_VC_6ACAPL | VC: Volume Control, CMV: Controlled Mandatory Ventilation — Continuous volume-controlled ventilation with fixed inspiratory flow. May include selectable adjuncts. | VCV-MPV, MPVv |
 | `475162` | MDC_VENT_MODE_ISO_CSV_PS_6ACAP | SPN: Spontaneous, CPAP: Continuous Positive Airway Pressure, PS: Pressure Support — Spontaneous breathing with continuous positive pressure level with or without pressure support. May include selectable adjuncts. | S, PSV without mandatory backup rate |
-| `475198` | MDC_VENT_MODE_ISO_CSV_vtPS_3CC | Volume Support | iVAPS |
 | `475147` | MDC_VENT_MODE_ISO_AC_PC_6ACAP | PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts. | PCV(A) | 
 | `475148` | MDC_VENT_MODE_ISO_AC_vtPC_6ACAP | PC: Pressure Control, AC: Assist Control — Assist-controlled, pressure-controlled ventilation with backup respiratory rate, with tidal volume target and pressure regulation, allowing spontaneous breathing during the entire respiratory cycle. May include selectable adjuncts. |PCV(A+TgV) | 
-| `475154` | MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015 | PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts. | PSV | 
+| `475154` | MDC_VENT_MODE_ISO_CSV_PS_6ACAP_012_015 | PC: Pressure Control, PSV: Pressure Support Ventilation — Pressure-controlled, triggered ventilation with expiratory synchronization and backup respiratory rate. May include selectable adjuncts. | PSV, iVAPS |
 | `475197` | MDC_VENT_MODE_ISO_Bi9level_AV_0_SIMV_PC_8PS_8PS_6ACAP | BiLevel Airway Pressure Ventilation | S/T | 
 | `475201` | MDC_VENT_MODE_ISO_CMV_VC | Volume Control Ventilation | VCV | 
 | `475161` | MDC_VENT_MODE_ISO_CSV_6ACAP | SPN: Spontaneous, CPAP: Continuous Positive Airway Pressure — Spontaneous breathing with continuous positive pressure level. May include selectable adjuncts. | CPAP | 
@@ -127,6 +126,20 @@ This page lists the created ValueSets of the T-CABS project:
 |------|---------|--------------|
 | `196648` | MDC_EVT_HI | Measurement exceeds upper alarm limit |
 | `196670` | MDC_EVT_LO | Measurement falls below lower alarm limit |
+
+---
+
+### T-CABS CodeSystem Ventilation Parameter
+
+**Link**: [CodeSystem Ventilation Parameter](CodeSystem-t-cabs-codesystem-ventilation-parameter.html)
+
+**Description**: T-CABS codes for ventilation parameters that neither IEEE 11073 nor LOINC cover. IEEE 11073 codes breath types as counts, rates and durations but has no proportional variant, whereas the manufacturers report the share of spontaneous or mandatory breaths as a percentage. A usage time exists there only for sleep apnoea therapy equipment.
+
+| Code | Display Name | Used by |
+|------|---------|--------------|
+| `spont-breath-percent` | Spontaneous Breath Percentage | TriggeredBreaths profile; BREAS `triggeredBreaths`, ResMed `spontTriggBreaths` |
+| `mandatory-breath-percent` | Mandatory Breath Percentage | Löwenstein `portionOfMandatoryBreaths_percent` |
+| `usage-duration` | Ventilator Usage Duration | BREAS `cumulativeUsage`, ResMed `usage.duration`, Löwenstein `usage_min` |
 
 ---
 

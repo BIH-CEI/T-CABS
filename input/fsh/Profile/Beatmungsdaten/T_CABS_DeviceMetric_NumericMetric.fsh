@@ -115,7 +115,7 @@ Title: "Example DeviceMetric Löwenstein TriggeredBreaths"
 Description: "Example of a DeviceMetric for TriggeredBreaths measurement of a Löwenstein ventilator"
 * identifier.system = "http://tcabs.example.org/device-metric"
 * identifier.value = "DM-LOEW-TRIG-001"
-* type = $IEEE-11073#152538 "MDC_VENT_RESP_BTSD_PS_RATE"
+* type = $cs-ventilation-parameter#spont-breath-percent "Spontaneous Breath Percentage"
 * unit = $UCUM#% "%"
 * operationalStatus = #on
 * color = #yellow

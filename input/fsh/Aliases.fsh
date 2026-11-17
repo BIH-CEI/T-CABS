@@ -13,3 +13,4 @@ Alias: $EMDN = urn:oid:1.2.250.1.213.2.68
 // DeviceAlert CodeSystems
 Alias: $cs-device-alert = https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-device-alert
 Alias: $cs-ventilation-alarm = https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-ventilation-alarm
+Alias: $cs-ventilation-parameter = https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-ventilation-parameter

@@ -17,6 +17,16 @@ Each change is tagged with one of the following categories:
 
 ---
 
+### v0.3.1 (in development) — Draft Patch
+
+**`fix`** iVAPS remapped to `475154`; it targets alveolar minute ventilation rather than a tidal volume per inflation, so the volume-targeted codes `475198` and `475155` do not describe it. `475198` is no longer used
+
+**`fix`** Spontaneous and mandatory breath proportions now use the codes `spont-breath-percent` and `mandatory-breath-percent` from a new T-CABS CodeSystem instead of the IEEE rate code
+
+**`fix`** Ten vendor mappings of medians and maxima (ResMed, Löwenstein) changed from `equivalent` to `wider`, since the target codes denote the parameter itself
+
+**`fix`** Corrected target codes that did not match their displays: usage duration (BREAS, ResMed, Löwenstein) now uses the new T-CABS code `usage-duration` instead of `68232`, a threshold notification text; Doccla blood pressure now targets the non-invasive codes `150020`/`150021`/`150022` instead of the generic `150016`/`150017`/`150018`
+
 ### v0.3.0 (2026-09-17) — Draft
 
 **`feature`** Reworked the **DeviceAlert profiles** into a three-level hierarchy (Event / Limit base profiles) and added two event alarms: **Obstructive Apnea** (T-CABS custom code — IEEE 11073 has no Partition 3 event for it) and **Leakage** (`198168 MDC_EVT_VENT_PAT_CIRCUIT_LEAK`)

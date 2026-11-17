@@ -20,43 +20,37 @@ Usage: #definition
 * group[=].element[=].display = "Median respiratory rate"
 * group[=].element[=].target[0].code = #151586
 * group[=].element[=].target[=].display = "MDC_VENT_RESP_RATE"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — the measured rate also includes patient-triggered breaths, not only the set minimum). Code kept. clinicalMetrics.respRate.50, unit: breaths/min. Percentiles available: .5, .50, .95, .max. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — the measured rate also includes patient-triggered breaths, not only the set minimum). Code kept. clinicalMetrics.respRate.50, unit: breaths/min. Percentiles available: .5, .50, .95, .max. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet Equivalence changed from equivalent to wider on 2026-11-17: the source is a median of the parameter, while the target code denotes the parameter itself; the statistic is not expressed by the code."
 
 * group[=].element[+].code = #minuteVent.50
 * group[=].element[=].display = "Median minute ventilation"
 * group[=].element[=].target[0].code = #151996
 * group[=].element[=].target[=].display = "MDC_VENT_VOL_MINUTE"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. clinicalMetrics.minuteVent.50, unit: L/min. Percentiles available: .5, .50, .95, .max. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. clinicalMetrics.minuteVent.50, unit: L/min. Percentiles available: .5, .50, .95, .max. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv Equivalence changed from equivalent to wider on 2026-11-17: the source is a median of the parameter, while the target code denotes the parameter itself; the statistic is not expressed by the code."
 
 * group[=].element[+].code = #leak.50
 * group[=].element[=].display = "Median leak"
 * group[=].element[=].target[0].code = #152432
 * group[=].element[=].target[=].display = "MDC_VENT_VOL_LEAK"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. clinicalMetrics.leak.50, unit: L/s (NOTE: T-CABS uses L/min — unit conversion required). Percentiles: .5, .50, .95, .max. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. clinicalMetrics.leak.50, unit: L/s (NOTE: T-CABS uses L/min — unit conversion required). Percentiles: .5, .50, .95, .max. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage Equivalence changed from equivalent to wider on 2026-11-17: the source is a median of the parameter, while the target code denotes the parameter itself; the statistic is not expressed by the code."
 
-* group[=].element[+].code = #spontTriggBreaths
-* group[=].element[=].display = "Percentage of spontaneous triggered breaths"
-* group[=].element[=].target[0].code = #152538
-* group[=].element[=].target[=].display = "MDC_VENT_RESP_BTSD_PS_RATE"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (2/4 consensus). Code corrected: 152498→152538. clinicalMetrics.spontTriggBreaths, unit: %. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths"
 
 * group[=].element[+].code = #tgtIPAP.50
 * group[=].element[=].display = "Median target IPAP"
 * group[=].element[=].target[0].code = #8410976
 * group[=].element[=].target[=].display = "MDC_SABTE_PRESS_IPAP_SET"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. clinicalMetrics.tgtIPAP.50, unit: cmH2O. Also available: peakInspiratoryPressure.50. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. clinicalMetrics.tgtIPAP.50, unit: cmH2O. Also available: peakInspiratoryPressure.50. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap Equivalence changed from equivalent to wider on 2026-11-17: the source is a median of the parameter, while the target code denotes the parameter itself; the statistic is not expressed by the code."
 
 * group[=].element[+].code = #tgtEPAP.50
 * group[=].element[=].display = "Median target EPAP"
 * group[=].element[=].target[0].code = #151976
 * group[=].element[=].target[=].display = "MDC_VENT_PRESS_AWAY_END_EXP_POS"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (3/4 consensus). Code corrected: 152720→151976. clinicalMetrics.tgtEPAP.50, unit: cmH2O. Also available: endExpiratoryPressure.50. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reviewed (3/4 consensus). Code corrected: 152720→151976. clinicalMetrics.tgtEPAP.50, unit: cmH2O. Also available: endExpiratoryPressure.50. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-peep Equivalence changed from equivalent to wider on 2026-11-17: the source is a median of the parameter, while the target code denotes the parameter itself; the statistic is not expressed by the code."
 
 * group[=].element[+].code = #ieRatio.50
 * group[=].element[=].display = "Median I:E ratio"
@@ -130,11 +124,23 @@ Usage: #definition
 * group[=].element[=].target[=].equivalence = #equivalent
 * group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 3, another confirmed it as exact — code denotes general airway pressure rather than an explicit min concept). Code kept. set.minPress, unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MinPress component)"
 
-// ---- Usage Data ----
+// =============================================================================
+// Group 2: ResMed → T-CABS ventilation parameter codes
+// =============================================================================
 
-* group[=].element[+].code = #usage.duration
+* group[+].source = "https://bih-cei.github.io/T-CABS/CodeSystem/resmed-avx"
+* group[=].target = "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-ventilation-parameter"
+
+* group[=].element[+].code = #"spontTriggBreaths"
+* group[=].element[=].display = "Percentage of spontaneous triggered breaths"
+* group[=].element[=].target[0].code = #spont-breath-percent
+* group[=].element[=].target[=].display = "Spontaneous Breath Percentage"
+* group[=].element[=].target[=].equivalence = #equivalent
+* group[=].element[=].target[=].comment = "Reassigned 2026-09-29 from IEEE 152538 MDC_VENT_RESP_BTSD_PS_RATE, which is a rate; clinicalMetrics.spontTriggBreaths is a percentage. IEEE 11073 has no proportional variant for breath types. Unit: %."
+
+* group[=].element[+].code = #"usage.duration"
 * group[=].element[=].display = "Usage duration"
-* group[=].element[=].target[0].code = #68232
-* group[=].element[=].target[=].display = "MDC_ATTR_TIME_HI_RES"
-* group[=].element[=].target[=].equivalence = #relatedto
-* group[=].element[=].target[=].comment = "Not reviewed. usage.duration, unit: minutes (per session). Also: totalUsageHoursOnDevice (cumulative hours). Maps to PoCD operating-hours Device extension."
+* group[=].element[=].target[0].code = #usage-duration
+* group[=].element[=].target[=].display = "Ventilator Usage Duration"
+* group[=].element[=].target[=].equivalence = #equivalent
+* group[=].element[=].target[=].comment = "Therapy time per usage session. Unit: min."

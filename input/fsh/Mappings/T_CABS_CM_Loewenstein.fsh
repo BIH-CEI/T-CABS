@@ -21,29 +21,23 @@ Usage: #definition
 * group[=].element[=].display = "Respiratory Rate (median)"
 * group[=].element[=].target[0].code = #151586
 * group[=].element[=].target[=].display = "MDC_VENT_RESP_RATE"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — the measured rate also includes patient-triggered breaths, not only the set minimum). Code kept. Median respiratory frequency, unit: breaths/min. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — the measured rate also includes patient-triggered breaths, not only the set minimum). Code kept. Median respiratory frequency, unit: breaths/min. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemfrequenz-beatmet Equivalence changed from equivalent to wider on 2026-11-17: the source is a median of the parameter, while the target code denotes the parameter itself; the statistic is not expressed by the code."
 
 * group[=].element[+].code = #minuteVolumeMedian_l_min
 * group[=].element[=].display = "Minute Volume (median)"
 * group[=].element[=].target[0].code = #151996
 * group[=].element[=].target[=].display = "MDC_VENT_VOL_MINUTE"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Median minute volume, unit: L/min. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Median minute volume, unit: L/min. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-amv Equivalence changed from equivalent to wider on 2026-11-17: the source is a median of the parameter, while the target code denotes the parameter itself; the statistic is not expressed by the code."
 
 * group[=].element[+].code = #leakageMedian_liter_min
 * group[=].element[=].display = "Leakage (median)"
 * group[=].element[=].target[0].code = #152432
 * group[=].element[=].target[=].display = "MDC_VENT_VOL_LEAK"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Median leakage, unit: L/min. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage"
-
-* group[=].element[+].code = #portionOfMandatoryBreaths_percent
-* group[=].element[=].display = "Mandatory Breaths (%)"
-* group[=].element[=].target[0].code = #152538
-* group[=].element[=].target[=].display = "MDC_VENT_RESP_BTSD_PS_RATE"
 * group[=].element[=].target[=].equivalence = #wider
-* group[=].element[=].target[=].comment = "Reviewed (2/4 consensus). Code corrected: 152498→152538. Portion of mandatory breaths (inverse of triggered breaths). Night Overview reports 'Spontaneous Inspirations' as %. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths"
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Median leakage, unit: L/min. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage Equivalence changed from equivalent to wider on 2026-11-17: the source is a median of the parameter, while the target code denotes the parameter itself; the statistic is not expressed by the code."
+
 
 * group[=].element[+].code = #tidalVolumeMedian_ml
 * group[=].element[=].display = "Tidal Volume (median)"
@@ -56,15 +50,15 @@ Usage: #definition
 * group[=].element[=].display = "Therapy Pressure (IPAP)"
 * group[=].element[=].target[0].code = #8410976
 * group[=].element[=].target[=].display = "MDC_SABTE_PRESS_IPAP_SET"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Therapy pressure (max per epoch), unit: hPa (=cmH2O). Night Overview: CPAP/APAP/EPAP. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. Therapy pressure (max per epoch), unit: hPa (=cmH2O). Night Overview: CPAP/APAP/EPAP. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ipap Equivalence changed from equivalent to wider on 2026-11-17: the source is a maximum per epoch, while the target code denotes the parameter itself; the statistic is not expressed by the code."
 
 * group[=].element[+].code = #tiTMedian
 * group[=].element[=].display = "Ti/T Ratio (median)"
 * group[=].element[=].target[0].code = #151832
 * group[=].element[=].target[=].display = "MDC_RATIO_IE"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (3/4 consensus). Code corrected: 153500→151832. Median Ti/T ratio (inspiratory time / total cycle time). Night Overview: median per 2-min epoch. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis"
+* group[=].element[=].target[=].equivalence = #wider
+* group[=].element[=].target[=].comment = "Reviewed (3/4 consensus). Code corrected: 153500→151832. Median Ti/T ratio (inspiratory time / total cycle time). Night Overview: median per 2-min epoch. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-atemzeitverhaeltnis Equivalence changed from equivalent to wider on 2026-11-17: the source is a median of the parameter, while the target code denotes the parameter itself; the statistic is not expressed by the code."
 
 * group[=].element[+].code = #ahi
 * group[=].element[=].display = "Apnea-Hypopnea Index"
@@ -72,13 +66,6 @@ Usage: #definition
 * group[=].element[=].target[=].display = "MDC_SABTE_AHI_TOTAL"
 * group[=].element[=].target[=].equivalence = #equivalent
 * group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. AHI, unit: events/hour. Night Overview event flags: oA (obstructive apnea), cA (central apnea), oH (obstructive hypopnea), cH (central hypopnea), RERA. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ahi"
-
-* group[=].element[+].code = #usage_min
-* group[=].element[=].display = "Usage Duration"
-* group[=].element[=].target[0].code = #68232
-* group[=].element[=].target[=].display = "MDC_ATTR_TIME_HI_RES"
-* group[=].element[=].target[=].equivalence = #relatedto
-* group[=].element[=].target[=].comment = "Not reviewed. Usage duration in minutes. Maps to PoCD operating-hours Device extension. Unit conversion: minutes to hours."
 
 // ---- Device Settings (prisma VENT30/40/50/50-C) ----
 
@@ -116,3 +103,24 @@ Usage: #definition
 * group[=].element[=].target[=].display = "MDC_VENT_TIME_PD_INSP"
 * group[=].element[=].target[=].equivalence = #equivalent
 * group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 2 — IEEE code is restricted to time-cycled ventilation (partial overlap)). Code kept. Setting, unit: s. Range: 0.5-4.0, increment: 0.1 s. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-ti"
+
+// =============================================================================
+// Group 2: Löwenstein → T-CABS ventilation parameter codes
+// =============================================================================
+
+* group[+].source = "https://bih-cei.github.io/T-CABS/CodeSystem/loewenstein-prismacloud"
+* group[=].target = "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-ventilation-parameter"
+
+* group[=].element[+].code = #"portionOfMandatoryBreaths_percent"
+* group[=].element[=].display = "Mandatory Breaths (%)"
+* group[=].element[=].target[0].code = #mandatory-breath-percent
+* group[=].element[=].target[=].display = "Mandatory Breath Percentage"
+* group[=].element[=].target[=].equivalence = #equivalent
+* group[=].element[=].target[=].comment = "Reassigned 2026-09-29 from IEEE 152538 MDC_VENT_RESP_BTSD_PS_RATE. The device reports the proportion of mandatory breaths, which is the complement of the spontaneous proportion; it is therefore mapped to its own concept rather than inverted at mapping level. Unit: %."
+
+* group[=].element[+].code = #"usage_min"
+* group[=].element[=].display = "Usage Duration"
+* group[=].element[=].target[0].code = #usage-duration
+* group[=].element[=].target[=].display = "Ventilator Usage Duration"
+* group[=].element[=].target[=].equivalence = #equivalent
+* group[=].element[=].target[=].comment = "Therapy usage time. Unit: min."

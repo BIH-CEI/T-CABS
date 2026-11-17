@@ -37,12 +37,6 @@ Usage: #definition
 * group[=].element[=].target[=].equivalence = #equivalent
 * group[=].element[=].target[=].comment = "Reviewed (consensus). Code confirmed. AggregateDto (min/avg/max), unit: l/m. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-leckage"
 
-* group[=].element[+].code = #triggeredBreaths
-* group[=].element[=].display = "Triggered Breaths"
-* group[=].element[=].target[0].code = #152538
-* group[=].element[=].target[=].display = "MDC_VENT_RESP_BTSD_PS_RATE"
-* group[=].element[=].target[=].equivalence = #equivalent
-* group[=].element[=].target[=].comment = "Reviewed (2/4 consensus). Code corrected: 152498→152538. AggregateDto (min/avg/max), unit: %. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-triggeredbreaths"
 
 * group[=].element[+].code = #inspiratoryPeakAirwayPressure
 * group[=].element[=].display = "IPAP"
@@ -116,11 +110,23 @@ Usage: #definition
 * group[=].element[=].target[=].equivalence = #equivalent
 * group[=].element[=].target[=].comment = "Reviewed (consensus; 1/4 reviewers scored 3, another confirmed it as exact — code denotes general airway pressure rather than an explicit min concept). Code kept. Device setting (ID 9), unit: cmH2O. Profile: https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-observation-druck-minmax (MinPress component)"
 
-// ---- Usage Data (PatientAverageSummary) ----
+// =============================================================================
+// Group 2: BREAS → T-CABS ventilation parameter codes
+// =============================================================================
 
-* group[=].element[+].code = #cumulativeUsage
+* group[+].source = "https://bih-cei.github.io/T-CABS/CodeSystem/breas-everyware"
+* group[=].target = "https://bih-cei.github.io/T-CABS/CodeSystem/t-cabs-codesystem-ventilation-parameter"
+
+* group[=].element[+].code = #triggeredBreaths
+* group[=].element[=].display = "Triggered Breaths"
+* group[=].element[=].target[0].code = #spont-breath-percent
+* group[=].element[=].target[=].display = "Spontaneous Breath Percentage"
+* group[=].element[=].target[=].equivalence = #equivalent
+* group[=].element[=].target[=].comment = "Reassigned 2026-09-29 from IEEE 152538 MDC_VENT_RESP_BTSD_PS_RATE, which is a rate; the vendor reports a percentage. IEEE 11073 has no proportional variant for breath types. Unit: %."
+
+* group[=].element[+].code = #"cumulativeUsage"
 * group[=].element[=].display = "Cumulative Usage"
-* group[=].element[=].target[0].code = #68232
-* group[=].element[=].target[=].display = "MDC_ATTR_TIME_HI_RES"
-* group[=].element[=].target[=].equivalence = #relatedto
-* group[=].element[=].target[=].comment = "Not reviewed. PatientAverageSummary.cumulativeUsage. Also: averageUsageForAllDays, averageUsageForDaysUsed. Maps to PoCD operating-hours Device extension."
+* group[=].element[=].target[0].code = #usage-duration
+* group[=].element[=].target[=].display = "Ventilator Usage Duration"
+* group[=].element[=].target[=].equivalence = #equivalent
+* group[=].element[=].target[=].comment = "Cumulative usage over the summary period. Also available: averageUsageForAllDays, averageUsageForDaysUsed."

@@ -17,6 +17,16 @@ Jede Änderung wird mit einer der folgenden Kategorien versehen:
 
 ---
 
+### v0.3.1 (in Entwicklung) — Draft Patch
+
+**`fix`** iVAPS auf `475154` gewechselt; der Modus zielt auf die alveoläre Minutenventilation und nicht auf ein Tidalvolumen pro Atemzug, weshalb die volumengezielten Codes `475198` und `475155` ihn nicht beschreiben. `475198` entfällt
+
+**`fix`** Anteil spontaner und mandatorischer Atemzüge nutzt die Codes `spont-breath-percent` und `mandatory-breath-percent` aus einem neuen T-CABS-CodeSystem statt des IEEE-Rate-Codes
+
+**`fix`** Zehn Herstellerzuordnungen von Medianen und Maxima (ResMed, Löwenstein) von `equivalent` auf `wider` geändert, da die Zielcodes den Parameter selbst bezeichnen
+
+**`fix`** Zielcodes korrigiert, die nicht zu ihrem Display passten: Nutzungsdauer (BREAS, ResMed, Löwenstein) nutzt jetzt den neuen T-CABS-Code `usage-duration` statt `68232`, eines Benachrichtigungstexts zu einem Schwellwert; Blutdruck bei Doccla zeigt auf die nicht-invasiven Codes `150020`/`150021`/`150022` statt auf die allgemeinen `150016`/`150017`/`150018`
+
 ### v0.3.0 (2026-09-17) — Draft
 
 **`feature`** **DeviceAlert-Profile** in eine dreistufige Hierarchie überführt (Event- / Limit-Basisprofile) und zwei Ereignis-Alarme ergänzt: **Obstruktive Apnoe** (T-CABS-Custom-Code — IEEE 11073 hat dafür kein Partition-3-Ereignis) und **Leckage** (`198168 MDC_EVT_VENT_PAT_CIRCUIT_LEAK`)
