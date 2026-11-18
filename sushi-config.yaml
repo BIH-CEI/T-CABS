@@ -12,7 +12,7 @@ status: draft # draft | active | retired | unknown
 version: 0.3.1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
-releaseLabel: ci-build
+releaseLabel: draft
 # template: t-cabs-template #not supported anymore
 license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 language: en
@@ -118,28 +118,8 @@ parameters:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-menu:
-  Home: index.html
-  "Information Model":
-    "Overview": Information-Model.html
-    "Vital Data": Vital-Data-Model.html
-    "Ventilation Data": Ventilation-Data-Model.html
-  Profiles:
-    "Cross-Domain": Cross-Domain-Profiles.html
-    "Vital Data": Vital-Data-Profiles.html
-    "Ventilation Data": Ventilation-Data-Profiles.html
-  Examples:
-    "Cross-Domain": Cross-Domain-Examples.html
-    "Vital Data": Vital-Data-Examples.html
-    "Ventilation Data": Ventilation-Data-Examples.html
-  Implementation:
-    "Cross-Domain": Cross-Domain-Implementation.html
-    "Vital Data": Vital-Data-Implementation.html
-    "Ventilation Data": Ventilation-Data-Implementation.html
-  Terminologies: Terminologies.html
-  "Metadata & FAIR": Metadata.html
-  Release Notes: Release-Notes.html
-  Artifacts: artifacts.html
+# menu: maintained by hand in input/includes/menu.xml (SUSHI-generated dropdowns use href="#",
+# which the IG Publisher rejects)
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

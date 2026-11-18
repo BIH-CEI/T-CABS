@@ -17,7 +17,7 @@ Jede Änderung wird mit einer der folgenden Kategorien versehen:
 
 ---
 
-### v0.3.1 (in Entwicklung) — Draft Patch
+### v0.3.1 (2026-11-18) — Draft Patch
 
 **`fix`** iVAPS auf `475154` gewechselt; der Modus zielt auf die alveoläre Minutenventilation und nicht auf ein Tidalvolumen pro Atemzug, weshalb die volumengezielten Codes `475198` und `475155` ihn nicht beschreiben. `475198` entfällt
 

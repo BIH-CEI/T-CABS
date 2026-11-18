@@ -1,0 +1,88 @@
+<!-- menu.xml {% comment %}
+Hand-maintained menu (replaces the SUSHI-generated one, whose dropdown toggles use href="#",
+which the IG Publisher rejects; href="menu.html" fails its link check). Each dropdown toggle
+points to its first entry. Edit this file to change the menu;
+the "menu" property in sushi-config.yaml is no longer used.
+{% endcomment %} -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="Information-Model.html" class="dropdown-toggle">Information Model
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Information-Model.html">Overview</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Model.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Model.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="Cross-Domain-Profiles.html" class="dropdown-toggle">Profiles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Cross-Domain-Profiles.html">Cross-Domain</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Profiles.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Profiles.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="Cross-Domain-Examples.html" class="dropdown-toggle">Examples
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Cross-Domain-Examples.html">Cross-Domain</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Examples.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Examples.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="Cross-Domain-Implementation.html" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Cross-Domain-Implementation.html">Cross-Domain</a>
+      </li>
+      <li>
+        <a href="Vital-Data-Implementation.html">Vital Data</a>
+      </li>
+      <li>
+        <a href="Ventilation-Data-Implementation.html">Ventilation Data</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="Terminologies.html">Terminologies</a>
+  </li>
+  <li>
+    <a href="Metadata.html">Metadata &amp; FAIR</a>
+  </li>
+  <li>
+    <a href="Release-Notes.html">Release Notes</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>

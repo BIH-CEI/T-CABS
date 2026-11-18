@@ -12,6 +12,17 @@
       "status": "ci-build"
     },
     {
+      "version": "0.3.1",
+      "date": "2026-11-18",
+      "desc": "Patch: iVAPS remapped to 475154, breath proportion and usage duration on T-CABS CodeSystem codes, median and maximum mappings set to wider, non-invasive blood pressure targets for Doccla",
+      "path": "https://bih-cei.github.io/T-CABS/0.3.1",
+      "status": "draft",
+      "sequence": "Draft",
+      "fhirversion": "4.0.1",
+      "changes": "Release-Notes.html",
+      "current": true
+    },
+    {
       "version": "0.3.0",
       "date": "2026-09-17",
       "desc": "DeviceAlert profile hierarchy with event and limit base profiles, full R6 element set, obstructive apnea and leakage alarms, conditional mode mappings via dependsOn, mode code corrections, metadata and FAIR page",
@@ -19,8 +30,7 @@
       "status": "draft",
       "sequence": "Draft",
       "fhirversion": "4.0.1",
-      "changes": "Release-Notes.html",
-      "current": true
+      "changes": "Release-Notes.html"
     },
     {
       "version": "0.2.1",
