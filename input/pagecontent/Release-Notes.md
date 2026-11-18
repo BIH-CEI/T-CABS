@@ -17,6 +17,10 @@ Each change is tagged with one of the following categories:
 
 ---
 
+### v0.4.0 (in development) — Draft
+
+*No changes yet.*
+
 ### v0.3.1 (2026-11-18) — Draft Patch
 
 **`fix`** iVAPS remapped to `475154`; it targets alveolar minute ventilation rather than a tidal volume per inflation, so the volume-targeted codes `475198` and `475155` do not describe it. `475198` is no longer used

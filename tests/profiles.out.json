@@ -59,7 +59,7 @@
           "severity" : "information",
           "code" : "informational",
           "details" : {
-            "text" : "Ressource gegen Profil https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.1 validieren"
+            "text" : "Validate resource against profile https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-patient|0.3.1"
           },
           "expression" : ["Patient"]
         },
@@ -210,7 +210,7 @@
           "severity" : "information",
           "code" : "informational",
           "details" : {
-            "text" : "Ressource gegen Profil https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.1 validieren"
+            "text" : "Validate resource against profile https://bih-cei.github.io/T-CABS/StructureDefinition/t-cabs-device-alert-druck|0.3.1"
           },
           "expression" : ["Basic"]
         },
